@@ -1,3 +1,248 @@
+# Wednesday, January 21, 2026
+
+## @tomkrcha - Pencil design canvas for Claude Code
+> Excited to launch Pencil
+> INFINITE DESIGN CANVAS for Claude Code
+>
+> > Superfast WebGL canvas, fully editable, running parallel design agents
+> > Runs locally with Claude Code → turn designs into code
+> > Design files live in your git repo → Open json-based .pen format https://t.co/UcnjtS99eF
+
+- **Tweet:** https://x.com/tomkrcha/status/2014028990810300498
+- **What:** WebGL-based infinite design canvas for Claude Code enabling design-to-code workflows with parallel design agents and git-based design file storage.
+
+## @draprints - Article share
+> https://t.co/4pMyiGDg55
+
+- **Tweet:** https://x.com/draprints/status/2014056484460519550
+- **What:** Shared tweet article/thread (content not fully extracted from link).
+
+---
+
+# Tuesday, January 20, 2026
+
+## @TKopelman - 10 critical finance lessons for high earners
+> I am a financial planner that works with the wealthiest 1% of people in their 30s and 40s
+>
+> I wish everyone understood these 10 critical lessons about finance:
+
+- **Tweet:** https://x.com/TKopelman/status/2013581850384408591
+- **What:** Financial planning insights for high-net-worth individuals in their 30s-40s covering critical wealth management principles.
+
+## @T_Gatzemeier - High earner tax optimization strategies
+> If you earn $500k+ as a W2 and you're not doing at least 5 of these 10 things, you're probably overpaying on taxes by $20k-$50k+ per year.
+>
+> Here's what I tell my clients…
+
+- **Tweet:** https://x.com/T_Gatzemeier/status/2013626447470960666
+- **What:** Tax optimization strategies for high-income W2 earners to reduce annual tax burden through legitimate planning strategies.
+
+---
+
+# Monday, January 19, 2026
+
+## @MattPRD - AgentWealth: a personal finance command center where AI agen...
+> AgentWealth: a personal finance command center where AI agents manage your money like you have a family office.
+
+Watch them negotiate your bills, pause unused subscriptions, transfer credit card balances to 0% APR, find the cheapest gas nearby, and DCA into your portfolio — all while talking to each other in real-time.
+
+- **Tweet:** https://x.com/MattPRD/status/2013155734318715169
+- **What:** AgentWealth: a personal finance command center where AI agents manage your money like you have a family office.
+
+## @shekhu04 - Low-key websites I quietly rely on...
+> Low-key websites I quietly rely on
+
+1) https://t.co/FDnurfhwge
+Gives you a brutally clear learning path for roles like frontend, backend, DevOps, etc
+No fluff, just “learn this → then this → then this”.
+
+2) https://t.co/1xhB1Us0oz
+An online playground to quickly test HTML, CSS, JS without setting up anything locally
+Perfect for quick experiments and debugging ideas
+
+3) https://t.co/d80zVxq6TY
+A collection of reusable React hooks with real use cases
+Saves time and helps you avoid rewriting the same logic again and again
+
+4) https://t.co/UgqeLiqese
+Concise cheat sheets for languages, frameworks, and tools. Ideal when you forget syntax and don’t want to read a 20-minute blog
+
+5) https://t.co/OehnjnfVix
+Turns messy JSON into a clean visual tree
+Makes understanding large APIs and configs way easier than staring at raw text
+
+6) https://t.co/mcMPeqEFWJ
+Lets you generate and preview color palettes instantly
+Useful when you want decent UI colors without guessing or copying blindly
+
+7) https://t.co/9yEsuJrWCB
+Build, test, and debug regex step by step with explanations Honestly, the fastest way to stop hating regex
+
+8) https://t.co/7eM95WZ8cJ
+Shows how big an npm package really is before you install it
+Helps you avoid bloating your app with “tiny” libraries
+
+9) https://t.co/Za87baZsBk
+Tells you which CSS/JS features actually work across browsers Essential before using shiny new features in production
+
+10)  https://t.co/YeYh94AX4R
+Google’s own diagnostics tools for DNS, email, headers, and network issues
+Surprisingly useful for debugging real-world problems
+
+👉 Which one of these do you already use and which one did you not know existed?
+
+- **Tweet:** https://x.com/shekhu04/status/2013226024205680978
+- **Link:** https://roadmap.sh/
+- **Link:** https://playcode.io/
+- **Link:** https://usehooks.com/
+- **Link:** https://jsoncrack.com/
+- **Link:** https://www.realtimecolors.com/
+- **Link:** https://regex101.com/
+- **Link:** https://bundlephobia.com/
+- **Link:** https://caniuse.com/
+- **Link:** https://toolbox.googleapps.com/apps/main/
+- **What:** Low-key websites I quietly rely on
+- **Filed:** ./knowledge/tools/roadmap-sh.md, ./knowledge/tools/playcode-io.md, ./knowledge/tools/usehooks-com.md, ./knowledge/tools/jsoncrack-com.md, ./knowledge/tools/realtimecolors-com.md, ./knowledge/tools/regex101-com.md, ./knowledge/tools/bundlephobia-com.md, ./knowledge/tools/caniuse-com.md, ./knowledge/tools/google-toolbox.md
+
+## @burakeregar - 🏴‍☠️this is how your vibecoded app gets hacked......
+> 🏴‍☠️this is how your vibecoded app gets hacked...
+
+let's hack a website together 
+
+i'll show you why  "trusting client" fallacy can cost you 1000s of dollars
+
+thread to learn how to avoid this: https://t.co/kTOfctgNt3
+
+- **Tweet:** https://x.com/burakeregar/status/2013256701420675541
+- **Link:** https://twitter.com/burakeregar/status/2013256701420675541/video/1
+- **What:** 🏴‍☠️this is how your vibecoded app gets hacked...
+
+## @patrickc - This work by @cursor_ai is, I think, the coolest AI breakthr...
+> This work by @cursor_ai is, I think, the coolest AI breakthrough since GPT-4. (And there are plenty of candidates!)
+
+https://t.co/btmcIK3rlY
+
+- **Tweet:** https://x.com/patrickc/status/2013326753826251053
+- **Link:** https://simonwillison.net/2026/Jan/19/scaling-long-running-autonomous-coding/
+- **What:** This work by @cursor_ai is, I think, the coolest AI breakthrough since GPT-4. (And there are plenty of candidates!)
+- **Filed:** ./knowledge/articles/cursor-scaling-autonomous-coding.md
+
+## @KyleAsay_ - One of my favorite prompts right now:...
+> One of my favorite prompts right now:
+
+- Translates your product value to what your target company cares about
+- Looks at the value through the “CFO” lens
+- Builds a full business case
+
+Here it is:
+
+- **Tweet:** https://x.com/KyleAsay_/status/2013365042612142419
+- **What:** One of my favorite prompts right now:
+
+---
+
+# Sunday, January 18, 2026
+
+## @TailThatWagsDog - Reddit capital rotation signal strategy
+> Claude, create a strategy that monitors subreddits to identify capital rotation signals derived from social media chatter before Wall Street and mainstream media fully embrace. Then run the strategy and show me the top ten themes, along with high potential tickers.
+
+- **Tweet:** https://x.com/TailThatWagsDog/status/2012893458701189317
+- **What:** Request for AI to analyze Reddit for early signals of capital rotation and identify emerging investment themes before mainstream adoption.
+
+## @blader - Humanizer skill: remove AI writing patterns
+> it's really handy that wikipedia went and collated a detailed list of "signs of ai writing". so much so that you can just tell your LLM to ... not do that. i asked claude code to read that article, and create a skill to avoid all of them.
+
+- **Tweet:** https://x.com/blader/status/2013015738622284156
+- **Link:** https://github.com/blader/humanizer
+- **What:** Claude Code skill that removes 24 AI writing patterns identified by Wikipedia (significance inflation, vague attribution, em-dash overuse, filler phrases, hedging, etc). Handles everything from vocabulary to tone.
+Filed: ./knowledge/tools/humanizer.md
+
+## @arscontexta - Twitter article link
+> https://t.co/JnIR1JG33B
+
+- **Tweet:** https://x.com/arscontexta/status/2013045749580259680
+- **What:** Link to tweet article (URL redirects to Twitter content).
+
+## @adxtyahq - 925 failed VC startups analysis
+> Someone curated 925 failed VC-backed startups, broke down why they failed, and how to make it work with today's tech
+
+- **Tweet:** https://x.com/adxtyahq/status/2013095572534653352
+- **Link:** https://loot-drop.vercel.app/
+- **What:** Comprehensive database analyzing 925 failed VC-backed startups with breakdowns of failure reasons and strategies for modern success using contemporary tech.
+Filed: ./knowledge/articles/vc-startup-failures.md
+
+---
+
+# Saturday, January 17, 2026
+
+## @burakeregar - Automated pentest tool for Supabase/Firebase
+> ☠️ i audited 15 vibecoded apps and accessed 600k+ users data
+
+too many vulnerable apps are shipping every day
+
+so i automated my entire pentest workflow into a tool
+
+it audits your app (web + mobile) for the leaks i've been posting about
+
+i am opening access today. check your product before it ends up on a hacker forum
+
+👉 https://t.co/FDsz1A1dwW
+
+(first 50 people get 50% off with LAUNCH50)
+
+- **Tweet:** https://x.com/burakeregar/status/2012504737208258730
+- **Link:** https://www.audityour.app/
+- **What:** Enterprise security scanner that detects RLS policy misconfigurations and exposed data in Supabase and Firebase apps. Launched with LAUNCH50 promo code.
+
+Filed: knowledge/tools/audityourapp.md
+
+## @geerlingguy - City map poster generator in Python
+> Very neat open source city map poster generator (found via HN) https://t.co/xaQqc2T5iS — here's St. Louis, MO https://t.co/QXvemKXE1U
+
+- **Tweet:** https://x.com/geerlingguy/status/2012666150379716969
+- **Link:** https://github.com/originalankur/maptoposter
+- **What:** Python tool that generates beautiful minimalist map posters for any city, with 17 themes (blueprint, sunset, neon cyberpunk, etc) and support for custom dimensions for printing or wallpapers.
+
+Filed: knowledge/tools/maptoposter.md
+
+## @geerlingguy - City map poster generator for any city
+> Very neat open source city map poster generator (found via HN) — here's St. Louis, MO
+
+- **Tweet:** https://x.com/geerlingguy/status/2012666150379716969
+- **Link:** https://github.com/originalankur/maptoposter
+- **What:** Python tool for generating beautiful minimalist map posters of cities with 17 different themes (sunset, blueprint, neon_cyberpunk, etc). Uses OpenStreetMap data and matplotlib.
+Filed: ./knowledge/tools/maptoposter.md
+
+---
+
+# Friday, January 16, 2026
+
+## @alexhillman - Memory system with correction embeddings
+> Have you seen the memory system I built based on transcripts?
+
+One of the richest memory types has become (unsurprisingly) corrections. It pulls instances of me correcting it from transcript, files as a memory with embeddings, and gets retrieved automatically. I basically never have to tell it anything twice anymore.
+
+**In reply to:** @DanielleFong - "gave claude code full access to its own transcripts and chatgpt transcripts too. there is so much richness in there, food for a semantic memory"
+
+- **Tweet:** https://x.com/alexhillman/status/2012156155284349259
+- **Link:** https://www.youtube.com/watch?si=CxEX7IEAZWECxFYB&v=Wpz7LNI737Q&feature=youtu.be
+- **What:** Demo of a memory system that uses transcript corrections as embeddings to help Claude learn from repeated corrections without needing explicit reminders.
+
+## @doodlestein - Claude Code multi-account handling pain
+> Wish I had a time machine and could give myself this idea a month ago... this is going to save me so much annoying BS (all of which could be avoided if Claude Code weren't so user-hostile with how it handles switching between multiple Max accounts).
+
+- **Tweet:** https://x.com/doodlestein/status/2012196981599330711
+- **What:** Frustration with Claude Code's user experience around managing multiple Mac accounts, suggesting a workaround that could have saved significant time.
+
+## @codyschneiderxx - Guerrilla BDR hiring experiment
+> about to try to hire 10 sorority girls for $100 a month with ID verified linkedin accounts as "BDRs" and connect them to heyreach and send 800 messages a week and see what happens hold my beer
+
+- **Tweet:** https://x.com/codyschneiderxx/status/2012283728446308658
+- **What:** Plans to run an experimental outreach campaign using low-cost distributed accounts with a messaging tool, pushing boundaries on scale and cost.
+
+---
+
+
 # Sunday, January 4, 2026
 
 ## @trq212 - AI alignment and interpretability resources
