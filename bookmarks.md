@@ -1,3 +1,41 @@
+# Thursday, January 22, 2026
+
+## @pipelineabuser - Using VisualPing for competitive intelligence
+> I monitor 200+ websites and get alerts when anything changes. it's borderline illegal how much intel this gives you.
+>
+> visualping .io
+>
+> set it on any page. get notified the second something changes.
+>
+> here's what I'm tracking:
+>
+> competitor pricing pages - they drop prices, I undercut same day. they raise them, I run ads to their customers.
+>
+> competitor careers pages - hiring 10+ new engineers? they're building something. layoffs? customers are nervous. sales team growing? they're pushing upmarket.
+>
+> competitor integration/partners pages - new integration = new angle to sell against. lost a partner? reach out to that partner.
+>
+> competitor status pages - they go down, I email their customers within an hour. "saw [competitor] had issues today - we've had 99.9% uptime for 2 years"
+>
+> crunchbase pages for companies in my space - someone raises? I know before techcrunch writes about it.
+>
+> government/regulatory pages in my industry - policy changes before anyone else sees them.
+>
+> SEC edgar for public companies I sell to - earnings coming? leadership changes? I know.
+>
+> my own brand name on review sites - new review drops, I'm responding in minutes.
+>
+> conference sponsor pages - see who's spending money in my space next quarter.
+>
+> set it once. runs forever. very cheap.
+>
+> information arbitrage is the game. this is how you win.
+
+- **Tweet:** https://x.com/pipelineabuser/status/2014416537608978702
+- **What:** Strategy for using VisualPing.io to monitor competitor pricing, hiring, partnerships, and industry changes for competitive intelligence and real-time market positioning.
+
+---
+
 # Wednesday, January 21, 2026
 
 ## @tomkrcha - Pencil design canvas for Claude Code
@@ -16,6 +54,44 @@
 
 - **Tweet:** https://x.com/draprints/status/2014056484460519550
 - **What:** Shared tweet article/thread (content not fully extracted from link).
+
+---
+
+# Saturday, January 17, 2026
+
+## @iamwilsxn - Streaming service alternatives
+> Instead of Disney, use Netmirror
+> Instead of HBO Max, use Moviebox
+> Instead of Apple TV, use Streamly
+> Instead of Netflix, use Flixio
+> Instead of Prime Video, use CineHub
+> Instead of YouTube Premium, use VidPlus or brave browser
+> Instead of Apple Music, use ESound
+> Instead of Spotify, use Lyra
+> Instead of Hulu, use ShowZone
+> Instead of Peacock, use GlitchTV
+> Instead of Paramount+, use EpicFlix
+> Instead of Crunchyroll, use AniMax
+> Instead of Discovery+, use DocuStream
+> Instead of Starz, use CinemaWave
+> Instead of Tubi, use FreeFlicks
+> Instead of Sling, use StreamStack
+>
+> *Quoting @nahidulislam404:* I canceled Disney+.
+>
+> I canceled HBO Max.
+>
+> I canceled Apple TV+.
+>
+> No more $14.99 a month payments.
+>
+> ChatGPT turned my laptop into a 100% free streaming hub.
+>
+> Here are the 8 prompts I used to create the system:
+
+- **Tweet:** https://x.com/iamwilsxn/status/2012584983412490493
+- **Quoted:** https://x.com/nahidulislam404/status/2012347176530387038
+- **What:** Quote tweet listing alternative streaming service names in response to a claim about using ChatGPT to create a streaming hub.
 
 ---
 
