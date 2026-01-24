@@ -1,5 +1,13 @@
 # Friday, January 23, 2026
 
+## @Kekius_Sage - From-the-ground-up math education thread
+> I'm 54, a physicist, have spent decades using mathematics to study the universe, solve problems, and build things.
+>
+> If your work touches numbers, now or in the future, and you want to learn math properly, this thread shows a from-the-ground-up math you'll actually need:
+
+- **Tweet:** https://x.com/Kekius_Sage/status/2014841012003512616
+- **What:** Thread from a 54-year-old physicist providing a comprehensive, from-scratch mathematics learning path for anyone whose work involves numbers. Practical focus on math needed for real-world problem solving.
+
 ## @aakashgupta - PageIndex: Hierarchical RAG without vector databases
 > Vector databases might be the wrong abstraction for document retrieval.
 >
