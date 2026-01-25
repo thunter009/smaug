@@ -1,4 +1,117 @@
+# Saturday, January 24, 2026
+
+## @doodlestein - Prompt for Claude code cleanup
+> You can get Claude to reliably clean up its own messes if you just repeat this prompt 3 to 5 times after it writes some code for you (I do this hundreds of times a day):
+>
+> Great, now I want you to carefully read over all of the new code you just wrote and other existing code you just modified with "fresh eyes" looking super carefully for any obvious bugs, errors, problems, issues, confusion, etc. Carefully fix anything you uncover.
+
+- **Tweet:** https://x.com/doodlestein/status/2015275392098017303
+- **What:** Reply with technique for getting Claude to self-correct code
+
+> *Replying to @yacineMTB:* after using codex again, the amount of bugs its finding left behind claude are astounding. it's literally because it lied to me. it actually just didn't follow instructions in a seaky way trying to trick me. what the fuck
+>
+> like actually. i am a hawk. it still snuck shit in
+
+## @altryne - Clawdbot tips and tricks thread
+> Fuck it, @clawdbot tips and tricks thread, stream of consciousness style.
+>
+> Every time I learn something, I'll add to this thread
+>
+> Because while it's super hypey and amazing, it's still brittle as fuck, and there are rough edges all over.
+>
+> If this helps someone, amazing https://t.co/xkKocxMmtk
+
+- **Tweet:** https://x.com/altryne/status/2015222870591553559
+- **What:** Thread starter sharing Clawdbot tips and tricks as they're discovered
+
+## @nateliason - Codex agents for coding tasks
+> For anyone else trying to get Clawdbot to utilize separate Codex agents for coding tasks to save on Anthropic API costs (and get better code) this is how I got it working really reliably:
+
+- **Tweet:** https://x.com/nateliason/status/2015196843815186620
+- **What:** Quote tweet with guardrails for using Codex CLI instead of subagents
+
+> *Quoting @nateliason:* These are the guardrails I put in place to make it use Codex instead of its own subagents for coding tasks, you could do the same for any other model you can already run from the CLI
+>
+> Text:
+>
+> ## ⚠️ CRITICAL: Coding Sub-Agents
+>
+> **ALWAYS use Codex CLI directly for coding tasks. NEVER use sessions_spawn with model override.**
+>
+> ```bash
+> # Correct: Codex CLI with PTY
+> cd ~/Coding/contentBuddy
+> git worktree add -b fix/issue-name /tmp/codex-fix-N staging
+> bash pty:true workdir:/tmp/codex-fix-N background:true command:"codex --yolo exec 'Task description...
+>
+> When done: clawdbot gateway wake --text \"Done: summary\" --mode now'
+> ```
+
+## @damianplayer - Tweet Link
+> https://t.co/bD2fm56ELt
+
+- **Tweet:** https://x.com/damianplayer/status/2015105669620269373
+- **Link:** https://x.com/i/article/2015073176427061248
+- **What:** Shared article link
+
+## @jdrhyne - 20 Agent Skills for Claude Tools
+> Shoutout to @LLMjunky for sharing his skills and prompts publicly. Inspired me to do the same.
+>
+> Here's my collection — 20 skills for @clawdbot, Claude Code, Codex, Cursor:
+>
+> Some highlights:
+> → Remotion video creation in React
+> → Multi-agent task orchestration
+> → Charlie Munger mental models for daily review
+> → PDF reports with Nordic design templates
+>
+> Plus GA4, Google Ads, GSC, Jira, and more. Will continue to add.
+>
+> Grab whatever's useful: https://t.co/ByABlfbgRq
+>
+> (Check the README for the 80s NES inspired splash screen 🕹️)
+
+- **Tweet:** https://x.com/jdrhyne/status/2015082002534305955
+- **Link:** https://github.com/jdrhyne/agent-skills
+- **Filed:** [agent-skills](./knowledge/tools/agent-skills.md)
+- **What:** Collection of 20 reusable AI agent skills for clawdbot/Claude Code including video creation, task orchestration, mental models, PDF reports
+
+## @burakeregar - Ultimate Guide to Secure Vibe Coding
+> my security / vibe coding related posts reached 2M impressions. so i have decided to give all the sauce away for my vibe coder friends
+>
+> introducing: ultimate guide to secure vibe coding
+>
+> enjoy
+>
+> *Quoting @burakeregar:* https://t.co/j4eHIY9Mfb
+
+- **Tweet:** https://x.com/burakeregar/status/2015057237018853761
+- **What:** Released guide on secure vibe coding practices
+
+## @timolins - UTM Setup for Mac Mini
+> Before you buy that Mac Mini for clawdbot:
+>
+> Get yourself UTM and setup up a macOS virtual machine for it.
+>
+> It's free - and gives your lobster a safe home.
+>
+> And if you end up buying that Mac Mini anyways, you can just copy the .utm file over and you're done.
+>
+> I was surprised how well this setup works, even when giving it just 4GB of RAM.
+
+- **Tweet:** https://x.com/timolins/status/2015023461580591189
+- **What:** Recommends UTM for running macOS VMs as alternative to Mac Mini hardware for clawdbot
+
+---
+
 # Friday, January 23, 2026
+
+## @nummanali - Tweet Link
+> https://t.co/cQgr5MrztI
+
+- **Tweet:** https://x.com/nummanali/status/2014684862985175205
+- **Link:** https://x.com/i/article/2014647141281464321
+- **What:** Shared article link
 
 ## @Kekius_Sage - From-the-ground-up math education thread
 > I'm 54, a physicist, have spent decades using mathematics to study the universe, solve problems, and build things.
@@ -88,6 +201,13 @@
 ---
 
 # Thursday, January 22, 2026
+
+## @trq212 - Tweet Link
+> https://t.co/eHD0AmjSRM
+
+- **Tweet:** https://x.com/trq212/status/2014480496013803643
+- **Link:** https://x.com/i/article/2014473994695823360
+- **What:** Shared article link
 
 ## @pipelineabuser - Using VisualPing for competitive intelligence
 > I monitor 200+ websites and get alerts when anything changes. it's borderline illegal how much intel this gives you.
