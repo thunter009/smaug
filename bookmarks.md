@@ -1,3 +1,250 @@
+# Sunday, October 19, 2025
+
+## @TheAhmadOsman - Buy a GPU website & guide launching
+> the Buy a GPU website & guide is launching this week
+>
+> so, what should you expect?
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/1980026689217298545
+- **What:** Ahmad announces the launch of a website and comprehensive guide for purchasing GPUs, with preview content shared via image.
+
+---
+
+# Tuesday, January 20, 2026
+
+## @arscontexta - Twitter article link
+> https://t.co/MWIIg1OR2L
+
+- **Tweet:** https://x.com/arscontexta/status/2013718955576250466
+- **Link:** https://x.com/i/article/2013714655856754688
+- **What:** Twitter article shared by Heinrich.
+
+## @TKopelman - 10 critical finance lessons for high earners
+> I am a financial planner that works with the wealthiest 1% of people in their 30s and 40s
+>
+> I wish everyone understood these 10 critical lessons about finance:
+
+- **Tweet:** https://x.com/TKopelman/status/2013581850384408591
+- **What:** Financial planning insights for high-net-worth individuals in their 30s-40s covering critical wealth management principles.
+
+## @T_Gatzemeier - High earner tax optimization strategies
+> If you earn $500k+ as a W2 and you're not doing at least 5 of these 10 things, you're probably overpaying on taxes by $20k-$50k+ per year.
+>
+> Here's what I tell my clients…
+
+- **Tweet:** https://x.com/T_Gatzemeier/status/2013626447470960666
+- **What:** Tax optimization strategies for high-income W2 earners to reduce annual tax burden through legitimate planning strategies.
+
+---
+
+# Friday, February 6, 2026
+
+## @berman66 - OpenClaw Enterprise Launch & Security Risk
+> Today, we're launching OpenClaw for Enterprise.
+>
+> The IDEA of OpenClaw is excellent.
+>
+> That's why your employees already tried ClawdBot last weekend. They probably spent hours linking it to everything - email, Slack, Jira, you name it.
+>
+> They installed a giant security nightmare.
+>
+> 1/
+
+- **Tweet:** https://x.com/berman66/status/2019818438282133667
+- **What:** Andy Berman critiques OpenClaw Enterprise launch, highlighting security risks from unauthorized employee installations linking to sensitive systems.
+
+## @iannuttall - Unsafe Skills in Playbooks Registry
+> A bunch of skills on playbooks got flagged as unsafe because the SKILL.⁠md instructs the agent to download and run unsigned executable files.
+>
+> Hoping other directories/registries add prompt injection checks soon - feels like a disaster waiting to happen... https://t.co/L4MUtbywu6
+
+- **Tweet:** https://x.com/iannuttall/status/2019825022588870885
+- **Link:** https://twitter.com/iannuttall/status/2019825022588870885/photo/1
+- **What:** Flagged unsafe skills in playbooks registry due to unsigned executable file execution. Ian advocates for prompt injection checks across registries.
+
+## @rahulsood - Article Share
+> https://t.co/J9CW47iD6k
+
+- **Tweet:** https://x.com/rahulsood/status/2019830679769608537
+- **Link:** https://x.com/i/article/2019822410187567107
+- **What:** Rahul Sood shares an article via link.
+
+## @BenyaminHolley - Article Share
+> https://t.co/t1LlH10ijt
+
+- **Tweet:** https://x.com/BenyaminHolley/status/2019865262305034631
+- **Link:** https://x.com/i/article/2019853668607025153
+- **What:** Benyamin shares an article via link.
+
+## @flydevoxxx - Article Share
+> https://t.co/peJ6kRJdfX
+
+- **Tweet:** https://x.com/flydevoxxx/status/2019886144247284115
+- **Link:** https://x.com/i/article/2019882254390919169
+- **What:** Flydevox shares an article via link.
+
+---
+
+# Thursday, February 5, 2026
+
+## @Ibelick - webclaw: Fast web client for OpenClaw
+> https://t.co/hRVDRhYw9y
+
+- **Tweet:** https://x.com/Ibelick/status/2019342774500507962
+- **Link:** https://github.com/ibelick/webclaw
+- **Filed:** [webclaw](./knowledge/tools/webclaw.md)
+- **What:** Fast, local-first web client for OpenClaw with multi-session support, no accounts or database required. Built in TypeScript with 187 stars on GitHub.
+
+## @GeoffreyHuntley - Claude agent teams documentation
+> gas town
+
+- **Tweet:** https://x.com/GeoffreyHuntley/status/2019515596111770044
+- **Link:** https://code.claude.com/docs/en/agent-teams
+- **What:** Documentation on Claude Code's agent teams feature for orchestrating multiple agents.
+
+## @GergelyOrosz - Companion coding/research agent guide by Mitchell Hashimoto
+> If you do not yet have a "companion coding/research agent" running locally as a dev, this guide is absolute gold from @mitchellh (creator of Terraform).
+>
+> It's practical, step by step & how he changed how he works (without getting overloaded or anxious.)
+
+- **Tweet:** https://x.com/GergelyOrosz/status/2019517812558164330
+- **Link:** https://mitchellh.com/writing/my-ai-adoption-journey
+- **Filed:** [my-ai-adoption-journey](./knowledge/articles/my-ai-adoption-journey.md)
+- **What:** Practical guide from Mitchell Hashimoto on setting up a local AI companion for coding/research work and managing AI tool adoption without anxiety.
+
+## @ryancarson - Claude Code agent team for security fixes
+> Trying out Claude Code's new agent team feature.
+>
+> To get this view, you have to start cc in tmux.
+>
+> The prompt was "create a team that looks for security vulnerabilities in our app and fixes them".
+>
+> It created a team of four:
+>
+> 1. admin-hardening
+> 2. xss-fix
+> 3. rate-limit
+> 4. rls-audit
+
+- **Tweet:** https://x.com/ryancarson/status/2019535981678936378
+- **What:** Demonstrates new Claude Code agent team feature that autonomously identifies and fixes 4 security vulnerability categories when given a high-level prompt.
+
+## @bc1beat - Article link
+> https://t.co/I6yv2N0oGx
+
+- **Tweet:** https://x.com/bc1beat/status/2019555730475610236
+- **What:** Shared article or content (link-only bookmark).
+
+## @mckaywrigley - Opus 4.6 swarm mode performance
+> opus 4.6 with new "swarm" mode vs. opus 4.6 without it.
+>
+> 2.5x faster + done better.
+>
+> swarms work!
+>
+> and multi-agent tmux view is *genius*.
+>
+> insane claude code update. https://t.co/YjGgBoYatb
+
+- **Tweet:** https://x.com/mckaywrigley/status/2019557279222439962
+- **What:** Opus 4.6 swarm mode delivers 2.5x performance improvement with superior results, featuring an innovative multi-agent tmux interface.
+
+## @dani_avila7 - Multi-platform Claude workflow with Ghostty
+> Claude Mobile starts the idea... Ghostty finishes it
+>
+> I basically use Claude Mobile as a notepad now.
+>
+> Whenever something comes to mind, I open the app, pick a repo, and ask Claude to start exploring. Then I just let it run while I go on with my day.
+>
+> Later I jump into Claude Desktop and I'm right back in the same session, with context, structure, and a clearer shape of the idea. I tweak a few things to set up the coding phase.
+>
+> Finally, one click to Ghostty (video), open a couple of worktrees, and start working on the PR.
+>
+> IMPORTANT: when you move to Ghostty, it must be the exact same repo you started on mobile, otherwise the --teleport command will fail
+>
+> *Quoting @dani_avila7:* Before bed, open Claude Mobile, pick a repo, and start Plan Mode for a new feature… good or bad, it doesn't matter.
+>
+> Once the first plan is ready, just close Claude and go to sleep.
+>
+> The next day, continue the session in Claude Desktop to refine it, then move the whole session to Ghostty or VSCode for the final touches.
+>
+> Stay tuned, I'll show the full workflow tomorrow.
+
+- **Tweet:** https://x.com/dani_avila7/status/2019583189430288774
+- **Quoted:** https://x.com/dani_avila7/status/2018535920060805317
+- **What:** Seamless multi-platform workflow: Claude Mobile for exploration, Claude Desktop for refinement, Ghostty for development with context preserved across all surfaces via teleport mechanism.
+
+## @ankrgyl - SQL-based context management in agent Loop
+> We've started implementing these ideas in our agent, Loop, by storing SQL results in files, so the agent can dig through them without bloating context.
+>
+> This provides a nice balance of read efficiency (via SQL instead of 1 file per trace on the FS) with context management. https://t.co/JFUIKZPvRe
+>
+> *Quoting @ankrgyl:* Despite modern LLMs' familiarity with bash, it turns out that they're pretty darn great at writing SQL.
+>
+> In fact, many highly unstructured problems mapped to bash are both less accurate and less token efficient than just giving an agent SQL.
+>
+> We dug into this in depth! https://t.co/KTQRaOkvnS
+
+- **Tweet:** https://x.com/ankrgyl/status/2019584936639099096
+- **Quoted:** https://x.com/ankrgyl/status/2014440816820027900
+- **What:** Loop agent uses SQL for efficient result storage and querying, reducing context bloat while maintaining performance—SQL proves more accurate and token-efficient than bash for agent tasks.
+
+## @samuelcolvin - Monty: Python sandbox runtime in Rust
+> Fuck it, a bit early but here goes:
+>
+> Monty: a new python implementation, from scratch, in rust, for LLMs to run code without host access.
+>
+> Startup time measured in single digit microseconds, not seconds.
+>
+> @mitsuhiko here's another sandbox/not-sandbox to be snarky about 😜
+>
+> Thanks @threepointone @dsp_ (inadvertently) for the idea.
+
+- **Tweet:** https://x.com/samuelcolvin/status/2019604402399768721
+- **Link:** https://github.com/pydantic/monty
+- **Filed:** [monty](./knowledge/tools/monty.md)
+- **What:** Minimal secure Python interpreter in Rust for LLMs to run untrusted code safely with microsecond startup times. 1.8k stars.
+
+## @thekitze - Browser for Lobsters with AI safety features
+> introducing the browser for lobsters 🦞
+>
+> ◈ it's so much better than cloud browsers and playwright 🤓
+> ◈ 0 costs
+> ◈ local where your 🦞 is
+> ◈ can do many things in parallel
+> ◈ does some ✨ to prevent prompt injections
+>
+> invest early 🤪
+>
+> @openclaw prepare for an upgrade buddy ❤️
+
+- **Tweet:** https://x.com/thekitze/status/2019757734007369939
+- **What:** Local browser for Lobsters AI with parallel execution, no costs, built-in prompt injection prevention; mentioned as upgrade for OpenClaw.
+
+## @flydevoxxx - OpenRemote mobile access to OpenClaw
+> 1/7 - I built OpenRemote because I was tired of being stuck at my desk to talk to my AI agent.
+> Now I chat with OpenClaw from anywhere.
+> Here's how it works 👇
+
+- **Tweet:** https://x.com/flydevoxxx/status/2019772300766171222
+- **What:** Mobile/remote access tool for OpenClaw AI agent enabling chat from anywhere, not just desktop.
+
+## @tomcrawshaw01 - Twitter article
+> https://t.co/BnCaayCJDT
+
+- **Tweet:** https://x.com/tomcrawshaw01/status/2019778646043758957
+- **Link:** https://x.com/i/article/2015727333530091522
+- **What:** Twitter article shared.
+
+## @MengTo - Twitter article
+> https://t.co/DoPOtrmlxI
+
+- **Tweet:** https://x.com/MengTo/status/2019789723590697257
+- **Link:** https://x.com/i/article/2019730554846085120
+- **What:** Twitter article shared.
+
+---
+
 # Saturday, January 24, 2026
 
 ## @doodlestein - Prompt for Claude code cleanup
