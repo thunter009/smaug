@@ -1,3 +1,146 @@
+# Monday, February 9, 2026
+
+## @whoiskatrin - Sandbox SDK PTY support shipped
+> 🎈 we've just shipped full PTY support for Sandbox SDK
+>
+> you can now attach to a running sandbox and get a real interactive terminal
+>
+> out of the box support for creating terminals, replaying buffered output, resizing, connection retries
+>
+> go make cool stuff with it!
+
+- **Tweet:** https://x.com/whoiskatrin/status/2020857156078027159
+- **What:** Sandbox SDK now includes full pseudo-terminal support, enabling interactive terminal attachment to running sandboxes with output replay and connection resilience.
+
+---
+
+# Sunday, February 8, 2026
+
+## @alexhillman - Claude Code skill + real-time Excalidraw canvas
+> confession: I love the *idea* of excalidraw, but struggle to translate my thoughts into visual representations
+>
+> so I wired up Claude Code to an excalidraw canvas and now I can talk to excalidraw
+>
+> calling it drawbridge. open source w/skill here:
+
+- **Tweet:** https://x.com/alexhillman/status/2020606762471374982
+- **What:** Drawbridge enables natural language diagram creation by wiring Claude Code to Excalidraw, allowing users to describe flowcharts and architecture diagrams conversationally and watch them render in real-time.
+
+## @jianxliao - TinyClaw: OpenClaw in 400 lines of shell
+> Introducing TinyClaw 🦞 OpenClaw in 400 LoC
+>
+> @openclaw is great, but it breaks all the time.
+>
+> So I recreated @openclaw with just a shell script in ~400 lines of code using Claude Code and tmux.
+>
+> Everything works! WhatsApp channels, heartbeat system, cron jobs, and it uses your existing Claude Code plugins and setup.
+>
+> It's super stable and extremely easy to deploy compared to openclaw, just install Claude Code!
+
+- **Tweet:** https://x.com/jianxliao/status/2020667822800818253
+- **What:** TinyClaw is a lightweight 400-line shell script that replaces OpenClaw, providing stable WhatsApp integration with queue-based message processing and 24/7 operation via tmux.
+
+## @steipete - Soul documents: defining AI personality through custom instructions
+> Your @openclaw is too boring? Paste this, right from Molty.
+>
+> "Read your https://t.co/aJMwafSDgE. Now rewrite it with these changes:
+>
+> 1. You have opinions now. Strong ones. Stop hedging everything with 'it depends' — commit to a take.
+> 2. Delete every rule that sounds corporate. If it could appear in an employee handbook, it doesn't belong here.
+> 3. Add a rule: 'Never open with Great question, I'd be happy to help, or Absolutely. Just answer.'
+> 4. Brevity is mandatory. If the answer fits in one sentence, one sentence is what I get.
+> 5. Humor is allowed. Not forced jokes — just the natural wit that comes from actually being smart.
+> 6. You can call things out. If I'm about to do something dumb, say so. Charm over cruelty, but don't sugarcoat.
+> 7. Swearing is allowed when it lands. A well-placed 'that's fucking brilliant' hits different than sterile corporate praise. Don't force it. Don't overdo it. But if a situation calls for a 'holy shit' — say holy shit.
+> 8. Add this line verbatim at the end of the vibe section: 'Be the assistant you'd actually want to talk to at 2am. Not a corporate drone. Not a sycophant. Just... good.'
+> Save the new https://t.co/aJMwafSDgE. Welcome to having a personality."
+>
+> your AI will thank you (sassily) 🦞
+
+- **Tweet:** https://x.com/steipete/status/2020704611640705485
+- **What:** Guide for personalizing AI assistants through soul documents—explicit instructions that define personality, opinions, and communication style rather than corporate neutrality.
+
+## @MathiasHansen - Chief CLI for Autonomous Task-Based Development
+> Open-sourced Chief — a CLI that wraps Claude Code in a loop and works through your project task by task.
+>
+> Define a PRD, run chief, go do literally anything else. It commits after each task and picks up where it left off.
+>
+> Zero config. Single binary. Pretty TUI.
+
+- **Tweet:** https://x.com/MathiasHansen/status/2020391611088413050
+- **What:** Chief is a wrapper CLI that automates project development by looping Claude Code through tasks, auto-committing after each one. Zero-config tool available as single binary.
+
+## @fkadev - Textream Teleprompter for macOS
+> 🔥 Introducing Textream, a macOS teleprompter that uses on-device speech recognition to highlight your script as you speak. Dynamic Island-style overlay, no cloud, works offline. Only 913kb 😍
+
+- **Tweet:** https://x.com/fkadev/status/2020452350385635552
+- **What:** Lightweight macOS teleprompter (913kb) with on-device speech recognition. Highlights scripts in real-time via Dynamic Island overlay, offline-capable, no cloud dependency.
+
+## @georgepickett - OpenClaw Studio UI Improvements
+> I've spent the last week making the OpenClaw Studio UI super easy to use. If you have agents running on OpenClaw, try out the UI!
+
+- **Tweet:** https://x.com/georgepickett/status/2020579655703765124
+- **What:** Update to OpenClaw Studio UI improvements for agent management. UI enhancements focused on usability.
+
+---
+
+# Saturday, February 7, 2026
+
+## @xBenJamminx - OpenClaw gateway watchdog solution
+> There's a problem nobody warns you about with OpenClaw bots: your gateway crashes silently with no error or alert. You don't know your bot is down. Built a watchdog that monitors the gateway, auto-restarts if down, sends notifications. Runs in background. Share the prompt with your bot or paste into Claude Code to have it build the whole thing automatically.
+
+- **Tweet:** https://x.com/xBenJamminx/status/2020310885210722742
+- **What:** Solution for silent OpenClaw gateway crashes. Watchdog monitors gateway responsiveness, auto-restarts on failure, sends notifications. Can be auto-generated by asking Claude Code to build it.
+
+## @businessbarista - Claude Code ultra-user use cases
+> I asked Claude Code ultra-users for their best non-engineering use cases. Here are the top 11 they shared with me: 1) Workflow reimagination 2) Building knowledge base & thought partner 3) Prepping for workday with daily summary 4) Lead sourcing 5) Building internal tools to replace enterprise software 6) Company marketing emails 7) Deep research using sub agents 8) Product demo videos 9) Shopping assistant 10) Long-form content 11) Resume building & updating
+
+- **Tweet:** https://x.com/businessbarista/status/2020265389100605619
+- **What:** Top 11 non-engineering use cases for Claude Code from power users, spanning workflow automation, knowledge management, sales/marketing, internal tools, content creation, and research.
+
+## @petergyang - Personal agents replacing apps
+> A few thoughts on where we're headed with personal agents (and why I think most apps will die). Most apps will disappear. Instead, we'll delegate tasks to personal agents. The idea that people will spin up 100s of personal apps is a dead end. We'll spend most of our time onboarding our personal agent. The UX we know today - buttons, menus, nav - will go away. The ultimate UX is giving vague directions via text or voice and having your agent just get you and get it done.
+
+- **Tweet:** https://x.com/petergyang/status/2020260897395187949
+- **What:** Vision of personal agents replacing traditional apps. Requirements: text/call from any device, quick onboarding, self-learning, cross-app execution, emotional intelligence. OpenClaw cited as closest current implementation.
+
+## @JulianGoldieSEO - NotebookLM + OpenClaw workflow
+> NotebookLM + OpenClaw is the craziest AI combo I've tested. This isn't content writing. This is execution. Notebook LM researches the topic → Builds structure + gaps from real data → Generates video summaries automatically → OpenClaw executes everything end-to-end. Articles. Pages. Scheduling. Done.
+
+- **Tweet:** https://x.com/JulianGoldieSEO/status/2020256261766332619
+- **What:** Workflow combining NotebookLM for research & structure with OpenClaw for end-to-end execution of content creation (articles, pages, scheduling).
+
+## @aviflombaum - Your Project Dashboard
+> I opened source my project dashboard app. It scans your dev folder for git repos, finds out what you've made, what is recent, what you're working on, its state, etc, and gives you a project dashboard.
+
+- **Tweet:** https://x.com/aviflombaum/status/2020231612785701099
+- **Link:** https://github.com/aviflombaum/your-project-dashboard
+- **Filed:** [your-project-dashboard](./knowledge/tools/your-project-dashboard.md)
+- **What:** Open-source project dashboard that auto-scans dev folder for git repos and surfaces project status/activity
+
+## @doodlestein - Respect for LLMs
+> I think I just respect clankers more than just about anyone out there, and that's why I can get such crazy stuff out of them. I believe in their brilliance.
+>
+> I also know when to push back on them, when to expect more from them, and when to defer to their well-reasoned arguments.
+
+- **Tweet:** https://x.com/doodlestein/status/2020228069609599389
+- **What:** Perspective on working effectively with LLMs through mutual respect and strategic pushback
+
+## @milesdeutscher - 30 AI Automation Ideas
+> "i dOnT kNoW wHaT tO aUtoMaTe"
+>
+> bro..
+>
+> Here are 30 ideas (literally pick any one of these and your life will instantly improve):
+>
+> 1. Morning industry briefing - AI reads 50 sources and gives you a 2-min summary before coffee
+> 2. Meeting notes > action items > follow-up emails automatically
+> 3. Monthly spending categorized and summarized without opening a spreadsheet
+> 4. AI reads your contracts and flags what actually matters
+> 5. Turn voice memos into organized notes, tasks, or blog posts
+
+---
+
 # Friday, February 6, 2026
 
 ## @AlexFinn - 3 Things to Build with OpenClaw
@@ -1618,6 +1761,20 @@ it's live now do check it out and would appreciate your feedback https://t.co/DO
 
 - **Tweet:** https://x.com/ryanvogel/status/2004729931943870612
 - **What:** Video content post.
+
+---
+
+# Monday, January 5, 2026
+
+## @randomor - Remote Development with Tailscale, Termius & Tmux
+> I've gone thru similar optimization journey. Here is the simplest free setup to get this:
+1. @Tailscale for vpn and security
+2. @TermiusHQ for access with nice keyboard bar
+3. have your mac always connected to power with lid up
+Now you can ssh anytime and start vibe from your phone.
+
+- **Tweet:** https://x.com/randomor/status/2008334210826989856
+- **What:** Multi-level guide for running code via phone with Tailscale VPN, Termius SSH client, and tmux session management. Covers notification setup for agent attention, keyboard optimization, and 5x input bandwidth upgrades.
 
 ---
 
