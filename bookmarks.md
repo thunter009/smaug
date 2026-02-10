@@ -1,5 +1,106 @@
 # Monday, February 9, 2026
 
+## @fortelabs - Twitter article link
+> https://t.co/YSgbemhKaq
+
+- **Tweet:** https://x.com/fortelabs/status/2020903790753480806
+- **Link:** https://x.com/i/article/2020897087550840838
+- **What:** Twitter article from Tiago Forte (content not extracted).
+
+## @resetbasis - Twitter article link
+> https://t.co/qfociIhU4x
+
+- **Tweet:** https://x.com/resetbasis/status/2020872304176009659
+- **Link:** https://x.com/i/article/2020862301398515712
+- **What:** Twitter article from m. stanfield (content not extracted).
+
+## @ghostwriternr - Cloudflare Sandbox SDK parallel bash sessions
+> why build on cloudflare sandboxes? <50 lines of code gives you:
+> - interactive access to parallel bash sessions
+> - built-in replays so you can reload and not lose state
+> - durable objects to handle real-time sync all day
+>
+> @whoiskatrin and I had so much fun with this 🎉 so can you!
+>
+> *Quoting @whoiskatrin:* 🎈 we've just shipped full PTY support for Sandbox SDK
+>
+> you can now attach to a running sandbox and get a real interactive terminal
+>
+> out of the box support for creating terminals, replaying buffered output, resizing, connection retries
+>
+> go make cool stuff with it!
+
+- **Tweet:** https://x.com/ghostwriternr/status/2020860573504721023
+- **Quoted:** https://x.com/whoiskatrin/status/2020857156078027159
+- **What:** Demo showcasing Cloudflare Sandbox SDK's new PTY support enabling parallel bash sessions with state replay and durable real-time sync in <50 lines.
+
+## @Team9_ai - Twitter article link
+> https://t.co/mEwwHMqYhh
+
+- **Tweet:** https://x.com/Team9_ai/status/2020846025418916052
+- **Link:** https://x.com/i/article/2020842714242433024
+- **What:** Twitter article from Team9 (content not extracted).
+
+## @alexellisuk - Slicer for Mac: WSL-like VM for macOS
+> Slicer for Mac: early preview @slicervm
+>
+> 🐧 Single WSL-like VM that's yours and always available - boots in ~ 1/2s
+> 🐳 Run Docker + K3s - feels like you're "on Linux"
+> 🤖 Launch disposable systems via API/CLI/SDK for AI Agents w/shared folders
+
+- **Tweet:** https://x.com/alexellisuk/status/2020816659397722510
+- **What:** WSL-like virtualization for macOS with sub-second boot, persistent Linux VM for Docker/K3s, and API-driven disposable environments for AI agents.
+
+## @chongdashu - tmux mouse scrolling fix for Claude Code
+> For those complaining that tmux has a scrolling bug - try the following fix:
+>
+> > open ~/.tmux.conf
+> > add the following line to it
+> > `set -g mouse on`
+> > save and restart
+>
+> You can then scroll through the chat for claude code / codex sessions as per normal.
+>
+> *Quoting @chongdashu:* Finally got around to setting up my mac and iphone so that I can vibe code with Codex / Claude Code on the go
+>
+> > tmux - persistent sessions
+> > tailscale - private secure network
+> > termius - ssh client
+>
+> Left: iOS
+> Right: macOS
+>
+> Always in sync.
+> Pick  up where you left off easily.
+
+- **Tweet:** https://x.com/chongdashu/status/2020792219070763151
+- **Quoted:** https://x.com/chongdashu/status/2020497451409641894
+- **What:** Fix for tmux scrolling issues in Claude Code/Codex by enabling mouse mode in tmux config.
+
+## @pipelineabuser - opnleads.com: new business registration monitoring
+> this one is stupid simple and stupidly effective.
+>
+> opnleads .com monitors business registration filings across the country. when someone registers a new LLC, new corp, new anything - opnleads catches it up to 30 days before it hits public databases.
+>
+> why is this insane?
+>
+> because a brand new business needs EVERYTHING.
+>
+> banking. insurance. accounting software. website. business cards. marketing. legal. payroll. phone system. internet. office supplies.
+>
+> and nobody has contacted them yet. they're not in any database. they haven't been spammed by a single vendor.
+>
+> you're literally the first person to reach out.
+>
+> "congrats on launching [business name]. most new [industry] businesses need [your thing] in the first 90 days. happy to help you get set up."
+>
+> that's warm outreach to someone with active buying intent and zero competition.
+>
+> if you sell to small businesses, local services, or new companies - this is the single highest ROI lead source that exists.
+
+- **Tweet:** https://x.com/pipelineabuser/status/2020967459516215808
+- **What:** Service monitoring business registration filings 30 days before public databases, enabling first-contact outreach to new businesses with zero vendor competition.
+
 ## @whoiskatrin - Sandbox SDK PTY support shipped
 > 🎈 we've just shipped full PTY support for Sandbox SDK
 >
@@ -15,6 +116,32 @@
 ---
 
 # Sunday, February 8, 2026
+
+## @doodlestein - FrankenSQLite: 18k-line spec built with AI
+> The FrankenSQLite specification document topped out at 18k lines after many dozens of rounds of fixes and tweaks. Then I turned it into hundreds of beads last night and this morning, and now most of them are implemented.
+>
+> The spec is not just another plan. I believe it is one of the most remarkable technical documents I've ever seen.
+>
+> Why? Well, I'm 100% convinced that there isn't a single human being on the planet who could have written it. It simply requires too much knowledge of extremely advanced and esoteric math AND extreme computer science chops.
+>
+> Now, I certainly should get some credit for directing it in a certain way. My obsessions with RaptorQ fountain codes should be evident. But this is a groundbreaking design that is radically advanced in so many ways. I can't wait for it to all work in the next couple days so I can send it to my hero, Richard Hipp, creator of SQLite.
+>
+> The process of making this was so fascinating, and I believe historical in a sense, that I decided to document it in a nice, interactive way for posterity, which you can see here:
+>
+> https://t.co/iqisuKn21N
+>
+> (this will eventually be the project website, but right now only hosts this section).
+>
+> *Quoting @doodlestein:* OK, I need to pass out now but the plan/spec for FrankenSQLite is basically done and locked in:
+>
+> https://t.co/UxAJzVKJOy
+>
+> This is truly nuts. The plan is 11k lines long and is ridiculously over the top with advanced math and all my favorite stuff, like RaptorQ. And asupersync. 🤯
+
+- **Tweet:** https://x.com/doodlestein/status/2020641985858572775
+- **Quoted:** https://x.com/doodlestein/status/2020072606204940559
+- **Link:** https://frankensqlite.com/spec_evolution
+- **What:** Interactive documentation of how an 18k-line FrankenSQLite specification was created through AI collaboration, featuring advanced math like RaptorQ fountain codes. Evolved from 11k to 18k lines through iterative refinement.
 
 ## @alexhillman - Claude Code skill + real-time Excalidraw canvas
 > confession: I love the *idea* of excalidraw, but struggle to translate my thoughts into visual representations
