@@ -1,3 +1,98 @@
+# Tuesday, February 10, 2026
+
+## @almonk - Echo: SSH Client for iPad
+> We built a new SSH client for iOS. It's fast, and simple and runs Ghostty under the hood.
+>
+> It's turned my iPad into the ultimate vibe coding computer. Take your agents on the go, monitor your OpenClaws, manage your servers, run `top`.
+>
+> It's available today on AppStore. Say hi to Echo🐬
+
+- **Tweet:** https://x.com/almonk/status/2021154926064435609
+- **Filed:** [echo-ssh-client](./knowledge/articles/echo-ssh-client.md)
+- **What:** Fast iOS SSH client running Ghostty that transforms iPad into a portable coding environment for agent management and server access.
+
+## @eriklangille - Clauntty: Open Source iOS Terminal
+> Crazy how the mobile terminal I wrote over Christmas is still better than the one these guys are charging $3 for
+>
+> Yes it forks ghostty too, I contributed upstream to get the iOS build working
+>
+> open source at https://t.co/lSHjtl6Rm1 or DM me for testflight
+> *Quoting @almonk:* We built a new SSH client for iOS. It's fast, and simple and runs Ghostty under the hood. It's turned my iPad into the ultimate vibe coding computer. Take your agents on the go, monitor your OpenClaws, manage your servers, run `top`. It's available today on AppStore. Say hi to Echo🐬
+
+- **Tweet:** https://x.com/eriklangille/status/2021257965005664667
+- **Quoted:** https://x.com/almonk/status/2021154926064435609
+- **Filed:** [clauntty](./knowledge/tools/clauntty.md)
+- **What:** Open source iOS terminal with native Claude Code support, built in Swift. Forks Ghostty and demonstrates upstream contribution to enable iOS builds.
+
+## @joonlee - Kalshi CEO Can't Explain Insider Trading Concerns
+> On Squawk Box, Kalshi CEO Tarek Mansour struggles to answer why a Bad Bunny dancer -- who watched rehearsals -- betting on the Halftime Show predictions markets would not be considered insider trading.
+>
+> Sports was estimated to be 90% of betting on Kalshi during the NFL season.
+
+- **Tweet:** https://x.com/joonlee/status/2021267616912798147
+- **Filed:** [kalshi-insider-trading](./knowledge/articles/kalshi-insider-trading.md)
+- **What:** Regulatory concern raised about prediction market platform Kalshi: CEO unable to clearly distinguish insider information usage from insider trading in halftime show betting markets.
+
+## @tonysheng - Warcraft III Peon Notification System
+> I built a Claude Code notification system that uses Warcraft III Peon voice lines.
+>
+> It's probably the stupidest thing I've ever shipped. And according to everybody that has used it, it's also incredibly useful.
+
+- **Tweet:** https://x.com/tonysheng/status/2021279560046874641
+- **Filed:** [peon-notification-system](./knowledge/tools/peon-notification-system.md)
+- **What:** Creative notification system for Claude Code using Warcraft III Peon voice lines. Absurdly useful—distinctive audio cues prove highly effective for user attention.
+
+## @codyschneiderxx - Claude Code for Enterprise SEO Automation
+> i can't express to you how stupidly powerful claude code is for SEO with an .env file containing your keywords everywhere API key and your dataforseo API key
+>
+> [Detailed breakdown of 6 major SEO workflows: keyword universe analysis, programmatic landing pages, link building, internal linking, technical audit, reporting]
+
+- **Tweet:** https://x.com/codyschneiderxx/status/2021283027775561898
+- **Filed:** [claude-code-seo-workflows](./knowledge/articles/claude-code-seo-workflows.md)
+- **What:** Comprehensive guide to automating enterprise SEO at scale using Claude Code with Keywords Everywhere and DataForSEO APIs. Executes complete pipelines (keyword research, link building, technical audits) in minutes.
+
+## @buccocapital - AI as Financial Advisor
+
+> Unless you have $5M+, AI is already good enough to be your financial advisor. Even then it's probably good enough
+>
+> Try it. Share net worth, where/how you've allocated assets, what your goals are. Ask it to analyze and identify opportunities for improvement. Stress test different scenarios
+>
+> It gets basically everything right. Which tax advantaged accounts to use. Whether and which trusts to set up based on federal and state variables. Yup, estate planning advice too
+>
+> Really remarkable. And speaks to the fact that even if the models don't improve, what we have today is going to totally transform white collar work
+
+- **Tweet:** https://x.com/buccocapital/status/2021290232205676944
+- **What:** Demonstrates AI's capability in financial advisory for wealth management, tax optimization, and estate planning—capable enough for most use cases without professional advisors.
+
+## @mrmagan_ - Tambo 1.0 Generative UI Toolkit
+
+> build an agent that speaks your UI.
+>
+> your charts. your forms. your seat maps.
+>
+> multi-turn, streaming, interactive.
+>
+> introducing tambo 1.0, the open-source generative UI toolkit for react.
+
+- **Tweet:** https://x.com/mrmagan_/status/2021296847893967092
+- **Filed:** [tambo](./knowledge/tools/tambo.md)
+- **What:** Open-source React toolkit enabling generative UI with multi-turn, streaming interactions for charts, forms, and complex visualizations.
+
+## @mikker - Code Review Prompt Pattern
+
+> I use this CONSTANTLY. It's almost the only thing besides vanilla agents I use regularly. And it's so simple, it's just a prompt! Run it before committing. Run it when you feel like things are growing hairy.
+> Codex-5.3-high does this very well 😙👌
+
+- **Tweet:** https://x.com/mikker/status/2021310724988166443
+- **What:** Endorsement of a simple prompt-based code review pattern used pre-commit for keeping codebase clean and manageable.
+
+## @pradeep24 - Tweet Link
+
+- **Tweet:** https://x.com/pradeep24/status/2021319785947316490
+- **What:** References another tweet but content inaccessible—appears to be a shared link about relevant tool or pattern.
+
+---
+
 # Monday, February 9, 2026
 
 ## @fortelabs - Twitter article link
