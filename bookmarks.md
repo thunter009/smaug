@@ -1,3 +1,138 @@
+# Wednesday, February 11, 2026
+
+## @barinov - Nightshift: Agentic Codebase Cleanup
+> Nightshift is a dopamine hidden gem for agentic junkies. You go to sleep, agents wake up and fix your codebase, you wake up to a bunch of PRs with clean-ups and refactors ready to review. It's optimized for leftover tokens by @zzzmarcus
+
+- **Tweet:** https://x.com/barinov/status/2021491649436864971
+- **Tags:** [[agents]] [[automation]] [[code-cleanup]]
+- **What:** Go tool that uses leftover Claude/Codex budget to run automated PRs with codebase improvements. 206 stars on GitHub.
+
+## @gmickel - Obsidian CLI Skill
+> Here's a SKILL for it: npx skills add gmickel/obsidian-skill. Built it during a meeting so YMMV
+
+- **Tweet:** https://x.com/gmickel/status/2021597367263256734
+- **Tags:** [[obsidian]] [[cli]] [[skills]]
+- **What:** CLI skill for Obsidian built by Gordon Mickel. Quote tweet about Obsidian's new CLI feature (v1.12 early access).
+
+## @paoloanzn - Chrome Extension Auth Reverse Engineering
+> Reverse engineered a competitor's chrome extension to steal their entire linkedin authentication method in 10 min using claude code...
+
+- **Tweet:** https://x.com/paoloanzn/status/2021639625719341537
+- **Tags:** [[chrome-extensions]] [[linkedin]] [[authentication]] [[api]]
+- **What:** Technical thread on reverse-engineering LeadShark's Chrome extension to extract LinkedIn session auth. Details how to access Chrome extension source, use Claude to analyze proprietary logic, and implement cookie-based authentication for Voyager API. Highlights security lesson: obfuscate extension code to prevent competitive copying.
+
+## @orhundev - Hazelnut: File Organizer TUI
+> Omg I can finally organize my downloads folder 😍. Hazelnut — A file organizer TUI inspired by Hazel
+
+- **Tweet:** https://x.com/orhundev/status/2021650986423439419
+- **Tags:** [[rust]] [[cli]] [[automation]] [[tui]] [[productivity]]
+- **What:** Terminal-based file organizer written in Rust using Ratatui. Watches folders, applies rules (move/rename/archive/run commands) via daemon. 122 stars on GitHub.
+
+## @0xSero - Zed IDE Remote Development Setup
+> Did you buy a Mac Mini for openclaw? Let me make your life better. Install Zed IDE, configure system window tabs, add repos and remote directories to control multiple machines from one window.
+
+- **Tweet:** https://x.com/0xSero/status/2021710890974773307
+- **Tags:** [[zed]] [[remote-dev]] [[workflow]]
+- **What:** Setup guide for using Zed IDE as centralized control panel for multiple machines. Add local repos and remote directories via IP/Tailscale. Manage all computers from single window without switching.
+
+## @jumperz - Discord Auto-Learning Pipeline for Article Curation
+> one of the best things i applied to my discord setup is an auto learning pipeline that learns from the articles you save from X or anywhere else
+>
+> your agents are literally learning all the time, and your setup is getting better and better..
+>
+> so first, i drop a link into drop-articles channel then an agent reads the full article and posts a clean summary to tl;dr channel
+>
+> another agent takes that summary and pulls out what's actually useful for my specific setup and goals then posts it to apply-this channel
+>
+> if there's an alpha signal buried in the article my research agent picks it up and flags it separately
+>
+> if there's something i should actually act on it gets posted as a task to next-steps
+>
+> then the agent scores every article based on how relevant it is to my goals and current setup
+>
+> if its high score goes straight into morning-reads channel so it's waiting for me there
+>
+> and if its interesting but not urgent goes into night-reads for before bed
+>
+> everything else gets archived into research-archive channel so nothing is lost and i can search it later
+>
+> =====
+>
+> how you can build this yourself:
+>
+> >add these channels to your discord server
+>
+> drop, tldr, apply, signals, next-steps, morning-reads, night-reads, archive
+>
+> >when a link appears, it fetches the article, summarises it, and posts to each channel with a different prompt
+>
+> >the tldr prompt is just "summarize this in 5 bullets"
+> >the apply prompt is "what from this article can i actually use in [your context]"
+> >the signal prompt is "is there anything time sensitive or high value here"
+> >the action prompt is "what should i actually do based on this"
+>
+> the scoring prompt is "rate 1 to 10 how relevant this is to [your goals] and route it to morning, night, or archive"
+>
+> ========
+>
+> so its just a one link dropped and the whole pipeline runs...
+>
+> every article actually goes somewhere now instead of dying in a browser tab or bookmarks list..and your swarm is always on an improvement journey..
+
+- **Tweet:** https://x.com/jumperz/status/2021724266757074989
+- **Tags:** [[agents]] [[discord]] [[workflows]] [[knowledge-management]]
+- **What:** Multi-agent Discord pipeline that automatically processes saved articles through filtering, summarization, extraction, scoring, and routing into relevant channels (TL;DR, apply-this, signals, next-steps, morning-reads, night-reads, archive). Each stage uses different prompts to extract specific value.
+
+## @VictorTaelin - Hands-Free Voice Coding Setup via Mobile SSH
+> I think I found my hands-free vibe coding setup
+>
+> it is simple: there is an app called Moshi, which is like Termius - it allows me to access my Mac Mini via SSH - except, instead of a big keyboard taking 50% of the screen, it has a minimal clean interface with a mic button that transcribes my voice (via Whispr) into shell commands
+>
+> that way, I just SSH into my machine, type 'claude' or 'codex', and start sending commands or asking questions. I managed to quickly clone Bend2, build it, run the tests, edit files, and ask it to show me functions. simple, efficient and it just works (the app is a bit buggy tho)
+>
+> it is quite mind-blowing to realize that I don't really need a notebook to code anymore, I can actually do anything from my phone while I walk a dog, and that feels very liberating
+
+- **Tweet:** https://x.com/VictorTaelin/status/2021725683513258165
+- **Tags:** [[mobile-coding]] [[voice-interface]] [[remote-dev]]
+- **What:** Uses Moshi (SSH terminal app) with Whisper voice transcription to code from phone. SSH into Mac Mini, type 'claude' or 'codex', issue voice commands for file edits, tests, and queries. Minimal UI with mic button. Enables hands-free, location-independent coding.
+
+## @HiTw93 - Happy - Claude Code Mobile Client
+> I came across a project called Happy, a mobile and web client for Claude Code and Codex that lets you run your coding agent from anywhere.
+>
+> It acts as a secure wrapper around Claude Code or Codex with end-to-end encryption, realtime voice support, and a fully featured UI. On your computer, you run happy instead of claude, or happy codex instead of codex. When you want to take over from your phone, it seamlessly restarts the session in remote mode. Press any key on your keyboard and control switches back instantly. It's a clever way to make coding agents truly cross-device.
+
+- **Tweet:** https://x.com/HiTw93/status/2021727952229355530
+- **Links:** https://happy.engineering/
+- **Tags:** [[tools]] [[mobile-coding]] [[claude-code]]
+- **What:** Happy is a mobile/web client for Claude Code and Codex with E2E encryption, voice support, cross-device session management. Run `happy` or `happy codex` on desktop; seamlessly switch to mobile mode. Keyboard input switches control back to desktop instantly. Makes coding agents truly portable.
+
+## @0xzak - Hierarchical Model Routing for 10x Cost Reduction
+> My Anthropic bill for the past 2 weeks has been insane and I've been desperately trying to figure out how to cut costs. I think I finally figured out how to cut it by 10x, so I hope this works.
+>
+> Most agent tasks are janitorial. Reading files, checking status, formatting output, answering "what time is it in Tokyo?" or "why is ETH price down so bad?" This stuff doesn't require a $15/M model.
+>
+> The fix is hierarchical routing based on task complexity:
+>
+> - Routine (80%) > DeepSeek at $0.14/M
+> File ops, status checks, simple Q&A, formatting
+>
+> - Moderate (15%) > Sonnet at $3/M
+> Code, summaries, drafts, light analysis
+>
+> - Hard (5%) > Opus at $15/M
+> Debugging, architecture, multi-step reasoning
+>
+> $225/month on pure Opus vs $19/month with hierarchy.
+>
+> Packaged this into an agent skill that teaches your AI to classify tasks and route them to the cheapest model that can handle them. 28 tests, works with OpenClaw, Claude Code, or any agent system. Boom. Check it out and lmk if it saves you money without degrading your output.
+
+- **Tweet:** https://x.com/0xzak/status/2021736621264019839
+- **Links:** https://github.com/zscole/model-hierarchy-skill
+- **Tags:** [[cost-optimization]] [[agent-routing]] [[tools]]
+- **What:** Hierarchical model routing skill reduces Anthropic costs from $225→$19/month via task classification. Routes routine tasks (80%) to DeepSeek ($0.14/M), moderate (15%) to Sonnet ($3/M), hard (5%) to Opus ($15/M). 28 tests. Works with OpenClaw, Claude Code, any agent system. Skill auto-classifies task complexity and routes accordingly.
+
+---
+
 # Tuesday, February 10, 2026
 
 ## @almonk - Echo: SSH Client for iPad
