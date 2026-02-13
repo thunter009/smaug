@@ -1,3 +1,128 @@
+# Thursday, February 12, 2026
+
+## @kaostyl - Battle-Tested OpenClaw Agent Patterns
+> I've been running OpenClaw 24/7 for 3 weeks. Here's what actually works for autonomous agents (not theory — battle-tested patterns):
+>
+> 🧠 Memory architecture matters more than prompts
+>
+> Don't dump everything in memory.md. Split it:
+>
+> • memory/active-tasks.md → your "save game" (crash recovery)
+> • memory/YYYY-MM-DD.md → daily raw logs
+> • memory/projects.md, lessons.md, patterns.md → thematic long-term
+> Why? Your agent wakes up fresh every session. These files ARE its brain. The split means it loads only what it needs.
+>
+> ⚡ Sub-agents are your 10x multiplier
+>
+> Stop doing things sequentially. I spawn 3-5 sub-agents in parallel for any big task. Example: deploying 11 websites simultaneously — 4 agents, each handling a batch, all running at once.
+>
+> The trick: define clear success criteria BEFORE spawning. Each agent must validate its own work, then YOU verify before announcing "done."
+>
+> ⏰ Cron > Heartbeats for specific tasks
+>
+> Heartbeats are great for batching periodic checks (email + calendar + mentions in one turn).
+>
+> But for precise schedules? Use cron jobs:
+>
+> • Daily content ideas at 6am
+> • Overnight research scout at 2am
+> • Tech watch at 8am
+> Each runs in isolation with its own context. No token waste from loading the full conversation history.
+>
+> 🔄 The crash recovery pattern nobody talks about
+>
+> Your agent WILL crash/restart. active-tasks.md is the safety net:
+>
+> • When you START a task → write it
+> • When you SPAWN a sub-agent → note session key
+> • When it COMPLETES → update
+> On restart, agent reads this file first and resumes autonomously. No "what were we doing?" — it figures it out.
+>
+> 🛡️ Security rule that saved me
+>
+> Use your strongest model (Opus) for ANY task that reads external web content. Weaker models are more vulnerable to prompt injection from hostile websites.
+>
+> Internal tasks (file reading, reminders, local work) → Sonnet is fine.
+> External content (tweets, articles, emails) → Opus only.
+>
+> 📝 heartbeat.md should be tiny
+>
+> I see people stuffing 200 lines in their heartbeat.md. Bad idea — it runs every ~30min and burns tokens.
+>
+> Keep it under 20 lines. Just a checklist:
+>
+> • Check active tasks freshness
+> • Session health (archive bloated sessions)
+> • Self-review every ~4h
+> Heavy work goes in cron jobs, not heartbeats.
+>
+> 🎯 The real unlock: Skills with routing logic
+>
+> If you have multiple skills, add "Use when / Don't use when" in each description. Without this, the agent misfires ~20% of the time picking the wrong skill.
+>
+> Think of it as if/else logic for your agent's decision-making.
+>
+> The bottleneck isn't AI capability anymore. It's YOUR speed reviewing what the agents produce. Build systems that close the loop automatically, and you'll 10x your output.
+
+- **Tweet:** https://x.com/kaostyl/status/2021856676551278845
+- **What:** Production lessons from running autonomous OpenClaw agents 24/7: memory architecture patterns (split files vs monolithic), parallel sub-agents for 10x throughput, cron vs heartbeats for scheduling, crash recovery with active-tasks.md, security models (Opus for external content), and skill routing logic. Key insight: human review speed is the bottleneck, not AI capability.
+
+## @mirthtime - 11 OpenClaw Setup Tips
+> *Quoting @lennysan:* What's your best tip for getting the most out of @openclaw?
+>
+> 1) Set up the workspace as a private git repo/obsidian vault.
+> 2) Create a /save command that does a memory sweep + commits to the repo. Use it after adding a feature/system or telling it something important.
+> 3) Set up a self healing system with a watchdog to look for gateway slowdowns/issues and auto restart if there are ever timeouts.
+> 4) Tailscale all your devices together so it can ssh into any of them and do stuff for you.
+> 5) sometimes it kills itself when trying something. Terminus on your phone lets you ssh in, run codex and debug on the go.
+> 6) Use different models for different tasks to save on usage. Opus for chatting/orchestrating, codex for coding, Gemini flash for cron jobs (or a local model))
+> 7) Make skills often.
+> 8) give it tools/apis and skills for things like image gen, video gen etc.
+> 9) Export your data from ChatGPT and put it in your obsidian vault.
+> 10) set up a cron for it to ask "get to know you" questions on a random basis so over time it's understanding of you grows. If you do this right it becomes like a second brain that gets better the more you use it.
+> 11) enable the QMD memory feature
+
+- **Tweet:** https://x.com/mirthtime/status/2021935752930599352
+- **Quoted:** https://x.com/lennysan/status/2021715167441301945
+- **What:** OpenClaw setup checklist including git/Obsidian vault integration, /save command for memory snapshots, self-healing watchdog, Tailscale for multi-device SSH access, Terminus for mobile debugging, model selection per task type, tool/API integrations, ChatGPT export import, and personalization cron to grow understanding over time.
+
+## @mds - Real Estate Research Agent for Non-Technical Users
+> *Quoting @MatiasQuena:* @mds @openclaw Since you use Openclaw have you thought of use cases for normies ? That no other AI tool can do
+>
+> A (normie) use case for @openclaw
+>
+> I setup a workspace so my wife can text her own agent to spawn a real estate research team.
+>
+> She does nothing except interact with the text thread
+>
+> I setup cron, heartbeat, etc.
+>
+> The team and skills:
+>
+> Zillow property analyzer
+> Zoning laws for rentals
+> Cost seg analysis
+> AirDNA analysis
+> Maybe another I'm forgetting
+>
+> She just has to give it a property address
+>
+> Saves research into her workspace for later
+
+- **Tweet:** https://x.com/mds/status/2021972042132722043
+- **Quoted:** https://x.com/MatiasQuena/status/2021970713570423303
+- **What:** Example of OpenClaw for non-technical users: text-based real estate research agent that spawns specialized analysis team (Zillow, zoning laws, cost segregation, AirDNA) from a simple property address. Backend handles cron/heartbeat, user just texts and gets workspace-saved reports.
+
+## @tom_doerr - Obsidian + Claude Code PKM Starter Kit
+> Personal knowledge management system with AI agents and Git backups
+
+- **Tweet:** https://x.com/tom_doerr/status/2022091734457491921
+- **Link:** https://github.com/ballred/obsidian-claude-pkm
+- **Filed:** [obsidian-claude-pkm.md](./knowledge/tools/obsidian-claude-pkm.md)
+- **What:** Complete PKM starter combining Obsidian vault with Claude Code agents. Features unified skills (/daily, /weekly), custom agents (note organizer, goal aligner), hooks for auto-commit, modular rules, productivity coach output style, and terminal status line. 939 stars. Go from zero to functional PKM in 15 minutes.
+
+---
+
 # Wednesday, February 11, 2026
 
 ## @barinov - Nightshift: Agentic Codebase Cleanup
