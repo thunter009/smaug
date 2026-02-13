@@ -1,5 +1,15 @@
 # Thursday, February 12, 2026
 
+## @PaulRBerg - Agent Skills Collection (Git, Code Review, Workflows)
+> Sharing my personal agent skills repo — git commits, code review, code simplification, github issue creation, and more.
+>
+> https://t.co/xdCFC5EtZE
+
+- **Tweet:** https://x.com/PaulRBerg/status/2021948480000802818
+- **Link:** https://github.com/PaulRBerg/agent-skills
+- **Filed:** [agent-skills-prb.md](./knowledge/tools/agent-skills-prb.md)
+- **What:** Paul Razvan Berg's personal agent skills collection for Claude Code/Codex with 18+ skills covering git ops (conventional commits, release workflows), code quality (BiomeJS, review, simplification), CLI guidance (Foundry cast, GitHub gh, Just, Sentry), and developer tools (dep bumps, linting). Includes skill configuration patterns for invocation control and execution contexts.
+
 ## @kaostyl - Battle-Tested OpenClaw Agent Patterns
 > I've been running OpenClaw 24/7 for 3 weeks. Here's what actually works for autonomous agents (not theory — battle-tested patterns):
 >
