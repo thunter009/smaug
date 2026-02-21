@@ -638,8 +638,10 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const state = loadState(config);
   const source = options.source || config.source || 'bookmarks';
   const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
+  const downloadMedia = options.downloadMedia ?? config.downloadMedia ?? false;
   const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
-  const configWithOptions = { ...config, source, includeMedia, expandThreads };
+  const mediaDir = options.mediaDir ?? config.mediaDir ?? './media';
+  const configWithOptions = { ...config, source, includeMedia, downloadMedia, expandThreads, mediaDir };
   const count = options.count || 20;
 
   // Build fetch options for pagination
@@ -905,6 +907,22 @@ export async function fetchAndPrepareBookmarks(options = {}) {
       // Only included if includeMedia is true (--media flag)
       const media = configWithOptions.includeMedia ? (bookmark.media || []) : [];
 
+      // Download videos via yt-dlp if --download-media is set
+      let downloadedMedia = [];
+      if (configWithOptions.downloadMedia) {
+        const hasVideo = (bookmark.media || []).some(m => m.type === 'video' || m.type === 'animated_gif');
+        if (hasVideo) {
+          const mediaDir = configWithOptions.mediaDir || './media';
+          const tweetUrl = `https://x.com/${author}/status/${bookmark.id}`;
+          console.log(`  Downloading video from ${tweetUrl}...`);
+          const result = downloadMedia(tweetUrl, mediaDir);
+          if (result) {
+            downloadedMedia.push(result);
+            console.log(`  Downloaded: ${result.filename}`);
+          }
+        }
+      }
+
       // Build tags array from folder tag (if present)
       const tags = [];
       if (bookmark._folderTag) {
@@ -930,6 +948,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         createdAt: bookmark.createdAt,
         links,
         media,
+        downloadedMedia,
         tags,
         date,
         isReply: !!bookmark.inReplyToStatusId,
