@@ -238,6 +238,7 @@ async function main() {
       const specificIds = args.filter(a => a.match(/^\d{10,}$/));
       const force = args.includes('--force') || args.includes('-f');
       const includeMedia = args.includes('--media') || args.includes('-m');
+      const expandThreads = args.includes('--threads') || args.includes('-t');
       const fetchAll = args.includes('--all') || args.includes('-a') || args.includes('-all');
 
       // Parse --source flag
@@ -264,6 +265,7 @@ async function main() {
         force,
         source,
         includeMedia,
+        expandThreads,
         all: fetchAll,
         maxPages
       });

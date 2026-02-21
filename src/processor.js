@@ -272,6 +272,7 @@ export function fetchBookmarks(config, count = 10, options = {}) {
     // Use --all for large fetches (> 50) or when explicitly requested
     const useAll = options.all || count > 50;
     const folderId = options.folderId;
+    const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
 
     let cmd;
     if (useAll) {
@@ -286,6 +287,11 @@ export function fetchBookmarks(config, count = 10, options = {}) {
       cmd = folderId
         ? `${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`
         : `${birdCmd} bookmarks -n ${count} --json`;
+    }
+
+    // Thread expansion: fetch author's self-reply chain + metadata
+    if (expandThreads) {
+      cmd += ' --author-chain --thread-meta --sort-chronological';
     }
 
     console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
@@ -632,13 +638,15 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const state = loadState(config);
   const source = options.source || config.source || 'bookmarks';
   const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
-  const configWithOptions = { ...config, source, includeMedia };
+  const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
+  const configWithOptions = { ...config, source, includeMedia, expandThreads };
   const count = options.count || 20;
 
   // Build fetch options for pagination
   const fetchOptions = {
     all: options.all || count > 50,
-    maxPages: options.maxPages
+    maxPages: options.maxPages,
+    expandThreads
   };
 
   let tweets = [];
@@ -903,6 +911,16 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         tags.push(bookmark._folderTag);
       }
 
+      // If thread expansion is on and this tweet has thread metadata, capture it
+      let threadTweets = [];
+      if (configWithOptions.expandThreads && bookmark.isThread) {
+        console.log(`  Thread detected, fetching full thread...`);
+        threadTweets = fetchThread(configWithOptions, bookmark.id);
+        if (threadTweets.length > 1) {
+          console.log(`  Fetched ${threadTweets.length} tweets in thread`);
+        }
+      }
+
       prepared.push({
         id: bookmark.id,
         author,
@@ -917,7 +935,14 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         isReply: !!bookmark.inReplyToStatusId,
         replyContext,
         isQuote: !!quoteContext,
-        quoteContext
+        quoteContext,
+        isThread: threadTweets.length > 1,
+        threadTweets: threadTweets.length > 1 ? threadTweets.map(t => ({
+          id: t.id,
+          text: t.text || t.full_text || '',
+          author: t.author?.username || author,
+          createdAt: t.createdAt
+        })) : []
       });
 
       const mediaInfo = media.length > 0 ? ` (${media.length} media)` : '';
