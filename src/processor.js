@@ -407,6 +407,54 @@ export function fetchFromFolders(config, count = 10, options = {}) {
   return allBookmarks;
 }
 
+/**
+ * Fetch a full thread by tweet URL or ID via `bird thread`
+ * Returns array of tweets in chronological order
+ */
+export function fetchThread(config, tweetIdOrUrl) {
+  try {
+    const env = buildBirdEnv(config);
+    const birdCmd = config.birdPath || 'bird';
+    const tmpFile = path.join(os.tmpdir(), `smaug-thread-${Date.now()}.json`);
+    execSync(`${birdCmd} thread ${tweetIdOrUrl} --json > "${tmpFile}"`, {
+      timeout: 30000,
+      env,
+      shell: true
+    });
+    const output = fs.readFileSync(tmpFile, 'utf8');
+    fs.unlinkSync(tmpFile);
+    const parsed = JSON.parse(output);
+    return Array.isArray(parsed) ? parsed : (parsed.tweets || []);
+  } catch (error) {
+    console.log(`  Could not fetch thread for ${tweetIdOrUrl}: ${error.message}`);
+    return [];
+  }
+}
+
+/**
+ * Download video from a tweet using yt-dlp
+ * Returns { path, filename } on success, null on failure
+ */
+export function downloadMedia(tweetUrl, outputDir) {
+  try {
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+    const result = execSync(
+      `yt-dlp -o "${outputDir}/%(id)s.%(ext)s" --print filename "${tweetUrl}"`,
+      { encoding: 'utf8', timeout: 120000 }
+    );
+    const filename = result.trim();
+    if (filename && fs.existsSync(filename)) {
+      return { path: filename, filename: path.basename(filename) };
+    }
+    return null;
+  } catch (error) {
+    console.log(`  yt-dlp failed for ${tweetUrl}: ${error.message}`);
+    return null;
+  }
+}
+
 export function fetchTweet(config, tweetId) {
   try {
     const env = buildBirdEnv(config);

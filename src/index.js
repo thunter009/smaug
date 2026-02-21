@@ -9,6 +9,8 @@ export { fetchAndPrepareBookmarks } from './processor.js';
 export {
   fetchBookmarks,
   fetchTweet,
+  fetchThread,
+  downloadMedia,
   expandTcoLink,
   fetchGitHubContent,
   fetchArticleContent,
