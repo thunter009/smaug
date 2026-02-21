@@ -10,7 +10,7 @@
  * Outputs a JSON bundle for AI analysis (Claude Code, etc.)
  */
 
-import { execSync, spawn } from 'child_process';
+import { execSync, execFileSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
@@ -421,14 +421,11 @@ export function fetchThread(config, tweetIdOrUrl) {
   try {
     const env = buildBirdEnv(config);
     const birdCmd = config.birdPath || 'bird';
-    const tmpFile = path.join(os.tmpdir(), `smaug-thread-${Date.now()}.json`);
-    execSync(`${birdCmd} thread ${tweetIdOrUrl} --json > "${tmpFile}"`, {
+    const output = execFileSync(birdCmd, ['thread', String(tweetIdOrUrl), '--json'], {
+      encoding: 'utf8',
       timeout: 30000,
-      env,
-      shell: true
+      env
     });
-    const output = fs.readFileSync(tmpFile, 'utf8');
-    fs.unlinkSync(tmpFile);
     const parsed = JSON.parse(output);
     return Array.isArray(parsed) ? parsed : (parsed.tweets || []);
   } catch (error) {
@@ -638,10 +635,17 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const state = loadState(config);
   const source = options.source || config.source || 'bookmarks';
   const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
-  const downloadMedia = options.downloadMedia ?? config.downloadMedia ?? false;
+  const shouldDownloadMedia = options.downloadMedia ?? config.downloadMedia ?? false;
   const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
   const mediaDir = options.mediaDir ?? config.mediaDir ?? './media';
-  const configWithOptions = { ...config, source, includeMedia, downloadMedia, expandThreads, mediaDir };
+  const configWithOptions = {
+    ...config,
+    source,
+    includeMedia,
+    downloadMedia: shouldDownloadMedia,
+    expandThreads,
+    mediaDir
+  };
   const count = options.count || 20;
 
   // Build fetch options for pagination
