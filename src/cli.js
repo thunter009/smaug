@@ -12,7 +12,7 @@
  *   init     - Create a config file (non-interactive)
  */
 
-import { fetchAndPrepareBookmarks } from './processor.js';
+import { fetchAndPrepareBookmarks, fetchThread, downloadMedia as dlMedia } from './processor.js';
 import { initConfig, loadConfig } from './config.js';
 import { execSync } from 'child_process';
 import fs from 'fs';
@@ -238,6 +238,8 @@ async function main() {
       const specificIds = args.filter(a => a.match(/^\d{10,}$/));
       const force = args.includes('--force') || args.includes('-f');
       const includeMedia = args.includes('--media') || args.includes('-m');
+      const downloadMedia = args.includes('--download-media') || args.includes('-d');
+      const expandThreads = args.includes('--threads') || args.includes('-t');
       const fetchAll = args.includes('--all') || args.includes('-a') || args.includes('-all');
 
       // Parse --source flag
@@ -264,6 +266,8 @@ async function main() {
         force,
         source,
         includeMedia,
+        downloadMedia,
+        expandThreads,
         all: fetchAll,
         maxPages
       });
@@ -337,6 +341,42 @@ async function main() {
       break;
     }
 
+    case 'thread': {
+      const tweetUrl = args[1];
+      if (!tweetUrl) {
+        console.error('Usage: smaug thread <tweet-url-or-id> [--download]');
+        process.exit(1);
+      }
+      const config = loadConfig();
+      const shouldDownload = args.includes('--download') || args.includes('-d');
+
+      console.log(`Fetching thread for ${tweetUrl}...`);
+      const tweets = fetchThread(config, tweetUrl);
+
+      if (tweets.length === 0) {
+        console.log('No thread found (might be a single tweet).');
+        process.exit(0);
+      }
+
+      console.log(`\nThread: ${tweets.length} tweets\n${'─'.repeat(60)}`);
+      for (const tweet of tweets) {
+        const author = tweet.author?.username || 'unknown';
+        const text = tweet.text || tweet.full_text || '';
+        const date = tweet.createdAt ? new Date(tweet.createdAt).toLocaleDateString() : '';
+        console.log(`\n@${author} (${date}):`);
+        console.log(text);
+
+        // Download video if requested
+        if (shouldDownload && tweet.media?.some(m => m.type === 'video')) {
+          const url = `https://x.com/${author}/status/${tweet.id}`;
+          const result = dlMedia(url, config.mediaDir || './media');
+          if (result) console.log(`  > Downloaded: ${result.filename}`);
+        }
+      }
+      console.log(`\n${'─'.repeat(60)}`);
+      break;
+    }
+
     case 'help':
     case '--help':
     case '-h':
@@ -355,6 +395,10 @@ Commands:
   fetch --force  Re-fetch even if already archived
   fetch --source <source>  Fetch from: bookmarks, likes, or both
   fetch --media  EXPERIMENTAL: Include media attachments
+  fetch --threads       Expand threads (author self-reply chains)
+  fetch --download-media  Download videos via yt-dlp
+  thread <url>   Fetch and display a full thread by URL or ID
+  thread <url> --download  Also download videos from the thread
   process        Show pending tweets
   status         Show current status
 
@@ -369,7 +413,11 @@ Examples:
   smaug fetch --source likes     # Fetch from likes only
   smaug fetch --source both      # Fetch from bookmarks AND likes
   smaug fetch --media            # Include photos/videos/GIFs (experimental)
+  smaug fetch --threads          # Expand bookmarked threads
+  smaug fetch --download-media   # Download videos via yt-dlp
   smaug fetch --force            # Re-process archived tweets
+  smaug thread <url>             # Read a thread by URL
+  smaug thread <url> --download  # Read thread + download videos
 
 Config (smaug.config.json):
   "source": "bookmarks"    Default source (bookmarks, likes, or both)

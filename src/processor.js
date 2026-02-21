@@ -272,6 +272,7 @@ export function fetchBookmarks(config, count = 10, options = {}) {
     // Use --all for large fetches (> 50) or when explicitly requested
     const useAll = options.all || count > 50;
     const folderId = options.folderId;
+    const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
 
     let cmd;
     if (useAll) {
@@ -286,6 +287,11 @@ export function fetchBookmarks(config, count = 10, options = {}) {
       cmd = folderId
         ? `${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`
         : `${birdCmd} bookmarks -n ${count} --json`;
+    }
+
+    // Thread expansion: fetch author's self-reply chain + metadata
+    if (expandThreads) {
+      cmd += ' --author-chain --thread-meta --sort-chronological';
     }
 
     console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
@@ -405,6 +411,54 @@ export function fetchFromFolders(config, count = 10, options = {}) {
   }
 
   return allBookmarks;
+}
+
+/**
+ * Fetch a full thread by tweet URL or ID via `bird thread`
+ * Returns array of tweets in chronological order
+ */
+export function fetchThread(config, tweetIdOrUrl) {
+  try {
+    const env = buildBirdEnv(config);
+    const birdCmd = config.birdPath || 'bird';
+    const tmpFile = path.join(os.tmpdir(), `smaug-thread-${Date.now()}.json`);
+    execSync(`${birdCmd} thread ${tweetIdOrUrl} --json > "${tmpFile}"`, {
+      timeout: 30000,
+      env,
+      shell: true
+    });
+    const output = fs.readFileSync(tmpFile, 'utf8');
+    fs.unlinkSync(tmpFile);
+    const parsed = JSON.parse(output);
+    return Array.isArray(parsed) ? parsed : (parsed.tweets || []);
+  } catch (error) {
+    console.log(`  Could not fetch thread for ${tweetIdOrUrl}: ${error.message}`);
+    return [];
+  }
+}
+
+/**
+ * Download video from a tweet using yt-dlp
+ * Returns { path, filename } on success, null on failure
+ */
+export function downloadMedia(tweetUrl, outputDir) {
+  try {
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+    const result = execSync(
+      `yt-dlp -o "${outputDir}/%(id)s.%(ext)s" --print filename "${tweetUrl}"`,
+      { encoding: 'utf8', timeout: 120000 }
+    );
+    const filename = result.trim();
+    if (filename && fs.existsSync(filename)) {
+      return { path: filename, filename: path.basename(filename) };
+    }
+    return null;
+  } catch (error) {
+    console.log(`  yt-dlp failed for ${tweetUrl}: ${error.message}`);
+    return null;
+  }
 }
 
 export function fetchTweet(config, tweetId) {
@@ -584,13 +638,17 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const state = loadState(config);
   const source = options.source || config.source || 'bookmarks';
   const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
-  const configWithOptions = { ...config, source, includeMedia };
+  const downloadMedia = options.downloadMedia ?? config.downloadMedia ?? false;
+  const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
+  const mediaDir = options.mediaDir ?? config.mediaDir ?? './media';
+  const configWithOptions = { ...config, source, includeMedia, downloadMedia, expandThreads, mediaDir };
   const count = options.count || 20;
 
   // Build fetch options for pagination
   const fetchOptions = {
     all: options.all || count > 50,
-    maxPages: options.maxPages
+    maxPages: options.maxPages,
+    expandThreads
   };
 
   let tweets = [];
@@ -849,10 +907,36 @@ export async function fetchAndPrepareBookmarks(options = {}) {
       // Only included if includeMedia is true (--media flag)
       const media = configWithOptions.includeMedia ? (bookmark.media || []) : [];
 
+      // Download videos via yt-dlp if --download-media is set
+      let downloadedMedia = [];
+      if (configWithOptions.downloadMedia) {
+        const hasVideo = (bookmark.media || []).some(m => m.type === 'video' || m.type === 'animated_gif');
+        if (hasVideo) {
+          const mediaDir = configWithOptions.mediaDir || './media';
+          const tweetUrl = `https://x.com/${author}/status/${bookmark.id}`;
+          console.log(`  Downloading video from ${tweetUrl}...`);
+          const result = downloadMedia(tweetUrl, mediaDir);
+          if (result) {
+            downloadedMedia.push(result);
+            console.log(`  Downloaded: ${result.filename}`);
+          }
+        }
+      }
+
       // Build tags array from folder tag (if present)
       const tags = [];
       if (bookmark._folderTag) {
         tags.push(bookmark._folderTag);
+      }
+
+      // If thread expansion is on and this tweet has thread metadata, capture it
+      let threadTweets = [];
+      if (configWithOptions.expandThreads && bookmark.isThread) {
+        console.log(`  Thread detected, fetching full thread...`);
+        threadTweets = fetchThread(configWithOptions, bookmark.id);
+        if (threadTweets.length > 1) {
+          console.log(`  Fetched ${threadTweets.length} tweets in thread`);
+        }
       }
 
       prepared.push({
@@ -864,12 +948,20 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         createdAt: bookmark.createdAt,
         links,
         media,
+        downloadedMedia,
         tags,
         date,
         isReply: !!bookmark.inReplyToStatusId,
         replyContext,
         isQuote: !!quoteContext,
-        quoteContext
+        quoteContext,
+        isThread: threadTweets.length > 1,
+        threadTweets: threadTweets.length > 1 ? threadTweets.map(t => ({
+          id: t.id,
+          text: t.text || t.full_text || '',
+          author: t.author?.username || author,
+          createdAt: t.createdAt
+        })) : []
       });
 
       const mediaInfo = media.length > 0 ? ` (${media.length} media)` : '';
