@@ -339,6 +339,29 @@ function releaseLock() {
 }
 
 // ============================================================================
+// Auth Preflight
+// ============================================================================
+
+function checkClaudeAuth(claudeBinary, env) {
+  try {
+    const result = execSync(
+      `${claudeBinary} --print --verbose --output-format stream-json "hello"`,
+      { encoding: 'utf8', timeout: 60000, env, stdio: ['ignore', 'pipe', 'pipe'] }
+    );
+    if (result.includes('authentication_failed') || result.includes('Not logged in')) {
+      return { ok: false, error: 'Claude OAuth expired — run: claude login' };
+    }
+    return { ok: true };
+  } catch (err) {
+    const output = (err.stdout || '') + (err.stderr || '');
+    if (output.includes('authentication_failed') || output.includes('Not logged in')) {
+      return { ok: false, error: 'Claude OAuth expired — run: claude login' };
+    }
+    return { ok: false, error: `Auth preflight failed: ${err.message}` };
+  }
+}
+
+// ============================================================================
 // Unified AI CLI Invocation
 // ============================================================================
 
@@ -422,11 +445,20 @@ function getCLISettings(cliType, config, bookmarkCount) {
 
 async function invokeAICLI(config, bookmarkCount, options = {}) {
   const timeout = config.claudeTimeout || 900000;
+  const stallTimeout = config.claudeStallTimeout || 90000;
   const trackTokens = options.trackTokens || false;
   const cliType = config.cliTool || 'claude';
-  
+
   const settings = getCLISettings(cliType, config, bookmarkCount);
-  
+
+  // Auth preflight — fail fast instead of burning the full timeout
+  if (cliType !== 'opencode') {
+    const auth = checkClaudeAuth(settings.binary, settings.env);
+    if (!auth.ok) {
+      return { success: false, error: auth.error, stdout: '', stderr: '', exitCode: -1 };
+    }
+  }
+
   await showDragonReveal(bookmarkCount);
 
   return new Promise((resolve) => {
@@ -479,8 +511,25 @@ async function invokeAICLI(config, bookmarkCount, options = {}) {
       if (!intervals.active) return;
       fireFrame = (fireFrame + 1) % FIRE_FRAMES.length;
       const flame = FIRE_FRAMES[fireFrame];
-      process.stdout.write(`\r  ${flame} ${currentSpinnerMsg}... [${elapsed(startTime)}]          `);
+      if (process.stdout.isTTY) process.stdout.write(`\r  ${flame} ${currentSpinnerMsg}... [${elapsed(startTime)}]          `);
     }, 150);
+
+    // Progress watchdog — kill if no stdout for stallTimeout
+    let lastOutputTime = Date.now();
+    let stalledKill = false;
+    const stallCheckInterval = setInterval(() => {
+      if (!intervals.active) return;
+      const silentMs = Date.now() - lastOutputTime;
+      if (silentMs >= stallTimeout) {
+        stalledKill = true;
+        stopSpinner(intervals);
+        clearInterval(stallCheckInterval);
+        console.error(`\n[${JOB_NAME}] Claude stalled — no output for ${Math.round(silentMs / 1000)}s. Killing.`);
+        proc.kill('SIGTERM');
+        // SIGKILL fallback if SIGTERM doesn't work
+        setTimeout(() => { try { proc.kill('SIGKILL'); } catch {} }, 5000);
+      }
+    }, 5000);
 
     process.stdout.write('\n  ⏳ Dragons are patient hunters... this may take a moment.\n');
     process.stdout.write('  🔥     Processing...');
@@ -490,6 +539,7 @@ async function invokeAICLI(config, bookmarkCount, options = {}) {
     proc.stdout.on('data', (data) => {
       const text = data.toString();
       stdout += text;
+      lastOutputTime = Date.now();
 
       lineBuffer += text;
       const lines = lineBuffer.split('\n');
@@ -654,23 +704,38 @@ ${tokenDisplay}
 
     const timeoutId = setTimeout(() => {
       stopSpinner(intervals);
+      clearInterval(stallCheckInterval);
       proc.kill('SIGTERM');
+      setTimeout(() => { try { proc.kill('SIGKILL'); } catch {} }, 5000);
       resolve({ success: false, error: `Timeout after ${timeout}ms`, stdout, stderr, exitCode: -1 });
     }, timeout);
 
     proc.on('close', (code) => {
       stopSpinner(intervals);
       clearTimeout(timeoutId);
+      clearInterval(stallCheckInterval);
       if (code === 0) {
         resolve({ success: true, output: stdout, tokenUsage });
       } else {
-        resolve({ success: false, error: `Exit code ${code}`, stdout, stderr, exitCode: code, tokenUsage });
+        let errorMsg = `Exit code ${code}`;
+        const errEvent = stdout.split('\n').reverse().map((l) => { try { return JSON.parse(l); } catch { return null; } }).find((e) => e?.type === 'error');
+        const errDetail = errEvent
+          ? [errEvent.error?.name, errEvent.error?.data?.message || errEvent.error?.message].filter(Boolean).join(': ')
+          : stderr.replace(/\x1b\[[0-9;]*m/g, '').trim().split('\n').pop();
+        if (errDetail) errorMsg += `: ${errDetail.slice(0, 500)}`;
+        if (stalledKill) {
+          errorMsg = `Claude stalled — no output for ${Math.round(stallTimeout / 1000)}s`;
+        } else if (stdout.includes('authentication_failed') || stdout.includes('Not logged in')) {
+          errorMsg = 'Claude OAuth expired — run: claude login';
+        }
+        resolve({ success: false, error: errorMsg, stdout, stderr, exitCode: code, tokenUsage });
       }
     });
 
     proc.on('error', (err) => {
       stopSpinner(intervals);
       clearTimeout(timeoutId);
+      clearInterval(stallCheckInterval);
       resolve({ success: false, error: err.message, stdout, stderr, exitCode: -1 });
     });
   });
@@ -766,7 +831,7 @@ export async function run(options = {}) {
         bookmarkCount = pendingData.bookmarks?.length || 0;
 
         // Apply --limit if specified (process subset of pending)
-        const limit = options.limit;
+        const limit = options.limit || config.maxBatchSize;
         if (limit && limit > 0 && bookmarkCount > limit) {
           console.log(`[${now}] Limiting to ${limit} of ${bookmarkCount} pending bookmarks`);
           pendingData.bookmarks = pendingData.bookmarks.slice(0, limit);
@@ -792,6 +857,18 @@ export async function run(options = {}) {
       if (fs.existsSync(config.pendingFile)) {
         pendingData = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
         bookmarkCount = pendingData.bookmarks?.length || 0;
+      }
+
+      // Apply maxBatchSize limit to freshly fetched bookmarks (prevents stall)
+      const postFetchLimit = options.limit || config.maxBatchSize;
+      if (postFetchLimit && postFetchLimit > 0 && bookmarkCount > postFetchLimit) {
+        console.log(`[${now}] Limiting to ${postFetchLimit} of ${bookmarkCount} fetched bookmarks`);
+        // Save full set for later runs
+        fs.writeFileSync(config.pendingFile + '.full', JSON.stringify(pendingData, null, 2));
+        pendingData.bookmarks = pendingData.bookmarks.slice(0, postFetchLimit);
+        pendingData.count = postFetchLimit;
+        bookmarkCount = postFetchLimit;
+        fs.writeFileSync(config.pendingFile, JSON.stringify(pendingData, null, 2));
       }
 
       if (prepResult.count > 0) {
