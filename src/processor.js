@@ -311,8 +311,9 @@ export function fetchBookmarks(config, count = 10, options = {}) {
     let bookmarks = Array.isArray(parsed) ? parsed : (parsed.tweets || []);
 
     // Respect the count parameter - truncate if we fetched more than requested
-    // (paginated mode may return more bookmarks than asked for)
-    if (bookmarks.length > count) {
+    // (paginated mode may return more bookmarks than asked for). An explicit
+    // --all asks for everything, so it skips the cap.
+    if (!options.all && bookmarks.length > count) {
       console.log(`  Fetched ${bookmarks.length} bookmarks, limiting to requested ${count}`);
       bookmarks = bookmarks.slice(0, count);
     }
@@ -648,9 +649,11 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   };
   const count = options.count || 20;
 
-  // Build fetch options for pagination
+  // Build fetch options for pagination. Pass only an explicit --all here:
+  // fetchBookmarks paginates for count > 50 on its own, and an explicit
+  // --all is what lets it skip the count cap.
   const fetchOptions = {
-    all: options.all || count > 50,
+    all: options.all,
     maxPages: options.maxPages,
     expandThreads
   };
@@ -664,7 +667,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
     tweets = fetchFromFolders(configWithOptions, count, fetchOptions);
   } else {
     // Normal fetch from source
-    console.log(`Fetching from source: ${source}${includeMedia ? ' (with media)' : ''}${fetchOptions.all ? ' (paginated)' : ''}`);
+    console.log(`Fetching from source: ${source}${includeMedia ? ' (with media)' : ''}${fetchOptions.all || count > 50 ? ' (paginated)' : ''}`);
     tweets = fetchFromSource(configWithOptions, count, fetchOptions);
   }
 

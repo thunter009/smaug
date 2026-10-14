@@ -27,6 +27,17 @@ if (process.env.SMAUG_SMOKE_LOG) {
   fs.appendFileSync(process.env.SMAUG_SMOKE_LOG, args.join(' ') + '\\n');
 }
 
+if (args[0] === 'bookmarks' && process.env.SMAUG_FAKE_BOOKMARKS) {
+  const out = Array.from({ length: Number(process.env.SMAUG_FAKE_BOOKMARKS) }, (_, i) => ({
+    id: '20000000000000000' + String(i).padStart(2, '0'),
+    text: 'bookmark ' + i,
+    author: { username: 'bob', name: 'Bob' },
+    createdAt: '2026-02-20T12:00:00Z'
+  }));
+  process.stdout.write(JSON.stringify(out));
+  process.exit(0);
+}
+
 if (args[0] === 'bookmarks') {
   const out = [{
     id: '1111111111111111111',
@@ -109,14 +120,15 @@ process.stdout.write(filename + '\\n');
   return { dir, binDir, logFile };
 }
 
-function runCli(workspace, args) {
+function runCli(workspace, args, env = {}) {
   return spawnSync(process.execPath, [cliPath, ...args], {
     cwd: workspace.dir,
     encoding: 'utf8',
     env: {
       ...process.env,
       PATH: `${workspace.binDir}${path.delimiter}${process.env.PATH || ''}`,
-      SMAUG_SMOKE_LOG: workspace.logFile
+      SMAUG_SMOKE_LOG: workspace.logFile,
+      ...env
     }
   });
 }
@@ -161,4 +173,31 @@ test('thread command accepts URL with query params', t => {
 
   const commands = fs.readFileSync(workspace.logFile, 'utf8');
   assert.match(commands, new RegExp(`thread ${escapeRegExp(url)} --json`));
+});
+
+test('fetch --all keeps every bookmark past the default count', t => {
+  const workspace = makeWorkspace();
+  t.after(() => fs.rmSync(workspace.dir, { recursive: true, force: true }));
+
+  const result = runCli(workspace, ['fetch', '--all'], { SMAUG_FAKE_BOOKMARKS: '45' });
+  assert.strictEqual(result.status, 0, result.stderr || result.stdout);
+
+  const pendingPath = path.join(workspace.dir, '.state', 'pending-bookmarks.json');
+  const pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8'));
+  assert.strictEqual(pending.bookmarks.length, 45);
+
+  const commands = fs.readFileSync(workspace.logFile, 'utf8');
+  assert.match(commands, /^bookmarks --all --max-pages 10 --json$/m);
+});
+
+test('fetch N still caps a paginated fetch at N', t => {
+  const workspace = makeWorkspace();
+  t.after(() => fs.rmSync(workspace.dir, { recursive: true, force: true }));
+
+  const result = runCli(workspace, ['fetch', '60'], { SMAUG_FAKE_BOOKMARKS: '80' });
+  assert.strictEqual(result.status, 0, result.stderr || result.stdout);
+
+  const pendingPath = path.join(workspace.dir, '.state', 'pending-bookmarks.json');
+  const pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8'));
+  assert.strictEqual(pending.bookmarks.length, 60);
 });
