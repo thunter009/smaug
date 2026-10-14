@@ -59,11 +59,11 @@ TodoWrite({ todos: [
 **CRITICAL for parallel processing:** Spawn ALL subagents in ONE message, each writing to a batch file:
 ```javascript
 // Send ONE message with multiple Task calls - they run in parallel
-// Use model="sonnet" for high-quality summarization and insight extraction
+// Use model="haiku" for cost-efficient parallel processing (~50% cost savings)
 // Each subagent writes to .state/batch-N.md, NOT to bookmarks.md!
-Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
-Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
-Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
 // ... all batches in the SAME message
 ```
 
@@ -527,10 +527,10 @@ status: needs_transcript
 Spawn multiple Task subagents in ONE message. Each writes to a separate temp file:
 
 ```
-Task 1: model="sonnet", "Process batch 0" → writes to .state/batch-0.md
-Task 2: model="sonnet", "Process batch 1" → writes to .state/batch-1.md
-Task 3: model="sonnet", "Process batch 2" → writes to .state/batch-2.md
-Task 4: model="sonnet", "Process batch 3" → writes to .state/batch-3.md
+Task 1: model="haiku", "Process batch 0" → writes to .state/batch-0.md
+Task 2: model="haiku", "Process batch 1" → writes to .state/batch-1.md
+Task 3: model="haiku", "Process batch 2" → writes to .state/batch-2.md
+Task 4: model="haiku", "Process batch 3" → writes to .state/batch-3.md
 ```
 
 **Subagent prompt template:**

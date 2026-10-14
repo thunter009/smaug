@@ -444,8 +444,11 @@ export function downloadMedia(tweetUrl, outputDir) {
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
-    const result = execSync(
-      `yt-dlp -o "${outputDir}/%(id)s.%(ext)s" --print filename "${tweetUrl}"`,
+    // `--print filename` implies --simulate and downloads nothing;
+    // after_move:filepath prints the final path once the file is written.
+    const result = execFileSync(
+      'yt-dlp',
+      ['-o', `${outputDir}/%(id)s.%(ext)s`, '--print', 'after_move:filepath', '--', tweetUrl],
       { encoding: 'utf8', timeout: 120000 }
     );
     const filename = result.trim();
@@ -744,10 +747,14 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
     const subFormat = isYouTube ? 'json3' : 'vtt/best';
     const outputTemplate = path.join(tmpDir, '%(id)s.%(ext)s');
 
+    // No shell anywhere below: the URL comes from a bookmarked tweet, so shell
+    // syntax in it (e.g. `$(...)` in a query string) must stay inert.
     try {
-      execSync(
-        `"${ytdlp}" --write-subs --write-auto-subs --sub-langs "en.*,-live_chat" --sub-format "${subFormat}" --skip-download --no-warnings -o "${outputTemplate}" "${url}"`,
-        { timeout: subtitleTimeout, stdio: 'pipe', encoding: 'utf8', shell: true }
+      execFileSync(
+        ytdlp,
+        ['--write-subs', '--write-auto-subs', '--sub-langs', 'en.*,-live_chat', '--sub-format', subFormat,
+          '--skip-download', '--no-warnings', '-o', outputTemplate, '--', url],
+        { timeout: subtitleTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch {
       // yt-dlp may exit non-zero even when subtitle files were written
@@ -786,9 +793,10 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
     const audioFile = path.join(tmpDir, 'audio.mp3');
 
     try {
-      execSync(
-        `"${ytdlp}" -x --audio-format mp3 --audio-quality 5 -o "${audioFile}" "${url}"`,
-        { timeout: audioTimeout, stdio: 'pipe', encoding: 'utf8', shell: true }
+      execFileSync(
+        ytdlp,
+        ['-x', '--audio-format', 'mp3', '--audio-quality', '5', '-o', audioFile, '--', url],
+        { timeout: audioTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch (err) {
       console.log(`  Audio extraction failed: ${err.message?.split('\n')[0]}`);
@@ -802,9 +810,10 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
 
     console.log(`  Transcribing with Whisper (model: ${whisperModel})...`);
     try {
-      execSync(
-        `"${whisper}" "${audioFile}" --model ${whisperModel} --output_format txt --output_dir "${tmpDir}"`,
-        { timeout: whisperTimeout, stdio: 'pipe', encoding: 'utf8', shell: true }
+      execFileSync(
+        whisper,
+        [audioFile, '--model', whisperModel, '--output_format', 'txt', '--output_dir', tmpDir],
+        { timeout: whisperTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch (err) {
       console.log(`  Whisper transcription failed: ${err.message?.split('\n')[0]}`);

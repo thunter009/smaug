@@ -1,6 +1,7 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
@@ -747,6 +748,42 @@ describe('fetchTranscriptContent', () => {
       undefined
     );
     assert.strictEqual(result, null);
+  });
+
+  test('passes the URL to yt-dlp as one argument, never through a shell', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-transcript-test-'));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    const argLog = path.join(dir, 'yt-dlp-args.jsonl');
+    const marker = path.join(dir, 'pwned');
+
+    // No captions on the subtitle pass; on the audio pass, write the -o file.
+    const ytdlp = path.join(dir, 'yt-dlp');
+    fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+fs.appendFileSync(${JSON.stringify(argLog)}, JSON.stringify(args) + '\\n');
+if (args.includes('-x')) fs.writeFileSync(args[args.indexOf('-o') + 1], 'audio');
+`);
+    const whisper = path.join(dir, 'whisper');
+    fs.writeFileSync(whisper, `#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+const args = process.argv.slice(2);
+fs.writeFileSync(path.join(args[args.indexOf('--output_dir') + 1], 'audio.txt'), 'hello transcript');
+`);
+    fs.chmodSync(ytdlp, 0o755);
+    fs.chmodSync(whisper, 0o755);
+
+    const url = `https://www.youtube.com/watch?v=x&a=$(touch\${IFS}${marker})`;
+    const result = await fetchTranscriptContent(url, {}, { ytdlp, whisper });
+
+    assert.deepStrictEqual(result, { text: 'hello transcript', source: 'whisper' });
+    assert.strictEqual(fs.existsSync(marker), false, 'shell syntax in the URL ran');
+    const calls = fs.readFileSync(argLog, 'utf8').trim().split('\n').map(line => JSON.parse(line));
+    assert.strictEqual(calls.length, 2);
+    for (const args of calls) {
+      assert.deepStrictEqual(args.slice(-2), ['--', url]);
+    }
   });
 });
 
