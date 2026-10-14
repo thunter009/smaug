@@ -437,28 +437,28 @@ export function fetchThread(config, tweetIdOrUrl) {
 
 /**
  * Download video from a tweet using yt-dlp
- * Returns { path, filename } on success, null on failure
+ * Returns [{ path, filename }] for every file written ([] on failure);
+ * a tweet with several videos yields several files.
  */
-export function downloadMedia(tweetUrl, outputDir) {
+export function downloadMedia(tweetUrl, outputDir, ytdlpBin = 'yt-dlp') {
   try {
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
     // `--print filename` implies --simulate and downloads nothing;
-    // after_move:filepath prints the final path once the file is written.
-    const result = execFileSync(
-      'yt-dlp',
+    // after_move:filepath prints each final path once its file is written.
+    const output = execFileSync(
+      ytdlpBin,
       ['-o', `${outputDir}/%(id)s.%(ext)s`, '--print', 'after_move:filepath', '--', tweetUrl],
       { encoding: 'utf8', timeout: 120000 }
     );
-    const filename = result.trim();
-    if (filename && fs.existsSync(filename)) {
-      return { path: filename, filename: path.basename(filename) };
-    }
-    return null;
+    return output.split('\n')
+      .map(line => line.trim())
+      .filter(file => file && fs.existsSync(file))
+      .map(file => ({ path: file, filename: path.basename(file) }));
   } catch (error) {
     console.log(`  yt-dlp failed for ${tweetUrl}: ${error.message}`);
-    return null;
+    return [];
   }
 }
 
@@ -1110,7 +1110,11 @@ export async function fetchAndPrepareBookmarks(options = {}) {
               if (!fs.existsSync(transcriptsDir)) {
                 fs.mkdirSync(transcriptsDir, { recursive: true });
               }
-              const transcriptFile = path.join(transcriptsDir, `${bookmark.id}.txt`);
+              // One file per link: a tweet with two videos must not overwrite
+              // the first transcript. The first keeps the plain {id}.txt name.
+              const transcriptCount = links.filter(l => l.content?.transcriptFile).length;
+              const suffix = transcriptCount > 0 ? `-${transcriptCount + 1}` : '';
+              const transcriptFile = path.join(transcriptsDir, `${bookmark.id}${suffix}.txt`);
               fs.writeFileSync(transcriptFile, transcriptResult.text);
               content = {
                 source: transcriptResult.source,
@@ -1208,10 +1212,9 @@ export async function fetchAndPrepareBookmarks(options = {}) {
           const mediaDir = configWithOptions.mediaDir || './media';
           const tweetUrl = `https://x.com/${author}/status/${bookmark.id}`;
           console.log(`  Downloading video from ${tweetUrl}...`);
-          const result = downloadMedia(tweetUrl, mediaDir);
-          if (result) {
-            downloadedMedia.push(result);
-            console.log(`  Downloaded: ${result.filename}`);
+          for (const file of downloadMedia(tweetUrl, mediaDir, toolPaths.ytdlp || 'yt-dlp')) {
+            downloadedMedia.push(file);
+            console.log(`  Downloaded: ${file.filename}`);
           }
         }
       }
