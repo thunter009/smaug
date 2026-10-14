@@ -15,6 +15,11 @@ export {
   fetchGitHubContent,
   fetchArticleContent,
   fetchXArticleContent,
+  fetchTranscriptContent,
+  parseJson3Transcript,
+  parseVttTranscript,
+  findYtDlp,
+  findWhisper,
   isPaywalled,
   loadState,
   saveState

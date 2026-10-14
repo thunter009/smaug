@@ -59,11 +59,11 @@ TodoWrite({ todos: [
 **CRITICAL for parallel processing:** Spawn ALL subagents in ONE message, each writing to a batch file:
 ```javascript
 // Send ONE message with multiple Task calls - they run in parallel
-// Use model="haiku" for cost-efficient parallel processing (~50% cost savings)
+// Use model="sonnet" for high-quality summarization and insight extraction
 // Each subagent writes to .state/batch-N.md, NOT to bookmarks.md!
-Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
-Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
-Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
+Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
+Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
+Task(subagent_type="general-purpose", model="sonnet", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
 // ... all batches in the SAME message
 ```
 
@@ -107,8 +107,8 @@ Each bookmark includes:
 - `id`, `author`, `authorName`, `text`, `tweetUrl`, `date`
 - `tags[]` - folder tags from bookmark folders (e.g., `["ai-tools"]`)
 - `links[]` - each with `original`, `expanded`, `type`, and `content`
-  - `type`: "github", "article", "video", "tweet", "media", "image"
-  - `content`: extracted text, headline, author (for articles/github)
+  - `type`: "github", "article", "video", "podcast", "tweet", "media", "image"
+  - `content`: extracted text, headline, author (for articles/github); for video/podcast: `{ source: 'yt-dlp-captions'|'whisper', transcriptFile: '.state/transcripts/{id}.txt', chars: N }`
 - `isReply`, `replyContext` - parent tweet info if this is a reply
 - `isQuote`, `quoteContext` - quoted tweet info if this is a quote tweet
 
@@ -163,7 +163,8 @@ For each bookmark (or batch):
 Don't use generic titles like "Article" or "Tweet". The title appears after `## @author - ` and must be descriptive enough to scan in a list. Based on the content:
 - GitHub repos: Use the repo name and brief description
 - Articles: Use the article headline or key insight
-- Videos: Note for transcript, use tweet context
+- Videos/Podcasts with transcript: Use the key insight or topic from the transcript content
+- Videos/Podcasts without transcript: Note for transcript, use tweet context
 - Quote tweets: Capture the key insight being highlighted, NOT the reaction (e.g., "JC_builds: Local Calorie Estimation Model Beating GPT-4o" not "Retweet: Are you guys starting to catch on?")
 - Reply threads: Include parent context in the summary
 - Plain tweets: Use the key point being made
@@ -176,7 +177,7 @@ Match each bookmark's links against category patterns (check `match` arrays). Us
 **For each action type:**
 - `file`: Create a separate file in the category's folder using its template
 - `capture`: Just add to bookmarks.md (no separate file)
-- `transcribe`: Add to bookmarks.md with a "Needs transcript" flag, optionally create placeholder in folder
+- `transcribe`: If the link's `content` has a `transcriptFile` path, read the first 20,000 characters of that file (enough for summarization — don't read the whole file for long transcripts). Create a full knowledge file with structured summary, key takeaways, and insights, with `status: transcribed` and `transcript_source` in frontmatter. If `content` is null or has no `transcriptFile`, fall back to placeholder behavior with `status: needs_transcript`
 
 **Special handling:**
 - Quote tweets: Include quoted tweet context in entry
@@ -282,6 +283,12 @@ const remaining = pending.bookmarks.filter(b => !processedIds.has(b.id));
 pending.bookmarks = remaining;
 pending.count = remaining.length;
 fs.writeFileSync(pendingPath, JSON.stringify(pending, null, 2));
+
+// Clean up transcript files for processed bookmarks
+for (const id of processedIds) {
+  const transcriptFile = path.join(path.dirname(pendingPath), 'transcripts', `${id}.txt`);
+  if (fs.existsSync(transcriptFile)) fs.unlinkSync(transcriptFile);
+}
 ```
 
 ### 4. Commit and Push Changes
@@ -375,6 +382,42 @@ via: "Twitter bookmark from @{author}"
 
 ### Podcast Entry (`./knowledge/podcasts/{slug}.md`)
 
+**When transcript content is available** (`content.source` is `'yt-dlp-captions'` or `'whisper'`):
+
+```yaml
+---
+title: "{episode_title}"
+type: podcast
+date_added: {YYYY-MM-DD}
+source: "{podcast_url}"
+show: "{show_name}"
+tags: [{relevant_tags}, {folder_tags}]
+via: "Twitter bookmark from @{author}"
+status: transcribed
+transcript_source: "{yt-dlp-captions or whisper}"
+---
+
+{Summary of the episode's key points synthesized from the transcript}
+
+## Episode Info
+
+- **Show:** {show_name}
+- **Episode:** {episode_title}
+- **Why bookmarked:** {context from tweet}
+
+## Key Takeaways
+
+- Point 1 (from transcript)
+- Point 2 (from transcript)
+
+## Links
+
+- [Episode]({podcast_url})
+- [Original Tweet]({tweet_url})
+```
+
+**When no transcript available** (`content` is null):
+
 ```yaml
 ---
 title: "{episode_title}"
@@ -406,6 +449,42 @@ status: needs_transcript
 ```
 
 ### Video Entry (`./knowledge/videos/{slug}.md`)
+
+**When transcript content is available** (`content.source` is `'yt-dlp-captions'` or `'whisper'`):
+
+```yaml
+---
+title: "{video_title}"
+type: video
+date_added: {YYYY-MM-DD}
+source: "{video_url}"
+channel: "{channel_name}"
+tags: [{relevant_tags}, {folder_tags}]
+via: "Twitter bookmark from @{author}"
+status: transcribed
+transcript_source: "{yt-dlp-captions or whisper}"
+---
+
+{Summary of the video's key points synthesized from the transcript}
+
+## Video Info
+
+- **Channel:** {channel_name}
+- **Title:** {video_title}
+- **Why bookmarked:** {context from tweet}
+
+## Key Takeaways
+
+- Point 1 (from transcript)
+- Point 2 (from transcript)
+
+## Links
+
+- [Video]({video_url})
+- [Original Tweet]({tweet_url})
+```
+
+**When no transcript available** (`content` is null):
 
 ```yaml
 ---
@@ -448,10 +527,10 @@ status: needs_transcript
 Spawn multiple Task subagents in ONE message. Each writes to a separate temp file:
 
 ```
-Task 1: model="haiku", "Process batch 0" → writes to .state/batch-0.md
-Task 2: model="haiku", "Process batch 1" → writes to .state/batch-1.md
-Task 3: model="haiku", "Process batch 2" → writes to .state/batch-2.md
-Task 4: model="haiku", "Process batch 3" → writes to .state/batch-3.md
+Task 1: model="sonnet", "Process batch 0" → writes to .state/batch-0.md
+Task 2: model="sonnet", "Process batch 1" → writes to .state/batch-1.md
+Task 3: model="sonnet", "Process batch 2" → writes to .state/batch-2.md
+Task 4: model="sonnet", "Process batch 3" → writes to .state/batch-3.md
 ```
 
 **Subagent prompt template:**
@@ -478,9 +557,10 @@ DATE: {bookmark.date}
 - For quote tweets: synthesize BOTH the commentary AND the quoted content (the quote often has the substance)
 - For image/video-only tweets with no text context: prefix with "THIN:" and describe what you can infer
 - For failed link expansion (raw t.co URLs): write "LINK_FAILED: Could not expand link from @{author}"
-- Minimum 80 characters. If you can't hit 80, something is wrong with your analysis.
+- Minimum 80 characters. Under 80 means you're echoing or categorizing, not synthesizing. Rewrite.
 
-Also create knowledge files (./knowledge/tools/*.md, ./knowledge/articles/*.md) as needed.
+For video/podcast bookmarks with a transcriptFile in content, read the FIRST 20,000 characters of that file for summarization.
+Also create knowledge files (./knowledge/tools/*.md, ./knowledge/articles/*.md, ./knowledge/videos/*.md, ./knowledge/podcasts/*.md) as needed.
 DO NOT touch bookmarks.md - only write to .state/batch-{N}.md
 ```
 
@@ -498,6 +578,7 @@ After ALL subagents complete:
 **Merge logic for bookmarks.md:**
 - File is descending order (newest dates at top)
 - For each entry from batch files (processed in order):
+  - **DEDUP CHECK FIRST:** Search bookmarks.md for the tweet URL. If already present, skip.
   - Find or create the date section at correct position
   - Insert entry at TOP of that date section
 - Since batches are oldest-first, entries end up in correct order
