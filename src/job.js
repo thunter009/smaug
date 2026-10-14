@@ -344,8 +344,9 @@ function releaseLock() {
 
 function checkClaudeAuth(claudeBinary, env) {
   try {
+    // Quoted: findClaude can return a path with spaces (Application Support).
     const result = execSync(
-      `${claudeBinary} --print --verbose --output-format stream-json "hello"`,
+      `"${claudeBinary}" --print --verbose --output-format stream-json "hello"`,
       { encoding: 'utf8', timeout: 60000, env, stdio: ['ignore', 'pipe', 'pipe'] }
     );
     if (result.includes('authentication_failed') || result.includes('Not logged in')) {
@@ -357,7 +358,10 @@ function checkClaudeAuth(claudeBinary, env) {
     if (output.includes('authentication_failed') || output.includes('Not logged in')) {
       return { ok: false, error: 'Claude OAuth expired — run: claude login' };
     }
-    return { ok: false, error: `Auth preflight failed: ${err.message}` };
+    // Only a dead login should block. A timeout, rate limit, or network blip
+    // here says nothing about auth; let the real invocation try.
+    console.warn(`[${JOB_NAME}] Auth preflight inconclusive, continuing: ${err.message.split('\n')[0]}`);
+    return { ok: true };
   }
 }
 
@@ -445,7 +449,9 @@ function getCLISettings(cliType, config, bookmarkCount) {
 
 async function invokeAICLI(config, bookmarkCount, options = {}) {
   const timeout = config.claudeTimeout || 900000;
-  const stallTimeout = config.claudeStallTimeout || 90000;
+  // 5 minutes of silence, matching the production config: the parent CLI can
+  // stay quiet while a Task subagent or a long tool call runs.
+  const stallTimeout = config.claudeStallTimeout || 300000;
   const trackTokens = options.trackTokens || false;
   const cliType = config.cliTool || 'claude';
 
@@ -863,8 +869,18 @@ export async function run(options = {}) {
       const postFetchLimit = options.limit || config.maxBatchSize;
       if (postFetchLimit && postFetchLimit > 0 && bookmarkCount > postFetchLimit) {
         console.log(`[${now}] Limiting to ${postFetchLimit} of ${bookmarkCount} fetched bookmarks`);
-        // Save full set for later runs
-        fs.writeFileSync(config.pendingFile + '.full', JSON.stringify(pendingData, null, 2));
+        // Save full set for later runs. A .full that already exists (parked by
+        // the pre-fetch limit under forceFetch, or left by a crashed run) holds
+        // bookmarks the fetch never saw, so merge it in rather than replace it.
+        const fullFile = config.pendingFile + '.full';
+        let fullData = pendingData;
+        if (fs.existsSync(fullFile)) {
+          const parked = JSON.parse(fs.readFileSync(fullFile, 'utf8')).bookmarks || [];
+          const pendingIds = new Set(pendingData.bookmarks.map(b => b.id));
+          const bookmarks = [...pendingData.bookmarks, ...parked.filter(b => !pendingIds.has(b.id))];
+          fullData = { ...pendingData, count: bookmarks.length, bookmarks };
+        }
+        fs.writeFileSync(fullFile, JSON.stringify(fullData, null, 2));
         pendingData.bookmarks = pendingData.bookmarks.slice(0, postFetchLimit);
         pendingData.count = postFetchLimit;
         bookmarkCount = postFetchLimit;
@@ -927,11 +943,16 @@ export async function run(options = {}) {
           console.log(`[${now}] Cleaned up ${idsToProcess.length} processed bookmarks, ${remaining.length} remaining`);
         }
 
-        // Transcripts live beside the pending file (.state/transcripts/{id}.txt)
-        // and are only needed until their bookmark is processed.
+        // Transcripts live beside the pending file (.state/transcripts/{id}.txt,
+        // {id}-2.txt, ...) and are only needed until their bookmark is processed.
         const transcriptsDir = path.join(path.dirname(config.pendingFile), 'transcripts');
-        for (const id of idsToProcess) {
-          fs.rmSync(path.join(transcriptsDir, `${id}.txt`), { force: true });
+        if (fs.existsSync(transcriptsDir)) {
+          const processedIds = new Set(idsToProcess);
+          for (const file of fs.readdirSync(transcriptsDir)) {
+            if (processedIds.has(file.replace(/(-\d+)?\.txt$/, ''))) {
+              fs.rmSync(path.join(transcriptsDir, file), { force: true });
+            }
+          }
         }
 
         // Send success notification
