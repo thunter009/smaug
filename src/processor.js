@@ -296,8 +296,9 @@ export function fetchBookmarks(config, count = 10, options = {}) {
 
     console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
 
-    // Use temp file to work around bird CLI pipe buffering bug
-    const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${Date.now()}.json`);
+    // Use temp file to work around bird CLI pipe buffering bug. The pid keeps
+    // two smaug processes in the same millisecond off each other's file.
+    const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${process.pid}-${Date.now()}.json`);
     execSync(`${cmd} > "${tmpFile}"`, {
       timeout: useAll ? 180000 : 60000, // 3 min for --all, 60s otherwise
       env,
@@ -329,7 +330,7 @@ export function fetchLikes(config, count = 10) {
     const env = buildBirdEnv(config);
     const birdCmd = config.birdPath || 'bird';
     // Use temp file to work around bird CLI pipe buffering bug
-    const tmpFile = path.join(os.tmpdir(), `smaug-likes-${Date.now()}.json`);
+    const tmpFile = path.join(os.tmpdir(), `smaug-likes-${process.pid}-${Date.now()}.json`);
     execSync(`${birdCmd} likes -n ${count} --json > "${tmpFile}"`, {
       timeout: 60000,
       env,
