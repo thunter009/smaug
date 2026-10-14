@@ -86,6 +86,12 @@ if (outIdx === -1 || !args[outIdx + 1]) {
   process.stderr.write('missing -o\\n');
   process.exit(2);
 }
+// Real yt-dlp only simulates under a plain --print filename; it downloads
+// when the print waits for a later stage such as after_move.
+if (!args.includes('after_move:filepath')) {
+  process.stderr.write('--print filename alone would simulate, not download\\n');
+  process.exit(2);
+}
 
 const template = args[outIdx + 1];
 const url = args[args.length - 1] || '';

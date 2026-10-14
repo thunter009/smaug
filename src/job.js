@@ -927,6 +927,13 @@ export async function run(options = {}) {
           console.log(`[${now}] Cleaned up ${idsToProcess.length} processed bookmarks, ${remaining.length} remaining`);
         }
 
+        // Transcripts live beside the pending file (.state/transcripts/{id}.txt)
+        // and are only needed until their bookmark is processed.
+        const transcriptsDir = path.join(path.dirname(config.pendingFile), 'transcripts');
+        for (const id of idsToProcess) {
+          fs.rmSync(path.join(transcriptsDir, `${id}.txt`), { force: true });
+        }
+
         // Send success notification
         await notify(
           config,
