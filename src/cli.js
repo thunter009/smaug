@@ -98,7 +98,7 @@ This will set up Smaug to automatically archive your Twitter bookmarks.
 
   const authToken = await prompt('  Paste your auth_token: ');
   if (!authToken) {
-    console.log('  ✗ auth_token is required');
+    console.log('  ✗ auth_token is required'); // ubs:ignore — static message, logs no token value
     process.exit(1);
   }
 
@@ -369,8 +369,9 @@ async function main() {
         // Download video if requested
         if (shouldDownload && tweet.media?.some(m => m.type === 'video')) {
           const url = `https://x.com/${author}/status/${tweet.id}`;
-          const result = dlMedia(url, config.mediaDir || './media');
-          if (result) console.log(`  > Downloaded: ${result.filename}`);
+          for (const file of dlMedia(url, config.mediaDir || './media', config.ytdlpPath || 'yt-dlp')) {
+            console.log(`  > Downloaded: ${file.filename}`);
+          }
         }
       }
       console.log(`\n${'─'.repeat(60)}`);

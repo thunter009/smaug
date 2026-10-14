@@ -284,10 +284,13 @@ pending.bookmarks = remaining;
 pending.count = remaining.length;
 fs.writeFileSync(pendingPath, JSON.stringify(pending, null, 2));
 
-// Clean up transcript files for processed bookmarks
-for (const id of processedIds) {
-  const transcriptFile = path.join(path.dirname(pendingPath), 'transcripts', `${id}.txt`);
-  if (fs.existsSync(transcriptFile)) fs.unlinkSync(transcriptFile);
+// Clean up transcript files for processed bookmarks ({id}.txt, {id}-2.txt, ...)
+const transcriptsDir = path.join(path.dirname(pendingPath), 'transcripts');
+if (fs.existsSync(transcriptsDir)) {
+  for (const file of fs.readdirSync(transcriptsDir)) {
+    const id = file.replace(/(-\d+)?\.txt$/, '');
+    if (processedIds.has(id)) fs.unlinkSync(path.join(transcriptsDir, file));
+  }
 }
 ```
 

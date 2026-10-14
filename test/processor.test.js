@@ -13,7 +13,9 @@ import {
   findWhisper,
   parseJson3Transcript,
   parseVttTranscript,
-  fetchTranscriptContent
+  fetchTranscriptContent,
+  downloadMedia,
+  fetchAndPrepareBookmarks
 } from '../src/processor.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -853,5 +855,96 @@ describe('X article integration tests (requires bird credentials)', { skip: !BIR
     // Should return structure without failing
     assert.ok(result.articleId, 'should have articleId');
     assert.strictEqual(result.articleId, '9999999999999999999');
+  });
+});
+
+describe('downloadMedia', () => {
+  test('returns every file yt-dlp writes for a multi-video tweet', (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-media-test-'));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    const ytdlp = path.join(dir, 'yt-dlp');
+    fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+const template = args[args.indexOf('-o') + 1];
+for (const id of ['111_1', '111_2']) {
+  const file = template.replace('%(id)s', id).replace('%(ext)s', 'mp4');
+  fs.writeFileSync(file, 'video');
+  process.stdout.write(file + '\\n');
+}
+`);
+    fs.chmodSync(ytdlp, 0o755);
+    const outDir = path.join(dir, 'media');
+
+    const files = downloadMedia('https://x.com/a/status/111', outDir, ytdlp);
+
+    assert.deepStrictEqual(files.map(f => f.filename), ['111_1.mp4', '111_2.mp4']);
+    for (const f of files) assert.ok(fs.existsSync(f.path));
+  });
+
+  test('returns an empty list when yt-dlp is missing', () => {
+    const files = downloadMedia('https://x.com/a/status/111', os.tmpdir(), '/nonexistent/yt-dlp');
+    assert.deepStrictEqual(files, []);
+  });
+});
+
+describe('transcript files per link', () => {
+  test('a tweet with two videos gets two transcript files', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-transcripts-test-'));
+    const realFetch = globalThis.fetch;
+    t.after(() => {
+      globalThis.fetch = realFetch;
+      fs.rmSync(dir, { recursive: true, force: true });
+    });
+
+    // t.co expansion is a HEAD fetch; map each short link to its own video.
+    const videos = {
+      'https://t.co/aaa': 'https://www.youtube.com/watch?v=first',
+      'https://t.co/bbb': 'https://www.youtube.com/watch?v=second'
+    };
+    globalThis.fetch = async (url) => ({ url: videos[url] || url, ok: true, status: 200, text: async () => '' });
+
+    const bird = path.join(dir, 'bird');
+    fs.writeFileSync(bird, `#!/usr/bin/env node
+process.stdout.write(JSON.stringify([{
+  id: '5000000000000000001',
+  text: 'two talks https://t.co/aaa https://t.co/bbb',
+  author: { username: 'dana', name: 'Dana' },
+  createdAt: '2026-03-01T00:00:00Z'
+}]));
+`);
+    // Captions name the video they came from, so a mix-up is visible.
+    const ytdlp = path.join(dir, 'yt-dlp');
+    fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+const url = args[args.length - 1];
+const file = args[args.indexOf('-o') + 1].replace('%(id)s', 'v').replace('%(ext)s', 'en.vtt');
+fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\ncaptions for ' + url + '\\n');
+`);
+    fs.chmodSync(bird, 0o755);
+    fs.chmodSync(ytdlp, 0o755);
+
+    const stateDir = path.join(dir, '.state');
+    const configPath = path.join(dir, 'smaug.config.json');
+    fs.writeFileSync(configPath, JSON.stringify({
+      archiveFile: path.join(dir, 'bookmarks.md'),
+      pendingFile: path.join(stateDir, 'pending-bookmarks.json'),
+      stateFile: path.join(stateDir, 'bookmarks-state.json'),
+      birdPath: bird,
+      ytdlpPath: ytdlp,
+      whisperPath: path.join(dir, 'no-whisper'),
+      twitter: { authToken: 'token', ct0: 'token' }
+    }));
+
+    const result = await fetchAndPrepareBookmarks({ configPath, count: 1 });
+
+    const links = result.bookmarks[0].links;
+    assert.strictEqual(links.length, 2);
+    const files = links.map(l => l.content.transcriptFile);
+    assert.notStrictEqual(files[0], files[1]);
+    assert.strictEqual(path.basename(files[0]), '5000000000000000001.txt');
+    assert.match(fs.readFileSync(files[0], 'utf8'), /v=first/);
+    assert.match(fs.readFileSync(files[1], 'utf8'), /v=second/);
   });
 });
