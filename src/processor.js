@@ -781,7 +781,7 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
     try {
       execFileSync(
         whisper,
-        [audioFile, '--model', whisperModel, '--output_format', 'txt', '--output_dir', tmpDir],
+        [audioFile, '--model', whisperModel, '-f', 'txt', '-o', tmpDir],
         { timeout: whisperTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch (err) {
@@ -807,6 +807,52 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
       fs.rmSync(tmpDir, { recursive: true, force: true });
     } catch {}
   }
+}
+
+/**
+ * Locate yt-dlp and whisper once, honoring ytdlpPath / whisperPath.
+ */
+export function findTranscriptTools(config) {
+  const tools = {
+    ytdlp: findYtDlp({ configPath: config.ytdlpPath }),
+    whisper: findWhisper({ configPath: config.whisperPath })
+  };
+  if (tools.ytdlp) console.log(`  yt-dlp found: ${tools.ytdlp}`);
+  if (tools.whisper) console.log(`  whisper found: ${tools.whisper}`);
+  return tools;
+}
+
+/**
+ * Fetch transcripts for the video and podcast links of `bookmarks` and point
+ * each link's content at .state/transcripts/{id}.txt ({id}-2.txt, ... for a
+ * tweet's later media links, so two videos never share a file). Links whose
+ * transcript file already exists are skipped. Mutates the bookmarks; returns
+ * the number of transcripts written.
+ */
+export async function transcribeBookmarks(bookmarks, config, toolPaths = null) {
+  const transcriptsDir = path.join(path.dirname(config.pendingFile), 'transcripts');
+  let written = 0;
+  for (const bookmark of bookmarks) {
+    const mediaLinks = (bookmark.links || []).filter(l => l.type === 'video' || l.type === 'podcast');
+    for (const [i, link] of mediaLinks.entries()) {
+      if (link.content?.transcriptFile && fs.existsSync(link.content.transcriptFile)) continue;
+      try {
+        // Look the tools up only once a link needs them.
+        toolPaths ??= findTranscriptTools(config);
+        const result = await fetchTranscriptContent(link.expanded, config, toolPaths);
+        if (!result?.text) continue;
+        fs.mkdirSync(transcriptsDir, { recursive: true });
+        const transcriptFile = path.join(transcriptsDir, `${bookmark.id}${i > 0 ? `-${i + 1}` : ''}.txt`);
+        fs.writeFileSync(transcriptFile, result.text);
+        link.content = { source: result.source, transcriptFile, chars: result.text.length };
+        written++;
+        console.log(`  Transcript: ${result.text.length} chars (${result.source}) → ${transcriptFile}`);
+      } catch (error) {
+        console.log(`  Transcript extraction failed: ${error.message}`);
+      }
+    }
+  }
+  return written;
 }
 
 export async function fetchContent(url, type, config) {
@@ -922,11 +968,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   }
 
   // Detect transcription tools once per run
-  const ytdlpPath = findYtDlp({ configPath: config.ytdlpPath });
-  const whisperPath = findWhisper({ configPath: config.whisperPath });
-  const toolPaths = { ytdlp: ytdlpPath, whisper: whisperPath };
-  if (ytdlpPath) console.log(`  yt-dlp found: ${ytdlpPath}`);
-  if (whisperPath) console.log(`  whisper found: ${whisperPath}`);
+  const toolPaths = findTranscriptTools(config);
 
   console.log(`Preparing ${toProcess.length} tweets...`);
 
@@ -1069,34 +1111,6 @@ export async function fetchAndPrepareBookmarks(options = {}) {
           }
         }
 
-        // Fetch transcript for video and podcast links
-        if (type === 'video' || type === 'podcast') {
-          try {
-            const transcriptResult = await fetchTranscriptContent(expanded, config, toolPaths);
-            if (transcriptResult && transcriptResult.text) {
-              // Write full transcript to separate file to keep pending JSON small
-              const transcriptsDir = path.join(path.dirname(config.pendingFile), 'transcripts');
-              if (!fs.existsSync(transcriptsDir)) {
-                fs.mkdirSync(transcriptsDir, { recursive: true });
-              }
-              // One file per link: a tweet with two videos must not overwrite
-              // the first transcript. The first keeps the plain {id}.txt name.
-              const transcriptCount = links.filter(l => l.content?.transcriptFile).length;
-              const suffix = transcriptCount > 0 ? `-${transcriptCount + 1}` : '';
-              const transcriptFile = path.join(transcriptsDir, `${bookmark.id}${suffix}.txt`);
-              fs.writeFileSync(transcriptFile, transcriptResult.text);
-              content = {
-                source: transcriptResult.source,
-                transcriptFile,
-                chars: transcriptResult.text.length
-              };
-              console.log(`  Transcript: ${content.chars} chars (${content.source}) → ${transcriptFile}`);
-            }
-          } catch (error) {
-            console.log(`  Transcript extraction failed: ${error.message}`);
-          }
-        }
-
         links.push({
           original: link,
           expanded,
@@ -1236,6 +1250,12 @@ export async function fetchAndPrepareBookmarks(options = {}) {
     } catch (error) {
       console.error(`  Error processing bookmark ${bookmark.id}: ${error.message}`);
     }
+  }
+
+  // The scheduled job passes transcribe: false and transcribes only the batch
+  // it is about to process (job.js); a manual fetch transcribes everything new.
+  if (options.transcribe ?? true) {
+    await transcribeBookmarks(prepared, config, toolPaths);
   }
 
   // Merge prepared bookmarks into pending file

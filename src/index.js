@@ -16,6 +16,8 @@ export {
   fetchArticleContent,
   fetchXArticleContent,
   fetchTranscriptContent,
+  transcribeBookmarks,
+  findTranscriptTools,
   parseJson3Transcript,
   parseVttTranscript,
   findYtDlp,

@@ -15,7 +15,8 @@ import {
   parseVttTranscript,
   fetchTranscriptContent,
   downloadMedia,
-  fetchAndPrepareBookmarks
+  fetchAndPrepareBookmarks,
+  transcribeBookmarks
 } from '../src/processor.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -771,7 +772,7 @@ if (args.includes('-x')) fs.writeFileSync(args[args.indexOf('-o') + 1], 'audio')
 const fs = require('fs');
 const path = require('path');
 const args = process.argv.slice(2);
-fs.writeFileSync(path.join(args[args.indexOf('--output_dir') + 1], 'audio.txt'), 'hello transcript');
+fs.writeFileSync(path.join(args[args.indexOf('-o') + 1], 'audio.txt'), 'hello transcript');
 `);
     fs.chmodSync(ytdlp, 0o755);
     fs.chmodSync(whisper, 0o755);
@@ -946,5 +947,97 @@ fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\ncaptions for
     assert.strictEqual(path.basename(files[0]), '5000000000000000001.txt');
     assert.match(fs.readFileSync(files[0], 'utf8'), /v=first/);
     assert.match(fs.readFileSync(files[1], 'utf8'), /v=second/);
+  });
+});
+
+// A fake yt-dlp whose captions name the URL they came from and that logs one
+// line per call, so tests can count transcription attempts.
+function fakeCaptionYtDlp(dir) {
+  const ytdlp = path.join(dir, 'yt-dlp');
+  const log = path.join(dir, 'yt-dlp-calls.log');
+  fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+const url = args[args.length - 1];
+fs.appendFileSync(${JSON.stringify(log)}, url + '\\n');
+const file = args[args.indexOf('-o') + 1].replace('%(id)s', 'v').replace('%(ext)s', 'en.vtt');
+fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\ncaptions for ' + url + '\\n');
+`);
+  fs.chmodSync(ytdlp, 0o755);
+  const calls = () => (fs.existsSync(log) ? fs.readFileSync(log, 'utf8').trim().split('\n') : []);
+  return { ytdlp, calls };
+}
+
+describe('transcribeBookmarks', () => {
+  test('names files by media-link position and skips links that already have one', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-transcribe-test-'));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    const { ytdlp, calls } = fakeCaptionYtDlp(dir);
+    const pendingFile = path.join(dir, '.state', 'pending-bookmarks.json');
+    const existing = path.join(dir, '.state', 'transcripts', '600.txt');
+    fs.mkdirSync(path.dirname(existing), { recursive: true });
+    fs.writeFileSync(existing, 'earlier transcript');
+
+    const bookmarks = [
+      { id: '500', links: [
+        { type: 'article', expanded: 'https://example.com/post', content: null },
+        { type: 'video', expanded: 'https://www.youtube.com/watch?v=one', content: null },
+        { type: 'podcast', expanded: 'https://podcasts.apple.com/us/podcast/x/id1', content: null }
+      ] },
+      { id: '600', links: [
+        { type: 'video', expanded: 'https://www.youtube.com/watch?v=two',
+          content: { source: 'whisper', transcriptFile: existing, chars: 18 } }
+      ] }
+    ];
+
+    const written = await transcribeBookmarks(bookmarks, { pendingFile }, { ytdlp, whisper: null });
+
+    assert.strictEqual(written, 2);
+    const [article, video, podcast] = bookmarks[0].links;
+    assert.strictEqual(article.content, null);
+    assert.strictEqual(path.basename(video.content.transcriptFile), '500.txt');
+    assert.strictEqual(path.basename(podcast.content.transcriptFile), '500-2.txt');
+    assert.match(fs.readFileSync(podcast.content.transcriptFile, 'utf8'), /podcasts\.apple\.com/);
+    assert.deepStrictEqual(calls(), [video.expanded, podcast.expanded]);
+    assert.strictEqual(fs.readFileSync(existing, 'utf8'), 'earlier transcript');
+  });
+
+  test('fetchAndPrepareBookmarks with transcribe: false calls no yt-dlp', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-transcribe-off-test-'));
+    const realFetch = globalThis.fetch;
+    t.after(() => {
+      globalThis.fetch = realFetch;
+      fs.rmSync(dir, { recursive: true, force: true });
+    });
+    globalThis.fetch = async (url) => ({ url: 'https://www.youtube.com/watch?v=later', ok: true, status: 200, text: async () => '' });
+    const { ytdlp, calls } = fakeCaptionYtDlp(dir);
+    const bird = path.join(dir, 'bird');
+    fs.writeFileSync(bird, `#!/usr/bin/env node
+process.stdout.write(JSON.stringify([{
+  id: '7000000000000000001',
+  text: 'a talk https://t.co/ccc',
+  author: { username: 'erin', name: 'Erin' },
+  createdAt: '2026-03-02T00:00:00Z'
+}]));
+`);
+    fs.chmodSync(bird, 0o755);
+    const stateDir = path.join(dir, '.state');
+    const configPath = path.join(dir, 'smaug.config.json');
+    fs.writeFileSync(configPath, JSON.stringify({
+      archiveFile: path.join(dir, 'bookmarks.md'),
+      pendingFile: path.join(stateDir, 'pending-bookmarks.json'),
+      stateFile: path.join(stateDir, 'bookmarks-state.json'),
+      birdPath: bird,
+      ytdlpPath: ytdlp,
+      whisperPath: path.join(dir, 'no-whisper'),
+      twitter: { authToken: 'token', ct0: 'token' }
+    }));
+
+    const result = await fetchAndPrepareBookmarks({ configPath, count: 1, transcribe: false });
+
+    const [link] = result.bookmarks[0].links;
+    assert.strictEqual(link.type, 'video');
+    assert.strictEqual(link.content, null);
+    assert.deepStrictEqual(calls(), []);
   });
 });
