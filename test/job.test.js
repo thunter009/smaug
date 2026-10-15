@@ -220,3 +220,56 @@ process.stdout.write(JSON.stringify([0, 1, 2].map(i => ({
     assert.strictEqual(trimmed.bookmarks.length, 10);
   });
 });
+
+describe('run() transcription', () => {
+  test('transcribes only the batch it processes, not every pending video', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-job-transcribe-test-'));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    const stateDir = path.join(dir, '.state');
+    fs.mkdirSync(stateDir);
+    const pendingFile = path.join(stateDir, 'pending-bookmarks.json');
+
+    // 20 pending bookmarks, one YouTube link each, none transcribed yet.
+    const pending = Array.from({ length: 20 }, (_, i) => ({
+      id: `80000000000000000${String(i).padStart(2, '0')}`,
+      createdAt: `2026-01-01T00:${String(i).padStart(2, '0')}:00Z`,
+      links: [{ type: 'video', expanded: `https://www.youtube.com/watch?v=vid${i}`, content: null }]
+    }));
+    fs.writeFileSync(pendingFile, JSON.stringify({ count: 20, bookmarks: pending }));
+
+    const log = path.join(dir, 'yt-dlp-calls.log');
+    const ytdlp = path.join(dir, 'yt-dlp');
+    fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+fs.appendFileSync(${JSON.stringify(log)}, args[args.length - 1] + '\\n');
+const file = args[args.indexOf('-o') + 1].replace('%(id)s', 'v').replace('%(ext)s', 'en.vtt');
+fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\nhello\\n');
+`);
+    fs.chmodSync(ytdlp, 0o755);
+
+    const configPath = path.join(dir, 'smaug.config.json');
+    fs.writeFileSync(configPath, JSON.stringify({
+      archiveFile: path.join(dir, 'bookmarks.md'),
+      pendingFile,
+      stateFile: path.join(stateDir, 'bookmarks-state.json'),
+      ytdlpPath: ytdlp,
+      whisperPath: path.join(dir, 'no-whisper'),
+      twitter: { authToken: 'token', ct0: 'token' },
+      autoInvokeClaude: false,
+      maxBatchSize: 2
+    }));
+
+    const result = await run({ configPath });
+    assert.strictEqual(result.success, true);
+
+    const calls = fs.readFileSync(log, 'utf8').trim().split('\n');
+    assert.deepStrictEqual(calls, [pending[0].links[0].expanded, pending[1].links[0].expanded]);
+
+    const batch = JSON.parse(fs.readFileSync(pendingFile, 'utf8')).bookmarks;
+    assert.strictEqual(batch.length, 2);
+    for (const b of batch) {
+      assert.ok(fs.existsSync(b.links[0].content.transcriptFile), `no transcript for ${b.id}`);
+    }
+  });
+});

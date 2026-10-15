@@ -195,6 +195,9 @@ pip install yt-dlp
 
 # For audio transcription when captions aren't available
 pip install openai-whisper
+# or, on Apple Silicon (much faster): uv tool install --python 3.13 mlx-whisper
+#   then set "whisperPath" to the mlx_whisper binary and
+#   "whisperModel" to "mlx-community/whisper-small.en-mlx"
 
 # Required for Whisper (Tier 2) — ffmpeg handles audio extraction and decoding
 # Not needed if you only use caption extraction (Tier 1)
@@ -219,7 +222,11 @@ sudo apt-get install ffmpeg   # Debian/Ubuntu
 }
 ```
 
-**How transcripts are stored:** Full transcripts are written to `.state/transcripts/{tweet_id}.txt` — they never bloat the pending JSON, even for 6-hour podcasts. During processing, Claude reads only the first ~20K characters needed for summarization.
+**When YouTube refuses captions:** YouTube may answer caption downloads with `HTTP Error 429: Too Many Requests` for an IP while still serving the audio. Tier 2 then still works, so installing Whisper and ffmpeg is the dependable setup.
+
+**How transcripts are stored:** Full transcripts are written to `.state/transcripts/{tweet_id}.txt` (`{tweet_id}-2.txt`, … for a tweet's later video links) — they never bloat the pending JSON, even for 6-hour podcasts. During processing, Claude reads only the first ~20K characters needed for summarization.
+
+**When transcription runs:** `smaug fetch` transcribes every new bookmark. The scheduled job (`smaug run`) fetches without transcribing and transcribes only the batch it is about to process, so a fetch of many videos does not hold the run for hours.
 
 Environment variables: `YTDLP_PATH`, `WHISPER_PATH`, `WHISPER_MODEL`.
 

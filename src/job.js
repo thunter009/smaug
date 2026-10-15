@@ -16,7 +16,7 @@ import { execSync, spawn } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
-import { fetchAndPrepareBookmarks } from './processor.js';
+import { fetchAndPrepareBookmarks, transcribeBookmarks } from './processor.js';
 import { loadConfig } from './config.js';
 
 const JOB_NAME = 'smaug';
@@ -857,7 +857,7 @@ export async function run(options = {}) {
     // Phase 1: Fetch new bookmarks (merges with existing pending)
     if (bookmarkCount === 0 || options.forceFetch) {
       console.log(`[${now}] Phase 1: Fetching and preparing bookmarks...`);
-      const prepResult = await fetchAndPrepareBookmarks(options);
+      const prepResult = await fetchAndPrepareBookmarks({ ...options, transcribe: false });
 
       // Re-read pending file after fetch
       if (fs.existsSync(config.pendingFile)) {
@@ -900,6 +900,12 @@ export async function run(options = {}) {
     }
 
     console.log(`[${now}] Processing ${bookmarkCount} bookmarks`);
+
+    // Transcribe only this batch. A fetch can bring in dozens of videos, and
+    // each transcript costs a download plus whisper; the rest wait their turn.
+    if (await transcribeBookmarks(pendingData.bookmarks, config) > 0) {
+      fs.writeFileSync(config.pendingFile, JSON.stringify(pendingData, null, 2));
+    }
 
     // Track IDs we're about to process
     const idsToProcess = pendingData.bookmarks.map(b => b.id);
