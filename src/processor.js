@@ -28,15 +28,8 @@ dayjs.extend(timezone);
  */
 function searchForArticleTweet(articleId, config) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    // articleId is validated as digits-only by caller's regex
     const searchQuery = `url:x.com/i/article/${articleId}`;
-    const output = execSync(`${birdCmd} search "${searchQuery}" -n 5 --json`, {
-      encoding: 'utf8',
-      timeout: 30000,
-      env
-    });
+    const output = runBird(config, ['search', searchQuery, '-n', '5', '--json'], 30000);
     const parsed = JSON.parse(output);
     // bird CLI may return array or { tweets: [...] } depending on version
     const results = Array.isArray(parsed) ? parsed : (parsed.tweets || []);
@@ -68,8 +61,6 @@ export async function fetchXArticleContent(articleUrl, config, sourceTweetId = n
   }
 
   const articleId = articleIdMatch[1];
-  const env = buildBirdEnv(config);
-  const birdCmd = config.birdPath || 'bird';
 
   const extractArticle = (tweetData, source, tweetId) => {
     let articleContent = tweetData.text || '';
@@ -121,11 +112,7 @@ export async function fetchXArticleContent(articleUrl, config, sourceTweetId = n
   // Try the bookmarked tweet first - fastest path when it contains the article directly
   if (sourceTweetId) {
     try {
-      const output = execSync(`${birdCmd} read ${sourceTweetId} --json`, {
-        encoding: 'utf8',
-        timeout: 30000,
-        env
-      });
+      const output = runBird(config, ['read', String(sourceTweetId), '--json'], 30000);
       const tweetData = JSON.parse(output);
       const result = extractArticle(tweetData, 'bird-cli', sourceTweetId);
       if (result) return result;
@@ -152,11 +139,7 @@ export async function fetchXArticleContent(articleUrl, config, sourceTweetId = n
     // Search result truncated - need full tweet data
     try {
       console.log(`  Found original article tweet: ${originalTweet.id}, fetching full content...`);
-      const output = execSync(`${birdCmd} read ${originalTweet.id} --json`, {
-        encoding: 'utf8',
-        timeout: 30000,
-        env
-      });
+      const output = runBird(config, ['read', String(originalTweet.id), '--json'], 30000);
       const tweetData = JSON.parse(output);
       const readResult = extractArticle(tweetData, 'bird-cli-search-read', originalTweet.id);
       if (readResult) return readResult;
@@ -264,48 +247,55 @@ function buildBirdEnv(config) {
   return env;
 }
 
+/**
+ * Run bird with an argument array, never through a shell, and return stdout.
+ * stdout goes to a temp file rather than a pipe: bird has a pipe buffering
+ * bug on large outputs. The pid keeps concurrent smaug processes apart.
+ */
+function runBird(config, args, timeout) {
+  const tmpFile = path.join(os.tmpdir(), `smaug-bird-${process.pid}-${Date.now()}.json`);
+  const fd = fs.openSync(tmpFile, 'w');
+  try {
+    execFileSync(config.birdPath || 'bird', args, {
+      timeout,
+      env: buildBirdEnv(config),
+      stdio: ['ignore', fd, 'pipe']
+    });
+    return fs.readFileSync(tmpFile, 'utf8');
+  } finally {
+    fs.closeSync(fd);
+    fs.rmSync(tmpFile, { force: true });
+  }
+}
+
 export function fetchBookmarks(config, count = 10, options = {}) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-
     // Use --all for large fetches (> 50) or when explicitly requested
     const useAll = options.all || count > 50;
     const folderId = options.folderId;
     const expandThreads = options.expandThreads ?? config.expandThreads ?? false;
 
-    let cmd;
+    const args = ['bookmarks'];
+    if (folderId) args.push('--folder-id', String(folderId));
     if (useAll) {
       // Paginated fetch - use longer timeout
       // Calculate maxPages from count (bird returns ~20 per page, use 25 as buffer)
       const estimatedPagesNeeded = Math.ceil(count / 20);
       const maxPages = options.maxPages || Math.max(estimatedPagesNeeded, 10);
-      cmd = folderId
-        ? `${birdCmd} bookmarks --folder-id ${folderId} --all --max-pages ${maxPages} --json`
-        : `${birdCmd} bookmarks --all --max-pages ${maxPages} --json`;
+      args.push('--all', '--max-pages', String(maxPages));
     } else {
-      cmd = folderId
-        ? `${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`
-        : `${birdCmd} bookmarks -n ${count} --json`;
+      args.push('-n', String(count));
     }
 
     // Thread expansion: fetch author's self-reply chain + metadata
     if (expandThreads) {
-      cmd += ' --author-chain --thread-meta --sort-chronological';
+      args.push('--author-chain', '--thread-meta', '--sort-chronological');
     }
 
-    console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
+    console.log(`  Running: ${config.birdPath || 'bird'} ${args.join(' ')}`);
 
-    // Use temp file to work around bird CLI pipe buffering bug. The pid keeps
-    // two smaug processes in the same millisecond off each other's file.
-    const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${process.pid}-${Date.now()}.json`);
-    execSync(`${cmd} > "${tmpFile}"`, {
-      timeout: useAll ? 180000 : 60000, // 3 min for --all, 60s otherwise
-      env,
-      shell: true
-    });
-    const output = fs.readFileSync(tmpFile, 'utf8');
-    fs.unlinkSync(tmpFile);
+    // 3 min for --all, 60s otherwise
+    const output = runBird(config, [...args, '--json'], useAll ? 180000 : 60000);
     const parsed = JSON.parse(output);
     // bird CLI v0.6.0+ returns { tweets: [...], nextCursor: ... } for paginated requests
     // but plain arrays for non-paginated. Handle both formats.
@@ -327,17 +317,7 @@ export function fetchBookmarks(config, count = 10, options = {}) {
 
 export function fetchLikes(config, count = 10) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    // Use temp file to work around bird CLI pipe buffering bug
-    const tmpFile = path.join(os.tmpdir(), `smaug-likes-${process.pid}-${Date.now()}.json`);
-    execSync(`${birdCmd} likes -n ${count} --json > "${tmpFile}"`, {
-      timeout: 60000,
-      env,
-      shell: true
-    });
-    const output = fs.readFileSync(tmpFile, 'utf8');
-    fs.unlinkSync(tmpFile);
+    const output = runBird(config, ['likes', '-n', String(count), '--json'], 60000);
     const parsed = JSON.parse(output);
     // Handle both array and object formats for consistency
     return Array.isArray(parsed) ? parsed : (parsed.tweets || []);
@@ -421,13 +401,7 @@ export function fetchFromFolders(config, count = 10, options = {}) {
  */
 export function fetchThread(config, tweetIdOrUrl) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    const output = execFileSync(birdCmd, ['thread', String(tweetIdOrUrl), '--json'], {
-      encoding: 'utf8',
-      timeout: 30000,
-      env
-    });
+    const output = runBird(config, ['thread', String(tweetIdOrUrl), '--json'], 30000);
     const parsed = JSON.parse(output);
     return Array.isArray(parsed) ? parsed : (parsed.tweets || []);
   } catch (error) {
@@ -465,13 +439,7 @@ export function downloadMedia(tweetUrl, outputDir, ytdlpBin = 'yt-dlp') {
 
 export function fetchTweet(config, tweetId) {
   try {
-    const env = buildBirdEnv(config);
-    const birdCmd = config.birdPath || 'bird';
-    const output = execSync(`${birdCmd} read ${tweetId} --json`, {
-      encoding: 'utf8',
-      timeout: 15000,
-      env
-    });
+    const output = runBird(config, ['read', String(tweetId), '--json'], 15000);
     return JSON.parse(output);
   } catch (error) {
     console.log(`  Could not fetch parent tweet ${tweetId}: ${error.message}`);
