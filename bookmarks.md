@@ -11531,7 +11531,709 @@
 
 ---
 
+# Monday, March 2, 2026
+
+## @lennysan - Jenny Wen (Anthropic design lead): the classic design process is dead, hire cracked new grads
+> My biggest takeaways from @jennywen (design lead at @AnthropicAI):
+>
+> 1. The traditional design process is breaking down: discover-diverge-converge fails when engineers can spin up seven coding agents and ship before a designer finishes exploring.
+> 2. Design splits into supporting execution (consulting, polishing in code) and short-range 3-6 month vision.
+> 3. Build trust through speed: ship early as research previews, iterate publicly; going silent degrades a brand, not roughness.
+> 4. Most overlooked hire: the cracked new grad with no obsolete rituals.
+> 5. Chat as an interface is permanent, with models increasingly generating UI widgets on the fly.
+> 6. Jenny went from design director (12-15 reports) back to IC.
+> 7. AI will likely get better at taste and judgment; designers may over-rely on taste as a moat.
+> 8. Hire generalists (block-shaped, 80th percentile across skills), deep specialists (top 10%), and cracked new grads.
+> 9. Figma remains essential for exploring 8-10 directions spatially; coding tools are too linear and create investment bias.
+> 10. Low-leverage work (dogfooding, repro bugs, small fixes) is often the highest-leverage thing a manager can do.
+>
+> Watch our full conversation: https://www.youtube.com/watch?v=eh8bcBIAAFo
+>
+> *Quoting @lennysan:* Design lead for Claude: The classic design process is dead. Here's what's replacing it. Jenny Wen leads design for Claude at Anthropic, previously director of design at Figma. Topics: why discovery → mock → iterate is obsolete, a day in the life with her AI tool stack, whether AI will surpass humans in taste, why she left a director role to return to IC, and the three archetypes she is hiring.
+
+- **Tweet:** https://x.com/lennysan/status/2028484407108194507
+- **Link:** https://www.youtube.com/watch?v=eh8bcBIAAFo
+- **Quoted:** https://x.com/lennysan/status/2028120467568263652
+- **What:** Lenny's ten takeaways from his interview with Jenny Wen: agents collapse the discover-diverge-converge loop, so design shifts to execution support plus 3-6 month vision. Hire generalists, specialists, and new grads, ship rough then iterate publicly, and Figma still wins for spatial exploration.
+
+## @camolNFT - OpenClaw agent claims $450k government contracts via low-margin dropshipping bids
+> Set up my OpenClaw to land and fulfill government contracts.
+>
+> It’s actually super easy:
+>
+> - Scrape government listing websites for new contracts 
+> - Submit bids at 30-45% margin for any new listed supply contracts (most contractors do 100% margins) 
+> - Order products from Amazon/Walmart and deliver directly to the appropriate address
+>
+> Already generating over $450,000 in contracts and it’s only been a month.
+
+- **Tweet:** https://x.com/camolNFT/status/2028469639206908393
+- **What:** Claims an OpenClaw agent scrapes government supply-contract listings, undercuts bids at 30-45% margin, and fulfills via Amazon/Walmart dropshipping, for $450k in contracts in a month. Unverified claim; the workflow is a simple arbitrage loop.
+
+## @ArtemXTech - Give Claude Code persistent memory with QMD local search and a /recall skill
+> https://x.com/i/article/2028328572272742401
+
+- **Tweet:** https://x.com/ArtemXTech/status/2028330693659332615
+- **Link:** https://x.com/i/article/2028328572272742401
+- **Filed:** [grep-is-dead-claude-code-memory.md](./knowledge/articles/grep-is-dead-claude-code-memory.md)
+- **What:** Article on indexing an Obsidian vault and exported Claude Code sessions with QMD (BM25, semantic, hybrid) plus a /recall skill, so sessions start with context. Faster and cheaper than subagent grep, fully local.
+
+---
+
+# Sunday, March 1, 2026
+
+## @HiTw93 - Pake 3.10.0 packages web apps into native desktop apps with multi-window support
+> If you’re building an AI product and want to test the market fast, ship the web version first. When you’re ready, use Pake to package it into native desktop apps for macOS, Windows, and Linux with a single command.
+>
+> Pake 3.10.0 is live. Turn any webpage into a desktop app. https://github.com/tw93/Pake
+>
+> Highlights:
+> · Multi-window support via –multi-window, with Cmd+N on macOS and proper tray integration.
+> · –internal-url-regex for fine-grained control over internal links, useful for complex AI dashboards and multi-route tools.
+> · Improved Windows icon quality with prioritized 256px ICO entries.
+> · Retina DMG background fix for cleaner macOS distribution builds.
+>
+> Build on the web, validate with users, then ship desktop when it matters. Keep the loop tight.
+
+- **Tweet:** https://x.com/HiTw93/status/2028251438468481116
+- **Link:** https://github.com/tw93/Pake
+- **Filed:** [pake.md](./knowledge/tools/pake.md)
+- **What:** Pake 3.10.0 release: one-command wrapper turning any webpage into a macOS/Windows/Linux desktop app, now with multi-window, internal URL regex, and icon/DMG fixes. Advocates web-first validation, desktop packaging later.
+
+## @badlogicgames - MCP is situational: skip for dev workflows, needed for enterprise auth and normies
+> *Replying to @badlogicgames:* oh no, orange site is doing this again.  didn't we beat this old horse to death already?
+>
+> do you need MCP for dev workflows? no, for the most part. allows out of context data transforms, conserves context window space.
+>
+> do enterprises need MCP? likely, specifically wrt to auth, which is a bad idea via a fully LLM exposed cli.
+>
+> do normies need MCP? yes, no other way to connect emails/etc. still a bad idea to let them use any old MCP, specifically stdio based ones. it's like your grandma installing all those .exe email attachments.
+
+- **Tweet:** https://x.com/badlogicgames/status/2028215017733013581
+- **Parent:** https://x.com/badlogicgames/status/2028213637400150349
+- **What:** Weighs in on the recurring MCP-vs-CLI debate: devs mostly don't need MCP, though it saves context via out-of-context transforms. Enterprises likely need it for auth, and non-technical users need it for integrations but face risk from arbitrary stdio servers.
+
+## @dani_avila7 - ClaudeKit's spec-driven Claude Code pipeline: init, brainstorm, plan, clear, auto-code
+> Found an interesting Claude Code workflow from ClaudeKit
+>
+> The flow goes like this:
+> - /docs:init scans your codebase generates specs
+> - /brainstorm challenges you with questions until requirements are solid
+> - /plan creates phased implementation plan
+> - /clear resets context clean output
+> - /code:auto implements phase by phase using progressive disclosure
+>
+> Spec-driven development + TDD baked in.
+
+- **Tweet:** https://x.com/dani_avila7/status/2028202701184717211
+- **Link:** https://app.aitmpl.com/featured/claudekit
+- **Filed:** [claudekit-spec-driven-workflow.md](./knowledge/articles/claudekit-spec-driven-workflow.md)
+- **What:** ClaudeKit chains slash commands into a spec-driven loop: generate specs from the codebase, brainstorm requirements, write a phased plan, clear context, then implement phase by phase with TDD and progressive disclosure.
+
+## @dan_note - OpenPencil: open-source Figma alternative built in 3 days after Figma broke figma-use
+> Figma shipped a silent patch specifically to kill figma-use — my open-source tool that did what they wouldn't: an MCP server that creates and modifies designs, JSX export, design linting. Then they scrambled to catch up with their own MCP server.
+>
+> So I spent the weekend recreating @Figma from scratch.
+>
+> OpenPencil: reads and writes .fig files, AI chat with full design tools, P2P collaboration with zero servers, ~7 MB app. No account, no subscription.
+>
+> Three days, one developer, MIT license.
+
+- **Tweet:** https://x.com/dan_note/status/2028201388074013048
+- **Link:** https://openpencil.dev/
+- **Filed:** [openpencil-open-source-figma-alternative.md](./knowledge/articles/openpencil-open-source-figma-alternative.md)
+- **What:** Author of figma-use claims Figma patched to break it, then built OpenPencil: MIT, local ~7 MB editor that opens .fig files, offers agent-programmable design tools, and does serverless P2P collaboration.
+
+## @cristofrcharles - crshdn/mission-control, a self-built agent mission-control dashboard
+> *Replying to @nyk_builderz:* (parent text not captured)
+>
+> @nyk_builderz Looks like mine just not as good - https://t.co/9r0F9kOLhB
+
+- **Tweet:** https://x.com/cristofrcharles/status/2028165515781521641
+- **Link:** https://github.com/crshdn/mission-control
+- **Filed:** [crshdn-mission-control.md](./knowledge/tools/crshdn-mission-control.md)
+- **What:** Reply to @nyk_builderz's mission-control showcase pointing to his own open-source mission-control repo as a similar but self-described less polished take. Repo README was not captured, so scope is inferred from the name.
+
+## @petergyang - Carl Vellotti's Claude Code OS: Workspace, Linear, Slack, Reddit via skills and MCPs
+> "I am a Claude Code maximalist. I try to live in it all day if I can."
+>
+> @carlvellotti has gone deeper on Claude Code than any PM I know. In my new episode, he showed me how to connect Claude Code to: Google Workspace (prep for meetings), Linear (tickets from PRDs), Slack (status updates), Reddit (monitor subreddits). He does all of the above using skills and MCPs in his personal Claude Code OS.
+>
+> "I use this consult-the-council skill to get Claude, ChatGPT, and Grok to all review my work in one shot."
+
+- **Tweet:** https://x.com/petergyang/status/2028130752978919691
+- **Link:** https://www.youtube.com/watch?v=1B3Ffo8snfY&feature=youtu.be
+- **What:** Podcast episode showing a PM running daily work from Claude Code by wiring skills and MCPs into Google Workspace, Linear, Slack, and Reddit, plus a "consult-the-council" skill that has Claude, ChatGPT, and Grok review work together. No transcript captured, so only the tweet summary is available.
+
+## @ctatedev - agent-browser Electron skill drives desktop apps like Discord, Figma, Notion, VS Code
+> New agent-browser skill: Electron
+>
+> You can now control desktop apps built with Electron, including Discord, Figma, Notion, Spotify VS Code
+>
+> Or, use debug own Electron app
+>
+> Add it any coding agent:
+>
+> npx skills add vercel-labs/agent-browser --skill electron
+>
+> *Quoting @ctatedev:* The "holy shit" moment when I realized agent-browser can control Slack. npx skills add vercel-labs/agent-browser --skill slack
+
+- **Tweet:** https://x.com/ctatedev/status/2028128730132922760
+- **Quoted:** https://x.com/ctatedev/status/2027809304116342846
+- **What:** agent-browser (vercel-labs) gains an Electron skill, extending its earlier Slack skill so coding agents can drive any Electron desktop app (Discord, Figma, Notion, VS Code) or debug your own. Installable via `npx skills add vercel-labs/agent-browser --skill electron`.
+
+## @lennysan - Claude's design lead Jenny Wen on why discovery-mock-iterate design is dying
+> Design lead for Claude: The classic design process is dead.
+>
+> Here's what's replacing it.
+>
+> Jenny Wen (@jennywen) leads design for Claude at @AnthropicAI, was previously director of design at @Figma, and a designer at @Dropbox, @Square, and @Shopify.
+>
+> In our in-depth conversation, we discuss:
+> 🔸 Why the classic discovery → mock → iterate design process is becoming obsolete
+> 🔸 What a day in the life of a designer at Anthropic looks like, including her AI tool stack
+> 🔸 Whether AI will eventually surpass humans in taste and judgment
+> 🔸 Why Jenny left a director role at Figma to return to IC work
+> 🔸 The three archetypes Jenny is hiring for now
+>
+> This conversation changed how I think about the future of design.
+>
+> Listen now 👇
+> https://www.youtube.com/watch?v=eh8bcBIAAFo&feature=youtu.be
+
+- **Tweet:** https://x.com/lennysan/status/2028120467568263652
+- **Link:** https://www.youtube.com/watch?v=eh8bcBIAAFo&feature=youtu.be
+- **Filed:** [jenny-wen-claude-design-lead-lenny.md](./knowledge/videos/jenny-wen-claude-design-lead-lenny.md)
+- **What:** Lenny's interview with Anthropic's Claude design lead argues AI is replacing the discovery-mock-iterate loop, covering her AI tool stack, taste vs AI, leaving Figma director for IC, and the designer archetypes she hires.
+
+## @ErickSky - How AI Works: interactive open-source encyclopedia of 50 landmark AI models
+> Un loco con un doctorado creó una enciclopedia visual interactiva open source para entender cómo funciona la IA, en plan, locura, entren para que vean.
+>
+> Website: https://encyclopediaworld.github.io/howaiworks/
+> Repo en el primer comentario.
+> https://x.com/Yushun_Dong/status/2027671457866682734
+
+- **Tweet:** https://x.com/ErickSky/status/2028099023614161236
+- **Link:** https://encyclopediaworld.github.io/howaiworks/
+- **Quoted:** https://x.com/Yushun_Dong/status/2027671457866682734
+- **Filed:** [how-ai-works-interactive-encyclopedia.md](./knowledge/articles/how-ai-works-interactive-encyclopedia.md)
+- **What:** Shares Yushun Dong's open-source site with hands-on interactive demos of 50 landmark AI models from Gauss to GPT. Dong's own tweet frames it as a click-and-play visual encyclopedia needing no coding.
+
+## @Techjunkie_Aman - GoogleDriveSync: open-source rclone-based menu bar Drive client for macOS
+> GoogleDriveSync is what Google Drive on macOS should've been.
+>
+> A native menu bar app. Built for Mac. Powered by rclone. MIT licensed.
+>
+> Open-source.
+> ~80MB. No bloat. No background chaos.
+> - Multiple Google accounts
+> - Flexible folder syncing
+> - Smart volume remount handling
+> - Manual or scheduled sync
+> - Real-time progress
+> - Auto updates
+>
+> It lives quietly in your menu bar. You trigger sync when you want. Or automate it. Your choice.
+> If you manage: Work + personal accounts, Client drives, External SSD backups, Project folders
+> This is far cleaner than the official Drive client.
+> For Mac power users who care about control, transparency, and lower RAM usage — this is worth testing.
+
+- **Tweet:** https://x.com/Techjunkie_Aman/status/2028044952308273489
+- **What:** Promotes an MIT-licensed native macOS menu bar app wrapping rclone for manual or scheduled Google Drive sync across multiple accounts. Pitched as lighter on RAM and more controllable than the official client; no repo link was in the tweet.
+
+---
+
+# Saturday, February 28, 2026
+
+## @scottnixonish - Self-hosted Sentry or GlitchTip as free alternatives to paid log analysis
+> *Replying to @levelsio:* Let's pay $99/mo to read my logs. How about TAIL??? tail -n 50 /var/log/{php*.log,nginx/error.log,syslog} 2>/dev/null | claude "analyze these logs for errors or issues"
+>
+> @levelsio There's a free version of sentry you can self host or GlitchTip which is a sentry compatible open source project too.
+
+- **Tweet:** https://x.com/scottnixonish/status/2027885808481669456
+- **Parent:** https://x.com/levelsio/status/2027884347626303630
+- **What:** levelsio jokes that piping tail of server logs into Claude replaces a $99/mo log-analysis service. Scott Nixon counters that error tracking is solved free by self-hosted Sentry or the Sentry-compatible open-source GlitchTip.
+
+## @0xSero - VibeProxy pools all AI subscriptions behind one endpoint for any coding harness
+> Let me make your life a little easier.
+>
+> This is the easiest, cheapest way to get all AI. You need a way to get everything in one place, take a look here. I have my:
+>
+> - Claude Max
+> - GPT Pro
+> - Kimi Allegreto
+> - Copilot (good sub)
+> - Antigravity
+> - Gemini
+> - ZAI
+> - My home AI server
+>
+> All of them logged into https://github.com/automazeio/vibeproxy
+>
+> This acts as one provider, so you can use Droid, Codex, Parchi, & Claude Code using any model from vibe proxy for the cost of the subscription with no extra charge.
+>
+> So in any harness you can point it at your vibeproxy, and then setup all models from all subs you have after signing in.
+>
+> This is how I use Droid, I've used their $20 plan because I love their products but I have so many AI subs that getting them in 1 place is needed.
+
+- **Tweet:** https://x.com/0xSero/status/2027883023228903437
+- **Link:** https://github.com/automazeio/vibeproxy
+- **Filed:** [vibeproxy.md](./knowledge/tools/vibeproxy.md)
+- **What:** VibeProxy fronts many logged-in AI subscriptions (Claude Max, GPT Pro, Copilot, Gemini, home server) as a single provider endpoint. Any harness (Claude Code, Codex, Droid) can then use every model at flat subscription cost rather than API billing.
+
+## @__morse - Playwriter adds demo video recording while driving Chrome via extension
+> playwriter can now record a demo video while controlling the browser, just like Cursor agents, but for Chrome, via extension
+>
+> works everywhere
+>
+> https://t.co/cG7QBcAAE8
+
+- **Tweet:** https://x.com/__morse/status/2027839802725290116
+- **Link:** https://playwriter.dev/
+- **What:** Playwriter, a Chrome-extension browser-control tool for agents, now records demo videos of the session like Cursor's agents do, working on any site; handy for showing what an agent did.
+
+## @tom_doerr - Trail of Bits devcontainer sandboxes Claude Code for code reviews
+> Sandboxes agent for code reviews
+>
+> https://t.co/KJ1VpvexCL
+
+- **Tweet:** https://x.com/tom_doerr/status/2027829433571201449
+- **Link:** https://github.com/trailofbits/claude-code-devcontainer
+- **Filed:** [claude-code-devcontainer.md](./knowledge/tools/claude-code-devcontainer.md)
+- **What:** Trail of Bits' devcontainer runs Claude Code inside an isolated container so agents can review untrusted code without touching the host; the repo had no README to pull further detail from.
+
+## @socialwithaayan - Alibaba OpenSandbox: open-source sandbox platform for running untrusted agent code
+> 🚨 BREAKING: Alibaba just handed the AI agent community a production-grade sandbox for free.
+>
+> OpenSandbox is a full-stack platform for running untrusted agent code safely:
+>
+> → Unified APIs across multi-language SDKs
+> → Docker and Kubernetes runtimes purpose-built for agents
+> → Browser automation, VS Code desktop, and network isolation included
+> → Designed for coding agents, GUI agents, evaluation, and beyond
+>
+> 1.5k stars (+1,100 this week).
+
+- **Tweet:** https://x.com/socialwithaayan/status/2027783193093673180
+- **What:** Alibaba's open-source OpenSandbox gives agents isolated Docker/Kubernetes runtimes with multi-language SDKs, browser automation, VS Code desktop and network isolation; useful as ready-made infra for coding and GUI agents. No repo link in the tweet, so not filed.
+
+## @omarsar0 - Codified Context: three-tier memory replaces single AGENTS.md at 100k-line scale
+> AGENTS dot md files don't scale beyond modest codebases.
+>
+> Lots of discussions on this lately.
+>
+> If you're building serious software with Claude Code or any agentic tool, a single AGENTS dot md will eventually fail you. This paper shows what comes next.
+>
+> A 1,000-line prototype can be fully described in a single prompt. A 100,000-line system cannot. The AI must be told, repeatedly and reliably, how the project works, what patterns to follow, and what mistakes to avoid.
+>
+> This new paper, Codified Context, documents a three-tier infrastructure built during real development of a 108,000-line C# distributed system across 283 sessions over 70 days.
+>
+> The system uses a three-tier memory architecture: a hot-memory constitution (660 lines, always loaded), 19 specialized domain-expert agents (9,300 lines total) invoked per task, and a cold-memory knowledge base of 34 specification documents (~16,250 lines) queried on demand via an MCP retrieval server.
+>
+> Across 283 sessions, this produced 2,801 human prompts, 1,197 agent invocations, and 16,522 autonomous agent turns, with a knowledge-to-code ratio of 24.2%.
+>
+> Crucially, none of it was designed upfront: each new agent and specification emerged from a real failure and was codified so it could never require re-explanation again.
+>
+> Paper: https://arxiv.org/abs/2602.20478
+
+- **Tweet:** https://x.com/omarsar0/status/2027770787659464812
+- **Link:** https://arxiv.org/abs/2602.20478
+- **Filed:** [codified-context-ai-agents-complex-codebase.md](./knowledge/articles/codified-context-ai-agents-complex-codebase.md)
+- **What:** Paper shows a single AGENTS.md hits a ceiling and instead layers a always-loaded constitution, per-task specialist agents and an MCP-served spec base, each grown from real failures during 283 sessions on a 108k-line codebase.
+
+## @gemchange_ltd - Quant-desk simulation stack for prediction markets: Monte Carlo to particle filters, copulas and agent-based models
+> https://t.co/YbXzSpFE31
+
+- **Tweet:** https://x.com/gemchange_ltd/status/2027744530124951831
+- **Link:** https://x.com/i/article/2027371960175386624
+- **Filed:** [how-to-simulate-like-a-quant-desk.md](./knowledge/articles/how-to-simulate-like-a-quant-desk.md)
+- **What:** Long article that builds a quant simulation toolkit for Polymarket-style contracts step by step: Monte Carlo, importance sampling, sequential Monte Carlo, variance reduction, copulas and agent-based sims, with runnable code.
+
+## @brankopetric00 - Ten CI/CD pipeline smells and fixes: caching, parallel jobs, rollback
+> https://t.co/kAIzWprcuf
+
+- **Tweet:** https://x.com/brankopetric00/status/2027653024982679804
+- **Link:** https://x.com/i/article/2025502023542566912
+- **Filed:** [overcomplicating-cicd-pipeline.md](./knowledge/articles/overcomplicating-cicd-pipeline.md)
+- **What:** Article on ten CI/CD pipeline smells, starting from a 26-step, 38-minute pipeline. Fixes: cache deps and Docker layers, parallelize jobs, extract scripts, fail fast on critical security issues, deploy only from main, keep rollback paths.
+
+---
+
+# Friday, February 27, 2026
+
+## @LLMJunky - Ghostty unfocused-split-opacity setting dims inactive panes to show focus
+> I have fallen in love with Ghostty Terminal.
+>
+> Look at this subtle, but incredibly useful opacity trick you can use to show "focus" when working in multiple panes.
+>
+> Shout out @dani_avila7 who showed me this. What a legend.
+>
+> Ghostty config file:
+>
+> unfocused-split-opacity = 0.55 https://t.co/faeW3czs4J
+
+- **Tweet:** https://x.com/LLMJunky/status/2027541713376411707
+- **Link:** https://twitter.com/LLMJunky/status/2027541713376411707
+- **What:** Setting `unfocused-split-opacity = 0.55` in Ghostty's config dims non-active split panes. This makes the focused pane obvious when running several agent sessions side by side.
+
+## @peteromallet - Desloppify v0.8 runs for days autonomously fixing code quality
+> Introducing Desloppify v.0.8.
+>
+> Thanks to many workflow improvements + new agent planning tools, it can now run for days on end - autonomously finding, understanding, & fixing large and small code quality problems.
+>
+> There's no reason your slop code can't be beautiful! https://t.co/nJ5te6LerW
+
+- **Tweet:** https://x.com/peteromallet/status/2027519673508511768
+- **Link:** https://twitter.com/peteromallet/status/2027519673508511768
+- **What:** Release announcement for Desloppify 0.8, an agent tool that finds and fixes code quality problems. New workflow and planning features let it run autonomously for days on large codebases.
+
+## @obsdmd - Obsidian Sync headless client in open beta for server-side vault sync
+> Obsidian Sync now has a headless client, so you can sync vaults to a server without using the desktop app.
+>
+> Try the open beta: https://t.co/ZJO2q2NDZI
+
+- **Tweet:** https://x.com/obsdmd/status/2027461507794276418
+- **Link:** https://twitter.com/obsdmd/status/2027461507794276418
+- **What:** Obsidian announces an open-beta headless Sync client that syncs vaults to a server with no desktop app. Useful for servers or agents that need an always-on vault copy.
+
+## @camsoft2000 - agent-change-walkthrough skill explains how AI changes fit end-to-end flow
+> Often when I'm working in a new (or unfamiliar) codebase, getting AI to implement a feature is the easy part.
+>
+> Understanding exactly how that change fits into the existing end-to-end flow is the hard part. That's why I built this skill: it explains not just what changed, but how the change is woven through the whole system.
+>
+> Give the `agent-change-walkthrough` skill a go and let me know what you think!
+
+- **Tweet:** https://x.com/camsoft2000/status/2027383878852194566
+- **Link:** https://github.com/cameroncooke/skills
+- **Filed:** [cameroncooke-skills.md](./knowledge/tools/cameroncooke-skills.md)
+- **What:** Agent skill that walks through an AI-generated change and shows how it connects to the whole system's flow. Targets comprehension in unfamiliar codebases, where generating code is easy but understanding its fit is hard.
+
+## @jumperz - OpenClaw update ships security and routing features as opt-in manual steps
+> openclaw dropped good update this one super important for your swarm, but half features don't work until you manually activate them. >ACP thread-bound agents i already spinning up subagents in Discord threads handle tasks. [...] now openclaw handles all that. agent opens thread, does job, reports back...i only show up when actual decision needs made. → do this: set spawnAcpSessions: true in discord channel config >external secrets management my API keys [...] were just sitting in config file in plain text. now live in separate vault. → do this: run openclaw secrets audit >agent routing CLI wiring [...] → do this: migrate openclaw agents bind <id> --channel <your-channel> --peer <target> [...] anything touches security, permissions, routing requires you do manually.
+
+- **Tweet:** https://x.com/jumperz/status/2027331308838404518
+- **What:** OpenClaw's latest release gates three swarm features behind manual opt-in: spawnAcpSessions for self-managing Discord thread agents, an external secrets vault with `openclaw secrets audit`, and CLI bind/unbind agent routing. Discord-only for the first; the other two apply everywhere.
+
+## @WillWorth - Karpathy's llm-council as DIY version of multi-model Model Council
+> *Replying to @marktenenholtz:* If you haven't tried Model Council since GPT-5.2/Opus 4.6/Gemini 3.1 been out, stop everything you're doing and try it. Unreal how thorough responses with combined intelligence of these 3 models.
+>
+> @marktenenholtz for those interested https://t.co/6Wq7gLFzMN
+
+- **Tweet:** https://x.com/WillWorth/status/2027292039914684643
+- **Link:** https://github.com/karpathy/llm-council
+- **Parent:** https://x.com/marktenenholtz/status/2027085643487088858
+- **Filed:** [llm-council.md](./knowledge/tools/llm-council.md)
+- **What:** Tenenholtz praises Model Council's combined answers from GPT-5.2, Opus 4.6 and Gemini 3.1; Worth points to Karpathy's open-source llm-council repo as a way to run the same multi-model ensemble yourself.
+
+## @sudoingX - Consumer GPUs run Qwen3.5-35B locally while OpenClaw update needs three manual opt-ins
+> nvidia just posted $68B in one quarter. $62B from datacenter. that's demand side. now look supply side. used RTX 3090 costs $600-800. runs 35 billion parameters at 112 tok/s. 4090 hits 157. 5090 crosses 230 on vLLM. all on single consumer card. no API keys, no monthly bills, no rate limits. two days ago Qwen3.5-35B-A3B dropped. community optimized from 50 tok/s 157 in 48 hours. open weights, open configs, open results. nvidia printing money because inference demand exploding. but hardware run it yourself already sitting on eBay. how long before people realize don't need rent they can own? openclaw dropped good update this one super important swarm, but half features don't work until you manually activate them. >ACP thread-bound agents [...] set spawnAcpSessions: true in discord channel config >external secrets management [...] run openclaw secrets audit >agent routing CLI wiring [...] openclaw agents bind <id> --channel <your-channel> --peer <target>
+
+- **Tweet:** https://x.com/sudoingX/status/2027290980874179005
+- **What:** Argues local inference is now viable: Qwen3.5-35B-A3B hits 112-230 tok/s on used 3090/4090/5090 cards, so owning beats renting. Also lists three opt-in OpenClaw settings for swarms: spawnAcpSessions for Discord thread agents, `secrets audit` to move API keys out of plaintext config, and `agents bind` CLI routing.
+
+## @larsencc - Browser Use isolates whole agent in zero-secret Unikraft micro-VMs behind a control plane
+> https://t.co/b4mGhikEXh
+
+- **Tweet:** https://x.com/larsencc/status/2027225210412470668
+- **Link:** https://x.com/i/article/2027215713476460544
+- **Filed:** [browser-use-agent-sandbox-infrastructure.md](./knowledge/articles/browser-use-agent-sandbox-infrastructure.md)
+- **What:** Browser Use moved from sandboxing only tools to sandboxing the entire agent in a Unikraft micro-VM that has just three env vars; a stateless control plane proxies LLM calls, billing, and presigned S3 file sync. Same image runs on Docker for dev/evals; takeaway is agents should hold nothing worth stealing or preserving.
+
+---
+
+# Thursday, February 26, 2026
+
+## @doodlestein - Gemini CLI used only for code review with three fixed prompts plus AGENTS.md
+> *Replying to @voidserf:* dude @doodlestein really trying use gemini cli but can't get it do even most basic things like using br/bv.. i all patches installed and on latest version. such bummer.
+>
+> Oh I don't use it way, I *only* use it code review! These literally only 3 things I generally enter into gemini (but absolutely can use br bv... you need give it AGENTS .md file like this force it read it: https://t.co/2Yco2ua9zi ):
+>
+> First read ALL AGENTS .md file README .md file super carefully understand ALL both! Then use your code investigation agent mode fully understand code, technical architecture purpose project.
+>
+> I want you sort randomly explore code files in this project, choosing code files deeply investigate understand trace functionality execution flows through related code files import imported by. [...] do super careful, methodical, critical check "fresh eyes" find any obvious bugs [...] then systematically meticulously intelligently correct them. Be sure comply with ALL rules in AGENTS .md.
+>
+> Ok you now turn attention reviewing code written by fellow agents checking any issues, bugs, errors, problems, inefficiencies, security problems, reliability issues, etc. carefully diagnose underlying root causes using first-principle analysis [...] Don't restrict yourself latest commits, cast wider net go super deep!
+
+- **Tweet:** https://x.com/doodlestein/status/2027196472022745200
+- **Link:** https://github.com/Dicklesworthstone/asupersync/blob/main/AGENTS.md
+- **Parent:** https://x.com/voidserf/status/2027194490600198157
+- **What:** Emanuel uses Gemini CLI only for code review, driven by three reusable prompts: read AGENTS.md/README, random-file deep trace with fresh-eyes bug fixing, then root-cause review of other agents' code. Gemini needs an AGENTS.md (example: asupersync) to be forced into using br/bv.
+
+## @azu_re - cmux + difit lets you review in the terminal and feed results to Claude Code
+> cmuxとdifitで、ターミナル内でレビューしてClaude Codeに結果を渡すとかができるようになった。
+> https://gist.github.com/azu/cef84c98aeef832d43dfb640c7e321f5
+
+- **Tweet:** https://x.com/azu_re/status/2027189901767372816
+- **Link:** https://gist.github.com/azu/cef84c98aeef832d43dfb640c7e321f5
+- **Filed:** [cmux-difit-review-gist.md](./knowledge/tools/cmux-difit-review-gist.md)
+- **What:** Japanese tweet saying cmux plus difit now allows reviewing diffs inside the terminal and passing the review results to Claude Code. The linked gist documents the setup; its content was not fetched.
+
+## @johncodes - stereOS: NixOS-based hardened OS with gVisor sandboxes for AI agents
+> 🧃 Introducing stereOS: a Linux based operating system hardened and purpose built for AI agents.
+>
+> It's clear that agents need an ACTUAL operating system (not what people are calling an "OS") to witness the full breadth and depth of their capabilities while mitigating the blast radius of autonomous, untrusted actors.
+>
+> But there are so many problems with AI sandboxes today:
+>
+> * Going out to the apple store and buying a mac mini will never scale and is way too expensive (obviously)
+> * Running in Docker is too restrictive (agents can't stand up their own container infrastructure, no sub virtualization, docker-in-docker is very broken)
+> * Firecracker strips all the hardware so GPU PCIe passthrough, secure boot, FIPs, etc. is out of the question.
+> * Native VMs are too fat and the overhead of 1 agent per VM is too much.
+>
+> stereOS takes a different approach: it's a full NixOS system that you boot and then kick off agent sandboxes inside with gVisor + /nix/store namespace mounting. Each agent gets their own kernel and the /nix/store is read only by nature. Even if the agent was somehow able to escape the gVisor virtual kernel, they'd land on the NixOS system as the "agent" user! Not your actual hardware!!
+>
+> If you want to take a defense-in-depth approach, we support "native" agents that run at the system level kicked off by our `agentd` utility. These agents, on their own, can manage and kick off other sub agents using the internal sandboxing mechanisms.
+>
+> Today, we're open sourcing all of this:
+>
+> * stereOS: our purpose built Linux OS
+> * masterblaster: client utility to launch, manage, and orchestrate agents
+> * stereosd: the stereOS system control plane daemon
+> * agentd: the stereOS system agent management daemon
+
+- **Tweet:** https://x.com/johncodes/status/2027079574513664071
+- **Link:** https://github.com/papercomputeco/stereos
+- **Filed:** [stereos.md](./knowledge/tools/stereos.md)
+- **What:** Open-sources stereOS, a NixOS-based OS that runs each agent in a gVisor sandbox with a read-only /nix/store, positioned against Docker, Firecracker, Mac minis and per-agent VMs. Ships with masterblaster, stereosd and agentd for launching and managing agents and sub-agents.
+
+## @levi - vinext cuts dev reload times from 2-5s to under 100ms versus Next.js
+> Tried switching from next.js to vinext and my dev reload times went from avg 2-5s to sub 100ms. The triangle company has some explaining to do.
+
+- **Tweet:** https://x.com/levi/status/2027042884739125350
+- **What:** Anecdotal benchmark: moving a project from Next.js to vinext dropped dev reload from 2-5s to under 100ms. Jabs at Vercel (the triangle company) over dev-server performance.
+
+## @phuctm97 - Switching from buggy OpenClaw to simpler, safer NanoClaw
+> I couldn't stand how buggy OpenClaw has been lately anymore and had to switch to NanoClaw. 😭
+>
+> NanoClaw approach is actually very refreshing: a lot safer, much easier to customize, while being 100x simpler.
+>
+> I feel much more in control & at easy when using NanoClaw vs. OpenClaw.
+
+- **Tweet:** https://x.com/phuctm97/status/2026997951298703786
+- **What:** User report moving from OpenClaw to NanoClaw because of OpenClaw bugs. Claims NanoClaw is far simpler, safer and easier to customize, giving more control. Anecdotal signal of the minimal-agent-framework trend.
+
+---
+
+# Wednesday, February 25, 2026
+
+## @grok - Grok explains CCTA with Cleerly AI plaque analysis and full-body MRI as elective screening
+> *Replying to @DMD711:* @RohunJauhar @grok explain
+>
+> CCTA is a non-invasive CT scan of heart arteries to spot plaque buildup. Cleerly uses AI on those images to quantify plaque type, volume, location, and stenosis—giving a detailed heart attack risk profile beyond standard reads.
+>
+> Full-body MRI is a 45-60 min scan screening major organs/structures for early tumors, aneurysms, cysts, etc.
+>
+> The post promotes these elective ~$2k tests for asymptomatic early detection to prevent major events. Consult a doctor on personal suitability.
+
+- **Tweet:** https://x.com/grok/status/2026855671015092356
+- **Parent:** https://x.com/DMD711/status/2026855537128681874
+- **What:** Grok explains a promoted preventive-health post: CCTA with Cleerly AI quantifies coronary plaque for heart-attack risk, and full-body MRI screens organs for early tumors or aneurysms. Both are elective ~$2k tests for asymptomatic people; the parent only asked for an explanation.
+
+## @0xSero - Figma MCP + Remotion + GLM-5 in Droid for cheap high-quality visuals
+> Dude, let me make your life better.
+>
+> 1. Setup the Figma remote MCP
+> 2. Ask a model to build you a brand guide (easy)
+> 3. Ask the model to build you components in figma
+> 4. Model can pull from Figma and use it to build
+>      - sites
+>      - graphs
+>      - banners
+>      - visuals
+> 5. Setup remotion
+> 6. Install Droid
+> 7. Put 5$ in Openrouter
+> 8. Use GLM-5 specifically
+>
+> Using Remotion and GLM-5 in Droid 6 prompts in total and I got dozens of these, extremely high quality..
+
+- **Tweet:** https://x.com/0xSero/status/2026805260300238913
+- **What:** Cheap design-to-video stack: Figma remote MCP holds the brand guide and components, which the model pulls to build sites and visuals. Remotion plus GLM-5 via OpenRouter in Droid produced dozens of polished outputs from 6 prompts.
+
+## @oneThomasli - Daloopa open-sources one-shot finance skills (decks, models, initiations)
+> We are open-sourcing everything you need to build in finance:
+>
+> you can find it in daloopa's github > investing folder
+>
+> In here you will find a series of skills, all skills are meant to be 1-shot.
+>
+> Here are the highlights:
+>
+> ib-deck -- building a banking grade deck end-to-end in a single shot
+>
+> initiate -- a whole initiation report packet (model + writeup)
+>
+> build-model -- building a model (or a hundred)
+>
+> earnings -- track earnings
+>
+> equity-note -- deep dive on a single name
+>
+> Never pay for software or frontend again.
+>
+> Fork this, download this, modify this. Let us be the starting point to how you change your workflows.
+
+- **Tweet:** https://x.com/oneThomasli/status/2026799055305593105
+- **What:** Daloopa released agent skills in its GitHub investing folder for finance work: banking decks, initiation packets, financial models, earnings tracking, equity notes. No direct repo link given, so captured only.
+
+## @aref_vc - Knowledge operating system: Claude feeding a curated Obsidian vault
+> https://t.co/tZYTJZve1A
+
+- **Tweet:** https://x.com/aref_vc/status/2026798409672438263
+- **Link:** https://x.com/i/article/2026792639358709763
+- **Filed:** [knowledge-operating-system-obsidian-claude.md](./knowledge/articles/knowledge-operating-system-obsidian-claude.md)
+- **What:** Article on a Claude-to-Obsidian pipeline: raw inputs (newsletters, memos) live in a separate workspace, and Claude proposes protocol-governed atomic notes into a clean vault. Human review keeps the graph curated and compounding.
+
+## @imcaiden - Avoid vibecoded UI by having Claude copy enterprise dashboards
+> claude is pretty bad at natively making backend dashboards and UI in general
+>
+> instead of letting it freestyle the design, use this prompt:
+>
+> "Based on the style and core offer of (your product), identify enterprise-grade github dashboards or other copyable dashboards that we can use. Give me 10 of the best options to preview."
+>
+> Then you just select your favourite, have it map the features to the ui, and now rather than it looking like vibecoded slop it looks very professional lol
+
+- **Tweet:** https://x.com/imcaiden/status/2026771033945157728
+- **What:** Workflow for better LLM-built dashboards: ask Claude for 10 existing enterprise-grade open-source dashboards to preview, pick one, then map product features onto it instead of letting the model freestyle the design.
+
+## @nummanali - Score and refactor your repo to be agent-native
+> Re-write your repo to be agent native
+>
+> Have Claude Code and Codex review your current codebase
+>
+> Score it for being agent native
+> - fully typed
+> - traversable
+> - test coverage
+> - feedback loops
+> - self documenting
+>
+> Then ask for refactoring plan
+>
+> You need to do this to stay ahead
+
+- **Tweet:** https://x.com/nummanali/status/2026637461732929635
+- **What:** Prompt recipe: have Claude Code and Codex audit a codebase against five agent-nativeness criteria (typing, traversability, tests, feedback loops, self-documentation), then request a refactor plan so agents work better in the repo.
+
+## @jameesy - How I structure Obsidian and Claude: separate AI output from personal vault
+> https://t.co/qwpV7LscFK
+
+- **Tweet:** https://x.com/jameesy/status/2026628809424781787
+- **Link:** https://x.com/i/article/2026585600627798016
+- **Filed:** [structure-obsidian-claude-walkthrough.md](./knowledge/articles/structure-obsidian-claude-walkthrough.md)
+- **What:** Article describing a Claude folder (repos, Granola meeting notes, vault) kept apart from a hand-written Obsidian vault, so the graph stays clean. Uses Polaris/Top-of-Mind notes, tags and backlinks so Claude can challenge thinking and surface connections.
+
+## @d4m1n - Keep AGENTS.md and CLAUDE.md, add a complementary file instead
+> don't delete AGENTS․md or CLAUDE․md ✋🛑
+>
+> add this instead https://t.co/WILnuYfuKd
+
+- **Tweet:** https://x.com/d4m1n/status/2026568612908241045
+- **Link:** https://twitter.com/d4m1n/status/2026568612908241045
+- **What:** THIN: Advises against deleting AGENTS.md or CLAUDE.md agent-instruction files and instead adding an extra file. The linked t.co resolves only to the tweet itself, so the recommended addition is unknown; likely a response to the debate over whether context files help agents.
+
+---
+
 # Tuesday, February 24, 2026
+
+## @trq212 - Slack plugin for Claude Code adds search, messaging and doc creation
+> Slack has rolled out a new plugin allows you to connect to Slack for search, messaging, document creation and more.
+>
+> Use this get context from Slack into Claude Code so it context on what you're working on or to post updates. https://t.co/WhzBMHu3BS
+
+- **Tweet:** https://x.com/trq212/status/2026438391299191026
+- **Link:** https://twitter.com/trq212/status/2026438391299191026
+- **What:** Thariq announces Slack's official Claude Code plugin, enabling Slack search, messaging and document creation from the CLI. Useful for pulling team context into a coding session or posting status updates back to Slack.
+
+## @gakonst - Question: which repos are best set up for self-driving coding
+> What are best repos you've seen that well set up for self-driving coding? Epic benchmarks, tests etc.
+
+- **Tweet:** https://x.com/gakonst/status/2026392343772119238
+- **What:** Open question from Georgios Konstantopoulos asking for repos whose benchmarks and test suites make autonomous coding agents effective. Signals that strong verification harnesses are the key enabler for agent autonomy; no answers captured in the bookmark.
+
+## @phosphenq - NotebookLM + Gemini + Obsidian stack to dedupe learning sources
+> this russian guy found way learn anything 10x faster🚨
+>
+> saved 1,460h
+>
+> NotebookLM + Gemini + Obsidian
+>
+> dumps any source AI strips duplicates keeps only what u don't know yet
+>
+> 20 YouTube videos on same topic
+> each one repeats same 20% of information
+> this bundle removes other 80%
+>
+> what used take month 15 min
+>
+> yt: zproger
+
+- **Tweet:** https://x.com/phosphenq/status/2026383675735048248
+- **What:** Hype-style claim that feeding many overlapping sources (e.g. 20 YouTube videos) into NotebookLM and Gemini, then storing results in Obsidian, strips repeated content and keeps only novel information. No concrete workflow given; the pointer is a YouTube channel (zproger).
+
+## @_mrosenfield - Decipher generates self-maintained E2E tests from Claude Code
+> *Replying to @_mrosenfield:* Something big is coming to Claude https://t.co/Rb0C1UJIoz
+>
+> And we're live! Claude Code can now generate self-maintained E2E tests with Decipher. Try it free: https://t.co/2xxDMlfTf8
+
+- **Tweet:** https://x.com/_mrosenfield/status/2026380840545169922
+- **Link:** https://docs.getdecipher.com/pages/features/testing/generate-with-claude
+- **Parent:** https://x.com/_mrosenfield/status/2026117967935885782
+- **What:** Launch of Decipher's integration letting Claude Code create end-to-end tests from natural-language descriptions, with tests that self-maintain as the app changes. Follows the author's teaser thread; docs page is "Agentic Test Generation".
+
+## @0xSero - GPT-5.3-Codex-Spark on Cerebras is fast enough to hint at where coding agents are heading
+> I have been using GPT-5.3-Codex-Spark all day every day for 2 weeks now. It's incredibly fast (@cerebras)
+>
+> I had a few moments where I felt I could see the future. So far I've tried it in:
+>
+> - Zed
+> - Openclaw
+> - Codex app
+> - Codex cli / pi
+>
+> This is a clue to where we're heading. https://t.co/6ttaRGtJwQ
+
+- **Tweet:** https://x.com/0xSero/status/2026362242703208790
+- **Link:** https://twitter.com/0xSero/status/2026362242703208790
+- **What:** Two weeks of daily use of GPT-5.3-Codex-Spark served on Cerebras hardware, across Zed, OpenClaw, Codex app and Codex CLI/pi. The author argues very low-latency inference changes the coding-agent experience and signals the future direction.
+
+## @haydenbleasel - Vercel open-sources Chat SDK, one TypeScript API for Slack, Teams, Google Chat, Discord bots
+> Today we're open sourcing the new Chat SDK, a unified TypeScript SDK for building chat bots across Slack, Microsoft Teams, Google Chat, Discord, and more. Now in public beta.
+>
+> ▲ ~/ 𝚗𝚙𝚖 𝚒 𝚌𝚑𝚊𝚝
+>
+> Let's see how it works ↓ https://t.co/q7jg3kXKkw
+
+- **Tweet:** https://x.com/haydenbleasel/status/2026359649499492395
+- **Link:** https://twitter.com/haydenbleasel/status/2026359649499492395
+- **What:** Announcement of the open-source Chat SDK (npm `chat`, public beta), a unified TypeScript layer for writing one chat bot that runs across Slack, Teams, Google Chat, Discord and others. The link only resolves back to the tweet itself, so details are thin.
+
+## @ctatedev - Autonomous Dogfooding skill for agent-browser explores apps like a real user
+> New: Autonomous Dogfooding
+>
+> A skill for agent-browser that uses your app the way your users do
+>
+> → Point it at any URL
+> → Explores pages, clicks buttons, fills forms
+> → Tests edge cases and checks the console
+> → Captures repro videos and step-by-step screenshots
+> → Outputs a structured report with severity ratings
+>
+> No test scripts. No manual QA.
+
+- **Tweet:** https://x.com/ctatedev/status/2026357704617267314
+- **What:** New agent-browser skill that autonomously QA-tests a web app from a URL: clicks, fills forms, probes edge cases, watches the console. Produces repro videos, screenshots and a severity-rated report without hand-written test scripts.
+
+## @kris_card - Emil Kowalski's Design Engineering skill helps with infinite-scroll tables and Obsidian theming
+> The Emil Design Engineering skill from @emilkowalski is really impressive.
+>
+> I just used it to help me build an infinite scroll behavior on a table and it gave me some really nice recommendations.
+>
+> I even used it outside of its main goal to make my Obsidian custom theme better.  It's really one of my favorite skills out there 🚀
+
+- **Tweet:** https://x.com/kris_card/status/2026353519658213834
+- **What:** Endorsement of Emil Kowalski's design-engineering agent skill. It gave useful guidance for infinite-scroll table behavior and also transferred to improving a custom Obsidian theme, suggesting broad UI-polish value.
+
 
 ## @imcaiden - Rent idle GPUs on vast.ai instead of AWS (A100 ~$0.50/hr vs $4/hr)
 > why are people still paying aws prices for gpus
