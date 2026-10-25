@@ -334,6 +334,632 @@
 
 ---
 
+# Wednesday, September 9, 2026
+
+## @daniel_mac8 - diagram-design skill for Codex and Claude Code
+> Oh boy. This is amazingly cool. Very happy I found this.
+>
+> ‘diagram-design’ skill for Codex & Claude Code.
+>
+> Create 39 different diagrams types that are actually good. https://t.co/Fi0z7ipcDz
+
+- **Tweet:** https://x.com/daniel_mac8/status/2097795113237762544
+- **What:** THIN: Recommends a 'diagram-design' agent skill for Codex and Claude Code that generates 39 diagram types; the link resolves only to the tweet (likely a demo image/video), so the repo and author are not identified.
+
+## @PeterDaggett - Vocaleo gives personal agents an inbound phone number
+> Today, we're giving your personal agent a personal phone number.
+>
+> @vocaleo_agent already lets your agent make phone calls. 
+>
+> Now it can take them too. https://t.co/grh8uRld98
+
+- **Tweet:** https://x.com/PeterDaggett/status/2097747701978771683
+- **What:** Product launch from Vocaleo: personal AI agents get a dedicated phone number so they can receive inbound calls, extending the existing outbound-calling capability to two-way voice; attached media (likely a demo) not available.
+
+## @levelsio - Replaced $249/mo Scrapingbee with a $1/mo Playwright scraper
+> ✨ Okay with lots of help from @javilopen and his Spanish scraping friends I've managed to vibe code my own @Scrapingbee alternative and replace my $249/mo Scrapingbee plan with my own $1/mo scraper running on my VPS!
+>
+> First I tried OpenSERP, an open source project that seems freshly maintained but it didn't work on my VPS IP or laptop IP and got blocked fast
+>
+> Then I tried to use residential IP proxies from IPRoyal but they were already quite tainted IPs meaning Google already knew they were scrapers and just blocked about 60% of them already, not so great, also didn't work!
+>
+> Then I discovered OpenSERP uses a vanilla headless Chrome, Google instantly detects that and blocks that, so literally the entire repo is useless cause it won't even work? I don't get why they don't say that in the docs? OpenSERP is even worse than just basic CURL, as my AI said: "plain curl got 7% blocked but OpenSERP's headless browser got 100% blocked"
+>
+> So then I just built my own with Playwright and a real Google Chrome on my VPS, headful and persistent context, and slow pacing like every 30 seconds or so
+>
+> And I got some better residential IP recommendations (which I can't tell you because thenhey t stop working!)
+>
+> Now I'm at about 90% success rate, which is similar or better than Scrapingbee
+>
+> And it costs me ~$1/mo (measured by GBs, obviously for text scraping I barely use a lot) instead of the $249/mo I paid Scrapingbee!
+>
+> My only remaining SaaS now are:
+> - Cloudflare Domains
+> - Cloudflare Email Sending
+> - Cloudflare R2 Storage
+> - Backblaze B2 for backups
+> - Hetzner for all my servers for all my sites (VPS)
+> - xAI for all LLMs for all my sites (so many things like moderation, writing emails, anything)
+>
+> *Quoting @levelsio:* I've tried for weeks now to build my own @ScrapingBee and repeatedly AI has now told me that it can't do it. 80% of my scraping is Google SERP results for Hotelist and even with residential IP proxies and solve CAPTCHA services and OpenSERP scraper it won't do it well for thousands of queries, it just gets blocked. So I will keep paying them $99/mo. A good test to see what services might remain now AGI is here.
+
+- **Tweet:** https://x.com/levelsio/status/2097638309384036705
+- **Quoted:** https://x.com/levelsio/status/2095950432883368091
+- **What:** Follow-up to his earlier claim that AI could not replace Scrapingbee: he got Google SERP scraping working at ~90% success via headful real Chrome in Playwright with a persistent context, 30s pacing and clean residential IPs (headless OpenSERP got 100% blocked), cutting $249/mo to ~$1/mo.
+
+---
+
+# Tuesday, September 8, 2026
+
+## @muhammdrizwanmr - Object tracking with FastSAM and Ultralytics
+> Object tracking with FastSAM using @ultralytics Python package 🎉💪  
+>  
+> FASTSAM-s model is employed for real-time object detection, combined with botsort object tracking to further boost performance. 🐻 
+>
+> Code link 👇
+>
+> #FastSAM #MachineLearning #Research https://t.co/xCMyOizEam
+
+- **Tweet:** https://x.com/muhammdrizwanmr/status/2097183627243290631
+- **What:** THIN: Demo of real-time object tracking using the FastSAM-s segmentation model with BoT-SORT tracker via the Ultralytics Python package; the linked code only resolves to the tweet itself (likely a video/code snippet), so details are unverified.
+
+## @big_duca - Instinct agent auto-claims Amazon price-drop refunds
+> I asked Instinct to go through all my Amazon purchases and get me refunds.
+>
+> And it worked perfectly. Holy shit.
+>
+> Any item I purchased that lowered its price. Amazon price matches.
+>
+> And instinct works with support to get you refunded the difference.
+>
+> I was a hater. 
+>
+> But I’m blown away now. 
+>
+> Didn’t have to intervene once.
+
+- **Tweet:** https://x.com/big_duca/status/2097182550129037721
+- **What:** Testimonial that the Instinct agent scanned a user's Amazon order history, found items whose price later dropped, and negotiated price-match refunds with Amazon support without intervention; a concrete consumer-agent use case.
+
+---
+
+# Monday, September 7, 2026
+
+## @SearchForRyan - Negative SEO campaign shifted ChatGPT sentiment
+> I ran a negative SEO campaign to see if it manipulated ChatGPT sentiment...
+>
+> Baseline was: X company had neutral reviews.
+>
+> After the test, of 5,300 domains (only 16% indexed) ChatGPT changed its opinion to entirely negative/skeptical
+>
+> All I did: ran a MoneyRobot campaign; used brand + negative review as anchor; brand + 'is it worth it?' as page title; lexical relevance to connect bad with the brand; forced indexing with IndexChex. [...] i simply seeded the different ways someone *could* be bad and made sure the brand was mentioned every time. this was a TEST site, that i burned... do with this what you will.
+
+- **Tweet:** https://x.com/SearchForRyan/status/2096952948832002235
+- **What:** Claimed experiment where a spam-link negative SEO campaign (5,300 domains, 16% indexed) flipped ChatGPT's view of a neutral brand to negative, by seeding varied "could be bad" angles tied to the brand name; shows LLM reputation poisoning risk.
+
+## @TivadarDanka - Roadmap of Mathematics for Machine Learning
+> I'm here to convince you learning Mathematics is actually not that hard or intimidating.
+>
+> I've said it many times now. I bet I can make you understand any concept. One post at a time. The way your teachers should have.
+>
+> Start here: https://t.co/sV52SBB16J
+
+- **Tweet:** https://x.com/TivadarDanka/status/2096938031471272401
+- **Link:** https://thepalindrome.org/p/the-roadmap-of-mathematics-for-machine-learning
+- **Filed:** [roadmap-of-mathematics-for-machine-learning.md](./knowledge/articles/roadmap-of-mathematics-for-machine-learning.md)
+- **What:** Entry point to Tivadar Danka's Substack: a complete guide to the linear algebra, calculus and probability theory needed for machine learning, framed as approachable math taught one post at a time.
+
+---
+
+# Sunday, September 6, 2026
+
+## @tom_doerr - Scrapfly Antibot-Detector Chrome extension
+> Detects anti-bot systems, CAPTCHAs, and browser fingerprinting in real time.
+>
+> https://t.co/ie4SeBY68f
+
+- **Tweet:** https://x.com/tom_doerr/status/2096646955543728401
+- **Link:** https://github.com/scrapfly/Antibot-Detector
+- **Filed:** [antibot-detector.md](./knowledge/tools/antibot-detector.md)
+- **What:** Scrapfly's free Chrome extension that identifies a site's anti-bot stack (Cloudflare, Akamai, DataDome), CAPTCHAs and fingerprinting scripts with confidence scores, useful for scraper authors.
+
+## @jerryjliu0 - LlamaIndex Astra agent generates product demo videos
+> Astra might finally help me automate what I've spent ~hundreds of hours doing since the start of this company:
+>
+> Making live product demos through Loom or Screen Studio
+>
+> Check out the video walkthrough on our new Agentic Plus mode for document extraction - where we're able to populate 60 fields worth of financials from a sample earnings release. [...] This entire video was fully generated by Astra. With its default set of tools it can already login to my LlamaParse account and piece together a set of slides with static screenshots. I then gave it full access to computer use and Chrome, and let it try out Loom and Screen Studio on my desktop and record the current chrome session. [...]
+>
+> https://t.co/XYZmx5T7JA
+
+- **Tweet:** https://x.com/jerryjliu0/status/2096629604697899162
+- **Link:** https://cloud.llamaindex.ai/ (LlamaParse sign-in page, no content)
+- **What:** Jerry Liu says LlamaIndex's Astra agent produced a full LlamaParse demo video on its own, using computer use plus Chrome to drive Loom and Screen Studio. Demo shows the new Agentic Plus extraction mode filling 60 financial fields from an earnings release.
+
+## @rudrank - App Store Connect CLI 5.0.0 release
+> App Store Connect CLI 5.0.0 is out!! 🤩
+>
+> One of the biggest releases I have ever shipped, and one I am so proud of. A whole AI week went into this.
+>
+> There is a LOT here. Let me show you what all new you can do now:
+>
+> https://t.co/RuXh8T3xK2
+
+- **Tweet:** https://x.com/rudrank/status/2096595527085555965
+- **Link:** https://github.com/rorkai/App-Store-Connect-CLI
+- **Filed:** [app-store-connect-cli.md](./knowledge/tools/app-store-connect-cli.md)
+- **What:** Major 5.0.0 release of `asc`, a Go CLI that scripts the App Store Connect API (TestFlight, builds, submissions, signing, analytics) and ships an installable agent-skills pack for release automation.
+
+## @Voxyz_ai - Prompt: Research 15 YouTube Tutorials via yt-dlp Transcripts, Then Draft a SKILL.md
+> Before giving Astra a task in an unfamiliar field, have it research 15 viral YouTube tutorials on the topic.
+>
+> Landing pages, SEO articles: let it find the material, read the transcripts, and apply what it learns to your task. When it's done, save the methods that worked so you can reuse them next time.
+>
+> In Codex, select Astra with xhigh effort. Copy this prompt and replace the brackets: find up to 15 recent, high-engagement practical YouTube tutorials (dedupe reuploads), download subtitles with yt-dlp (manual preferred, auto fallback, skip if no transcript, never infer from titles), extract steps/mistakes/verification criteria, merge repeated methods, apply them to the task, report which checks passed, then draft a SKILL.md (sources kept, verified vs untested separated) and save only after approval.
+>
+> *Quoting @Voxyz_ai:* Try editing videos with Astra and this Skill in Codex. It works surprisingly well. ("Turn this landscape video into a 9:16 vertical clip", "Cut out the pauses", "Add subtitles", "Convert iPhone HDR to SDR"...) ffmpeg-skill has the agent inspect footage, edit, then check duration, dimensions and format; lossless where possible; local processing. Install: npx ffmpeg-skill (--codex for Codex). Free and open source: https://github.com/kajisho5/ffmpeg-skill
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2096576649886339112
+- **Quoted:** https://x.com/Voxyz_ai/status/2096191864466473275
+- **Link:** https://github.com/kajisho5/ffmpeg-skill
+- **Filed:** [ffmpeg-skill.md](./knowledge/tools/ffmpeg-skill.md)
+- **What:** Reusable Codex prompt that has the agent learn an unfamiliar task from up to 15 deduped YouTube tutorial transcripts (via yt-dlp), apply and verify the methods, then draft a SKILL.md; quotes the author's ffmpeg-skill, a free local FFmpeg video-editing skill.
+
+## @Shpigford - OG Kit Agent Skill for Dynamic Open Graph Images
+> quick little freebie skill!
+>
+> i'm a big fan of @petersuhm's https://ogkit.dev/home and use it across a bunch of projects for dynamic open graph images.
+>
+> i made a skill so it can be implemented with basically zero effort. 🙂
+>
+> https://initialcommit.co/library/skills/ogkit
+
+- **Tweet:** https://x.com/Shpigford/status/2096554217729065458
+- **Link:** https://ogkit.dev/home
+- **Filed:** [ogkit-dynamic-og-images.md](./knowledge/articles/ogkit-dynamic-og-images.md)
+- **What:** Josh Pigford shares a free agent skill that wires up Peter Suhm's OG Kit (dynamic Open Graph images rendered from your own HTML/CSS) into projects with near-zero effort.
+
+## @muhammdrizwanmr - Ultralytics Workouts Monitoring Guide (YOLO26 Pose Code Link)
+> *Replying to @muhammdrizwanmr:* Workouts monitoring using @ultralytics YOLO26 pose 🏃‍♂️‍➡️ Imagine tracking your workouts using YOLO26, whether it's leg press, bench press, or leg extension, with just 2 lines of code! ... Code below 👇
+>
+> @ultralytics Code ➡️ https://docs.ultralytics.com/guides/workouts-monitoring
+
+- **Tweet:** https://x.com/muhammdrizwanmr/status/2096467935044747282
+- **Parent:** https://x.com/muhammdrizwanmr/status/2096467776684568713
+- **Link:** https://docs.ultralytics.com/guides/workouts-monitoring
+- **Filed:** [ultralytics-workouts-monitoring-yolo26-pose.md](./knowledge/articles/ultralytics-workouts-monitoring-yolo26-pose.md)
+- **What:** Self-reply supplying the code for the YOLO26 pose workout-monitoring demo: the Ultralytics docs guide for counting gym exercise reps from video, runnable on CPU.
+
+## @muhammdrizwanmr - Workout Rep Tracking with Ultralytics YOLO26 Pose on CPU
+> Workouts monitoring using @ultralytics YOLO26 pose 🏃‍♂️‍➡️
+>
+> Imagine tracking your workouts using YOLO26, whether it's leg press, bench press, or leg extension, with just 2 lines of code!
+>
+> I've shared the command for running it, making it easy to track your workouts even on a CPU-based system. You don't always need a high-end GPU; exporting the model to TorchScript or ONNX can boost performance on CPU devices.
+>
+> Code below 👇
+>
+> #Workout #AI #MachineLearning
+
+- **Tweet:** https://x.com/muhammdrizwanmr/status/2096467776684568713
+- **What:** Demo of tracking gym exercises (leg press, bench press, leg extension) with Ultralytics YOLO26 pose in two lines of code, noting CPU-only use is viable by exporting to TorchScript or ONNX; code is in the follow-up reply.
+
+---
+
+# Saturday, September 5, 2026
+
+## @keywordian - ClearSERP Auto Research: 35k Keywords to 244-Article Plan in Under an Hour
+> Auto Research finished! 🎉
+>
+> It ran for less than an hour. If I did the work manually, it would've taken 80-100 hours.
+>
+> It found over 35,000 candidate keywords, screened each one against my requirements, and kept over 6,000.
+>
+> Of those, it suggested 244 individual articles, which is actually a lot given the narrow niche and my strict requirements. Many of the keywords were near duplicates with similar SERPs, so it combined them into 1 article.
+>
+> It also made a complete topical map with pillar and spoke pages, and suggested internal links between each page.
+>
+> https://clearserp.com/ makes keyword research too easy...
+>
+> *Quoting @keywordian:* Auto Research is hard at work while I work on other things. This is what I dreamed of back when I ran a keyword research agency and did everything manually.
+
+- **Tweet:** https://x.com/keywordian/status/2096368801323384960
+- **Quoted:** https://x.com/keywordian/status/2096357732047540276
+- **Link:** https://clearserp.com/
+- **Filed:** [clearserp-keyword-research.md](./knowledge/articles/clearserp-keyword-research.md)
+- **What:** Ian reports ClearSERP's Auto Research agent screened 35,000+ keywords to 6,000+, proposed 244 merged articles plus a pillar/spoke topical map with internal links in under an hour, replacing an estimated 80-100 manual hours.
+
+## @openanalyticshq - Open Analytics v0.6.0 release
+> Open Analytics v0.6.0 is live. You can now filter your analytics by source, country, city, and device. Across the dashboard, API, and MCP. Also new: Polar revenue attribution, Umami import, Page entries, exits & bounce rates, Realtime visitors on Overview, Share any overview as a PNG, Better attribution with click ID. And much more. Checkout our repo.
+
+- **Tweet:** https://x.com/openanalyticshq/status/2096318835163013614
+- **What:** Release announcement for the open-source Open Analytics v0.6.0 adding source/country/city/device filters across dashboard, API and MCP, plus Polar revenue attribution, Umami import and bounce-rate metrics (repo link not expanded).
+
+## @Fei2411 - English version of Real API Pricing Pareto analysis
+> English here: Introducing "Real API Pricing" — comparing what you actually pay for your AI subscription against the token allowance you actually get, to reveal the true cost per token. Formula: Subscription Price / Token Allowance. ... GPT-5.6 Luna ranks #1, with a real API price of just $0.00083/MTok on ChatGPT Pro 20x.
+>
+> *Quoting @Fei2411:* the original Chinese-language post introducing the same method.
+
+- **Tweet:** https://x.com/Fei2411/status/2096309182677045744
+- **Quoted:** https://x.com/Fei2411/status/2096307755481211346
+- **Link:** https://github.com/Fei2411/real-api-pricing
+- **Filed:** [real-api-pricing.md](./knowledge/tools/real-api-pricing.md)
+- **What:** English translation of the Real API Pricing post: effective cost per token from subscription price over allowance upends value rankings (DeepSeek V4 Flash #31, Sol #33, Opus 5 #23, Luna #1); data open-sourced later.
+
+## @Fei2411 - "Real API Pricing" method ranks AI subscriptions by true $/MTok
+> 介绍"真实 API 计价法"——将你为 AI 订阅所支付的价格和你所真实获得的额度做比较，并以此进行模型的真实计价。以及以此计价法所绘制的帕累托前沿图。 即：订阅价格 / Tokens 额度 ... GPT-5.6 Luna 排名 #1，在ChatGPT Pro 20x 的真实 API 计价仅为 $0.00083/MTok。
+
+- **Tweet:** https://x.com/Fei2411/status/2096307755481211346
+- **Link:** https://github.com/Fei2411/real-api-pricing
+- **Filed:** [real-api-pricing.md](./knowledge/tools/real-api-pricing.md)
+- **What:** Chinese-language intro to pricing AI models as subscription price divided by real token allowance; DeepSeek V4 Flash ranks #31, Grok 4.6 #63, Opus 5 #23, and GPT-5.6 Luna #1 at $0.00083/MTok on ChatGPT Pro 20x.
+
+## @waynesutton - Go-to prompt to optimize UX, DX and AX
+> My new go-to prompt for Astra, Fable, and Grok.
+>
+> "- Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything."
+>
+> *Quoting @joedevon:* Codex users, do this now for Astra: "Codex, read @pvncher's article https://t.co/V1BzZOjcwE then audit all of my skills and AGENTS.md files inside ~/Projects"
+
+- **Tweet:** https://x.com/waynesutton/status/2096296858343846261
+- **Quoted:** https://x.com/joedevon/status/2095996826596024745
+- **Link:** https://x.com/pvncher/status/2095991462416490862
+- **Filed:** [rethinking-skills-prompts-gpt-6-astra.md](./knowledge/articles/rethinking-skills-prompts-gpt-6-astra.md)
+- **What:** Shares a reusable prompt line balancing UX, DX and AX across models, tied to pvncher's article on trimming bloated skills and AGENTS.md for GPT-6 Astra, which Joe Devon suggests having Codex audit.
+
+## @0xMovez - Running a fleet of GrokBot agents (SpaceXAI workshop + 10-step tutorial)
+> SpaceXAI engineer (ex. Cursor): "99% of people using GrokBot just for 1% of its power. they run 1-2 agents without "loop" & "graph" I'm running a team of 15+ GrokBot agents on automode. I have a Chief of Staff agent, a PM agent and 20+ workers - that's the new stack of engineer" In a 1-hour session, a SpaceXAI engineer explained how to build a team of GrokBots agents for GTM from sratch. worth more than a $500 agentic engineering course. watch this workshop today, then read how to build a fleet of GrokBot agents in the article below
+>
+> *Quoting @0xCodez:* https://t.co/eDBs67VMq2 (article: Grok Bot Agents: how to automate your life in 10 Steps)
+
+- **Tweet:** https://x.com/0xMovez/status/2096279996738199909
+- **Quoted:** https://x.com/0xCodez/status/2089676836619878567
+- **Link:** https://x.com/i/article/2089655442657910784
+- **Filed:** [grok-bot-agents-10-step-tutorial.md](./knowledge/articles/grok-bot-agents-10-step-tutorial.md)
+- **What:** Promotes a SpaceXAI engineer workshop and the quoted 10-step tutorial on running specialist GrokBot agents (Chief, PM, workers) with charters, routines, group chats, and a reversibility-based approval line.
+
+## @migueldeicaza - Nodes: Markdown Network-of-Documents App for macOS
+> This is a lovely Markdown/network of documents app for MacOS.
+>
+> And the authors opensourced their state-of-the-art rendering engine for people to build alternatives, check it out:
+>
+> https://t.co/iWLN6a0bW4
+
+- **Tweet:** https://x.com/migueldeicaza/status/2096273821703520361
+- **Link:** https://nodes-web.com/
+- **Filed:** [nodes-markdown-notes-macos.md](./knowledge/articles/nodes-markdown-notes-macos.md)
+- **What:** Nodes is a local-first macOS markdown notes app with [[wiki-links]], tags and a document graph, whose authors open-sourced their rendering engine so others can build alternative apps; Miguel de Icaza recommends it.
+
+## @jacobrodri_ - Kids Learning Game Making $1M/Month at $7.99/Week
+> learning games for kids are money printers
+>
+> this app is making $1,000,000/month, charging users $7.99/week
+>
+> take note of its onboarding (31 screens): https://t.co/EYvTNYBHmG
+
+- **Tweet:** https://x.com/jacobrodri_/status/2096270126475542648
+- **What:** THIN: Claim that an unnamed kids learning-game app earns about $1M/month on a $7.99/week subscription with a 31-screen onboarding funnel; app name and media are not in the captured data, only the tweet text.
+
+## @leonabboud - Prompt: Have Agents Learn Skills From Top 20 YouTube Videos
+> Please please please, before you have your grokbot, hermes, or Claude do anything, ask it to go watch 20 of the top videos on YouTube about the topic.
+>
+> Use this skill: "I want you to learn the skill of [INSERT TASK], what I need you to do is go on YouTube, and watch the top 20 videos on that topic in the last 6 months. Export the transcripts, and consolidate all your learnings into one skill. If a certain point gets repeated often across multiple videos, give these points more weight in your skill."
+>
+> I've personally done this with virtually every agent skill I have, be it landing page design, LinkedIn formats, SEO articles... It takes 20 minutes to most agents and will 10x the quality of your agent's output.
+
+- **Tweet:** https://x.com/leonabboud/status/2096265603820540069
+- **What:** Reusable prompt pattern for bootstrapping agent skills: have the agent pull transcripts of the top 20 recent YouTube videos on a task and distill them into one skill, weighting repeated points higher; author claims about 20 minutes and a large quality gain.
+
+## @itsharmanjot - NASA Worldview: Free Near-Real-Time Satellite Imagery Browser
+> NASA open sourced their most insane satellite tool and nobody is talking about it. It's called Worldview. Browse the entire planet in full-resolution satellite imagery, updated within 3 hours of observation. 1,000+ imagery layers, 10-minute geostationary views for 90 days, ~30-year archive, wildfire/flood/air quality tracking, polar views, direct data download. Free, no API keys, forkable. 266 releases, 35 contributors.
+
+- **Tweet:** https://x.com/itsharmanjot/status/2096256110529491363
+- **What:** NASA Worldview is a free open-source web client for 1,000+ satellite imagery layers with about 30 years of archive and near-real-time updates, needing no API keys and usable as a base for custom Earth-observation clients.
+
+## @tom_doerr - TREK: Self-Hosted Collaborative Travel Planner
+> Self-hosts a collaborative travel planner that maps routes, tracks budgets, and syncs packing lists in real time.
+>
+> https://t.co/oijH5mvhIz
+
+- **Tweet:** https://x.com/tom_doerr/status/2096248884443889849
+- **Link:** https://github.com/liketrek/TREK
+- **Filed:** [trek.md](./knowledge/tools/trek.md)
+- **What:** TREK is a self-hosted collaborative trip planner combining route mapping, budget tracking and real-time synced packing lists, useful as an open alternative to hosted travel-planning apps.
+
+## @ashebytes - 3D anatomy website with 2,234 modeled pieces built using GPT-6 Astra
+> since you guys loved the exploding tesla.. 
+>
+> I used GPT-6 Astra to create a 3D website that pulls apart the male anatomy into 2,234 modeled pieces!
+>
+> we are in a renaissance of learning
+
+- **Tweet:** https://x.com/ashebytes/status/2096221988763173186
+- **What:** THIN: @ashebytes showcases an interactive 3D website, built with GPT-6 Astra, that explodes the male anatomy into 2,234 modeled parts, following an earlier exploding Tesla demo; the demo media is not captured and no link was provided.
+
+## @meszmatew - Warmbly v0.4.0 release with CLI and one-command installer
+> Warmbly v0.4.0: Now with cli, interactive one-command installer, bug fixes and visual updates.
+>
+> Learn more: https://github.com/warmbly/warmbly/releases/tag/v0.4.0
+
+- **Tweet:** https://x.com/meszmatew/status/2096190432103354783
+- **Link:** https://github.com/warmbly/warmbly/releases/tag/v0.4.0
+- **Filed:** [warmbly.md](./knowledge/tools/warmbly.md)
+- **What:** Release announcement for Warmbly v0.4.0 adding a CLI, an interactive one-command installer, bug fixes and visual updates; the GitHub release page had no readable description, so the product purpose is unconfirmed.
+
+## @srishticodes - Tech hiring tests solved problems, real jobs need problem discovery
+> Modern tech hiring is funny.
+>
+> Companies say: “we need engineers who can operate in ambiguity.” Then the interview gives you exact input, exact output, one correct answer, 45 minutes, 12 hidden test cases. Your first task after joining: “payments are acting weird for some users. can you check?” No reproduction. No exact error. Nobody knows which service owns it. The only documentation is a Slack message saying: “fixed for now 👍”
+>
+> We spend months training engineers to solve problems where the problem is already perfectly defined. Then hire them into a world where figuring out what the problem even is is half the job.
+>
+> anyway reverse this linked list.
+
+- **Tweet:** https://x.com/srishticodes/status/2096173388406403167
+- **What:** Satirical critique of algorithm-style interviews: they test well-specified puzzles, while real engineering work is ambiguous, undocumented debugging where defining the problem is half the job.
+
+## @HamidoFx1 - 10 engineering prompts for GPT-6 Astra web developers
+> 🚨 OpenAI’s GPT-6 Astra is built for more than generating code.
+>
+> If you’re a web developer, these are 10 prompts worth trying: codebase audit, debug and fix, build a feature end-to-end, refactor, performance audit, security audit, UI implementation from design, test the app like a user, production review, autonomous engineering.
+>
+> The shift: Don’t ask Astra “write me some code.” Give it a real engineering problem + constraints + a clear definition of done.
+
+- **Tweet:** https://x.com/HamidoFx1/status/2096171880155639955
+- **What:** Prompt list for GPT-6 Astra covering ten agentic web-dev tasks (audit, debug, feature build, refactor, perf, security, UI, QA, prod review, autonomous run); each prompt asks for verification, and the core advice is to give goals, constraints and a definition of done.
+
+## @darshal_ - Remote job hunting roadmap via Reddit
+> If you're hunting for a remote job, you just need to figure out how Reddit works, and you'll never be unemployed for long.
+>
+> Most people scroll job boards for hours.
+>
+> Smart ones know Reddit is where the real opportunities hide.
+>
+> Here's your complete roadmap:
+
+- **Tweet:** https://x.com/darshal_/status/2096120673878114408
+- **What:** THIN: @darshal_ claims Reddit is the best channel for finding remote jobs and teases a roadmap, but the bookmarked tweet has no text or media of the roadmap itself.
+
+---
+
+# Friday, September 4, 2026
+
+## @ashebytes - [Media] GPT-6 Astra Builds 3D Exploded Tesla Model X Site (334 Parts)
+> I used GPT-6 Astra to create a 3D website that pulls apart a Tesla Model X into 334 modeled pieces
+>
+> we are in a renaissance of learning https://t.co/r2V2bJyuJJ
+
+- **Tweet:** https://x.com/ashebytes/status/2096009146248122416
+- **What:** THIN: Demo of an interactive 3D exploded-view site of a Tesla Model X with 334 modeled parts generated using GPT-6 Astra; tweet is video-only, so implementation details and link are unavailable.
+
+## @georgepickett - "First Principles" Delete-Simplify Prompt for Codebase Review (GPT-6 Astra)
+> Once you get Astra access run this prompt against your codebase (or just a part of it). It's magic.
+>
+> "Think from first principles about what we're trying to achieve here. Interrogate what you built before calling it done:
+>
+> 1. is anything here unnecessary, overly complicated, or based on weak assumptions? Challenge them.
+> 2. What can be deleted entirely?
+> 3. What can be simplified now that unnecessary pieces are gone?
+>
+> Then make the changes. Prefer deleting over simplifying, simplifying over optimizing, and optimizing over automating.
+>
+> It might be done too - you dont HAVE to go and make changes. if its good, leave it alone"
+
+- **Tweet:** https://x.com/georgepickett/status/2095979879137460640
+- **What:** Reusable review prompt for coding agents: challenge assumptions, delete first, then simplify, then optimize, then automate, with explicit permission to leave good code alone; pitched for use once you have GPT-6 Astra access.
+
+## @PoliceThePolic1 - [Media] James Freeman Turns "Open Investigation" Script on Officials
+> “It’s an open investigation, so I can’t divulge that information.”
+>
+> James Freeman does the one thing cops and government employees absolutely cannot handle: he talks to them exactly the way they talk to us. Watch how fast they melt down the moment the script flips. https://t.co/PhJf1rRuhe
+
+- **Tweet:** https://x.com/PoliceThePolic1/status/2095942218158928035
+- **What:** THIN: Video clip (not transcribed) of auditor James Freeman answering police/government employees with their own stock line "open investigation, can't divulge", framed as them melting down; no further detail available.
+
+## @itsharmanjot - Obscura: Rust Headless Browser for AI Scraping (85ms loads, 30MB RAM)
+> You can now scrape the web with AI agents in 85ms.
+>
+> Someone built in Rust what Chrome engineers couldn't optimize in years.
+>
+> Obscura is an open-source headless browser engine for web scraping and AI automation.
+>
+> A 70MB binary that boots instantly, loads pages in 85ms, and runs on 30MB of RAM.
+>
+> The Google equivalent needs 300MB of disk, 200MB of memory, and 2 seconds to start.
+>
+> The real trick is stealth mode. Per-session fingerprint randomization across GPU, canvas, audio, battery; 3,520 tracker domains blocked; navigator.webdriver fully masked; native functions patched cleanly. No detector can catch it.
+>
+> The engine runs real JavaScript through V8 and speaks the Chrome DevTools Protocol natively. That means it works as a drop-in for Puppeteer and Playwright. You swap the binary, your code stays untouched.
+>
+> One developer shipped this alone. Free to use.
+
+- **Tweet:** https://x.com/itsharmanjot/status/2095876108067508231
+- **What:** Promotes Obscura, an open-source Rust headless browser (V8 + CDP, drop-in for Puppeteer/Playwright) claiming 70MB binary, 85ms loads, 30MB RAM and per-session fingerprint stealth; no repo link in tweet, claims are unverified marketing.
+
+## @dhh - Podcast/Screencast Rig: Sony FX30, Sigma 16mm f1.4, Shure MV7 + Camlink 4K
+> This is exactly my podcast and screencast setup too. Just also need a Camlink 4K dongle and you're totally set: https://t.co/C0hQtTKHgk
+>
+> Like so many things, I just bought what @tobi told me to after seeing his superb picture quality on a call 😄
+>
+> *Quoting @jasonfried:* @hemeon @myfirstmilpod Thanks Marc! Camera: Sony FX30 https://t.co/xGOP3btFM2 Lens: Sigma 16 1.4 https://t.co/YnlxiL7ml3 Mic: Shure MV7 https://t.co/q5CpmaJ3VH
+
+- **Tweet:** https://x.com/dhh/status/2095793423735271785
+- **Quoted:** https://x.com/jasonfried/status/1770976442928734584
+- **Link:** https://www.shure.com/en-US/products/microphones/mv7?variant=MV7-K
+- **What:** DHH confirms he runs the same video/podcast gear Jason Fried listed (Sony FX30 camera, Sigma 16mm f1.4 lens, Shure MV7 mic), adding a Camlink 4K capture dongle and crediting Tobi Lutke for the pick.
+
+---
+
+# Thursday, September 3, 2026
+
+## @wizofecom - [Media] Masterclass on Becoming a Niche Authority in 45 Minutes/Week
+> A masterclass on how to become the most recognized authority in ANY niche with just 45 minutes/week: https://t.co/RIxLsbX5Bt
+
+- **Tweet:** https://x.com/wizofecom/status/2095497646408376464
+- **What:** THIN: @wizofecom promotes a masterclass on becoming the top authority in any niche with 45 minutes/week; link only resolves to the tweet itself, so the actual content is not available.
+
+## @yipo_ai - Tip: Apply for Cloudflare Startup Credits ($5k-10k per Year)
+> 建议大家创业有公司的都可以申请下 Cloudflare 的 startup credit
+> 一年$5000-10000 credit，什么存储、功能、部署随便用
+> 比盯着薅一些三瓜俩枣实在多了 https://t.co/R2Mrv6cbGo
+
+- **Tweet:** https://x.com/yipo_ai/status/2095446439958921237
+- **What:** Chinese-language tip that any founder with a company should apply for Cloudflare's startup credits, worth roughly $5,000-10,000 per year across storage, features and deployment, better than chasing small freebies.
+
+---
+
+# Wednesday, September 2, 2026
+
+## @jakewlittle - AI Agent Clones His Voice and Phones Airline to Cancel London Flight
+> just had @bot clone my voice w/ @spacexai and cancel a flight to London for me (had to call)
+>
+> 145k points & $600 back
+>
+> corporations invented the hellish customer experience w/ outsourcing to the 3rd world & IVRs , I don't even feel bad
+>
+> U don't have to do things u don't want to https://t.co/JFbY9dRucr
+
+- **Tweet:** https://x.com/jakewlittle/status/2095303277797572720
+- **What:** Jake Little reports an AI agent cloned his voice and phoned an airline to cancel a London flight, recovering 145k points and $600, as an example of agents handling hostile customer-service calls.
+
+## @Dinosn - SeekSocial: TikTok Influencer Database Built on Reverse-Engineered Endpoints
+> TikTok all public endpoints reversed engineered. Scraped 5.94 billion TikTok videos and 3.23 billion profiles in 3 weeks. https://t.co/OinUK2MmGC
+
+- **Tweet:** https://x.com/Dinosn/status/2095211078162501922
+- **Link:** https://seeksocial.io/
+- **Filed:** [seeksocial-tiktok-influencer-discovery.md](./knowledge/articles/seeksocial-tiktok-influencer-discovery.md)
+- **What:** Announces SeekSocial, a TikTok influencer discovery SaaS (9.9M creators with emails and engagement rates), claiming all public TikTok endpoints were reverse engineered and billions of videos and profiles scraped.
+
+---
+
+# Tuesday, September 1, 2026
+
+## @codyschneider - Marketing Engineer Playbook: Agent-Run Paid Ads, SEO, Link Building, Cold Outbound
+> if your "marketing engineer" doesn't know what to build first please for the love of god fire them because they're fleecing you... everything below is just agents, agents are just code with a thinking loop, connected to a live data stream they are making decisions on. To do everything below you need to give your coding agent access to: data pipeline, data warehouse, cloud server, media storage, Postgres databases for agents, cron jobs, app authentication, sharable links, git origin, API gateway (Nano banana, Apollo IO, Seed dance, Apify etc). Paid ads (Google: bottom-funnel keyword families with LLM-judged negatives; Facebook: Advantage+ broad CBO on deepest ~50/week event; LinkedIn: remixed viral creator posts as thought-leadership ads), SEO (X vs Y, alternatives, monthly refresh), AI search is just SEO, link building via better versions of linked content, cold email (engager extraction, waterfall enrichment, Instantly, ~$100/mo for 10k emails).
+
+- **Tweet:** https://x.com/codyschneider/status/2094862894345183562
+- **What:** Long checklist of what a marketing engineer should build with coding agents: infra prerequisites, then paid ads, SEO and AI-search, link building and cold email workflows, with concrete tooling and campaign structures.
+
+## @SamSokolin - Cut computer-use token cost by reverse-engineering browser tasks into API scripts
+> Having Grok Bot redo the same clicks in a web app burns a lot of tokens. One of the best ways I've found to stretch your usage is asking @bot to reverse engineer expensive browser use tasks into scripts!
+>
+> Have it capture the network requests from a computer-use run once. Next time, skip the UI and hit the APIs directly with the same auth.
+
+- **Tweet:** https://x.com/SamSokolin/status/2094824011427373415
+- **What:** Tip: record network requests during one computer-use run, then have the agent script direct API calls with the same auth, avoiding repeated GUI clicking; saves tokens and runs much faster.
+
+## @Shpigford - AI design stack: Paper + Mobbin + Tastebuild with custom /design skill
+> still kicking the tires on my workflow but i'm narrowing in hard on what feels like the perfect AI design stack.
+>
+> @paper + @mobbin + @tastebuild
+>
+> layered with a custom /design skill that basically orchestrates all of that.
+
+- **Tweet:** https://x.com/Shpigford/status/2094809509659021741
+- **What:** Josh Pigford shares his emerging AI design workflow: Paper, Mobbin (UI references) and Tastebuild combined, orchestrated by a custom /design skill; no link or detail, so mainly a stack signal.
+
+## @jasonzhou1993 - treg.to: Claude-powered people search at $0.0089/lead
+> Introducing Claude for people-search
+>
+> No more $600 subscriptions, juts $0.0089/lead
+>
+> Claude is now the best people finder in the world
+>
+> #1 on People Search Bench
+> Fully open source, 0% markup
+
+- **Tweet:** https://x.com/jasonzhou1993/status/2094740336895840605
+- **Link:** https://treg.to/people-search
+- **Filed:** [treg-people-search.md](./knowledge/articles/treg-people-search.md)
+- **What:** Open-source lead-enrichment service for agents that finds contacts and verified work emails per call ($0.0089); page cites a run of 27 people, 20 verified emails for $0.58, pitched against $600 subscriptions.
+
+## @tom_doerr - knowledge_graph: turn a text corpus into a concept/entity graph
+> Converts a corpus of text into a knowledge graph by extracting concepts, entities, and relationships to visualize their connections.
+
+- **Tweet:** https://x.com/tom_doerr/status/2094721176442462545
+- **Link:** https://github.com/rahulnyk/knowledge_graph
+- **Filed:** [knowledge-graph.md](./knowledge/tools/knowledge-graph.md)
+- **What:** GitHub repo rahulnyk/knowledge_graph that extracts concepts, entities and relationships from a text corpus and visualizes them as a graph; README was unavailable so detail comes from the tweet.
+
+## @lieflat_3 - Lieflat Charts: HTML-based dataviz and report skill for AI agents
+> 一个 skill，让你做出顶级审美的图表。
+>
+> 我开源的 Lieflat Charts 已经在 GitHub 2k star 啦～它是一套数据可视化与报告生成 skill，可供 Moxt、Claude Code、Codex 等 AI agent 使用。60多种图型（柱、线、面积、热力图、小提琴图、桑基图等），部分支持交互。黑白灰单色为基础，另有青瓷蓝、椰林绿、编辑红三种色系。原理是用 html 做图表，动效丰富，可无缝衔接 html PPT；也有一键报告模式。
+
+- **Tweet:** https://x.com/lieflat_3/status/2094719194302706136
+- **What:** Open-source (2k GitHub stars) agent skill that renders 60+ chart types as animated HTML with a consistent monochrome/tri-palette visual grammar, usable from Claude Code and Codex, plus a one-shot data-report mode; useful reference for dataviz skills.
+
+## @hridoyreh - Submit your website to Brave Search for indexing
+> Submit your website to Brave Search.
+>
+> You will thank me later... https://t.co/jH2xsLSvQM
+>
+> *Quoting @hridoyreh:* If your website is not on Brave yet, Then just follow this: 1. Go to search.brave.com/submit-url. 2. Enter your website URL now. 3. Press the Submit button. Your site will appear in Search...
+
+- **Tweet:** https://x.com/hridoyreh/status/2094688982940741816
+- **Quoted:** https://x.com/hridoyreh/status/2093964632562253866
+- **What:** SEO tip: submit your site URL at search.brave.com/submit-url so it gets indexed in Brave Search; the quoted tweet gives the three-step process (open submit page, enter URL, press Submit).
+
+## @SofiaSici - Graphify: knowledge graph from any folder (Karpathy-inspired)
+> 🚨 ÚLTIMA HORA: Alguien construyó exactamente la herramienta que Andrej Karpathy dijo que alguien debería construir.
+>
+> Un proyecto open source que supera las 100.000 estrellas en GitHub.
+>
+> Se llama Graphify. Un solo comando. Cualquier carpeta. Gráfico de conocimiento completo.
+>
+> Le das una carpeta con código, documentación, PDFs, esquemas SQL, imágenes, notas o incluso vídeos, y construye un grafo de conocimiento con todo lo que encuentra.
+>
+> En lugar de limitarse a buscar palabras dentro de los archivos, intenta entender cómo se relacionan las distintas partes del proyecto.
+>
+> Funciona con Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot y muchos otros agentes.
+
+- **Tweet:** https://x.com/SofiaSici/status/2094666731507597429
+- **What:** Promotes Graphify, an open-source tool (claimed 100k+ GitHub stars) that builds a knowledge graph from any folder of code, docs, PDFs, SQL, images and video, working with Claude Code, Cursor, Codex and Gemini CLI.
+
+---
+
+# Monday, August 31, 2026
+
+## @philipkiely - Inference Engineering book published as LLM-readable text
+> Teach your agents inference.
+>
+> The full text of Inference Engineering  is now available to LLMs everywhere. No more parsing PDFs.
+>
+> 3,000 tokens | links to each chapter: https://t.co/ggaII5NwTr
+>
+> 70,000 tokens | full text: https://t.co/1wa2w1cCnf
+
+- **Tweet:** https://x.com/philipkiely/status/2094545309393424848
+- **Link:** https://www.baseten.co/inference-engineering/llms.txt
+- **Link:** https://www.baseten.co/inference-engineering/llms-full.txt
+- **Filed:** [inference-engineering-baseten.md](./knowledge/articles/inference-engineering-baseten.md)
+- **What:** Baseten's Inference Engineering book is published as Markdown for agents: a 3k-token llms.txt chapter index and a 70k-token full text covering GPUs, engines, quantization, caching and production serving.
+
+## @Yohanansoltd - Feed Emil Kowalski's UI skills to Claude to avoid slop design
+> Before I build any website or mobile app. I tell Claude to pull every Emil kowalski ui skill and design system pattern. 
+> You would really avoid all those slop allegations
+
+- **Tweet:** https://x.com/Yohanansoltd/status/2094528147576234281
+- **What:** Workflow tip: before building a site or app, have Claude load Emil Kowalski's UI skills and design-system patterns as design guidance, so output avoids generic AI-slop look and feel.
+
+---
+
+# Thursday, August 27, 2026
+
+## @jacob_posel - video-use + Codex for AI video editing
+> video-use + codex for video editing is mindblowingly good
+>
+> one of the best AI tools I've ever used
+>
+> https://t.co/yYnekR4Cp4 https://t.co/Iy4KGGcrlT
+
+- **Tweet:** https://x.com/jacob_posel/status/2092980272819999227
+- **Link:** https://github.com/browser-use/video-use
+- **Filed:** [video-use.md](./knowledge/tools/video-use.md)
+- **What:** Recommends browser-use's video-use repo paired with Codex as an agent-driven video editing workflow, calling it one of the best AI tools he has used; the repo README was not retrievable.
+
+---
+
 # Saturday, February 21, 2026
 
 ## @bcherny - Subagent Worktrees for One-Shot Batch Migrations
