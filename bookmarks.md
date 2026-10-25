@@ -334,7 +334,788 @@
 
 ---
 
+# Friday, October 2, 2026
+
+## @KanikaBK - Ten Obsidian Web Clipper templates, from a clean-save default to a local-model setup
+> Anthropic is using an Obsidian knowledge graph to manage company-wide knowledge.
+>
+> That’s not note-taking anymore.
+>
+> It’s a connected system for finding ideas, context, and information across the entire company.
+>
+> And if you want to get more out of Obsidian, start with how you capture information.
+>
+> I put together: 10 Obsidian Web Clippers You’re Probably Not Using
+>
+> Simple tools that make saving useful information much faster.
+>
+> *Quoting @KanikaBK:* 10 Obsidian Web Clippers You’re Probably Not Using (X article; the quoted post's text is only its t.co link)
+
+- **Tweet:** https://x.com/KanikaBK/status/2105976785863377157
+- **Link:** https://x.com/i/article/2104806791351881728
+- **Filed:** [obsidian-web-clippers.md](./knowledge/articles/obsidian-web-clippers.md)
+- **What:** Kanika promotes an X article with ten Obsidian Web Clipper templates. They range from Keeper, a clean-save default, and Skim, a 3-bullet AI summary, to Vault, a local-model setup through Ollama. The post also claims Anthropic runs company-wide knowledge on an Obsidian graph; that claim is unverified here.
+
+## @mattpocockuk - /retro prompt that mines agent sessions for repo navigation gaps
+> Prompt of the day:
+>
+> /retro read my last 10 coding agent sessions and find ways to make my repo easier to navigate. Find where agents take too long to find relevant information, or rely on out-of-date docs.
+>
+> Improving navigability is such an underrated way to save tokens.
+
+- **Tweet:** https://x.com/mattpocockuk/status/2105951409887949107
+- **What:** Matt Pocock shares a /retro prompt. It reviews the last 10 coding agent sessions for slow lookups and stale docs. He argues that better repo navigability saves tokens.
+
+---
+
+# Thursday, October 1, 2026
+
+## @nizamdesign - Editorial design system for finance software, pixels and pills
+> Pixels, pills and profit: an editorial design system for finance software
+
+- **Tweet:** https://x.com/nizamdesign/status/2105758148153733339
+- **What:** Nizam announces an editorial design system for finance software. The post gives no components, tokens, or screenshots. Its t.co link points back to the same tweet, so specifics are unknown.
+
+## @haaarshsingh - React grouped table whose columns glide into each row as the view narrows
+> i recreated this interaction and now every other table on the internet looks like an excel sheet. inspired by @linear
+>
+> download now → https://t.co/OkCHq09s4h https://t.co/vCB6rJtUoP
+>
+> *Quoting @alvish:* 🧲 Just shipped: Tables that split, stretch, and snap into place.
+
+- **Tweet:** https://x.com/haaarshsingh/status/2105719659282461137
+- **Link:** https://kobra.systems/components/grouped-table
+- **What:** Harsh Singh recreated a Linear-style grouped table and calls the interaction a standard others will be measured against. He quotes Alvish's shipped split-and-snap tables. The linked Kobra page describes issues grouped by status, with columns gliding into each row as the view narrows. It is a React and Tailwind component with light and dark states. Page body text was truncated, so the component was not filed.
+
+## @thenanyu - Nan Yu claims one true SaaS layout delivers peak usability
+> There is only One True SaaS Layout.
+> You may not like it, but this is what peak usability looks like
+
+- **Tweet:** https://x.com/thenanyu/status/2105704619704029435
+- **What:** Nan Yu asserts a single correct SaaS layout exists and calls it peak usability. The text does not name the layout. The t.co link points back to this tweet and no media was captured, so the layout may appear in an image this record lacks (uncertain).
+
+## @codyschneider - Cold email works with a precise list, short copy, and meetings as the metric
+> most cold email programs die from overthinking
+>
+> low IQ: get a list of people with the problem. send them four sentences about the problem and one specific offer. send a lot of them
+>
+> midwit:
+> 40 domains, 120 mailboxes and a spreadsheet tracking mailbox health
+> warmup running forever
+> spintax on every sentence
+> rewriting "free" out of the copy like it's 2011
+> open tracking on a custom domain
+> AI personalization about their college football team
+> 9 step sequences ending in the breakup email
+> 14 micro ICP segments
+> A/B testing subject lines on 200 sends
+> reporting reply rate as the KPI
+>
+> high IQ: precise list, short email, one specific offer, high volume, hygiene done once. measure meetings held and pipeline
+
+- **Tweet:** https://x.com/codyschneider/status/2105704336642732532
+- **What:** Cody Schneider contrasts an over-engineered cold email setup with a simple one. The simple version pairs a precise list, a four-sentence email, one specific offer, and high volume. He argues teams should measure meetings held and pipeline, not reply rate.
+
+## @klashsarma - Relay launches a network that turns brand websites into creator content
+> Today we’re introducing Relay
+>
+> We raised $20M from Google, Point72 & the founder of Reddit to build it.
+>
+> 1) Drop your website
+> 2) Relay will create your content
+> 3) Automatically distributes to our network of 50,000 U.S. creators
+> 4) Drive millions of views and insights for your brand
+>
+> Comment your website URL below and we’ll build your brand’s content library for free 👇
+
+- **Tweet:** https://x.com/klashsarma/status/2105689511371878793
+- **What:** Kailash Sarma launches Relay. The service turns a brand's website into content and distributes it to 50,000 US creators. He says it raised $20M from Google, Point72, and the Reddit founder. These are launch claims from the company founder, unverified here. Commenters get a free content library.
+
+## @chris_nectiv - Publish an AI instructions page to steer AI Overviews on branded searches
+> SEO, I'm going to repeat this again.
+>
+> CREATE AN AI INSTRUCTIONS PAGE NOW!!!
+>
+> It can dramatically influence the AI Overviews appearing for branded searches.
+
+- **Tweet:** https://x.com/chris_nectiv/status/2105655128162468334
+- **What:** Chris Long urges SEOs to publish an AI instructions page now. He claims it can strongly shape which AI Overviews appear for branded queries. The post gives no method or evidence, so the claim is unverified.
+
+## @UiRahMan92 - Life OS dashboard that puts goals, pillars, and vision on one screen
+> Dashboard UI/UX for a Life OS.
+> One screen for goals, pillars, and the vision you’re actually building toward.
+
+- **Tweet:** https://x.com/UiRahMan92/status/2105597592516411493
+- **What:** Rah Man Designer shows a dashboard UI concept for a "Life OS" app. It puts goals, life pillars, and long-term vision on one screen. The post has no image or link content, so layout and interaction details are unknown.
+
+## @alvish - Alvish ships tables that split, stretch, and snap into place
+> 🧲 Just shipped:
+>
+> Tables that split, stretch, and snap into place.
+
+- **Tweet:** https://x.com/alvish/status/2105538797970809133
+- **What:** Alvish announces a shipped table UI that splits, stretches, and snaps into place. The post names no product, demo, or link. Its t.co link points back to the same tweet, so the mechanics are unknown.
+
+---
+
+# Wednesday, September 30, 2026
+
+## @OlafFrohn - Solar System Mission Map as of Oct 1, 2026, Ahead of JAXA's Mars Launch
+> Map of all active & planned Solar System missions and their destinations as of October 1st 2026. Happy new year Martians! @mmx_jaxa_en launch to Mars scheduled on the 10th  #keepExploring https://t.co/cQYTsM8QUH
+
+- **Tweet:** https://x.com/OlafFrohn/status/2105440421761429811
+- **Link:** https://twitter.com/OlafFrohn/status/2105440421761429811
+- **What:** THIN: Olaf Frohn posts a map of active and planned Solar System missions by destination, dated Oct 1, 2026, and notes JAXA's Mars launch (@mmx_jaxa_en) is set for the 10th. The map image is not captured, so the synthesis covers only the caption and mission date.
+
+## @arscontexta - Knowledge Work Engineering: Typed Knowledge Repos and Skills for Agentic Systems
+> https://t.co/6tlINvABZ9
+
+- **Tweet:** https://x.com/arscontexta/status/2105397004226494487
+- **Link:** https://x.com/i/article/2105350359950536704
+- **Filed:** [how-to-build-agentic-systems-for-knowledge-work.md](./knowledge/articles/how-to-build-agentic-systems-for-knowledge-work.md)
+- **What:** Heinrich argues that agents doing knowledge work need persistent context, a system shaped to the user's workflow, and a reusable foundation of methods. He proposes typed markdown knowledge bases with diagnostics, importable packages, and skills and views, implemented in the Ars Umbris framework.
+
+## @itsolelehmann - Vibe-Coding Physical Gadgets: Describe a Device, Get Parts, Code, and Build Steps
+> i'm obsessed with this idea of "vibe coding physical devices" right now
+>
+> even hardware noobs (like me!) can now finally turn our weird little ideas into gadgets that actually work
+>
+> you just describe the gadget you want, then schematik (basically cursor for hardware) picks the correct parts, writes the code to run them and walks you through building it.
+>
+> for example, here are 10 templates you can start with and make your own:
+>
+> 1. a plant that throws a disco
+>
+> a soil sensor warns you when it’s thirsty. water it and the LED ring celebrates with rainbow lights and a victory tune lol
+>
+> 2. a morning receipt printer
+>
+> turn it on and it prints today’s forecast onto a little paper briefing, with optional calendar events and blank lines for handwritten to-dos.
+>
+> 3. a digital hair clip
+>
+> a tiny wearable screen that displays your own messages. press a button to cycle through them.
+>
+> 4. a weather display that tells you what to wear
+>
+> checks the weather over wi-fi, then tells you whether to grab a jacket, umbrella, sunglasses, shorts or scarf. updates every 10 minutes.
+>
+> 5. a tiny desk companion
+>
+> tap its face to change expressions, tilt it to move its eyes, and swipe through the clock, weather and stock price.
+>
+> 6. a lamp you control with your hand
+>
+> swipe sideways to change color, up or down to change brightness. it saves your settings for the next time you power it on.
+>
+> 7. a pet treat dispenser
+>
+> press a button and it weighs the bowl before opening the gate. it blocks another serving if the bowl’s already full or the cooldown hasn’t finished.
+>
+> 8. a live flight radar
+>
+> a tiny round display that plots nearby aircraft and their callsigns, using live flight data fetched over wi-fi every 5 seconds.
+>
+> 9. a dedicated touchscreen chess game
+>
+> tap pieces to move and play against a small chess engine running on the device. the screen and processor are already on one board.
+>
+> 10. an air monitor for your room
+>
+> measures CO₂, temperature and humidity, then tells you when rising CO₂ means it’s time to air out the room.
+>
+> *Quoting @SamuelBeek:* This is amazing: this lady created a device that can control her balance, from a video game controller!!! What a time to he alive https://t.co/SkdBZYK1mP
+
+- **Tweet:** https://x.com/itsolelehmann/status/2105313054095552553
+- **Link:** https://twitter.com/SamuelBeek/status/2021939238925721676
+- **What:** Ole Lehmann describes schematik, a tool that turns a gadget description into picked parts, device code, and build steps, and lists 10 starter templates from a plant alarm to a room air monitor. The quoted post shows a hobbyist device that maps balance control to a game controller, the kind of hardware hack this workflow aims to make routine.
+
+## @robinebers - Opus 5.5 Builds a Zoomable Architecture Canvas for a Two-Month-Old App
+> had a crazy idea today
+>
+> for the past two months i've been building a pretty massive app
+>
+> and truth be told, i often play catch-up on architecture, because features move so damn fast
+>
+> so today i asked claude (opus 5.5, high)
+>
+> "I have a weird task for you. I want you to look at the app and create, for lack of a better word, a canvas that I can zoom in and zoom out and move around to see how our architecture actually works."
+>
+> (full prompt in first comment)
+>
+> this came out pretty great and it truly visualized, with steps and connected graphs what everything does
+>
+> 10/10 would recommend
+
+- **Tweet:** https://x.com/robinebers/status/2105309987983745060
+- **What:** Robin Ebers asked Claude Opus 5.5 (high effort) to build a zoom-and-pan canvas that maps his app's architecture, with steps and connected graphs. He reports the result as clear and useful for catching up on architecture as features move fast. The full prompt sits in the first comment, which this capture does not include.
+
+## @kiwicopple - Supabase Dashboard Rebuild Teased as a ChatGPT Extension
+> @ChatGPT Extensions are neat
+>
+> we can basically rebuild the entire @supabase dashboard in chatgpt. watch this space https://t.co/GKtwiQxn8h
+
+- **Tweet:** https://x.com/kiwicopple/status/2105301471797629144
+- **Link:** https://twitter.com/kiwicopple/status/2105301471797629144
+- **What:** Paul Copplestone says ChatGPT Extensions could host a near-complete rebuild of the Supabase dashboard inside ChatGPT, and teases an upcoming reveal. The t.co link resolves to the same tweet, so no separate source exists. This signals that admin and database UIs may move into chat surfaces.
+
+## @dctanner - Jelly: Open-Source Grok-Style Bot for Building Personal Software ("Jellyware")
+> I don’t think you’re ready for this jelly.
+>
+> You asked for it so I delivered.
+>
+> 🪼 Jelly is your open source grok bot/muse/dots.
+>
+> https://t.co/9JiiRIr4kc
+>
+> It’s made for people building their own personal software (aka jellyware). It best used @levelsio style building and running your apps on your own hardware or VPS.
+
+- **Tweet:** https://x.com/dctanner/status/2105270027716841826
+- **Link:** https://github.com/dctanner/jelly
+- **What:** Jelly is an open-source bot, described as a grok bot or muse, for building and running personal software ("jellyware"). Damien Tanner says it suits the @levelsio style of shipping apps on your own hardware or a VPS. Link content did not extract (empty description and README), so this synthesis relies on the tweet text alone.
+
+---
+
+# Tuesday, September 29, 2026
+
+## @dani_avila7 - Anthropic's claude-api cost-optimize Skill: Free Wins First, Then Tradeoffs
+> Anthropic's cost optimization skill is worth reading line by line
+>
+> Run /claude-api cost-optimize on any repo calling the API
+>
+> It profiles where your tokens go, ranks levers by savings, and applies free wins first (caching, input hygiene, batch) before tradeoffs (effort, model)
+>
+> One diff per lever, measured against your eval
+>
+> Read the sections, It'll help you optimize any agent app you're building
+>
+> https://t.co/BQEvBrXi90
+
+- **Tweet:** https://x.com/dani_avila7/status/2105102105216208904
+- **Link:** https://github.com/anthropics/skills/blob/main/skills/claude-api/shared/cost-optimization.md
+- **What:** The claude-api skill's cost-optimize command profiles where tokens go in a repo, ranks levers by savings, and applies free wins (caching, input hygiene, batching) before tradeoffs (effort, model). Each lever ships as one diff measured against an eval. Link content did not extract, so this synthesis relies on the tweet text alone.
+
+## @mxstbr - MCP Events Spec Lets MCP Servers Push Real-Time Updates Into ChatGPT
+> One more launch today: the new MCP Events spec is now supported in ChatGPT 🎉
+>
+> MCP servers can now push real-time updates (messages, comments, status changes, whatever) to ChatGPT, triggering automations for your users 🤯
+>
+> It’s easy to add to your MCP server, too! Just point Codex at the docs and let it rip:
+> https://t.co/9CqX6hfhXC
+
+- **Tweet:** https://x.com/mxstbr/status/2105091392011948221
+- **Link:** https://developers.openai.com/plugins/build/mcp-events
+- **What:** OpenAI now supports the MCP Events spec in ChatGPT, so an MCP server can push events such as messages, comments, or status changes that trigger user automations. Max Stoiber says the server-side change is small and that Codex can add it by reading the docs. Link content did not extract beyond the page meta description, so the spec details come from the tweet and page title only.
+
+## @mishhman - Leak-Proof Earnings Evals: Streetbench Scores Agent EPS Forecasts Against Consensus
+> An earnings eval is meaningless if an agent can just Google it or spout it out from memory.
+>
+> That was the challenge I ran into building Streetbench. I first tested AI earnings forecasts on roughly 100 companies in a previous post. For Q2 2026, I expanded to 200 companies, set a pre-report cutoff for each one, and used Exa Snapshot for the agents’ research. I also audited the agent's research trajectories for leaked results.
+>
+> I tested 9 combinations of model and agent combination: Shortcut, Codex, Codex+GPT Researcher as harnesses along with 3 models Luna 6, Sol 6, and Astra all high effort. Shortcut with Astra had the lowest average EPS error, $0.1203 per share versus $0.1467 (18% reduction) for the final Street consensus.
+>
+> What's most exciting is the progression of scores within Shortcut. Error fell from $0.1316 with Luna to $0.1274 with Sol to $0.1203 with Astra. Better models produced better estimates in this setup, which is an encouraging sign for what these agents could do as capabilities improve
+>
+> I've published the 200 cases, cutoff times, methods, results, and scorer on GitHub. Try another model or agent architecture and see if you can beat Shortcut with Astra.
+> https://t.co/1PanAlekXr
+>
+> I'm also posting forecasts before earnings at:
+> https://t.co/vv3acLklor
+>
+> *Quoting @ClaudeDevs:* Claude can now help you build evaluations and hillclimb on them.
+>
+> In this article, we share guidance on eval design & skills that Claude Code can use to improve your applications.
+>
+> https://t.co/PgKFC2DWth
+
+- **Tweet:** https://x.com/mishhman/status/2105009799088034254
+- **Link:** https://github.com/fundamental-research-labs/streetbench, https://beatthestreet.live/, https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+- **What:** Streetbench tests agent EPS forecasts on 200 companies with pre-report cutoffs and leak audits, a discipline the quoted ClaudeDevs guidance also stresses for evals. Shortcut with Astra gave the lowest error ($0.1203 vs $0.1467 consensus), and error fell as the model improved from Luna to Sol to Astra. The GitHub repo holds the cases, scorer, and results for others to beat.
+
+## @depotdev - CI Is the Bottleneck: Depot on Making Agents Validate Code Before Commit
+> https://t.co/ovuKogA6Rf
+
+- **Tweet:** https://x.com/depotdev/status/2104990331788038569
+- **Link:** https://x.com/i/article/2104986101022941184
+- **Filed:** [ci-is-changing.md](./knowledge/articles/ci-is-changing.md)
+- **What:** Depot argues CI is now the bottleneck as agent-generated code volume grows, and that per-layer CI optimizations (test selection, tsgo, sharding, snapshot schemas) are not enough. The article proposes moving validation into the code generation loop, so agents run real CI before commit and CI trust decisions use context from the change.
+
+## @kozlovski - Kafgres: a Rust Kafka broker embedded in Postgres via pgrx
+> Someone rewrote Kafka in Rust and embedded it in Postgres using pgrx 🤯
+>
+> Kafgres is a Rust-based Kafka broker that runs within Postgres. Kafka clients connect to Postgres on port 9092 and literally can't tell the difference. 🧵
+
+- **Tweet:** https://x.com/kozlovski/status/2104974962528223653
+- **What:** Kafgres runs a Kafka-protocol-compatible broker written in Rust inside Postgres as a pgrx extension, listening on 9092 so unmodified Kafka clients work against it. It lets topics live alongside relational data in one database; the thread contents were not captured.
+
+## @jakubkrehel - New examples for /break, /variant and interface-review skills
+> Added a couple of examples of /better-interface, /interface-review, /explain-interface, /break and /variant to the skills page.
+>
+> /break is probably my favorite skill to use right now, makes working on complex components so much easier.
+>
+> https://t.co/7TY8lutQy2
+
+- **Tweet:** https://x.com/jakubkrehel/status/2104961136617787398
+- **What:** THIN: Jakub Krehel adds demo examples (likely media-only) for his interface skills: /better-interface, /interface-review, /explain-interface, /break and /variant. He singles out /break as the most useful for working on complex components.
+
+## @deedydas - 10-hour recipe for AI video generation in Claude Code with OpenRouter, Manim/Hyperframes, Veo/Seedance and ffmpeg
+> I've spent 10+ hrs perfecting how to get the best out of Opus 5.5 for a video generation workflow:
+>
+> - Use it in Claude Code, not the app.
+> - Use OpenRouter API to access all other models (image gen, video gen, audio gen) with one key
+> - Use Gemini 3.8 TTS and make it create a skill for the API to put emotion into the voice.
+> - Use Manim, Hyperframes, Motion Canvas for motion graphics and HTML for web grounded video
+> - Use GPT 2.5 Image and Sunburst for keyframes and Veo 3.1 / Seedance 2.5 for generation. Seedance does better motion shots. Ensure you reference images for consistency and generate an animatic before the full video.
+> - Add a script writing and planning skill. Use OpenTimelineIO to assemble.
+> - Explicitly tell it to avoid Claudisms like short punchy sentences and a lot of numbers. "Narrate like a university professor."
+> - Allow it to use yt-dlp to search and inject clips from real videos (creative commons) in the composition
+> - Use ElevenLabs music gen for background
+> - Add a caption skill which uses any decent ASR model to get word-level timed subtitles on the final video
+> - Add a critic skill which takes screenshots and uses transcription to validate the audio and video quality
+>
+> In the prompt, specify a) what you want b) aspect ratio c) length d) style preferences. ffmpeg handles most of the actual video manipulation tasks.
+>
+> Here's an example of a 4 minute Neocloud business explainer:
+
+- **Tweet:** https://x.com/deedydas/status/2104957026199900220
+- **What:** Practical stack for agent-driven video: Claude Code plus OpenRouter for all media models, Manim/Hyperframes/Motion Canvas for graphics, Veo/Seedance for generated shots with an animatic first, OpenTimelineIO and ffmpeg for assembly. Quality levers are anti-"Claudism" narration prompts, ElevenLabs music, caption and critic skills.
+
+## @HeyDetya - Seven UI and vibecoding resources: EvilCharts, Rewamp UI, Refero, Bencho, Inspora, Neuform, Open Design
+> I stopped collecting random inspo. These are the only UI + vibecoding resources I keep opening.
+>
+> 1. EvilCharts - animated React charts for dashboards
+> 2. Rewamp UI - free open-source components, blocks, landing pages
+> 3. Refero - real product UI patterns and screens for reference
+> 4. Bencho - AI product UI components for faster builds
+> 5. Inspora - design inspiration for modern product UI
+> 6. Neuform - design-to-code resources for AI UI work
+> 7. Open Design - DESIGN.md resources so AI builds with clearer UI rules
+>
+> Save this before your next build 👀
+
+- **Tweet:** https://x.com/HeyDetya/status/2104953127623647730
+- **Link:** https://evilcharts.com/
+- **What:** Shortlist of seven front-end resources: EvilCharts (shadcn/ECharts animated charts), Rewamp UI, Refero (styles.refero.design with DESIGN.md exports), Bencho (UI micro-interactions), Inspora, Neuform (prompt-to-HTML landing pages with reusable DESIGN.md) and open-design.ai. DESIGN.md as agent-readable design rules is the common thread.
+
+## @tom_doerr - Effective HTML: agent skills for self-contained HTML wireframes, prototypes and diagrams
+> Create self-contained HTML artifacts including wireframes, interactive prototypes, and system diagrams using focused agent skills from the Effective HTML repository.
+>
+> https://t.co/waxQ1fDkBN
+
+- **Tweet:** https://x.com/tom_doerr/status/2104948968463462876
+- **Link:** https://github.com/plannotator/effective-html
+- **What:** The plannotator/effective-html repo packages focused agent skills that make a coding agent emit single-file HTML artifacts (wireframes, interactive prototypes, system diagrams) instead of heavier app scaffolding. Repo content did not load, so detail is limited to the tweet.
+
+## @askalphaxiv - OpenResearch desktop app: turn coding agents into research agents
+> OpenResearch is now available as a desktop app 🖥️
+>
+> Native builds for:
+> • macOS (Apple Silicon + Intel)
+> • Windows (x64)
+> • Linux (x64 + ARM)
+>
+> Turn your coding agents into research agents, own your stack end-to-end.
+>
+> Check it out: https://t.co/cPajIPhDzw
+
+- **Tweet:** https://x.com/askalphaxiv/status/2104947053642047521
+- **Link:** https://github.com/alphaXiv/OpenResearch
+- **What:** alphaXiv ships native desktop builds (macOS, Windows, Linux x64/ARM) of OpenResearch, an open-source tool that wraps coding agents into a research-agent workflow the user fully controls. The linked repo returned no README content, so details are from the tweet only.
+
+## @HamelHusain - Review of Anthropic's new Claude eval-building workflow: strong issue discovery, but evals before data
+> Put this through its paces yesterday. Some thoughts:
+>
+> The Bad:
+>
+> 1. The workflow creates evals before looking at data, and has you correct its mistakes. I believe you should be looking at data first to inform your understanding and to prioritize what to work on before trying to write evals.
+> 2. It created markdown files for looking at data and asked us to "tell it" which labels were off. You should create your own annotation app instead. You are using coding agents after all (we did this in our livestream)!
+> 3. The evaluators it scoped were too broad, and bundled too many types of failures at once. This can be avoided with looking at the data first. I'm afraid this might steer people in the wrong direction.
+> 4. The workflow put us DEEP into the rabbit hole of a specific eval right away. It also asks "does it look right" at several steps without really giving you enough information to make that determination.
+>
+> The Good:
+>
+> 1. I was impressed by the out of the box ability for issue discovery that other auto-eval approaches haven't been able to find! It found issues with human handoff, formatting, voice agents, and more. It's still better to look at your data iteratively with an agent, but this was the strongest performance I've seen with a more "one-shot" issue discovery approach.
+> 2. This is a big improvement in terms of UX from their prior eval plugin thing.
+> 3. The blog post they released conveys thinking that I agree with, such as the importance of looking at data, sampling intelligently, not saturating your own evals, etc.
+>
+> Video of our attempt at using this here.
+>
+> *Quoting @ClaudeDevs:* Claude can now help you build evaluations and hillclimb on them. In this article, we share guidance on eval design & skills that Claude Code can use to improve your applications.
+
+- **Tweet:** https://x.com/HamelHusain/status/2104945863084904737
+- **Link:** https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+- **What:** Hamel Husain tested the claude-api skill's build-eval/hillclimb commands (from Lance Martin's Sep 28 claude.dev playbook on eval design without fooling yourself). Verdict: excellent one-shot issue discovery (human handoff, formatting, voice agents) but it writes evals before error analysis, uses markdown for labeling instead of a custom annotation app, scopes evaluators too broadly, and rushes into one eval.
+
+## @athrix_codes - Curated list of eight agent skills for design engineers (Emil, Jakub Krehel, Playwright CLI, React Doctor, shadcn)
+> Goated skills every design engineer should know:
+>
+> Emil design eng - ( https://t.co/4zM42jbEbj )
+> Make interfaces feel better - ( https://t.co/0y0dscGQV9 )
+> Playwright cli - ( https://t.co/VkLvvK540j )
+> React doctor - ( https://t.co/tUsxvHP4i4 )
+> Fixing accessibility - ( https://t.co/levnJZTiUW )
+> 12 principles animation - ( https://t.co/FeFrvfHFPy )
+> Shadcn - ( https://t.co/VN1SUgTmQg )
+> Jakubkrehel/skills - ( https://t.co/96ORNJzqad )
+
+- **Tweet:** https://x.com/athrix_codes/status/2104944876899189000
+- **Link:** https://www.ui-skills.com/skills/emilkowalski/emil-design-eng
+- **What:** Roundup of agent skills listed on ui-skills.com and skills.sh for front-end polish: Emil Kowalski's design-engineering skill, Jakub Krehel's interface-feel skills, Microsoft's playwright-cli, Million's react-doctor, ibelick's accessibility fixer, the 12 animation principles and shadcn. Useful as an install shortlist for UI-focused coding agents.
+
+## @jasonbosco - Two signs of a well-built MCP server: few tools and granular permission scopes
+> Signs that an MCP Server is well built:
+>
+> 1) It thoughtfully limits the number of tools it exposes to the agent (to improve instruction following and reduce context bloat), and instead designs parameters for tool calls.
+>
+> 2) It separates permission scopes granularly, so that you as a user can choose which actions the agents can take on your behalf. (For eg: separating read vs write for each resource)
+>
+> Too often, I've seen MCP Servers ship tens of tools with a global read and write permission scope. Makes it totally unusable in real world use cases.
+
+- **Tweet:** https://x.com/jasonbosco/status/2104941774406087015
+- **What:** MCP server design checklist: expose a small tool set and push variation into parameters to protect context and instruction following, and split read/write scopes per resource. Servers shipping dozens of tools under one global read/write scope are unusable in practice.
+
+## @rasbt - Mega write-up: language models for text classification (RNNs, CNNs, transformers, calibration)
+> Took a while, but here it is, a mega write-up on language models for text classification and, of course, Jev.
+>
+> It's basically a visual guide to RNNs, CNNs, transformers, and calibration, with hands-on experiments on accuracy and efficiency.
+
+- **Tweet:** https://x.com/rasbt/status/2104923910039040173
+- **What:** THIN: Sebastian Raschka announces a long visual guide comparing RNNs, CNNs and transformers for text classification, with calibration and accuracy/efficiency experiments. Linked content only self-references the tweet, so no article detail was available.
+
+## @giswqs - 100 interactive open-data maps built with GeoLibre
+> 100 Interactive Maps from Open Data: Explore, Fork, and Build Your Own with GeoLibre
+>
+> 100 interactive maps, all built from free public data, and all open live in your browser. In this tutorial I tour the GeoLibre open data gallery, show how to explore and fork any of the maps, and walk through how they were made with GeoLibre, so you can build the same kind of map from your own data.
+>
+> Video tutorial: https://t.co/O1sC5dlUdE
+>
+> The maps cover 12 themes: health, natural hazards, climate, oceans and water, nature, transport, cities, energy, space, history and culture, society and economy, and food.
+>
+> - Gallery: https://t.co/jWY2jbztBq
+> - Official Demos collection: https://t.co/xyEWuDWO2B
+> - GeoLibre Web: https://t.co/8gMtkVtfnm
+> - GitHub: https://t.co/VXq8c1o2Nd
+>
+> #geospatial #opensource #GeoLibre
+
+- **Tweet:** https://x.com/giswqs/status/2104919116297511085
+- **Link:** https://www.youtube.com/watch?v=2r5OhvEa3AA&feature=youtu.be, https://geolibre.app/gallery/, https://share.geolibre.app/giswqs/collections/official-demos, https://web.geolibre.app/, https://github.com/opengeos/GeoLibre
+- **What:** @giswqs presents 100 interactive maps built from free public data across 12 themes, with a video on forking and building similar maps from your own data. GeoLibre is a free, open-source, browser-based GIS platform that also runs on desktop, mobile, and in Jupyter, per the web app's page description.
+
+## @justinmfarrugia - Animated before/after UX explainers built with an Opus 5.5 skill
+> this is one of the best design skills I've used
+>
+> I used to just build a Before/After toggle when I was working on something, record it and then drop that in the issue
+>
+> this is a 100x better way to visualize in-app changes and explain the thinking
+>
+> props @moguzbulbul
+>
+> *Quoting @moguzbulbul:* I was struggling to explain my UX decisions in interviews, so I made this kind of animation with Opus 5.5
+>
+> Anyone want the skill? https://t.co/4nPoVpTe6r
+
+- **Tweet:** https://x.com/justinmfarrugia/status/2104915817351557389
+- **Link:** https://twitter.com/moguzbulbul/status/2104206095313215591
+- **What:** Justin Farrugia says an animated Opus 5.5 skill beats before/after recordings for showing in-app changes in issues. The quoted post from @moguzbulbul built the animation to explain UX decisions in interviews, and offers the skill on request, not as a link.
+
+## @tec_sany - Claude rebuilds LinkedIn profiles using seven prompts
+> 🚨 BREAKING: Claude can now rebuild your LINKEDIN PROFILE like a $600 personal branding consultant. For free.
+>
+> Here are 7 prompts, headline to featured posts:
+
+- **Tweet:** https://x.com/tec_sany/status/2104888315048788065
+- **What:** Tec Sany claims Claude can rebuild a LinkedIn profile the way a paid personal-branding consultant would, covering the headline through featured posts. The seven prompts are not in the tweet text, so the prompts themselves are not captured.
+
+## @suryaoruganti - CI spend is the top engineering bottleneck, with a cost-cutting clip
+> you can save costs on CI in less time than it takes to watch this clip.
+> watch to find out how. https://t.co/33gkhNpdo1
+>
+> *Quoting @Altimor:* CI has become the top bottleneck of every engineering team I talk to (including Lindy). Our CI spend has become stratospheric.
+
+- **Tweet:** https://x.com/suryaoruganti/status/2104886602061525294
+- **Link:** https://twitter.com/suryaoruganti/status/2104886602061525294
+- **What:** THIN: @suryaoruganti quotes Flo Crivello, who says CI spend has become stratospheric and the top bottleneck for engineering teams. The reply promises CI cost savings, but the method is only in a video clip that is not captured, so the tweet has no actionable steps.
+
+## @shadcnlabs - pdfcn: open-source shadcn-compatible library for building PDFs
+> Introducing pdfcn
+>
+> Build beautiful PDFs like you build your UI.
+>
+> Powered by Takumi + Forme.
+> Pick from 10+ themes, 40+ components & blocks, then customize everything.
+>
+> One command to get started. shadcn/ui compatible.
+>
+> 100% Free. Open source.
+
+- **Tweet:** https://x.com/shadcnlabs/status/2104840500847263794
+- **What:** shadcn Labs introduces pdfcn, a free open-source library for building PDFs the same way developers build UI. It is powered by Takumi and Forme, ships 10+ themes and 40+ components and blocks, and installs with one shadcn/ui-compatible command.
+
+## @suraj_sharma14 - 30-point security checklist for vibe-coded apps
+> 30 things for Securitymaxxing your vibe coded app:
+>
+> -  Move every API key out of your frontend
+> -  Add .env to .gitignore before your first commit
+> -  Rotate any key that ever touched GitHub
+> -  Turn on Row Level Security for every table
+> -  Never trust the client. Validate on the server
+> -  Check auth on every API route not just the UI
+> -  Check ownership: can user A read user B's data?
+> -  Rate limit login, signup &  password reset
+> -  Rate limit your AI endpoints before someone drains your credits
+> -  Set hard spending caps on OpenAI, Anthropic & your cloud
+> -  Use parameterized queries. No string-built SQL
+> -  Sanitize user input before rendering it (XSS)
+> -  Lock CORS to your own domains, never "*"
+> -  Use HTTPS everywhere with HSTS on
+> -  Set secure, httpOnly, sameSite cookies
+> -  Hash passwords with bcrypt or argon2 or use a real auth provider
+> -  Expire sessions and tokens
+> -  Add CSRF protection on state-changing requests
+> -  Validate file uploads by type and size & store them outside your app server
+> -  Make storage buckets private by default
+> -  Verify webhook signatures (Stripe, GitHub, etc.)
+> -  Never return stack traces or raw errors to users
+> -  Strip secrets and PII from your logs
+> -  Run npm audit and update vulnerable packages
+> -  Check that the packages your AI suggested actually exist
+> -  Guard LLM features against prompt injection
+> -  Never let the model run tools or SQL without limits
+> -  Add security headers (CSP, X-Frame-Options)
+> -  Back up your database and test a restore
+> - Ask your AI to attack your app before someone else does
+>
+> Shipping fast is a skill.
+> Shipping safe is what keeps you in business.
+>
+> Bookmark this before your next deploy + send it to a vibe coder.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2104790775397830755
+- **What:** Suraj Sharma lists 30 security checks for vibe-coded apps, covering secrets handling, row-level security, server-side validation, rate limits, spending caps, and restore testing. The list targets common AI-generated app failures and ends with a prompt to have the AI attack the app itself.
+
+---
+
+# Monday, September 28, 2026
+
+## @doodlestein - dsr self-hosted builds and the "code first" doctrine for agent swarms
+> It seems like lots of people are suddenly realizing that handling builds and tests at scale is now a major bottleneck to high-throughput agent coding.
+>
+> This is something that I first dealt with late last year when I created MCP Agent Mail and started using a large number of agents at the same time on single projects.
+>
+> Most of my stuff is open source, so at first I was able to use GitHub Actions for everything, which was convenient. But as the number of projects I was working on skyrocketed, I saw my GitHub Actions usage spike, to the point where it was over $5,000/month of value.
+>
+> Unsurprisingly, they decided to cut me off after that, so I had to figure something else out. I ended up coming up with my own system called dsr that I've been using since then, which can use the same config files as GitHub Actions, but runs on my own fleet of Linux, Mac, and Windows machines.
+>
+> You can try it yourself here:
+>
+> https://t.co/GXzDKKG2Tr
+>
+> While dsr helped a lot, the bigger problem I realized was that these build/test flows were being used wastefully and way too frequently.
+>
+> Basically, if you had a swarm of 12 agents all working on the same code base, even if you solved the problems of inter-agent file contention (as I have with the advisory file reservations in my Agent Mail project), you still had to deal with build resource contention, with each agent trying to test and build after each change.
+>
+> This quickly overwhelms your systems, and again, is totally unnecessary and wasteful. I realized that what you really want is a doctrine that's followed by your swarm, which I refer to as the "code first" doctrine. This is explained in the attached screenshots by Astra.
+>
+> It's really just common sense, though. And the ideas are thoroughly integrated into my main skill that I use for orchestrating agents using my ntm orchestration tool: /vibing-with-ntm (I also use my /ntm skill to explain the basics of ntm to the agents).
+>
+> You can get those skills here on my $20/month skills site:
+>
+> https://t.co/fgcorUVkKn
+> https://t.co/m9h9z6CC8G
+>
+> If you follow this approach, you can save huge amounts of money while still getting the benefits of thorough testing and remote builds.
+>
+> I've been doing this myself every single day for months across 2,000+ daily commits and dozens of projects, so I know it works at scale.
+
+- **Tweet:** https://x.com/doodlestein/status/2104745145966920041
+- **Link:** https://github.com/Dicklesworthstone/doodlestein_self_releaser, https://jeffreys-skills.md/skills/vibing-with-ntm, https://jeffreys-skills.md/skills/ntm
+- **What:** Jeffrey Emanuel says build and test contention becomes the bottleneck for large agent swarms, after GitHub Actions costs passed $5,000 a month and his account was cut off. He built dsr to run GitHub Actions-style configs on his own Linux, Mac, and Windows fleet, and proposes a "code first" doctrine where agents build and test sparingly. The GitHub and skill-site links returned no usable text, so the tool details are not captured.
+
+## @SquatUniversity - Client avoids rounded shoulders: posture result clip
+> She REFUSED to have rounded shoulders!😮 https://t.co/aDuWexd0s5
+
+- **Tweet:** https://x.com/SquatUniversity/status/2104738811418996899
+- **Link:** https://x.com/SquatUniversity/status/2104738811418996899
+- **What:** THIN: Squat University posts a short claim that a client refused to develop rounded shoulders. The tweet gives no method, and the substance is likely in an attached video that is not captured here.
+
+## @codyschneider - Marketing engineer channel playbook: keywords, social, SEO, and cold email
+> if your marketing engineer doesn't know what to build first, send them this
+>
+> google ads
+> bottom of funnel keywords from the data for seo api. optimize for the deepest conversion you can. ad sets are keyword families, keywords + ads + landing pages all match. negative match anything without buying intent, use an llm to judge intent
+>
+> facebook ads
+> scrape social for your customer's desired outcomes, build ads around them. statics and ugc both work. one advantage+ campaign, broad, CBO, optimize for the deepest event that gets ~50 a week, spend your time making creative
+>
+> linkedin ads
+> remix viral posts from creators in your category, run the winner as a thought leadership ad, save everyone who engages for outbound
+>
+> SEO
+> X vs Y, X alternative, X review, how to X. write off what ranks on page 1 + a transcript of your point of view. refresh monthly
+>
+> AI search
+> it's just SEO. best X for Y content from pages 1-3 gets cited
+>
+> link building
+> find stale content everyone links to, write a better version, email the people linking to it
+>
+> cold email
+> linkedin engagers, waterfall enrichment, million verifier, instantly on hypertide inboxes. ~10,000 emails a month for about $100
+
+- **Tweet:** https://x.com/codyschneider/status/2104662467150315861
+- **What:** Cody Schneider gives a per-channel playbook for marketing engineers covering Google Ads, Facebook, LinkedIn, SEO, AI search, link building, and cold email. The core tactics are bottom-of-funnel keyword ad sets, LLM-based intent filtering of negative keywords, and a cold-email stack he prices at about 10,000 emails a month for $100.
+
+## @sab8a - Open Edit: open-source agent that makes Opus 5.5 videos editable
+> We finally cracked it!
+>
+> Opus 5.5 videos are now editable.
+>
+> We built Open Edit, an open-source agent that turns videos into editable browser projects.
+>
+> Project + GitHub below ↓ https://t.co/BaMU4QyFVy
+
+- **Tweet:** https://x.com/sab8a/status/2104627757766578399
+- **Link:** https://twitter.com/sab8a/status/2104627757766578399
+- **What:** Sabba Keynejad announces Open Edit, an open-source agent that turns videos into editable browser projects, and says it now works with Opus 5.5 videos. The t.co link resolved to the tweet itself, so the project and GitHub repo are not captured.
+
+## @hackyguru - Ditching WHOOP's Subscription for a Fully Local Fork
+> exiting whoop after 18 months.
+>
+> kept the strap, ditched the subscription. it now runs fully local on zhoop (my fork of noop). no fluff metrics, my data stays on my phone.
+>
+> ai killed vendor lock-in.
+
+- **Tweet:** https://x.com/hackyguru/status/2104611154559742444
+- **What:** guru left WHOOP after 18 months, kept the strap, and runs zhoop, his fork of noop, fully local. Data stays on the phone and the metrics are minimal. He frames AI as the force that ends vendor lock-in. The embedded t.co link resolves only to this tweet, so no separate source is captured.
+
+## @kyle_e_walker - Fade-on-Zoom Layers Reveal Detail as Users Zoom In
+> "Fade on zoom" is one of my favorite cartographic techniques.
+>
+> Interpolate a layer's opacity by zoom level where higher-aggregation layers fade away to show more detail as the user zooms in, eventually showing all data at full zoom.
+>
+> Try it live in my latest project which maps the 2020 US Census by age group:
+>
+> https://t.co/iHFJ6dcVKh
+
+- **Tweet:** https://x.com/kyle_e_walker/status/2104595791515881808
+- **Link:** https://walker-data.com/maps/census-2020/age.html
+- **What:** Kyle Walker describes "fade on zoom": layer opacity interpolates by zoom so aggregated layers fade as detailed layers take over, showing all data at full zoom. His 2020 Census age map demonstrates it. The link content is an interactive MapLibre widget with no article text, so the entry is not filed.
+
+## @MashfordMahute - Demographic Averages Hide Local Variation; WebGIS Shows It
+> A city-wide demographic average can tell you a lot.
+>
+> But it can also hide a lot.
+>
+> This Demographics & Housing WebGIS, by Mohammad VahidiBorji, is a great example of what happens when demographic data is given a spatial dimension. https://t.co/nmWYLzyISW
+
+- **Tweet:** https://x.com/MashfordMahute/status/2104559382759612836
+- **What:** Mashford Mahute highlights a Demographics and Housing WebGIS by Mohammad VahidiBorji. The point: city-wide averages hide local variation, and mapping demographic data exposes it. The embedded t.co link resolves only to this tweet, so the WebGIS URL is not captured.
+
+## @TommiPedruzzi - Google Trends Problems Turned Into Anonymous Digital Assets
+> It's completely legal to:
+>
+> • Go on google trends
+> • Find problem people are struggling with
+> • Turn those problems into digital assets
+> • Without revealing your name
+> • Without showing your face
+>
+> I made $65k last month doing it.
+>
+> Here's exactly how it works:
+
+- **Tweet:** https://x.com/TommiPedruzzi/status/2104541601855144297
+- **What:** Tommi Pedruzzi claims an anonymous method: find problems people search for on Google Trends, then turn them into digital assets. He claims $65k last month. The post ends before the method, so no steps are captured and the income claim is unverified.
+
+## @LerneKImitk - ChatGPT Side-Income Ideas From Salary and CV Prompts
+> Hab ChatGPT mal mein Gehalt und meinen Lebenslauf reingeschmissen.
+> Alter, das Ding hat mir Einkommensquellen aufgezeigt, auf die wäre ich im Leben nicht gekommen.
+> Die 7 Prompts, die ich dafür genutzt hab:
+
+- **Tweet:** https://x.com/LerneKImitk/status/2104445132779225364
+- **What:** The author fed a salary and CV into ChatGPT and reports income sources they had not considered. The post promises seven prompts, but the captured text ends before them, so the prompts are not in this record.
+
+---
+
+# Sunday, September 27, 2026
+
+## @suryaoruganti - Practical Levers for Cutting CI Bills at Scale
+> Everyone's posting about how CI bills are exploding.
+>
+> That's true - here are some practical solutions for teams operating at scale.
+>
+> - cache heavily.
+>
+> - use the right sized instance. 2x instance size that reduces runtime by half still costs the same while reducing your wait time. obv not all workloads parallelize well.
+>
+> - if CI reproducibility isn't important, consider using snapshots or starting from precomputed states for incremental builds. This is why your laptop build feels so much faster than a CI job.
+>
+> - if building containers, use a heavily cached remote container builder. This is not the same as just uploading cache layers to a remote registry. Speed diff here can be ~10x between the two approaches.
+>
+> - reduce number of tests. You know you don't care about some of them.
+>
+> - use @WarpBuilds for faster single core performance and locally connected NVME drives which are the single most important factor for build and test workload performance.
+
+- **Tweet:** https://x.com/suryaoruganti/status/2104389894617575524
+- **What:** Surya Oruganti lists CI cost fixes: heavy caching, right-sized instances, snapshots or precomputed states, a cached remote container builder, fewer tests, and faster single-core machines with local NVMe such as WarpBuilds. He claims a remote container builder with cache can be about 10x faster than uploading cache layers to a registry.
+
+## @chxrles - Cut "Eyebrow" Text: LLM Landing-Page Clutter Adds No Value
+> please don't do this.
+>
+> it's called "eyebrow" text and it's the latest vibecode-slop tell.
+>
+> it serves no useful purpose. again, it's this "gesturing" LLMs do and you need to be aware of it. it puts this eyebrow text there because it's a landing page typography trope that bamboozles your brain into thinking "yes this looks like a good and proper landing page!"
+>
+> and you think "the more detail = cleverer model!"
+>
+> but it's dumb. all this design clutter has no actual thought - it's still stochastic parrot without a trained & experienced designer's guidance. the clever but hard thing is reduction. reducing and eliminating. good design is simple. great design is invisible.
+>
+> this eyebrow test is just more unnecessary visual clutter the Opus 5.5 is obsessed with.
+>
+> do not accept the default. take care with your work.
+>
+> every element is unnecessary until proven essential.
+
+- **Tweet:** https://x.com/chxrles/status/2104339434816807188
+- **What:** Charles Burdett says small "eyebrow" labels above headlines are an LLM landing-page trope that adds visual clutter without function. He argues good design reduces, and every element must prove it is essential. He names Opus 5.5 as the model that over-produces this pattern.
+
+## @diptanu - Usage-Priced CI Where Caching Matters More Than Cores
+> We are dabbling in CI. Some of our users were already building DIY CI runners on the platform. We want to offer infinite compute for your CI, with pricing that's transparent and based on the compute and storage you actually consume instead of opaque runner shapes, committed usage, or buying X compute minutes per month.
+>
+> Our biggest learning so far: caching is the biggest unlock for CI workloads. Reliable build caching plus OS/NPM/pip package caching is just as important as having fast CPU cores and lots of RAM.
+>
+> *Quoting @deedydas:* As cost of coding has plummeted, long builds (CI) has become a bottleneck for many software cos. Three of the biggest startups solving this:
+>
+> 1. Blacksmith (@useblacksmith)
+> 2. Namespace (@namespacelabs)
+> 3. Depot (@depotdev)
+
+- **Tweet:** https://x.com/diptanu/status/2104326108103750011
+- **What:** Diptanu Choudhury announces CI that bills on compute and storage consumed, not runner shapes or minute bundles. His key finding: build caching plus OS, npm, and pip package caching matter as much as fast cores and RAM. The quoted post names Blacksmith, Namespace, and Depot as the leading CI startups.
+
+## @steipete - Codex-Picked Test Subsets Replace Per-Commit CI
+> Same. @useblacksmith has been an amazing sponsor but we need to distribute the load.
+>
+> My plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.
+>
+> *Quoting @Altimor:* CI has become the top bottleneck of every engineering team I talk to (including Lindy). Our CI spend has become stratospheric.
+
+- **Tweet:** https://x.com/steipete/status/2104305554760114488
+- **What:** Peter Steinberger agrees that CI cost is a bottleneck, quoting Flo Crivello of Lindy. His plan: Codex selects the tests that matter, CI runs shrink sharply, and the remaining tests run hourly to spread load off his Blacksmith sponsor.
+
+---
+
 # Saturday, September 26, 2026
+
+## @doodlestein - Gemini 3.8 Flash Gathers Web PDFs Into a Corpus for Bulk Markdown Conversion
+> Antigravity with Gemini 3.8 Flash is really good at finding relevant PDFs on the web and organizing them into a corpus. Now I just need to 100x this. This skill of mine is helping to keep the costs down a lot, too:
+>
+> https://t.co/HjoZ4EgUbG
+
+- **Tweet:** https://x.com/doodlestein/status/2103881102284697673
+- **Link:** https://jeffreys-skills.md/skills/bulk-convert-huge-folder-of-pdfs-into-markdown
+- **What:** Jeffrey Emanuel uses Antigravity with Gemini 3.8 Flash to find web PDFs and build a corpus, and credits his bulk-PDF-to-markdown skill for keeping costs down. The linked skill page rendered only its site shell, so the skill body is not captured and the entry is not filed.
 
 ## @DanniChenGTM - Mine competitor complaints before building a roadmap
 > One of the highest-leverage things I’ve had a startup do recently:
