@@ -1,4 +1,92 @@
+# Saturday, October 24, 2026
+
+## @alexhillman - Prompt to lock down Tailscale ACLs so one weak node can't reach the rest
+> Hey fellow Tailscale loving friends, with all the security shenanigans going on here’s a prompt I recommend for making sure the weakest link on your talilnet can’t wreck everything else over ssh or otherwise.
+>
+> Give your agent this and let it walk you thru locking down your ACL:
+> https://t.co/xFy0M1Adtx
+
+- **Tweet:** https://x.com/alexhillman/status/2114164454971560062
+- **Link:** https://gist.github.com/alexknowshtml/515c5e741dc4c157d2293f782d15ed41
+- **What:** Gist with an agent prompt that walks you through tightening Tailscale ACLs, so a compromised low-trust device on the tailnet can't pivot to others via ssh. Gist body did not extract; content inferred from tweet.
+
+## @alain - Weekend personal-opsec checklist to hand to your agent
+> Take 2 hours this weekend to improve your personal opsec. Some ways to get through the agent security apocalypse - give the list to your agent to help:
+>
+> - ask Claude to scan the devices visible on your local network and fix + improve your security and highlight potentially vulnerable devices
+> - look up your home IP on Shodan or Censys. Check whether anything like a NAS, camera, router admin interface or development server is exposed to the public internet.
+> - roll your wi-fi password
+> - audit your Gmail oauth connections, revoke everything you don’t strictly need
+> - freeze credit at 3 bureaus (reduces impersonation risk)
+
+- **Tweet:** https://x.com/alain/status/2114086821722526144
+- **What:** Home and personal security checklist: agent-run LAN scan, Shodan/Censys exposure check, wi-fi password rotation, Gmail OAuth audit, credit freezes. Tweet text is truncated in the export; list is partial.
+
+---
+
+# Friday, October 23, 2026
+
+## @intentionally - PSA: treat AI-era cybersecurity as a real threat in family financial planning
+> PSA: This week was kind of a turning point for AI and cybersecurity. Please take this weekend to do some simple cleanup for your family. Some suggestions:
+>
+> - Set up a password manager like 1Password and give your spouse or partner access to a shared vault. Teach them how to use it.
+> - Update your passwords for critical stuff - your email account, your bank or financial stuff, etc. Store in your password manager and use the strongest password you can.
+> - Use two factor auth for everything you can
+
+- **Tweet:** https://x.com/intentionally/status/2113649747911184638
+- **What:** Plain-language family security cleanup: shared password manager vault, rotate email and bank passwords, enable 2FA. Argues financial plans must now count cybersecurity risk as a legitimate threat.
+
+---
+
+# Thursday, October 22, 2026
+
+## @davekiss - opencode AGENTS.md rule against speculative edge-case complexity
+> This is such a banger rule in @opencode's AGENTS.md
+>
+> "Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness."
+
+- **Tweet:** https://x.com/davekiss/status/2113363042247512161
+- **What:** Praises an AGENTS.md rule in opencode that makes the agent justify unlikely race or security edge-case handling (failure mode, likelihood, cost) and get user buy-in before adding complexity. Copy-ready guardrail against agent scope creep.
+
+---
+
 # Tuesday, October 20, 2026
+
+## @BHolmesDev - /merge-risk skill grades PR risk across 5 categories
+> We made a skill for assessing the risk of merging a PR: /merge-risk
+>
+> This addresses the code review bottleneck by helping devs trust the agent for lower risk changes.
+>
+> It grades risk across 5 categories: alignment, impact, verification, rollback cost, and error detection.
+
+- **Tweet:** https://x.com/BHolmesDev/status/2112653011369807971
+- **What:** Warp's /merge-risk agent skill scores a PR on alignment with the description, blast radius, end-to-end verification, rollback cost (two-way vs one-way door), and error detection. Install: `npx skills add warpdotdev/common-skills --skill merge-risk`.
+
+## @anze3db - Urgent: upgrade certifi and TLS stacks after eMudhra intermediate CA key compromise
+> 🚨Python friends, upgrade (or have your agent upgrade) every certifi package across all your projects and machines!
+>
+> uv self update
+> uv lock --upgrade-package certifi
+>
+> Private keys from 8 intermediate CA certs have been compromised!
+>
+> *Quoting @astuyve:* private keys from 8 intermediate CA certs have been compromised (eMudhra)
+
+- **Tweet:** https://x.com/anze3db/status/2112616425693266153
+- **Quoted:** https://x.com/astuyve/status/2112559796914167931
+- **Link:** https://emudhra.we-have-a-problem.com/
+- **What:** Private keys of eight eMudhra intermediate CA certs leaked. Fix list: certifi, Go 1.27.3/1.26.10 (rebuild), rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron, NSS 3.131.1, Firefox 158.0.1, and macOS curl roots removed by hand.
+
+## @DeRonin_ - Playbook for shipping a ChatGPT app (MCP server) as a distribution channel
+> my unpopular opinion is that ChatGPT apps are the best distribution play rn
+>
+> +50-200% on income those apps were already doing, with access to ~900M weekly users for free.
+>
+> *Quoting @skirano:* We haven't stopped growing since we launched our new ChatGPT plugin last Tuesday. I've never seen anything like this, we added 500K in ARR this week only!
+
+- **Tweet:** https://x.com/DeRonin_/status/2112573093839298625
+- **Quoted:** https://x.com/skirano/status/2107236581442720203
+- **What:** Claims ChatGPT apps give free distribution. Steps: pick a paid workflow, build an MCP server (streamable HTTP at /mcp), write tool descriptions for the model, add ui:// HTML resources, verify via .well-known challenge, OAuth 2.1. Self-reported agency results, unverified.
 
 ## @ataiiam - CopilotKit repo for full-stack agentic apps (Open Intelligent UI thread close)
 > *Replying to @ataiiam:* It can pick the format for you. Text when that’s enough. A timeline, chart or table when that helps more.
