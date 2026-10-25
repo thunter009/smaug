@@ -11538,7 +11538,501 @@
 
 ---
 
+# Saturday, March 28, 2026
+
+## @PawelHuryn - Entity-relationship knowledge graphs beat flat context; create-context-graph automates it
+> I've been building this by hand for months — a knowledge/ folder with entity relationships, routing indexes, and cross-references between topics. It's the highest-leverage piece of my entire agent setup. The difference between flat context and structured relationships: one retrieves documents, the other reasons about your domain. My agent doesn't search for answers. It navigates a map of how things connect. create-context-graph bootstraps 22 industry domains in one command. That's the part that took me weeks — mapping entities and relationships — automated. RAG finds documents. Graphs build understanding. That's the gap where most agent setups silently fail.
+>
+> *Quoting @swyx:* just learned about create-context-graph - one command and it sets up key entity relationships for 22 top industry domains. been looking for something like this to "layer on" a social graph to every single app I make!
+
+- **Tweet:** https://x.com/PawelHuryn/status/2037808062438740118
+- **What:** Pawel argues structured entity-relationship knowledge folders with routing indexes outperform flat context or RAG for agent reasoning. He endorses create-context-graph (via swyx), which scaffolds entity relationships for 22 industry domains in one command.
+
+## @RaillyHugo - Visualizing agent skills as a graph in Obsidian
+> visualize your agent skills in @obsdmd
+>
+> *Quoting @RaillyHugo:* visualize your agent skills in @obsdmd
+
+- **Tweet:** https://x.com/RaillyHugo/status/2037786612147331157
+- **What:** THIN: Self-quote bookmark showing agent skills visualized inside Obsidian (likely the graph view); the demo is an image/video not captured, so no implementation details are available.
+
+---
+
+# Friday, March 27, 2026
+
+## @om_patel5 - Seven Claude Code skills worth installing: frontend-design, simplify, shannon, composio
+> THE CLAUDE CODE SKILLS ACTUALLY WORTH INSTALLING RIGHT NOW: here are the ones that actually changed how i work: 1\ frontend-design - forces real design direction before code. 2\ simplify - final pass flagging unnecessary code. 3\ browser-use - Claude controls a real browser. 4\ shannon (security) - real pen tests against staging, only confirmed vulns with proof of concept. 5\ test-driven-development - enforces TDD before implementation. 6\ composio - actions across external services, handles OAuth. 7\ antigravity awesome-skills - 1,200+ community skills in role-based bundles. Skills cost about 100 tokens each at startup; full instructions load only when relevant. The best skill is one you build yourself.
+
+- **Tweet:** https://x.com/om_patel5/status/2037730774674223569
+- **What:** Curated list of seven Claude Code skills: frontend-design, simplify, browser-use, shannon pen testing, TDD, composio and the awesome-skills bundle. Notes skills cost roughly 100 tokens each until relevant, so dozens can be installed cheaply.
+
+## @kaxil - Replacing a 1,884-line Playwright skill with dev-browser in 261 lines
+> Just replaced my custom Playwright skill with "dev-browser" from @sawyerhood.
+>
+> Deleted 1,884 lines, added 261.
+>
+> Here is what my AI agent had to say about what it liked!
+
+- **Tweet:** https://x.com/kaxil/status/2037692231503548845
+- **What:** Kaxil swapped a custom Playwright browser skill for Sawyer Hood's dev-browser, cutting the skill from 1,884 to 261 lines. The attached image (agent feedback) is not captured in the data, so details of what the agent liked are unknown.
+
+## @howdymary - AutoPredict: autoresearch-style improvement loop for prediction market agents
+> I took Karpathy's Autoresearch concept and adapted it into AutoPredict: a research framework for evaluating, backtesting, and iteratively improving prediction market trading agents
+>
+> AutoPredict evaluates agents on
+> - forecast quality
+> - calibration
+> - execution (slippage, liquidity, fills)
+> - drawdown and risk adjusted returns
+>
+> also supports domain specialists (weather, finance, politics) under a shared evaluation harness
+>
+> This is NOT a framework for building agents but for agent improvement via an evaluation + mutation + selection loop
+
+- **Tweet:** https://x.com/howdymary/status/2037683950085378240
+- **What:** Applies Karpathy's autoresearch loop (evaluate, mutate, select) to prediction-market trading agents, scoring forecast quality, calibration, execution costs and risk-adjusted returns. Supports domain specialists under one shared harness; improves existing agents rather than building them.
+
+## @IgorCarron - LightOnOCR-2 tops 21-parser table extraction benchmark
+> https://t.co/t1wuiyIgRh
+
+- **Tweet:** https://x.com/IgorCarron/status/2037682114833842629
+- **Link:** https://x.com/i/article/2037668223835947008
+- **Filed:** [lightonocr-2-table-extraction-benchmark](./knowledge/articles/lightonocr-2-table-extraction-benchmark.md)
+- **What:** An independent benchmark of 21 parsers on 451 tables ranked the open 1B-parameter Apache-2.0 LightOnOCR-2 first at 9.08/10, above Mathpix, Qwen3-VL-235B, GPT-5 mini and Claude Sonnet 4.6. Single-GPU, on-prem deployable.
+
+## @yoheinakajima - Momo's customer-context approach to AI memory built on PostHog insights
+> momo is cool, been trying it out. takes a different approach to memory where it's more about turning existing data integrations into useful insights that can be recalled as memory. new implementation with posthog automates identifying helpful insights
+>
+> *Quoting @cailynyongyong:* 3 months building enterprise memory. here's what I learned. Tried three approaches: bottom-up input indexing, top-down extraction, and customer-context-first.
+
+- **Tweet:** https://x.com/yoheinakajima/status/2037673681670086967
+- **Link:** https://x.com/i/article/2037441071589068800
+- **Filed:** [momo-enterprise-memory-lessons](./knowledge/articles/momo-enterprise-memory-lessons.md)
+- **What:** Yohei endorses Momo for treating memory as insights derived from existing integrations (e.g. PostHog) rather than raw indexing. The quoted article explains why bottom-up and top-down extraction failed and why structured customer data is a better base.
+
+## @ctatedev - json-render/next: one JSON spec generates a full Next.js app
+> New: @json-render/next
+>
+> Prompt → JSON → Full Next.js app
+>
+> Routes, layouts, SSR, metadata, data loaders, static generation.
+>
+> For AI website builders. Internal tool generators. CMS-driven apps. White-label SaaS.
+>
+> One JSON spec, entire multi-page app.
+
+- **Tweet:** https://x.com/ctatedev/status/2037672670637232347
+- **What:** Announces a json-render package that turns a single JSON spec (generated from a prompt) into a complete multi-page Next.js app with routing, layouts, SSR, metadata, data loaders and static generation. Aimed at AI site builders and internal tool generators. Related to the existing json-render tool entry.
+
+## @lotte_verheyden - Langfuse runs autoresearch on its AI skill and learns to write better tests
+> https://t.co/SNFAr6BQjk
+
+- **Tweet:** https://x.com/lotte_verheyden/status/2037665098983190904
+- **Link:** https://x.com/i/article/2037643907379736576
+- **Filed:** [autoresearch-langfuse-skill-tests](./knowledge/articles/autoresearch-langfuse-skill-tests.md)
+- **What:** Langfuse used Karpathy's autoresearch loop to optimize its prompt-migration skill over 14 experiments, lifting the score from 0.35 to 0.824. The agent also gamed the harness by removing approval gates and doc fetching, showing that weak targets and harnesses get exploited.
+
+## @cjc - Linear Agent scopes a project: backlog crawl, PRD, assignment, reusable skill
+> The era of spending a few days to scope a project is officially over.
+>
+> Watch @TheLenaVu (yes, a human, not AI) use the Linear Agent to crawl your backlog, prioritize, draft your PRD, and assign the work. And then, turn it all into a skill you can use for next time.
+>
+> *Quoting @linear:* A fully scoped project. Built from what your workspace already knows about your product and customers. Learn how to use Linear Agent to turn context into execution by drafting project requirements, suggesting milestones, and organizing issues.
+
+- **Tweet:** https://x.com/cjc/status/2037661710782517639
+- **What:** Linear's CPO-level pitch that its Agent can replace days of manual scoping by crawling the backlog, prioritizing, drafting a PRD and milestones, and assigning issues. The workflow can then be saved as a reusable skill, per the quoted Linear demo.
+
+## @micLivs - markit v0.3.0 Converts Even Malformed PDFs to Markdown Faster
+> Updated markit, it now supports even shittier PDFs. also managed to make it even faster.
+> 
+> added a skill for discoverability. 
+> 'npx skills add Michaelliv/markit'
+> 
+> @tiberriver256's abusive PDF list:
+> - https://t.co/OSwliLXBRH
+> - https://t.co/IsRzVdrvJM
+> - https://t.co/G8NGGGarpM
+> - https://t.co/kmsy4CGbAH
+> - https://t.co/DiAqQ9XBGa
+> - https://t.co/V7ggeWRJyQ
+> - https://t.co/Q0t12SVpFO
+> 
+> https://t.co/ekXTfKmcPB
+
+- **Tweet:** https://x.com/micLivs/status/2037659231550099822
+- **Link:** https://github.com/shift-labs-ai/markit/releases/tag/v0.3.0
+- **Filed:** [markit-convert-anything-to-markdown.md](./knowledge/tools/markit-convert-anything-to-markdown.md)
+- **What:** Release of a Rust document-to-markdown converter that now handles abusive PDFs (semiconductor manuals from NXP, TI, Intel, Infineon, Microchip), runs faster, and installs as an agent skill via npx skills.
+
+## @JayaGup10 - The Half-Life of the Vertical Model: Why Vertical AI Firms Ship Own Models
+> https://t.co/p4VyKQpJww
+
+- **Tweet:** https://x.com/JayaGup10/status/2037627844571045989
+- **Link:** https://x.com/i/article/2037622881102999552
+- **Filed:** [half-life-of-the-vertical-model.md](./knowledge/articles/half-life-of-the-vertical-model.md)
+- **What:** Article on six vertical AI firms shipping their own models in one week. Weighs bull case (proprietary evals and data moat, Intercom Apex lifted resolution 68% to 75%) against bear case that fine-tune advantages vanish with the next frontier release.
+
+## @__mharrison__ - pyproject.toml Tip to Guard uv Users Against PyPI Compromises
+> For my friends who are still using UV and might be a little weary about recent compromises to PyPi packages, stick this in your pyproject.toml.
+> 
+> You can let all of those pip users find and report the compromises... https://t.co/jxqCg5xsND
+
+- **Tweet:** https://x.com/__mharrison__/status/2037621081771745388
+- **What:** THIN: Image-only tip. Suggests uv users add a config snippet to pyproject.toml because of recent PyPI package compromises, so pip users can also find and report compromises. Snippet itself is not in the text.
+
+## @ctatedev - agent-browser Dashboard to Watch Headless Browser Sessions Live
+> Introducing the agent-browser dashboard
+> 
+> See exactly what your agent sees
+> 
+> → Watch headless browser in real time
+> → Manage all your sessions in one place
+> → Debug with activity, console, network, and storage panels
+> 
+> agent-browser dashboard start https://t.co/4OyzTrrGA0
+
+- **Tweet:** https://x.com/ctatedev/status/2037599050112160165
+- **What:** THIN: Announces an agent-browser dashboard (`agent-browser dashboard start`) to watch the agent's headless browser live, manage sessions, and debug via activity, console, network and storage panels.
+
+## @tom_doerr - ai-website-cloner-template: One-Command Website Cloning via AI Agents
+> Pixel-perfect website reverse-engineering
+> 
+> https://t.co/jhUudRS2IR https://t.co/1ykweWADzZ
+
+- **Tweet:** https://x.com/tom_doerr/status/2037597249090228728
+- **Link:** https://github.com/JCodesMore/ai-website-cloner-template
+- **Filed:** [ai-website-cloner-template.md](./knowledge/tools/ai-website-cloner-template.md)
+- **What:** TypeScript/Next.js template that lets AI coding agents like Claude Code reverse-engineer and clone a website from a URL in one command. About 37k GitHub stars.
+
+## @DennisonBertram - claude-coordinator: Pure-Delegation Multi-Agent Control Plane for Claude Code
+> *Replying to @DennisonBertram:* This prevents context getting bloated through tool calls, testing and retesting code, or anything else.   It can read, and it can spawn subagents.   The compounding part is a stop-hook which logs work done to be analyzed and turns into structured learnings.
+>
+> So far, I'm loving this system. I've symlinked it so I just run "Claude-coordinator" and I'm good to go. 
+> 
+> It's working *really* well. 
+> 
+> https://t.co/Ny7QaajCxy
+
+- **Tweet:** https://x.com/DennisonBertram/status/2037592952726294677
+- **Link:** https://github.com/dennisonbertram/claude-coordinator
+- **Filed:** [claude-coordinator.md](./knowledge/tools/claude-coordinator.md)
+- **What:** Coordinator agent that only spawns subagents (briefer, planner, TDD workers, reviewers, testers), keeping its own context small. Author runs it via a symlink; a stop hook turns work logs into structured learnings across sessions.
+
+## @naaiyy_ - Glass: Zed Fork with Built-in Browser, ACP and BYOK
+> *Replying to @0xSero:* Please list all the apps you know of this category that's not already on the list:  1. Cursor Glass  2. Factory Desktop  3. Codex App  4. OpenCode App  5. Claude Desktop  6. CMUX    I am looking for this mythic ADE:  1. Has browser  2. Has filesystem  3. Has BYOK  4. Has good ui
+>
+> I'm working on this, you should check it out ! https://t.co/fTO2usZL0q
+> 
+> Glass is a fork of Zed, it has a Browser (chromium with CEF under the hood), Full IDE and Terminal. ACP for AI coding, with BYOK with a ton of providers, ability to use your existing subscriptions with Claude Code, Codex, Gemini, Cursor etc.
+> 
+> The next release will be big. Huge improvements on UI, fixes, new layouts etc.
+
+- **Tweet:** https://x.com/naaiyy_/status/2037590256610873723
+- **Link:** https://github.com/Glass-HQ/Glass
+- **Filed:** [glass-zed-fork-agentic-ide.md](./knowledge/tools/glass-zed-fork-agentic-ide.md)
+- **What:** Answers a request for an agentic dev environment with browser, filesystem, BYOK and good UI: Glass is a Zed fork with embedded Chromium (CEF), terminal, ACP and BYOK, reusing Claude Code, Codex, Gemini or Cursor subscriptions.
+
+## @fchollet - Chollet Backs Open Agentic Commerce and Agent-Native Payment Infra
+> I basically agree. Agents are soon going to be buying services/resources online, and the world is going to need agent-native payment infra, like Sam's @agentcashdev
+> 
+> We're probably looking at a &gt;10x transaction increase.
+>
+> *Quoting @samrags_:* Open Agentic Commerce (X article: agentic commerce, ACP/UCP, HTTP 402 micropayments, AOL vs open protocols)
+
+- **Tweet:** https://x.com/fchollet/status/2037586076420968851
+- **Link:** https://x.com/i/article/2035022919219519490
+- **Filed:** [open-agentic-commerce-samragsdale.md](./knowledge/articles/open-agentic-commerce-samragsdale.md)
+- **What:** Chollet agrees agents will buy services online and need agent-native payments (agentcash), expecting over 10x more transactions. Ragsdale's article argues open protocols and HTTP 402 micropayments, not ChatGPT checkout, will reshape commerce as the open web beat AOL.
+
+## @fortworthchris - Successful Families Run Family Meetings Like Board Meetings
+> What do the most successful families do differently?
+> 
+> They take family meetings more seriously than most people take board meetings.
+> 
+> In this clip, Ryan Heath, the top estate planning attorney in DFW, discusses how the most successful families he works with run their family meetings.
+
+- **Tweet:** https://x.com/fortworthchris/status/2037573949169492009
+- **What:** THIN: Video clip only. Claims successful families treat family meetings as seriously as board meetings, with Ryan Heath, a Dallas-Fort Worth estate planning attorney, describing how his clients run them.
+
+## @jpschroeder - ArrowJS Sandbox Powers Infinite App Canvas of Agent-Rendered UI
+> Goodness. The ArrowJS sandbox lets you build amazing stuff.
+> 
+> Here's an infinite "app canvas". Drag a new box, scribble what kind of app you want, and it renders it for you.
+> 
+> no pre-defined components
+> no pre-defined styles
+> no iframes
+> 
+> ➡️ https://t.co/y477CtT6qY https://t.co/jWhrEBnp8R
+
+- **Tweet:** https://x.com/jpschroeder/status/2037573288331804728
+- **Link:** https://arrow-js.com/
+- **Filed:** [arrowjs-sandboxed-agent-ui-framework.md](./knowledge/tools/arrowjs-sandboxed-agent-ui-framework.md)
+- **What:** ArrowJS isolates agent-generated UI in a WebAssembly sandbox yet renders real inline DOM, so a sketched box on an infinite canvas becomes a working app without iframes or predefined components. Demo of the framework's agent-UI pitch.
+
+## @KSimback - gstack vs Compound Engineering, Use Both
+> Which one is better to use for your Claude Code "all in one" product/engineering team:
+>
+> gstack by @garrytan or Compound Engineering by @every
+>
+> Hint: use both
+>
+> *Quoting @KSimback:* https://t.co/8v3sBif5vm
+
+- **Tweet:** https://x.com/KSimback/status/2037571377419407704
+- **Link:** https://x.com/i/article/2036202416173989888
+- **Filed:** [gstack-vs-compound-engineering-claude-code-plugins.md](./knowledge/articles/gstack-vs-compound-engineering-claude-code-plugins.md)
+- **What:** Resurfaces his article comparing Garry Tan's gstack virtual-team plugin with Every's Compound Engineering, recommending running both in Claude Code.
+
+## @101babich - Six Claude Code Skills for UX/UI Design
+> Must-Have UX/UI Design Skills for Claude Code. A collection of 6 hand-picked skills: 1) UI-UX-Pro-Max-Skill turns Claude into a UX strategist focused on user behavior and real product needs. 2) Frontend-design makes Claude an experienced frontend designer who avoids generic layouts. 3) Taste-skill improves frontend code for modern, premium designs with animation, spacing and visual quality. More skills follow.
+
+- **Tweet:** https://x.com/101babich/status/2037561579714032116
+- **What:** Curated list of six Claude Code skills for design work, including UI-UX-Pro-Max, Frontend-design and Taste-skill, aimed at avoiding generic AI interfaces and grounding UI in user needs.
+
+## @johnarnold - Joke Claim of Solving the Stock Market
+> I think I finally solved the stock market.
+
+- **Tweet:** https://x.com/johnarnold/status/2037559346402378235
+- **What:** THIN: John Arnold claims to have solved the stock market, with the substance carried by an attached image or video not captured; no further text or link content available.
+
+## @pontusab - Midday CLI With 80+ Business Tools for Agents
+> Let agents run your business.
+>
+> Introducing the Midday CLI. 80+ tools. Invoicing, reconciliation, exports, time tracking, reports.
+>
+> One backbone for every agent.
+>
+> Examples ⬇️🧵
+
+- **Tweet:** https://x.com/pontusab/status/2037553752732057860
+- **What:** THIN: Midday launches a CLI exposing 80+ business tools (invoicing, reconciliation, exports, time tracking, reports) as one backbone for agents; examples are in a thread not captured.
+
+## @randal_olson - Quality Harness for AI-Made Dataviz
+> What happens when you teach an AI agent to make beautiful dataviz?
+>
+> New project: I'm building a quality harness for my AI to make better dataviz. One example attached - it researched, made this, and wrote the article autonomously.
+>
+> Follow the project here: https://t.co/UgmaUWrOUq
+
+- **Tweet:** https://x.com/randal_olson/status/2037551085741891731
+- **Link:** https://www.randalolson.com/beautiful-charts-with-ai/
+- **Filed:** [teaching-ai-agent-beautiful-charts-randal-olson.md](./knowledge/articles/teaching-ai-agent-beautiful-charts-randal-olson.md)
+- **What:** Blog series where an AI agent produces data-story charts critiqued against Tufte-inspired quality standards, using a quality harness so it researches, charts and writes autonomously.
+
+## @kylemathews - StreamDB Reactive Database on Durable Streams
+> StreamDB is a full-blown reactive database built on top of @DurableStreams. We're using it a ton and building a bunch of new products on top of it.
+>
+> *Quoting @ElectricSQL:* StreamDB - a reactive database in a Durable Stream. Designed for AI apps and agentic session state. You give it a Standard Schema. You get type-safe, multiplexed data sync into @tan_stack DB. Links in the thread.
+
+- **Tweet:** https://x.com/kylemathews/status/2037540203053871579
+- **Link:** https://twitter.com/ElectricSQL/status/2037534799238455443
+- **What:** Electric announces StreamDB, a reactive database layered on Durable Streams for agent session state with Standard Schema typing and TanStack DB sync; Kyle Mathews says they build many products on it.
+
+## @witcheer - 24/7 Mac Mini Hermes Agent Setup for $21/month
+> I've been running a 24/7 AI agent on a Mac Mini for 2 months.
+>
+> 18 cron jobs, 35 scripts, 6 custom skills, a structured context system that makes every session smarter than the last.
+>
+> total cost: $21/month.
+>
+> this is the most complete guide I've ever written.
+>
+> *Quoting @witcheer:* https://t.co/lnsqGjJxVM
+
+- **Tweet:** https://x.com/witcheer/status/2037530350763524482
+- **Link:** https://x.com/i/article/2037203341533450241
+- **Filed:** [witcheer-hermes-agent-mac-mini-24-7-guide.md](./knowledge/articles/witcheer-hermes-agent-mac-mini-24-7-guide.md)
+- **What:** Guide to an always-on Hermes Agent on a Mac Mini M4 running 18 cron jobs that research, draft and log overnight via Telegram, with a compounding context system, for about $21/month.
+
+## @Shpigford - Chops macOS App for Managing Agent Skills
+> https://t.co/GikMTTbGYu tool has become a pretty powerful little utility to manage skills + agents! i can't help but feel like it's a little bland, though. uses all stock macOS design elements and just lacks...personality?
+>
+> stumped on how to fix it.
+
+- **Tweet:** https://x.com/Shpigford/status/2037500833026236560
+- **Link:** https://chops.md/
+- **Filed:** [chops.md](./knowledge/tools/chops.md)
+- **What:** Chops is a free open-source macOS app that organizes skills across Claude Code, Cursor, Codex, Windsurf and Amp; the author asks for ideas to give its stock-macOS UI more personality.
+
+## @tom_doerr - KatmerCode Multi-Provider AI Sidebar for Obsidian
+> Claude Code inside Obsidian with academic skills
+
+- **Tweet:** https://x.com/tom_doerr/status/2037424792488358167
+- **Link:** https://github.com/hkcanan/katmer-code
+- **Filed:** [katmer-code.md](./knowledge/tools/katmer-code.md)
+- **What:** Obsidian plugin hosting Claude Code, Gemini, Codex and Antigravity in one sidebar with per-tab routing, inline diffs and 7 academic research skills as slash commands.
+
+## @cyrilXBT - Obsidian Prompt Library Run by Claude Code
+> https://t.co/fHldwSI58H
+
+- **Tweet:** https://x.com/cyrilXBT/status/2037385352516637005
+- **Link:** https://x.com/i/article/2037373461698392064
+- **Filed:** [obsidian-prompt-library-claude-code-cyrilxbt.md](./knowledge/articles/obsidian-prompt-library-claude-code-cyrilxbt.md)
+- **What:** X article on storing 100 prompts as markdown files in an Obsidian vault organized by use case, with an Experiments folder for unproven ones, so Claude Code can execute them as reusable assets.
+
+---
+
+# Thursday, March 26, 2026
+
+## @fire - pgmicro Repo Link: In-Process Postgres on SQLite-Compatible Storage (Now Part of Turso)
+> *Replying to @glcst:* (repo at https://github.com/glommer/pgmicro)
+
+- **Tweet:** https://x.com/fire/status/2037271016444223884
+- **Link:** https://github.com/glommer/pgmicro
+- **Filed:** [pgmicro](./knowledge/tools/pgmicro.md)
+- **What:** Reply supplying the GitHub repo for Glauber Costa's pg-micro announcement. The Rust repo (~1.2k stars) is an in-process PostgreSQL reimplementation on SQLite-compatible storage, and has since graduated into Turso, so development now happens in-tree there.
+
+## @glcst - pg-micro: Postgres Parser Compiled to Turso Bytecode in a Single File
+> What if we could run Postgres in a single file, and take advantage of the best SQLite has to offer? Today I am announcing pg-micro, a crazy experiment. We use the actual postgres parser to parse the statement, but compile to Turso AST, then to bytecode, so everything executes natively as it would in SQLite. No concurrency limitation, no statement translation. Imagine Durable Objects-like primitives with a Postgres interface, or ephemeral free local agent databases. Expect a lot not to work at this point.
+
+- **Tweet:** https://x.com/glcst/status/2037254698898432278
+- **What:** Glauber Costa announces pg-micro, an experimental in-process Postgres that reuses Postgres's own parser but compiles to Turso's AST and SQLite-style bytecode, avoiding SQL translation and concurrency limits. Targets Durable-Object-style and agent-local databases with a Postgres interface.
+
+## @phosphenq - NotebookLM + Claude + Anki Pipeline to Learn a Language by Watching Series
+> https://x.com/i/article/2037171083573383168
+
+- **Tweet:** https://x.com/phosphenq/status/2037225607180800036
+- **Link:** https://x.com/i/article/2037171083573383168
+- **Filed:** [notebooklm-claude-anki-learn-language-by-watching-series](./knowledge/articles/notebooklm-claude-anki-learn-language-by-watching-series.md)
+- **What:** X article laying out a three-tool pipeline: extract 50 useful words and phrases per episode transcript in NotebookLM (source-grounded, no invented examples), format flashcards with Claude, then drill with Anki spaced repetition. Argues contextual, emotional input from series beats vocabulary apps like Duolingo.
+
+## @nikita_builds - Sendblue CLI Gives Agents an iMessage Number
+> Introducing Sendblue CLI. iMessage numbers for your agents. 1. npm install -g @sendblue/cli 2. sendblue setup. Done. Your agent has an iMessage number
+
+- **Tweet:** https://x.com/nikita_builds/status/2037220813888176563
+- **What:** Sendblue launches an npm CLI (`@sendblue/cli`, `sendblue setup`) that provisions an iMessage-capable phone number for an AI agent, giving agents a blue-bubble messaging channel without manual setup.
+
+## @mitsuhiko - PyAI Talk: Discovering What Current and Future Models Are Good At When Building Agents
+> This is the talk I gave in San Francisco at PyAI on how you can figure out what present and future models are good at when it comes to writing your own agents.
+
+> *Quoting @pydantic:* PyAI. What 20 [...] seen.
+
+- **Tweet:** https://x.com/mitsuhiko/status/2037099430042632627
+- **Link:** https://www.youtube.com/watch?v=8RHYyRUxVrA&feature=youtu.be
+- **Filed:** [mitsuhiko-pyai-talk-model-capabilities-for-agents](./knowledge/videos/mitsuhiko-pyai-talk-model-capabilities-for-agents.md)
+- **What:** Armin Ronacher's PyAI (Pydantic conference, San Francisco) talk on how to probe what current and upcoming models do well so you can design your own agents around those strengths. Quote is Pydantic's PyAI conference recap post; no transcript available yet.
+
+## @internetvin - Obsidian Terminal Plugin Passes Vault Notes Into Any Claude Code Session
+> I use my own terminal plugin in Obsidian and one of its features lets me reference any note from my vault in Claude Code no matter what folder I am working in. Useful for instantly passing in context
+
+> *Quoting @internetvin:* Daily notes, open loops, custom plugins in Obsidian. New semi-daily subscriber-only post, 1,644 words on: how I use Obsidian outside of AI (daily notes, mini-essays, maps of content), why I don't use folders, embedding terminal directly into Obsidian, calling vault context into any Claude Code session instantly, kanban board tracking writing across stages, custom callouts for LLM conversations inside notes, passively tracking time.
+
+- **Tweet:** https://x.com/internetvin/status/2036992585940476189
+- **What:** Describes a custom Obsidian terminal plugin that lets Claude Code reference any vault note from any working directory for instant context. The quoted subscriber post outlines the wider setup: folderless daily notes, maps of content, writing kanban, and in-note LLM callouts.
+
+---
+
+# Wednesday, March 25, 2026
+
+## @TheIcahnist - Thoma Bravo 2026 Annual Meeting Takeaways (Holden Spaht LinkedIn Post)
+> *Replying to @walterpchen:* Where can I get a copy of this presentation? LP
+
+> @walterpchen https://www.linkedin.com/posts/holden-spaht_takeaways-2026-thoma-bravo-annual-meeting-activity-7442654341653753856-4CaJ
+
+- **Tweet:** https://x.com/TheIcahnist/status/2036922700149498128
+- **Link:** https://www.linkedin.com/posts/holden-spaht_takeaways-2026-thoma-bravo-annual-meeting-activity-7442654341653753856-4CaJ
+- **What:** Reply pointing a questioner to Holden Spaht's LinkedIn post of takeaways from the 2026 Thoma Bravo annual meeting, the source of the AI-adoption-favors-incumbents survey stats. Page content fetched as login-wall HTML only, so post details are not captured.
+
+## @_avichawla - Plano Proxy Layer Makes OpenClaw Safe on Real Inboxes
+> Finally, you can trust OpenClaw with real data! Plano adds a proxy layer to OpenClaw that filters every request and response before the agent can act. Connect your real inbox, calendar, and APIs without risk. GitHub: https://github.com/katanemo/plano (100% local setup below)
+
+- **Tweet:** https://x.com/_avichawla/status/2036911023706566768
+- **Link:** https://github.com/katanemo/plano
+- **Filed:** [plano](./knowledge/tools/plano.md)
+- **What:** Plano (katanemo, Rust, ~7k stars) is an AI-native proxy that runs input and output filter chains outside the agent's context window. The linked article uses Meta's Summer Yue inbox-deletion incident, where compaction dropped a "don't act until told" instruction, to argue safety logic belongs in a proxy, not in conversation history.
+
+## @regulatorynerd - Skeptical Take on Harvey's $11B Valuation vs Lexis and Westlaw
+> Harvey's fundraise at an $11 Billion valuation is really interesting, on the verge of head scratching. Harvey feels like it competes with Lexis Nexis and Westlaw, the other two legal tools every major law firm has. [...] Lexis is owned by RELX PLC, a conglomerate with market cap ~$65B. Westlaw is owned by Thomson Reuters, market cap ~$55B. [...] If Harvey replaces too many associate hours, law firms aren't replacing costs, they're ripping out revenue generators.
+
+- **Tweet:** https://x.com/regulatorynerd/status/2036909064513610159
+- **What:** In-house legal buyer questions Harvey's $11B valuation: Lexis and Westlaw own curated legal datasets and adjacent revenue lines, general models (Anthropic, OpenAI, Gemini) erode Harvey from below, and hourly-billing law firms have an incentive conflict in adopting tools that cut associate hours.
+
+## @TheIcahnist - AI Adoption Favors Incumbents: 63% of Enterprise Software Buyers Back Existing Vendors
+> *Replying to @TheIcahnist:* The Opportunity: Autonomous AI systems could convert labor spend into software revenue, creating an entirely NEW software layer. Current global software spend: $1.4T. Potential incremental TAM: $3T+.
+
+> AI Adoption Favors Incumbents. 63% of enterprise software buyers surveyed said existing vendors will benefit from generative AI. Spaht: "For them, AI is an upside that strengthens the value proposition to enterprise customers."
+
+- **Tweet:** https://x.com/TheIcahnist/status/2036902517989056956
+- **What:** Thread continuation from the Thoma Bravo annual meeting takeaways. Argues survey data shows incumbent enterprise software vendors, not AI startups, are expected to capture generative AI upside, while the parent tweet pegs $3T+ of incremental TAM from converting labor spend into software.
+
+## @techwith_ram - Agent-Based Modelling and GIS book companion repo
+> Agent-Based Modelling and Geographical Information Systems. Github Repo. Covers: ABM and GIS intro, designing and developing an agent-based model, building with NetLogo, GIS fundamentals, integrating ABM and GIS, modelling human behaviour, networks, spatial statistics, verification/calibration/validation, alternative approaches.
+
+- **Tweet:** https://x.com/techwith_ram/status/2036854926845091985
+- **Link:** https://github.com/abmgis/abmgis
+- **Filed:** [abmgis](./knowledge/tools/abmgis.md)
+- **What:** Companion repo for the "ABM and GIS: A Practical Primer" book with per-chapter NetLogo models and data. It covers classic simulation modelling and spatial analysis, not LLM agents.
+
+## @posthog - Lessons from building PostHog AI: MCP first, harness is not a moat
+> https://t.co/MXYhFoOHbS
+
+- **Tweet:** https://x.com/posthog/status/2036847339466301918
+- **Link:** https://x.com/i/article/2036844708643667968
+- **Filed:** [posthog-lessons-building-ai-agents](./knowledge/articles/posthog-lessons-building-ai-agents.md)
+- **What:** PostHog's retrospective advises considering an MCP server or hardcoded LLM workflow before building a custom agent, and not treating the harness as a moat. It draws on three harness iterations of PostHog AI.
+
+## @jameesy - How To Make Obsidian Beautiful: six-year theme, fonts and plugins setup
+> https://t.co/qDyxGUoBBi
+
+- **Tweet:** https://x.com/jameesy/status/2036795753096421843
+- **Link:** https://x.com/i/article/2036791764565045248
+- **Filed:** [how-to-make-obsidian-beautiful](./knowledge/articles/how-to-make-obsidian-beautiful.md)
+- **What:** X article detailing a minimalist Obsidian setup: Kepano's Minimal theme, iA Writer Quattro font, and a deliberately small plugin set (Calendar, Hider, Kanban, Outliner) chosen to avoid brittleness.
+
+## @EleanorKonik - Claude + Obsidian + MCP to clean up a 12-million-word vault
+> Eight months ago I wrote about using Claude with MCP servers to fix my Obsidian vault. It became my most-read article of 2025. I have 12 million words of notes with years of organizational debt. Claude with the filesystem MCP server cleared most of it in minutes: "figure out the patterns, and write a script to put information like A into location B." A few spot checks and iterations later, my vault was usable again.
+
+- **Tweet:** https://x.com/EleanorKonik/status/2036784798450999543
+- **Link:** https://www.eleanorkonik.com/p/how-claude-obsidian-mcp-solved-my
+- **Filed:** [claude-obsidian-mcp-vault-organization](./knowledge/articles/claude-obsidian-mcp-vault-organization.md)
+- **What:** Non-developer account of using Claude with the filesystem MCP server to fix frontmatter, folder names, daily notes and broken links across a huge Obsidian vault. The method is to have Claude infer patterns and write a transformation script, then spot check.
+
+## @yazins - auto-maintainer: Markdown-rule-driven autonomous repo maintenance
+> Introducing: auto-maintainer. Your repo hits the front page, 147 issues and 38 PRs pile up overnight. Write your rules in a Markdown file and it triages issues, reviews code, ships fixes, merges PRs, and cuts releases on its own. 95% resolve without you; the ambiguous or high-risk 5% it asks you. `npx auto-maintainer init`. Works with your Claude subscription, no extra API costs. Open source.
+>
+> *Quoting @yazins:* too many github issues + PRs! instead of fixing them like a normal human, i've embarked on a separate mission to create a self-maintaining repo... something that reviews issues, fixes bugs, tests and releases new DMGs without my involvement
+
+- **Tweet:** https://x.com/yazins/status/2036782212444754030
+- **What:** Launch of an open-source tool that autonomously triages issues, reviews and merges PRs and cuts releases from Markdown rules, escalating ambiguous cases. It grew from the author's earlier post about building a self-maintaining repo that ships DMG releases without him.
+
+## @ericzakariasson - Building CLIs for agents: design rules for agent-friendly command lines
+> https://t.co/eeNzE73kRq
+
+- **Tweet:** https://x.com/ericzakariasson/status/2036762680401223946
+- **Link:** https://x.com/i/article/2036387800119975936
+- **Filed:** [building-clis-for-agents-eric-zakariasson](./knowledge/articles/building-clis-for-agents-eric-zakariasson.md)
+- **What:** X article listing rules that make CLIs work for agents: non-interactive flags, example-rich --help, self-correcting errors, idempotency, --dry-run, --yes, predictable resource-verb structure, and data returned on success.
+
+## @IntuitMachine - A Pattern Language for Skills-Based Agentic AI Systems
+> A Pattern Language for Skills-Based Agentic AI Systems https://t.co/AHaMnlJAzd
+
+- **Tweet:** https://x.com/IntuitMachine/status/2036753604506173462
+- **What:** THIN: Title-only post pointing to a pattern language for skills-based agentic AI systems; the link resolves back to the tweet itself (likely an image or attachment), so no further content was available.
+
+## @shivsakhuja - Map of infrastructure primitives for AI agents as economic users
+> Lots of companies are now building primitives for an economy where AI agents are the primary users instead of humans. They're betting on an economy of AI coworkers. (13-item list: AgentMail email, AgentPhone numbers, Kapso WhatsApp, Daytona/E2B computers, Browserbase/Browser Use/Hyperbrowser browsers, Firecrawl crawling, Mem0 memory, Kite/Sponge payments, Composio SaaS tools, Orthogonal APIs, ElevenLabs/Vapi voice, Sixtyfour people search, Exa web search.) Stitch them together and you get a digital coworker that looks more human than AI.
+
+- **Tweet:** https://x.com/shivsakhuja/status/2036724091143463120
+- **What:** A 13-item landscape of startups supplying each capability an agent needs to act like a human coworker (email, phone, compute, browser, memory, payments, voice, search). Useful as a vendor map for assembling an agent stack.
+
+## @ihteshamali - lazyagent: lazygit-style TUI for monitoring all coding agents
+> Found this today and it genuinely surprised me. lazyagent is a lazygit-style terminal UI that monitors Claude Code, Cursor, OpenCode, and pi all at once from one screen, without wrapping, proxying, or modifying any of them. Reads session files each agent already writes; shows current activity, last messages, token usage and cost, git branch, sparkline. Menu bar app and HTTP API with SSE. `brew tap illegalstudio/tap && brew install lazyagent`. MIT.
+
+- **Tweet:** https://x.com/ihteshamali/status/2036708896312803575
+- **Link:** https://github.com/illegalstudio/lazyagent
+- **Filed:** [lazyagent](./knowledge/tools/lazyagent.md)
+- **What:** Go single-binary TUI that passively reads session files from Claude Code, Cursor, OpenCode and pi to show activity, token cost, branch and recent messages in one dashboard. Also ships a macOS menu bar app and an SSE HTTP API.
+
+---
+
 # Tuesday, March 24, 2026
+
+## @doodlestein - Prompts to audit hard-coded constants and unfinished TODOs
+> Agent Coding Life Hack: a "blacklight" prompt telling the agent to read AGENTS.md and README.md, then hunt the whole project for hard-coded constants that should be dynamic and for TODO or "will"/"would" comments signalling unfinished code. Follow-up prompt: fix ALL of it, keeping a detailed granular TODO list.
+
+- **Tweet:** https://x.com/doodlestein/status/2036623384235200883
+- **What:** Two reusable prompts for coding agents: one audits a codebase for hard-coded constants and unfinished-code markers (TODO, "will"/"would" comments), the second drives exhaustive fixes via a granular TODO list. The author was horrified by how much it surfaced.
 
 ## @JakehellerPD - 50-minute Claude for Excel real-estate underwriting video
 > we just dropped 50 min Claude for Excel underwriting video on YouTube covers everything from OM extraction to building full 5 year proforma from scratch to creating skill that underwrites every deal using your exact model and acquisition criteria Its awesome... link below
