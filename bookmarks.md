@@ -11371,6 +11371,28 @@
 
 # Friday, April 10, 2026
 
+## @aidenybai - /debug-agent Skill Brings Cursor-Style Debug Mode to Claude Code and Codex
+> Cursor's debug mode is great. But I wish i had it in Claude Code / Codex.
+>
+> Introducing debug agent skill:
+>
+> - /debug-agent [your bug]
+> - writes logs and actually repros the bug
+> - fixes the root cause
+
+- **Tweet:** https://x.com/aidenybai/status/2042633871297249435
+- **What:** Aiden Bai announces a /debug-agent skill porting Cursor's debug mode to Claude Code and Codex: it instruments logs, reproduces the bug, then fixes the root cause. No repo link in the tweet.
+
+## @garrytan - GBrain: Garry Tan's Open-Source Agent Memory for OpenClaw/Hermes
+> If you want your OpenClaw or Hermes Agent to be able to have perfect total recall of all 10,000+ markdown files, GBrain is here to help.
+>
+> It's exactly my OpenClaw/Hermes Agent setup. MIT-licensed open source. Hope it helps you build your mini-AGI.
+
+- **Tweet:** https://x.com/garrytan/status/2042497872114090069
+- **Link:** https://github.com/garrytan/gbrain
+- **Filed:** [gbrain.md](./knowledge/tools/gbrain.md)
+- **What:** MIT-licensed TypeScript memory layer for coding/personal agents (31k stars) with sourced facts, keyword and semantic retrieval, a typed knowledge graph and MCP access. Mirrors Garry Tan's production agent brain of ~155k pages.
+
 ## @brian_lovin - Aggressive Logging with OTel and Axiom Lets LLMs Debug Reports
 > Advice to fellow side project tinkerers: don't forget to set up aggressive logging! (OTel traces + manual event capture + Vercel log drain into Axiom works great for me). I can fix most bug reports by pasting the user's email into an LLM connected to the Axiom MCP. Between events and traces, the model can replay nearly any timeline of activity and figure things out with a high level of detail. Don't forget to scrub PII. Over-log at first and trim back as you build confidence in different areas of the code. MCPs are still fine, ignore the haters. This works fine at a small scale, ofc.
 
