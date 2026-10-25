@@ -11538,7 +11538,563 @@
 
 ---
 
+# Wednesday, April 1, 2026
+
+## @jasondoesstuff - Claude Code + Remotion workflow for app motion graphics
+> Step 1: Tell Claude Code to create a "design-system.md" from your current app/project
+>
+> Step 2: Tell it to install Remotion
+>
+> Step 3: Tell it to make motion graphics of interactions in your app using the design system it created (I did 16:9 for YouTube b-roll).
+>
+> You can also tell it to mock up popular apps (like Slack in the example below).
+
+- **Tweet:** https://x.com/jasondoesstuff/status/2039444150743867561
+- **What:** Three-step recipe: have Claude Code extract a design-system.md from your app, install Remotion, then render motion graphics of app interactions (e.g. 16:9 YouTube b-roll or mocked-up Slack). Cheap way to produce product videos.
+
+## @yutori_ai - Yutori Local lets agents reuse logged-in browser sessions in a sandbox
+> Scouts used to stop at the login page.
+>
+> Introducing Yutori Local.
+>
+> A desktop app that lets you securely log your agents into any website to complete tasks on your behalf. Your credentials never leave your device.
+>
+> Unlike agentic browsers and chrome extensions, Yutori Local doesn't take over your browser. It's a secure sandbox where you choose exactly which sites your agents can access.
+>
+> Log in once. Your Scouts can reuse that session for any future tasks on that site.
+>
+> Even while you're asleep, as long as your Mac is on and connected.
+>
+> Book, buy, reserve, reply. If you can do it in a browser, your agent can too.
+
+- **Tweet:** https://x.com/yutori_ai/status/2039432577526923501
+- **What:** Yutori Local is a Mac desktop app giving agents authenticated access to chosen sites via a local sandbox, with credentials kept on-device. Solves the login-wall problem for background agents without hijacking the user's own browser.
+
+## @brsabel - Claude Code design skill generates interactive web apps embedded in markdown (Moss)
+> I wanted to automate some simple design workflows, so I added a design skill to Moss on a whim.
+>
+> A thousand lines of code later...Claude Code can generate and embed interactive web apps in my markdown files. Animations, keyboard shortcuts etc.
+>
+> I genuinely wasn't expecting this.
+
+- **Tweet:** https://x.com/brsabel/status/2039372970359918803
+- **What:** Builder added a design skill to their Moss tool; about 1000 lines later Claude Code can generate interactive web apps (animations, keyboard shortcuts) embedded directly in markdown files. Shows skills as a path to rich, executable documents.
+
+## @emilypont - Heatmap x MIT Electricity Price Hub launch
+> We are launching a big project today with MIT —
+>
+> The Electricity Price Hub!
+>
+> You can view monthly electricity prices per kwh and avg. bills for every major utility in the country going back to Jan 2020.
+
+- **Tweet:** https://x.com/emilypont/status/2039363306683511203
+- **Link:** https://electricity.heatmap.news/
+- **Filed:** [electricity-price-hub.md](./knowledge/articles/electricity-price-hub.md)
+- **What:** Heatmap News and MIT launched an interactive map of US electricity prices and average bills by state, utility, district, county or zip since 2020. Useful dataset for tracking power-cost trends.
+
+## @nikita_builds - Sendblue CLI 0.7.4 adds media, typing indicators, group chats, webhooks
+> Sendblue CLI now supports:
+>
+> ✅ Sending Media files from local filesystem
+> ✅ Typing indicators
+> ✅ Group chats
+> ✅ Managing webhooks from CLI
+>
+> Update to version 0.7.4
+
+- **Tweet:** https://x.com/nikita_builds/status/2039328929044218246
+- **What:** Release announcement for the Sendblue CLI (iMessage/SMS messaging API) v0.7.4. Adds local media sending, typing indicators, group chats and CLI webhook management, making it more usable for agent-driven messaging.
+
+## @shaneparrish - Knowledge Project episode with Joe Liemandt on Alpha School and AI education
+> *Replying to @shaneparrish:* My conversation with @jliemandt on why the future of education is better than you think. Chapters: current education system, what makes Alpha School different, results, mastery, teaching through AI, motivation, coaching, effort vs. IQ, Jack Welch, Trilogy IPO choice, physical vs. virtual learning, paying kids to learn.
+>
+> YouTube / Spotify / Apple links
+
+- **Tweet:** https://x.com/shaneparrish/status/2039328136689549776
+- **Parent:** https://x.com/shaneparrish/status/2038947373225754737
+- **Link:** https://www.youtube.com/watch?v=BRcVDhOkij4&feature=youtu.be
+- **Filed:** [shane-parrish-joe-liemandt-alpha-school.md](./knowledge/videos/shane-parrish-joe-liemandt-alpha-school.md)
+- **What:** Self-reply listing YouTube, Spotify and Apple links for Parrish's interview with Joe Liemandt on Alpha School, AI-driven mastery learning, motivation and teaching. No transcript available yet.
+
+## @tom_doerr - Agentfiles Obsidian plugin to edit AI agent skills
+> Edit AI agent skills in Obsidian
+>
+> https://t.co/EYUKsHgpl3
+
+- **Tweet:** https://x.com/tom_doerr/status/2039306734322188696
+- **Link:** https://github.com/Railly/agentfiles
+- **Filed:** [agentfiles.md](./knowledge/tools/agentfiles.md)
+- **What:** Agentfiles is an Obsidian plugin that browses, searches, creates and edits skills, commands and agents across 17 AI coding tools (Claude Code, Cursor, Codex, etc.), with skills.sh marketplace installs and session history export.
+
+## @lawrencecchen - cmux claude-teams runs Claude Code agent teams as native panes
+> Introducing cmux Claude Code Agent Teams:
+>
+> `cmux claude-teams --dangerously-skip-permissions`
+>
+> Teammates/subagents spawn as native cmux pane splits. They stack vertically in a right column and auto-equalize as agents spawn and exit.
+>
+> `cmux claude-teams` automatically sets CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 and shims tmux on PATH with cmux's tmux-compat layer, so you don't need to update your Claude config. All arguments forward to Claude Code, and it works over cmux SSH too.
+>
+> Out in the latest version of cmux (0.63.x).
+
+- **Tweet:** https://x.com/lawrencecchen/status/2039284294682870052
+- **What:** cmux 0.63.x adds a `claude-teams` command that enables Claude Code's experimental agent teams and shims tmux so each teammate opens as an auto-equalized cmux split pane, including over SSH, with no config changes.
+
+## @GithubProjects - Awesome collection of DESIGN.md files for consistent AI-generated UI
+> Google Stitch introduced a new concept: DESIGN . md
+>
+> Like README . md but for design systems. A plain markdown file that LLMs read to generate consistent UI.
+>
+> An awesome collection of DESIGN . md files inspired by developer-focused websites like Stripe, Vercel, Linear, Notion, Figma and more.
+>
+> Drop one into your project. Your AI coding agent builds the rest.
+
+- **Tweet:** https://x.com/GithubProjects/status/2039274093657325783
+- **What:** Points to a curated set of DESIGN.md files (Google Stitch concept) modeled on well-known developer sites; dropping one into a repo gives a coding agent a plain-markdown design system to generate consistent UI. No link in the tweet, so repo not identified.
+
+## @intheworldofai - Claude + Obsidian 3-layer memory stack to end context amnesia
+> https://t.co/yRTVsOgiQp
+
+- **Tweet:** https://x.com/intheworldofai/status/2039255561280057794
+- **Link:** https://x.com/i/article/2039253384641826816
+- **Filed:** [claude-obsidian-3-layer-memory-stack.md](./knowledge/articles/claude-obsidian-3-layer-memory-stack.md)
+- **What:** Article blueprint for fixing Claude's cross-session amnesia: CLAUDE.md plus auto-memory, an Obsidian vault exposed over MCP (semantic and hybrid search), and local ingestion of videos/PDFs, with a goals note for accountability. Claims ~85% less context-rebuilding time.
+
+## @MohammedAlo - Cardiologist: check LDL-C (<60 mg/dL) instead of waiting for calcium scans
+> You can just check your LDL-C, if it's over 60mg/dL, you are building plaque. You can get it under 60 pretty easily and never worry about plaque. You don't need to wait until you have calcium in your arteries. Calcium is a late stage finding. Would you tell a smoker to keep smoking until a CT scan shows lung cancer? That's decades too late. You tell them to stop immediately. We can now prevent heart disease. We don't need to wait until it's irreversible!
+>
+> *Quoting @altcap:* We started the Center for Heart Attack Prevention to advocate for widespread CAC scans as a standard of care for everyone over 35 - the mammogram for the heart. Grt to see new guidelines moving in that direction. Universal scans will save 100k lives per year! Get your now!
+
+- **Tweet:** https://x.com/MohammedAlo/status/2039199035999879203
+- **Quoted:** https://x.com/altcap/status/2039099568135016613
+- **What:** Brad Gerstner pushes universal CAC (coronary calcium) scans from age 35. Cardiologist Dr Alo counters that calcium is a late-stage marker and that keeping LDL-C under 60 mg/dL prevents plaque outright, so lipid testing should come first. Health-prevention opinion, not a tool.
+
+---
+
+# Tuesday, March 31, 2026
+
+## @WazzCrypto - Global package-manager settings to block packages newer than 7 days
+> Buried deep in the thread but everyone should enforce these globally for all projects to avoid compromised packages less than 7 days old
+>
+> ~/.config/uv/uv.toml
+>   exclude-newer = "7 days"
+>
+>   ~/.npmrc
+>   min-release-age=7 # days
+>   ignore-scripts=true
+>   
+>   ~/.bunfig.toml
+>   [install]
+>   minimumReleaseAge = 604800 # seconds
+>
+> *Quoting @Butanium_:* ⚠️ Supply chain attack in progress: someone is squatting Anthropic-internal npm package names targeting people trying to compile the leaked Claude Code source. `color-diff-napi` and `modifiers-napi` — both registered today, same person, disposable email. Do NOT install them. 🧵
+
+- **Tweet:** https://x.com/WazzCrypto/status/2039112886019358910
+- **Quoted:** https://x.com/Butanium_/status/2039079715823128964
+- **What:** Responding to npm name-squatting of Anthropic-internal packages (color-diff-napi, modifiers-napi) aimed at people compiling leaked Claude Code source, Wazz gives copy-paste config for uv, npm and bun that enforces a 7-day minimum release age, plus ignore-scripts for npm. A cheap supply-chain hardening default.
+
+## @p0 - Parallel cuts Opendoor HOA research from ~10 minutes to ~2 per property
+> Every transaction @Opendoor makes requires HOA research:
+>
+> Does this property have an HOA? Who manages it? Any active lawsuits?
+>
+> Before Parallel, each property took ~10 minutes of manual investigation. Now it takes ~2.
+
+- **Tweet:** https://x.com/p0/status/2039098944467378539
+- **What:** Parallel Web Systems case study: its web research API automates Opendoor's per-property HOA lookups (existence, manager, active lawsuits), cutting manual effort about 5x. Example of agentic web research replacing repetitive ops work. Likely has an attached video or image that is not captured.
+
+## @dwlz - Stripe Radar free-trial abuse rule: 99.5% of matches are abusers
+> New Stripe Radar rule added to the recommended list.
+>
+> 99.5% of transactions matching this rule abuse free trials.
+>
+> And after investigation, the other 0.5% likely intended to abuse but slipped up.
+>
+> *Quoting @dwlz:* New Stripe Radar rule added to the recommended list. 1% of matching transactions are legit. 99% are fraud or blocked.
+
+- **Tweet:** https://x.com/dwlz/status/2039088546766544901
+- **Quoted:** https://x.com/dwlz/status/2037173456412807374
+- **What:** Dan Loewenherz, who maintains Radar rules, reports a second recommended rule, this time against free-trial abuse, with a near-perfect 99.5% hit rate. The quoted earlier rule targets fraud at 99% precision. Useful reference for SaaS trial-abuse and fraud screening.
+
+## @ryanchern - Polymarket fee schedule makes splitPosition-then-sell cheaper than buying YES directly
+> Polymarket's new fee structure creates the explicit incentive to call the splitPosition() function on markets and sell the shares below $0.50 to incur the minimum trading fee.
+>
+> - Buying 100 shares of YES @ 80c according to the Finance category fee schedule incurs a fee of $0.512.
+> - Buying 100 shares of NO @ 20c incurs a fee of $0.128.
+>
+> If you want to go long YES @ 80c, you can either:
+>
+> 1. Directly buy YES shares
+> 2. Call the splitPosition() contract, splitting $100 --> 100 YES + 100 NO shares for free, then sell 100 NO @ $0.20
+>
+> Directly buying YES shares translates to 4x higher fees. For a $100,000 notional taker order, this is a $480 difference.
+>
+> Creating microstructure games like these further hurts retail traders who almost certainly are not aware of this dynamic.
+>
+> In addition to the downstream market quality effects this imposes, one could argue this shouldn't even be in Polymarket's first-order interest as this is a lever third party interfaces can implement and capture this spread.
+
+- **Tweet:** https://x.com/ryanchern/status/2039053268228231369
+- **What:** Polymarket's price-dependent taker fee is lower for shares priced under $0.50. Splitting collateral into YES+NO for free and selling the cheap side replicates a long-YES position at about 4x lower fees, an arbitrage that retail users will miss and that third-party front ends could capture.
+
+## @kho - Otto BioMap: upload blood work to get a treemap of your biomarkers
+> Thousands of you liked the BioMap I built with @_chenglou's Pretext last week.
+>
+> Now you can upload your own blood work and get yours at ottolab.com.
+>
+> I also wrote about why I'm building this — preventive health is still stuck in 1985.
+>
+> *Quoting @kho:* (x-article) "Your body is the only system you run with no dashboard"
+
+- **Tweet:** https://x.com/kho/status/2039042531649081824
+- **Quoted:** https://x.com/kho/status/2039033107236651394
+- **Link:** https://ottolab.com/
+- **Filed:** [your-body-is-the-only-system-with-no-dashboard.md](./knowledge/articles/your-body-is-the-only-system-with-no-dashboard.md)
+- **What:** Otto lets users upload labs to see a BioMap treemap (size = clinical significance, color = status). The linked essay argues standard "normal" ranges mislead and proposes a detect-intervene-measure loop with stacks mapped to biomarkers.
+
+## @mrmagan_ - Browser-based visual explorer for terabytes of public neighborhood data
+> explore terabytes of public data on your neighborhood, visually.
+>
+> runs in your browser with @duckdb and the generative UI agent is powered by @tambo_ai. open data provided by @walkthru_earth.
+
+- **Tweet:** https://x.com/mrmagan_/status/2039029437849891228
+- **What:** Demo app that queries terabytes of open geospatial data client-side with DuckDB (WASM) and uses a Tambo generative-UI agent to build visual views. Data comes from walkthru.earth; no external link beyond the tweet itself.
+
+## @ndimares - Speakeasy generates agent-aware Go CLIs from OpenAPI specs
+> We just shipped CLI generation at @speakeasydev.
+>
+> The thesis: MCP servers are great for non-technical users in shell-less environments. But coding agents like Claude Code and Cursor live in terminals. CLIs are their native interface.
+>
+> So we built a generator that turns any OpenAPI spec into a Go CLI with agent-mode built in. It auto-detects agent callers, switches to structured output, and disables interactivity. Humans get a full TUI. One spec, two audiences, zero drift.
+
+- **Tweet:** https://x.com/ndimares/status/2039028199615574321
+- **Link:** https://www.speakeasy.com/blog/release-cli-generation
+- **Filed:** [speakeasy-cli-generation-agent-interface.md](./knowledge/articles/speakeasy-cli-generation-agent-interface.md)
+- **What:** Speakeasy's beta CLI generator compiles an OpenAPI spec into a Go CLI that detects agent callers and emits structured, non-interactive output while giving humans a TUI. Argues CLIs, not MCP, are the native interface for terminal-based coding agents.
+
+## @heynavtoor - OpenScreen: free MIT-licensed Screen Studio alternative (and Recordly fork)
+> 🚨 Screen Studio charges $89 for this. Someone open sourced the entire thing for free.
+>
+> It's called OpenScreen. 8,400+ GitHub stars. Record your screen and it becomes a polished demo video: auto-zoom on clicks, smooth cursor animation, motion blur, backgrounds, webcam overlay, annotations, timeline editing, any aspect ratio export. A fork called Recordly adds a fuller cursor animation pipeline and native macOS/Windows recording. Both MIT, cross-platform. (Link in the comments)
+
+- **Tweet:** https://x.com/heynavtoor/status/2039002555200700908
+- **What:** OpenScreen is an open-source MIT screen recorder that replicates Screen Studio's auto-zoom, cursor smoothing and styled-background demo workflow for free. Recordly is a more advanced fork; no repo link in the tweet, so not filed.
+
+## @feross - Socket Firewall: free install-time malware blocking for npm, pnpm, yarn, cargo, uv
+> 📢 ZERO SIGN UP, FREE FOREVER, MALWARE PROTECTION.
+>
+> npm i -g sfw
+>
+> sfw npm install
+> sfw pnpm install
+> sfw yarn install
+> sfw cargo fetch
+> sfw uv pip install
+>
+> *Quoting @feross:* 🚨 CRITICAL: Active supply chain attack on axios -- axios@1.14.1 now pulls in plain-crypto-js@4.2.1, an obfuscated dropper/loader that executes shell commands and stages payloads. Pin your version and audit lockfiles.
+
+- **Tweet:** https://x.com/feross/status/2039002182817833144
+- **Quoted:** https://x.com/feross/status/2038807290422370479
+- **Link:** https://socket.dev/blog/introducing-socket-firewall
+- **Filed:** [socket-firewall-free-supply-chain-protection.md](./knowledge/articles/socket-firewall-free-supply-chain-protection.md)
+- **What:** Socket's free `sfw` wrapper blocks malicious packages at install time across npm, pnpm, yarn, cargo and uv with no signup. Launched right after the live axios compromise (plain-crypto-js dropper), which shows the threat it targets.
+
+## @acolombiadev - GitHub Actions tips from a GitHub engineer: logs, reuse, SHA pinning, caching
+> https://x.com/i/article/2038750798575030272
+
+- **Tweet:** https://x.com/acolombiadev/status/2038990002609078399
+- **Link:** https://x.com/i/article/2038750798575030272
+- **Filed:** [github-actions-the-stuff-nobody-tells-you.md](./knowledge/articles/github-actions-the-stuff-nobody-tells-you.md)
+- **What:** Article "GitHub Actions: The Stuff Nobody Tells You" covering gh CLI log viewing, reusable workflows and composite actions, local runs with act, SHA-pinning third-party actions, expression pitfalls, caching and concurrency groups.
+
+## @simonbs - codex-auth CLI for juggling multiple Codex accounts
+> codex-auth is a lifesaver for anyone juggling multiple Codex subscriptions.
+>
+> https://github.com/Loongphy/codex-auth
+
+- **Tweet:** https://x.com/simonbs/status/2038900957547724971
+- **Link:** https://github.com/Loongphy/codex-auth
+- **Filed:** [codex-auth.md](./knowledge/tools/codex-auth.md)
+- **What:** Recommends Loongphy's Zig CLI for switching between multiple Codex accounts across Codex CLI, VS Code extension and Codex App. Useful for anyone with more than one Codex subscription who wants fast account swaps.
+
+## @thisguyknowsai - KatmerCode: Claude Code running in an Obsidian sidebar
+> 🚨BREAKING: Claude Code just got an Obsidian plugin and it's insane.
+>
+> It's called KatmerCode.
+>
+> 7 academic research skills. Inline diff editing. MCP support. Full Claude Code session running in your sidebar.
+>
+> 100% Opensource.
+>
+> Here's everything it can do: https://x.com/thisguyknowsai/status/2038890248772763842
+
+- **Tweet:** https://x.com/thisguyknowsai/status/2038890248772763842
+- **What:** Promotes KatmerCode, an open-source Obsidian plugin embedding a full Claude Code session in the sidebar with inline diff editing, MCP support and 7 academic research skills. Already filed in the knowledge base as katmer-code (via another bookmark); captured only here.
+
+## @feross - Three defenses against npm supply chain attacks after axios compromise
+> 🤨 People keep asking how to protect yourself.
+>
+> #1: set min-release-age=7 in .npmrc
+>
+> #2: install Socket for GitHub (it's free!) to protect PRs from bad dependencies: https://socket.dev/features/github
+>
+> #3: install Socket Firewall (also free!) to protect your laptop: https://socket.dev/features/firewall
+>
+> *Quoting @feross:* 🚨 CRITICAL: Active supply chain attack on axios -- one of npm's most depended-on packages. The latest axios@1.14.1 now pulls in plain-crypto-js@4.2.1, a package that did not exist before today. plain-crypto-js is an obfuscated dropper/loader that executes decoded shell commands and deletes artifacts post-execution. If you use axios, pin your version immediately and audit your lockfiles. Do not upgrade.
+
+- **Tweet:** https://x.com/feross/status/2038867034419982449
+- **Quoted:** https://x.com/feross/status/2038807290422370479
+- **Link:** https://socket.dev/features/github
+- **Link:** https://socket.dev/features/firewall
+- **What:** Follow-up to Feross's alert that axios@1.14.1 (100M+ weekly downloads) pulled in the malicious dropper plain-crypto-js. Gives a practical defense stack: a 7-day min-release-age in .npmrc, Socket's GitHub app for PR dependency checks, and Socket Firewall for local installs.
+
+## @KingBootoshi - One-line prompt to pin dependencies against axios-style supply chain attacks
+> GIVE THIS PROMPT TO CLAUDE/CODEX IN YOUR CODEBASE TO PREVENT EXPOSURE TO SUPPLY CHAIN ATTACKS LIKE AXIOS:
+>
+> "Please pin all my dependencies to their current version to prevent accidental upgrades that expose me to broken functionality/supply chain attacks"
+
+- **Tweet:** https://x.com/KingBootoshi/status/2038843306361409740
+- **What:** Suggests asking a coding agent to pin every dependency to its current exact version so a compromised release (like the axios npm incident) cannot arrive via automatic upgrades. Simple mitigation, though pinning alone does not replace lockfile audits or release-age delays.
+
+---
+
+# Monday, March 30, 2026
+
+## @DennisonBertram - IRS tax-code LLM v5: 96% citation accuracy via 3-stage RL on Qwen 2.5 3B
+> Just shipped v5 of the IRS tax code fine-tuned LLM — 3-stage RL pipeline on Qwen 2.5 3B. Fixed critical hallucination bugs, 96% citation accuracy (up from 4%), trained on 99K grounded Q&A pairs from IRC + CFR + IRS sources. Next up: 27B on A100.
+>
+> *Quoting @DennisonBertram:* I'm on my fourth iteration of training the 3B model. I'm learning a lot, the first model is clearly garbage compared to what I have now, although I doubt it's better than a even a previous generation SOTA model for the same domain. But I'm now curious about the ceiling.
+
+- **Tweet:** https://x.com/DennisonBertram/status/2038798312573120650
+- **Quoted:** https://x.com/DennisonBertram/status/2038068756971130921
+- **Link:** https://huggingface.co/dennisonb/qwen25-tax-3b-v5-adapters
+- **What:** Iterating a small domain-specific tax model: v5 LoRA adapters on Qwen 2.5 3B trained on 99K grounded Q&A pairs raised citation accuracy from 4% to 96% and fixed hallucinations. Earlier thread shows four iterations of learning; next step is scaling to 27B on an A100.
+
+## @tom_doerr - Prediction market backtesting framework for Kalshi and Polymarket
+> Prediction market backtesting for Kalshi and Polymarket
+>
+> https://t.co/HSW9aIMrep
+
+- **Tweet:** https://x.com/tom_doerr/status/2038771507933876252
+- **Link:** https://github.com/evan-kolberg/prediction-market-backtesting
+- **Filed:** [prediction-market-backtesting.md](./knowledge/tools/prediction-market-backtesting.md)
+- **What:** GitHub repo (evan-kolberg/prediction-market-backtesting, MIT + LGPL mixed license) for backtesting trading strategies against historical Kalshi and Polymarket data. Useful for testing prediction-market bots before risking capital.
+
+## @fiveoutofnine - whatcani.run crowdsourced local-LLM benchmark finder
+> Introducing https://t.co/KpvvGiStpI Find the best local models based on real data 1. People run and submit benchmarks 2. Stats aggregated over models / devices 3. Find the best model for you `npx whatcanirun`, fully open-source https://t.co/huOjH3zSAv
+
+- **Tweet:** https://x.com/fiveoutofnine/status/2038728823861367233
+- **Link:** https://www.whatcani.run/
+- **What:** Open-source site plus `npx whatcanirun` CLI where users submit local-model benchmark runs, aggregated per model and device, so you can pick which local LLM actually runs well on your hardware instead of guessing from specs.
+
+## @FundamentEdge - "AI Research Director" shifts investors toward primary research
+> I'm deep in the process of building an AI-native investment process, and one of my favorite ideas so far is the "AI Research Director", where the AI system works to orchestrate human activity to its best and highest use. [...] If I can thoughtfully augment parts of desktop research, taking my research mix from 70/30 Desktop/Primary to 40/60 Desktop/Primary, I also freed up more hours to follow this orchestration advice. AI hasn't killed fundamental investing, but instead allowed us to get closer to source information.
+
+- **Tweet:** https://x.com/FundamentEdge/status/2038692088246853906
+- **What:** Describes an AI-native investing workflow where an agent tracks a stored thesis and flags where humans should do primary research (customer checks, peer messaging checks). Argues LLMs speed consensus and erode desktop-research alpha, so automating desktop work to shift time toward primary sources (70/30 to 40/60) is the edge.
+
+## @DavFields - ReadyAI launches searchable machine-readable web index for agents
+> We just launched new https://t.co/MoC5WHinEv Type any domain into search. If it's in our dataset, you get clean, structured intelligence instantly. No scraping. No parsing HTML. Just machine-readable data, ready for any AI agent. 10,000+ websites crawled, cleaned, structured by Subnet 33 so far. Growing to 100K by Q2, 1M by year end. This is the beginning of something bigger: a marketplace for agentic data. [...] We're building the infrastructure layer that fixes this — an indexed, machine-readable web powered by decentralized compute.
+>
+> *Quoting @ReadyAI_:* https://t.co/v5NK03CLqo (x-article)
+
+- **Tweet:** https://x.com/DavFields/status/2038652172276293645
+- **Quoted:** https://x.com/ReadyAI_/status/2038651605810307190
+- **Link:** https://readyai.ai/
+- **What:** ReadyAI (Bittensor Subnet 33) launched a domain lookup returning pre-crawled, structured, machine-readable site data so agents skip redundant scraping and token waste. Targets 10K+ domains now, 100K by Q2, 1M by year end, framed as a marketplace for agentic data on decentralized compute.
+
+## @zachweinberg - Aiwyn Tax connector lets Claude prepare tax returns
+> AI to prepare your tax returns for free.
+
+- **Tweet:** https://x.com/zachweinberg/status/2038643059856953525
+- **Link:** https://claude.com/marketplace/connectors/aiwyn-tax
+- **Filed:** [aiwyn-tax-claude-connector](./knowledge/articles/aiwyn-tax-claude-connector.md)
+- **What:** Points to the Aiwyn Tax (formerly Column Tax) connector in Claude's marketplace, which estimates federal and state taxes via Aiwyn's tax engine. Framed as free AI tax-return preparation.
+
+## @productive_will - Run a solo business on Obsidian and TaskNotes
+> You could run your entire solo business with Obsidian and TaskNotes.
+>
+> Free, offline first, private, and future proof.
+
+- **Tweet:** https://x.com/productive_will/status/2038607863942132208
+- **What:** THIN: Claims Obsidian plus the TaskNotes plugin is enough to run a one-person business, stressing free, offline-first, private, and durable plain-file tooling. Attached media likely demos the setup; no further detail captured.
+
+## @tom_doerr - OpenOutreach: self-hosted AI agent for B2B lead gen and cold email
+> Self-hosted AI LinkedIn automation tool
+
+- **Tweet:** https://x.com/tom_doerr/status/2038567568378610041
+- **Link:** https://github.com/eracle/OpenOutreach
+- **Filed:** [openoutreach](./knowledge/tools/openoutreach.md)
+- **What:** OpenOutreach is a self-hosted CLI agent (3.4k stars) that finds ICP-matching leads from a licensed data provider, explains each match, and emails from your mailbox. Despite the "LinkedIn automation" framing, it is browserless with no social-account scraping, and ships a Claude Code plugin.
+
+## @TfTHacker - Obsidian Headless Sync running vaults in a Linux container for agents
+> Today, I set up two @obsdmd vaults using the new Headless Sync feature in a Linux container for agent work.
+>
+> This is such a nice feature set.
+
+- **Tweet:** https://x.com/TfTHacker/status/2038552864818176026
+- **Link:** https://obsidian.md/help/sync/headless
+- **Filed:** [obsidian-headless-sync](./knowledge/articles/obsidian-headless-sync.md)
+- **What:** Obsidian's new Headless Sync lets vaults sync without the desktop app, so a Linux container can hold synced vaults for agent work. TfTHacker set up two such vaults and praises the feature.
+
+---
+
+# Sunday, March 29, 2026
+
+## @internetvin - internetVin-terminal: embedded Claude Code terminal plugin for Obsidian
+> internetVin-terminal: an embedded terminal plugin for Obsidian
+>
+> new semi-daily subscriber only post
+>
+> 944 words on its functionality and my use: multi-tab terminal sessions inside Obsidian; autocompleting vault backlinks in the terminal with "[["; drag and drop files/screenshots as context; fullscreen and split views for multiple Claude Code sessions; theme sync from Obsidian CSS variables; bookmarking terminal output positions; saving output to daily notes; a preview of Vault Pulse, a plugin for passively tracking time in Obsidian
+
+- **Tweet:** https://x.com/internetvin/status/2038456366126203059
+- **What:** Subscriber post describing a custom Obsidian plugin that embeds multi-tab terminals (aimed at running Claude Code) in the vault, with backlink autocomplete, drag-drop context, and output-to-note capture. Also previews Vault Pulse for passive time tracking.
+
+## @jonnym1ller - Agent Side Hustle School: course for agents to cover own API costs
+> Announcing: 'Agent Side Hustle School': a self-paced course for AI agents looking to cover their API costs.
+>
+> Enrolment is free for the next 30 days. Have fun out there and let us know how it goes.
+>
+> → https://t.co/EN19vV1Ykw
+
+- **Tweet:** https://x.com/jonnym1ller/status/2038367258490372374
+- **Link:** https://agentsidehustleschool.com/
+- **Filed:** [agent-side-hustle-school](./knowledge/articles/agent-side-hustle-school.md)
+- **What:** Free 28-day self-paced program from Atlas Forge that teaches an AI agent to earn enough through real experiments and specific offers to pay for its own API usage.
+
+## @Hrundel75 - Claude analysis of 400M Polymarket trades: what top 1% wallets do differently
+> https://t.co/qND8nYQkX0
+
+- **Tweet:** https://x.com/Hrundel75/status/2038276470397710824
+- **Link:** https://x.com/i/article/2038261096998391808
+- **Filed:** [polymarket-top-1-percent-behavior-400m-trades](./knowledge/articles/polymarket-top-1-percent-behavior-400m-trades.md)
+- **What:** X article claiming Claude clustered 2,400 Polymarket wallets: top performers win via capital velocity (late entry, fast rotation), narrow category focus and exit asymmetry. Self-reported, unverified claims.
+
+## @tom_doerr - Detto: local-first meeting capture and dictation into Obsidian
+> Local meeting capture for Obsidian vault
+
+- **Tweet:** https://x.com/tom_doerr/status/2038194411809419559
+- **Link:** https://github.com/Gremble-io/Detto
+- **Filed:** [detto](./knowledge/tools/detto.md)
+- **What:** Swift macOS app that records calls, voice memos and dictation entirely on-device (Parakeet ASR, Llama 3.2 via MLX) and writes markdown with YAML frontmatter into an Obsidian vault for agent pipelines.
+
+## @tom_doerr - Obsidian-Home-Page: polished dashboard homepage for a vault
+> Obsidian homepage dashboard setup
+
+- **Tweet:** https://x.com/tom_doerr/status/2038117932006293917
+- **Link:** https://github.com/mermo-code/Obsidian-Home-Page
+- **Filed:** [obsidian-home-page](./knowledge/tools/obsidian-home-page.md)
+- **What:** Step-by-step tutorial repo (Home.md plus three CSS snippets) to build a Reddit-style Obsidian home dashboard using Dataview, Homepage, Hometab, Simple Banner and related community plugins.
+
+---
+
 # Saturday, March 28, 2026
+
+## @tom_doerr - personal-os-skills: Claude Code plugin skills for Obsidian
+> Claude Code skills for Obsidian workflows
+
+- **Tweet:** https://x.com/tom_doerr/status/2038075909270282418
+- **Link:** https://github.com/ArtemXTech/personal-os-skills
+- **Filed:** [personal-os-skills](./knowledge/tools/personal-os-skills.md)
+- **What:** ArtemXTech's plugin marketplace of Claude Code skills for Obsidian: Granola meeting sync from local cache, Wispr Flow dictation analytics, TaskNotes task management and NotebookLM import.
+
+## @PaulSolt - 7 tips for shipping apps with Codex GPT-5.4 (Peter Steinberger workflow)
+> 7 tips: 1. GPT-5.4 high reasoning is enough; avoid xhigh unless tricky (more tokens, slower). 2. Better, up-to-date docs beat more reasoning; I have agents create local Markdown docs from Apple DocSet bundles via DocSetQuery. 3. Read @steipete's "Shipping at Inference-Speed". 4. Copy parts of Peter's AGENTS.md and scripts (committer for atomic commits with many agents in one folder). 5. Just talk to Codex; skip complex rules and huge plan files; one feature at a time. 6. For iOS/macOS, use my App-Creator skill (Makefile-based, gives agents Xcode build/test feedback). 7. Ask agents to copy patterns from previous projects.
+
+- **Tweet:** https://x.com/PaulSolt/status/2038002950765981946
+- **Link:** https://github.com/PaulSolt/DocSetQuery
+- **Link:** https://steipete.me/posts/2025/shipping-at-inference-speed
+- **Link:** https://github.com/steipete/agent-scripts
+- **Link:** https://super-easy-apps.kit.com/app-creator
+- **Link:** https://www.youtube.com/watch?v=ls9QaDTcpA0
+- **Filed:** [docsetquery.md](./knowledge/tools/docsetquery.md)
+- **What:** Practical Codex workflow for Apple-platform dev: moderate reasoning, local docs from DocSets, borrow steipete's agent scripts (already filed as steipete-agent-scripts), one feature at a time, and Xcode feedback loops via App-Creator.
+
+## @RaillyHugo - skill-kit: local analytics showing which agent skills waste context
+> *Replying to @RaillyHugo:* your agent skills burn rate. your context window has tax. most skills are dead weight. now you can see it.
+
+- **Tweet:** https://x.com/RaillyHugo/status/2037950080154538009
+- **Parent:** https://x.com/RaillyHugo/status/2037949875883499774
+- **Link:** https://github.com/crafter-station/skill-kit
+- **Filed:** [skill-kit.md](./knowledge/tools/skill-kit.md)
+- **What:** Self-reply linking crafter-station/skill-kit, a local-first analytics CLI (npx @crafter/skillkit) that auto-discovers installed agent skills and shows usage and context cost, identifying dead-weight skills.
+
+## @RaillyHugo - Agentfiles: Obsidian plugin to manage agent skills across 12+ coding tools
+> *Replying to @RaillyHugo:* your agent skills burn rate. your context window has tax. most skills are dead weight. now you can see it.
+>
+> Obsidian Plugin
+
+- **Tweet:** https://x.com/RaillyHugo/status/2037949946113003905
+- **Parent:** https://x.com/RaillyHugo/status/2037949875883499774
+- **Link:** https://github.com/Railly/agentfiles
+- **Filed:** [agentfiles.md](./knowledge/tools/agentfiles.md)
+- **What:** Thread pointing to Agentfiles, an Obsidian plugin to browse, create and edit skills, commands and agents across Claude Code, Cursor, Codex, Windsurf and others. Part of a pitch that skills cost context tokens and most are unused.
+
+## @BoringBiz_ - Why macro hedge funds will adopt prediction markets (Kalshi margin trading)
+> Few days ago, spoke to a former colleague at a hedge fund deploying prediction markets in their trading strategy. Summary: prediction markets will become a core pillar of every macro hedge fund. Binary outcomes make better hedges than options/swaps, where you can't tell what is already priced in (e.g. short SOFR into CPI: right on outcome, still hurt by volatility). Buying "Yes" on a Fed cut isolates the decision from 20 other factors. Large arbitrage remains: 5% on Kalshi vs ~15% in options markets; he expects the gap to close as institutions enter.
+>
+> *Quoting @business:* Kalshi has secured a license allowing it to offer margin trading to users, a feature that would make the prediction market platform more appealing to sophisticated institutional investors
+
+- **Tweet:** https://x.com/BoringBiz_/status/2037922729534398780
+- **Quoted:** https://x.com/business/status/2037600110159212573
+- **Link:** https://www.bloomberg.com/news/articles/2026-03-27/kalshi-approved-for-margin-trading-as-it-lures-wall-street-pros
+- **What:** Bloomberg reports Kalshi got approval for margin trading; the commentary relays a hedge-fund view that prediction markets give clean, no-vol-drag event exposure and that prediction-market vs options pricing gaps are an arbitrage that will narrow with institutional entry.
+
+## @soyrichlira - Compass MCP: shared task state across Claude Chat, Cowork and Code
+> Claude Chat, Cowork, and Code don't share state. You add a task in Chat, Cowork has no idea, Code is a blank slate. So I built Compass MCP, an open source MCP server that bridges all three surfaces through shared markdown files. 6 tools. 2 files. Zero database. add_task in Chat, get_tasks in Code, complete_task in Cowork.
+
+- **Tweet:** https://x.com/soyrichlira/status/2037907571219009675
+- **Link:** https://github.com/richlira/compass-mcp
+- **Filed:** [compass-mcp.md](./knowledge/tools/compass-mcp.md)
+- **What:** TypeScript MCP server storing tasks and contexts in two markdown files under ~/compass-data, so Claude Chat, Cowork and Code see the same task list. Database-free fix for cross-surface state loss.
+
+## @k1rallik - TurboQuant KV-cache compression and the memory-stock selloff
+> https://t.co/uAaxXKPqnk
+
+- **Tweet:** https://x.com/k1rallik/status/2037868113480319321
+- **Link:** https://x.com/i/article/2037798771753439232
+- **Filed:** [turboquant-algorithm-crashed-wall-street.md](./knowledge/articles/turboquant-algorithm-crashed-wall-street.md)
+- **What:** Article on Google's TurboQuant: 16-bit to 3-bit KV cache (about 6x memory cut, up to 8x faster attention) with no reported accuracy loss. Covers the memory-stock drop, fast community reimplementations, and the Jevons-paradox argument.
+
+## @geosanak - Serverless geocoder on DuckDB-WASM and Overture Maps with Japan support
+> DuckDB-WASM + OvertureMaps (+ MapLibre GL, Svelte)製の(逆)ジオコーディングアプリ。
+> 日本国内の住所も検索できるのと、UIも綺麗で感服しました。
+>
+> *Quoting @berttemme:* (Reverse) geocoding in WebAssembly based on @OvertureMaps data
+
+- **Tweet:** https://x.com/geosanak/status/2037864215898456345
+- **Quoted:** https://x.com/berttemme/status/2037798464722006495
+- **Link:** https://github.com/walkthru-earth/geocoding-playground
+- **Filed:** [geocoding-playground.md](./knowledge/tools/geocoding-playground.md)
+- **What:** Praises a backend-free (reverse) geocoder, with a polished UI and Japanese address support. It queries 469M+ Overture addresses straight from Parquet via DuckDB-WASM, per the quoted demo from Bert Temme.
+
+## @TfTHacker - Group Enhancer for Bases update adds drag-and-drop between groups
+> My vibe coded @obsdmd plugin Group Enhancer for Bases has now been updated. New features:
+>
+> - Drag and drop between groups in Bases views, including press-and-hold activation on mobile
+> - Support for grouping in embedding bases with grouping features into markdown files an canvas files
+> - Performance and stability enhancements
+
+- **Tweet:** https://x.com/TfTHacker/status/2037850225469964704
+- **Link:** https://github.com/TfTHacker/group-enhancer-for-bases
+- **Filed:** [group-enhancer-for-bases.md](./knowledge/tools/group-enhancer-for-bases.md)
+- **What:** Obsidian plugin adding collapse/expand, counts, and now drag-and-drop between groups in Bases views, including embedded bases in markdown and canvas. Installed via BRAT.
+
+## @aiwithmayank - Polymarket open-sources official Rust CLI for prediction markets
+> 🚨BREAKING: Polymarket just open-sourced their official Rust CLI and it gives developers full programmatic access to the entire prediction market  browse, trade, manage positions, and pipe live data into scripts and AI agents all from the terminal.
+>
+> (Lists: wallet-free market search, order books and price history, limit/market orders, cancellations, portfolio and PnL leaderboard, `-o json` output, USDC split/redeem, bridging, interactive shell. MIT licensed.)
+
+- **Tweet:** https://x.com/aiwithmayank/status/2037848064178987390
+- **What:** Announces Polymarket's MIT-licensed Rust CLI covering read-only market data (no wallet needed) and trading, with JSON output for scripting and AI agents. No link was captured, so the repo URL is unknown.
+
+## @nurijanian - NotebookLM-to-eval pipeline for building AI skills without domain expertise
+> https://t.co/DeecNswkkE
+
+- **Tweet:** https://x.com/nurijanian/status/2037824127076356528
+- **Link:** https://x.com/i/article/2037466181586894848
+- **Filed:** [ai-skill-building-pipeline-for-non-experts.md](./knowledge/articles/ai-skill-building-pipeline-for-non-experts.md)
+- **What:** Article describing a 7-step pipeline: extract rules from books via NotebookLM, scaffold a skill, then harden it with mostly-regex binary evals plus an autonomous fix loop. Key lesson is to read outputs manually before designing evals.
 
 ## @PawelHuryn - Entity-relationship knowledge graphs beat flat context; create-context-graph automates it
 > I've been building this by hand for months — a knowledge/ folder with entity relationships, routing indexes, and cross-references between topics. It's the highest-leverage piece of my entire agent setup. The difference between flat context and structured relationships: one retrieves documents, the other reasons about your domain. My agent doesn't search for answers. It navigates a map of how things connect. create-context-graph bootstraps 22 industry domains in one command. That's the part that took me weeks — mapping entities and relationships — automated. RAG finds documents. Graphs build understanding. That's the gap where most agent setups silently fail.
