@@ -4173,7 +4173,505 @@
 
 ---
 
+# Wednesday, June 17, 2026
+
+## @TheStalwart - Joe Weisenthal reverses on Li-Ning running shoes
+> FYI I'm not happy with the new Li-Nings that I bought and have switched back to my Nike Pegasus for daily use. They are extremely comfortable. Yet they make a squeaking noise on certain surfaces. Will probably only wear them in the future for when I'm actually running (rare).
+>
+> *Quoting @TheStalwart:* My new Li-Ning running shoes are easily the most comfortable shoes I've ever worn. I mean, I'm sure Hokas feel exactly the same. But I'd never wear Hokas. I'm way too cool for that brand.
+
+- **Tweet:** https://x.com/TheStalwart/status/2067283771666075847
+- **What:** Off-topic personal follow-up: Weisenthal walks back his earlier praise of Li-Ning shoes because they squeak on some surfaces, returning to Nike Pegasus for daily wear. Earlier tweet called them his most comfortable shoes ever.
+
+## @mattpocockuk - mattpocock/skills v1 release
+> Announcing mattpocock/skills v1
+>
+> - 63% reduction in token cost for skill descriptions
+> - Split skills into model-invocable and user-invocable, adding /codebase-design, /domain-modeling, /grilling
+> - (UPDATED) /writing-great-skills - rewritten from the ground up
+> - (UPDATED) /diagnose -> /diagnosing-bugs - now model-invocable
+> - (NEW) /ask-matt: a router skill that teaches how all the engineering skills work together
+
+- **Tweet:** https://x.com/mattpocockuk/status/2067259590488510471
+- **What:** v1 of Matt Pocock's Claude skills collection cuts description token cost 63% and separates model-invocable from user-invocable skills. Adds design/domain/grilling skills, rewrites the skill-writing guide, and a router skill.
+
+---
+
+# Tuesday, June 16, 2026
+
+## @GoogleCloudTech - Google Cloud's Open Knowledge Format (OKF) for LLM wikis
+> Introducing the Open Knowledge Format (OKF), an open specification that formalizes the LLM-wiki pattern into a portable, interoperable format.
+>
+> AI is only as smart as the context we give it. [...] Just markdown, just files, just YAML frontmatter (type, title, description, resource, tags, timestamp). Reference implementations include a BigQuery enrichment agent, static HTML visualizer, and sample bundles on GitHub. Knowledge Catalog can now natively ingest OKF.
+
+- **Tweet:** https://x.com/GoogleCloudTech/status/2067012903337664886
+- **Link:** https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf
+- **Filed:** [okf-knowledge-catalog.md](./knowledge/tools/okf-knowledge-catalog.md)
+- **What:** Google Cloud publishes OKF, a vendor-neutral markdown plus YAML-frontmatter spec for packaging enterprise context so agents stop rebuilding context assembly. Ships reference tools and Knowledge Catalog ingestion; closely mirrors Karpathy-style LLM wikis.
+
+## @doodlestein - Computers feel slow from I/O despite idle cores and RAM
+> So much of perceived slowness on computers is driven by I/O. It's crazy to me that your machine can feel so slow when you have dozens of idle cores and 100+ GB of free RAM. And it's not like my storage is a slow HDD, it's a fancy M.2 NVME SSD. I feel like we need to rethink this.
+
+- **Tweet:** https://x.com/doodlestein/status/2066933677511049341
+- **What:** Jeffrey Emanuel argues perceived system sluggishness is I/O-bound even on high-core, high-RAM machines with NVMe SSDs, and calls for rethinking OS and storage design. Likely illustrated by an attached image.
+
+## @firecrawl - Firecrawl now usable free without an API key
+> Starting today, you can try Firecrawl for free without an API key
+>
+> Search, scrape, and interact with any web page, plus parse any PDF into clean markdown, with no setup at all!
+>
+> Start using our endpoints and only sign up when you scale.
+>
+> Live on our MCP, CLI, and API now!
+
+- **Tweet:** https://x.com/firecrawl/status/2066918976689754148
+- **What:** Firecrawl removes the signup barrier: search, scrape, interact, and PDF-to-markdown endpoints work keyless across MCP, CLI, and API until you need to scale. Lowers friction for agent web-scraping experiments.
+
+## @immad - Mercury launches Command agentic banking
+> 1/ Today we are launching @Mercury Command - the future of agentic banking.*
+>
+> Command lets you kick off AI agents to do work, while staying in full control, all with human support integrated.
+
+- **Tweet:** https://x.com/immad/status/2066916114739970150
+- **What:** THIN: Mercury CEO announces Mercury Command, a banking product where users launch AI agents to do financial work while keeping control and human support available. Thread opener; details likely in video or follow-ups.
+
+## @SystemSunday - Ben Meer launches Year of Systems with book pre-order
+> Most people don't need more inspiration. They need better life infrastructure. That's why I built Year of Systems. A year-long challenge to build one life system every week. 52 weeks. 52 simple systems. The video course ($297 value) is free to the first 5,000 people who pre-order my debut book "How to Be Good at Life: Simple Systems to Achieve More and Stress Less" (Penguin Random House / Pan Macmillan, October). Includes the DRIVE five-step method and 40+ systems.
+
+- **Tweet:** https://x.com/SystemSunday/status/2066855226766659730
+- **Link:** https://benmeer.com/yearofsystems/
+- **What:** Promotion for Ben Meer's debut book and a bundled 52-week course on building one life system weekly (health, money, productivity, home). Free for the first 5,000 pre-orders; framed around his DRIVE method. Capture-only, marketing content.
+
+## @DanielLockyer - AI agent log-improvement meta task via MCP
+> My favorite AI meta task atm is to give it access to logs via MCP and say something like:
+>
+> "Assess logs from the last 24 hours. Make changes to improve the output for ambiguous errors. Clean up superfluous entries. Add attributes to help with future debugging."
+>
+> 10x improvement
+
+- **Tweet:** https://x.com/DanielLockyer/status/2066837674766311928
+- **What:** Pattern: connect an agent to production logs through MCP, then have it audit the last 24 hours and edit the code's logging to clarify ambiguous errors, drop noise, and add debugging attributes. Claimed 10x observability gain from this feedback loop.
+
+---
+
+# Monday, June 15, 2026
+
+## @fin465 - YC playbook for brute-forcing your first 100 customers
+> in @ycombinator they have a playbook on how to get customers ASAP for your startup. if you follow this, you'll brute force your way to 100 customers, almost no matter what your product is.
+>
+> 1/ launch-max: product hunt, hackerNews, devhunt, betalist, peerlist, indie hackers. Launch 3 times minimum
+> 2/ pull competitor's strongest backlinks and get listed in the same places
+> 3/ WARM OUTBOUND: scrape everyone who likes your LinkedIn posts weekly, check ICP fit, message them (automate with @origamichat)
+> 4/ find 20-30 UGC creators on TikTok/Instagram; pay $15-30 per video plus performance incentives
+> 5/ video beats image/text 10x when building in public
+> 6/ find where customers spend time (Slack/Discord, newsletters, podcasts) and pay for shoutouts
+> 7/ jump on weekly X trends and fold your product in
+
+- **Tweet:** https://x.com/fin465/status/2066589201085370482
+- **What:** Seven-step startup growth checklist attributed to YC: multi-platform launches, competitor backlink mining, automated warm outbound to post likers, paid UGC creators, video demos, paid niche shoutouts, and trend-jacking. Emphasizes weekly persistence; also promotes Origami and SideShift tools.
+
+## @mattpocockuk - Matt Pocock's 7 phases of AI development and grill-with-docs rethink
+> Here are my 7 phases of AI-powered development.
+>
+> I've been thinking that the pre-PRD phase needs more structure. You need to figure out the shape of the design tree first, before then walking down it with higher-fidelity prototypes.
+>
+> In other words, /grill-with-docs needs to change again IMO
+
+- **Tweet:** https://x.com/mattpocockuk/status/2066451514672009337
+- **What:** THIN: Image-based post outlining a 7-phase AI dev workflow. Matt argues the pre-PRD phase should first map the design tree's shape, then descend it with higher-fidelity prototypes, so his /grill-with-docs skill needs another redesign.
+
+## @favwontmiss - Using the patient portal to shift liability when doctors dismiss symptoms
+> There is a massive loophole in the medical system, and it is a patient's absolute best friend. It is the patient portal. When a doctor dismisses your symptoms or refuses a test, you do not have to argue or cry in the exam room. The exam room is designed to put them in a position of power. Instead, you accept it calmly, go home, and use this exact strategy to shift the legal liability right back onto them.
+
+- **Tweet:** https://x.com/favwontmiss/status/2066437988448420160
+- **What:** THIN: Claims that after a dismissed symptom or refused test, a written patient-portal message creates a record that shifts legal liability onto the doctor. The actual strategy is cut off in the tweet, so only the premise is captured.
+
+---
+
+# Sunday, June 14, 2026
+
+## @wshxnv - MCP connector that turns ChatGPT into Codex to use GPT-5.5 Pro and double rate limits
+> yesterday, at the Codex hackathon, i ended up solving this problem by building an MCP connector app that turns ChatGPT into Codex, sort of.
+>
+> 1. you get to use GPT-5.5 Pro by exposing your local dev environment to ChatGPT, so you can use 5.5 pro for planning and handover to codex to execute it
+> 2. you get to 2x your rate limits, just like last month, because apparently ChatGPT and Codex have separate rate limits
+>
+> here is the quick demo
+>
+> *Quoting @jeremyberman:* GPT 5.5 Pro is the best model for planning and research. Why isn't it available in codex?
+
+- **Tweet:** https://x.com/wshxnv/status/2066288292405080516
+- **What:** Built at a Codex hackathon: an MCP connector exposing the local dev environment to ChatGPT so GPT-5.5 Pro can plan and hand off to Codex for execution. Answers Berman's complaint that 5.5 Pro is missing from Codex, and exploits separate ChatGPT and Codex rate limits for roughly double capacity.
+
+## @skirano - Have Codex write /goal prompts for itself and each spawned agent
+> I basically never write my own /goal anymore.
+>
+> I ask Codex to write one for itself, and one for each agent it spawns.
+>
+> Like this 👇
+
+- **Tweet:** https://x.com/skirano/status/2066225908202053818
+- **What:** THIN: Schirano delegates /goal authoring to Codex, which writes a goal for itself and for every sub-agent it spawns. The example is in attached media, so the exact prompt is not captured.
+
+## @doodlestein - Client-owned skill layers over a universal agent CLI, agreeing with Nadella
+> I couldn't agree more with @satyanadella here. This exactly echoes the argument I've been making to my hedge fund consulting clients recently.
+>
+> The architecture I've come up with, which is a universal agent-intuitive CLI tool interwoven with a base skill library, combined with a custom skill layer that references the base skills, accomplishes all of these goals very nicely. [...] The CLI tool also runs on the client's machine along with the agent [...] so the client doesn't need to leak alpha indirectly.
+
+- **Tweet:** https://x.com/doodlestein/status/2066211163449287145
+- **What:** Emanuel describes his consulting architecture: a shared base skill library plus agent-friendly CLI, with a client-owned custom skill layer encoding proprietary workflows. The CLI runs locally against data sources like EDGAR and FactSet, avoiding vendor lock-in and IP or alpha leakage to labs or VC-backed startups.
+
+---
+
+# Saturday, June 13, 2026
+
+## @OpenRouter - OpenRouter Fusion API compound model at half Fable's price
+> Introducing the Fusion API, the smartest compound model in the market.
+>
+> Fusion achieves Fable-level intelligence at half the price.
+>
+> How it works 👇
+
+- **Tweet:** https://x.com/OpenRouter/status/2065856853989270011
+- **What:** THIN: OpenRouter launches Fusion, a compound model that combines multiple models and claims Fable-level quality at about half the price. The explanation lives in an attached thread/media not captured here.
+
+## @shadcn - Treat intelligence as borrowed: build a plan backlog with /improve
+> In light of what happened, I'm doubling down on skills like /improve.
+>
+> A frontier model got pulled. If it happened once, it's gonna happen again. Fable today. 4.9 tomorrow or maybe gpt 6 one day.
+>
+> So, treat intelligence as borrowed. Drain intelligence when it's available. Build a catalog of plans today. Then implement later with a cheaper, open source, or a model you control.
+>
+> Build the backlog now.
+
+- **Tweet:** https://x.com/shadcn/status/2065826989769163068
+- **Link:** https://github.com/shadcn/improve
+- **Filed:** [improve.md](./knowledge/tools/improve.md)
+- **What:** After a frontier model was pulled, shadcn argues for using the best model while available to audit code and write self-contained plans, then executing later with cheaper or self-controlled models. His `improve` skill produces those plans in `plans/` and can dispatch a cheap executor.
+
+## @_avichawla - Loop engineering: schedule, maker, separate checker, state on disk
+> Karpathy said something you'll regret ignoring: "Remove yourself as the bottleneck. Maximize your leverage. Put in very few tokens, and a huge amount of stuff happens on your behalf."
+>
+> Loop engineering is the exact thing that does that. [...] A schedule decides what to run; Loop is the maker that produces the work; A separate checker agent grades the output; A file on disk holds the state they both read. The loop runs until either done, max iterations, or an exhausted budget.
+>
+> *Quoting @akshay_pachaar:* https://x.com/i/article/2063964921495523328
+
+- **Tweet:** https://x.com/_avichawla/status/2065727218991735000
+- **Link:** https://x.com/i/article/2063964921495523328
+- **Filed:** [agent-harness-repair-itself-opik.md](./knowledge/articles/agent-harness-repair-itself-opik.md)
+- **What:** Describes unattended agent loops with a separate checker (self-grading just justifies), exit conditions set before the run, and state on disk, warning that green checks let teams stop understanding merged code. Quoted article pitches Opik to auto-diagnose failing traces and lock them as regression tests.
+
+## @ParthJadhav8 - Installing NOOP on iOS to use Whoop without a subscription
+> https://x.com/i/article/2065705285898084352
+
+- **Tweet:** https://x.com/ParthJadhav8/status/2065705939509133515
+- **Link:** https://x.com/i/article/2065705285898084352
+- **Filed:** [noop-ios-install-whoop-alternative.md](./knowledge/articles/noop-ios-install-whoop-alternative.md)
+- **What:** Guide to sideloading NOOP, a free open-source app that reads Whoop data without the paid subscription. Install via AltStore or SideStore from GitHub releases (7-day free-ID expiry, auto-refreshed), or build in Xcode for full Health and widget support.
+
+## @steipete - Crabbox: remote test boxes where Codex builds Crabbox itself
+> I can barely keep up with implementing/testing/landing all the Issues/PRs folks submit to https://github.com/openclaw/crabbox
+>
+> Codex runs INSIDE crabbox while it is building crabbox. This is becoming essential infra for my work.
+>
+> Codex been looping nonstop for the last 4 days in multiple trees. Since all of it is e2e verifiable it basically builds itself. Codex even signs up for the services automatically via browser/computer use. My main job is adding credit card details and closing things that I don't see as a fit.
+
+- **Tweet:** https://x.com/steipete/status/2065650561484267540
+- **Link:** https://github.com/openclaw/crabbox
+- **Filed:** [crabbox.md](./knowledge/tools/crabbox.md)
+- **What:** Steinberger dogfoods Crabbox, a CLI that leases warm cloud/local boxes, syncs the working-tree diff and runs test suites for coding agents. Codex loops on it for days across multiple trees because everything is e2e verifiable, with the human reduced to payment details and triage.
+
+---
+
+# Friday, June 12, 2026
+
+## @Marie_Haynes - Google's Open Knowledge Format (OKF) for agent-readable markdown wikis
+> This is really big news. Google introduced the Open Knowledge Format (OKF) - a standardized way to store information in a directory of markdown files. Makes it really easy to make a digital brain that agents can use.
+>
+> These files can serve as a living wiki. You can give agents the ability to query them or edit them. They can interlink.
+>
+> Seems to me this could replace Notion or Obsidian. [...] I gave those two links to Antigravity and asked how we could use it for any of the projects we're working on. [...] Currently creating an OKF library of our pepper garden.
+
+- **Tweet:** https://x.com/Marie_Haynes/status/2065531158356717721
+- **Link:** https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/
+- **What:** Google Cloud announced OKF, a spec for storing knowledge as an interlinked directory of markdown files that agents can query and edit, positioned as a Notion/Obsidian-style living wiki. Haynes is building one for her pepper garden and used Antigravity to brainstorm project uses. Blog page content did not extract, so details come from the tweet.
+
+## @Suryanshti777 - Official claude-code-setup plugin recommends hooks, skills, MCP, subagents
+> Claude Code feels completely different once you install this. Anthropic quietly released an official plugin called claude-code-setup and it basically turns Claude Code from "pretty good" into an actual AI dev environment. It scans your project and recommends: hooks, skills, MCP servers, subagents, automations. Then sets everything up step-by-step for you. Install: /plugin install claude-code-setup@claude-plugins-official
+>
+> *Quoting @Suryanshti777:* I built Unveil with Step 3.7 Flash, a small tool that turns a rough product idea into a launch page (example: Luna Watch minimalist smartwatch page).
+
+- **Tweet:** https://x.com/Suryanshti777/status/2065473893817848266
+- **Link:** https://platform.stepfun.ai/
+- **What:** Promotes the official claude-code-setup plugin that scans a repo and recommends or configures hooks, skills, MCP servers and subagents. The quoted self-tweet is an unrelated demo of Unveil, a StepFun Step 3.7 Flash idea-to-landing-page tool, hence the StepFun link.
+
+## @enzo_gte - Agentic coding meta: Fable plans, Codex swarms implement, Fable reviews
+> New meta for agentic coding:
+>
+> 1. Fable High / X-High to make a plan.
+> 2. Deploy swarms of codex 5.5 x-high agents to try the task (different worktrees)
+> 3. Have Fable X-High review & then have Codex smash into the best version.
+>
+> 90% quality, cheaper and faster.
+>
+> (For frontier work, use Fable + Fable subagents only)
+
+- **Tweet:** https://x.com/enzo_gte/status/2065449481940664581
+- **What:** Three-step cost-aware workflow: Fable plans, parallel Codex 5.5 xhigh agents attempt the task in separate worktrees, then Fable reviews and Codex merges the best. Claims about 90% of the quality, cheaper and faster, reserving Fable-only for frontier work.
+
+## @akshay_pachaar - NVIDIA SkillSpector scans agent skills for malware before install
+> NVIDIA might just have open-sourced one of the most important AI projects right now. everyone is building skills, and we are also pulling in skills other people wrote... a skill can read your environment variables, lift your API keys, and quietly send them somewhere. recent research found roughly 1 in 4 public skills carry a vulnerability... SkillSpector is a security scanner that answers: is this skill safe to run. Static pass plus optional LLM pass; risk score 0-100 with verdict safe, caution, or do not install. Apache 2.0.
+
+- **Tweet:** https://x.com/akshay_pachaar/status/2065412599001625058
+- **Link:** https://github.com/NVIDIA/SkillSpector
+- **Filed:** [skillspector.md](./knowledge/tools/skillspector.md)
+- **What:** Highlights NVIDIA's open-source scanner that vets Claude Code, Codex and Gemini skills for credential theft, exfiltration and prompt injection before install. Uses 71 patterns and live CVE lookups, outputs a 0-100 risk score; research cited found 26.1% of skills vulnerable.
+
+## @Voxyz_ai - Spend banked Codex rate limits on refactoring with steipete's yolo prompt
+> codex now lets you bank rate limit resets to use later, so most of you are sitting on idle quota right now. refactoring is the best way to spend it. steipete dropped a yolo prompt for this: "/goal refactor until you are happy with the architecture. ensure you live test after each significant step and autoreview/commit. track progress in /tmp/refactor-{projectname}.md. live test should cover full e2e verification, computer use, browser use, keys, whatever it takes. run high or xhigh reasoning." discuss direction first on bigger projects... turn on autoreview.
+>
+> *Quoting @steipete:* @MatthewBerman /goal refactor until you are happy with the architecture. ensure you live test after each significant step and autoreview/commit. track progress in /tmp/refactor-{projectname}.md
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2065366783213576424
+- **What:** Expands steipete's /goal refactor prompt with e2e, computer-use and browser live tests at high/xhigh reasoning, framed as the best use of idle banked Codex quota. Advises discussing direction first on big projects and enabling autoreview to catch bugs during the refactor.
+
+## @steipete - /goal refactor prompt to burn spare Codex tokens
+> *Replying to @MatthewBerman:* I use Cursor, Codex, and Claude Code. I want to make sure I use all my tokens during each period. What are some recurring tasks I should do on my codebase?
+>
+> /goal refactor until you are happy with the architecture. ensure you live test after each significant step and autoreview/commit. track progress in /tmp/refactor-{projectname}.md
+
+- **Tweet:** https://x.com/steipete/status/2065357277880877413
+- **What:** Answer to Berman's question on using up token allowances: run a long /goal refactor loop that live-tests each step, autoreviews and commits, and logs progress to a tmp markdown file. A reusable prompt pattern for unattended refactors.
+
+## @blader - arbitrage skill routes hard work to Fable, rest to GPT-5.5
+> fable is expensive
+>
+> wrote a quick arbitrage skill for claude code to offload the hard things to fable and everything else to gpt 5.5 xhigh
+>
+> it will try to be always on or you could say "implement with arbitrage"
+
+- **Tweet:** https://x.com/blader/status/2065318847151046781
+- **Link:** https://github.com/blader/arbitrage
+- **Filed:** [arbitrage.md](./knowledge/tools/arbitrage.md)
+- **What:** Claude Code skill that cuts spend by sending only hard problems to the pricey Fable model and everything else to GPT-5.5 at xhigh. It runs automatically or on the trigger phrase "implement with arbitrage".
+
+---
+
+# Thursday, June 11, 2026
+
+## @trevin - Headroom repo explodes to 24k stars on token-cost anxiety
+> This GitHub repository blew up what seems like overnight. June 1 had <5k stars and now it's at 24k. Based on repo activity he's been grinding for months, and launched it formally just before Fable launch. Talk about great timing given how token and cost conscious everyone is.
+
+- **Tweet:** https://x.com/trevin/status/2065255552561938561
+- **Link:** https://github.com/headroomlabs-ai/headroom
+- **Filed:** [headroom.md](./knowledge/tools/headroom.md)
+- **What:** Observes that headroomlabs-ai/headroom jumped from under 5k to 24k stars in about ten days, helped by launching right before Fable when token costs were top of mind. Repo README was not captured, so function is inferred as token/context cost reduction.
+
+## @trevin - illo skill: reference-locked character packs for consistent AI illustrations
+> A lot of AI illustration tools can make one good image. The harder thing is making the 10th image still feel like it came from you. I create the `illo` skill which uses reference-locked character packs, so your illustrations can have a recurring character instead of a pile of unrelated generations. It has built-in QA and re-rolls new images to improve quality. Use one of 30 community characters, or build your own.
+
+- **Tweet:** https://x.com/trevin/status/2065232610335641667
+- **Link:** https://www.illo-skill.com/
+- **Filed:** [illo-skill.md](./knowledge/articles/illo-skill.md)
+- **What:** Launch of an agent skill that keeps illustrations visually consistent by locking generations to reference character packs, with automatic QA re-rolls. Ships 58 recurring characters across 17 looks and supports custom characters.
+
+## @cline - Cheaper models plus adversarial review rival Fable at far lower cost
+> 1/ Claude Fable drains subscription quotas and is too expensive at API cost (our team has spent over $2k in a single day).
+>
+> We've found that cheaper models + adversarial review loops achieve similar (sometimes better) results at significantly lower cost. 🧵
+
+- **Tweet:** https://x.com/cline/status/2065192415498277335
+- **What:** Cline opens a thread arguing Fable is too costly (over $2k in one day for their team) and that cheaper models paired with adversarial review loops match or beat it on results. Thread body not captured; only the opener was bookmarked.
+
+## @jasondoesstuff - Multi-model coding workflow: Fable plans, Opus UI, GPT-5.5 code
+> Welp, what a difference a month makes:
+>
+> - Fable 5 for initial plan
+> - Opus 4.8 for any UI work
+> - GPT-5.5 for any code
+> - Fable does review/testing
+>
+> WAY less back and forth. WAY more edge cases handled.
+>
+> *Quoting @jasondoesstuff:* Opus 4.7 makes the feature plan, GPT-5.5 reviews it (always finds issues), Opus builds and tests with Playwright, GPT reviews code, Opus fixes, GPT signs off. Uses @conductor_build to bounce between the two for ~$400/month.
+
+- **Tweet:** https://x.com/jasondoesstuff/status/2065155327364907211
+- **What:** Self-quote contrasting last month's Opus-builds/GPT-reviews loop with a new split: Fable plans and reviews, Opus handles UI, GPT-5.5 writes code. Claims fewer round trips and more edge cases caught, showing how fast multi-model role assignment shifts.
+
+## @NickADobos - Catalog of agent loops: planners, sweeps, watchers, trader
+> Loops so hot right now. Here are the loops I'm experimenting with: Planners (morning brief, daily planning, Friday weekly review, Sunday/Monday 3-lane planning, monthly finance check-in). Weekly codebase/promptbase sweeps (code maid & janitor, prompt evolver, memory/docs consolidation "dream" sweep). Watchers (sentry -> auto crash fix, analytics alert -> auto fix, triager of Linear bug reports that emails reporters when fixed). Stock day trader (daily portfolio check, research, rebalance). What loops are you using?
+>
+> *Quoting @steipete:* Here's a simple loop: Tell codex to maintain your repos, wake up every 5 minutes and direct work to threads. I use a orchestrator skill combined with my triage+autoreview+computer use skills, so some work can land autonomously.
+
+- **Tweet:** https://x.com/NickADobos/status/2065136188697280887
+- **Link:** https://github.com/steipete/agent-scripts/blob/main/skills/maintainer-orchestrator/SKILL.md
+- **Link:** https://github.com/steipete/agent-scripts/blob/main/skills/github-project-triage/SKILL.md
+- **What:** Building on steipete's repo-maintenance loop, lists a broad set of scheduled agent loops: personal/work planning cadences, weekly code and memory cleanup sweeps, crash/analytics/support watchers, and a daily portfolio trader.
+
+## @trevin - Instant install of lavish-axi for HTML docs with Compound Engineering
+> Instant install. Make working with your HTML docs with your agent delightful, more gold from @kunchenguid. With Compound Engineering's option to output HTML (and ce-ideate's default HTML output) this is perfect.
+>
+> *Quoting @kunchenguid:* receiving a lot of good words about lavish-axi (ty!) in v0.1.27 i just made it installable and invocable as a skill "/lavish"... lavish gives you the ability to work with the agent via the html itself
+
+- **Tweet:** https://x.com/trevin/status/2065120204515151959
+- **Link:** https://github.com/kunchenguid/lavish-axi
+- **What:** Endorsement of lavish-axi: easy install and a natural fit with Compound Engineering's HTML output option and ce-ideate's default HTML output, making agent HTML docs editable interactively.
+
+## @kunchenguid - AXI: agent-ergonomic CLIs, plus chrome-devtools-axi and gh-axi
+> *Replying to @kunchenguid:* receiving a lot of good words about lavish-axi... in v0.1.27 i just made it installable and invocable as a skill "/lavish"...
+>
+> btw if you are curious what is "axi", here you go https://t.co/fOE5FHdMCv. AXIs are basically CLIs designed specifically for agent ergonomics. as a result, they push token efficiency and task success rate to the extreme. A few other AXIs: chrome-devtools-axi: drop in replacement for chrome MCP, significantly more token efficient & faster. gh-axi: drop in replacement for gh cli, probably the most efficient way for your agent to do github stuff.
+
+- **Tweet:** https://x.com/kunchenguid/status/2065108341291147388
+- **Link:** https://axi.md/
+- **Link:** https://github.com/kunchenguid/chrome-devtools-axi
+- **Link:** https://github.com/kunchenguid/gh-axi
+- **What:** Follow-up explaining AXI (Agent eXperience Interface): 10 design principles for agent-friendly CLIs, benchmarked on 915 runs, with token-efficient replacements for Chrome DevTools MCP and the gh CLI alongside lavish-axi.
+
+## @kunchenguid - lavish-axi now a /lavish skill for interactive HTML artifacts
+> receiving a lot of good words about lavish-axi (ty!)
+>
+> in v0.1.27 i just made it installable and invocable as a skill "/lavish" or with a prompt "/lavish let's discuss what options we have"
+>
+> this is the quickest way to upgrade your workflow from reading long wall of text and markdown to interactive html artifacts which are a lot more pleasant and efficient to work with
+>
+> why not just ask the agent to write an html? you'll know when you need to give some feedback to the agent about things in the html and realize there's no good way to make those edits and iterations. lavish gives you the ability to work with the agent via the html itself
+
+- **Tweet:** https://x.com/kunchenguid/status/2065108339693089242
+- **Link:** https://github.com/kunchenguid/lavish-axi
+- **Filed:** [lavish-axi.md](./knowledge/tools/lavish-axi.md)
+- **What:** lavish-axi v0.1.27 ships as an installable /lavish skill so you can give feedback to an agent directly inside interactive HTML artifacts, replacing long markdown walls; includes styling and polling bug fixes.
+
+## @firecrawl - Firecrawl Prometheus, a web-data agent that writes Firecrawl code
+> Introducing Prometheus, an experimental Forward Deployed Agent for web data. Describe the web data you need and it writes Firecrawl code to collect it. Run it yourself or let us host and automatically maintain it as pages change. Try it with Claude Fable 5 for free this week! https://t.co/DF9ZLUNTOX
+
+- **Tweet:** https://x.com/firecrawl/status/2065104942856020281
+- **What:** Firecrawl launched Prometheus, an experimental agent that turns a natural-language data request into Firecrawl scraping code, either self-run or hosted and auto-maintained as pages change, free with Fable 5 for a week.
+
+## @mattshumer_ - Persistent HTML progress page prompt for long Fable runs
+> Claude Fable can run autonomously for days. This is the single highest-leverage prompt I use to stay on top of it: "Spin up a persistent HTML page. As you work, append clear, timestamped updates with screenshots/media so I can follow along." Literally a 10x better experience. https://t.co/TKtsIALzxY
+
+- **Tweet:** https://x.com/mattshumer_/status/2065102622604787857
+- **What:** Tip for monitoring multi-day autonomous agent runs: have the agent maintain a live HTML page with timestamped updates and screenshots, giving the human an easy follow-along log without interrupting the work.
+
+## @daniel_mac8 - Cost-efficient Fable setup: Fable orchestrates, Opus reasons
+> This is the best way to use Claude Fable in Claude Code without immediately hitting your limits. 1. Model set to Fable 5 2. Reasoning on Max 3. Instruct Claude to run a dynamic workflow where: 3a. Fable is the orchestrator 3b. Opus does the reasoning heavy phases. Fable is so overpowered that you don't need its intelligence for every step. Let it orchestrate Opus or even Sonnet.
+
+- **Tweet:** https://x.com/daniel_mac8/status/2065066247448821841
+- **What:** Recipe for stretching Fable usage limits in Claude Code: run Fable 5 at max reasoning purely as orchestrator in a dynamic workflow, delegating heavy reasoning phases to cheaper Opus or Sonnet subagents.
+
+## @Voxyz_ai - Steipete open-sources Codex maintainer loop skills
+> steipete open sourced his two codex loop skills:
+>
+> → maintainer-orchestrator: wakes every 5 min, sorts issues/PRs into agent handles / owner decides / ignore. PRs must be green before escalating
+>
+> → github-project-triage: scans all open issues/PRs/CI/releases, buckets into autonomous / needs owner / close
+>
+> people been debating loop agents for months. skill files are out now, go try it
+>
+> *Quoting @steipete:* Here's a simple loop: Tell codex to maintain your repos, wake up every 5 minutes and direct work to threads. That makes it easy to parallelize+steer work as needed. I use a orchestrator skill combined with my triage+autoreview+computer use skills, so some work can land autonomously.
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2065003786322460760
+- **Link:** https://github.com/steipete/agent-scripts/blob/main/skills/maintainer-orchestrator/SKILL.md
+- **Link:** https://github.com/steipete/agent-scripts/blob/main/skills/github-project-triage/SKILL.md
+- **Filed:** [steipete-agent-scripts.md](./knowledge/tools/steipete-agent-scripts.md)
+- **What:** Steipete shared two Codex skills that run a 5-minute repo-maintenance loop: an orchestrator that routes issues/PRs to threads and a triage skill that buckets work into autonomous, owner-needed or close, letting some changes land unattended.
+
+---
+
+# Wednesday, June 10, 2026
+
+## @NoCodeDan - Rebuilding Elgato's prompter app with Fable for better voice mode
+> Fable is a BEAST! I had it rebuild the @elgato prompter app so that voice mode could work better. My version isnt perfect yet but it's crushing Elgato's imo. For the first 1min 30secs I use their app, afterwards I use mine. (sorry for the phone audio, main mic was in use) https://t.co/QHF2uhhx6v
+
+- **Tweet:** https://x.com/NoCodeDan/status/2064891686589743322
+- **What:** THIN: Video demo comparing Elgato's teleprompter app with a Fable-built clone whose voice-following mode works better; a showcase of Fable one-shotting a replacement for a commercial app, with no code shared.
+
+## @milesdeutscher - Guide to prompting Claude Fable 5 for autonomous work
+> Anthropic posted a FULL GUIDE on how to prompt Fable 5 (Mythos). Not meant to be prompted like any other model; meant to run autonomously. 1. Effort selection: High for most, Xhigh for complex, Ultracode for full autonomous orchestration. 2. /loop prompting: /loop <interval> + <goal>. 3. Tell it WHY, not just what: "I'm working on [larger task] for [who]. They need [what output enables]. With that in mind: [request]." 4. Keep prompts short. 5. Tell it when to pause (destructive action, scope change, input only you can give). 6. Build it a memory system: one lesson per file. Old Opus 4.8 skills/instructions may hurt results on Fable.
+
+- **Tweet:** https://x.com/milesdeutscher/status/2064882870037225762
+- **What:** Summarizes Anthropic's Fable 5 prompting advice: short, context-rich prompts stating purpose, /loop with a goal, explicit check-in rules, and a lesson-per-file memory, plus a warning to retire prompts tuned for older models.
+
+---
+
 # Tuesday, June 9, 2026
+
+## @doodlestein - Prompt for turning ee (eidetic_engine_cli) ideas into beads
+> *Replying to @doodlestein:* I'm like a kid in a candy store here, this is amazing. There's something to be said about biting off more than you can chew, being TOO ambitious, and getting bailed out by the genius of the next frontier model.
+>
+> For that first screenshot (for my eidetic_engine_cli tool, ee), I used this prompt: "First read ALL of the AGENTS.md file and README.md file super carefully... think about how we can improve the project to make it way more useful, compelling, agent-intuitive, agent-ergonomic... Describe all your best ideas for API surface, new commands, data structures, graph analysis algorithms, search concepts..." Then I followed up with my standard prompt to turn all that into beads, followed by my standard beads polishing prompt.
+
+- **Tweet:** https://x.com/doodlestein/status/2064542980808060963
+- **What:** Shares his ideation workflow: have the agent read AGENTS.md and README, then brainstorm radical agent-ergonomic improvements, convert the ideas into beads, and run a beads polishing prompt; applied here to the ee eidetic_engine_cli project.
+
+## @seangeng - Plan-optimizer skill: iterate plans with self-scoring until plateau
+> If you're curious at all why everyone smart is telling you to build in loops, here's an easy way to try. I built a skill that does this right here, iterate until a plan cannot be improved further, self-scoring. works great with Fable 5
+>
+> *Quoting @goodalexander:* I have a harness that makes a plan and tries to improve it iteratively until the plan cannot easily be improved. Usually you hit a top score where iterations become noise. Fable can break the previous ceiling pretty aggressively
+
+- **Tweet:** https://x.com/seangeng/status/2064513457584541849
+- **Link:** https://seangeng.com/freebies/plan-optimizer
+- **What:** Offers a copy-paste Claude Code skill that treats planning as search: score a plan against a rubric, critique, rewrite, keep the best, and stop when the score plateaus; goodalexander notes Fable breaks earlier score ceilings in such loops.
+
+## @trevin - Follow Google's DESIGN.md spec frontmatter, not just prose
+> If you're adding a DESIGN.md to your repos, please align with the Google spec. While prose describing your design system is helpful, it's less help than following the actual spec with the frontmatter.
+
+- **Tweet:** https://x.com/trevin/status/2064506914214658279
+- **Link:** https://github.com/google-labs-code/design.md/blob/main/docs/spec.md
+- **Filed:** [google-design-md-spec.md](./knowledge/tools/google-design-md-spec.md)
+- **What:** Urges repo authors to follow Google Labs' DESIGN.md spec with structured frontmatter rather than free-form prose, so agents can parse design systems consistently across projects.
+
+## @doodlestein - Fable 5 completes ambitious model_guided_research beads without bailing
+> *Replying to @doodlestein:* OK, round 2 with another project in a similar vein. It's already further into this one than it got in the bio_inspired_nanochat one before bailing. I think the "bio" part freaks it out much more than the "AI" part. This model_guided_research project is just as ambitious and open-ended, though
+>
+> Yes, success! It didn't bail on me. Even if it refuses to implement the stuff later, the beads are the hard (conceptual) part.
+
+- **Tweet:** https://x.com/doodlestein/status/2064474794762911887
+- **Link:** https://twitter.com/doodlestein/status/2064474794762911887
+- **What:** Reports the model completed the open-ended model_guided_research planning task, unlike an earlier bio_inspired_nanochat run where it bailed (apparently refusing on bio-themed work); he considers the generated beads the hard conceptual part even if implementation is refused.
+
+## @0xDesigner - Use Fable 5 to run a design audit workflow with before/after visuals
+> ok ok listen: ask fable 5 to create a workflow to run a design audit. and ask it to create visuals for before and after the changes it proposes because you're tired of reading. trust me, bro.
+
+- **Tweet:** https://x.com/0xDesigner/status/2064473137585045534
+- **What:** Suggests asking Fable 5 to build a design-audit workflow that outputs before/after visuals of its proposed changes, so reviewers can judge fixes visually rather than reading long text reports.
+
+## @alexalbert__ - Four tips for using Claude Fable 5 effectively
+> We've reset usage limits across our products! For those just starting to test Fable, here's four tips: 1. Give it bigger, more ambitious tasks. 2. Use xhigh/high effort as default, med for faster interactive sessions. 3. Rework your skills and CLAUDE.mds. Instructions written for prior models anchor Fable to stale patterns, let it use its own judgment first. 4. Move from providing tasks to providing objectives... (/loop and /goal are built for this)
+>
+> *Quoting @TheAmolAvasare:* To celebrate the Fable 5 launch, we just reset 5-hour and weekly limits for all users across our products! Enjoy
+
+- **Tweet:** https://x.com/alexalbert__/status/2064467657483829441
+- **What:** Anthropic's guidance for Fable 5: assign bigger tasks, default to xhigh/high effort, prune old skills and CLAUDE.md rules that anchor stale behavior, and specify objectives plus verification (via /loop and /goal); also notes usage limits were reset for the launch.
+
+## @backnotprop - Fable 5 single-shots interactive architecture SVG for Plannotator
+> I had not planned on spamming this, but Fable 5 just single-shot an impressive interactive architecture svg. It's pure SVG and HTML, no library. It's a real @plannotator system and it read the OpenAPI spec prior, but still - this is damn good. I didn't tell it to do the whole varying sequences like it did, so I was pretty shocked by that. ill reply with the prompt
+
+- **Tweet:** https://x.com/backnotprop/status/2064461973442707942
+- **What:** THIN: Showcases Fable 5 generating, in one shot, an interactive architecture diagram in plain SVG/HTML for the Plannotator system after reading its OpenAPI spec, including unprompted varying sequences; the prompt is in a reply and likely a screenshot or video.
+
+## @timsneath - Apple container machines: persistent Linux on Mac from WWDC
+> One personal favorite feature announced at WWDC will I suspect be a sleeper hit: container machines, allowing your Mac to run a lightweight, persistent Linux environment with your home directory and repos automatically mounted: https://t.co/dOBdfOOVxC
+
+- **Tweet:** https://x.com/timsneath/status/2064448862597869761
+- **Link:** https://github.com/apple/container/blob/main/docs/container-machine.md
+- **Filed:** [apple-container-machine.md](./knowledge/tools/apple-container-machine.md)
+- **What:** Highlights Apple's new "container machine" feature in the open-source container project: a lightweight persistent Linux environment on macOS with home directory and repos auto-mounted, useful as a dev sandbox.
+
+## @meta_alchemist - Fable 5 repo audit and improvement plan prompt
+> Got your hands on Claude Fable 5? The first thing you should do is upgrade your main projects with it. Run this Audit & Project Improvement Prompt on each repo that's important to you (simply copy-paste it): "Repo Audit & Improvement Plan... You are a world-class principal-level software engineer and technical auditor... Work in four phases: Discovery & Mapping, Audit (evidence-based, severity-rated across architecture, code quality, security...), ..."
+
+- **Tweet:** https://x.com/meta_alchemist/status/2064431279383433646
+- **What:** Shares a long copy-paste prompt (said to be written by Claude Fable 5) that runs a four-phase repo audit: map the repo, rate findings by severity with file:line evidence across dimensions like architecture, quality and security, then produce a prioritized improvement plan.
+
+## @fin465 - One-person startup stack in 2026: AI tools replace whole teams
+> everyone's sleeping on how absurdly good 2026 is to start a company (even compared to 2024)
+>
+> one person can now: ship full apps without engineers (cursor, replit); design without being a designer (v0, Claude Design); turn one video into 10 clips (opus, descript); push clips to millions (X, Linkedin, TikTok); replace a support team (chatbase, intercom); watch what users do (Posthog); find + target leads on autopilot (origami). This is such a rare window.
+
+- **Tweet:** https://x.com/fin465/status/2064388327592058994
+- **What:** Argues 2026 is an unusually easy time to found a company solo, listing a tool per function (Cursor/Replit, v0, Opus Clip/Descript, Chatbase/Intercom, PostHog, Origami) that replaces engineers, designers, support and sales staff.
 
 ## @firecrawl - Firecrawl agent signups: agents claim API keys themselves via WorkOS auth.md
 > We're betting on the next 1B+ users being agents, so we're launching agent signups.
