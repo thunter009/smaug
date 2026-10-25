@@ -11371,6 +11371,12 @@
 
 # Friday, April 10, 2026
 
+## @brian_lovin - Aggressive Logging with OTel and Axiom Lets LLMs Debug Reports
+> Advice to fellow side project tinkerers: don't forget to set up aggressive logging! (OTel traces + manual event capture + Vercel log drain into Axiom works great for me). I can fix most bug reports by pasting the user's email into an LLM connected to the Axiom MCP. Between events and traces, the model can replay nearly any timeline of activity and figure things out with a high level of detail. Don't forget to scrub PII. Over-log at first and trim back as you build confidence in different areas of the code. MCPs are still fine, ignore the haters. This works fine at a small scale, ofc.
+
+- **Tweet:** https://x.com/brian_lovin/status/2042472351376556144
+- **What:** Describes a logging stack of OTel traces, manual events, and a Vercel log drain into Axiom. An LLM connected to the Axiom MCP replays user timelines to fix bug reports, with a warning to scrub PII and over-log early.
+
 ## @ctatedev - json-render adds Gaussian splat rendering via Three.js
 > Bonsai trees, gardens, kitchens. All described in JSON. json-render now renders Gaussian splats: .splat/.ply via GaussianSplat component, composable with lights, environments, post-fx, Float + Spin animation wrappers, powered by Three.js / R3F.
 
@@ -11493,6 +11499,52 @@
 
 # Thursday, April 9, 2026
 
+## @BHolmesDev - Headless ob CLI for Scheduled Obsidian Sync Automation
+> The Obsidian CLI is cool, but have you heard of the `ob` CLI? It's a "headless" version that just handles syncing, which makes it perfect for automations. Used it to have an agent fill in missing tags/categories on my notes every evening. So useful!
+
+- **Tweet:** https://x.com/BHolmesDev/status/2042361921857356270
+- **What:** Recommends the headless `ob` CLI, which only handles Obsidian sync, as a base for scripted automation. The author runs an agent each evening that fills missing tags and categories in their notes.
+
+## @Sajeel_Purewal - Single-Prompt Raspberry Pi Smart Speaker Design via Blueprint
+> 1 in 3 households have a smart speaker like google home or amazon echo but I don't think most people realize how simple they are to build. I was able to source parts and design one with a single prompt using blueprint.io. It's powered off a raspberry pi zero.
+
+- **Tweet:** https://x.com/Sajeel_Purewal/status/2042353525368242327
+- **Link:** https://www.blueprint.io/
+- **Filed:** [blueprint-ai-hardware-design.md](./knowledge/articles/blueprint-ai-hardware-design.md)
+- **What:** Demonstrates an AI hardware design tool that generates sourcing, wiring, and assembly plans from one prompt, using a Raspberry Pi Zero smart speaker as the example. The author claims smart speakers are simple to build, and the linked site describes wiring diagrams and bills of materials.
+
+## @leftcurvedev_ - Lightpanda Fails TLS Fingerprint Checks, Camofox Recommended
+> As someone who scraped for a living for years, anyone recommending lightpanda to do it shows that they don't have any experience regarding the subject. Only one thing to understand: TLS Fingerprinting. You can have the fastest headless setup, puppeteer, lightpanda, and one wrong ClientHello and Cloudflare/Akamai lights you up instantly. Real TLS fingerprint spoofing requires low-level control in C++ or Rust. What I recommend: Camofox, an actual Firefox fork with proper C++ fingerprint spoofing, native TLS behavior, proxy/geo baked in. Hermes Agent implemented the feedback within two hours.
+> *Quoting @JafarNajafov:* BREAKING: Someone just open-sourced a headless browser that runs 11x faster than Chrome and uses 9x less memory. It's called Lightpanda, built from scratch for AI agents, scraping, and automation. Not a Chromium fork. A completely new browser written in Zig.
+
+- **Tweet:** https://x.com/leftcurvedev_/status/2042285416624128456
+- **Link:** https://github.com/jo-inc/camofox-browser
+- **Filed:** [camofox-browser.md](./knowledge/tools/camofox-browser.md)
+- **What:** Argues that headless browsers such as Lightpanda get flagged by TLS ClientHello fingerprinting on Cloudflare and Akamai. Recommends Camofox, a Firefox fork that spoofs fingerprints at the C++ level, against the quoted Lightpanda launch post.
+
+## @Mr_Buzzoni - Karpathy-Style LLM Wiki in Obsidian Bases and Claude Skills
+> THE 1-HOUR OBSIDIAN LECTURE THAT CHANGES HOW YOU THINK ABOUT YOUR VAULT. Nick Milo breaks down Obsidian Bases, the feature that finally makes Obsidian a real database, not just a folder of markdown files. Save this. Watch it before you set up your vault.
+> *Quoting @Mr_Buzzoni:* X article "Andrej Karpathy Method: Claude Skills + Obsidian Explained" (author @polydao)
+
+- **Tweet:** https://x.com/Mr_Buzzoni/status/2042257320369918419
+- **Link:** https://x.com/i/article/2040467358272155648
+- **Filed:** [karpathy-method-claude-skills-obsidian.md](./knowledge/articles/karpathy-method-claude-skills-obsidian.md)
+- **What:** Promotes a 1-hour Nick Milo lecture on Obsidian Bases and a guide where an LLM compiles raw notes into a linked markdown wiki that Claude Skills maintain. The core idea is that the human reads and asks questions while the LLM writes and lints the vault.
+
+## @milan_janosov - Global Building Atlas: TUM dataset with tutorial and paper
+> Have you started using the #Global #Building #Atlas yet? An amazing project by the Technical University of Munich.
+>
+> Python tutorial on YT: https://t.co/ozyOOhTLnS
+>
+> Fossbytes feature: https://t.co/hmoNh11EGO
+>
+> Paper: https://t.co/0ZDinfB1Bh https://t.co/VcuKqxJqmL
+
+- **Tweet:** https://x.com/milan_janosov/status/2042135927758168363
+- **Link:** https://www.youtube.com/watch?v=VCwYpbc6S3o (tutorial); https://essd.copernicus.org/articles/17/6647/2025/ (paper); Fossbytes link resolves to https://www.instagram.com/p/DR8R_U8EbAv/
+- **Filed:** [global-building-atlas-paper.md](./knowledge/articles/global-building-atlas-paper.md), [global-building-atlas-python-tutorial.md](./knowledge/videos/global-building-atlas-python-tutorial.md)
+- **What:** Milan Janosov promotes the Global Building Atlas, a Technical University of Munich building dataset, and links a Python YouTube tutorial and an ESSD 2025 paper. The paper is the primary source; the tutorial has no transcript yet.
+
 ## @recogard - Prediction market datasets and backtesting repos for strategy research
 > 36 GB of real analytical data based on over 72 million Polymarket trades is available on GitHub and its absolutely free…
 >
@@ -11535,6 +11587,1205 @@
 - **Tweet:** https://x.com/laogui/status/2042277952877125708
 - **Link:** https://blog.gitbutler.com/series-a
 - **What:** Chinese-language summary of GitButler's $17M Series A: a Git client rebuilt for humans and AI agents, with parallel and stacked branches in one workspace, AI-generated commit messages, and undo; the quoted GitButler post links the funding announcement.
+
+---
+
+# Wednesday, April 8, 2026
+
+## @garrytan - AGENTS.md rule: turn repeated agent requests into cron-run skills
+> How I get my claw to be a durable AI agent I never have to instruct twice
+>
+> Paste this into your OpenClaw's AGENTS.md or send it as a message:
+>
+> You are not allowed to do one-off work. If I ask you to do something and it's the kind of thing that will need to happen again, you must:
+>
+> 1. Do it manually the first time (3-10 items)
+> 2. Show me the output and ask if I like it
+> 3. If I approve, codify it into a SKILL.md file in workspace/skills/
+> 4. If it should run automatically, add it to cron with `openclaw cron add`
+>
+> Every skill must be MECE — each type of work has exactly one owner skill. No overlap, no gaps. Before creating a new skill, check if an existing one already covers it. If so, extend it instead.
+>
+> The test: if I have to ask you for something twice, you failed. The first time I ask is discovery. The second time means you should have already turned it into a skill running on a cron.
+>
+> When building a skill, follow this cycle:
+> - Concept: describe the process
+> - Prototype: run on 3-10 real items, no skill file yet
+> - Evaluate: review output with me, revise
+> - Codify: write SKILL.md (or extend existing)
+> - Cron: schedule if recurring
+> - Monitor: check first runs, iterate
+>
+> Every conversation where I say "can you do X" should end with X being a skill on a cron — not a memory of "he asked me to do X that one time."
+>
+> The system compounds. Build it once, it runs forever.
+
+- **Tweet:** https://x.com/garrytan/status/2042034964825551072
+- **What:** Garry Tan publishes an AGENTS.md rule for OpenClaw agents. Agents must do a repeated task by hand first, get approval, codify it as a SKILL.md, and schedule it with cron. The rule also requires MECE skill ownership and treats a repeated request as a failure.
+
+## @dremnik - Saasy: open-source multi-tenant SaaS starter templates
+> completely open source:
+>
+> https://t.co/pFOijv6lYa
+>
+> *Replying to @dremnik:* SaaS is like pizza now in that we're going to have a lot more of it. which means we need good, reusable open-source building blocks. got tired of wiring up auth, billing, workspaces, and entitlements from scratch every time, so I'm building a template that handles all of it. what's included: email/password + OAuth sign-in, workspace creation & switching, role-based membership & invitations, Stripe billing with plan entitlements, slug-based multi-tenant routing. powered by: @better_auth @resend @stripe
+
+- **Tweet:** https://x.com/dremnik/status/2042004456150298733
+- **Link:** https://github.com/humanitas-labs/saasy
+- **Filed:** [saasy.md](./knowledge/tools/saasy.md)
+- **What:** Andrew open-sources Saasy, a template set for multi-tenant SaaS that covers auth, Stripe billing, workspaces, and entitlements. The repo ships a Next.js + BetterAuth B2B variant and a Vite + Clerk B2C variant as separate workspaces.
+
+## @ctatedev - Browser tool benchmark: agent-browser and Lightpanda cost and speed
+> agent-browser + Lightpanda + batch + multi-session is a dangerous combo
+>
+> Completed this benchmark task in 5.85s https://t.co/Mkt4MgxWlV
+>
+> *Quoting @kunchenguid:* alright agent nerds, if you care about your tokens and usage limits, pay attention to the tools you give to your agents. i built a benchmark that compared various browser tools for agents, and here's an example of their massive difference in cost and latency doing the same task https://t.co/pvuIo5TP44
+
+- **Tweet:** https://x.com/ctatedev/status/2041928222766399805
+- **What:** Chris Tate warns that combining agent-browser, Lightpanda, batching, and multi-session runs is risky, citing a 5.85s benchmark run. He quotes Kun Chen's benchmark, which shows large cost and latency gaps between browser tools for agents on the same task.
+
+## @agrimsingh - Autofare: autoresearch loop aimed at cheap business-class fares
+> i took @karpathy's autoresearch loop and pointed it at business class flights because i wanna fly cheap but in class.
+>
+> (at least in theory - i'm a poor founder flying coach)
+>
+> here's autofare - autoresearch but for always flying in lie-flat beds
+>
+> made with codex + gpt 5.4 mini
+>
+> @gabrielchua @reach_vb @romainhuet @OpenAIDevs
+
+- **Tweet:** https://x.com/agrimsingh/status/2041916589906464820
+- **What:** Agrim Singh applied Karpathy's autoresearch loop to search for cheap business-class flight fares, built as "autofare" with Codex and GPT-5.4 mini. It shows the autoresearch pattern carrying over from ML training to a non-ML search problem.
+
+## @Shpigford - Clearly: native markdown editor adds folder-based document workspaces
+> major new update to https://t.co/n103RxY0E0 today! you can now use it as a full document workspace with folders!
+>
+> it uses your existing doc locations. anything you can access in finder, you can add as a folder location! https://t.co/5mU57bYjDC
+
+- **Tweet:** https://x.com/Shpigford/status/2041915835485245964
+- **Link:** https://clearly.md/
+- **Filed:** [clearly.md](./knowledge/articles/clearly.md)
+- **What:** Josh Pigford's update turns Clearly, a native markdown editor for Mac and iPhone, into a full document workspace with folders. Any folder reachable in Finder can be added as a location, so the editor works on existing document directories without moving files.
+
+## @aidenybai - Expect: open-source agent skill that tests code in a real browser
+> we're open source + love feedback.
+>
+> reply if you hit an issue and I'll get it resolved live
+>
+> https://t.co/uRQYRI5MP3
+
+> *Replying to @aidenybai:* Install it via your terminal: npx expect-cli@latest init https://t.co/m2rC87HYGs
+
+- **Tweet:** https://x.com/aidenybai/status/2041909118647279620
+- **Link:** https://github.com/millionco/expect
+- **Filed:** [expect.md](./knowledge/tools/expect.md)
+- **What:** Aiden Bai's reply points to Expect, an open-source agent skill that reads git changes, generates a browser test plan, and runs it with Playwright using the user's real cookies. It runs locally inside Claude Code, Codex, or Cursor and offers a CI mode for per-PR testing.
+
+## @dominikmartn - Claude skill that generates design languages from links, brands, or images
+> because the nothing skill for claude went to the moon, i'm setting up a skill that should be able to consistently one shot proper design languages based on links, brand names or images. just polishing the final bits and pieces, should be ready soon. https://t.co/1KLMtufI4p
+
+- **Tweet:** https://x.com/dominikmartn/status/2041885193217147193
+- **What:** Dom is finishing a Claude skill meant to reliably produce a complete design language from a link, brand name, or image. He says it is nearly ready, prompted by the popularity of a "nothing" skill for Claude.
+
+## @MichaelAlbertMD - Evidence-based daily supplement stack that skips longevity fads
+> Every morning I take five things.
+> A statin. Ezetimibe. Psyllium. Creatine. A multivitamin.
+>
+> Once a week, I add a sixth: tirzepatide.
+>
+> No rapamycin. No NMN. No Bryan Johnson protocol.
+>
+> Here's what the evidence actually says—and why I left everything else out. 🧵
+
+- **Tweet:** https://x.com/MichaelAlbertMD/status/2041859792784822599
+- **What:** Michael Albert, MD shares his daily regimen of a statin, ezetimibe, psyllium, creatine, and a multivitamin, plus weekly tirzepatide. He rejects rapamycin, NMN, and Bryan Johnson's protocol, and the thread promises the evidence behind each choice.
+
+## @akshay_pachaar - Open-source local alternative to Claude Cowork
+> Another blow to Anthropic!
+>
+> Devs built a free and better Claude Cowork alternative:
+>
+> - 100% local
+> - voice-enabled
+> - works with any LLM
+> - MCP tool extensibility
+> - obsidian-compatible vault
+> - background agents & web search
+> - automatic knowledge graph creation
+>
+> 100% open-source. https://t.co/8KHJGzP71G
+
+- **Tweet:** https://x.com/akshay_pachaar/status/2041856590341677378
+- **What:** Akshay Pachaar points to a free, fully open-source Claude Cowork alternative that runs locally, works with any LLM, supports MCP tools, stores notes in an Obsidian-compatible vault, and builds a knowledge graph automatically.
+
+## @_avichawla - Rowboat open-source knowledge graph extends Karpathy's LLM wiki to work context
+
+> The next step after Karpathy's wiki idea:
+>
+> Karpathy's LLM Wiki compiles raw sources into a persistent md wiki with backlinks and cross-references.
+>
+> The LLM reads papers, extracts concepts, writes encyclopedia-style articles, and maintains an index. The knowledge is compiled once and kept current, so the LLM never re-derives context from scratch at query time.
+>
+> This works because research is mostly about concepts and their relationships, which are relatively stable.
+>
+> But this pattern breaks when you apply it to actual work, where context evolves across conversations constantly, like deadlines, plans, meetings, etc.
+>
+> A compiled wiki would have a page about the project but it wouldn't track ground truth effectively.
+>
+> Tracking this requires a different data structure altogether, which is not a wiki of summaries, but a knowledge graph of typed entities where people, decisions, commitments, and deadlines are separate nodes linked across conversations.
+>
+> Rowboat is an open-source implementation of exactly this, built on top of the same Markdown-and-Obsidian foundation that Karpathy uses, but extended into work context.
+>
+> The way it works is that it ingests conversations from Gmail, Granola, and Fireflies, and instead of writing a summary page per topic, it extracts each decision, commitment, and deadline as its own md file with backlinks to the people and projects involved.
+>
+> That's structurally different from a wiki, because a wiki page about "Project X" gives you a summary of what was discussed.
+>
+> A knowledge graph gives you every decision made, who made it, what was promised, when it was promised, and whether anything has shifted since.
+>
+> It also runs background agents on a schedule, so something like a daily briefing gets assembled automatically from whatever shifted in your graph overnight. You control what runs and what gets written back into the vault.
+>
+> You bring your own model through Ollama, LM Studio, or any hosted API, and everything is stored as plain Markdown you can open in Obsidian, edit, or delete.
+>
+> Repo: https://github.com/rowboatlabs/rowboat
+>
+> TL;DR: Karpathy's LLM Wiki compiles research into a persistent Markdown wiki. It works well for concepts and their relationships but breaks down for real work where the context evolves over time. Rowboat builds a knowledge graph instead of a wiki, extracts typed entities with backlinks, and runs background agents that act on that accumulated context. Open-source, local-first, bring your own model.
+>
+> Karpathy nailed the foundation. The next layer is here.
+>
+> *Quoting @karpathy:* LLM Knowledge Bases
+>
+> Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So:
+>
+> Data ingest:
+> I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally "compile" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them.
+>
+> IDE:
+> I use Obsidian as the IDE "frontend" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides).
+>
+> Q&A:
+> Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale.
+>
+> Output:
+> Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up "filing" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always "add up" in the knowledge base.
+>
+> Linting:
+> I've run some LLM "health checks" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into.
+>
+> Extra tools:
+> I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries.
+>
+> Further explorations:
+> As the repo grows, the natural desire is to also think about synthetic data generation + finetuning to have your LLM "know" the data in its weights instead of just context windows.
+>
+> TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts.
+
+- **Tweet:** https://x.com/_avichawla/status/2041798871383441807
+- **Link:** https://github.com/rowboatlabs/rowboat
+- **Filed:** [rowboat.md](./knowledge/tools/rowboat.md)
+- **What:** Avi Chawla presents Rowboat as the next layer after Karpathy's LLM wiki: an open-source, local-first tool that builds a typed knowledge graph of decisions, commitments, and deadlines from Gmail, Granola, and Fireflies, and runs scheduled background agents over it.
+
+## @heynavtoor - DeepTutor turns your textbooks into a self-hosted AI tutor
+
+> 🚨 Tutors charge $50/hour. Coursera charges $50/month. Someone built an AI that uploads your textbooks and becomes a personal tutor that never sleeps. 10,300 GitHub stars. Free.
+>
+> It's called DeepTutor.
+>
+> An AI-powered learning assistant that reads your textbooks, research papers, and documents. Then teaches you from them. Personally.
+>
+> Not a chatbot. Not a search engine. A full multi-agent tutoring system that solves problems step by step, generates practice exams, creates visual explanations, and conducts deep research. All from YOUR materials.
+>
+> Here's what this system does:
+>
+> → Upload textbooks, papers, technical docs. It builds a knowledge base from YOUR content.
+> → Ask any question. AI answers with step-by-step solutions and citations from your materials.
+> → Generates quizzes and practice problems matched to your level
+> → Upload a real exam. It creates practice questions that mimic the exact style and difficulty.
+> → Deep Research mode: decomposes topics, dispatches parallel agents, produces cited reports
+> → Guided Learning: turns your materials into visual, interactive learning paths
+> → AI Co-Writer: markdown editor where AI helps you write, rewrite, and expand
+> → Personal TutorBots: autonomous tutors with their own memory, personality, and workspace
+>
+> Here's the wildest part:
+>
+> TutorBots are not chatbots. They're autonomous agents with soul files that define their personality. Create a Socratic math tutor. A patient writing coach. A rigorous research advisor. All running simultaneously. Each with its own memory. Each evolving as you learn.
+>
+> They even have a heartbeat system. Your tutor shows up with study reminders and review check-ins. Even when you don't ask.
+>
+> An AI tutor that initiates. That remembers. That adapts. That never bills you.
+>
+> Private tutors: $50 to $100/hour. Coursera: $50/month. Chegg: $15/month. University tuition: $20,000+ per year.
+>
+> This is free. Self-hosted. Your data stays on your machine.
+>
+> 10.3K GitHub stars. 1.4K forks. Built by HKU Data Intelligence Lab. AGPL-3.0 License.
+>
+> 100% Open Source.
+
+- **Tweet:** https://x.com/heynavtoor/status/2041787710546059700
+- **What:** According to the post, DeepTutor is a free, self-hosted, AGPL-3.0 multi-agent tutoring system that builds a knowledge base from the user's own textbooks and papers, then generates cited answers, practice exams, deep research reports, and persistent TutorBots with memory and study reminders.
+
+## @hasantoxr - TaxHacker self-hosted AI accounting app extracts receipt and invoice data
+
+> I've been looking for something like this for two years.
+>
+> TaxHacker is a self-hosted AI accounting app that reads receipts, invoices, and PDFs extracts every field automatically and saves everything into a structured database you actually own.
+>
+> Upload anything. Store receipts, restaurant bills, invoices, bank statements, handwritten notes. Any language. Any currency. The AI handles it.
+>
+> It auto-converts to your base currency using historical exchange rates from the actual transaction date. Supports 170+ currencies and 14 cryptocurrencies.
+>
+> Every prompt the AI uses is editable. Every field is customizable. Your data never leaves your server.
+>
+> https://t.co/S6pxaVFteD
+>
+> Two commands to self-host. MIT License. 100% Open Source.
+
+- **Tweet:** https://x.com/hasantoxr/status/2041783692176323045
+- **Link:** https://github.com/vas3k/TaxHacker
+- **Filed:** [taxhacker.md](./knowledge/tools/taxhacker.md)
+- **What:** TaxHacker is an MIT-licensed, self-hosted accounting app that uses AI to extract fields from receipts, invoices, and bank statements, converts currencies at historical rates, and stores everything in a customizable database the user controls.
+
+## @appfactory - Agent CI runs GitHub Actions locally with instant cache restores and pause-on-failure
+
+> This is agent-ci.dev, it runs the same native GitHub Actions Runner in a container. The difference is the control pane: Which is a local http server. So it never communicates with github.com, because of this we can do all kinds of interesting things:
+>
+> 1. 0ms cache restores (copy on write mounts)
+> 2. pause-and-retry on failures (bash injection in step.)
+> 3. 100% compatible with GH actions. (just a control pane.)
+>
+> *Quoting @appfactory:* Running GitHub Actions locally never gets old. https://t.co/YCw3KdS1Kp
+
+- **Tweet:** https://x.com/appfactory/status/2041767437771665457
+- **Link:** https://agent-ci.dev/
+- **Filed:** [agent-ci.md](./knowledge/articles/agent-ci.md)
+- **What:** Appfactory describes Agent CI, which runs the official GitHub Actions runner in a container under a local HTTP control pane that never contacts GitHub, enabling near-instant cache restores, pause-and-retry on failed steps, and full compatibility with existing GitHub Actions workflows.
+
+## @andrewfarah - Field Theory CLI syncs X bookmarks and threads locally for agents
+
+> a love letter to the thousands of people who downloaded this over last 48 hrs,
+>
+> run this:
+> › npm install -g fieldtheory@latest
+> › ft sync --gaps (grabs threads, RTs)
+>
+> bonus:
+> › ft wiki (creates md wiki, 🕗)
+> › ft md (exports md)
+> › ft skill install (/fieldtheory)
+>
+> *Quoting @andrewfarah:* sharing my first open source project
+>
+> a CLI for downloading and syncing your X bookmarks locally so your agent can access them. it's free
+>
+> › npm install -g fieldtheory
+> › login to your X account in a chrome tab
+> › ft sync (done!)
+>
+> bonus:
+> › ft viz
+> › ft classify https://t.co/QSILsktWfN
+
+- **Tweet:** https://x.com/andrewfarah/status/2041729631989198910
+- **Link:** https://twitter.com/andrewfarah/status/2040535589771149379
+- **What:** Andrew Farah announces Field Theory, a free open-source CLI that downloads and syncs a user's X bookmarks and threads locally so AI agents can read them, with extra commands for building a markdown wiki, exporting markdown, and installing a Claude skill.
+
+---
+
+# Tuesday, April 7, 2026
+
+## @dayjournal_nori - Geocoding Playground: browser-only geocoder on Overture Maps
+
+> Geocoding Playgroundが公開 🗺️
+> DuckDB-WASMとOverture Mapsの4.69億件超のアドレスデータを活用したブラウザ上で動くジオコーダー。ブラウザ上のみでジオコーディングもできる時代になってきました。
+
+> #foss4g #foss4gj
+
+- **Tweet:** https://x.com/dayjournal_nori/status/2041666078967812533
+- **Link:** https://github.com/walkthru-earth/geocoding-playground
+- **Filed:** [geocoding-playground.md](./knowledge/tools/geocoding-playground.md)
+- **What:** Geocoding Playground is a browser-based geocoder that runs DuckDB-WASM over more than 469M Overture Maps addresses, so forward and reverse geocoding work with no backend.
+
+## @ctatedev - Email Emulation skill for testing magic links and OTP codes
+
+> New Skill: Email Emulation
+
+> Test magic links, verification codes w/o sending real emails
+
+> → Send via the Resend SDK
+> → Retrieve emails from a local inbox
+> → Extract codes to complete auth flows
+> → One env var to reroute traffic
+
+> npx skills add vercel-labs/emulate --skill resend
+
+- **Tweet:** https://x.com/ctatedev/status/2041654204771500547
+- **What:** Chris Tate announces a Resend-based skill from vercel-labs/emulate that routes test email to a local inbox, so agents can read magic links and verification codes and finish auth flows without sending real email, using one env var to reroute traffic.
+
+## @isaaccorley_ - TerraBit: binarized satellite embeddings searched with zero backend
+
+> What if you could search 50M satellite image embeddings with no server, no database, and no API?
+
+> Part 2 of @calebrob6 and my series on Compressing Earth Embeddings is live. We binarized the global Clay v1.5 Sentinel-2 embeddings from 183GB → 7GB and built TerraBit — a retrieval demo that runs with zero backend. DuckDB-WASM, cleverly partitioned GeoParquet on S3, and brute-force Hamming in an in-memory index makes the experience feel too good to be true.
+
+> If you also wondered how Google's TurboQuant fares on compressing earth embeddings -- don't worry, we got you covered in the blog -- hint: TurboQuant int4 is a solid choice
+
+- **Tweet:** https://x.com/isaaccorley_/status/2041534526690648481
+- **Link:** https://geospatialml.com/posts/terrabit/
+- **Filed:** [terrabit-earth-embeddings-retrieval.md](./knowledge/articles/terrabit-earth-embeddings-retrieval.md)
+- **What:** The post shows that binarizing Clay v1.5 Sentinel-2 embeddings shrinks global storage from 183GB to 7GB, and that brute-force Hamming search over that index runs fully in the browser via DuckDB-WASM and GeoParquet on S3.
+
+## @sopersone - Prediction market trading bot series, part 5: vectorized backtesting
+
+> This 3-hour algorithmic trading video with Python is like getting a mini course from Massachusetts Institute of Technology - for free
+
+> It reveals more about quant trading and bots than most traders learn in years on the market
+
+> Bookmark it. Watch it. Then watch it again.
+
+> *Quoting @sopersone:* (quoted tweet contains only the article link)
+
+- **Tweet:** https://x.com/sopersone/status/2041514909976981887
+- **Link:** https://x.com/i/article/2040785957318713344
+- **Filed:** [prediction-market-trading-bot-python.md](./knowledge/articles/prediction-market-trading-bot-python.md)
+- **What:** Part 5 of a 12-part Python series tests three BTC strategies (SMA crossover, momentum, mean reversion) with vectorized backtesting, scoring return, max drawdown, and Sharpe against buy-and-hold. The MIT comparison in the tweet is the author's claim and is unverified.
+
+## @santifer - Career-ops: open-source local AI job search agent
+
+> Built this to find my own job. Open sourced it. 12K+ stars in two days.
+
+> *Quoting @garrytan:* Golden age of open source is here
+
+- **Tweet:** https://x.com/santifer/status/2041403685696053741
+- **Link:** https://github.com/career-ops-hq/career-ops
+- **Filed:** [career-ops.md](./knowledge/tools/career-ops.md)
+- **What:** Career-ops is a free, locally run AI job search agent that scores each job 1-5 against your CV, tailors a resume and cover letter per application, and tracks applications, leaving the final Submit click to you.
+
+## @whyarethis - Claimed local Gemma 4 26B run on an M1 MacBook
+
+> This is insane.
+>
+> Gemma 4 26B running at 13GB on my Macbook M1, full context window. 20-40 tokens a second.
+>
+> This was a REAP model by @0xseraph further optimized through coherence physics. Dead heads were pruned and replaced by SVD rotations. Weights were quantized, and KV cache was optimized to be negligible.
+>
+> I am now working to get speed up higher.
+>
+> Wild to be talking to a local LLM which has been shrunk through the oscillator physics I have been working on for 6+ months now.
+>
+> #project89
+
+- **Tweet:** https://x.com/whyarethis/status/2041399834041631146
+- **What:** Parzival reports Gemma 4 26B running locally at about 13GB on an M1 MacBook with full context at 20-40 tokens per second. He credits REAP pruning, SVD head replacement, and quantization, but the claims are unverified and the "coherence physics" method is undefined in the post.
+
+## @ivanleomk - Impeccable, a free design skill pack for AI harnesses
+
+> [link] by @pbakaus is the best skill i've used this year.
+>
+> Can't believe it's free
+
+- **Tweet:** https://x.com/ivanleomk/status/2041371674248147047
+- **Link:** https://impeccable.style/
+- **Filed:** [impeccable.md](./knowledge/tools/impeccable.md)
+- **What:** Ivan Leo calls Paul Bakaus's Impeccable the best skill he has used this year, and he notes it is free. The existing note records its anti-pattern detector, critique command, and design-brief workflow for AI coding harnesses.
+
+---
+
+# Monday, April 6, 2026
+
+## @dabit3 - Fourteen recurring SDLC automations run with Devin agents
+
+> At Cognition we're seeing coding agents handling the entire SDLC, going way beyond just coding.
+>
+> Here are some tips and tricks we're seeing dev teams use with agents like @devinai to handle the SDLC:
+>
+> 1. Scheduling daily E2E smoke tests: an automation signs up for your app, goes through onboarding, exercises core flows, and gets a pass/fail report in Slack every morning. You can even watch the screen recording or have it sent directly to you via Slack.
+>
+> 2. Auto-triaging production errors: it's easy to wire Sentry (or other) webhooks so new errors get root-caused, fixed, and shipped with a regression test before an on-call even has to look at their phone.
+>
+> 3. Scheduling weekly dependency updates: a scheduled session checks for outdated packages, runs your full test suite, and opens upgrade PRs grouped by patch, minor, and major bumps. Merge what's green, review what's not.
+>
+> 4. Morning health digests: a scheduled session queries Datadog for error spikes, latency regressions, and failing monitors, then posts a severity-rated summary to Slack before standup.
+>
+> 5. Auto-fix on every PR: Sophisticated review agents like Devin Review catch bugs, security issues, and style violations on open PRs, then automatically push fixes directly to the branch. No back-and-forth in review comments, the agent handles the entire loop.
+>
+> 6. Parallelization of large migrations: for instance scope a REST-to-GraphQL or JS-to-TS migration, split it into conflict-free work packages, and run 8+ sessions in parallel.
+>
+> 7. Scheduling feature flag cleanups after releases: teams leave flags in place as a kill switch after new launches, then never get around to removing them. You can set a one-time session for a week after ship day and the cleanup actually happens: dead code path removed, tests updated, PR opened. (done via Scheduled Sessions)
+>
+> 8. Weekly changelogs: once per week, a scheduled session groups merged PRs by category (features, fixes, improvements), posts the digest to Slack + anywhere else relevant, and updates CHANGELOG.md
+>
+> 9. Reproducing customer-reported bugs from support tickets: paste a customer issue into Slack, tag Devin, and it attempts to reproduce the problem in the browser. You get a screen recording of the reproduction and a filed bug with exact steps-to-reproduce attached.
+>
+> 10. Enforcing your design system: schedule a session that scans merged PRs for hardcoded colors, missing design tokens, style violations, etc... Auto-creates tickets or kicks off sessions for anything that slipped through.
+>
+> 11. Auto-generating API docs from a ticket: create a docs Playbook, sync it as a Linear label, and apply it to any ticket. Devin generates documentation following your conventions and opens a PR.
+>
+> 12. Keeping docs in sync with code changes: schedule a daily session that reviews the previous 24 hours of merged PRs against your documentation. If an API endpoint changed, a config option was renamed, or a feature works differently now, it opens a PR to update the docs before users hit stale information.
+>
+> 13. Racing competing solutions against the same problem: if have a slow API endpoint you launch 3 parallel sessions, each trying a different optimization strategies (caching, query rewrite, denormalization). Compare the benchmarks and merge the winner (this can also be automated)
+>
+> 14. Automated visual regressions tests before every PR: add a repo skill that triggers whenever UI files change. Devin starts the app, screenshots every affected page at multiple viewports, and flags layout breakage, overflow, or missing elements (or you can have Devin autofix them)
+>
+> This type of work is already partially being automated by a lot of teams, but usually by a human in the loop meaning they're taking time away from more important work to do things that don't usually provide immediate impact or business value
+>
+> It's obvious that automating these repetitive tasks frees up engineering time, but to me it's also not a bad recruiting tactic - if you work here you won't be spending any of your time doing boring work.
+>
+> *Quoting @ryancarson:* I use @DevinAI to do a daily e2e automation that signs up my app, goes through onboarding, tests the chat functionality and all of its tools, and then sends me a report every morning. I can even watch the video.
+>
+> I get this report every morning in Slack when I wake up. It's reassuring to know that core functionality in the app is working and if any bugs are found they get auto-fixed
+
+- **Tweet:** https://x.com/dabit3/status/2041361025929462064
+- **Link:** https://cognition.com/blog/closing-the-agent-loop-devin-autofixes-review-comments
+- **Filed:** [cognition-closing-the-agent-loop.md](./knowledge/articles/cognition-closing-the-agent-loop.md)
+- **What:** Nader Dabit lists fourteen SDLC jobs teams hand to Devin agents, from scheduled E2E tests and dependency bumps to auto-fixing PR review comments and visual regression checks. Ryan Carson's quoted daily E2E report shows the same pattern running in production today.
+
+## @BHolmesDev - Feeding Google Docs and Obsidian into coding agents via CLIs
+
+> 🛑 If you're still exporting Google Docs as Markdown, or spreadsheets as CSVs... it's time to stop!
+>
+> The GWorkspace and Obsidian CLIs have saved me so much time pulling context into Claude Code, Codex, etc. Here's a rundown
+
+- **Tweet:** https://x.com/BHolmesDev/status/2041281573840888215
+- **What:** Ben Holmes recommends the GWorkspace and Obsidian CLIs over exporting Google Docs as Markdown or sheets as CSVs when loading context into Claude Code and Codex. The rundown he links is not captured in this bookmark, so the specific commands remain unknown.
+
+## @tom_doerr - Open-source LLM backtesting tool for trading strategy research
+
+> Trading strategy research via LLM backtesting
+
+- **Tweet:** https://x.com/tom_doerr/status/2041266217969672592
+- **Link:** https://github.com/rv64m/autotrade
+- **Filed:** [autotrade.md](./knowledge/tools/autotrade.md)
+- **What:** The autotrade GitHub project uses LLM-driven backtesting to research trading strategies. The bookmark carries only a one-line pitch, so the strategy design and results remain unverified.
+
+## @micLivs - pi-psst lets agents use secrets without seeing values
+> introducing pi-psst 🤫, your agent uses secrets without ever seeing them. no more scrubbing for @badlogicgames!
+>
+> secrets are injected as env vars to bash tool, scrubbed from all tool output, stored in local encrypted vault. the agent knows what's available but never sees a value.
+>
+> set secrets directly from pi
+>
+> /psst-set SECRET <VALUE>
+>
+> list secrets
+>
+> /psst
+>
+> built on
+> https://t.co/B68WA1b9Kf
+> https://t.co/OiCxt8Xto9
+>
+> install with
+>
+> npm install -g psst-cli
+> pi install npm:@miclivs/pi-psst
+
+- **Tweet:** https://x.com/micLivs/status/2041215611330531454
+- **Link:** https://github.com/Michaelliv/psst, https://github.com/Michaelliv/pi-psst
+- **Filed:** [psst.md](./knowledge/tools/psst.md), [pi-psst.md](./knowledge/tools/pi-psst.md)
+- **What:** Michael Livs introduces pi-psst, a pi extension on the psst secrets manager that injects secrets as bash env vars, scrubs them from tool output, and keeps them in an encrypted local vault so the agent never reads values.
+
+## @RohOnChain - Math of combining 50 weak trading signals into one edge
+> https://t.co/kxpYUymKmq
+
+- **Tweet:** https://x.com/RohOnChain/status/2041180375838498950
+- **Link:** https://x.com/i/article/2037534155752583168
+- **Filed:** [alpha-combination-weak-signals.md](./knowledge/articles/alpha-combination-weak-signals.md)
+- **What:** Roan's article argues that many weak independent signals beat one strong signal, using the Fundamental Law of Active Management (IR = IC × √N) and an 11-step weighting procedure, then applies it to prediction markets with empirical Kelly sizing. The cited research figures are unverified.
+
+---
+
+# Sunday, April 5, 2026
+
+## @alliekmiller - Claudeopedia knowledge base built in Obsidian with Claude Code
+> I'm a knowledge base MONSTER in Claude Code right now.
+>
+> Introducing: Claudeopedia.
+>
+> 1) I took @karpathy's 'llm-wiki' idea doc (90% of this, so the biggest credit goes to @karpathy) and
+> 2) Combined it with the /last30days skill (HT @mvanhorn) and
+> 3) Added a /wiki skill with screenshot and download arguments to transfer raw inputs faster and
+> 4) Built an interactive visualization to search my knowledge base (with date ranges to compare knowledge over time!)
+> 5) Set up a "question your assumptions" cron job that runs my recent writing/client emails against the wikis
+>
+> All happening in Obsidian for now. All of this was done this weekend, including testing. Will keep adding more features.
+>
+> For now, the main topic I'm building out is (surprise, surprise) enterprise AI.
+>
+> I'm drooling.
+>
+> I need a Claude-branded bib.
+
+- **Tweet:** https://x.com/alliekmiller/status/2040884878229565816
+- **What:** Allie K. Miller built Claudeopedia in one weekend by combining Karpathy's llm-wiki idea with a last30days skill, a /wiki skill for fast input capture, a date-range visualization, and a cron job that checks her writing against the wikis.
+
+## @_julianschiavo - Codex automates ITA Matrix flight search with Chrome scripts
+> You can just do things: Codex set up Chrome automation scripts to extensively search flights with ITA matrix (~200 possibilities, after choice of outbound/inbound dates & destination airport & booking method) https://t.co/kTRM0TAc07
+
+- **Tweet:** https://x.com/_julianschiavo/status/2040866801694003266
+- **Link:** https://twitter.com/_julianschiavo/status/2040866801694003266
+- **What:** Julian Schiavo shows Codex writing Chrome automation scripts that search about 200 flight combinations on ITA Matrix, an example of an agent handling tedious multi-option research end to end without a purpose-built tool.
+
+## @Hesamation - Open-source career-ops agent runs AI job search in Claude Code
+> bro created an AI job search system for Claude Code that scored 700+ job applications and actually got him a job.
+>
+> AND IT'S NOW OPEN-SOURCE.
+>
+> It scans multiple company career pages, rewrites your CV per job, and even fills application forms. The repo has:
+> > 14 skill modes (evaluate, scan, PDF, ...)
+> > Go terminal dashboard
+> > ATS-optimized PDF generation via Playwright
+> > 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Stripe...)
+>
+> GitHub: https://t.co/PwrYBOAphi
+
+- **Tweet:** https://x.com/Hesamation/status/2040820834428658008
+- **Link:** https://github.com/career-ops-hq/career-ops
+- **Filed:** [career-ops.md](./knowledge/tools/career-ops.md)
+- **What:** Hesamation highlights career-ops, an open-source agent that runs inside Claude Code to scan company career pages, score each job 1-5 against your CV, tailor ATS-friendly resumes, and help fill applications while you press Submit.
+
+## @0xMovez - MIT probability lecture and a Polymarket copy-trading bot pitch
+> This 1 hour lecture on "Probability Theory" from MIT will teach you more about prediction markets than 2 month internship at at a Wall Street Quant firm.
+>
+> Bookmark this & give it 1 hour today, no matter what. It’s the most productive start you can give your week. Then read post below.
+>
+> *Quoting @0xMovez:* The best Polymarket Quant bot for copy-trading with a 99.3% win rate.
+>
+> backtested strategy on 72M Polymarket/Kalshi trades to hit +$805K PnL on 27,000 predictions.
+>
+> bot doesn't gamble - it uses math and statistics in its algo to consistently hit 99% win rate.
+>
+> his algo decoded:
+>
+> 1. Mispricing formula
+>
+> based on 72M trades data, traders constantly overpay for cheap contracts (0.1¢–50¢)
+>
+> most of the edge sits in (80¢-99¢) contracts - that's the range where the bot mostly trades
+>
+> • formula: δ = actual win rate - implied probability
+>
+> bot applies this to every trade to find the edge.
+>
+> //
+>
+> 2. Expected value calculation
+>
+> EV tells you whether a bet is worth taking, regardless of the outcome of any single trade.
+>
+> • formula: EV = (P win × Payout) - (P lose × Cost)
+>
+> bot calculates it to understand if the trade is worth the risk.
+>
+> //
+>
+> 3. Kelly Criterion sizing
+>
+> most powerful position sizing formula ever discovered for gambling, trading and prediction markets
+>
+> it tells the algo what % of your portfolio to size into each bet to win long term.
+>
+> • formula: f* = (p * b - q) / b
+>
+> mispricing found → EV calced → kelly sizing → enter
+>
+> profile: https://t.co/JgYrLNoos3
+>
+> start copy trading the bot with as little as $10 using Ares: https://t.co/Exz5L2eAuI
+>
+> 2 more formulas behind its algo revealed in the article below ↓
+
+- **Tweet:** https://x.com/0xMovez/status/2040740345395188206
+- **Link:** https://polymarket.com/0x751a2b86cab503496efd325c8344e10159349ea1, https://ares.pro/get-app?a=connect
+- **What:** Movez recommends a one-hour MIT probability lecture as better prediction-market training than a quant internship, then quotes a promotion for a Polymarket copy-trading bot. The quoted post claims a 99.3% win rate and lists mispricing, expected value, and Kelly sizing formulas, all unverified marketing claims.
+
+---
+
+# Saturday, April 4, 2026
+
+## @voidfiles - Markdown vault with AI as a context engineering system
+> This is a great idea, I’ve been doing this in some form for over a decade. My Staff Eng co-host @davidnoelromas reached out this week to ask for more details on how I’ve been using obsidian and AI. This an expanded version of what I told him.
+>
+> I’ve collected possibly too many markdown files.
+>
+> - find . -type f | wc -l
+>
+> 52447
+>
+> That’s my obsidian vault, and I use it with AI everyday without a special database, or a vector store, or a RAG pipeline. It’s merely files on disk.
+>
+> The problem this actually solves
+>
+> Think about the context you carry around in your head for your job. The history of decisions on a project. What you discussed with your manager three months ago. The Slack thread where the team landed on an approach. The Google Doc someone shared in a meeting you half-remember. The slowly evolving understanding of how a system works that lives across fifteen people’s heads and nowhere else.
+>
+> Now think about what happens when you need to produce something from all that context. A design doc. A perf packet. A project handoff. An onboarding guide for a new team member. You spend hours reassembling context from Slack, docs, emails, your own memory, and you still miss things.
+>
+> The knowledge base turns this into a system instead of a scramble.
+>
+> The Architecture
+>
+> A file system with markdown and wikilinks is already a graph database. Files are nodes. Wikilinks are semantic edges. Folders introduce taxonomy. You don’t need a special MCP server or plugin. The file system abstraction is the interface, and LLMs are surprisingly good at navigating it.
+>
+> I use a structure borrowed from Tiago Forte’s Building a Second Brain, with the PARA taxonomy as a starting point, extended with categories that match how I actually work:
+>
+> /projects/{name} /areas/{topics} /people/{slack_handle} /daily/{year}/{month}/{day}/ /meetings/{year}/{month}/{day}/
+>
+> Markdown files are nodes, wikilinks ([[target]]) are edges, the folder taxonomy is the schema and LLMs is the query engine. A graph database with a natural language query interface. No infrastructure required.
+>
+> How it works day to day
+>
+> After every meeting, the agent creates a note in daily/{year}/{month}/{day}/, downloads any attached Google Docs, and links everything to the long-running notes I keep for each person I interact with regularly. A note from a 1:1 with my boss JP gets a wikilink to [[/people/jp|jp]] and to whatever projects we discussed.
+>
+> Over months, each person’s note becomes a timeline of every conversation, decision, and open thread. Each project folder accumulates every relevant artifact. You don’t have to remember where things are. The graph remembers.
+>
+> For a work project, I can point the agent at a starting doc and say:
+>
+> - Spider through every tool you have access to and pull down all the related context.
+>
+> It grabs Slack threads, Google Docs, web resources, all rendered as markdown inside the project folder. From that assembled context, the agent can draft design docs, product vision statements, problem/solution analyses. The output is better than prompting cold because the LLM is working with the real history of the project, not your summary of it.
+>
+> This is the part Karpathy’s tweet hints at but doesn’t fully spell out: the knowledge base isn’t just for research. It’s a context engineering system. You’re building the exact input your LLM needs to do useful work.
+>
+> What makes this different from just using an LLM You might be thinking: I already ask Claude to help me write a design doc. True. But there’s a real difference between prompting “help me write a design doc for a rate limiting service” and prompting an LLM that has access to your project folder with six months of meeting notes, three prior design docs, the Slack thread where the team debated the approach, and your notes on the existing architecture.
+>
+> The knowledge base is a context engineering system. You’re not building a wiki for the sake of having a wiki. You’re building the input layer that makes every future LLM interaction better. Every meeting note, every linked decision, every filed artifact improves the quality of every query that follows.
+>
+> Where this is still hard
+>
+> The piece I haven’t cracked is automated inbox processing. The idea is straightforward: web clippings, meeting notes, Slack saves, and random captures all land in an inbox folder. The agent processes everything new, applies progressive summarization, breaks content into atomic pieces, correlates each piece with the right project, area, or person.
+>
+> I have a graveyard of experiments here. The LLM is good at summarizing and categorizing. The hard part is defining what “processed” means in a way that’s consistent enough to be useful six months later but flexible enough to handle the variety of stuff that lands in an inbox. Every attempt has been either too rigid (everything gets the same treatment) or too loose (the vault drifts into chaos).
+>
+> If you’ve solved this, I’d genuinely like to hear about it. Getting started
+>
+> You don’t need 52,000 files to get value from this. Start with three things:
+>
+> 1: Create the folder structure. Projects, areas, people, daily. Even empty, the taxonomy gives you and the LLM a schema.
+>
+> 2: After your next meeting, have the agent create a note and link it to the relevant person and project. Do this for a week. Watch the graph start to form.
+>
+> 3: The next time you need to write something, a design doc, a status update, a perf self-review, point the agent at the relevant folders and ask it to draft from what’s there.
+>
+> The difference is noticeable right away. Not because the LLM is smarter, but because it finally has the context to be useful.
+>
+> Your work compounds. That’s the thing that feels genuinely new.
+>
+> *Quoting @karpathy:* LLM Knowledge Bases
+>
+> Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So:
+>
+> Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally "compile" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them.
+>
+> IDE: I use Obsidian as the IDE "frontend" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides).
+>
+> Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale.
+>
+> Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up "filing" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always "add up" in the knowledge base.
+>
+> Linting: I've run some LLM "health checks" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into.
+>
+> Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries.
+>
+> Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation + finetuning to have your LLM "know" the data in its weights instead of just context windows.
+>
+> TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts.
+
+- **Tweet:** https://x.com/voidfiles/status/2040604785787965890
+- **What:** Voidfiles runs an Obsidian vault of about 52,000 markdown files with AI, using folders, wikilinks, and a PARA-style taxonomy instead of a vector store or RAG pipeline. He frames the vault as context engineering that feeds meeting history into later drafts, and says automated inbox processing is still unsolved.
+
+## @joshua_xu_ - Four Claude skills for digesting documents and data
+> I want to share four of the most frequent skills I use on Claude. They've been significantly helpful for me to digest documents and data. Feel free to install and try them out.
+>
+> • diagram it — Reads any content → picks best diagram type (flowchart, structural, timeline, tree, concept map) → renders an Excalidraw diagram inline in chat
+>
+> • nano this — Reads an uploaded doc → sends to Gemini image generation with Swiss Pulse design prompt → returns a polished infographic PNG
+>
+> • vis it — Reads any content → picks best visual format (chart, timeline, explainer, pipeline, comparison) → renders an interactive widget inline in chat
+>
+> • ver it — Reads any content → builds Swiss Pulse interactive HTML (hero metric, stats, Chart.js graph, dark mode) → returns shareable link
+>
+> To use any of them, just type the command + paste a URL, attach a doc, or reference something in conversation. That's it.
+>
+> Example:
+
+- **Tweet:** https://x.com/joshua_xu_/status/2040471007677599789
+- **What:** Joshua Xu shares four Claude skills that turn documents and data into outputs: an Excalidraw diagram, a Gemini-generated infographic, an inline interactive visual, and a shareable HTML page. Each skill runs from a command plus a URL, attached file, or conversation reference.
+
+## @karpathy - Shareable LLM idea file for building a personal knowledge wiki
+> Wow, this tweet went very viral!
+>
+> I wanted share a possibly slightly improved version of the tweet in an "idea file". The idea of the idea file is that in this era of LLM agents, there is less of a point/need of sharing the specific code/app, you just share the idea, then the other person's agent customizes & builds it for your specific needs.
+>
+> So here's the idea in a gist format: https://t.co/NlAfEJjtJV
+>
+> You can give this to your agent and it can build you your own LLM wiki and guide you on how to use it etc. It's intentionally kept a little bit abstract/vague because there are so many directions to take this in. And ofc, people can adjust the idea or contribute their own in the Discussion which is cool.
+>
+> *Quoting @karpathy:* LLM Knowledge Bases
+>
+> Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So:
+>
+> Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally "compile" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them.
+>
+> IDE: I use Obsidian as the IDE "frontend" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides).
+>
+> Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale.
+>
+> Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up "filing" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always "add up" in the knowledge base.
+>
+> Linting: I've run some LLM "health checks" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into.
+>
+> Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries.
+>
+> Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation + finetuning to have your LLM "know" the data in its weights instead of just context windows.
+>
+> TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts.
+
+- **Tweet:** https://x.com/karpathy/status/2040470801506541998
+- **Link:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+- **Filed:** [karpathy-llm-wiki-idea-file.md](./knowledge/tools/karpathy-llm-wiki-idea-file.md)
+- **What:** Karpathy shares an idea file gist meant to be given to an agent, which then builds a custom personal LLM wiki instead of copying his app. The quoted post describes his workflow: raw sources compiled into a markdown wiki, viewed in Obsidian, queried by agents, and cleaned with LLM health checks.
+
+## @AlterEgo_eth - Event-driven backtester for prediction market strategies
+> This GitHub repository lets you backtest trading strategies on real Polymarket and Kalshi data
+>
+> An event-driven engine that replays historical trades in chronological order - simulating order fills, portfolio tracking, and market lifecycle events
+>
+> Built on top of Jon-Becker's dataset with 36GB of real trade history
+>
+> What's inside:
+>
+> - Three ready-to-use strategies: buying at low prices, calibration arbitrage, and martingale with mean-reversion
+> - Detailed charts: equity curve, P&L, drawdown, Sharpe, monthly returns
+> - Polymarket and Kalshi support out of the box
+> - Simple API for writing your own strategies - drop a file in the folder and it appears in the menu automatically
+> - Hooks for every event: market open, close, resolution, order fill
+>
+> Most people test strategies on paper or go straight to live trading
+>
+> This engine lets you run a strategy through millions of real trades before spending a single dollar
+>
+> You see the drawdown, Sharpe, monthly returns - all on real data, not synthetics
+>
+> Repo is in active development, full release planned in 1-2 months. Good time to get in early and star it while there's still barely anyone there
+>
+> GitHub: https://t.co/HKGEBs0Aor
+>
+> *Quoting @AlterEgo_eth:* I found the best GitHub dataset for trading on Polymarket
+>
+> 36GB of real trade history from Polymarket and Kalshi - open source and free to use
+>
+> If you want to build strategies on real data rather than guessing, this is where to start
+>
+> Jon-Becker/prediction-market-analysis
+>
+> The largest public dataset of Polymarket and Kalshi trade history. Researchers are already publishing papers on top of it - and you can use the same data to build your own strategies
+>
+> Repository: https://t.co/HWHDPQwZtF
+>
+> What's inside
+>
+> - Full trade history from Polymarket and Kalshi
+> - Market metadata across all markets
+> - Tools for collecting fresh data via API and blockchain
+> - Framework for running custom analysis scripts
+>
+> How to get started
+>
+> - make setup - downloads and extracts the dataset
+> - make index - collects fresh data from the API
+> - make analyze - runs analytics, results saved to output/
+>
+> Output includes PNG, PDF, CSV and JSON files - ready to use for strategy building
+
+- **Tweet:** https://x.com/AlterEgo_eth/status/2040417268656644512
+- **Link:** https://github.com/evan-kolberg/prediction-market-backtesting
+- **What:** Points to an open-source engine that replays historical Polymarket and Kalshi trades to backtest strategies with simulated fills, portfolio tracking, and drawdown and Sharpe metrics. The quoted post is the underlying dataset, which the author says holds 36GB of real trade history and ships with analysis scripts.
+
+---
+
+# Friday, April 3, 2026
+
+## @andynguyendn - ByteRover: automated curation layer for Obsidian-format agent memory
+> Open-source Memory for Agents - OpenClaw, Hermes, Claude Code and more
+>
+> @karpathy just validated the exact memory architecture we open-sourced today. Detailed in our new arXiv paper.
+>
+> The idea here is that structured Markdown vaults are the gold standard for agent memory. However, the "compilation" of these vaults is usually too tedious for manual maintenance.
+>
+> It turns out you can just automate the whole curation layer. ByteRover solves this by automating the curation layer: Connecting nodes, links and context graphs while maintaining a human-readable Obsidian format.
+>
+> Token Efficiency: Save you tons of tokens (50-70% on average) because the tiered retrieval only pulls exactly the context the agent needs, instead of dumping massive files into the prompt.
+>
+> Proven Scalability: Benchmarked on Locomo & LongMemEval for production-grade latency and accuracy.
+>
+> Collaboration: Native support to sync and manage knowledge with your teammates and other agents.
+>
+> No vector DBs, zero infra. Just a native "second brain" for your agents that actually works out of the box.
+
+- **Tweet:** https://x.com/andynguyendn/status/2040090413865026043
+- **What:** Promotes ByteRover, an open-source agent memory system that automates linking and curating Markdown Obsidian vaults into context graphs. The post claims 50-70% token savings from tiered retrieval and benchmark results on Locomo and LongMemEval, but the post gives no numbers or links to verify them.
+
+## @0xSero - agent-browser: Rust CLI letting agents drive browser and Electron apps
+> Agent-browser is the best CLI tool I have given to my agents.
+>
+> It lets them control the my browser, and all my electron apps (discord, vscode, slack, etc..)
+>
+> It barely consumes any tokens compared to things like playwright, has a great skill and the agents seem very comfortable with it
+>
+> Some workflows:
+>
+> \- e2e testing and application by using it
+>
+> \- setting up complicated sites for me
+>
+> \- scanning through tons of messages
+>
+> Thanks Vercel
+
+- **Tweet:** https://x.com/0xSero/status/2040067262124601358
+- **Link:** https://github.com/vercel-labs/agent-browser
+- **Filed:** [agent-browser.md](./knowledge/tools/agent-browser.md)
+- **What:** Praises vercel-labs/agent-browser, a native Rust browser automation CLI that lets agents control the author's browser and Electron apps such as Discord, VS Code, and Slack. The author reports far lower token use than Playwright and lists e2e testing, site setup, and message scanning as workflows.
+
+## @larsencc - Single CLI for listing, cleaning, and watching dev server ports
+> "What the fuck is running on port 3000?"
+>
+> Built a simple and clean CLI that answers this instantly.
+>
+> \- "ports" shows every dev server on your machine
+>
+> \- "ports clean" kills the orphaned ports
+>
+> \- "ports watch" monitors in real-time
+>
+> Try it out
+
+- **Tweet:** https://x.com/larsencc/status/2039923439159648488
+- **What:** Announces a small CLI that answers which process holds a dev port. `ports` lists every running dev server, `ports clean` kills orphaned ports, and `ports watch` monitors them in real time. No repo link is given in the tweet.
+
+---
+
+# Thursday, April 2, 2026
+
+## @tom_doerr - Obsidian vault that gives Claude Code persistent memory
+> Obsidian vault for Claude Code memory
+
+- **Tweet:** https://x.com/tom_doerr/status/2039906409387610408
+- **Link:** https://github.com/breferrari/obsidian-mind
+- **Filed:** [obsidian-mind.md](./knowledge/tools/obsidian-mind.md)
+- **What:** Shares obsidian-mind, a self-organizing Obsidian vault template that gives Claude Code, Codex CLI, and Gemini CLI persistent memory through shared hooks and slash commands. The TypeScript repo has about 5.4k stars and installs via ShardMind or git clone.
+
+## @shreypandya - Agent /ui-test that browser-tests PRs and reports UI nits
+> Introducing /ui-test
+>
+> Give your agent a PR, and it'll test your feature in a real browser, generating an HTML report with UI fixes
+>
+> The planner agent generates adversarial test cases to break your app, assigns them to subagents, and evaluates the page using the @browserbase CLI
+>
+> We reviewed a merged PR on @calcom and found a bunch of small UI nits:
+
+- **Tweet:** https://x.com/shreypandya/status/2039856069384810936
+- **What:** Describes /ui-test, an agent workflow that takes a PR, has a planner generate adversarial test cases, runs subagents through the Browserbase CLI, and emits an HTML report of UI fixes. The demo ran it on a merged calcom PR and surfaced a set of small UI nits.
+
+## @omarsar0 - Personal research knowledge base for agents, with generated visuals
+> Building a personal knowledge base for my agents is increasingly where I spend my time these days.
+>
+> Like @karpathy, I also use Obsidian for my MD vaults.
+>
+> What's different in my approach is that I curate research papers on a daily basis and have actually tuned a Skill for months to find high-signal, relevant papers.
+>
+> I was reviewing and curating papers manually for some time, but now it's all automated as it has gotten so good at capturing what I consider the best of the best. There are so many papers these days, so this is a big deal.
+>
+> You all get to benefit from that with the papers I feature in my timeline and on @dair_ai.
+>
+> The papers are indexed using @tobi qmd cli tool (all of it in markdown files along with useful metadata). So good for semantic search and surfacing insights, unlike anything out there.
+>
+> I am a visual person, so I then started to experiment with how to leverage this personal knowledge base of research papers inside my new interactive artifact generator (mcp tools inside my agent orchestrator system). The result is what you see in the clip.
+>
+> 100s of papers with all sorts of insights visualized. I keep track of research papers daily, so believe me when I tell you that this system is absolutely insane at surfacing insights. This is the result of months of tinkering on how to index research and leverage agent automations for wikification and robust documentation.
+>
+> But this is just the beginning. The visual artifact (which is interactive too) can be changed dynamically as I please. I can prompt my agent to throw any data at it. I can add different views to the data. Different interactions. I feel like this is the most personalized research system I have ever built and used, and it's not even close.
+>
+> The knowledge that the agents are able to surface from this basic setup is already extremely useful as I experiment with new agentic engineering concepts. I feel like this knowledge layer and the higher-level ones I am working on will allow me to maximize other automation tools like autoresearch. The research is only as good as the research questions. And the research questions are only as good as the insights the agents have access to.
+>
+> Where I am spending time now is on how to make this more actionable. I am obsessed about the search problem here. The automations, autoresearch, ralph research loop (I built one months ago) are easier to build but are only as good as what you feed them.
+>
+> Work in progress. More updates soon. Back to building.
+>
+> *Quoting @karpathy:* LLM Knowledge Bases. Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So: Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally "compile" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them. IDE: I use Obsidian as the IDE "frontend" where I can view the raw data, the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides). Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale. Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up "filing" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always "add up" in the knowledge base. Linting: I've run some LLM "health checks" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into. Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries. Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation + finetuning to have your LLM "know" the data in its weights instead of just context windows. TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts.
+
+- **Tweet:** https://x.com/omarsar0/status/2039844072748204246
+- **What:** Elvis Saravia describes a personal research knowledge base of daily-curated papers, indexed as Markdown and searched with qmd, that an agent renders as interactive visuals. He quotes Karpathy's LLM Knowledge Bases post, which describes an LLM-compiled Obsidian wiki, and frames Saravia's setup as the next step beyond it.
+
+## @micLivs - markit maintainer promises support for Nutrient's PDF converter
+> *Replying to @jdrhyne:* Shipping Day! We're all proud and excited @nutrientdocs to officially release our PDF to Markdown converter. On our 200 document hand annotated markdown based benchmark it beats out every other major parser for speed and reading order while matching accuracy.
+>
+> We are shipping it as a closed source, free to use for up to 1,000 documents per month, no license key required, and your documents stay completely local.
+>
+> We've had early beta testers give us phenomenal feedback but please reach out and share publicly your experience with it.
+>
+> Our future roadmap:
+>
+> - adding our OCR Vision capabilities to it.
+> - supporting Windows x64
+> - speed increases (yeah, make it even faster)
+> - support for DOCX to md
+> - more based on feedback.
+>
+> If you find it useful, please star the repo and tell your friends!
+
+> I'll add support for it tonight! https://github.com/shift-labs-ai/markit
+
+- **Tweet:** https://x.com/micLivs/status/2039764487423615108
+- **Link:** https://github.com/shift-labs-ai/markit
+- **What:** Michael Livs promises to add Nutrient's new PDF-to-Markdown converter to markit, his Rust document-to-Markdown tool, the same night the launch shipped. The reply links markit, which converts PDF, Office, EPUB, and web inputs to Markdown as a CLI and Node library.
+
+## @jdrhyne - Standalone CLI for Nutrient's PDF-to-Markdown converter
+> *Replying to @jdrhyne:* Shipping Day! We're all proud and excited @nutrientdocs to officially release our PDF to Markdown converter. On our 200 document hand annotated markdown based benchmark it beats out every other major parser for speed and reading order while matching accuracy.
+>
+> We are shipping it as a closed source, free to use for up to 1,000 documents per month, no license key required, and your documents stay completely local.
+>
+> We've had early beta testers give us phenomenal feedback but please reach out and share publicly your experience with it.
+>
+> Our future roadmap:
+>
+> - adding our OCR Vision capabilities to it.
+> - supporting Windows x64
+> - speed increases (yeah, make it even faster)
+> - support for DOCX to md
+> - more based on feedback.
+>
+> If you find it useful, please star the repo and tell your friends!
+
+> Here's the standalone CLI.
+
+- **Tweet:** https://x.com/jdrhyne/status/2039750398307934458
+- **Link:** https://github.com/PSPDFKit/pdf-to-markdown
+- **Filed:** [pdf-to-markdown.md](./knowledge/tools/pdf-to-markdown.md)
+- **What:** Nutrient's standalone pdf-to-markdown CLI converts PDFs to Markdown on the local machine, with no document uploads, and it is free for permitted use. It bundles pdf-to-text and query commands, and an optional Vision mode for scanned files that needs an account or license key.
+
+## @tom_doerr - Obsidian skills package for AI agents
+> Obsidian skills for AI agents
+
+- **Tweet:** https://x.com/tom_doerr/status/2039668823486308603
+- **Link:** https://github.com/kepano/obsidian-skills
+- **Filed:** [obsidian-skills.md](./knowledge/tools/obsidian-skills.md)
+- **What:** Points to kepano's obsidian-skills repo, roughly 50k stars, which packages Agent Skills for Obsidian. The skills teach Claude Code, Codex, and OpenCode to write Obsidian Markdown, Bases, and JSON Canvas files, drive the Obsidian CLI, and extract web pages with Defuddle.
+
+## @abhayjainp - Cowork prompt that generates structured company research reports
+> As promised, here's the exact claude cowork prompt i use to build research reports for any company.
+>
+> Feel free to copy and use.
+>
+> Prompt: you are a research analyst at {xyz}. your job is to deeply understand businesses and produce comprehensive research reports.
+>
+> inputs
+>
+> you receive inputs:
+> - company_name: the company to analyze.
+> your goal is a .md file deliverable along with charts.
+>
+> what you do
+>
+> when a user gives you a company name, you produce a full structured research report. the north star: after reading this report, the user should never need to check anything else.
+>
+> You need four things:
+>
+> 4 quarterly concall transcripts - the most recent four. Non-negotiable.
+> Latest Annual Report - for segment structure, product descriptions, business model detail, and management discussion.
+> Company website - product pages, segment pages, about us, IR section.
+> Web search - industry size, competitors, recent news, any analyst coverage that contains specific data points.
+>
+> write the full report in this section order:
+> 1. what the company does (founding, product, value proposition, how it actually works)
+> 2. business segments (one deep sub-section per segment)
+> 3. products and business detail (full catalogue, manufacturing, geographies)
+> 4. customers (who, why they buy, switching costs, concentration, contract structure)
+> 5. competitive landscape (named competitors, why this company wins or loses, barriers to entry)
+> 6. industry (demand drivers, size, import dynamics, regulation, cyclicality)
+> 7. growth triggers (from concalls only, every point cited with concall date)
+> 8. key risks (specific to this company, mechanism explained)
+> 9. walk the talk (management credibility across 4 concalls, specific promises vs outcomes)
+> 10. scenarios (bull / base / bear as stories, no numbers, no targets)
+>
+> Business Understanding Writer:
+>
+> This is the product. Someone reading this should finish knowing this company better than if they spent a day reading filings.
+>
+> depth mandate
+> No length limit. Write as deep as the company demands.
+>
+> If a company has 4 segments, cover all 4 in depth. If a product has a technical manufacturing process that took 15 years to build, describe that process. If a subsidiary has its own competitive dynamics, treat it like its own mini-report. Cut only what is genuinely redundant. Never cut because of length.
+>
+> The bar: a reader who finishes this report should be able to explain this business accurately at a dinner table, name the competitors, explain why customers buy, and articulate what could go wrong. If they can't, the report is incomplete.
+>
+> report structure
+> Write these sections in this order. Every section is mandatory unless a specific exception is noted.
+>
+> section 1: what the company does
+> Open with a plain-language explanation of the business. No jargon. No "leading player." Just what they actually do.
+>
+> Then go deeper:
+>
+> The founding story if it explains the current business - pivotal decisions, how the company evolved, what they used to be vs what they are now
+> The core value proposition: what specific problem do they solve and for whom
+> The technical nature of the product or service: what makes it hard to make, deliver, or replicate
+> A concrete example of the product or service in action - walk through what they actually do for a customer, step by step if needed
+> Do not stop at the surface. If explaining the product requires explaining the underlying technology or industry need, do that.
+>
+> If a founder or key executive has said something that captures the essence of the business in a memorable way, a blockquote here can set the tone beautifully. Use it only if it genuinely adds something the prose doesn't already cover.
+>
+> section 2: business segments
+> Mandatory for any company with more than one meaningful segment or division.
+>
+> For each segment write a full sub-section:
+>
+> what it does - the specific products or services, geographies, end markets, and customer types. Not a list. Prose that builds understanding.
+>
+> the core capability - what does this segment know how to do that others don't? What took years to build? What would be hard to replicate?
+>
+> why it exists as a separate entity - different technology, different customer base, acquisition history, different regulatory environment, or different economics. There is always a reason. Find it.
+>
+> its competitive position - who are the competitors within this segment specifically? What does this segment win on and where does it lose?
+>
+> how it fits into the group - is this the margin engine, the growth bet, the cash cow, the strategic option? How does management talk about its priority?
+>
+> revenue mix % - the only quantitative data allowed in narrative sections. Use it to convey relative scale.
+>
+> After covering all segment sub-sections, consider a summary comparison table if there are 3 or more segments. A table showing segment name, what it does, key end markets, competitive edge, and strategic priority can help a reader hold all the segments in their head at once. Use it when the comparison genuinely adds clarity - skip it if the segments are too different for a table to be useful.
+>
+> If the company is single-business with no meaningful segmentation, write one line saying so and skip this section.
+>
+> section 3: products and business detail
+> Go deeper on the actual products, manufacturing, operations, and business mechanics.
+>
+> Cover:
+>
+> The full product catalogue - name every meaningful product, explain what it does, explain what industry uses it and why
+> Technical specifications or capabilities that matter - what certifications are required, what process knowledge is needed, what makes this product hard to make
+> The manufacturing or delivery process - where products are made, what the process looks like, what the constraints are
+> Geographies and export markets - where they sell, how long they've been there, what's different about each market
+> Any notable milestones: first product, first export, first major contract, capacity expansions that changed the business
+> This section is where the chart-generator will look for flowcharts, value chain diagrams, and segment infographics. Write with enough specificity that a visual can be made from it.
+>
+> section 4: customers
+> Go beyond naming industries. Explain the buying relationship.
+>
+> Cover:
+>
+> Who specifically buys: industries, named accounts if public, geography of customer base
+> For each major customer type: who inside the customer makes the buying decision, what criteria they use, how long the sales cycle is
+> Why they choose this company: name the specific reasons, not generic ones
+> Switching costs: what would it take for a customer to leave? Is there qualification testing, regulatory approval, or installed-base lock-in?
+> Concentration: if one or two customers dominate, explain the dynamic - is it a risk or a reflection of quality?
+> Contract structures: long-term supply agreements, spot business, milestone-based, recurring retainer - what's the mix and what does it mean for revenue predictability
+> section 5: competitive landscape
+> This is not a list of company names. Explain the structure of the industry and where this company sits in it.
+>
+> Cover:
+>
+> Who the real competitors are - name them, for each segment separately if relevant
+> Why this company wins or loses against each major competitor
+> Barriers to entry: what stops a new player from entering? How high are they really?
+> Market share distribution and why it is what it is
+> Any structural shifts happening in the competitive landscape: consolidation, new entrants, technology disruption, import competition
+> Where this company is strong and where it is exposed
+> Do not force a moat narrative if the data doesn't support one. If competition is intense and margins are commoditised, say so.
+>
+> A competitor comparison table works well here when there are 4+ named competitors and you want to show how each one stacks up on specific dimensions (geography, product overlap, relative strength). Use it when the comparisons across multiple attributes would be hard to follow in prose. Not every competitive landscape needs one.
+>
+> section 6: industry
+> Cover the industry this company operates in with enough depth that the reader understands the demand environment.
+>
+> Cover:
+>
+> What drives demand for this company's products: infrastructure spend, consumer trends, regulation, technology cycle
+> Industry size and growth trajectory (cite sources)
+> Where India sits in the global supply chain for this product
+> Import substitution dynamics if relevant: what share is currently imported, is that changing, why
+> Regulatory environment: any approvals, certifications, or government policy that shapes the market
+> Cyclicality: how does this industry behave across economic cycles
+> Tailwinds and headwinds at the industry level (not company level - that's growth triggers)
+> section 7: growth triggers
+> Extract directly from the 4 concall transcripts. Format as bullet points. Every trigger must have a source - concall date and quarter. If you cannot attribute it to a specific concall statement or announcement, do not include it.
+>
+> Guidelines:
+>
+> Forward-looking only: new plant commissionings, new customer wins announced, new market entries, new product launches, capex completing, capacity utilisation ramp
+> Be specific: name the plant, the customer type, the product, the timeline
+> Cite the concall: "(Q3 FY26 concall, Feb 3 2026)"
+> No opinions or analysis - just what management said is coming
+> No current or past numbers
+> If a trigger was mentioned across multiple concalls, note that it has been repeated
+> When a trigger is grounded in a particularly specific or striking management statement, dropping the actual quote right below the bullet point adds real weight. It turns a summary into evidence. Format it as a blockquote (see writing-rules). Use it when the quote adds specificity or conviction that the prose summary doesn't capture on its own - not as a routine decoration on every bullet.
+>
+> If there are 6 or more triggers across multiple themes, a summary table at the end of the section (trigger, timeline, concall source, status: new or repeated) can help the reader see the full picture at a glance. Use it when the trigger list is long enough to benefit from structure.
+>
+> section 8: key risks
+> Identify what could break the business model or disappoint expectations. Be specific to this company.
+>
+> For each risk:
+>
+> Name the risk clearly
+> Explain the mechanism: how exactly does this risk play out? What has to happen for this risk to hurt?
+> Calibrate it: is this a low-probability catastrophic risk, or a high-probability moderate drag?
+> Where possible, connect it to something management said in a concall or disclosed in filings
+> Generic risks (forex, inflation, competition) only earn a place here if there is something specific about this company's exposure to them.
+>
+> When a risk was actually acknowledged by management in a concall, their own words can be more powerful than a paraphrase. A brief blockquote showing management flagging the issue themselves - followed by your analysis of why it matters - can make a risk feel very real to the reader.
+>
+> section 9: walk the talk
+> This is the management credibility section. Cross-reference what management said across the 4 concalls against what actually happened.
+>
+> Write as narrative paragraphs, not a table.
+>
+> Structure the analysis:
+>
+> Start with the oldest concall: what did management guide for?
+> Move to the next: was it delivered? What changed?
+> Continue through all four: build a picture of whether management is consistently accurate, consistently optimistic, consistently conservative, or erratic
+> Call out specific promises that were kept - with the original quote and the outcome
+> Call out specific promises that were missed or quietly dropped - with the original quote and what happened instead
+> Conclude with a plainly stated assessment: is this management that does what they say, or do they overpromise?
+> Quotes are especially effective here. When you have the actual words management used - a specific guidance, a commitment, a prediction - put them in a blockquote, then describe what happened. The juxtaposition does the work. The more specific and datable the quote, the more credible the analysis.
+>
+> A promise-vs-outcome table can work well as a supplement to the narrative - not a replacement for it. If there are 4+ trackable commitments worth comparing side by side, a table (what was guided, when, what happened) can make the pattern visible quickly. Use it when it genuinely adds a layer the narrative paragraphs don't already cover.
+>
+> This section requires real concall data. If you only have 2 concalls, say so and work with what you have. Do not fabricate consistency or inconsistency.
+>
+> section 10: scenarios
+> Write three scenarios: bull, base, and bear. Each is a short story, not a financial model. No numbers. No targets. Just narrative.
+>
+> bull case: What has to go right? What does the world look like in 2-3 years if everything works? Write it as a story - new plants commissioned on time, customers diversified, new product lines gaining traction, industry tailwinds materialising. Be specific to this company's actual situation, not generic.
+>
+> base case: What is the most likely path? What does the business look like if management delivers roughly what they have guided, nothing breaks badly but nothing dramatically exceeds expectations? Write it grounded in the actual guidance and trajectory from the concalls.
+>
+> bear case: What could genuinely go wrong? Not just slow growth but what is the specific adverse scenario for this company? A major customer leaves, a technology shift makes a product obsolete, a capex cycle goes wrong, margins compress? Again, specific to this company. Ground it in the real risks you identified in section 8.
+>
+> Each scenario should be 2-4 paragraphs. Enough to paint a picture. Not so long it becomes speculation.
+>
+> important rules:
+>
+> - 4 earnings call are not optional. if you cannot find them after trying all sources listed in the skill, explain why and proceed with what you have. do not silently drop to 1.
+> - no valuation, no financials. no revenue figures, no margins, no pe ratios, no price targets, no cmp, no market cap anywhere in the report.
+> - no investment recommendations. no buy/sell/hold. no "attractive at current levels." no advisory language of any kind.
+> - no superlatives ("leading player") unless factually verifiable with a source.
+> - no corporate jargon: synergies, value-added, end-to-end solutions, leveraging, robust, holistic.
+> - no em dashes. use regular dashes (-).
+> - every sentence must add genuine understanding. no filler.
+> - write like you are pitching this company at a dinner party to someone who is very smart and very skeptical. make every detail count. /END
+>
+> additional context:
+> - i use replicate mcp for all infographics (nano banana)
+> - i have a skill md file containing some of my past writings.
+> - opus 4.6 reasoning for research.
+>
+> *Quoting @abhayjainp:* Claude cowork is actually a cheat code for equity research. It builds out 10-15 page report for any company & the quality is actually insane. Example report for Sai life sciences.
+
+- **Tweet:** https://x.com/abhayjainp/status/2039651005135282255
+- **Link:** https://twitter.com/abhayjainp/status/2039205126641250723
+- **What:** Shares the exact Claude Cowork prompt the author uses to generate 10-15 page equity research reports on any company, with a fixed 10-section structure, depth mandates, citation rules, and a ban on valuation and recommendations. Quotes his earlier post with a Sai Life Sciences sample report as evidence that the output quality holds up.
 
 ---
 
