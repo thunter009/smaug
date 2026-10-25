@@ -334,7 +334,891 @@
 
 ---
 
+# Saturday, September 26, 2026
+
+## @DanniChenGTM - Mine competitor complaints before building a roadmap
+> One of the highest-leverage things I’ve had a startup do recently:
+>
+> Mine your competitors’ complaints before you build your roadmap.
+>
+> Pick your top 5 competitors. Use ActionBook, Exa, Firecrawl, Apify, Perplexity, or whatever scraping/search stack you like to crawl Reddit, X, G2, YouTube comments, Discord, forums, and review sites.
+>
+> Then build one simple table:
+>
+> complaint | frequency | severity | competitor | still unsolved?
+>
+> You’ll start seeing patterns very quickly.
+>
+> The complaints everyone has, but nobody has fixed, are usually where the opportunity is.
+>
+> That one doc can tell you what to build, what to position around, and even what to put in your next ad.
+>
+> Your competitors already paid for the customer research. You just need to collect it.
+>
+> Way more useful than another 10 internal “strategy” meetings.
+
+- **Tweet:** https://x.com/DanniChenGTM/status/2103717429562228897
+- **What:** Danni Chen advises scraping Reddit, X, G2, forums and reviews for top-5 competitors' complaints into a table (frequency, severity, still unsolved) to find roadmap, positioning and ad opportunities.
+
+---
+
+# Friday, September 25, 2026
+
+## @DhravyaShah - Supermemory open-sources Company Brain Slack agent harness
+> We're open sourcing the company brain, a multi-player slack harness that we worked on for months, it's an AI employee with all the knowledge of your company. 
+> You can deploy it with one click in minutes.
+>
+> I go over the full architecture, in this blog! https://t.co/ouwsOYpj1I
+
+- **Tweet:** https://x.com/DhravyaShah/status/2103668051468300701
+- **Link:** https://x.com/i/article/2103652547227750400
+- **Filed:** [company-brain.md](./knowledge/tools/company-brain.md)
+- **What:** Dhravya Shah open-sources Company Brain, a multiplayer Slack AI-employee harness on Cloudflare Agents SDK, deployable in one click, with a blog on permissioning, proactivity and recovery design.
+
+## @cathrynlavery - Tailscale as the most underrated tool
+> imo @Tailscale is the most underrated tool in tech. 
+>
+> A few ways I've used it recently:
+>
+> •  Hotel/airplane wifi sketchy or slow? I route all my traffic through my house in Austin with one tap.
+> • I can copy something on my laptop and paste it onto my wife's clipboard. 
+> • If her computer acts up, I send an agent in to fix it before she even realizes.
+> • setting up a new mac, I just install tailscale and have an agent do the rest
+>
+> can't imagine life without it now 🤯
+
+- **Tweet:** https://x.com/cathrynlavery/status/2103588600076214414
+- **What:** Cathryn Lavery lists Tailscale uses: routing travel traffic home, cross-device clipboard, agents fixing family computers remotely, and agent-driven Mac setup.
+
+## @Teipsumdotcom - Uncle Bob's uml-viewer as answer to codebase diagram wish
+> *Replying to @matthewcp:* I want some tool that turns a codebase into an architectural diagram. As you make changes, the diagram updates and shows diffs some how.
+>
+> @matthewcp @unclebobmartin has a UML visualizar on GitHub.   https://t.co/FFd4nxntmr
+
+- **Tweet:** https://x.com/Teipsumdotcom/status/2103568989528154421
+- **Parent:** https://x.com/matthewcp/status/2103467827655057865
+- **Link:** https://github.com/unclebob/uml-viewer
+- **Filed:** [uml-viewer.md](./knowledge/tools/uml-viewer.md)
+- **What:** Reply to Matthew Phillips pointing to Uncle Bob Martin's GitHub UML visualizer (unclebob/uml-viewer) for generating architecture diagrams from code.
+
+## @kyle_e_walker - Modern Racial Dot Map with H3 hexes and clusters
+> The classic Racial Dot Map inspired me and a whole generation of mapmakers.  
+>
+> Today, I'm publishing a modern take on this map, built with the geospatial tools I've been developing over the past decade.  
+>
+> Explore race / ethnicity in the US three different ways: 
+> - The classic dot map, with all 331 million Americans represented when fully zoomed in; 
+> - H3 hexagons that transition on zoom, color-coded by the most common group in the hexagon; 
+> - Donut chart clusters that break into smaller clusters, and eventually individual dots, when you zoom in.
+>
+> Interact with the map here: https://t.co/Jy1QnznVBe
+
+- **Tweet:** https://x.com/kyle_e_walker/status/2103529010802180301
+- **Link:** https://walker-data.com/maps/census-2020/race.html
+- **What:** Kyle Walker publishes an interactive 2020 census race/ethnicity map: dot map with all 331M Americans, zoom-transitioning H3 hexagons, and donut clusters, built with his geospatial tools.
+
+## @matthewcp - Wish: codebase to live architecture diagram with diffs
+> I want some tool that turns a codebase into an architectural diagram. As you make changes, the diagram updates and shows diffs some how.
+
+- **Tweet:** https://x.com/matthewcp/status/2103467827655057865
+- **What:** Matthew Phillips wants a tool that generates an architectural diagram from a codebase, updating with changes and showing diffs.
+
+## @mattpocockuk - Lauren's talk: shipping 2,500 PRs a month with a software factory
+> This is an extremely good watch.
+>
+> The things that felt novel/interesting to me:
+>
+> 1. Lock down your agents
+>
+> Humans tend to like 'sharp knife' abstractions - that are powerful, but you can cut yourself if your use them wrong. Lauren says agents perform much better in extremely locked-down environments. Abstractions are designed so they can't screw up, and lint rules enforce it.
+>
+> They built a whole internal framework (Dune) to keep the agent on track.
+>
+> That helps optimise agents that don't have a large context window to work productively in your codebase.
+>
+> 2. Create verification infrastructure
+>
+> To trust the results of any agent, you either need to sit and watch it OR have it provide evidence of its improvement. This has always made sense to me, but Lauren really pushes it hard here:
+>
+> - Invest in custom CLI's that let the agent drive the app and measure its performance
+> - Make the app "factory ready" from the get-go - i.e. deployable to an environment where the agent can mess about with it
+>
+> 3. Feature Maps
+>
+> Lauren's software factory (what she calls an 'outer loop') often requires the agent to break down vague bug reports from users and to turn those into potential fixes.
+>
+> To aid that, they built a 'feature map' of all the main features in their application, which describe exactly how the app is supposed to function.
+>
+> This has become essential for helping the agent navigate the codebase, and figure out quickly how things are supposed to work. It's maintained along with the codebase, and kept in sync via automations.
+>
+> This is the kind of documentation I usually warn against. It goes stale quickly and can confuse agents if it's not kept up to date.
+>
+> But Lauren's team are using it as critical navigation infrastructure, and it makes it possible for agents to explore faster and better - even on a large codebase. So it sounds like navigation docs like this are worth it if they enable new behavior. 
+>
+> Banger talk - watch the whole thing on 2x.
+>
+> *Quoting @poteto:* here's how i shipped 2,500 PRs last month to production this was originally supposed to be for Cursor Compile in London. i couldn't make it since i was livestreaming for Grok @Bot Galaxy so i'm making it available for free here on X! watch it on 2x speed, i talk slowly https://t.co/NgrGz7tmPM
+
+- **Tweet:** https://x.com/mattpocockuk/status/2103431302527508886
+- **Quoted:** https://x.com/poteto/status/2102050467505430555
+- **What:** Matt Pocock summarizes Lauren's talk: lock agents into constrained abstractions with lint enforcement, build verification CLIs, and maintain a feature map as navigation infrastructure. Quoted post is the talk itself.
+
+## @_BryceTech - BryceTech: non-top-10 space startups out-raised top ten in 2025
+> BryceTech analysts found that in 2025, space start-ups outside the ten biggest fundraisers raised more money than the top ten combined, a first since 2016.
+>
+> That's $5.7B across all other companies, compared to $5.2B for the top ten.
+>
+> Explore Start-Up Space 2026: https://t.co/iNHBZ4wAYD
+
+- **Tweet:** https://x.com/_BryceTech/status/2103424397998534846
+- **Link:** https://brycetech.com/reports/report-documents/start_up_space_2026/
+- **What:** BryceTech's Start-Up Space 2026 finds startups outside the ten biggest fundraisers raised $5.7B versus $5.2B for the top ten in 2025, a first since 2016.
+
+---
+
+# Thursday, September 24, 2026
+
+## @dani_avila7 - Hedgineer: Claude Skills vs MCP Apps for generative UI
+> Building UI inside Claude is easy
+>
+> Building exactly the UI you want, consistently, takes much more expertise
+>
+> In this article, we explain how we got our agents to generate highly detailed interfaces while preserving the same structure, quality, and visual language across different requests
+>
+> Full article: https://t.co/VowI9ZWJpu
+>
+> *Quoting @dani_avila7:* We just published a new article on https://t.co/04TQdit36I, based on how we actually work with real data and agents in production "How we picked Claude Skills over MCP Apps for generative widgets" We compared both approaches while building flexible visualizations around user data, and documented what worked, what didn’t, and WHY we ended up choosing Skills
+
+- **Tweet:** https://x.com/dani_avila7/status/2103187142633476261
+- **Quoted:** https://x.com/dani_avila7/status/2102770476502192284
+- **Link:** https://hedgineer.ai/content/generative-ui-skills-vs-mcp-apps
+- **Filed:** [hedgineer-skills-vs-mcp-apps.md](./knowledge/articles/hedgineer-skills-vs-mcp-apps.md)
+- **What:** Quoted Hedgineer article explains why they chose Claude Skills over MCP Apps for flexible data widgets and how to keep agent-generated UIs consistent in structure and visual language.
+
+## @steipete - OpenClaw test-audit skill deleted 400k LOC of tests
+> OpenClaw deleted around 400k LOC of its own tests without much change in code coverage. Modern models just love writing tests for every tiny change, even if they aren't useful. This skill helped. https://t.co/a1jSBpfpns
+
+- **Tweet:** https://x.com/steipete/status/2103147927313199260
+- **Link:** https://github.com/openclaw/openclaw/blob/main/.agents/skills/test-audit/SKILL.md
+- **Filed:** [openclaw-test-audit-skill.md](./knowledge/tools/openclaw-test-audit-skill.md)
+- **What:** Peter Steinberger says OpenClaw removed about 400k lines of its own tests with little coverage change, since models over-write tests; links the test-audit SKILL.md that helped.
+
+## @MashfordMahute - Visualizing London's price of space
+> What if a map could show you the “price of space” in a city? 
+>
+> Really loved this visualization of London’s housing market by Benjamin Niedermann.
+>
+> Not just because of the data.
+>
+> But because of the way the spatial data is being explored. https://t.co/PCfDz6Fs1B
+
+- **Tweet:** https://x.com/MashfordMahute/status/2103106990163755426
+- **What:** Mashford Mahute praises Benjamin Niedermann's London housing market map for how it explores spatial data to show the price of space.
+
+---
+
+# Wednesday, September 23, 2026
+
+## @RayFernando1337 - Prompt to purge low-signal unit tests and prefer E2E
+> I find the latest models write a lot of unit tests. Most of them restate the code they were written after, so they always pass and catch almost nothing. They run fast, but they break on every refactor and the agent burns time fixing tests instead of the feature.
+>
+> The prompt I used to clean out mine, adopted from Ansh is:
+>
+> "This repo is full of low-signal unit tests. Delete every one that wouldn't catch a real bug our E2E tests miss. Fan the work out across parallel subagents.
+>
+> Then add these rules to AGENTS.md so future agents stop writing them.
+>
+> - Never write unit tests after you write code.
+>
+> - Highly prefer E2E tests as the sole testing mechanism. Use them to verify complex features work. At the end of E2E tests, produce a verifiable and repeatable artifact.
+>
+> - If you must test a system in isolation, first write down all the ways it could fail, then write the code."
+>
+> *Quoting @anshnanda:* At the top of my AGENTS.md: - NEVER write unit tests after you write code.  - Highly prefer E2E tests as the sole testing mechanism. Use them to verify complex features work. At the end of E2E tests, produce a verifiable and repeatable artifact.  - If you must test a system in isolation, FIRST write all the ways it could fail, THEN write the code.
+
+- **Tweet:** https://x.com/RayFernando1337/status/2102927565778522610
+- **Quoted:** https://x.com/anshnanda/status/2101627891721371971
+- **What:** Ray Fernando shares a prompt, adapted from Ansh Nanda, that deletes unit tests an E2E suite would not miss via parallel subagents and adds AGENTS.md rules: no tests after code, prefer E2E with artifacts, list failure modes first.
+
+## @FundamentEdge - Where investing alpha moves when public data is priced instantly
+> A few thoughts:
+>
+> 1) if public data is instantly priced, the premium on proprietary, unescapable insights increases. Alpha generation moves entirely to the edges: nuanced management body language, channel checks outside of the Tegus corpus and deep industry relationships.  That has always been true but becomes more true. I think it is obvious public equity investors will spend less time in front of a Bloomberg screen and more time in the field, researching key drivers.
+>
+> 2). Even more fundamental, capital trust. Being a good fiduciary & steward of capital. Why does one CIO raise $5 billion and another raises zero? Accountability, direct communication, adaptability, judgment during dislocations that ultimately shows up in track record. It is exceedingly hard to completely rewire the investment process of a large investment organization, made harder by the compliance & infosec requirements in place to earn said LP trust (to wit, many large investment organizations are still left with Microsoft CoPilot). It will take years not months to fully shift approach, and very few firms live at the intersection of both leading AI innovation & adaptable infrastructure & talent. You can be fully native and raise no money, and you will have no impact on market price discovery. There will be a window of time where adaptability & urgency as well as the ability to earn trust of capital partners will show up in alpha, in my opinion.
+>
+> 3) the psychological endurance & judgment required to know when to fade a hyper-efficient consensus. Any consumer PM who has lived through the rise of alternative data will know this dynamic well. When do you ride the machine-generated consensus vs. fade that consensus based on a nuanced variant perception? As in alt data, the game will shift to 2nd & 3rd order thinking. As certain "now-casting" alpha pools compress, certainly other distortions will expand due to positioning, capital flows & narrative over-reactions. These are definitionally alpha opportunities vs. the conceptual intrinsic value baseline (if not difficult, jagged & frustrating to monetize). Call it behavioral resilience and deep intuition around market participants and market price discovery (I am actually quite bullish on vol-adjusted dollar edge, don't think this will be the problem...markets aren't going to wake up in 3 months and all of a sudden be hyper-efficient in price discovery).
+>
+> *Quoting @LaurelonCapital:* @FundamentEdge Where do you see edge moving?
+
+- **Tweet:** https://x.com/FundamentEdge/status/2102924823030530140
+- **Quoted:** https://x.com/LaurelonCapital/status/2102919074594562100
+- **What:** Fundamental Edge argues alpha shifts to proprietary field insight, capital trust and fiduciary credibility, and the judgment to fade machine-made consensus; replying to a question on where edge moves.
+
+## @JeremyNguyenPhD - Claude cloud credit of $100/$250 for Claude Code sessions
+> If you pay for Claude click the link below to claim your free $100 or $250 of Claude cloud credit.
+>
+> You can run Claude Code sessions in the cloud so your laptop can be closed.
+>
+> *Quoting @ClaudeDevs:* Follow the link below to claim the credit or run /claim-credit in the CLI. You’ll need GitHub connected to start a session. Claim by Oct 7. Terms apply. https://t.co/TzoO6fzJHB
+
+- **Tweet:** https://x.com/JeremyNguyenPhD/status/2102873412247158823
+- **Quoted:** https://x.com/ClaudeDevs/status/2102871555244257518
+- **Link:** https://claude.ai/code/claim-credit/10
+- **What:** Jeremy Nguyen shares ClaudeDevs' offer of $100 or $250 credit for cloud Claude Code sessions; claim via link or /claim-credit by Oct 7 with GitHub connected.
+
+## @bertgodel - Paper Office: OSS tool for agents editing Word, Excel, PowerPoint
+> Agents are using legacy Python packages to edit Word, Excel, and PowerPoint files, hitting API gaps, dropping into raw OOXML, and creating silent corruptions. 
+>
+> We fix that today with OSS Paper Office: https://t.co/n6m9Y12eGj
+
+- **Tweet:** https://x.com/bertgodel/status/2102852926121427304
+- **What:** Bert Godel launches open-source Paper Office to stop agents from corrupting Office files by falling back to raw OOXML when legacy Python libraries lack API coverage.
+
+## @daniel_mac8 - Run /claude-api prompt-audit to clean up Opus 5.5 instructions
+> Claude Coders: run this Opus 5.5 instruction cleanup prompt *NOW*.
+>
+> '/claude-api prompt-audit'
+>
+> Optimizes your skills, AGENTS.md, CLAUDE.md and removes anti-patterns that restrict Opus 5.5.
+>
+> The results are amazing. Best 5 mins you'll spend.
+>
+> From @RLanceMartin.
+
+- **Tweet:** https://x.com/daniel_mac8/status/2102799218154881486
+- **What:** Daniel McNamara amplifies Lance Martin's tip: /claude-api prompt-audit optimizes skills, AGENTS.md and CLAUDE.md by removing anti-patterns that restrict Opus 5.5, calling it the best five minutes you will spend.
+
+## @NVIDIAAI - NVIDIA Nemotron 3 Diarization: 100M model, up to 8 speakers
+> When several people talk at once, a transcript can get messy fast.
+>
+> Our new Nemotron 3 Diarization model tracks who spoke when, even when voices overlap. It handles up to eight speakers, has 100M parameters, and is now available on @huggingface 🤗 https://t.co/Mw9saKlN4E
+
+- **Tweet:** https://x.com/NVIDIAAI/status/2102775666366435450
+- **What:** NVIDIA releases Nemotron 3 Diarization on HuggingFace, a 100M-parameter model that tracks who spoke when across overlapping voices for up to eight speakers.
+
+## @Invested_In_You - In-case-of-death checklist for couples
+> I sat with a widow last year. Her husband passed unexpectedly.
+>
+> She didn't know any of their passwords. Didn't know which accounts existed. Didn't know where the will was.
+>
+> She wasn't unprepared because they didn't have money.
+>
+> She was unprepared because they never had the conversation.
+>
+> Here's the "in case of death" checklist every couple should build together this weekend:
+>
+> Do this now - before anything happens:
+>
+> - update beneficiaries on every account - 401k, IRA, life insurance, brokerage
+> - add Apple/Google legacy contacts so your spouse can access your phone
+> - name accounts jointly wherever possible
+> - set autopay on every credit card and bill
+> - use a password manager - share access with your spouse today
+> - keep your will and trust updated - review every 3-5 years or after any major life event
+> - keep a running list of every account, utility, insurance, landscaping, subscription - anything with a payment or login
+>
+> If your spouse passes:
+>
+> - call your financial advisor first - they coordinate most of what comes next
+> - call your estate planning attorney second
+> - get at least 10 certified copies of the death certificate - you'll need more than you think
+> - submit the death certificate to every financial institution, insurer, and government agency
+> - contact Social Security to report the death and claim any survivor benefit
+> - for short term cash needs - start with taxable brokerage accounts first, then IRAs, leave 401ks and Roth accounts for last
+>
+> Keep one document - updated annually - that includes:
+>
+> - every account and institution with contact info
+> - every autopayment and what card it's on
+> - every insurance policy and policy number
+> - your advisor, attorney, and CPA contact info
+> - where the will, trust, and important documents are physically located
+>
+> Print it and/or save it to Google Drive.
+>
+> The greatest gift you can give your family isn't just building wealth.
+>
+> It's making sure they can access it when they need it most.
+
+- **Tweet:** https://x.com/Invested_In_You/status/2102741019704090670
+- **What:** Financial checklist after a widow found no passwords, accounts or will: update beneficiaries, set legacy contacts, use a shared password manager, keep an account list and documents, plus steps to take after a spouse dies (advisor, attorney, 10 death certificates, Social Security).
+
+## @MashfordMahute - Demographics & Housing WebGIS as spatial intelligence
+> This Demographics &amp; Housing WebGIS, made by Mohammad VahidiBorji, caught my attention because it shows something I believe is becoming increasingly important in GIS:
+>
+> Turning statistics into spatial intelligence. https://t.co/5DvdfMaTYw
+
+- **Tweet:** https://x.com/MashfordMahute/status/2102703464086204796
+- **What:** Mashford Mahute praises Mohammad VahidiBorji's Demographics & Housing WebGIS map as an example of turning statistics into spatial intelligence in GIS.
+
+---
+
+# Tuesday, September 22, 2026
+
+## @RLanceMartin - /claude-api prompt-audit for Opus 5.5
+> useful tip for Opus 5.5:
+>
+> run “/claude-api prompt-audit” in Claude Code. this checks you skills, agent.md, Claude.md, prompts and removes anti-patterns that hobble frontier models. 
+>
+> i updated the skill w/ the latest Opus 5.5 guidance. https://t.co/sBCIwcOCv1
+
+- **Tweet:** https://x.com/RLanceMartin/status/2102575471502528989
+- **What:** Lance Martin recommends running /claude-api prompt-audit in Claude Code to audit skills, AGENTS.md, CLAUDE.md and prompts, removing anti-patterns that hobble frontier models; he updated the skill with Opus 5.5 guidance.
+
+## @FundamentEdge - Rogo's rapid improvement as an investment-research agent
+> I laughed at loud at Gabe explaining low reception to the Series A, saying "they didn't invest because the product was terrible". 
+>
+> I first got my hands on Rogo in fall of 2024, and can confirm: the product was terrible.
+>
+> The remarkable thing about Gabe and the Rogo team has been the accelerated pace of improvement. 
+>
+> Fast forward two years, I had a moment this summer where I ran a number of my investment research workflows through Rogo and ran evals vs. my Claude system and Rogo routinely won in head to heads.
+>
+> Rogo's Felix is this sort of malleable agentic substrate that has become flexible to deploy and delightful to use.
+>
+> And importantly, I'm too obtuse to predict the future but I've learned to trace the curve of the exponential. I am super excited to see what this team builds for investors, and think the next 6-18 months for investors deploying AI is going to get very exciting.
+>
+> *Quoting @patrick_oshag:* My conversation with Gabe Stengel (@GabeStengel), founder and CEO of Rogo. For years, Gabe and I have talked about how much of an investor's job AI will eventually do and how he is building Rogo toward that future. Today, Rogo helps some of the world's largest financial institutions research companies, run diligence and execute M&A. But Gabe's ambition is much bigger. He is building toward investing superintelligence, where Rogo does much of the work inside investment banks and firms and becomes the venue where they do their deals. It's a fascinating business and has been so fun watching Gabe build it. We discuss: - 10,000 agents searching for one great investment idea - Which investing skills will still matter - Why Anthropic/OpenAI won't win finance - "Chewing glass" - Why the harness around the models matters so much - Getting rejected by 40+ investors - Building an AI native Bloomberg - Becoming a black hole for talent Enjoy! TIMESTAMPS: 0:00 Intro 2:38 Building Rogo 6:12 10,000 AI Agents 12:02 Skills That Still Matter 17:31 Beating OpenAI and Anthropic 28:35 Bloomberg of the AI Era 37:37 Rogo’s Company Brain 44:19 Chewing Glass 53:34 AI-Native Finance 59:21 What Humans Still Do Better
+
+- **Tweet:** https://x.com/FundamentEdge/status/2102516019424305164
+- **Quoted:** https://x.com/patrick_oshag/status/2102370943263756461
+- **What:** Fundamental Edge investor says Rogo's product was poor in 2024 but now beats his own Claude-based research workflows in head-to-head evals, praising the Felix agentic substrate. Quotes Patrick O'Shaughnessy's interview with Rogo CEO Gabe Stengel.
+
+## @RobHoffman_ - About Us page template for AI search and E-E-A-T
+> founders and marketers: you need an optimized "about us" page on your site
+>
+> i work with billion dollar tech companies and bootstrapped SaaS. The About Us is one of the first pages we optimize
+>
+> here's how (8 points):
+>
+> (P.S. I explain why this is important at the bottom of the post)
+>
+> here's how:
+>
+> 1. start with a clear value prop sentence: "[COMPANY] is a [CATEGORY] that [DOES XYZ] for [ICP]."
+>
+> 2. add your core services under a "what [COMPANY] does" H2 subheading. Put each service/feature/product in an H3 subheading. Write 2-3 sentences about what you do, and what outcome it produces.
+>
+> 3. next, add a "what makes [COMPANY] different" H2 subheading. List about 5 core differentiators in H3 subheadings. Give specific, quantifiable differentiators and call out competitors by name. Example: [COMPANY] offers month-to-month payment terms, whereas options like [COMPETITOR] have mandated 12-month contracts. Again: 2-3 sentences per differentiator.
+>
+> 4. your next H2 should be "who uses [COMPANY]." Add bullet points that call out your exact ICP segments. Example: "B2B SaaS marketing teams at 50 to 200-employees."
+>
+> 5. now add a "the team behind [COMPANY]" H2 subheading. Include the names of the founders, quick backstories, company origin story, team composition, and links to social pages (especially the founder(s) socials). You only need about 2 sentences per backstory/origin story.
+>
+> 6. add a "how [COMPANY] works" section. Include info like communication channels, response times, who on the team customers will work with, turnaround time, and onboarding process.
+>
+> 7. now for the most important section for AI Search: add a "key facts" H2. This should be an HTML <table> or <dl> (definition list) so it's crawlable. Include the following rows:
+>
+> Company Name
+> Type
+> Founded
+> Founder
+> Headquarters
+> Website
+> Core Offering
+> Pricing
+> Contract Terms
+> Services
+> Communication
+> Notable Clients
+> Customers Served
+> Projects Delivered
+> Competitors
+> Social
+>
+>  8. finally, add your FAQ section. Put "frequently asked questions" in an H2 subheading with your questions as H3s. Only 2-3 sentences per answer.
+>
+> Here's why this page is so important:
+> 1. it helps train AI to talk about your brand accurately
+> 2. it strengthens the E-E-A-T score of your entire domain
+> 3. in a world where everything seems fake, make your brand human
+>
+> shoot me a DM if you want a live demo of the lowest hanging fruit to rank in AI Search (tailored to your specific site)
+>
+> i hope this helps someone!
+
+- **Tweet:** https://x.com/RobHoffman_/status/2102476527200043250
+- **What:** Rob Hoffman gives an 8-part structure for an optimized About Us page (value prop, services, differentiators vs named competitors, ICP, team, process, a crawlable key-facts table, FAQ) to help AI search cite the brand accurately.
+
+## @Israfilv2 - Abliterated Qwen-Image-2.1 via text-encoder fix
+> what the f*ck, new Uncensored Qwen-Image-2.1, actually abliterated this time 
+>
+> and you can run locally in your laptop (Q4_K_M is 4.68 GB only)
+>
+> - the fix is in the text encoder, not the image weights
+> - refusals drop from 100 out of 100 to 5
+> - it does not get dumber on normal prompts
+> - edit with up to 10 reference images
+> - native transparency (stickers, cutouts, no extra mask step)
+> - ComfyUI + city96 GGUF loader
+>
+> https://t.co/OQKQiYY7DK
+
+- **Tweet:** https://x.com/Israfilv2/status/2102342696878670010
+- **Link:** https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
+- **What:** Israfil highlights a Heretic GGUF text encoder for Qwen-Image-2.1 that cuts refusals from 100/100 to 5 without hurting normal prompts; runs locally at 4.68 GB with ComfyUI and supports 10 reference images and transparency.
+
+---
+
+# Sunday, September 20, 2026
+
+## @Lon - Fable 5 thinking tokens dropped August vs July
+> After Anthropic made Fable 5 permanently available in subscription plans, I noticed a large drop in performance. The model felt dumber, and I couldn't explain why.
+>
+> Measured five different ways, August delivered dramatically fewer thinking tokens than July. https://t.co/irT7y7KkNJ
+
+- **Tweet:** https://x.com/Lon/status/2101793422487204027
+- **What:** Lon reports a perceived quality drop after Fable 5 became permanent in subscription plans and says five measurements show August delivered dramatically fewer thinking tokens than July.
+
+## @0x0SojalSec - Uncensored Qwen-Image-2.1 runs locally at 4.29 GB
+> New Uncensored Qwen-Image-2.1 SoTA image model & you can run locally at home (Q4_K_M is 4.29 GB)
+>
+> - Open weights yesterday, Uncensored overnight
+> - refusal layer removed
+> - edit with up to 10 reference images
+> - native transparency (stickers, cutouts, no extra mask step)
+> - ComfyUI + city96 GGUF loader.
+>
+> *Quoting @0x0SojalSec:* Qwen-Image-2.1 weights just dropped. - people already running it locally - 7B visual backbone. - generate and edit in the same model - edit with up to 10 reference images - native RGBA / transparent PNGs - day-0 ComfyUI + Diffusers - local edits with circles / masks - ComfyUI and Diffusers support landed the same day. - https://t.co/iJqC5JXfty
+
+- **Tweet:** https://x.com/0x0SojalSec/status/2101740116574400696
+- **Quoted:** https://x.com/0x0SojalSec/status/2101738277049131358
+- **Link:** https://huggingface.co/Qwen/Qwen-Image-2.1
+- **What:** Post on an uncensored Qwen-Image-2.1 build with refusal layer removed: edits with up to 10 reference images, native transparency, ComfyUI GGUF loader, Q4_K_M at 4.29 GB. Quotes the base model release (7B visual backbone, day-0 ComfyUI/Diffusers).
+
+## @jerryjliu0 - DocJev: fast document classification and splitting with Jev
+> Introducing DocJev - a lightning-fast OSS library for document classification and splitting with jev ⚡️
+>
+> Give a document alongside some natural language category rules. Jev will predict the document category (classify) or the boundaries between sub-documents (split).
+>
+> It is 6x faster than gpt-5.6-luna with equivalent accuracy.
+>
+> You can choose between different OCR backends:
+> liteparse: the fastest/most accurate free+OSS text parser out there. Perfect for digitalized documents. The speedups vs. luna above are inclusive of liteparse times.
+> LlamaParse: the most advanced VLM-based solution for complex docs. Using this will of course add latency on document preprocessing. But it’s a good option if you want to cache the digitalized representations of documents for a variety of downstream tasks.
+>
+> Check it out: https://t.co/PVE4hbEyFR
+>
+> If you want to dive deeper into liteparse or LlamaParse check the links below:
+> liteparse: https://t.co/JNER0mVcB8
+> LlamaParse: https://t.co/XYZmx5TFz8
+
+- **Tweet:** https://x.com/jerryjliu0/status/2101738281046294552
+- **Link:** https://github.com/jerryjliu/docjev
+- **Filed:** [docjev.md](./knowledge/tools/docjev.md)
+- **What:** Jerry Liu's OSS library DocJev classifies documents and finds sub-document boundaries from natural-language rules, claimed 6x faster than gpt-5.6-luna at equal accuracy; supports liteparse or LlamaParse OCR.
+
+## @NFT_Chen - Laya: local 421M open-source decision model vs cloud Jev
+> 💥炸了！开源本地版 Laya 响应速度吊打 Jev ，毫秒级决策快到飞起！
+>
+> 左边 Laya 是本地 421M 开源决策模型，右边 Jev 1.13.0 是云端 API。
+>
+> 同一盘贪吃蛇、同一套 typed decision，30 秒自由跑下来：
+>
+> 🔹Laya：分数 46、长度 52，决策 86.5 次/秒，P50 约 9ms
+> 🔸Jev：分数 1、长度 7，决策 3.2 次/秒，API 往返 317ms
+>
+> M5 Pro 实测中位耗时：本地 15.3ms vs 云端 298.1ms，接近 20 倍
+>
+> Laya 推理内存大约 1GB，毫秒级决策，不靠网络
+>
+> 而云端 Jev 每一步都在等往返，本地每一步都在当场拍板！
+>
+> GitHub：https://t.co/iksiWcCUbX
+>
+> #开源Jev #Laya #本地部署 #SystemOne #贪吃蛇对战AI  #Jev
+>
+> https://t.co/4tZHU6kg17
+>
+> *Quoting @NFT_Chen:* 🔥速码！谁的 Codex 还没装上 Jev 批量必杀技？这波真能起飞 ！ Jev 不写长文、不瞎规划，专门干一件事：选择、分类、打分。Agent 给上下文、自己干活。大规模数据清洗、自循环分类、长程任务里替你拍板，比把 Codex / Claude 当 judge 更便宜、更快、更能并发。 亮点先看： 🔹开源 9 个技能 + 90 个场景，MIT 🔹适合 inbox、文档、代码审查、浏览器动作、工具路由、上下文压缩 🔹社区已经做出：自己选下一步的浏览器、概率版 Tetris、鲸鱼上的城市、MIDI 作曲 关键操作： 1️⃣打开 Codex / Claude Code / OpenCode 2️⃣把这段话丢给 Agent： 「帮我给当前 Agent 安装 Jev Skills，包括通用技能和全部场景技能。请读取并按照这份安装指南操作，完成后验证安装是否成功：https://t.co/L386zXfl4v」 3️⃣Agent 会按宿主复制到对应目录： Codex → .agents/skills/ Claude Code → .claude/skills/ OpenCode → .opencode/skills/ 4️⃣装好后直接点名技能，例如：分类用 jev-triage，路由用 jev-route，审查用 jev-code-review，长程检查点用 jev 5️⃣先小样本核对判断质量，再放开批量和预算 别再让大模型一遍遍当昂贵评委了。 给 Agent 装上 Jev，放手让它自己判、自己跑。 GitHub：https://t.co/LzJ58e0pmx #Jev #AgentSkills #Codex #ClaudeCode #开源 #AIAgent #TypeSafe #OpenCode
+
+- **Tweet:** https://x.com/NFT_Chen/status/2101675124747338229
+- **Quoted:** https://x.com/NFT_Chen/status/2101644445078728802
+- **Link:** https://github.com/NandhaKishorM/laya
+- **Filed:** [laya.md](./knowledge/tools/laya.md)
+- **What:** NFT_Chen (Chinese) shows open-source Laya, a 421M local decision model, beating cloud Jev in a Snake game: 86.5 decisions/s with P50 about 9ms versus 3.2/s at 317ms API round trip, about 1GB memory. Quoted post promotes Jev's open-source skills pack.
+
+---
+
+# Saturday, September 19, 2026
+
+## @secemp9 - Entire arXiv as a HuggingFace dataset: 3.1M papers, 16 TB
+> pleased to share the entire arXiv site as a dataset on HuggingFace
+> https://t.co/fmUkP2I6Ii
+> 3,148,796 papers, every version, in LaTeX, PDFs, PostScript, HTML, 16 TB in total
+
+- **Tweet:** https://x.com/secemp9/status/2101416879772340411
+- **Link:** https://huggingface.co/datasets/secemp9/arxiv-complete
+- **What:** secemp9 publishes the complete arXiv site (3,148,796 papers, every version, in LaTeX, PDF, PostScript, HTML; 16 TB) as a HuggingFace dataset for bulk research and training use.
+
+## @michael_chomsky - classifier.dev: free zero-shot classification over HTTP
+> https://t.co/mcel85kUB7 now outperforms jev and is free
+>
+> go nuts guys https://t.co/ZjfE7HITKh
+
+- **Tweet:** https://x.com/michael_chomsky/status/2101210102393102497
+- **Link:** https://classifier.dev/
+- **What:** Michael Chomsky claims classifier.dev now outperforms Jev and is free; the service offers keyless zero-shot classification and structured answers via plain HTTP, with OpenAPI and llms.txt for agents.
+
+---
+
+# Friday, September 18, 2026
+
+## @trq212 - Claude Code 2.1.277 reads AGENTS.md when CLAUDE.md is absent
+> We're adding support for AGENTS.md to Claude Code. 
+>
+> Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.
+>
+> You can toggle this behavior in /config.
+
+- **Tweet:** https://x.com/trq212/status/2101009392611278961
+- **What:** Thariq announces Claude Code now falls back to AGENTS.md in a folder lacking CLAUDE.md, starting in version 2.1.277, toggleable in /config.
+
+## @danielkbuilds - Check AI-written pages against Google's content guidelines
+> Tip if you're using AI to write content and still want it indexed by Google:
+>
+> Get whatever AI you're using to thoroughly study and document Google's latest content guidelines. Then build a workflow where every single page gets checked against that document before it goes live.
+>
+> That's how I got to this.
+
+- **Tweet:** https://x.com/danielkbuilds/status/2100938823391711246
+- **What:** Daniel advises having an AI study and document Google's latest content guidelines, then running every page through a checklist workflow before publishing so AI-generated content stays indexable.
+
+## @realfxw - Cloudflare agentic-inbox: self-hosted AI email client on Workers
+> Cloudflare 官方开源了一个堪称 Serverless 典范的神级项目：agentic-inbox —— 一个完全跑在 Cloudflare Workers 边缘网络上的自托管 AI 邮件客户端。
+>
+> 以往自建邮件系统配置繁琐、运维头疼，而这个项目直接将邮件收发、数据存储、UI 界面与 AI Agent 全部打包进了 Cloudflare 生态：
+>
+> 核心亮点
+>
+> 纯边缘架构与数据隔离：接入 Cloudflare Email Routing 与 Email Service 搞定邮件收发；每个邮箱独立运行在一个 Durable Object (DO) 中，自带 SQLite 存储邮件，附件则无缝存入 R2，既实现了多租户隔离，又做到了免运维。
+>
+> 原生 AI Email Agent：基于 Cloudflare Agents SDK 与 Workers AI 构建，内置 9 种邮件处理工具。收到新邮件时，Agent 会自动阅读上下文并起草回复，且严格保留人类确认环节，未经允许绝不私自发信。
+>
+> 自带 MCP Server 支持：服务原生暴露 /mcp 端点，外部 AI 编程助手（如 Cursor、Claude Code）可以直接挂载该接口，跨工作流读取或处理邮件。
+>
+> 生产级安全保障：默认集成 Cloudflare Access JWT 验证，防止个人邮箱系统暴露在公网，零配置实现企业级访问控制。
+>
+> 技术栈速览
+>
+> 前端：React 19、React Router v7、Tailwind CSS、TipTap 编辑器、Zustand
+>
+> 后端与存储：Hono、Cloudflare Workers、Durable Objects (SQLite)、R2
+>
+> AI 驱动：Cloudflare Agents SDK (AIChatAgent)、AI SDK v6、Workers AI
+>
+> 如果你正在探索 Workers 全家桶的工程化实践，或者想给自己的域名搭一个兼顾隐私与自动化能力的专属邮件中心，这个开源实现是极具参考价值的标杆案例。
+>
+> 🔗 源码传送门：https://t.co/PiZdA0l4Bm
+
+- **Tweet:** https://x.com/realfxw/status/2100817097563508967
+- **Link:** https://github.com/cloudflare/agentic-inbox
+- **Filed:** [agentic-inbox.md](./knowledge/tools/agentic-inbox.md)
+- **What:** Chinese-language overview of Cloudflare's open-source agentic-inbox: email client fully on Workers using Email Routing, per-mailbox Durable Objects with SQLite, R2 attachments, an Agents SDK email agent that drafts but never sends without approval, an /mcp endpoint, and Cloudflare Access JWT auth.
+
+---
+
+# Thursday, September 17, 2026
+
+## @0xSero - Ternary Bonsai 2 27B: 5.9 GB Qwen3.8 quant keeps 98.2% quality
+> Are you compute poor? 
+> Do you want to run Qwen3.8-27B? 
+>
+> Dude, if you have 8-16gb of vram or 16-24gb of MacOS memory this is by far the smartest model you can run
+>
+> PrimML is doing something phenomenal, they've created a ternary version of Qwen3.8-27B
+>
+> 9x smaller 98.2% as smart!
+>
+> *Quoting @PrismML:* Today, we’re announcing Ternary Bonsai 2 27B. Based on Qwen3.8 27B, Bonsai 2 27B is 9x smaller than its full-precision counterpart while retaining 98.2% of its aggregate benchmark performance. Two months after the first Bonsai 27B release, the biggest change is quality. The footprint remains 5.9 GB, but the gap to full precision has narrowed materially, with particularly strong gains in agentic coding, multimodal reasoning, and long-horizon tool use. Ternary Bonsai 2 27B is available today under Apache 2.0.
+
+- **Tweet:** https://x.com/0xSero/status/2100708075325841839
+- **Quoted:** https://x.com/PrismML/status/2100692248480596348
+- **What:** 0xSero highlights PrismML's Ternary Bonsai 2 27B, a ternary-quantized Qwen3.8 27B that is 9x smaller (5.9 GB), retains 98.2% of benchmark performance and is Apache 2.0, making a strong model runnable on 8-24 GB machines.
+
+## @iam_zachi - jev(): PostgreSQL extension for natural-language WHERE clauses
+> I think I just cooked something 🔥
+>
+> jev(): a PostgreSQL extension that searches your whole database in natural language. No index, no embeddings, just one function.
+>
+> WHERE jev(people, 'could work from home')
+> or 
+> WHERE jev(people, 'name sounds european')
+>
+> 129 rows judged in ~1s for $0.0009. Second run: 6ms from cache.
+>
+> *Quoting @CompleteSkeptic:* After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev • 20-200x faster • 40-400x cheaper (w/ output tokens free) • Frontier composable intelligence optimized for decisions AFAICT the shortest path to AI-based economic revolution
+
+- **Tweet:** https://x.com/iam_zachi/status/2100679300756435135
+- **Quoted:** https://x.com/CompleteSkeptic/status/2099925682726002904
+- **What:** Zachi built a Postgres extension exposing jev(table, 'natural language condition') so queries filter rows semantically without indexes or embeddings; 129 rows judged in about 1s for $0.0009, 6ms when cached.
+
+## @kunchenguid - Jev replaces LLM dispatch routing in firstmate orchestrator
+> alright - just got Jev deployed for a real production use case, which now performs at fable level quality but 10x faster and saves a ton of money
+>
+> context - a powerful capability of firstmate is that as an orchestrator it intelligently routes each task to an appropriate agent (permutation of harness, model, and reasoning effort) based on custom user preference
+>
+> by default, that's done by the firstmate agent and the LLM would have to do some thinking, make tool calls to read dispatch rules, quota data etc and then do the dispatch. this is slow and does cost a bit of LLM tokens
+>
+> i just replaced this dispatch process with Jev. it makes the same decision with no thinking or tool calls, done in ~200ms, and for the 25 tasks i evaluated this with, it gives the exact same answer fable would have given... 
+>
+> there's still a tool call needed to invoke Jev, done by the firstmate agent which uses an LLM. but even with that counted, the saving from Jev still resulted in a -71% reduction in cost and -90% reduction in wall time of completing the whole dispatching process
+>
+> Jev API calls themselves are almost free.. i made 100+ calls, and my usage dashboard still shows $0.01 (which i think means "haven't reached $0.01 yet"). if we just look at the part Jev replaced and not the whole system, then the saving is on the magnitude of ~100x
+>
+> if you also have Jev and you use firstmate, set TYPESAFE_API_KEY in your .env file in your firstmate repo to activate this
+>
+> exciting times! i think this is starting to enable a whole new architectural paradigm for software. LLMs are just a small part of it. more on that soon
+
+- **Tweet:** https://x.com/kunchenguid/status/2100468943853085061
+- **What:** Kun Chen swapped firstmate's LLM-based agent dispatch for Jev: about 200ms per decision, matched Fable's answer on all 25 evaluated tasks, cutting whole-process cost 71% and wall time 90%. Argues cheap decision models enable a new software architecture.
+
+---
+
+# Wednesday, September 16, 2026
+
+## @gregpr07 - Browser Use + Jev: 7-second flight search for $0.0039
+> Breaking: Browser Use + Jev = Ultrafast ⚡
+>
+> Findings flights took 7s and cost only $0.0039 🤯
+>
+> &gt; new action space every step
+> &gt; DOM state space
+> &gt; small LLM fallback to type
+>
+> (this video is at 1x speed btw)
+>
+> Built a tiny open source browser agent. try it below ↓ https://t.co/AplCBRYC5o
+
+- **Tweet:** https://x.com/gregpr07/status/2100411066966749359
+- **What:** Browser Use founder Gregor demos a tiny open-source browser agent pairing Jev with DOM state and a small-LLM fallback for typing; finding flights took 7 seconds and $0.0039, shown at 1x speed.
+
+## @h_nilforoshan - HiringCafe benchmarks Jev on resume-to-job relevance scoring
+> Stanford CS PhD here 👋. I rigorously benchmark Jev/Typesafe on my consumer AI app serving 2.5 million monthly active users https://t.co/b52LE8B3yN. At HiringCafe we score user resume x job description relevance. Here's how it does 🧵
+>
+> *Quoting @CompleteSkeptic:* After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev • 20-200x faster • 40-400x cheaper (w/ output tokens free) • Frontier composable intelligence optimized for decisions AFAICT the shortest path to AI-based economic revolution
+
+- **Tweet:** https://x.com/h_nilforoshan/status/2100409794276520341
+- **Quoted:** https://x.com/CompleteSkeptic/status/2099925682726002904
+- **Link:** https://hiringcafe.com/
+- **What:** Stanford CS PhD running HiringCafe (2.5M monthly users) starts a thread benchmarking Typesafe's Jev against alternatives on resume x job-description relevance scoring; quoted post is the Jev launch.
+
+## @hamiltonulmer - DuckDB extension for row classification with Jev
+> I made a DuckDB extension where you can use @typesafeai 's Jev to do quick classification of rows in any csv/parquet file or duckdb table
+>
+> about 10sec for 1k rows ~ better than using an LLM, way more ergonomic than a classifier
+>
+> game-changing for data analysis! https://t.co/ljB6hoQJFh
+
+- **Tweet:** https://x.com/hamiltonulmer/status/2100370557405667768
+- **What:** Hamilton Ulmer built a DuckDB extension that uses Typesafe's Jev to classify rows of CSV, parquet or DuckDB tables, about 10 seconds per 1k rows, which he finds better than LLM calls and more ergonomic than training a classifier.
+
+---
+
+# Tuesday, September 15, 2026
+
+## @danshipper - Jev: probability-output model acting as a fast, cheap judge
+> we almost never test new foundation models but we've been testing this for ~a week @every and it's pretty wild.
+>
+> the kind of things that will be obviously indispensible in 6-12 months
+>
+> it doesn't produce words as output, it produces probabilities. so it can efficiently act as a judge in cases where you'd need a Fable-level model—but in our testing was 25x faster and 600x lower priced 
+>
+> excellent vibe check by @hammer_mt on @every:
+> https://t.co/yVX25Wsu4Z
+>
+> *Quoting @CompleteSkeptic:* After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev • 20-200x faster • 40-400x cheaper (w/ output tokens free) • Frontier composable intelligence optimized for decisions AFAICT the shortest path to AI-based economic revolution
+
+- **Tweet:** https://x.com/danshipper/status/2099947471518474522
+- **Quoted:** https://x.com/CompleteSkeptic/status/2099925682726002904
+- **Link:** https://every.to/vibe-check/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds?utm_cta_source=home_main_a_3
+- **What:** Dan Shipper's Every team tested Typesafe's Jev, a model that outputs probabilities instead of text so it can act as a judge; they report it 25x faster and 600x cheaper than a Fable-level model. The quoted launch post pitches Jev as 20-200x faster, 40-400x cheaper decision-optimized AI.
+
+## @tom_doerr - Lead-generation scraper for Google Maps and Yelp
+> Extracts businesses, websites, and emails from Google Maps and Yelp, exporting data to CSV files.
+>
+> https://t.co/N5qAJdANMf https://t.co/geGemg0o4A
+
+- **Tweet:** https://x.com/tom_doerr/status/2099765040807080229
+- **Link:** https://github.com/Madi-S/Lead-Generation
+- **What:** GitHub tool (Madi-S/Lead-Generation) that extracts business names, websites and emails from Google Maps and Yelp and exports them to CSV files.
+
+---
+
+# Monday, September 14, 2026
+
+## @RobHoffman_ - Core SEO pages that drive 90% of tech conversions
+> There’s like 5-20 pages on most tech company’s websites that will drive 90% of your conversions
+>
+> Here they are:
+> > [Competitor] Alternatives
+> > [Competitor] vs [Competitor]
+> > [Competitor] Review
+> > Best [product] for X
+> > How to export data from [Competitor]
+> > [Software] for [role]
+> > [Software] with an MCP connection
+> > Home page
+> > Services/Product pages
+>
+> Create variations of these (i.e. for your top competitors). Make them best in class. Interlink between them.
+>
+> We were able to beat all our VC backed competitors with just these pages. Incumbents with 3-year head starts and $30m in the bank. Didn't matter.
+>
+> Don’t do anything until you have these core pages built. When you're ranking and making money you're welcome to send me a thank-you message.
+>
+> P.S. speaking of, I get lots of questions about how to build these pages so they rank. If you’d like to know just DM me. I’ll send some landing page mockups for you to use on your website.
+>
+> I think you need to be following me to DM.
+>
+> Do it fast because I get like 50 DMs everytime I post stuff like this. I will respond to the first 9 or 10!
+
+- **Tweet:** https://x.com/RobHoffman_/status/2099577674763243765
+- **What:** Rob Hoffman lists 5-20 page types (competitor alternatives, X vs Y, reviews, best-for-X, export-from-competitor, software-for-role, MCP-connection pages) that he says let his company outrank VC-backed rivals; ends with a DM funnel.
+
+## @askalphaxiv - OpenResearch: turn any coding agent into a research agent
+> OpenResearch was the #1 trending GitHub repo on Friday 🚀
+>
+> With OpenResearch, you can turn any coding agent into a research agent that reviews literature, develops hypotheses, runs experiments, and produces research artifacts.
+>
+> Own and automate your research stack end-to-end. Now available on Windows.
+>
+> Check it out: https://t.co/IDi6bmrxTP
+
+- **Tweet:** https://x.com/askalphaxiv/status/2099565997053403430
+- **Link:** https://github.com/alphaXiv/OpenResearch
+- **Filed:** [openresearch.md](./knowledge/tools/openresearch.md)
+- **What:** alphaXiv's open-source OpenResearch, the number one trending GitHub repo on the prior Friday, adds literature review, hypothesis development, experiment running and artifact production to any coding agent; now supports Windows.
+
+## @nutlope - Inspo: design inspiration MCP server for coding agents
+> Introducing Inspo.
+>
+> A design MCP server for Claude Code, Codex, and OpenCode.
+>
+> It searches 800+ beautiful websites and finds relevant design inspiration for your coding agent.
+>
+> Install → npx inspo-mcp install https://t.co/iyw777zrgj
+
+- **Tweet:** https://x.com/nutlope/status/2099547343112564921
+- **What:** Nutlope's Inspo MCP server (npx inspo-mcp install) lets Claude Code, Codex and OpenCode search 800+ curated websites to pull design inspiration into UI work.
+
+## @wildmindai - SNAP3D: single image to snap-fit multi-part 3D prints
+> If you own a 3D printer, you need this tool on your radar right now.
+>
+> SNAP3D turns a single 2D image into fully assemblable, multi-part 3D prints with built-in peg-and-socket joints! 
+>
+> No glue. No screws. Just print, snap, and build. 
+>
+> it cuts the model into semantic parts, optimizes the connectors, and runs physics tests to guarantee stability. 
+>
+> Feed it a photo, get real-world snap-fit parts ready for your print bed
+>
+> https://t.co/d482w8FKwx
+
+- **Tweet:** https://x.com/wildmindai/status/2099470003820974506
+- **Link:** https://lucytuan.github.io/SNAP3D/
+- **What:** Research project (lucytuan.github.io/SNAP3D) that converts one 2D image into semantically split 3D parts with optimized peg-and-socket joints and physics-checked stability, so prints assemble without glue or screws.
+
+---
+
+# Sunday, September 13, 2026
+
+## @kseniam0s - NVIDIA Inception: free credits, training and VC intros for AI startups
+> OPPORTUNITY‼️: @nvidia will give your AI startup free training, cloud credits, and VC intros. No VC funding required, no equity, no deadline.
+>
+> This is NVIDIA Inception program.
+>
+> What you get:
+> - free technical courses and workshops
+> - latest SDKs, model libraries, platforms
+> - cloud credits from NVIDIA & partners
+> - preferred pricing on NVIDIA hardware
+> - investor exposure on Capital Connect
+> - GTM support and co-branded content
+>
+> Who qualifies: at least one developer, a working website, officially incorporated, under 10 years old. Revenue not required.
+>
+> No fees, no deadlines, no cohorts. Rolling applications.
+>
+> 🖇️Apply → https://t.co/QEAENI3YSw
+>
+> P.S. We are building the data room that reads like a story, not a folder dump. Start yours free → https://t.co/RgOL0J0SiD
+
+- **Tweet:** https://x.com/kseniam0s/status/2099194454758523021
+- **Link:** https://www.nvidia.com/en-us/startups/
+- **What:** Thread summarizing NVIDIA's rolling Inception program for AI startups (cloud credits, SDKs, hardware pricing, Capital Connect investor exposure) with no equity or fees; needs one developer, a website, incorporation and age under 10 years. Ends with a plug for the author's Pageform data-room product.
+
+---
+
+# Thursday, September 10, 2026
+
+## @doodlestein - Planning-stage prompt for making a system agent-intuitive and ergonomic
+> If you still haven’t tried this prompt, you’re missing out. It really does wonders during the planning stages of a new project. Best with Fable 5.1 and Astra xhigh.
+>
+> *Quoting @doodlestein:* Agent Coding Pro Tip:  After you've gotten an agent (hopefully a frontier one, like Fable Max or GPT Pro) to devise a plan for a new project, follow up with this prompt and see the magic: --- OK, now I want you to think deeply about how to make this entire system as agent-intuitive, agent-ergonomic, and agent-accretive as you can possibly imagine. Put yourself in the driver's seat and imagine that YOU are the one using this system and driving it. What would most enable you to do an awesome job understanding the situation accurately and optimally controlling everything to drive the best and most accurate results possible, with the least expenditure of resources?  Then make all the requisite changes to the various design documents and plans accordingly. Don't just think of the project as an assemblage of various parts or components: really try to profoundly and deeply conceptualize it as a synthetic SYSTEM that is maximally coherent, cohesive, modular, and interconnected, forming a tower of linked abstractions that are maximally legible to you as an agent. Really ruminate and meditate on all of this incredibly deeply before responding or taking any actions.
+
+- **Tweet:** https://x.com/doodlestein/status/2098172432938947009
+- **Quoted:** https://x.com/doodlestein/status/2094288037458882668
+- **What:** Jeffrey Emanuel recommends his earlier follow-up prompt, run after an agent drafts a new-project plan, asking it to rethink the system as agent-intuitive, agent-ergonomic and agent-accretive; says it works best with Fable 5.1 and Astra at xhigh effort.
+
+## @ChrisJBakke - Billionairebot: ask how you'd solve chores with unlimited resources
+> My favorite use case for @bot right now is my "Billionairebot": 
+>
+> I run all mildly annoying tasks I have to do by Billionairebot, which tells me how I would solve any problem if I didn't want to get personally involved and had unlimited resources. 
+>
+> It turns out that a large number of inconveniences like "having to show up to the DMV to sign paperwork" can be outsourced to notaries who come to your office for $150.
+
+- **Tweet:** https://x.com/ChrisJBakke/status/2098168461772079333
+- **What:** Chris Bakke describes a bot prompt framing that answers every annoying task as a billionaire would, surfacing outsourcing options such as a $150 mobile notary instead of a DMV trip.
+
+## @AlexFinn - Build a Jony Ive-style voice device with GPT-Live-1 API
+> This is actually the release I've been waiting for for a long time. A hacker's dream come true
+>
+> You can now build the Jony Ive/OpenAI device before they even release it
+>
+> Going to be buying a small dev screen/mic on Amazon. Plug it into my computer. Tell Astra to hack it and put the Live-1 API on it
+>
+> Now anywhere you go you can just talk to the device and have it do work for you
+>
+> Basically ChatGPT's Voice everywhere you go.
+>
+> Give it commands, it starts doing work on your home computer
+>
+> You basically can now build your own personal assistant
+>
+> Tons of cheap ways to do this on Amazon with small dev devices. Just search for them
+>
+> Things like this just make AI fun and I don't think we focus enough on having fun
+>
+> *Quoting @OpenAIDevs:* GPT-Live-1 is now available in the API. Bring ChatGPT’s natural back-and-forth to your app, with voice agents that listen while they speak and work with the models and harness you choose. https://t.co/gIl1gwsBDV
+
+- **Tweet:** https://x.com/AlexFinn/status/2098109657089020050
+- **Quoted:** https://x.com/OpenAIDevs/status/2098099269551149398
+- **What:** Alex Finn reacts to OpenAI's GPT-Live-1 voice API release, proposing a cheap hackable dev screen/mic running the API as an always-on voice assistant that triggers work on his home computer. The quoted OpenAIDevs post announces voice agents that listen while speaking.
+
+## @tom_doerr - Google Maps scraper exporting business listings to CSV
+> Extracts business names, addresses, websites, contact details, and reviews from Google Maps listings and exports the data to a CSV.
+>
+> https://t.co/L7rMtIwHRM https://t.co/ztjOYZVKOL
+
+- **Tweet:** https://x.com/tom_doerr/status/2097920782823305690
+- **Link:** https://github.com/zohaibbashir/Google-Maps-Scrapper
+- **What:** GitHub scraper (zohaibbashir/Google-Maps-Scrapper) that pulls business names, addresses, websites, contact details and reviews from Google Maps listings into a CSV; useful for lead generation.
+
+---
+
 # Wednesday, September 9, 2026
+
+## @tom_doerr - Hyperresearch: Claude Code research agent with citation verification
+> Hyperresearch turns Claude Code into a research agent that ingests hundreds of sources, verifies citations, and generates adversarially-audited reports.
+>
+> https://t.co/dkguNJNhJt https://t.co/dCW2t9K2Xa
+
+- **Tweet:** https://x.com/tom_doerr/status/2097841937642332595
+- **Link:** https://github.com/jordan-gibbs/hyperresearch
+- **Filed:** [hyperresearch.md](./knowledge/tools/hyperresearch.md)
+- **What:** Open-source tool (jordan-gibbs/hyperresearch) that turns Claude Code into a deep-research agent: ingests hundreds of sources, verifies citations, and produces adversarially audited reports.
 
 ## @daniel_mac8 - diagram-design skill for Codex and Claude Code
 > Oh boy. This is amazingly cool. Very happy I found this.
