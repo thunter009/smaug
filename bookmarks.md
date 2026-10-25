@@ -4173,7 +4173,626 @@
 
 ---
 
+# Tuesday, April 28, 2026
+
+## @olvrgln - Mesa: versioned POSIX filesystem for enterprise AI agents
+> Introducing Mesa: the most powerful filesystem ever built, designed specifically for enterprise AI agents.
+>
+> Every team building agents eventually hits the same wall: where do files live? [...] Today documents live in a sandbox that dies in 30 minutes, an S3 bucket where concurrent writes clobber each other, or a GitHub repo never built to absorb agent-scale traffic.
+>
+> Mesa is a POSIX-compatible filesystem with built-in version control, mounted into a sandbox like any other filesystem. Provides branches, durable storage that survives sandbox death, sparse materialization, fine-grained per-agent access control, and full history for human review. Private beta open.
+
+- **Tweet:** https://x.com/olvrgln/status/2049147383544500678
+- **What:** Launch of Mesa, a mountable POSIX filesystem with git-like branching, rollback and audit history so parallel agents can safely edit durable artifacts (contracts, claims, reports) that outlive ephemeral sandboxes; in private beta with design partners.
+
+## @ihteshamali - Ladder: self-hosted paywall-bypass proxy
+> The New York Times charges $17/month. Wall Street Journal charges $38/month. Nature charges $199/year.
+>
+> Someone just open sourced a proxy that bypasses all of them for $0. And publishers cannot shut it down.
+>
+> It's called Ladder. [...] One Docker command. Your machine. Your rules. 6.3K stars. MIT License. 100% Opensource - https://t.co/5N0gwHcw9y
+
+- **Tweet:** https://x.com/ihteshamali/status/2049133587027660879
+- **Link:** https://github.com/everywall/ladder
+- **What:** Promotes everywall/ladder, an MIT-licensed self-hosted proxy (one Docker command, ~6.3K stars) that strips paywalls from sites like NYT, WSJ and Nature, with no central domain to seize; repo content was empty so unfiled.
+
+## @alphaman_111 - Five connection-building questions to ask your kids
+> 5 Questions to Ask Your Kids Tonight
+>
+> 1. What do I do that helps you feel most loved and cared for?
+> 2. What moment today made you smile, laugh, or feel good inside?
+> 3. Can you tell me about something you recently did that made you feel proud of yourself?
+> 4. What's one of the hardest parts about being a kid right now?
+> 5. If you had a magic wand, what would you change, or what would your life look like if you could create anything you wanted?
+>
+> These aren't just cute conversation starters, they're connection builders.
+
+- **Tweet:** https://x.com/alphaman_111/status/2049056778370085348
+- **What:** Parenting list of five open-ended prompts (feeling loved, daily joys, pride, current struggles, a magic-wand wish) meant to build emotional connection with children rather than small talk; unrelated to tech, saved as personal reference.
+
+---
+
+# Monday, April 27, 2026
+
+## @yoheinakajima - Quarterly AI trends and experiments session for LPs (thread)
+> we held our quarterly AI session with LPs last week where we go over ai trends and our experiments
+>
+> sharing an abbreviated version here for anyone interested
+>
+> 🧵 https://t.co/fRoZX64IFS
+
+- **Tweet:** https://x.com/yoheinakajima/status/2048919606694473775
+- **What:** THIN: Yohei Nakajima announces a thread sharing an abbreviated version of his firm's quarterly LP session on AI trends and experiments; the thread body is not captured, only the intro tweet.
+
+---
+
+# Saturday, April 25, 2026
+
+## @steipete - ClawSweeper: OpenClaw bot triaging thousands of issues and PRs
+> 50 issues/prs 4000 issues today, few thousand are in pipeline. (rate limits are rough) https://t.co/AiNNDcvGke
+
+- **Tweet:** https://x.com/steipete/status/2047982647264059734
+- **Link:** https://github.com/openclaw/clawsweeper
+- **What:** THIN: @steipete shares openclaw/clawsweeper, apparently an automated issue/PR sweeper processing about 4000 issues in a day with thousands queued and rate limits as the bottleneck; repo content was empty so details are unknown.
+
+---
+
+# Friday, April 24, 2026
+
+## @jonas - Cloudflare-style bindings (env.STRIPE) for third-party APIs
+> The cloudflare “bindings instead env vars” thing is so good that I sometimes wonder why they don’t have wrappers for popular third party APIs
+>
+> env.STRIPE - that sort of thing
+
+- **Tweet:** https://x.com/jonas/status/2047767695530004580
+- **What:** Argues Cloudflare Workers bindings (typed handles instead of env-var secrets) are so ergonomic that Cloudflare should offer built-in wrappers for third-party APIs like Stripe, exposed as env.STRIPE with no key management.
+
+## @ExaAILabs - Exa plugin install for Claude Code via official plugin marketplace
+> claude-plugins-official && claude plugin i exa@claude-plugins-official && claude "call mcp__plugin_exa_exa__authenticate (a deferred tool available you, guaranteed)"
+
+- **Tweet:** https://x.com/ExaAILabs/status/2047735503794094485
+- **What:** Exa's one-line command to install its search plugin from the claude-plugins-official marketplace and trigger the deferred MCP authenticate tool, giving Claude Code agents Exa web search access.
+
+---
+
+# Wednesday, April 22, 2026
+
+## @Ex0byt - OpenAI's 1.5B PII privacy-filter model vs. existing LiteLLM + GLiNER-PII setups
+> Someone OpenAI clearly follower. lol..
+> OpenAI dropped tiny PII detection model earlier today. 1.5B params (50M active), labels all sensitive data in one pass masks it out.
+>
+> all third-party, billion-token maxxers out still not protecting https://t.co/GjoqFww9Ue
+>
+> *Quoting @Ex0byt:* @renedesstates LiteLLM GLiNER-PII agents/harnesses (e.g. ANTHROPIC_BASE_URL=http://localhost:4000) auto-sanitized <100 later.
+
+- **Tweet:** https://x.com/Ex0byt/status/2047116047774257552
+- **Quoted:** https://x.com/Ex0byt/status/2045662273776013331
+- **Link:** https://huggingface.co/openai/privacy-filter
+- **What:** Notes OpenAI released openai/privacy-filter, a 1.5B-parameter (50M active) model that detects and masks PII in one pass, while claiming his own earlier LiteLLM proxy plus GLiNER-PII setup already sanitized agent traffic locally.
+
+## @tulipking - The Art of Exit Liquidity: VCs selling private-market bags to retail
+> https://t.co/QwOFNAFy9R
+
+- **Tweet:** https://x.com/tulipking/status/2047048872791269562
+- **Link:** https://x.com/i/article/2047024611104305152
+- **Filed:** [the-art-of-exit-liquidity.md](./knowledge/articles/the-art-of-exit-liquidity.md)
+- **What:** Long-form essay arguing VCs who inflated private companies to trillions now need exit liquidity, using retail wrappers like USVC and Nasdaq low-float index weighting to push passive 401k money into insider positions.
+
+## @dhruvtwt_ - NVIDIA hosts ~80 free AI models via OpenAI-compatible API
+> Why is no one talking about this?
+>
+> @nvidia is offering around 80 AI models via hosted APIs absolutely for free.
+>
+> You get access to MiniMax M2.7, GLM 5.1, Kimi 2.5, DeepSeek 3.2, GPT-OSS-120B, Sarvam-M etc.
+>
+> This plugs straight into OpenClaude, OpenCode, Zed IDE, Hermes agent and even with Cursor IDE.
+>
+> Setup: grab API key at build.nvidia.com/models, base_url = "https://integrate.api.nvidia.com/v1", api_key = "$NVIDIA_API_KEY", select model (e.g. minimaxai/minimax-m2.7)
+
+- **Tweet:** https://x.com/dhruvtwt_/status/2047006444701274380
+- **Link:** https://build.nvidia.com/models
+- **What:** Points to NVIDIA's build.nvidia.com hosted catalog of roughly 80 open models (MiniMax, GLM, Kimi, DeepSeek, GPT-OSS) served free via an OpenAI-compatible endpoint, usable from coding agents and IDEs for cheap experimentation.
+
+## @laogui - Hermes WebUI: Browser UI for Hermes Agent With Profiles and Sessions
+> Hermes WebUI (translated from Chinese): the best Hermes WebUI I've used. It moves session management, workspace file browsing, scheduled tasks, long-term memory and multiple Profiles into the browser, and TUI/Telegram sessions can be continued seamlessly on the web. Switching working directory and Profiles lets him treat Profiles as different AI employees so memory and skills stay separated. It is a pure UI layer over your existing Hermes service; local install starts with one command, remote via SSH tunnel (`ssh -N -L 8787:127.0.0.1:8787 user@host`, then open localhost:8787). A macOS client is also available.
+
+- **Tweet:** https://x.com/laogui/status/2046980600830308691
+- **Link:** https://github.com/nesquena/hermes-webui
+- **What:** Chinese-language recommendation of nesquena/hermes-webui, a pure-UI browser front end for Hermes Agent offering session continuity with TUI/Telegram, file browsing, cron tasks, memory and per-Profile separation, reachable over an SSH tunnel; a Swift macOS client also exists.
+
+## @MarcJBrooker - Four Architectural Patterns for Multi-Tenant Databases (RLS Discourse)
+> Some thoughts on the RLS discourse. If I'm building a multi-tenant online service backed by a database, I choose from four architectural patterns: control-plane separation, table-per-customer, explicit user info in the schema, or fine-grained DB security features.
+
+- **Tweet:** https://x.com/MarcJBrooker/status/2046971824312111513
+- **What:** THIN: AWS database engineer Marc Brooker weighs in on the row-level-security debate, listing four tenant isolation patterns (control-plane separation, table-per-customer, tenant info in schema, DB-level security); the thread detail with trade-offs is not captured.
+
+## @wadefoster - Zapier SDK + Hermes Agent + Bland Makes Phone Calls From Telegram
+> One of our engineers has Zapier making calls for him.
+>
+> Zapier SDK + Hermes Agent + Bland
+>
+> Now he just messages his bot in Telegram: "call the pharmacy, see if my script is ready" and it makes the call (pending human approval, of course)
+>
+> Just point your agent at the @Zapier SDK. Connect to 9,000+ apps with no extra setup.
+>
+> Next up: Zoom meetings? 👀
+
+- **Tweet:** https://x.com/wadefoster/status/2046936948544090328
+- **What:** Zapier demo of an agent workflow: a Telegram message to a Hermes Agent bot triggers an AI voice call via Bland through the Zapier SDK (9,000+ app connectors), gated by human approval; Zoom meetings teased next.
+
+## @lucaronin - Tolaria: Open-Source macOS App for Markdown Knowledge Bases Operated by AI Agents
+> Introducing Tolaria! 💧
+>
+> Today I am releasing a macOS desktop app for managing markdown knowledge bases, helping both AI and humans operate them. It's free and open source, and always will be. I've been working on it for three months, and I now use it to run my life and work. I personally have a massive workspace with 10,000 notes, the result of 6 years of Refactoring.
+>
+> Tolaria is the main collaboration surface with my AI agents: they create new notes there, connect them to existing ones, edit existing ones. It's just markdown files. In a way, it's my implementation of @karpathy's LLM wiki.
+>
+> Also the biggest experiment I've run about writing software with AI: 2000 commits, 100K+ lines of code, 3000+ tests / 85% coverage, 9.9/10 code health, 70+ architecture decision records. Open source also as a living artifact of how he does AI coding (docs, AGENTS file, hooks).
+
+- **Tweet:** https://x.com/lucaronin/status/2046877445748322418
+- **Link:** https://refactoring.fm/p/introducing-tolaria
+- **What:** Luca Rossi releases Tolaria, a free open-source macOS markdown knowledge-base app where AI agents read and write notes, modeled on Karpathy's LLM wiki; the repo doubles as a reference for AI-assisted coding (AGENTS file, hooks, 70+ ADRs, 3000+ tests).
+
+## @pashmerepat - Switching OpenClaw to Codex Harness Fixes OpenAI Agent Heartbeats
+> I've embarked on a new sprint. My mission is to make OpenAI models feel magical in OpenClaw in the next few weeks.
+>
+> Diving in today, I noticed a bug. When you configured OpenClaw to use the Codex harness for OpenAI models, auth was broken, with the system silently falling back to the Pi harness. So nobody knew it was broken. Two PRs later (fix auth bridge, stop silent fallback)...
+>
+> Before: it would read the heartbeat file, check Discord, see nothing, say HEARTBEAT_OK and ignore the rest of the instructions. Sometimes it would reason about doing work and then not issue tool calls. After: full agent loops. It reads workspace context, interprets the entire checklist, inspects the repo, makes real edits, tries to verify them, and gives honest status reports when things are blocked.
+>
+> I didn't change any prompting scaffolding. Just swapped in the codex harness for pi. Lesson here is to use the codex harness if you're building with OAI models.
+
+- **Tweet:** https://x.com/pashmerepat/status/2046865863979172039
+- **What:** OpenClaw fix showing the agent harness matters more than prompts: a silent auth fallback from Codex to the Pi harness caused lazy HEARTBEAT_OK replies, and fixing it yielded full multi-step agent loops with honest status; advice is to use the Codex harness for OpenAI models.
+
+---
+
+# Tuesday, April 21, 2026
+
+## @stitchbygoogle - Google Stitch Open-Sources DESIGN.md Spec for Agent-Readable Design Rules
+> Today, we're open-sourcing the draft specification for DESIGN.md, so it can be used across any tool or platform. We're also adding new capabilities.
+>
+> DESIGN.md lets you easily export or import your design rules from project to project. Instead of guessing intent, agents know exactly what a color is for and can even validate choices against WCAG accessibility rules.
+>
+> Watch David East break down the shared visual language in action👇. New capabilities and links in 🧵
+
+- **Tweet:** https://x.com/stitchbygoogle/status/2046624729403142320
+- **What:** Google Stitch publishes an open draft spec for DESIGN.md, a portable markdown file of design tokens and rules (color roles, WCAG validation) that coding agents can read, so design systems move across tools and projects without intent guessing.
+
+---
+
+# Monday, April 20, 2026
+
+## @KSimback - X API Cheaper for Agents: Owned-Reads Pricing and xurl CLI
+> Using the official X API for OpenClaw/Hermes just became much more practical
+>
+> Before the recent changes, it was super expensive just to read my own feed, I often spent $1-2 a day!
+>
+> But they made 2 big changes for us agent owners
+>
+> 1. Pricing change for "owned reads": Before: $0.005 per read POST, pull 100 posts = $0.50. After: $0.001 per read CALL, pull 100 posts = $0.001. Covers bookmarks, liked tweets, custom lists, followers, etc. Search cost unchanged.
+>
+> 2. Official X API tools built for agents: xurl CLI is the official curl-like CLI (open source) that handles all OAuth, with an official SKILL.md in the repo. Both OpenClaw and Hermes now have direct integrations.
+
+- **Tweet:** https://x.com/KSimback/status/2046187275592106330
+- **What:** X API owned-read pricing dropped from $0.005 per post to $0.001 per call (bookmarks, likes, lists, followers), making agent feed monitoring nearly free, and the official xurl CLI with a SKILL.md handles OAuth for agents like OpenClaw and Hermes; search remains costly.
+
+## @weezerOSINT - Claim: Lovable Exposes Pre-Nov-2025 Projects to Any Free Account
+> Lovable has a mass data breach affecting every project created before november 2025.
+>
+> I made a lovable account today and was able to access another users source code, database credentials, AI chat histories, and customer data are all readable by any free account.
+>
+> nvidia, microsoft, uber, and spotify employees all have accounts. the bug was reported 48 days ago. its not fixed. They marked it as duplicate and left it open.
+
+- **Tweet:** https://x.com/weezerOSINT/status/2046170666131669027
+- **What:** Unverified security disclosure alleging an access-control flaw in Lovable that lets any free account read other users' source, DB credentials, chat history and customer data for projects before Nov 2025; reporter says the 48-day-old report was closed as duplicate.
+
+---
+
+# Sunday, April 19, 2026
+
+## @steventey - Restrict Unconfigured Third-Party Google OAuth Apps After Vercel Incident
+> Biggest takeaway from this: 3rd-party Google OAuth Apps that request scopes beyond the basic info (name/user/profile pic) is a dangerous attack vector.
+>
+> To safeguard your org from attacks like this, highly recommend asking your Google workspace admin to restrict "unconfigured third-party apps" to only be able to request basic info needed 👇
+>
+> Here's the direct link to access that settings page: https://admin.google.com/ac/owl/settings
+>
+> h/t @matid for the pro-tip!
+>
+> *Quoting @rauchg:* Here's my update to the broader community about the ongoing incident investigation... A Vercel AI [tool via Context] ... recommendation to all Vercel customers is to follow the Security Bulletin closely: secret rotation, monitoring access to Vercel environments and linked services, and proper use of the sensitive env variables feature. Working with Mandiant, law enforcement and other firms.
+
+- **Tweet:** https://x.com/steventey/status/2046005451842842845
+- **Quoted:** https://x.com/rauchg/status/2045995362499076169
+- **Link:** https://admin.google.com/ac/owl/settings
+- **What:** Practical hardening tip drawn from the April 2026 Vercel incident, which Rauch ties to a third-party AI tool (Context): have your Google Workspace admin limit unconfigured third-party OAuth apps to basic-profile scopes, plus rotate secrets and use Vercel sensitive env vars.
+
+## @DraftedAI - Drafted: Outline Any Shape, Get a House Plan
+> Outline any shape and Drafted turns it into a real house plan. 🏠
+>
+> It's a new way to explore the different layouts and room configurations that are possible within your space.
+>
+> Here's how it works 👇
+
+- **Tweet:** https://x.com/DraftedAI/status/2045915053782954440
+- **What:** THIN: Drafted announces an AI feature that generates room layouts and house plans from a user-drawn footprint of any shape; the demo is in attached media only, so details of output quality or pricing are unknown.
+
+## @FranWalsh73 - DC FSA and childcare credit cannot be double-dipped
+> *Replying to @FranWalsh73:* For many high earners, the DC FSA may still beat the Child and Dependent Care Tax Credit.
+>
+> The OBBBA improved the credit - but for high earners it still phases to a 20% floor.
+>
+> At $300k MFJ (illustrative):
+> - Credit: 20% × $6,000 = ~$1,200
+> - FSA: ~$2,700+ in estimated savings
+>
+> One important nuance:
+>
+> You generally cannot double-dip.
+>
+> If you use the DC FSA for $7,500 in expenses, those same expenses generally cannot be used to claim the Child and Dependent Care Credit.
+>
+> If total childcare costs exceed $7,500 - you may claim the credit on remaining expenses.
+
+- **Tweet:** https://x.com/FranWalsh73/status/2045834884053123546
+- **Parent:** https://x.com/FranWalsh73/status/2045834877723893833
+- **What:** Tax note: for high earners (e.g. $300k MFJ) the DC FSA (~$2,700 savings) beats the post-OBBBA childcare credit (~$1,200), but the same $7,500 of expenses cannot count for both; only excess costs can claim the credit.
+
+---
+
+# Saturday, April 18, 2026
+
+## @Ex0byt - LiteLLM proxy with GLiNER-PII guardrail to anonymize prompts
+> *Replying to @renedesstates:* Is there a Small language model to anonymize the data being fed to a commercial LLM like Claude or Chatgpt? and then translate them back to my use case? is it realistic ?
+>
+> @renedesstates LiteLLM Proxy +  GLiNER-PII Guardrail -> Point  your coding agents/harnesses to the local proxy (e.g. ANTHROPIC_BASE_URL=http://localhost:4000) -> prompts get auto-sanitized in <100 ms -> Thank me later.
+
+- **Tweet:** https://x.com/Ex0byt/status/2045662273776013331
+- **Parent:** https://x.com/renedesstates/status/2045164172967625047
+- **What:** Answers a question about anonymizing data sent to commercial LLMs: run a local LiteLLM proxy with a GLiNER-PII guardrail and point agents at it via ANTHROPIC_BASE_URL, sanitizing prompts in under 100 ms.
+
+---
+
+# Friday, April 17, 2026
+
+## @Voxyz_ai - Claude Design improves with a design repo as context
+> just tested claude design. it's going to matter as much as claude code, don't sleep on it.
+>
+> one tip: attach a design repo as context when you write the prompt. left side of the video has voltagent/awesome-design-md (58.1k stars) attached, right side doesn't. same prompt, same model. any decent design repo works.
+>
+> solo builders and small teams can level up their product design and UX by a lot with this.
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2045245343789691197
+- **What:** Vox argues Claude Design will matter as much as Claude Code and shows a side-by-side video: attaching the voltagent/awesome-design-md repo as prompt context noticeably improves output with same prompt and model.
+
+## @ctatedev - json-render devtools for generative UI
+> Introducing json-render devtools
+>
+> Inspect Generative UI in real time
+>
+> → Spec, State, Actions, Stream tabs
+> → DOM picker maps clicks to spec keys
+> → Catalog browser for your components
+> → Shadow-DOM, tree-shakes in prod
+>
+> Drop in <JsonRenderDevtools />
+>
+> React, Vue, Svelte, Solid https://t.co/ihZzMXrqFN
+
+- **Tweet:** https://x.com/ctatedev/status/2045228060568383506
+- **What:** Vercel's json-render gains devtools to inspect generative UI live, with spec/state/actions/stream tabs, a DOM picker mapping clicks to spec keys, and a component catalog; works across React, Vue, Svelte and Solid.
+
+## @zenorocha - React Email 6.0 open-sources embeddable email editor
+> We have a big open source launch for you today.
+>
+> Announcing React Email 6.0.
+>
+> For a long time, people asked me for a way to include an email editor into their app. So we decided to open source our own editor.
+>
+> - Embed in your app
+> - Style with your brand
+> - Build custom extensions https://t.co/9RtWUnZtl7
+
+- **Tweet:** https://x.com/zenorocha/status/2045139931589394574
+- **What:** Resend's Zeno Rocha announces React Email 6.0, open-sourcing their email editor so it can be embedded in apps, styled to a brand, and extended with custom extensions; demo media not captured.
+
+## @finmoorhouse - Hyperscaler capex exceeds famous US megaprojects
+> The hyperscalers have already outspent the most famous US megaprojects https://t.co/D54qD8kO61
+
+- **Tweet:** https://x.com/finmoorhouse/status/2044933442236776794
+- **What:** THIN: @finmoorhouse claims hyperscaler AI capex has already surpassed famous US megaprojects (e.g. Apollo, Manhattan); the comparison chart is an attachment not captured, so specifics are inferred.
+
+---
+
+# Thursday, April 16, 2026
+
+## @BarryRoland19 - LA multifamily back-of-envelope underwriting
+> LA multifamily back of the envelope underwriting below. You're welcome. https://t.co/iFXCaOV6hy
+
+- **Tweet:** https://x.com/BarryRoland19/status/2044921424536817907
+- **What:** THIN: @BarryRoland19 shares a back-of-envelope underwriting for LA multifamily real estate; the figures are in an attached image/self-link not captured, so the actual numbers are unknown.
+
+## @rileybrown - Riley Brown praises Codex desktop app workflow
+> This is exactly what i was hoping for... 
+> - Full permissions
+> - no "cowork" like feature which limits agent abilities
+> - Just codex...
+>
+> If you ask for coding task it writes code and gives you a preview. If you ask for a presentation or doc it gives you a presentation or doc. 
+>
+> Organized by project on the left side bar. 
+> Easy to create skills, easy to @ mention skills / plugins
+>
+> Btw my Readwise automation is insane. Every morning it codex sends me a deck of all my x bookmarks organized by topic. 
+>
+> And i highly recommend using the excaladraw skill to render diagrams into docs.
+
+- **Tweet:** https://x.com/rileybrown/status/2044867357252927535
+- **What:** Riley Brown likes the Codex app because it has full permissions, project sidebar, and easy skills/plugins, and it produces docs or decks as well as code; he also runs a Readwise automation sending daily X-bookmark decks and recommends an Excalidraw skill.
+
+## @xoxogomi - Sprint intervals as fitness advice, replying to Bryan Johnson
+> Let me give you a million dollar advice (note it)
+>
+> Run really fast for 150-200 meters
+>
+> Walk slowly back to the starting place.
+>
+> Repeat 5 times.
+>
+> Do this 3-4 times a week.
+>
+> Congratulations! Soon you'll be in the top 0.0001% of the fittest humans in the world.
+>
+> *Quoting @bryan_johnson:* 10 air squats every 45 min ✅
+
+- **Tweet:** https://x.com/xoxogomi/status/2044865560899694843
+- **Quoted:** https://x.com/bryan_johnson/status/2044845861906284987
+- **What:** Contrasts Bryan Johnson's "10 air squats every 45 min" routine with a simple high-intensity protocol: five 150-200m sprints with slow walk-backs, 3-4 times weekly, as a cheap route to elite fitness.
+
+## @joshclemm - Dropbox open-sources Witchcraft local search engine
+> Open sourcing something fun from @Dropbox: Witchcraft.
+>
+> It's a local search engine built in Rust with no API keys or vector DB required.
+>
+> Think: ColBERT / late interaction style retrieval, but packaged to run locally (perfect for coding agents).
+>
+> Let's dive in👇
+
+- **Tweet:** https://x.com/joshclemm/status/2044861220776505703
+- **What:** Dropbox releases Witchcraft, a Rust local search engine using ColBERT-style late-interaction retrieval with no API keys or vector database, aimed at giving coding agents fast offline retrieval.
+
+## @joshuasforrest - Psyllium Husk Cut ApoB 24% (Quoting Dan Go's Max-Dose Experiment)
+> When I first added a hero dose (3 level tbsp) of whole psyllium husk to my morning yogurt bowl recipe my cholesterol (ApoB) immediately crashed 24%
+>
+> Glucose response scores a perfect 10 on @Levels - great satiety, transcendent GI performance.
+>
+> It is an elite substance in my experience
+>
+> *Quoting @CoachDanGo:* I max dosed psyllium husk but did not expect this. For the past 28 days, I've maxed out on psyllium husk, taking two tablespoons 3x a day, and it's quietly changed my life.
+
+- **Tweet:** https://x.com/joshuasforrest/status/2044821855517790232
+- **Quoted:** https://x.com/CoachDanGo/status/2044730076294463737
+- **What:** Josh Clemente reports 3 tbsp whole psyllium husk in morning yogurt dropped his ApoB 24% with a perfect Levels glucose score and strong satiety, anecdotally backing Dan Go's high-dose psyllium experiment.
+
+## @firecrawl - Firecrawl web-agent: Open Source Framework for Web Agents
+> Introducing web-agent, an open framework for building web agents 🔥
+>
+> Build AI agents that search, scrape, and interact with the web - powered by the same architecture behind our /agent endpoint.
+>
+> 100% open source. Bring any model. Anthropic, OpenAI, or your own. https://t.co/YiMe2oZyyY
+
+- **Tweet:** https://x.com/firecrawl/status/2044815747793482216
+- **What:** Firecrawl releases web-agent, an open-source, model-agnostic framework (Anthropic, OpenAI or custom) for agents that search, scrape and interact with the web, built on the same architecture as its hosted /agent endpoint.
+
+## @Haz__640 - Melo: Native Mac Workspace with AI Brain Chat
+> Officially replacing notion!
+>
+> Melo is now live 🥳
+>
+> Every canvas is fully customizable with:
+> - Notes
+> - Docs
+> - AI assistant with full board context
+> - Web page
+> - Todo lists
+>
+> Not to mention it has voice control, gesture control, and a clipboard manager, try it at https://t.co/4gJXIhHPIP
+
+- **Tweet:** https://x.com/Haz__640/status/2044797918427640036
+- **Link:** https://www.melo.so/
+- **Filed:** [melo-mac-workspace.md](./knowledge/articles/melo-mac-workspace.md)
+- **What:** Launch of Melo, a native Mac capture-and-recall workspace with Option+Space quick capture, spatial boards, and plain-language AI chat over saved notes, links and screenshots; free tier, Pro $4.99/mo or $29.99 lifetime.
+
+## @zenorocha - Resend Launches Custom Tracking Domains (Free)
+> Today, we're launching Custom Tracking Domains.
+>
+> This is a huge unlock for email deliverability.
+>
+> And it's free for all @resend users.
+>
+> Here's why this is important... https://t.co/JzRN8eycjI
+
+- **Tweet:** https://x.com/zenorocha/status/2044779722266349649
+- **What:** THIN: Resend announces Custom Tracking Domains, letting open/click tracking links use the sender's own domain to improve email deliverability, free for all users; the explanatory thread content was not captured.
+
+## @TaylorPearsonMe - Nested CLAUDE.md Files at Every Folder Level for Context
+> I think the top tip I've picked up since I started using Claude Code: write a CLAUDE [dot] md at every level of your file structure and be intelligent about how you nest folders.
+>
+> Claude Code automatically loads the Claudemd file from every directory level above whatever file you're working on. So if you organize it intelligently, it always has the right context at the right time.
+>
+> (Example hierarchy: global → vault → business → marketing → project. He runs a "wrap" skill at session end that updates the relevant CLAUDE.md files and a workbench entry. Starter repo and workbench extension linked.)
+
+- **Tweet:** https://x.com/TaylorPearsonMe/status/2044778874580656486
+- **Link:** https://github.com/heyitsnoah/claudesidian
+- **Link:** https://github.com/ParrotDiceFound/claudesidian-workbench
+- **What:** Claude Code workflow tip: place a CLAUDE.md at each folder level so ancestors auto-load as layered context, kept current by an end-of-session "wrap" skill; links the claudesidian starter repo and a workbench extension (repo content unavailable).
+
+## @ritakozlov - Cloudflare AI Platform: Single API for Any Model (GPT-5.4, Opus 4.6, Kimi)
+> cloudflare is the ai cloud you need ⛅️
+>
+> you can now access any model including gpt-5.4, opus 4.6, kimi, seedream, nano banana, … anything you need with a single api call, no vendor lock-in
+>
+> and we're constantly adding more! tell us what models you'd like to see next!
+> https://t.co/PLqmkH1ZSb
+
+- **Tweet:** https://x.com/ritakozlov/status/2044771567800865210
+- **Link:** https://blog.cloudflare.com/ai-platform/
+- **What:** Cloudflare blog launches its AI platform as an inference layer for agents, giving one API call access to models from many providers (GPT-5.4, Opus 4.6, Kimi, image models) with no vendor lock-in; only the title was extractable from the post.
+
+## @ashleypeacock - Cloudflare Agent Week Day 4: Artifacts, Email, AI Gateway, AI Search
+> Today is the point where Cloudflare becomes the full cloud platform. Agent Week day 4 is packed:
+>
+> 👨‍💻 Git-style, versioned code storage (Artifacts)
+> ✉️ Send emails with 1 line of code
+> 🧠 One API to access any AI model (AI Gateway)
+> 🔍 Better RAG: Hybrid Search, Relevance Boosting & more
+> 🌎 Streamlined PlanetScale integration inc. billing
+>
+> (long thread breakdown of each announcement)
+
+- **Tweet:** https://x.com/ashleypeacock/status/2044771321314177051
+- **What:** Detailed breakdown of Cloudflare Agent Week day 4: Artifacts (Git-compatible versioned repos on demand, private beta, $0.15 per 1k ops), transactional Email Service beta, unified AI Gateway across 70+ models, AI Search hybrid/BM25 and boosting, PlanetScale billing.
+
+## @thomasgauvin - Cloudflare Email Service Public Beta (Send/Receive from Workers)
+> The wait is over. Cloudflare Email Service is now in public beta 📧
+>
+> Send and receive emails directly from Workers or REST API with global delivery on Cloudflare's network
+>
+> And just in time for you to build email agents with the Agents SDK! https://t.co/4pyyjWjsLm
+
+- **Tweet:** https://x.com/thomasgauvin/status/2044766954032951792
+- **What:** Cloudflare announces Email Service in public beta, adding native email sending (Workers binding or REST API) alongside existing Email Routing for inbound, which enables building email-handling agents with the Agents SDK without third-party providers.
+
+## @walkthru_earth - Geocoding Playground Adds Overture Maps 2026-04-15 (472M Addresses)
+> Just shipped. The Walkthru Earth Geocoding Playground now includes the latest @OvertureMaps release, 2026-04-15.
+> 472 million addresses across 39 countries, searchable for free in your browser. No install, no API key.
+> https://t.co/747997TaJA
+>
+> Thanks @source_coop for hosting the data!
+
+- **Tweet:** https://x.com/walkthru_earth/status/2044765473703616669
+- **Link:** https://walkthru.earth/geocoding-playground/
+- **Filed:** [walkthru-geocoding-playground.md](./knowledge/articles/walkthru-geocoding-playground.md)
+- **What:** Serverless browser geocoder using DuckDB-WASM to query Overture Maps address Parquet files directly, now refreshed with 472M addresses in 39 countries; useful as a no-backend, no-API-key pattern for open-data address search.
+
+## @CoachDanGo - Psyllium Husk Max-Dose 28-Day Experiment (2 tbsp 3x/day)
+> I max dosed psyllium husk but did not expect this.
+>
+> For the past 28 days, I've maxed out on psyllium husk, taking two tablespoons 3x a day, and it's quietly changed my life.
+>
+> Here's what it did to my body: https://t.co/t4Rhlypb2P
+
+- **Tweet:** https://x.com/CoachDanGo/status/2044730076294463737
+- **What:** THIN: Self-experiment report on taking 6 tablespoons/day of psyllium husk for 28 days with claimed life-changing body effects; the tweet only teases the results and the linked content is just itself, so specifics are unknown.
+
+## @dnlkwk - Perplexity Computer Scheduled Thesis Updates for L/S Funds
+> One popular use-case for Perplexity Computer among L/S firms is setting tasks running hourly, daily, weekly to ingest a bunch of data sources and continuously update their thesis on specific tickers and events.
+>
+> The events some of these tasks are triggered on are so weird.
+>
+> *Quoting @TraderBillyAU:* Some of the best PM i have see from the largest Multi-Strat firms like P72, Millennium, Tudor, Dymon all do something very similar.... KISS... they boil down a view to a simple thesis. They have a process that is mostly repeatable and they read alot.... mostly they just consume information and ask questions.
+
+- **Tweet:** https://x.com/dnlkwk/status/2044644729976238289
+- **Quoted:** https://x.com/TraderBillyAU/status/2044468822586101888
+- **What:** Long/short funds use Perplexity Computer for recurring tasks that ingest data sources and keep ticker theses updated, with oddly specific triggers; the quoted trader notes top multi-strat PMs likewise distill simple theses and mostly read and ask questions.
+
+---
+
 # Wednesday, April 15, 2026
+
+## @chrysb - Tiller Bank Sync to Google Sheets for OpenClaw Finance Agents
+> quick tip for @openclaw and personal finances: use Tiller
+>
+> it syncs bank transactions into a Google sheet. easy for an agent to parse, and secure (read only)
+>
+> use it for things like:
+> - large transaction alerts
+> - net worth tracking
+> - suspicious charge monitoring
+> - budget alerts https://t.co/q3eyKvHCaM
+
+- **Tweet:** https://x.com/chrysb/status/2044565575255658737
+- **What:** Tip to give OpenClaw agents personal-finance awareness via Tiller, which syncs bank transactions into a read-only Google Sheet agents can parse for large-transaction alerts, net worth tracking, suspicious charge monitoring and budget alerts.
+
+## @trq212 - Claude Code Session Management and 1M Context Window Guide
+> https://t.co/Ljzw0lmvao
+
+- **Tweet:** https://x.com/trq212/status/2044548257058328723
+- **Link:** https://x.com/i/article/2044537014620721153
+- **Filed:** [claude-code-session-management-1m-context.md](./knowledge/articles/claude-code-session-management-1m-context.md)
+- **What:** Thariq's article on managing Claude Code sessions with 1M context: context rot, when to start new sessions, rewind over correction, compact vs clear, what causes bad compacts, and using subagents for fresh context.
+
+## @virattt - Financial Datasets Segmented Financials API
+> Live seconds after SEC filings drop.
+>
+> *Quoting @findatasets:* Earnings season just got easier. Our new segmented financials API breaks down 10,000+ companies by product, geography, and business segment. Revenue, balance sheets, and cash flows - all segmented.
+
+- **Tweet:** https://x.com/virattt/status/2044522132831416627
+- **Quoted:** https://x.com/findatasets/status/2044522021984289085
+- **What:** Virat Singh promotes Financial Datasets' new segmented financials API, covering 10,000+ companies by product, geography and business segment (revenue, balance sheets, cash flows), updated within seconds of SEC filings.
+
+## @garrytan - OpenClaw Security Now Viable with Sandbox, Firewall, Clawvisor
+> It’s April now
+>
+> OpenClaw with docker sandbox, logging mitmproxy firewall and Clawvisor and you are good to go
+>
+> The days of “it’s insecure” for OpenClaw are over
+>
+> *Quoting @steipete:* That was the case in December. 4 months and thousands of work hours later, we have a great security concept; you can go all yolo, use a sandbox (Docker or OpenShell), there are allow-lists and per-access exec allow/deny prompts. There’s hundreds of security researchers that pen-tested it.
+
+- **Tweet:** https://x.com/garrytan/status/2044512730087072000
+- **Quoted:** https://x.com/steipete/status/2044482797449150520
+- **What:** Garry Tan declares OpenClaw's insecurity reputation outdated, citing a stack of Docker sandbox, logging mitmproxy firewall and Clawvisor; Steinberger's quoted post adds allow-lists, exec prompts, OpenShell sandboxing and pen-testing by hundreds of researchers.
+
+## @chrysb - Telegram Bot-Created Bots Let OpenClaw Auto-Provision Per-User Bots
+> big unlock for @openclaw: @telegram now lets bots create other bots via the api.
+>
+> means openclaw can spin up a dedicated telegram bot for every user automatically.
+>
+> no botfather, no token copy-paste, no manual setup. https://t.co/38QVVYoDDO
+
+- **Tweet:** https://x.com/chrysb/status/2044512511647748460
+- **What:** Telegram's new API lets bots programmatically create other bots, so OpenClaw can auto-provision a dedicated Telegram bot per user, removing the manual BotFather flow and token copy-paste from onboarding.
+
+## @pbakaus - Impeccable 2: Anti-Pattern Detector CLI and Design Skills for AI Harnesses
+> Impeccable 2 (my take on the most effective way to make your AI harness better at design) dropped last week. But I was so busy working on the next iteration that I buried the lede a bit.
+>
+> So here's a detailed post on what's new and improved: 1. CLI: npx impeccable detect... 2. Chrome extension... 3. Dramatically upgraded /critique... 4. Data-driven design performance improvements... 5. Design before code (/shape)... 6. One name, one namespace, 18 commands... 7. A real docs site.
+
+- **Tweet:** https://x.com/pbakaus/status/2044505743144194514
+- **Link:** https://impeccable.style/
+- **Filed:** [impeccable.md](./knowledge/tools/impeccable.md)
+- **What:** Paul Bakaus details Impeccable 2: an LLM-free CLI detecting 25 design anti-patterns, a Chrome extension, a parallel-agent /critique, and an anti-attractor method that forces models to reject default fonts and colors, plus a design-brief-first /shape flow.
+
+## @doodlestein - Modes-of-Reasoning Skill: Multi-Agent Swarm Project Analysis
+> I’ve now applied this “modes of reasoning” skill to like 20 different projects and it has surfaced so many useful insights that I would just never get out of these models in a million years otherwise. Can’t recommend this highly enough for complex projects.
+>
+> *Quoting @doodlestein:* A while back, I posted this concept for my ntm agent orchestration tool that would let you spin up a swarm of agents using various harnesses where each agent could follow a different "mode of reasoning"... Now you can simply ask Claude Code to invoke the /modes-of-reasoning-project-analysis skill... the "lead agent" first studies the project and determines which of the 80 modes are most applicable, then creates and manages a swarm using ntm... then synthesizes results into a markdown report.
+
+- **Tweet:** https://x.com/doodlestein/status/2044481303790158050
+- **Quoted:** https://x.com/doodlestein/status/2041660563005100220
+- **Link:** https://jeffreys-skills.md/
+- **What:** Jeffrey Emanuel endorses his modes-of-reasoning skill, which has a lead agent pick about 10 of 80 reasoning modes, spawn an ntm swarm with one mode per agent, and triangulate findings (kernel, supported, hypothesis, disputed) into one report; useful for pre-release audits and architecture decisions.
+
+## @oscarmartin - Claude Code + NotebookLM via MCP to Read Docs Token-Free
+> ¿Sabías que puedes hacer que Claude Code lea documentaciones enteras sin gastar un solo token?
+>
+> El truco: conectarlo a NotebookLM de Google vía MCP.
+>
+> Gemini investiga gratis. Claude Code programa.
+>
+> Te lo enseño en este video https://t.co/L1ElSihfhw
+
+- **Tweet:** https://x.com/oscarmartin/status/2044469339554795728
+- **What:** Spanish-language video tip: connect Claude Code to Google NotebookLM over MCP so Gemini does the documentation research for free while Claude Code spends tokens only on writing code. The video itself was not transcribed.
+
+## @stevendcoffey - OpenAI Agents SDK Update: Codex-Style Production Agents
+> Today, we’re launching a Rather Large™ update to the OpenAI Agents SDK.
+>
+> Agents SDK now allows you to scale Codex-style agents  in production, without building the whole harness yourself. We’ve brought all of the stuff of modern agents: computer-use, skills, memory, compaction, and more to the same platforms you’re already using.
+
+- **Tweet:** https://x.com/stevendcoffey/status/2044465818239701041
+- **What:** Launch announcement of a major OpenAI Agents SDK update bundling a ready-made harness for Codex-style agents (computer use, skills, memory, compaction) so teams can run production agents without building their own scaffolding.
 
 ## @patio11 - Annual advice: buy term life and own-occupation disability insurance
 > My annual exhortation:
