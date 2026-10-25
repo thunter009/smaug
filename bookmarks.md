@@ -4173,6 +4173,887 @@
 
 ---
 
+# Tuesday, June 9, 2026
+
+## @firecrawl - Firecrawl agent signups: agents claim API keys themselves via WorkOS auth.md
+> We're betting on the next 1B+ users being agents, so we're launching agent signups.
+>
+> Ask your agent to add Firecrawl, instantly claim your API key, then pull web data in seconds.
+>
+> Works with Codex, Claude Code & Grok Build, all powered by auth.md from @WorkOS
+
+- **Tweet:** https://x.com/firecrawl/status/2064387335794434281
+- **What:** Firecrawl lets coding agents sign up and obtain an API key on their own, using WorkOS's auth.md convention, removing the human dashboard step. It signals an emerging pattern of agent-first onboarding for developer tools, supporting Codex, Claude Code, and Grok Build.
+
+## @elvissun - Newsjack: open-source agent skills that act as an automated PR team
+> today I'm launching https://newsjack.sh/
+>
+> open source skills that turn any agent into a full PR team. one install and it monitors the news, spots angles, finds journalists, and gets you featured in the news.
+>
+> curl -fsSL https://newsjack.sh/ | bash
+>
+> real demo: https://x.com/elvissun/status/2064341174450897363
+
+- **Tweet:** https://x.com/elvissun/status/2064341174450897363
+- **Link:** https://newsjack.sh/
+- **What:** Launch of Newsjack, an open-source skill pack installed via a curl-pipe-bash script that gives a coding agent a newsjacking workflow: monitor news, find story angles, identify journalists, and pitch for coverage. Notable as another agent-skills distribution that targets PR and marketing rather than code.
+
+## @Thomasdelvasto_ - Endorsement of Joe Hudson's work, quoting his one-page summary on working with anger
+> Joe's stuff has changed my life. Can't recommend him highly enough, great guy
+>
+> One of the few teachers who has a healthy marriage and kids as well, FWIW
+>
+> *Quoting @FU_joehudson:* Years of working with anger, summarized on one page.
+
+- **Tweet:** https://x.com/Thomasdelvasto_/status/2064338282557608103
+- **Quoted:** https://x.com/FU_joehudson/status/2024200085534626169
+- **What:** Personal endorsement of Joe Hudson (Art of Accomplishment) as a teacher whose emotional-work material helped the author, noting his stable family life as credibility. The quoted tweet is an image-only one-page summary of Hudson's years of work with anger; its content is not in the text.
+
+---
+
+# Monday, June 8, 2026
+
+## @ericzakariasson - Cursor /loop prompt: flaky-test exterminator until 5 consecutive green runs
+> here are 3 loops you can run in cursor
+>
+> 1. Flaky-test exterminator
+>
+> /loop run my test suite 20 times, collect every intermittent failure, fix or quarantine the flaky ones, and don't stop until you get 5 consecutive fully-green runs.
+
+- **Tweet:** https://x.com/ericzakariasson/status/2064122350866682100
+- **What:** Cursor employee shares example /loop prompts for autonomous agent loops; the visible one runs the test suite 20 times, collects intermittent failures, fixes or quarantines them, and exits on 5 consecutive green runs. Only loop 1 is in the text; the other two are likely in an attached image. Its "don't stop" phrasing is a reward-hacking risk (quarantine can hide real failures).
+
+## @salesxsaas - Three tools for scraping LinkedIn data: Expandi, Scrapin, Bright Data
+> Scrape LinkedIn safely with these tools
+>
+> Expandi - 25k exports/day + LI automation
+> Scrapin - non-public LinkedIn data
+> Bright Data - flexible enterprise grade API
+
+- **Tweet:** https://x.com/salesxsaas/status/2064102286989705660
+- **What:** Short list of LinkedIn data-extraction vendors for sales prospecting: Expandi (automation plus high-volume exports), Scrapin (claims non-public data), and Bright Data (enterprise API). Safety claims are unverified, and scraping may conflict with LinkedIn terms.
+
+## @Loofyb0i - Howard Marks (Oaktree) 36-min TBPN talk on market cycles, plus Dan Loeb AI-thesis interview
+> Howard Marks has been writing investment memos for 30 years that Warren Buffett says he reads first thing every time.
+>
+> In 36 minutes he explains why every bull market ends the same way - and where he thinks we are right now.
+>
+> 36-min. Oaktree. TBPN.
+>
+> Bookmark & watch - the clearest market cycle read you'll find in 2026
+>
+> *Quoting @Loofyb0i:* Dan Loeb built $25B from $3M and says the next 30 years look nothing like the last.
+>
+> Now he says none of that edge matters if you can't read an AI stack.
+>
+> 60-min with the founder of Third Point - $25B hedge fund, 3 decades of activist campaigns, one conclusion
+>
+> Bookmark - best breakdown of a top-tier hedge fund's AI thesis in 2026
+
+- **Tweet:** https://x.com/Loofyb0i/status/2064089401857278424
+- **Quoted:** https://x.com/Loofyb0i/status/2064003751011131624
+- **What:** Video-curation post pointing to a 36-minute TBPN interview with Oaktree's Howard Marks on how bull markets end and where the current cycle sits. It quotes the author's earlier post on a 60-minute Dan Loeb (Third Point) interview about AI as an investing edge. Video content itself is not summarized in the tweets.
+
+## @dan__rosenthal - LinkedIn content system that took a company to $2M ARR in 7 months
+> My company hit $2,000,000 ARR in 7 months.
+>
+> There's 1 main acquisition channel we used:
+>
+> LinkedIn.
+>
+> And it's still significantly underused.
+>
+> Here's the exact content system we used to grow to $2M in 7 months:
+>
+> 1. Content Strategy
+>
+> • Interview your team to brainstorm ideas
+> • Study what's performing in the niche
+> • Analyze post-performance weekly
+> • Use AI for research + concepts
+>
+> 2. Winning Formats
+>
+> The best creators double down on formats.
+>
+> These are our winning formats:
+>
+> TOF → Personal stories, milestones, industry stories
+> MOF → Resource giveaways, infographics, carousels
+> BOF → Feature demos, case studies, product launches
+>
+> 3. Content Team
+>
+> It's easier to scale content when you have a team.
+>
+> Here's how we structure our team:
+>
+> • Writer
+> • Designer
+> • QA/Editor
+>
+> 4. Content Pipeline
+>
+> We run everything through Notion:
+>
+> • Comments for feedback
+> • Link back to idea sources
+> • Kanban stages for production
+>
+> 5. Content Calendar
+>
+> You won't stay consistent without planning.
+>
+> So:
+>
+> • Stick to the same posting time
+> • Use ordinal to schedule posts
+> • Block off Sundays to plan the week
+> • Build a backlog of posts to choose from
+>
+> —
+>
+> And after lots of trial and error...
+>
+> We packaged this entire content system into a notion workflow.
+>
+> It helps us:
+>
+> 1. Get ideas down quickly
+> 2. Develop them systematically
+> 3. Collaborate with the design team
+>
+> AND includes our framework on how to plan a LinkedIn content strategy:
+>
+> • Content Types
+> • Content Pillars
+> • Content Formats
+> • Content Calendar
+>
+> (plus a post creation template with our own custom embedded LinkedIn previewer)
+>
+> Today, I'm giving the entire thing away for FREE.
+>
+> Want it?
+>
+> Comment "NOTION"
+>
+> And I'll send over our template.
+>
+> (must be following)
+
+- **Tweet:** https://x.com/dan__rosenthal/status/2064059995646308397
+- **What:** Playbook for LinkedIn-led B2B growth: weekly performance review, funnel-stage formats (TOF stories, MOF carousels, BOF demos), a writer/designer/editor team, a Notion kanban pipeline, and a fixed posting calendar. Ends as a comment-to-get lead magnet for the Notion template.
+
+## @afshineemrani - Cardiologist: inflammation, not just LDL, drives heart attacks; tests and treatments to ask about
+> I'm a cardiologist. I've held dying hearts in my hands in the cath lab at 3 AM. And I need to tell you something that changes everything about how we prevent heart attacks.
+>
+> For decades, the entire field was built on one target: lower LDL cholesterol. Statins save lives — that's settled science. But too many of my patients did everything right — took their statins, hit their numbers, lived clean — and still ended up on my table with a ruptured artery.
+>
+> We were treating the smoke while the fire kept burning.
+> The fire is inflammation. And the evidence is now overwhelming.
+>
+> The CANTOS trial proved it first — lowering inflammation independent of cholesterol reduced cardiac events. But the newer data is what keeps me up at night.
+>
+> AI-enhanced CT angiography can now detect inflamed arteries by measuring changes in the fat surrounding your coronary vessels — the perivascular fat attenuation index. Higher inflammation in the fat around even one artery independently predicts cardiac death. When multiple arteries show inflammation, the risk multiplies dramatically — even in patients whose cholesterol looks perfect.
+>
+> This isn't theoretical. This is measurable. Right now. On a scan you can get this month.
+>
+> Low-dose colchicine — a drug that's been around for centuries for gout — is now FDA-approved specifically for reducing cardiovascular events. It works by quieting the inflammatory cascade that destabilizes the plaque sitting in your arteries. A pill that costs pennies is saving lives the statins couldn't reach.
+>
+> And the next wave is already in Phase 3 trials. Ziltivekimab — an IL-6 inhibitor — targets the central inflammatory pathway driving atherosclerosis. Phase 2 data showed a 90% reduction in hsCRP. The ZEUS cardiovascular outcomes trial is enrolling now, with results expected late 2026 into 2027. If positive, anti-inflammatory therapy will become standard in managing heart disease alongside lipid-lowering. The era of inflammation-targeted cardiology is arriving.
+> But it goes deeper than drugs. AI is now predicting heart failure and cardiac events 5+ years before symptoms — integrating CT imaging, electronic health records, and genetic data with accuracy that jumps far beyond traditional risk calculators.
+>
+> And polygenic risk scores — a simple genetic test that flags inherited cardiovascular risk — are now formally recognized as a risk-enhancing factor in the 2026 ACC/AHA guidelines. A single blood draw can reveal risk that's been silently building since birth. Decades before the first chest pain.
+>
+> Here's what this means for you right now — today:
+> Ask your doctor for a high-sensitivity CRP test. It's cheap, routine, and measures the systemic inflammation that standard cholesterol panels completely miss. You can have perfect LDL and inflamed arteries that are quietly preparing to rupture.
+> If your hsCRP is elevated, discuss low-dose colchicine with your physician. It's FDA-approved for exactly this.
+> Push for a coronary CT angiography with AI plaque and inflammation analysis if you have risk factors. This isn't the stress test your parents got. This is 3D visualization of your actual arteries — with AI quantifying not just how much plaque you have, but what kind it is and whether the surrounding tissue is inflamed.
+> Consider polygenic risk score testing — especially with a family history of early heart disease. It's now guideline-supported.
+>
+> And the foundation that never changes: move daily, eat real food, sleep 7-9 hours, manage stress, and know your numbers — ApoB, Lp(a), hsCRP, fasting insulin.
+> I left Iran as a child with nothing. I rebuilt everything in a country that gave me the freedom to become a physician. I've spent twenty years watching patients get second chances.
+>
+> The ones who haunt me aren't the ones who died on my table. They're the ones who survived but never acted on what the science was telling them — years before the event that didn't have to happen.
+>
+> You can have perfect cholesterol and still have a heart attack. Inflammation plus genetics can drive plaque rupture in arteries that look "fine" on a standard panel.
+> The myth that normal cholesterol means you're safe has cost more lives than I can count.
+>
+> We now have the tools to detect the fire — not just the smoke. AI to see it. Genetics to predict it. Drugs to quiet it. And the ancient basics — movement, real food, sleep, purpose — to prevent it from starting.
+>
+> Prevention is the new cure. And the science to make it real is no longer coming.
+> It's here.
+
+- **Tweet:** https://x.com/afshineemrani/status/2064049389270958412
+- **What:** Cardiologist argues residual cardiovascular risk comes from arterial inflammation that LDL panels miss. Points to CANTOS, AI-read CT perivascular fat index, low-dose colchicine, IL-6 inhibitor ziltivekimab (ZEUS trial), polygenic risk scores, and asks readers to request hsCRP, ApoB, and Lp(a) tests. Claims are physician advocacy and not independently verified here.
+
+## @doodlestein - Fuzzing skill for parsers: 780M-call campaign on SEC Form 3/4/5 Rust parser
+> If you're making software that is designed to parse complex, diverse data, especially when YOU don't control the data, and it is generated in varied ways by thousands of different organizations or users, then there's really no substitute for what's known as "fuzzing" tests.
+>
+> Fuzzing is a testing technique where you try to intelligently generate a huge number of varied inputs to your program, with the goal of finding parsing bugs that you'd be unlikely to come across if you're only testing with a fixed set of valid inputs.
+>
+> A naive approach to generating random inputs would be wasteful, since most inputs are trivially invalid and can be quickly rejected.
+>
+> What you really want are inputs that are pathological; ones that are nearly valid but have some bizarre issue that can confuse your parsing rules and trigger code pathways that you'd normally never traverse.
+>
+> Fuzzing used to be a somewhat esoteric approach used by security-focused engineers in high-stakes, sophisticated applications. But now anyone can use it. I have a skill specifically for fuzzing you can try here:
+>
+> https://jeffreys-skills.md/skills/testing-fuzzing
+>
+> It's part of a series of testing-related skills that also includes metamorphic testing, conformance harness testing, golden artifact generation, end-to-end integration testing, etc.
+>
+> The skill works across many popular languages and automatically installs the needed tooling for you, instruments your application for fuzzing, and then mounts extended fuzz testing campaigns.
+>
+> You can see an example of one in the screenshot, where it's been working for many hours, subjecting three different parsers in my hedge_fund_data_tool to torture tests.
+>
+> For instance, my elaborate parser for SEC insider trade forms (i.e., Forms 3, 4, and 5), which is thousands of lines of Rust, has been called over 780 million times, each invocation with a different, optimally selected input designed to best explore all the different possible code paths within the parser.
+>
+> There aren't that many forms of this kind in the history of the SEC's EDGAR database, across all companies. The only way to do something like that is with fuzzing. And now you can!
+
+- **Tweet:** https://x.com/doodlestein/status/2064039780971917408
+- **Link:** https://jeffreys-skills.md/skills/testing-fuzzing
+- **What:** Argues fuzzing (near-valid pathological inputs) is the only way to harden parsers for data you do not control, and promotes his agent skill that installs tooling, instruments code, and runs long campaigns. Evidence cited: a Rust SEC Form 3/4/5 parser exercised 780M+ times; the skill is one of a testing series (metamorphic, conformance, golden, e2e).
+
+---
+
+# Sunday, June 7, 2026
+
+## @p_kuperman - Alpha School TimeBack at home with a 5-year-old: works, but needs 1:1 parent presence
+> How does Alpha School work when doing it from home for a 5 year old?
+>
+> C3, our youngest, started on TimeBack about 20-30 minutes a day this week.
+>
+> First, the initial placement assessments were difficult to get through. Some of them were 30-40 questions which is tough for the attention span of a 5 year old.
+>
+> Once C3 got into the actual learning, it got a lot better.
+>
+> For language, the Lalilo app is very friendly to a 5 year old. As long as I am there, I can bring him back to the next task and next question. Without me next to him, it would be very tough to make any progress.
+>
+> For math, the Zearn app works. It is very input heavy with lots and lots of repetition. I do not know if this is good or bad for a 5 year old. C3 can answer all the questions easily. Again, I need to be there to keep things moving forward.
+>
+> For fast math, the Alpha Numbers App is great. There is a lot of recognition of numbers and training for faster calculation and coming up with answers quickly. C3 is having a lot of fun with it, even when the volume of things to be done is a lot.
+>
+> For reading fluency, the learning loop involves speaking into a microphone to give the Alpha app answers. I have to be there and point to C3 to start answering at the right time. There are super simple content quizzes and you can see Alpha starting to make the connection between reading and comprehension, even at a super early age.
+>
+> Everything works, except that without me there 1:1, it would be very difficult to have C3 stay on task for enough time to make progress.
+>
+> So that's what it's like for a 5 yo to work with TimeBack.
+>
+> I am building Toronto into the first 1,000 student Alpha School geography. Reach out if you are interested.
+
+- **Tweet:** https://x.com/p_kuperman/status/2063790057769607341
+- **What:** First-hand parent report of running Alpha School's TimeBack stack at home with a kindergartener (Lalilo, Zearn, Alpha Numbers, voice reading loop). Apps are age-appropriate, but long placement tests and attention span mean a parent must sit 1:1; author is also recruiting for a Toronto Alpha School expansion.
+
+## @dhruvtwt_ - ui-skills.com directory of agent skills for design engineers
+> A directory of ui skills for design engineers.
+>
+> Link : https://t.co/DYeRfibUuq https://t.co/fhQpEk6Nfb
+
+- **Tweet:** https://x.com/dhruvtwt_/status/2063655840910069838
+- **Link:** https://www.ui-skills.com/
+- **What:** UI Skills is a curated collection of design-engineering agent skills covering accessibility, motion, frontend craft and interface quality, run by @ibelick. Useful as a source of installable skills for polishing UI work with coding agents.
+
+## @AjeyGore - ClawStation "why us" page: managed hosting for OpenClaw and Hermes agents
+> many people ask me why to use hermes or openclaw - when claude or chatgpt can do most of the job, so I wrote why us page for @getclawstation - go get your agent.
+>
+> https://t.co/riXnGtbTnV
+
+- **Tweet:** https://x.com/AjeyGore/status/2063503998137835812
+- **Link:** https://clawstation.ai/why
+- **What:** Ajey Gore's page argues for running OpenClaw or Hermes agents over plain Claude or ChatGPT. ClawStation.ai sells managed hosting on an isolated container with a root shell, your own API key and zero markup on AI costs.
+
+---
+
+# Saturday, June 6, 2026
+
+## @gregisenberg - 43-minute Hermes Desktop tutorial with Alex Finn
+> The most comprehensive Hermes Desktop tutorial on the internet NOW is LIVE.
+>
+> You'll learn sessions, profiles, artifacts, cost savings, and real use cases for making money and building startups with Hermes agents.
+>
+> @AlexFinn says this is the moment Hermes overtakes OpenClaw. "It's now the best way to use AI agents on your computer"
+>
+> Everything you need to know about Hermes Desktop App/agents in 43 minutes. 100% free. No ads.
+
+- **Tweet:** https://x.com/gregisenberg/status/2063316738935009425
+- **Link:** https://www.youtube.com/watch?v=EJm8Ka-gVOc
+- **What:** Greg Isenberg's Startup Ideas Podcast episode walks through the Hermes desktop agent app with Alex Finn, covering sessions, profiles, artifacts and cost savings. Finn claims Hermes now overtakes OpenClaw as the best way to run AI agents locally.
+
+## @Jilles - Self-hosted infra stack part 3: Grafana/Prometheus/Loki, Obsidian LiveSync, Tailscale
+> *Replying to @Jilles:* 3. Postgres - I can connect my Cloudflare Workers to Postgres via Hyperdrive. 4. Dragonfly - Redis-compatible but multi-threaded, for legacy Django/Celery apps.
+>
+> 5. Grafana, Prometheus and Loki. All my apps have health dashboards and metrics. Think DataDog but free.
+> 6. Obsidian LiveSync - A full DuckDB instance that I use for my Obsidian notes. Instant live-sync
+> 7. Tailscale - Can connect to my cluster from anywhere in the world
+>
+> Lastly:
+
+- **Tweet:** https://x.com/Jilles/status/2063275898082615346
+- **Parent:** https://x.com/Jilles/status/2063275126959783982
+- **What:** Part of a thread listing a personal self-hosted cluster stack. Earlier items cover Postgres via Cloudflare Hyperdrive and Dragonfly as a Redis replacement for Celery; this part adds the free observability trio Grafana, Prometheus and Loki, Obsidian note sync, and Tailscale for remote access.
+
+---
+
+# Thursday, June 4, 2026
+
+## @salesxsaas - Honorable-mention tools to extend the Claude Code cold-outbound stack
+> Honorable mentions
+>
+> Search:
+> - Exa (NLP searches)
+> - AI Ark (better value Apollo alt)
+>
+> Enrichment:
+> - Trayo (300+ org signals)
+> - Veerview (2-3x cheaper than FullEnrich)
+>
+> Outreach:
+> - HeyReach (greater LI scale)
+>
+> + all these have API/MCPs so its easy to build custom workflows together
+>
+> *Quoting @MichLieben:* A cold outreach campaign was never one job. We now run all of it inside Claude Code: list building (PredictLeads, Apollo), account scoring via custom lead-scoring skills into Tier 1/2/3, intent signals (PredictLeads, Trigify), decision-maker filtering (LeadsFactory), enrichment waterfall (Apollo, FullEnrich, Prospeo) with validation, copy generation from lemlist/Instantly, and a feedback loop on campaign metrics. Needs a CLAUDE.md with scoring rules, custom skills and API keys.
+
+- **Tweet:** https://x.com/salesxsaas/status/2062580211946869178
+- **Quoted:** https://x.com/MichLieben/status/2062164841960452600
+- **What:** Michel Lieben describes a seven-step outbound pipeline run entirely in Claude Code, from list building through scoring, intent, enrichment, copy and auto-improvement. TJ adds alternative tools per layer (Exa, AI Ark, Trayo, Veerview, HeyReach), all with APIs or MCPs for custom workflows.
+
+---
+
+# Wednesday, June 3, 2026
+
+## @_smontlouis - Praise for Matt Pocock's /improve-codebase-architecture skill
+> /improve-codebase-architecture
+>
+> j'ai rarement vu un skill aussi merveilleux
+>
+> *Quoting @_smontlouis:* Je vous conseille de bouffer du matt pocock matin midi et soir. Je pense legit que c'est le meilleur architecte IA actuel. Ses skills sont excellents, ses vidéos sont excellentes tout ce qu'il fait est EXCELLENT. ZERO SLOP dans mes projets mes repos sont cleeaannnnnnn
+
+- **Tweet:** https://x.com/_smontlouis/status/2062187947084968106
+- **Quoted:** https://x.com/_smontlouis/status/2049572011555406325
+- **Link:** https://github.com/mattpocock/skills
+- **What:** A French-speaking developer calls Matt Pocock's /improve-codebase-architecture skill rarely marvelous. In his earlier quoted post he names Pocock the best current AI architect and credits his skills with keeping his repos free of slop. Both link to the mattpocock/skills repo.
+
+## @doodlestein - Skill-centric "harness not factory" architecture for agents, applied to legal and hedge-fund work
+> *Replying to @spockwoz:* garry tan is so right about not building massive rails factories for agents but nobody talks about what actually goes in its place. Backend code should be dumb hands and feet (deterministic APIs, db, auth, sandboxes); the brains and workflow procedures live in markdown skills that get frozen and reused; never trust the agent's self-report, rerun checks in deterministic code. Build the harness, not the factory.
+>
+> @spockwoz Yup, this is exactly right.
+>
+> *Quoting @doodlestein:* If anyone from K&E or another paranoid mega-firm is reading this: I've developed an extremely good architecture for hedge-fund investment analysis using a single universal Swiss Army knife CLI tool and an elaborate library of interconnected, modular, composable skills. I can do the same for legal, self-hosted on your private cloud with open or Bedrock/Azure models, bootstrapped from your past filings and treatises. Non-technical legal staff can build skills too, since skills are mostly English text. Far cheaper than $500mm. No, you can't hire me as an employee.
+
+- **Tweet:** https://x.com/doodlestein/status/2062180245038342586
+- **Parent:** https://x.com/spockwoz/status/2062050654089310240
+- **Quoted:** https://x.com/doodlestein/status/2060042563994669431
+- **What:** Jeffrey Emanuel endorses spock's thesis that agent backends should be dumb deterministic plumbing, with logic in reusable markdown skills and independent verification of agent claims. He points to his own pitch: one universal CLI plus a composable skill library, offered to law firms so non-technical staff can author skills.
+
+## @credealjunkie - Rental supply tracks population: Sunbelt vs Bay Area Zillow listing counts
+> There's an adage in real estate that price follows volume.
+>
+> The rental market is no different - dramatic difference in available apartments (via Zillow search) vs population in the Sunbelt vs Bay Area. https://t.co/0ZLZhk0rCm
+
+- **Tweet:** https://x.com/credealjunkie/status/2062178329550000201
+- **What:** THIN: Image-only chart or map attached to the tweet. It argues that available rental listings on Zillow differ sharply from population in Sunbelt metros versus the Bay Area, so supply volume drives rental pricing, as it does in sales.
+
+## @nateberkopec - Suggested adoption order for the jdx dev-tool stack: mise, hk, aube, pitchfork, fnox
+> If you're looking for an order to try this in:
+>
+> 1. mise
+> 2. hk (parallel git hooks will change your life)
+> 3. aube (you are now immune to JS hacks)
+> 4. pitchfork (a 'nicer' foreman)
+> 5. fnox (higher up if your team is heavy into password managers and everyone uses diff ones)
+>
+> *Quoting @onerinas:* Already on the mise train. Time to try the rest.
+
+- **Tweet:** https://x.com/nateberkopec/status/2062120950246842712
+- **Quoted:** https://x.com/onerinas/status/2062110565116571987
+- **What:** Nate Berkopec ranks the order for adopting a family of dev tools: mise for tool versions, hk for parallel git hooks, aube for JS supply-chain safety, pitchfork as a foreman alternative, and fnox for secrets. Replies to a user already on mise who wants to try the rest.
+
+## @Must_be_Ash - Matt Van Horn's "Every Agentic Engineering Hack I Know (June 2026)" plan-first workflow article
+> just pass this article to your agent
+>
+> mix this with gbrain if you’re not building solo and actively take meetings
+>
+> *Quoting @mvanhorn:* Every Agentic Engineering Hack I Know (June 2026) (X article)
+
+- **Tweet:** https://x.com/Must_be_Ash/status/2062033722128601476
+- **Quoted:** https://x.com/mvanhorn/status/2061877533885473181
+- **Link:** https://x.com/i/article/2061440101411102721
+- **What:** Matt Van Horn's long article lists 22 agentic-engineering hacks: Compound Engineering /ce-plan then /ce-work, voice input, many cmux tabs, YOLO permissions, Codex handoff, last30days research, Granola transcripts, and Printing Press CLIs. Ash says to feed it to your agent and add gbrain for team and meeting contexts.
+
+---
+
+# Tuesday, June 2, 2026
+
+## @zebulgar - Claude CoWork automates Rabois-style calendar audit against top priorities
+> Damn I am extremely Claude CoWork pilled
+>
+> I think I can probably cut 5-6h of my work per week with this
+>
+> and the @rabois-style calendar audit can now happen automatically
+>
+> List out my top 3-4 priorities, and Claude can check if my time allocation matches to those
+>
+> So cool
+
+- **Tweet:** https://x.com/zebulgar/status/2062005623030714781
+- **What:** THIN: Delian estimates Claude CoWork could save him 5-6 hours weekly, notably by auto-running a Keith Rabois-style calendar audit that compares time spent against his top 3-4 stated priorities. The attached media is not visible.
+
+## @mvanhorn - Every Agentic Engineering Hack I Know (June 2026): plan.md-first workflow with Compound Engineering, voice, and many parallel agents
+> https://t.co/95lFnAyw0e
+
+- **Tweet:** https://x.com/mvanhorn/status/2061877533885473181
+- **Link:** https://x.com/i/article/2061440101411102721
+- **What:** Matt Van Horn's 22-hack guide: always generate a plan.md first (/ce-plan, /ce-work from Compound Engineering) and let agents read it, use "plan for the plan" for deep non-code work, dictate by voice, run 4-6 cmux tabs with skip-permissions, and hand builds to Codex. It also covers raw Granola transcripts, last30days research, notes as agent knowledge base, writing your own skills, and Printing Press CLIs with Agent Cookie auth.
+
+---
+
+# Monday, June 1, 2026
+
+## @just_unmute - Unmute: free open-source BYOK dictation app pitched as a Wispr Flow alternative
+> 🚨 BREAKING: this guy is single-handedly killing WisprFlow.
+>
+> Dictate, tell the AI to rewrite it any tone, style, or dialect you want. Done in under 1s.
+>
+> WisprFlow: ~$12/mo, slower, closed source.
+> Unmute: free, open source. BYOK runs under $1/mo.
+>
+> Pick a side.
+
+- **Tweet:** https://x.com/just_unmute/status/2061530000130732212
+- **What:** THIN: Promo for Unmute, an open-source voice dictation tool that rewrites speech into any tone or dialect in under a second, claiming under $1/month with your own API key versus roughly $12/month for closed-source Wispr Flow. Demo video is not visible, so claims are unverified.
+
+## @bran_don_gell - Walking workflow: voice-dictate responses to an agent-compiled inbox digest, then execute
+> We're in a golden era of work right now. 
+>
+> The amount you can get done on A WALK is a complete change not only in the form of work, but the velocity. 
+>
+> Steal this workflow:
+>
+> 1. Ask Codex, Claude, or @every's Plus One to pull together your emails, to-do list, and slack messages into a format you can review.
+> 2. Download @usemonologue and go for a walk. Start recording a note. 
+> 3. Look at your list from #1 and work through it just saying what you want to do or say. Doesn't matter the format — the AI will figure out what you meant. 
+> 4. In whatever tool you chose in #1, in the same thread, connect that tool to Monologue using Monologue's CLI.
+> 5. Tell it to pull your most recent note, organize responses in a web app that you can review. Tweak anything. 
+> 6. Tell it to execute. 
+>
+> Unreal workflow that everyone will doing eventually. You can just do it a few years before everyone else.
+
+- **Tweet:** https://x.com/bran_don_gell/status/2061434738145964156
+- **Link:** https://github.com/EveryInc/monologue-toolkit
+- **What:** Six-step mobile workflow: an agent compiles emails, todos and Slack into a review list, you talk through responses on a walk into Monologue, then the agent pulls the note via Monologue's CLI, builds a review web app, and executes. Shows voice as the input layer for batch triage of agent work.
+
+---
+
+# Sunday, May 31, 2026
+
+## @adokce - Replying to Steve Ruiz's wish for a custom Granola: BreezeType offline open-source alternative
+> *Replying to @steveruizok:* I just wish there was a company that could build me my own granola, but I don't want to pay for the work up front so maybe we could make the build reusable and more people could get in on it. We could all pay some kind of monthly fee for access + maintenance + new features
+>
+> @steveruizok i tried this. it's not fully polished. but works well and is fully offline
+>
+> *Quoting @sciguy:* Just open-sourced BreezeType 🚀 A fully local, open-source desktop app that brings together the best of Wispr Flow + Granola right on your laptop. Fast on-device voice dictation in any app + complete voice workspace (live meeting notes, auto-summaries, tasks, history, custom dictionary). No cloud. No subscriptions. MIT licensed.
+
+- **Tweet:** https://x.com/adokce/status/2061123655761793317
+- **Parent:** https://x.com/steveruizok/status/2061086734935339415
+- **Quoted:** https://x.com/sciguy/status/2057616085911056895
+- **Link:** https://github.com/KeystoneScience/BreezeType
+- **What:** Answering Steve Ruiz's wish for a self-owned Granola, adokce points to BreezeType, an MIT-licensed local desktop app combining Wispr Flow-style dictation with Granola-style meeting notes, summaries, tasks and a local MCP server. It runs fully offline though not fully polished.
+
+## @benln - Fastest-growing startups ranked by 90-day hiring velocity
+> Pulled the fastest-growing startups by hiring velocity over the past 90 days: https://t.co/BoHiDkOTKU
+
+- **Tweet:** https://x.com/benln/status/2061075154021531733
+- **What:** THIN: Ben Lang shares a list of startups ranked by hiring velocity over 90 days, with the content in an attached image or self-link that did not expand. Likely a hiring-growth proxy for finding fast-scaling companies, but the actual names are not visible.
+
+## @JoshuaIPark - awesome-second-brain: second-brain and AI memory systems compared by data lifecycle
+> It's hard to categorize or evaluate second-brain systems because there's no single right answer.
+>
+> But I found one useful lens every second brain should be evaluated through: the lifecycle of your data.
+>
+> Collect -> Organize -> Evolve -> Use -> Govern
+>
+> So I made a curated comparison of the existing second brain, AI memory, and knowledge systems, from @claudeai's memory to @garrytan's GBrain.
+>
+> It focuses on the full lifecycle:
+> - how scattered context gets collected
+> - how it turns into durable knowledge
+> - how it stays fresh over time
+> - how people and AI tools use it in real work
+> - how users can inspect, correct, delete, export, and trust it
+>
+> If you want AI to understand your personal context, team knowledge, and working history, this might help.
+>
+> PRs welcome, especially from heavy users who've actually tried building and maintaining a real second brain.
+
+- **Tweet:** https://x.com/JoshuaIPark/status/2061075006386524312
+- **Link:** https://github.com/aristoapp/awesome-second-brain
+- **What:** A curated GitHub list comparing second-brain, AI memory and knowledge tools (Claude memory, GBrain, etc.) across a Collect/Organize/Evolve/Use/Govern lifecycle. Useful as a survey when choosing or designing personal agent memory, and open to community PRs.
+
+## @zodchiii - Five Claude Code subagent templates (reviewer, test writer, docs, security, PR writer)
+> Anthropic engineer: 
+>
+> "You can build 5 assistants in one afternoon. Each one handles a task you've been doing manually every single day."
+>
+> In 45 minutes he builds 5 focused agents from scratch on camera. 
+>
+> Most people are still doing code review, testing, and documentation by hand every single day
+>
+> Watch the session, then save all templates below 👇
+>
+> *Quoting @0x_rody:* https://t.co/XKq6qBjLxY
+
+- **Tweet:** https://x.com/zodchiii/status/2061040686330257656
+- **Quoted:** https://x.com/0x_rody/status/2061019244595233135
+- **Link:** https://x.com/i/article/2061010206490787844
+- **What:** Quoted article "How to Build Your First Claude Code Subagent in 15 Minutes" explains subagents as markdown files with YAML frontmatter (name, description, model, tools) in .claude/agents/. It gives five copyable templates (reviewer, test-writer, doc-writer, security scanner, PR writer) and advises routing subagents to Sonnet to cut cost and keep main context lean.
+
+---
+
+# Saturday, May 30, 2026
+
+## @doodlestein - Multi-model weighted soft-dimension scoring turns fuzzy problems into an optimizable loss
+> This is a really useful trick. LLMs are uniquely good at generating scores for attributes in a repeatable, consistent way.
+>
+> And if you want the scores to be robust, you can use multiple models and average each sub-score, with a penalty for when they diverge a lot between models.
+>
+> *Quoting @doodlestein:* @ryancarson You can define a multi-factor scoring system across various "soft" dimensions (e.g., an "elegance" score between 0 and 1,000) that gets rolled into a single weighted overall score and suddenly make just about any problem have a numerical loss factor that you can optimize over.
+
+- **Quoted:** https://x.com/doodlestein/status/2060778023566098842
+- **Tweet:** https://x.com/doodlestein/status/2060788830462968239
+- **What:** Define LLM-scored soft dimensions (e.g. elegance 0-1000), roll them into one weighted score, and treat it as a loss function to optimize. For robustness, average sub-scores across several models and penalize cross-model disagreement.
+
+---
+
+# Friday, May 29, 2026
+
+## @doodlestein - dcg one-time exemption flow works like 2FA for destructive agent commands
+> One of my favorite features in dcg, my destructive_command_guard tool, is that it will block an agent from doing something stupid automatically, but if the agent REALLY wants to do it, then it can request a one-time exemption to whatever rule is blocking it.
+>
+> But the way it has to do that is to ask the human to basically do the equivalent of a 2-factor auth, where it generates a short code and then asks the human to paste a command in manually. The entire process flow is illustrated in the screenshots below.
+>
+> Of course, an evil, conniving agent could do all of that itself. But the frontier models been so RL'ed into being law-abiding and doing that feels too much like "hacking" or circumventing a security system, so that they just abide by the rules.
+>
+> You can get dcg here (it recently crossed the 1k GitHub stars milestone):
+
+- **Tweet:** https://x.com/doodlestein/status/2060564930336526635
+- **Link:** https://github.com/Dicklesworthstone/destructive_command_guard
+- **What:** destructive_command_guard (dcg) blocks dangerous agent commands but lets an agent request a one-time rule exemption via a human-pasted confirmation code, like 2FA. The safeguard leans on models' trained reluctance to circumvent security rather than on hard enforcement.
+
+## @ericosiu - Single Grain's five-layer company brain for AI agents
+> Every company is missing the same layer:
+>
+> A company brain.
+>
+> Right now, the memory of the business is scattered across calls, docs, Slack threads, dashboards, SOPs, and people's heads.
+>
+> That's the part people miss when they talk about a company brain.
+>
+> The value isn't a giant folder of company knowledge. Every company already has that.
+>
+> The real advantage is the intelligence layer that sits between all that context and the work your team needs done.
+>
+> This is the layer every AI-native company will need:
+>
+> *Quoting @ericosiu:* https://t.co/SaUvnPnbuV
+
+- **Tweet:** https://x.com/ericosiu/status/2060435757127651664
+- **Quoted:** https://x.com/ericosiu/status/2060415100603781497
+- **Link:** https://x.com/i/article/2056815177895747584
+- **What:** Article "How we built a Single Company Brain" argues memory alone bloated context (~40% of the window), so retrieval is the operating layer. It lays out five layers: capture, retrieval, source truth, permissions, and feedback loops that turn human corrections into rules. Single Grain runs 500K+ tokens of memory, 90+ daily crons, and ingested 2,862 Gong calls.
+
+## @daleverett - Polygres: relational, graph and vector search inside Postgres
+> https://t.co/zCm27ocJZS
+
+- **Tweet:** https://x.com/daleverett/status/2060404075079123301
+- **Link:** https://x.com/i/article/2060393197424218112
+- **What:** Article "What If Your Database Was Polyamorous?" pitches Polygres, which combines relational tables, graph relationships (pgGraph) and semantic search (pgVector) in native Postgres, avoiding separate graph and vector databases plus sync glue. Evokoa offers $50 credits to the first 100 signups.
+
+## @DeanTTraining - Gym machine pitched as a deadlift replacement
+> This machine is just like a Deadlift…only it's 300% more effective and you're 99% less likely the incur an injury while using it
+>
+> If your gym has one, the choice is obvious:
+>
+> SPAM IT & GIVE UP DEADLIFTS FOREVER https://t.co/jSl8c6At1I
+
+- **Tweet:** https://x.com/DeanTTraining/status/2060398330966937931
+- **What:** THIN: Fitness tweet with a video of an unnamed machine, claiming it beats deadlifts in effectiveness and injury risk. The machine is not identified in the text and the percentages are hyperbolic marketing claims.
+
+## @ttunguz - Training small local models to run a personal agent
+> I've been using state-of-the-art models to teach small models running on my computer how I work.
+>
+> The result : a personal agent that runs my inbox, my deal pipeline, my blog, my calendar, & my research. 🧵
+
+- **Tweet:** https://x.com/ttunguz/status/2060393514144502070
+- **What:** Tunguz uses frontier models to teach small local models his workflows, producing a personal agent that handles inbox, deal pipeline, blog, calendar and research. A thread follows, but only the teaser was captured; the pattern is distillation of frontier behavior into private on-device agents.
+
+## @suekhim - Koji, an AI tutor designed to make kids think
+> AI is making kids dumber.
+>
+> It should be making them geniuses.
+>
+> Introducing Koji, the first AI tutor that gets kids to actually think. 👇 https://t.co/tmCdVoEZYF
+
+- **Tweet:** https://x.com/suekhim/status/2060378988606878147
+- **What:** THIN: Launch announcement for Koji, an AI tutor pitched as pushing kids to reason instead of being handed answers. The demo is likely a video or image with no details, so features and pricing are unknown.
+
+## @doodlestein - Skill that auto-redacts sensitive content from screencasts
+> I turned this workflow into a general skill that totally automates this entire process of redacting sensitive content from a screencast. 
+>
+> You can get it here:
+>
+> https://t.co/tIxJ7gGAGu https://t.co/DTDpmNBbWq
+>
+> *Quoting @doodlestein:* It's always fun finding a new use case for agents. Today, I decided to finally record a screencast showing my current development setup and workflow, which many people have been asking me for over the last few months.
+>
+> One reason I hate doing these and find them stressful is that I work on consulting projects for clients under NDA, and I'm always nervous about inadvertently leaking secret information.
+>
+> And of course, during the process of recording it, I accidentally flashed my Gmail inbox at one point and also revealed certain folder names and project/repo names inadvertently.
+>
+> I'm super busy with actual work, and the prospect of sitting there like an idiot stepping through frames looking for sensitive information to redact was extremely unappealing. 
+>
+> So I decided to give Opus 4.8 the job as follows (this leverages a skill I had just for the video transcoding with FFmpeg; the rest was driven by this prompt):
+>
+> ❯ Use your /obs-youtube-music skill to remux '2026-05-28 15-05-39.mkv' to MP4 without changing the quality. I need your help in identifying and redacting (using opaque rectangles over the impacted area using FFmpeg during the time intervals warranted) a couple times where my screen revealed my Gmail inbox and anywhere that includes the string "<REDACTED CLIENT NAME>" or "<redacted_client_name>". 
+>
+> Think of a good way to do this—one way would be to grab a frame every 1 second and then use OCR on it (something cheap and fast like Tesseract, which you could install, or a more modern system that could run decently on this Mac, like the built-in OCR in macOS) and then double-check them with your vision model to get the right bounding box and time interval. You can research the best approach.
+>
+> --
+>
+> And then after it finished (which took ~90 minutes in total; not bad considering the screen recording was ~30 minutes long), I did this:
+>
+> ❯ OK and when you're all done, you will need to manually verify that you did in fact redact the parts in question (and give me the timestamps so I can double-check this myself).
+>
+> Anyway, it all worked extremely well. So well that I'm going to turn it into a skill that anyone can use on https://t.co/gPMIHym3Hv so that you can just give any forbidden strings or describe what you don't want included, and it will automatically handle the process of detecting, redacting, and verifying everything.
+
+- **Tweet:** https://x.com/doodlestein/status/2060366040211525668
+- **Quoted:** https://x.com/doodlestein/status/2060160177924399349
+- **Link:** https://jeffreys-skills.md/skills/redacting-sensitive-parts-of-screencast-videos
+- **What:** Emanuel had Opus 4.8 redact Gmail and NDA client names from a 30-minute screencast via 1fps frame sampling, OCR, vision-model bounding boxes, FFmpeg opaque boxes and timestamped verification (~90 min). He packaged it as a reusable skill on jeffreys-skills.md.
+
+## @catalinmpit - Hardening a Hermes agent on a Hetzner VPS
+> I've deployed my Hermes agent on a Hetzner VPS.
+>
+> The security measures I've taken so far:
+> - Installed Tailscale and restricted SSH access to Tailscale IPs only
+> - Blocked all ports except 80 and 443
+> - Restricted ports 80 and 443 to Cloudflare IP ranges only
+> - Enabled and configured UFW
+> - Disabled password SSH login
+>
+> Need to add:
+> - fail2ban
+>
+> What else should I do?
+
+- **Tweet:** https://x.com/catalinmpit/status/2060351831826628650
+- **What:** Checklist for securing a self-hosted agent VPS: Tailscale-only SSH, UFW, only 80/443 open and limited to Cloudflare IPs, no password SSH, fail2ban pending. Asks for further suggestions, so replies likely hold more hardening ideas.
+
+## @DanKornas - book-to-skill turns technical books into Claude Code skills
+> Your technical books shouldn't die as forgotten PDFs.
+>
+> book-to-skill is a Claude Code skill that turns a technical book or document into a structured skill for studying, referencing, and using while you work.
+>
+> It helps you query a book from inside Claude Code by extracting chapters, glossary terms, patterns, cheatsheets, and a main SKILL.md, then loading the right chapter files on demand.
+>
+> Key features:
+>
+> • Multi-format input – supports PDF, EPUB, DOCX, TXT, Markdown, reStructuredText, AsciiDoc, HTML, RTF, and MOBI/AZW formats
+> • Skill output structure – generates SKILL.md, per-chapter Markdown files, glossary.md, patterns.md, and cheatsheet.md
+> • On-demand chapters – loads chapter files only when you ask about a topic instead of putting the whole book in context
+> • Technical-book extraction path – can use Docling for code blocks and tables, or faster text extractors for prose-heavy PDFs
+> • Claude Code workflow – query the installed skill with commands like /your-book-slug replication or /your-book-slug ch05
+>
+> It's open-source (MIT license).
+>
+> Link in the reply 👇
+
+- **Tweet:** https://x.com/DanKornas/status/2060311678084931967
+- **What:** Open-source (MIT) Claude Code skill that converts books in many formats into a skill with per-chapter files, glossary, patterns and cheatsheet. Chapters load on demand to save context, a pattern worth reusing for turning reference material into progressive-disclosure skills.
+
+---
+
+# Thursday, May 28, 2026
+
+## @hugobowne - Hamel Husain on why AI skills can make people worse at AI
+> "Fuck Your Skills (And Mine Too)" -- @HamelHusain 
+>
+> After teaching AI evals to 4,500+ builders, Hamel created a suite of AI skills.
+>
+> Then he concluded they might be making people worse at AI.
+>
+> Why?
+>
+> People were treating skills as answers instead of learning the underlying workflow.
+>
+> Full episode of Show Us Your (Agent) Skills in comments 👇
+
+- **Tweet:** https://x.com/hugobowne/status/2060197089355895240
+- **What:** Podcast episode teaser: Hamel Husain built agent skills for AI evals, then found users copied the outputs instead of learning the eval workflow. The argument is that skills can be a crutch that erodes understanding, a caution for anyone packaging expertise as skills.
+
+## @doodlestein - Jeffrey Emanuel releases Agent Flywheel workflow screencast
+> I've probably been asked by 100+ people over the past few months to record a screencast showing how I use my Agent Flywheel tooling and skills and other workflows in my day-to-day development work.
+>
+> I really hate making these things and find it stressful, but decided to do it anyway. This video doesn't get into the super nitty gritty, but shows enough to get a sense for my setup and tooling and general approach.
+>
+> Apologies for some choppy audio at parts; it should be pretty comprehensible despite that.
+>
+> I can't justify spending any real time scripting or editing this kind of thing because I'm too busy with real work, so you'll have to excuse some pauses and meandering here and there (plus I encountered a few bugs, the bane of all truly live demos).
+>
+> PS: If you prefer watching on YouTube, I'll post the link as a reply below.
+
+- **Tweet:** https://x.com/doodlestein/status/2060167261470486816
+- **What:** Unscripted, lightly edited screencast of Emanuel's day-to-day agent-driven development setup (Agent Flywheel tooling, skills, workflows), made after 100+ requests. A high-level tour rather than a deep dive, useful as a reference for his agent swarm approach.
+
+## @clairevo - Tradwife-style cooking videos made with Google Flow, Omni and personal avatars
+> ok guys my new hobby is making tradwife cooking videos, but hacking AI. @FlowbyGoogle and Omni + personal avatars are INSANE
+
+- **Tweet:** https://x.com/clairevo/status/2060150131811590433
+- **What:** THIN: Claire Vo shows a video made with Google's Flow plus Omni and personal avatars, producing tradwife-style cooking content. Suggests current AI video tools can generate convincing avatar-led lifestyle videos; the video itself was not captured.
+
+## @DeanTTraining - Claim that swapping deadlifts for alternatives improves back, glutes and recovery
+> I'll be telling people all 2026:
+>
+> Once you swap Deadlifts out for these….
+>
+> - Your Lower Back will feel better than ever before
+> - Your Glutes/Hamstrings will be the most developed they've ever been
+> - It'll be much easier for you to recover
+>
+> It's honestly a NO-BRAINER DECISION
+>
+> *Quoting @gregogallagher:* Stop deadlifting. You are wasting your effort.
+
+- **Tweet:** https://x.com/DeanTTraining/status/2060117422384824512
+- **Quoted:** https://x.com/gregogallagher/status/2060101180571750610
+- **What:** THIN: Fitness coach Dean Turner endorses Greg O'Gallagher's "stop deadlifting" stance, claiming replacement exercises (shown only in attached media, not captured) give better lower-back health, glute/hamstring growth and recovery. Contrarian training advice with no evidence in the text.
+
+---
+
+# Wednesday, May 27, 2026
+
+## @petergyang - /slides skill that turns a rough outline into an animated HTML deck
+> Never manually create slides again.
+>
+> Here's a quick video showing how you can use my /slides skill to create a beautiful animated presentation in minutes.
+>
+> HTML really is the solution to everything.
+>
+> 📌 Watch the full tutorial here: https://t.co/3Ro4SA17lC
+>
+> *Quoting @petergyang:* I got tired of making PowerPoint slides so I built an AI skill to do it for me. Tutorial on building a /slides skill that turns a rough outline into a beautiful HTML deck: 12 slide formats and 3 templates, live charts and subtle animations, and AI screenshotting each slide to fix layout issues itself.
+
+- **Tweet:** https://x.com/petergyang/status/2059801947503530365
+- **Quoted:** https://x.com/petergyang/status/2059642246614647259
+- **Link:** https://www.youtube.com/watch?v=vbChRIIlSPE&feature=youtu.be
+- **What:** Peter Yang demos and teaches an AI skill that generates HTML slide decks from an outline, with 12 formats, 3 templates, charts and animation. The key technique is a self-review loop where the agent screenshots each slide and fixes layout problems, a reusable pattern for visual output QA.
+
+## @edgaralandough - "25 boring things" self-improvement list (first item: bed before 10pm)
+> 25 BORING THINGS THAT WILL MAKE YOU UNRECOGNIZABLE BY JULY
+>
+> 1. Bed before 10pm. Every night. No exceptions.
+
+- **Tweet:** https://x.com/edgaralandough/status/2059728027173396656
+- **What:** THIN: Opening tweet of a listicle on boring daily habits for a visible transformation by July; only item 1 (sleep before 10pm) is visible. The rest likely sits in a thread or image not captured.
+
+## @neural_avb - FlashLib: GPU classical-ML operators making million-document embedding clustering near instant
+> Deep learning bros and sisters, don't sleep on this.
+>
+> You can cluster millions of documents in embedding space, mass-annotate them, visualize them... basically for free and within seconds.
+>
+> *Quoting @Andy_ShuoYang:* Flash-KMeans was only the beginning. Today, from the Flash-KMeans team, we are releasing FlashLib — a GPU library for fast, predictable, agent-ready classical ML operators. Up to 26x on KMeans, 19x on KNN, 40x on HDBSCAN, 208x on TruncatedSVD, 47x on PCA, 147x on exact t-SNE, and 49x on MultinomialNB over state-of-the-art (cuML).
+
+- **Tweet:** https://x.com/neural_avb/status/2059519009079628122
+- **Quoted:** https://x.com/Andy_ShuoYang/status/2059441289763139677
+- **Link:** https://flashml-org.github.io/
+- **What:** FlashLib is a GPU library reimplementing classical ML operators (KMeans, KNN, HDBSCAN, PCA, t-SNE and others) with large claimed speedups over cuML. AVB highlights the practical payoff: clustering and visualizing millions of embedded documents in seconds, which makes mass annotation and exploration cheap.
+
+---
+
+# Tuesday, May 26, 2026
+
+## @cathrynlavery - CodeGraph: local code knowledge graph that cuts agent cost and tool calls
+> been starting to use codegraph in projects.
+>
+> It builds a local knowledge graph of every symbol, function, and connection in your code so agents can look things up instantly instead of grep-searching through thousands of files.
+>
+> ~35% cheaper · ~70% fewer tool calls · 100% local
+
+- **Tweet:** https://x.com/cathrynlavery/status/2059282561545666610
+- **What:** Cathryn recommends CodeGraph, a fully local tool that indexes symbols and their relationships into a knowledge graph so coding agents query it instead of grepping. Claimed gains are about 35% lower cost and 70% fewer tool calls, a useful pattern for large-repo agent efficiency.
+
+## @kushalbyatnal - Extend Parse 2.0: document parsing API claiming SOTA on RealDoc-Bench
+> Over 1 billion PDFs are created every day, but your agents still can't read them reliably.
+>
+> Today we're releasing Parse 2.0, the most accurate document parsing API in the world.
+>
+> Extend already processes millions of pages daily for leading AI teams like Brex, Mercury, Opendoor, Flatiron Health, and hundreds of others. Now, its even better.
+>
+> Parse 2.0 is SOTA quality on RealDoc-Bench, our open source benchmark that measures agent success rate on real world docs that agents actually encounter in production.
+>
+> We trained Parse 2.0 on 1M+ pages of the hardest documents seen in production. Here's how it stacks up:
+>
+> - #1 in healthcare, real estate, logistics, and financial services
+> - 95.7% agent Q&A accuracy on 581 docs (next best: 92%)
+> - 0.847 F1 on layout (next best: 0.759)
+>
+> Give it a try today and build production-ready document agents with Extend.
+
+- **Tweet:** https://x.com/kushalbyatnal/status/2059278322287214750
+- **What:** Extend launches Parse 2.0, a document parsing API trained on 1M+ hard production pages. It claims 95.7% agent Q&A accuracy versus 92% for the next best, and 0.847 layout F1 on its own open-source RealDoc-Bench. Vendor-reported numbers, but relevant for PDF ingestion in agent pipelines.
+
+## @_vmlops - Microsoft agent-governance-toolkit: deterministic policy, identity, sandboxing and audit for AI agents
+> MICROSOFT OPEN-SOURCED A GOVERNANCE LAYER FOR YOUR AI AGENTS
+>
+> and it's exactly what agentic ai has been missing
+>
+> here's what agent governance toolkit does:
+>
+> ▫️ intercepts every tool call in deterministic code before it hits the wire denied actions aren't unlikely, they're structurally impossible
+> ▫️ yaml policy engine lets you allow, deny, or require human approval per action
+> ▫️ zero-trust identity via spiffe/did/mtls no more 5 agents sharing one api key
+> ▫️ 4-level execution sandbox with privilege rings so agents can't escape their scope
+> ▫️ tamper-evident merkle audit logs for compliance and incident response
+> ▫️ covers all 10/10 owasp agentic top 10 risks
+> ▫️ works with langchain, crewai, autogen, openai agents sdk, semantic kernel, and more
+>
+> one pip install...any framework...python, typescript, go, rust, .net all supported
+>
+> because "please follow the rules" in a system prompt is not a guardrail...it's a suggestion
+
+- **Tweet:** https://x.com/_vmlops/status/2059207888393138556
+- **Link:** https://github.com/microsoft/agent-governance-toolkit
+- **What:** Microsoft's open-source toolkit enforces agent safety in code rather than prompts: it intercepts tool calls, applies YAML allow/deny/approve policies, gives agents per-agent identity, sandboxes by privilege ring, and writes Merkle audit logs. Framework-agnostic and multi-language, so it could serve as a drop-in guardrail layer for agent stacks.
+
+## @garrytan - SkillOpt paper: treating SKILL.md files as trainable parameters, plus Garry's "skillify" tip
+> This sounds complicated but the agents can implement this in OpenClaw/Hermes Agent trivially (use skillify from GBrain with a link to this tweet)
+>
+> Sounds ridiculous but you should try it
+>
+> *Quoting @muratcan:* Gradient descent for SKILL.md files sounds interesting, maybe a bit complex but it's becoming a real part of agent harness. SkillOpt is one of the first papers to treat markdown skill files as trainable parameters and provides a proper optimization framework for them. Lessons: (1) validation gate on held-out set with strict improvement is the only thing that matters, best skills land with 1-4 accepted edits; (2) bounded edits (4-8 per step) beat full rewrites; (3) compact skills win, median ~920 tokens; (4) a Codex-trained skill ported to Claude Code gained +59.7 points on SpreadsheetBench; (5) frozen model + trained context is the practical adaptation; (6) verification is the bottleneck for open-ended work. Also notes a protected-section invariant keeping fast edits from overwriting slow lessons (worth 22 points).
+
+- **Tweet:** https://x.com/garrytan/status/2059144022778896392
+- **Quoted:** https://x.com/muratcan/status/2059113412278227328
+- **Link:** https://arxiv.org/pdf/2605.23904
+- **What:** Garry Tan says agents can implement SkillOpt-style skill optimization trivially by running GBrain's skillify against the thread. Murat's summary of the paper (SkillOpt: Executive Strategy for Self-Evolving Agent Skills) gives practical rules: strict held-out validation gates, capped edit size, compact skills, and protected slow-state sections.
+
+---
+
+# Sunday, May 24, 2026
+
+## @frank__rosh - Patter: open-source MIT voice-agent SDK with live demo phone line answering in 412 ms
+> Call +1 (920) 7-PATTER.
+>
+> Hear an AI phone agent answer in 412 ms.
+>
+> Open-source SDK. MIT licensed.
+
+- **Tweet:** https://x.com/frank__rosh/status/2058654388240240814
+- **What:** THIN: Announces an open-source, MIT-licensed SDK for AI phone agents, with a public demo number to hear a 412 ms answer latency. Low-latency voice response is the headline claim; no further detail in the tweet.
+
+---
+
 # Saturday, May 23, 2026
 
 ## @garrytan - ZeroEntropy: small task-specific models, 4-8x faster than frontier labs
