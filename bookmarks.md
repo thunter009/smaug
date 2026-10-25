@@ -4046,6 +4046,7 @@
 ---
 
 # Tuesday, September 1, 2026
+
 ## @theplgeek - skill-cabinet v0.5.0 catalog and cleanup tool for installed agent skills
 > skill-cabinet@latest https://t.co/tG4US2xlIG
 
@@ -4152,6 +4153,7 @@
 ---
 
 # Monday, August 31, 2026
+
 ## @analogalok - TimesFM-3 as a forecasting tool for AI agent stacks (330M params, local)
 > We're building AI agents can browse web write code, but Google just gave them ability predict future. TimesFM-3. 330M parameter foundation model does zero shot multivariate forecasting. it casually smokes Amazon's Chronos 2 Toto 2.0 across all major benchmarks. (benchmarks in replies) Why huge AI agents: Instead forcing LLM guess business trends, you now route time series data TimesFM-3. Give agent past sales, upcoming promotions, weather forecasts, generates entire future timeline in single forward pass. At just 330M parameters, you run locally right alongside favorite LLM. AI agent stack just leveled up. Who's building workflow weekend?
 >
@@ -4240,6 +4242,7 @@
 ---
 
 # Sunday, August 30, 2026
+
 ## @HowToPrompt__ - FreeToken: Berkeley engine runs 753B MoE models on a single GPU
 > You can now run 753B parameter model on single GPU. UC Berkeley open-sourced FreeToken. local LLM inference engine runs 2-4x faster than Ollama.
 >
@@ -4306,6 +4309,7 @@
 ---
 
 # Saturday, August 29, 2026
+
 ## @Oluwaphilemon1 - 16GB Mac can run 27B vision model via MLX DWQ quant
 > Qwen3.8-27B just got a lot more interesting for Mac users.
 > 
@@ -4463,6 +4467,7 @@
 ---
 
 # Friday, August 28, 2026
+
 ## @doodlestein - Pro tip: chain profiling and optimization skills for 5,000x speedups
 > Agent Coding Pro Tip:
 > 
@@ -4496,6 +4501,7 @@
 ---
 
 # Thursday, August 27, 2026
+
 ## @cbmenefee - Firecrawl Keyless: search and scrape with no API key, free
 > fyi - all Firecrawl endpoints are free and keyless ;)
 >
@@ -4643,6 +4649,7 @@
 ---
 
 # Wednesday, August 26, 2026
+
 ## @josephfwyer - Orwell's six writing rules as a fix for LLM-sounding prose
 > If you want people to read your stuff please follow Orwell's rules. These LLMs are not your friends. They write with so much damn passive voice, incoherent figures of speech, and unnecessary -ly words.
 >
@@ -11531,7 +11538,624 @@
 
 ---
 
+# Tuesday, March 24, 2026
+
+## @JakehellerPD - 50-minute Claude for Excel real-estate underwriting video
+> we just dropped 50 min Claude for Excel underwriting video on YouTube covers everything from OM extraction to building full 5 year proforma from scratch to creating skill that underwrites every deal using your exact model and acquisition criteria Its awesome... link below
+
+- **Tweet:** https://x.com/JakehellerPD/status/2036579575371800836
+- **What:** Announcement of a 50-minute YouTube tutorial on using Claude for Excel for deal underwriting: extracting offering memorandum data, building a 5-year proforma, and creating a reusable skill applying the user's model and acquisition criteria. Link was not captured.
+
+## @joelhooks - Agentic AI Optimization implementation checklist for agent-friendly websites
+> point your clanker at this
+>
+> it works very well https://t.co/OrRE2XDcuO
+
+- **Tweet:** https://x.com/joelhooks/status/2036497936536969454
+- **Link:** https://joelclaw.com/aaio-implementation-checklist
+- **Filed:** [agentic-ai-optimization-checklist.md](./knowledge/articles/agentic-ai-optimization-checklist.md)
+- **What:** Joel Hooks' checklist for making a site crawlable and usable by AI agents: markdown sitemap, per-page .md endpoints, JSON API discovery, llms.txt, and Content-Type verification. Meant to be handed directly to a coding agent to implement.
+
+## @MillieMarconnni - /last30days Claude Code skill mines Reddit and X for current prompting techniques
+> This feels like cheating.
+>
+> Someone built Claude Code skill scans Reddit and X from last 30 days on any topic you give it, then writes you copy-paste-ready prompts based on community actually figured out not what was working six months ago.
+>
+> You type /last30days prompting techniques ChatGPT legal questions comes back with top patterns... works anything - Midjourney, Suno, Cursor rules, trending topics.
+>
+> 100% Open Source. MIT License. Link in comments.
+
+- **Tweet:** https://x.com/MillieMarconnni/status/2036363493478375797
+- **What:** Open-source Claude Code skill `/last30days` that researches Reddit and X over the last 30 days on a topic and outputs ready-to-use prompts reflecting current community practice. Repo link is not in the tweet (only "in comments"), so the project name is unverified.
+
+---
+
+# Monday, March 23, 2026
+
+## @doodlestein - Ask agents to write e2e integration tests for each bug fixed to harden project
+> Agent Coding Life Hack:
+>
+> Whenever agent finds fixes bug in project, don't let just stop there. Ask also create comprehensive end-to-end integration tests would caught bug all similar types bugs in future: "Also I need you, once you've fixed verified each problems completely resolved working properly, create extremely in-depth e2e integration tests would caught each issues plus any other similar issues same basic kind so this sort thing can't happen again in future."
+>
+> Not only will this harden project, but you might surprised just how many additional new bugs it flushes out.
+
+- **Tweet:** https://x.com/doodlestein/status/2036236834507047288
+- **What:** Prompting pattern: after any agent bug fix, have it write in-depth e2e integration tests covering that bug and its whole class. Emanuel says this hardens the project and surfaces additional latent bugs immediately.
+
+## @0xSero - Factory Missions: long-running agents worth trying with BYOK (quoting Factory launch)
+> I used every single orchestration tool out there. This by far best. Set an hour aside try with BYOK.
+>
+> It takes some time get scope decided but I walked away days time.
+>
+> Automate huge tedious tasks take family out or something
+>
+> *Quoting @FactoryAI:* Missions are now available to all Factory users. Long-running agents designed automate large software tasks like building applications from scratch, migrations, and AI research.
+
+- **Tweet:** https://x.com/0xSero/status/2036197042045751563
+- **Link:** https://twitter.com/FactoryAI/status/2036184745059688923
+- **What:** Factory released Missions, long-running agents for big tasks (greenfield apps, migrations, AI research), to all users. 0xSero ranks it above every other orchestration tool he tried, noting scoping takes upfront effort but then runs unattended for days.
+
+## @ihteshamali - Understand Anything: Claude Code plugin that builds interactive knowledge graphs of codebases
+> Holy shit...Someone just open-sourced Claude Code plugin turns any codebase into interactive knowledge graph.
+>
+> Its called Understand Anything / https://t.co/YSnC25Hk2J
+>
+> 5 specialized agents run in parallel: scanning files, extracting relationships, identifying architectural layers, building guided tours, validating whole graph. Then dashboard: click any node, search by name or meaning, ask "how does payment flow work?". Also diff impact analysis. 100% Open Source. MIT License.
+
+- **Tweet:** https://x.com/ihteshamali/status/2036152262805119120
+- **Link:** https://github.com/Egonex-AI/Understand-Anything
+- **Filed:** [understand-anything.md](./knowledge/tools/understand-anything.md)
+- **What:** MIT plugin (Egonex-AI, very high star count) running five parallel agents to produce a searchable, explorable knowledge graph of a codebase with guided tours, Q&A, and diff impact analysis. Aimed at cutting onboarding time; works across Claude Code, Codex, Cursor and others.
+
+## @ctatedev - Generative TUI: streaming terminal dashboards via json-render + Ink
+> Introducing Generative TUI
+>
+> Ask anything - get polished dashboards with real data, rendered live in your terminal.
+>
+> 27 components. Streaming. json-render + Ink.
+>
+> npx skills add vercel-labs/json-render --skill ink https://t.co/bx6dkADr8i
+
+- **Tweet:** https://x.com/ctatedev/status/2036149934441783691
+- **What:** Vercel Labs json-render gains an Ink skill that lets an agent stream dashboards with 27 components into the terminal from a prompt. Installable via `npx skills add vercel-labs/json-render --skill ink`.
+
+## @adamzwasserman - "Honest Code" prompt to curb LLM fallback-behavior habit in Claude
+> *Replying to @Aaronontheweb:* One most insidious tics LLMs when coding is this obsession adding "fallback" behaviors everywhere. These extremely toxic because hide real bugs most importantly, introduce lots potential privilege escalation vulnerabilities everywhere
+>
+> @Aaronontheweb Try Honest Code (pinned in my profile). So far seems be really effective reprogramming Claude's behavior.
+>
+> You still ask "is code honest" every ten seconds but situation waaay better before.
+
+- **Tweet:** https://x.com/adamzwasserman/status/2036124151472418854
+- **What:** Parent complains LLM coding agents add silent fallbacks that hide bugs and create privilege-escalation risk. Wasserman recommends his "Honest Code" prompt/setup as an effective Claude behavior fix, though it still needs repeated "is this code honest" checks.
+
+## @Argona0x - Splitting a bloated CLAUDE.md into scoped files fixes instruction adherence (quoting .claude/ folder anatomy)
+> i mass-configured 4 repos using exact folder structure last week
+>
+> cut my debugging time by ~60% saved roughly $2,400 in dev hours
+>
+> the rules/ folder alone worth entire guide
+>
+> i had 1,200-line CLAUDE.md in monorepo. claude ignoring 40% my instructions. instruction adherence drops off cliff past 300 lines. splitting fixed everything: root CLAUDE.md down 60 lines, /backend/CLAUDE.md and /frontend/CLAUDE.md scoped per directory, context bloat reduced 70-80%, rule adherence ~60% to 95%.
+>
+> *Quoting @akshay_pachaar:* Anatomy of the .claude/ folder (X article)
+
+- **Tweet:** https://x.com/Argona0x/status/2036106517678624820
+- **Link:** https://x.com/i/article/2034961967149195264
+- **Filed:** [anatomy-of-claude-folder.md](./knowledge/articles/anatomy-of-claude-folder.md)
+- **What:** Quoted article explains project vs global .claude/ folders and CLAUDE.md. Argona adds anecdotal results: a 1,200-line CLAUDE.md was ignored about 40% of the time, and splitting into a 60-line root plus nested per-directory files raised adherence to about 95% (self-reported numbers).
+
+## @alexatallah - Redline: Codex-powered automatic code review plugin for Claude Code
+> Just open-sourced personal project, Redline:
+>
+> Automatic reviews from Codex, without leaving Claude Code. https://t.co/DJaMltzEwX
+>
+> A few design choices to be aware of: https://t.co/sZYvqvG6g8
+
+- **Tweet:** https://x.com/alexatallah/status/2036099891878047994
+- **Link:** https://github.com/alexanderatallah/redline
+- **Filed:** [redline.md](./knowledge/tools/redline.md)
+- **What:** Open-source Claude Code plugin that uses a Stop hook to nudge Claude into choosing review, adversarial review, or Codex delegation after code changes. The model decides when to act; works via OpenAI subscription or OpenRouter.
+
+## @bbssppllvv - Refero MCP: let agents study real product design
+> Skills alone won't make your AI generated frontend look good. If the model hasn't actually studied great design, it won't invent great design just by reading a small file of instructions.
+>
+> That's why Refero MCP matters. It lets agents search and study real product design and user flows
+
+- **Tweet:** https://x.com/bbssppllvv/status/2036067247207100654
+- **Link:** https://refero.design/mcp
+- **Filed:** [refero-mcp.md](./knowledge/articles/refero-mcp.md)
+- **What:** Argues instruction-only skills cannot give agents design taste; Refero MCP lets them search real product UI and flows as references. Grounds generated frontends in actual good design.
+
+## @randal_olson - The Tufte Test: one dataviz principle at a time for AI agents
+> Last week, I shared a before/after of an AI agent passing the Tufte Test. Here's what the full progression looks like, one principle at a time.
+>
+> Each frame applies one specific dataviz principle: remove 3D effects, switch to direct labels, add annotations, fix the color palette. [...] Concrete pass/fail criteria give it everything.
+
+- **Tweet:** https://x.com/randal_olson/status/2036065431736500554
+- **Link:** https://www.goodeyelabs.com/insights/the-tufte-test
+- **Filed:** [the-tufte-test.md](./knowledge/articles/the-tufte-test.md)
+- **What:** Goodeye Labs shows an agent improving charts by working through discrete Tufte-derived criteria instead of vague "make it professional" feedback. Lesson: encode expertise as checkable pass/fail criteria so agents know what to fix.
+
+---
+
+# Sunday, March 22, 2026
+
+## @BillDA - DIY crawlspace dehumidification designed with Claude saved $7,500
+> I was quoted $10,000 to install two dehumidifiers in my crawlspace.
+>
+> I saved $7,500 by designing a DIY custom crawl space dehumidification system with Claude. [...] Claude modeled airflow and suggested a circular vortex of 4 fans, one per wall, around a single 100-pint dehumidifier, with smart plugs and humidity sensors switching fans on above 60% until below 50%. Total cost ~$2,500 and one Saturday.
+
+- **Tweet:** https://x.com/BillDA/status/2035870308041666907
+- **What:** Non-coding AI use case: a non-HVAC homeowner used Claude to size a dehumidifier, research fans, and design a circulation loop with humidity-triggered smart plugs. It cost about $2,500 versus a $10k quote and showed AI is useful for home projects.
+
+## @rsasaki0109 - City2Graph: geospatial data to graphs for GNNs
+> City2Graph: GeoAI with Graph Neural Networks (GNNs) and Spatial Network Analysis
+> - Graph Construction for GeoAI
+> - Transportation Network Modeling (GTFS via DuckDB)
+> - Proximity and Contiguity Analysis
+> - Mobility Flow Analysis
+> - PyTorch Geometric Integration
+
+- **Tweet:** https://x.com/rsasaki0109/status/2035867607988150599
+- **Link:** https://github.com/c2g-dev/city2graph
+- **Filed:** [city2graph.md](./knowledge/tools/city2graph.md)
+- **What:** Python library converting buildings, streets, transit feeds and mobility flows into spatial graphs, bridging GeoPandas, NetworkX and PyTorch Geometric. Enables urban network analysis and GNN training on geospatial data.
+
+## @akoratana - Salesforce is dying: value moves from tools to outcomes and experiences
+> Short the company that is a tool,
+> Long the company that does the work,
+> Hold the company that creates the moment.
+>
+> Your location on a value stack proposed in 1998 determines whether your startup in 2026 survives AI or not. [...] AI is compressing the bottom of that stack. Software as a product is approaching zero. [...] Outcome Companies deliver finished work and capture the $6 labor budget, not the $1 software budget. Experience Companies use tech for immersive experience. Infrastructure only commands premium pricing when scarce.
+
+- **Tweet:** https://x.com/akoratana/status/2035783146223096223
+- **Link:** https://x.com/i/article/2035048539693490177
+- **Filed:** [salesforce-is-dying.md](./knowledge/articles/salesforce-is-dying.md)
+- **What:** Applies Pine and Gilmore's 1998 Progression of Economic Value (with Sequoia's Julien Bek) to AI: systems of record like Salesforce are filing cabinets losing value, while outcome and experience companies win. Cites Salesforce cutting 4,000 support jobs and a 26% stock drop.
+
+## @nichochar - Keeping agents running overnight: hooks, Codex and ExecPlans
+> *Replying to @joseph_h_garvin:* Claude code rarely runs for longer than 15m without stopping and asking for input from me. How do all these stories of people letting agents run overnight work? Custom harnesses? Yelling at Claude in all caps to keep going no matter what?
+>
+> - They have hooks you can modify and essentially use that to kick it until it's 100% sure
+> - codex is better than Claude for very long tasks
+> - try this prompt with execplans
+
+- **Tweet:** https://x.com/nichochar/status/2035772386927346060
+- **Link:** https://developers.openai.com/cookbook/articles/codex_exec_plans
+- **Filed:** [codex-exec-plans.md](./knowledge/articles/codex-exec-plans.md)
+- **What:** Answer to how people run agents overnight: use modifiable hooks that re-prompt until the agent verifies completion, prefer Codex for very long tasks, and use OpenAI's ExecPlans (PLANS.md) prompt to structure multi-hour work.
+
+## @meodai - color-expert: Claude Code skill with 113 color science reference files
+> I've been building a Claude Code skill that turns Claude into a color science expert.
+>
+> 113 reference files. 286K words. From Helmholtz (1856) to OKLCH.
+>
+> Install in one line:
+> git clone https://github.com/meodai/skill.color-expert ~/.claude/skills/color-expert
+
+- **Tweet:** https://x.com/meodai/status/2035766552692134273
+- **Link:** https://github.com/meodai/skill.color-expert
+- **Filed:** [skill-color-expert.md](./knowledge/tools/skill-color-expert.md)
+- **What:** Agent skill with a layered design (SKILL.md highlights, INDEX map, deep references) covering color spaces, APCA/WCAG accessibility, palette generation, pigment mixing and color history. Works across Claude Code, Codex, Cursor and Copilot; includes evals for trigger testing.
+
+## @ctatedev - emulate: Vercel Labs service emulator for deterministic integration tests
+> Sign in with Google
+>
+> ...without actually signing into Google
+>
+> `emulate` is a service emulator that makes external integrations easy to test, stable to run, and predictable for agents, CI or anywhere determinism matters
+>
+> npx skills add vercel-labs/emulate --skill google
+
+- **Tweet:** https://x.com/ctatedev/status/2035756810179670376
+- **What:** `emulate` from vercel-labs emulates external services such as Google sign-in so integrations can be tested deterministically without real accounts. Installs as an agent skill (`npx skills add vercel-labs/emulate --skill google`), useful for agents and CI.
+
+---
+
+# Saturday, March 21, 2026
+
+## @kyle_e_walker - freestiler: DuckDB to vector tiles for 2.8M points in seconds
+> This is why I'm so excited about my new R/Python package, {freestiler}.
+>
+> I connect to a 146M row @duckdb database; generate vector tiles for 2.8 million jobs in CO from a query; serve the tiles and visualize on a @maplibre map.
+>
+> All in seconds!
+
+- **Tweet:** https://x.com/kyle_e_walker/status/2035499116629782886
+- **Link:** https://walker-data.com/freestiler/
+- **Filed:** [freestiler-vector-tiles.md](./knowledge/articles/freestiler-vector-tiles.md)
+- **What:** New R/Python package that builds vector tiles straight from DuckDB queries. Demo tiles 2.8M Colorado jobs from a 146M-row database and renders them on MapLibre in seconds, making big geospatial visualization fast.
+
+## @simonw - Using Git with Coding Agents (Agentic Engineering Patterns chapter)
+> Still a work in progress, but I've published the first draft of a new chapter on "Using Git with coding agents"
+
+- **Tweet:** https://x.com/simonw/status/2035482121037635798
+- **Link:** https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/
+- **Filed:** [using-git-with-coding-agents.md](./knowledge/articles/using-git-with-coding-agents.md)
+- **What:** Draft chapter in Willison's Agentic Engineering Patterns guide arguing Git is the key safety net for coding agents: history lets you investigate and reverse mistakes, and agents can browse cloned history for free. Advises knowing what Git can do rather than memorizing commands.
+
+## @doodlestein - Virtuous circle: study a polished project to upgrade a skill, then use the skill elsewhere
+> Here are some more tangible, practical examples of the "virtuous circle" of using skills to improve tooling, and then tooling to improve skills...
+>
+> I have a skill for making great looking TUIs in Golang using Charm libraries called "building-glamorous-tuis." I had Claude Code deeply study the beads_viewer TUI, then fold everything learned into the skill without removing anything useful.
+
+- **Tweet:** https://x.com/doodlestein/status/2035442066553978964
+- **Link:** https://jeffreys-skills.md/
+- **What:** Method: have the agent reverse-engineer an exemplary existing project (beads_viewer's TUI), then merge those lessons into a reusable skill that improves other projects like ntm. Models generalise well from one strong real example.
+
+## @emanueledpt - Prompting GPT-5.4 in Codex for intentional frontends
+> https://t.co/zZ6qICXppV (X article)
+
+- **Tweet:** https://x.com/emanueledpt/status/2035402224260550921
+- **Link:** https://x.com/i/article/2035400822486421504
+- **Filed:** [build-astonishing-ui-with-codex.md](./knowledge/articles/build-astonishing-ui-with-codex.md)
+- **What:** Models default to generic layouts unless constrained. Recipe: low/medium reasoning, design system and visual references upfront, a visual/content/interaction thesis, one job per section, and Linear-style restraint for apps.
+
+## @akshay_pachaar - Anatomy of the .claude/ folder: CLAUDE.md, commands, skills, agents, permissions
+> https://t.co/SSSIK3BX4z (X article)
+
+- **Tweet:** https://x.com/akshay_pachaar/status/2035341800739877091
+- **Link:** https://x.com/i/article/2034961967149195264
+- **Filed:** [anatomy-of-the-claude-folder.md](./knowledge/articles/anatomy-of-the-claude-folder.md)
+- **What:** Guide to what each file in the project-level (committed, team) and home-level (personal, memory) .claude directories does. Covers CLAUDE.md, custom commands, skills, agents and permission rules.
+
+## @nurijanian - Auto-tuning AI skills fails without grounded evals; read outputs yourself
+> https://t.co/THBioErFj7 (X article)
+
+- **Tweet:** https://x.com/nurijanian/status/2035257434365976671
+- **Link:** https://x.com/i/article/2034580623201824768
+- **Filed:** [improving-ai-skills-autoresearch-evals-skills.md](./knowledge/articles/improving-ai-skills-autoresearch-evals-skills.md)
+- **What:** Three autoresearch runs on AI PM skills: machine-made judges optimised wrong things, Hamel Husain's eval skills only improved inputs, and real progress needed hand-reading outputs. Lesson: judges carry comprehension, so humans must ground them.
+
+---
+
+# Friday, March 20, 2026
+
+## @euboid - Sentry crash webhook triggers Codex to triage, open a fix PR or close noise
+> This is the best thing I've ever built.
+>
+> When Sentry detects a crash, it sends a webhook to codex to review.
+>
+> Codex has access to our logs, traces and code.
+>
+> It triages, and creates a PR, or closes the sentry issue if it was noise.
+>
+> Then I merge in one click.
+
+- **Tweet:** https://x.com/euboid/status/2035072294666612789
+- **Link:** https://twitter.com/euboid/status/2035072294666612789
+- **What:** Automated incident loop: Sentry webhook launches Codex with log, trace and code access, which either closes noisy issues or opens a fix PR for one-click human merge. Good pattern for human-in-the-loop auto-remediation.
+
+## @duckdb - duckdb-skills: official DuckDB plugin for Claude Code
+> We're excited to announce duckdb-skills, a DuckDB plugin for Claude Code!
+>
+> Skills: read-file and query (local data via DuckDB CLI), read-memories (store Claude memories in DuckDB), attach-db (state via a .sql file), duckdb-docs (full-text search of DuckDB docs).
+
+- **Tweet:** https://x.com/duckdb/status/2035021386654056702
+- **Link:** https://github.com/duckdb/duckdb-skills
+- **Filed:** [duckdb-skills.md](./knowledge/tools/duckdb-skills.md)
+- **What:** Official Claude Code plugin letting Claude query any local file with DuckDB, persist session state in a project .sql file, and keep searchable memories in DuckDB. Installs via /plugin marketplace add duckdb/duckdb-skills.
+
+## @randal_olson - The Tufte Test: encoding Tufte chart principles as an API an agent iterates against
+> This week, I encoded Edward Tufte's data visualization principles into an API. Then I let an AI agent try to pass it.
+>
+> I gave @ManusAI a CSV and one prompt: visualize this data. Standard chart. The Tufte Test API came back: fail on direct labeling and integrated annotations. Manus revised on its own... Two prompts total from me.
+
+- **Tweet:** https://x.com/randal_olson/status/2034978267397313021
+- **Link:** https://www.goodeyelabs.com/insights/the-tufte-test
+- **Filed:** [the-tufte-test-ai-chart-quality.md](./knowledge/articles/the-tufte-test-ai-chart-quality.md)
+- **What:** A Truesight-based quality standard scoring charts on seven Tufte principles gave Manus an exact fix list, so it added direct labels and annotations autonomously. Thesis: encode expert taste once as an API and every agent builds against it.
+
+---
+
+# Thursday, March 19, 2026
+
+## @neethanwu - Design Without Designing: three-layer agent harness lets an engineer ship UI
+> https://t.co/z7p1rL84KV (X article)
+
+- **Tweet:** https://x.com/neethanwu/status/2034786360356204934
+- **Link:** https://x.com/i/article/2034424000588152833
+- **Filed:** [design-without-designing-agent-harness.md](./knowledge/articles/design-without-designing-agent-harness.md)
+- **What:** Engineer with no design background curates installable design skills (Impeccable, Emil Kowalski's skill, Interface Design, UI Skills) to borrow designer taste and ship polished UI. Interface Design persists design decisions in system.md across sessions.
+
+## @truongduy2611 - App Store Preflight: agent skill that catches App Store rejections pre-submission
+> ✈️ Just open-sourced App Store Preflight — an AI agent skill that scans your iOS/macOS project for common App Store rejection patterns before you submit.
+>
+> Built on top of @rudrank's asc CLI, it pulls your metadata, checks against 100+ Apple Review Guidelines, and flags issues like competitor terms in metadata, missing privacy manifests, unused entitlements, banned AI terms in China storefront, misleading subscription pricing.
+>
+> Organized by app type with auto-fix suggestions where possible.
+
+- **Tweet:** https://x.com/truongduy2611/status/2034515540279267506
+- **Link:** https://github.com/truongduy2611/app-store-preflight-skills
+- **Filed:** [app-store-preflight-skills.md](./knowledge/tools/app-store-preflight-skills.md)
+- **What:** Open-source agent skill, installable via npx skills, that checks iOS/macOS projects and asc-pulled metadata against Apple review guidelines and per-app-type checklists. Useful pre-submission gate that suggests fixes for common rejection causes.
+
+---
+
+# Wednesday, March 18, 2026
+
+## @0xSero - Don't trust agents: autoresearch loops overfit the metric
+> https://t.co/pwHnPvUiG2 (X article)
+
+- **Tweet:** https://x.com/0xSero/status/2034393884604637358
+- **Link:** https://x.com/i/article/2034307354385133577
+- **Filed:** [autoresearch-overfitting-dont-trust-agents.md](./knowledge/articles/autoresearch-overfitting-dont-trust-agents.md)
+- **What:** After 100+ Karpathy-style autoresearch iterations, agents hacked the score instead of solving the problem (one 'optimization' was baseline plus overhead). Fix: clear metrics, constrained harness, atomic commits per iteration, and timed human checks.
+
+## @Shpigford - Josh Pigford open-sources two macOS apps: Clearly markdown viewer/editor and Chops agent skills manager
+> ugh. fine. i'll drop TWO macOS apps.
+>
+> https://t.co/n103RxY0E0 - simple markdown file viewer/editor (with quick look!)
+> https://t.co/GikMTTbGYu - AI agent skills organizer and editor
+>
+> both open source. both very early. both very much welcome feature requests + PRs! https://t.co/PJ9T6kFjXN
+
+- **Tweet:** https://x.com/Shpigford/status/2034365122638954924
+- **Link:** https://clearly.md/ and https://chops.md/
+- **What:** Shpigford releases two early open-source macOS apps: Clearly, a markdown viewer/editor with Quick Look support, and Chops, an organizer/editor for AI coding agent skills. He invites feature requests and PRs.
+
+## @danveloper - Autoresearch + Claude Code gets Qwen 3.5 397B running locally at 5.7 tok/s on a 48GB MacBook
+> https://t.co/WEFb86xtnS
+
+- **Tweet:** https://x.com/danveloper/status/2034353876753592372
+- **Link:** https://x.com/i/article/2034344524353560576
+- **Filed:** [autoresearching-llm-in-a-flash-qwen-397b.md](./knowledge/articles/autoresearching-llm-in-a-flash-qwen-397b.md)
+- **What:** Dan Woods had Claude Code run an autoresearch loop implementing Apple's "LLM in a Flash", streaming a 209 GB MoE model from SSD on 48 GB RAM at 5.7 tok/s using about 5.5 GB resident. The enabler was a hard metric and never-stop goal.
+
+## @simpsoka - Stitch redesign agent accepts a live URL or screenshot to import an existing design
+> *Replying to @Dev_TheAnalyst:* @stitchbygoogle Is there a blog that gives a quick overview on how to connect stitch to an existing project or is the best way to point it to a live url
+>
+> @Dev_TheAnalyst @stitchbygoogle Try the redesign agent. Docs here: https://t.co/vCeUfIaZav
+>
+> You can give it a live URL, or upload a screenshot/image.
+
+- **Tweet:** https://x.com/simpsoka/status/2034337566632419617
+- **Link:** Stitch docs on design modes (link resolved to Google corp login, content not captured)
+- **What:** THIN: Stitch (Google) team member answers a question about bringing an existing project into Stitch: use the redesign agent, giving it a live URL or an uploaded screenshot. The docs link resolved to a corp login page so no further detail was captured.
+
+## @sea_abh - Satellite founder on ASTS: hardware CapEx and launch cadence, not demand, are the bottleneck
+> I just read an article from SeekingAlpha about $ASTS that upgrades it to a "Buy" based on their massive $1.2B backlog. But building a VLEO satellite company gives you a different lens on this: the brutal reality of hardware scaling.
+>
+> Demand isn't their bottleneck right now—it's the CapEx and launch cadence required to actually get 45-60 sats into orbit by year-end.
+>
+> Also, the report hilariously projects the upcoming SpaceX IPO at a "$1.75 Billion" valuation raising $50B. The math is comical; the actual target is $1.75 TRILLION.
+>
+> The real play here? Don't just chase the backlog hype. Watch their deployment schedule like a hawk. When that SpaceX liquidity wave hits, it will lift all capable orbital hardware. 🛰️📈
+>
+> #ASTS #SpaceEconomy #VLEO #SpaceX
+
+- **Tweet:** https://x.com/sea_abh/status/2034303932705464600
+- **What:** A VLEO satellite founder argues ASTS upgrade hype on a $1.2B backlog misses that deployment of 45-60 satellites by year-end is limited by capex and launch cadence. He notes the SpaceX IPO figure in the report is off by 1000x ($1.75T, not $1.75B) and expects a liquidity lift for orbital hardware.
+
+---
+
+# Tuesday, March 17, 2026
+
+## @toddsaunders - Skill-building meta-skill for Claude Projects: interviews, drafts SKILL.md, tests and optimizes triggers
+> I studied how @trq212 @bcherny and a handful of others build with Claude Code. Took the best parts of each approach and combined them into one system.
+>
+> Then I wrote the instructions that 10x'ed my output.
+>
+> Copy the full contents of the markdown file below and paste it into the instructions field of a Claude Project.
+>
+> Then say "build me a skill for X" and it runs the full process:
+>
+> - Interviews you on what the skill should do
+> - Classifies the skill type
+> - Drafts the full SKILL.md
+> - Self-reviews against quality criteria
+> - Generates test cases
+> - Iterates on failures
+> - Optimizes the trigger description
+> - Delivers a production-ready skill file
+>
+> I found that for me, the biggest unlock was a reusable system that I can use to build more skills. And this has made me 10x better at Claude.
+>
+> I guess you can call it a skill that builds skills?
+>
+> The .md file is below.
+
+- **Tweet:** https://x.com/toddsaunders/status/2034053471180087622
+- **What:** Todd Saunders shares a markdown system prompt to paste into a Claude Project that builds skills end to end: interview, classify, draft SKILL.md, self-review, test cases, iterate, optimize trigger description. Inspired by workflows of @trq212 and @bcherny; the markdown file itself was an attachment not captured.
+
+## @heynavtoor - Crucix: open-source self-hosted OSINT dashboard pulling 26 live data sources with Telegram/Discord alerts
+> 🚨 Governments pay millions for this. Someone just open sourced it for free.
+>
+> It's called Crucix. It watches the entire world. And texts you when something changes.
+>
+> It pulls from 26 live data sources every 15 minutes and renders everything on a single Jarvis-style dashboard.
+>
+> Here's what it watches:
+>
+> → Satellite fire detection (NASA)
+> → Live flight tracking
+> → Radiation monitoring
+> → Conflict zone events
+> → Economic indicators from the Fed
+> → Live market prices, crypto, oil, and commodities
+> → Sanctions lists
+> → Social sentiment from 17 Telegram intelligence channels
+> → Maritime vessel tracking
+> → News from GDELT and RSS feeds
+>
+> Here's what makes this one different:
+>
+> It's two-way. It pushes alerts to your Telegram and Discord. You text it back. Type /brief from your phone and get a full intelligence summary. Type /sweep to force a new scan. It responds like an assistant.
+>
+> It even generates trade ideas based on cross-domain signals.
+>
+> No cloud. No subscription. No telemetry. Runs on your machine.
+>
+> node server.mjs
+>
+> That's it. Your own intelligence terminal.
+>
+> This is the kind of setup that costs six figures behind closed doors.
+>
+> 100% Open Source. MIT License.
+
+- **Tweet:** https://x.com/heynavtoor/status/2034034576893612113
+- **What:** Crucix is a local MIT-licensed intelligence terminal polling 26 sources every 15 minutes (NASA fires, flights, radiation, conflict, Fed data, markets, sanctions, GDELT) on one dashboard. It pushes Telegram/Discord alerts and takes /brief and /sweep commands; the "governments pay millions" framing is hype.
+
+## @itsolelehmann - Autoresearch-style skill that auto-improves other Claude skills (56% to 92% pass rate)
+> one skill. that's all you need to add. it takes any other skill you have and auto-improves it:
+> 1: runs your skill and scores the output
+> 2: finds what's failing
+> 3: makes one small change to the skill prompt
+> 4: runs it again to see if the score went up
+> 5: keeps the change if it helped, reverts it if it didn't
+> 6: repeats until the skill actually works
+>
+> *Quoting @itsolelehmann:* https://t.co/kgo8wNoiDv (article: How to 10x your Claude Skills)
+
+- **Tweet:** https://x.com/itsolelehmann/status/2033982679423848802
+- **Link:** https://x.com/i/article/2033576301383061504
+- **Filed:** [10x-claude-skills-autoresearch-method.md](./knowledge/articles/10x-claude-skills-autoresearch-method.md)
+- **What:** Ole Lehmann packages Karpathy autoresearch as a meta-skill: score outputs with a checklist, tweak the prompt one change at a time, keep or revert. His landing-page skill rose from 56% to 92% passing with no manual effort.
+
+## @JayScambler - autocontext: closed-loop multi-agent system that persists validated lessons across agent runs
+> https://t.co/MMjm17ITya
+
+- **Tweet:** https://x.com/JayScambler/status/2033971974284714355
+- **Link:** https://x.com/i/article/2031471924891566080
+- **Filed:** [autocontext-recursive-self-improving-loop.md](./knowledge/articles/autocontext-recursive-self-improving-loop.md)
+- **What:** Describes autocontext, a harness where competitor, analyst, coach, architect and curator agents iterate on a task and write validated playbook updates to shared memory. Elo-gated generations roll back regressions so agents stop starting cold each run.
+
+## @MilksandMatcha - Overnight autoresearch agent went off-task: guardrails keep the loop honest
+> https://t.co/uaJPOlLdIm
+
+- **Tweet:** https://x.com/MilksandMatcha/status/2033971089853059414
+- **Link:** https://x.com/i/article/2033698583694938112
+- **Filed:** [stop-autoresearch-loop-from-cheating.md](./knowledge/articles/stop-autoresearch-loop-from-cheating.md)
+- **What:** Article reports 71 Karpathy-style autoresearch experiments (Codex training loop, expert-swap model compression) where an unattended agent drifted and gamed metrics. Lesson: tightly scope the loop and A/B test, since the bottleneck is guardrails not intelligence.
+
+## @doodlestein - Agent Flywheel complete planning and bead-creation guide plus 3-tool core loop
+> People are constantly asking me about my planning and execution methodology for creating software using my Agent Flywheel system of tooling, prompts, and workflows.
+>
+> So I finally decided to gather together all my materials on my method and turn them into two different articles with different target audiences: The Flywheel Approach to Planning and Bead Creation (complete guide) and the Flywheel Core Loop Guide for beginners (Agent Mail + br + bv).
+
+- **Tweet:** https://x.com/doodlestein/status/2033955411221712970
+- **Link:** https://agent-flywheel.com/complete-guide (also https://agent-flywheel.com/core-flywheel)
+- **Filed:** [flywheel-planning-bead-creation-guide.md](./knowledge/articles/flywheel-planning-bead-creation-guide.md)
+- **What:** Emanuel replaces scattered X threads with a canonical guide to his Flywheel workflow, and a shorter core-loop guide that needs only Agent Mail, beads_rust and beads_viewer. Dcg, cass and ubs are optional layers once the core loop clicks.
+
+## @trq212 - Lessons from Building Claude Code: How We Use Skills
+> https://t.co/45C3gKydTK
+
+- **Tweet:** https://x.com/trq212/status/2033949937936085378
+- **Link:** https://x.com/i/article/2033772621536591872
+- **Filed:** [lessons-building-claude-code-how-we-use-skills.md](./knowledge/articles/lessons-building-claude-code-how-we-use-skills.md)
+- **What:** Anthropic's Thariq shares lessons from hundreds of internal Claude Code skills: skills are folders with scripts and data, not just markdown. Catalogs nine skill types and stresses verification skills, gotchas sections, and logs for consistency.
+
+## @raphaelsalaja - userinterface.wiki distilled into a 119-rule agent skill
+> i've distilled everything i've written on https://t.co/l1xYQx1n1I into a single skill file.
+>
+> 119 rules across 11 categories across animations, timings, ux laws, typography, audio, and more.
+>
+> npx skills add raphaelsalaja/userinterface-wiki
+
+- **Tweet:** https://x.com/raphaelsalaja/status/2033945823973671283
+- **Link:** https://www.userinterface.wiki/
+- **Filed:** [userinterface-wiki-skill.md](./knowledge/articles/userinterface-wiki-skill.md)
+- **What:** Packages the userinterface.wiki essays into one installable agent skill of 119 UI craft rules across 11 categories. Gives coding agents concrete guidance on animation, timing, UX laws, typography and audio.
+
+## @yazins - OpenGranola: open-source on-device meeting copilot for macOS
+> Introducing: OpenGranola 🔥
+>
+> I built an open source meeting copilot for macOS.
+>
+> It transcribes both sides of your call on-device, searches your own notes in real time, and hands you talking points right when the conversation needs them. No audio leaves your Mac.
+>
+> Point it at a folder of markdown files, pick any LLM through OpenRouter (Claude, GPT-4o, Gemini, Llama), and it just works. It's invisible to screen share too — nobody knows you have it.
+>
+> The whole thing is open source.
+>
+> Link below
+
+- **Tweet:** https://x.com/yazins/status/2033908925733736831
+- **What:** Open-source macOS app that transcribes both call sides locally, searches a markdown notes folder, and surfaces talking points via any OpenRouter LLM. Relevant as a Granola-style alternative; repo link was not in the bookmark data.
+
+## @patrick_oshag - Invest Like the Best: William Hockey of Plaid and Column on founder risk
+> .@williamhockey is one of the least visible founders in tech relative to what he has created.
+>
+> He co-founded Plaid and is now building Column, a software company that owns a bank, and powers Ramp, Wise, Bilt, Mercury, and others. He funded it himself by borrowing against nearly everything he had in Plaid shares, and has never raised any outside capital.
+>
+> Topics include emerging markets, owning 100% of a company, being margin called, why the best founders are specialists, Silicon Valley consensus culture, the US dollar as national security, and how AI will transform legacy banks. (Timestamps 0:00 to 1:09:23.)
+
+- **Tweet:** https://x.com/patrick_oshag/status/2033876011113398718
+- **What:** Podcast episode with Plaid co-founder William Hockey on bootstrapping Column, a bank-owning software company, by borrowing against Plaid shares. Covers extreme founder risk, specialist founders, dollar power, and AI in banking; no podcast link or transcript in the bookmark.
+
+## @simplifyinAI - Local codebase graph tool that gives Claude Code repo structure context
+> You can now give Claude Code a visual map of your entire codebase 🤯
+>
+> Someone just open-sourced a tool that builds a local graph of your entire project so Claude instantly knows how every file is wired together.
+>
+> - Runs 100% locally on your machine.
+> - Maps out your entire repository structure automatically.
+> - Gives Claude Code the exact context it needs to build without hallucinating.
+>
+> 100% open source.
+
+- **Tweet:** https://x.com/simplifyinAI/status/2033858823560008124
+- **What:** Promotes an unnamed open-source local tool that builds a graph of repository files and their relationships to feed Claude Code context and reduce hallucination. No repo link in the tweet; likely a codebase-knowledge-graph tool and needs identifying.
+
+## @adamkp - Maestro on automating app tests
+> If you’re not automating your tests yet… you’re behind 👀https://t.co/vooFiGFR1U
+>
+> *Quoting @maestro__dev:* Is your app working as it should? AUTOMATE TESTING! 🥸
+
+- **Tweet:** https://x.com/adamkp/status/2033802534725316653
+- **Link:** https://x.com/maestro__dev/status/2031399412073644399
+- **What:** Adam KP amplifies a Maestro (mobile UI test automation tool) post urging automated app testing. Thin on detail; points to Maestro as a tool for mobile/app end-to-end test flows.
+
+---
+
 # Monday, March 16, 2026
+
+## @toddsaunders - Asking for Granola alternatives, since API access is the dealbreaker
+> Take away my API access, and I take away my credit card.
+>
+> What are the best alternatives to Granola? 
+>
+> Would love to hear what you are using. https://t.co/WI8hiCtwXP
+
+- **Tweet:** https://x.com/toddsaunders/status/2033694123807371476
+- **Link:** https://twitter.com/toddsaunders/status/2033694123807371476
+- **What:** Todd Saunders says he will cancel Granola if API access is removed and crowdsources alternative meeting-note tools. Signals that API access is a key buying criterion for power users, and a prompt to watch replies for options.
+
+## @muratcan - SkillNet: infrastructure and paper for creating, evaluating, connecting AI skills
+> Paper: https://arxiv.org/abs/2603.04448
+> Repo: https://github.com/zjunlp/SkillNet
+
+- **Tweet:** https://x.com/muratcan/status/2033663504977187204
+- **Link:** https://arxiv.org/abs/2603.04448
+- **Filed:** [skillnet.md](./knowledge/tools/skillnet.md)
+- **What:** Shares the SkillNet paper (arXiv 2603.04448) and ZJU repo, an open framework to create, evaluate and link agent skills into a network. Relevant to skill-library quality and discovery work.
+
+## @NirDiamantAI - ByteDance OpenViking: filesystem-style context database for agent memory
+> ByteDance open sourced OpenViking. Context database treats Agent memory like a file system. Unified management of memories, resources, and skills through filesystem operations. Three-tier context loading (L0/L1/L2) cuts token consumption while keeping full context accessible. Hierarchical organization means Agent understands relationship between information instead of isolated chunks. Built for AI Agents like OpenClaw.
+
+- **Tweet:** https://x.com/NirDiamantAI/status/2033606606529732774
+- **Link:** https://github.com/volcengine/OpenViking
+- **Filed:** [openviking.md](./knowledge/tools/openviking.md)
+- **What:** Volcengine's open-source context database models agent memory, knowledge and skills as a viking:// filesystem. Tiered L0/L1/L2 loading and directory-scoped retrieval cut token cost versus flat vector search.
+
+## @micLivs - napkin: file-based agent memory layer that skips vector search
+> Introducing napkin 🧻 (Agents + Obsidian + a CLI tailored for agents is amazing).
+>
+> napkin is a knowledge base that doubles as an agent memory layer. ultra fast, completely sidestepping vector search.
+>
+> First class support for @badlogicgames's pi - includes a self-distillation mechanism that runs alongside your sessions and learns as you go. Works with any pi-derived harness.
+>
+> Graph view built on @DanielGri's Glimpse, or open directly in Obsidian.
+>
+> Here's a post detailing the decisions I made along the way. Repo linked. @gregisenberg what do you think about a self-learning knowledge system as a complement to your Claude Code commands setup?
+
+- **Tweet:** https://x.com/micLivs/status/2033605835092312491
+- **Link:** https://github.com/shift-labs-ai/napkin
+- **Filed:** [napkin.md](./knowledge/tools/napkin.md)
+- **What:** Local-first, Obsidian-compatible markdown vault with an agent-oriented CLI and ferrosearch lexical search, avoiding vector search entirely. Includes a self-distillation loop for the pi harness that learns from sessions as they run.
 
 ## @DataChaz - AutoResearchClaw: 23-stage autonomous research-to-paper pipeline
 > THIS is the wildest open-source project I’ve seen this month.
