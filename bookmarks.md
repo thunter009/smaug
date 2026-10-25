@@ -11531,7 +11531,605 @@
 
 ---
 
+# Tuesday, February 24, 2026
+
+## @imcaiden - Rent idle GPUs on vast.ai instead of AWS (A100 ~$0.50/hr vs $4/hr)
+> why are people still paying aws prices for gpus
+>
+> there's marketplaces where datacenters rent out idle gpus at market rate
+>
+> vast .ai is the main one. same A100 that's $4/hr on aws is 50 cents here.
+>
+> use cases:
+>
+> - train your own models instead of paying openai per token
+> - run local llama/mistral for apps
+> - stable diffusion at scale
+> - video rendering
+> - any gpu batch job
+>
+> pick a card, spin it up, run your job, shut it down. pay by the minute.
+
+- **Tweet:** https://x.com/imcaiden/status/2026342377225343054
+- **What:** Argues GPU marketplaces like vast.ai rent idle datacenter GPUs far below AWS (claimed A100 at $0.50/hr vs $4/hr), billed by the minute, for training, local LLM hosting, Stable Diffusion and batch jobs. Price claim is the author's, unverified.
+
+## @svpino - Nimble skill for Claude Code returns structured live web data as tables
+> You can use Claude Code to pull live, structured data from any website.
+>
+> It's a Claude skill.
+>
+> This is not about searching the web and returning a wall of text. That sucks.
+>
+> This skill will return structured data, organized in tables you can work with immediately.
+>
+> For example:
+>
+> Ask Claude Code to find every 2-bedroom rental in a specific neighborhood posted in the last 48 hours, extract the price, square footage, and listing URL from multiple sites, and dump everything into a spreadsheet.
+>
+> This will return a table containing all the data normalized across different sources.
+>
+> This works using the Nimble skill. It will search the web in real time and return structured output.
+>
+> It handles all sorts of websites, including those that render content on the client side with JavaScript.
+>
+> If you build agents that need web data, this skill is a 10/10.
+
+- **Tweet:** https://x.com/svpino/status/2026332360833466517
+- **What:** Santiago promotes the Nimble Claude skill, which does real-time web search and scraping (including JS-rendered sites) and returns normalized structured tables, e.g. multi-site rental listings into a spreadsheet. No link captured.
+
+## @martkiro - Open hourly full order book data dump from Polymarket (2B+ rows, parquet)
+> I just published a data dump of full order book data from @Polymarket
+>
+> The data is maximally granular. There is no filtering whatsoever. Every order book change and trade is saved. Across all markets
+>
+> Updates are hourly. Each snapshot contains ~30M rows. Snapshots are downloaded as parquet files. Each file is approx. 500MB-1GB large.
+>
+> The data dump is already 2B+ rows large and growing fast. But this is just part 1/3. Coming soon is a much bigger dump that also includes @Kalshi / @opinionlabsxyz / @trylimitless etc
+>
+> I started collecting this data because I noticed I couldn't get it from Dome API. Their historical order book data was filtered limiting its usefulness. Also now with the acquisition there's a lot of uncertainty about whether they will continue operating
+
+- **Tweet:** https://x.com/martkiro/status/2026327582627545548
+- **What:** Martin released an unfiltered, hourly-updated Polymarket order book and trade dataset (about 30M rows per parquet snapshot, 2B+ rows total), with Kalshi and others planned, as an alternative to Dome API's filtered history. No download link in tweet.
+
+## @SuhailKakar - Polymarket CLI: Rust terminal tool for AI agents to query and trade prediction markets
+> introducing polymarket cli - the fastest way for ai agents to access prediction markets
+>
+> built with rust. your agent can query markets, place trades, and pull data - all from the terminal
+>
+> fast, lightweight, no overhead https://t.co/Q67wGD9pWW
+
+- **Tweet:** https://x.com/SuhailKakar/status/2026305257257775524
+- **Link:** https://twitter.com/SuhailKakar/status/2026305257257775524
+- **What:** Announces an official-style Polymarket CLI written in Rust that lets AI agents query markets, place trades and pull data from the terminal; relevant to agent-driven prediction market tooling. No repo URL captured, so not filed.
+
+## @carlvellotti - CLAUDE.md "Context Management" section to curb Opus 4.6 context bloat
+> The WORST thing about Opus 4.6 is how fast it fills up the context window.
+>
+> It reads 8 files to answer a 2-sentence question. It's supposed to spawn agents to save context but rarely does.
+>
+> Add this "Context Management" section to your CLAUDE(.)md to fix it. https://t.co/u71tO1PugF
+
+- **Tweet:** https://x.com/carlvellotti/status/2026303646401700011
+- **Link:** https://twitter.com/carlvellotti/status/2026303646401700011
+- **What:** THIN: Carl Vellotti says Opus 4.6 burns context by reading many files for simple questions and rarely delegating to subagents; the fix is a CLAUDE.md "Context Management" section, but the snippet is in an attached image not captured here.
+
+## @sandraleow - Obsidian + Claude Code Custom Slash Commands (/trace, /ghost, /emerge)
+> lifehack nobody talks about:
+>
+> Obsidian + Claude Code = your second brain becomes smarter than you
+>
+> @internetvin made 12 custom clash commands (in @gregisenberg's podcast), e.g. /trace tracks how an idea evolved over months, /ghost answers in YOUR voice, /emerge surfaces patterns you're circling but haven't named. Takeaway: "the quality of context you feed the agent determines what it can do for you"
+
+- **Tweet:** https://x.com/sandraleow/status/2026275415090946377
+- **What:** Recap of @internetvin's podcast appearance showing 12 custom Claude Code commands over an Obsidian vault (/trace, /ghost, /emerge), arguing that the quality of vault context determines how useful the agent is.
+
+## @rohit4verse - Obsidian + Claude Code Personal OS Agent Masterclass
+> instead of watching a 2 hour movie,
+> watch this masterclass on building a personal OS agent using Obsidian + Claude Code
+>
+> it will completely change how you manage your data and workflows
+>
+> *Quoting @gregisenberg:* how to use obsidian + claude code to build a 24/7 personal operating system: write everything in markdown, link notes, install obsidian cli so claude code reads the vault, use reference files, build custom slash commands (/context, /trace, /connect, /ideas, /graduate), human writes the vault and agents read/suggest/execute (from @internetvin on Startup Ideas Podcast).
+
+- **Tweet:** https://x.com/rohit4verse/status/2026215982965084370
+- **Link:** https://x.com/gregisenberg/status/2026036464287412412
+- **What:** Points to Greg Isenberg's summary of @internetvin's podcast on wiring an Obsidian vault into Claude Code via the Obsidian CLI, with custom slash commands (/context, /trace, /connect, /ideas, /graduate) and a rule that humans write the vault while agents read.
+
+## @dani_avila7 - Custom Claude Code --worktree Hook with Ghostty, Lazygit, Yazi
+> I replaced Claude Code's default --worktree command with a custom one built around Ghostty, Lazygit, and Yazi.
+>
+> Default worktrees nest full project copies inside .claude/worktrees, which makes structure messy. The hook creates each branch in a sibling ../worktrees/branch-name, opens Ghostty panes, and launches Lazygit and Yazi in that directory.
+>
+> Install: npx claude-code-templates@latest --hook=development-tools/worktree-ghostty --yes
+
+- **Tweet:** https://x.com/dani_avila7/status/2026161210950119888
+- **What:** Hook from claude-code-templates that overrides Claude Code's default worktree creation, placing branches in sibling directories instead of inside the project, and auto-opens Ghostty panes with Lazygit and Yazi ready in the branch dir.
+
+---
+
+# Monday, February 23, 2026
+
+## @om_patel5 - Orchestrating Codex Agents from Claude Code via MCP
+> HOW TO LET CLAUDE CODE SPIN UP CODEX AGENTS
+>
+> most people think you have to choose one ai coder. you don't. you can make claude orchestrate codex like a specialized coding agent. (7-step thread: install codex CLI, run `codex mcp-server`, register with `claude mcp add --transport stdio codex -- codex mcp-server`, role separation, multiple codex servers for parallel agents)
+
+- **Tweet:** https://x.com/om_patel5/status/2026129939179692242
+- **What:** Step-by-step recipe to expose Codex CLI as an MCP server and register it in Claude Code, so Claude plans and validates while Codex analyzes and implements. Suggests registering several named servers for parallel review, refactor and test agents.
+
+## @pw_mcgovern - Five Approaches to Vertical AI in 2026
+> https://t.co/mIANaZxMLL
+
+- **Tweet:** https://x.com/pw_mcgovern/status/2026046944448229750
+- **Link:** https://x.com/i/article/2026046458395594752
+- **Filed:** [five-approaches-to-vertical-ai.md](./knowledge/articles/five-approaches-to-vertical-ai.md)
+- **What:** Article framing five vertical AI entry points: AI-native services, platforms of record (voice-first), workflow automation, biz-in-a-box, and custom Palantir-style automation. Buckets act as wedges into each other.
+
+## @gregisenberg - Obsidian + Claude Code as a 24/7 personal operating system
+> how to use obsidian + claude code to build a 24/7 personal operating system and build your startup:
+>
+> 1. write everything in markdown (daily notes, projects, beliefs, people, meetings)
+> 2. link your notes together so they mirror how your brain actually thinks.
+> 3. install obsidian cli so claude code can read your entire vault + the relationships.
+> 4. stop reexplaining projects every session. use reference files instead.
+> 5. build custom slash commands: /context, /trace, /connect, /ideas, /graduate
+> 6. keep a strict rule: human writes the vault. agents read it, suggest, execute.
+> 7. let claude surface patterns you've been unconsciously circling for years.
+> 8. delegate from inside your notes. one sentence in obsidian → agent handles the rest.
+> 9. treat writing as leverage. the more you write, the more context your agents have.
+> 10. markdown files are the oxygen of llms.
+>
+> (credits @internetvin on the @startupideaspod episode)
+
+- **Tweet:** https://x.com/gregisenberg/status/2026036464287412412
+- **What:** Greg Isenberg's 10-step recap of @internetvin's workflow: keep a human-written linked markdown vault, expose it to Claude Code via Obsidian CLI, and add slash commands (/context, /trace, /connect, /ideas, /graduate) so agents carry context across sessions.
+
+## @d4m1n - My Ralph Loop setup for long running AI Agents
+> https://t.co/kqDQBdF7KG
+
+- **Tweet:** https://x.com/d4m1n/status/2026032801322356903
+- **Link:** https://x.com/i/article/2026009212296327168
+- **Filed:** [ralph-loop-setup-long-running-agents.md](./knowledge/articles/ralph-loop-setup-long-running-agents.md)
+- **What:** Dan's guide to a Docker-sandboxed Ralph Loop for Claude Code: PRD-to-tasks skill, fresh context per iteration, steering file; ran 37 hours and 250 tasks unattended.
+
+## @charlierguo - The Emerging Harness Engineering Playbook
+> https://t.co/sEoL3KsJLa
+
+- **Tweet:** https://x.com/charlierguo/status/2026009225663750512
+- **Link:** https://x.com/i/article/2026007830147559425
+- **Filed:** [emerging-harness-engineering-playbook.md](./knowledge/articles/emerging-harness-engineering-playbook.md)
+- **What:** Charlie Guo distills patterns from OpenAI Codex, Steinberger and Stripe Minions: the engineer's job splits into building the agent harness (guardrails, tools, feedback loops) and managing the work.
+
+## @gregpr07 - How we built scalable evaluation infrastructure for AI web agents
+> https://t.co/4VKEIlwVCG
+
+- **Tweet:** https://x.com/gregpr07/status/2026001783265583168
+- **Link:** https://x.com/i/article/2025962198724653058
+- **Filed:** [scalable-evaluation-infrastructure-web-agents.md](./knowledge/articles/scalable-evaluation-infrastructure-web-agents.md)
+- **What:** Browser Use details its LLM-judge eval platform: bootstrapped repeated runs, 100 tasks in under 5 minutes, Laminar/ClickHouse traces, and a Slack-driven Claude Code loop that clusters failures and runs statistical A/B analysis.
+
+## @BHolmesDev - How Peter Steinberger does agentic engineering, plus my take
+> https://t.co/82KwBJ9s80
+
+- **Tweet:** https://x.com/BHolmesDev/status/2025988271776383275
+- **Link:** https://x.com/i/article/2025986700158353408
+- **Filed:** [how-peter-steinberger-does-agentic-engineering.md](./knowledge/articles/how-peter-steinberger-does-agentic-engineering.md)
+- **What:** Ben Holmes summarizes Steinberger's minimalist agent workflow (one repo, one branch, 3-8 Codex instances, low blast radius) and argues teams still need cloud sandboxes, branches and PR review; advises skipping /init AGENTS.md bloat.
+
+## @elvissun - OpenClaw + Codex/Claude Code agent swarm as a one-person dev team
+> https://t.co/DotZ3V6XhJ
+
+- **Tweet:** https://x.com/elvissun/status/2025920521871716562
+- **Link:** https://x.com/i/article/2025654698590748672
+- **Filed:** [openclaw-codex-claudecode-agent-swarm.md](./knowledge/articles/openclaw-codex-claudecode-agent-swarm.md)
+- **What:** Full setup of an OpenClaw orchestrator that holds business context and spawns Codex/Claude Code agents in worktrees plus tmux, with cron monitoring, 3-model PR review and a self-improving "Ralph Loop V2"; claims 50-94 commits/day.
+
+## @hasantoxr - Scrapling: adaptive stealth scraping for OpenClaw
+> 🚨 OpenClaw just got an unfair advantage over every other AI agent on the internet.
+>
+> It's called Scrapling and it scrapes undetectable, adaptive websites without breaking when they update their structure. No bot detection. No selector maintenance. No Cloudflare nightmares.
+>
+> → 774x faster than BeautifulSoup with Lxml
+> → Bypasses ALL types of Cloudflare Turnstile automatically
+> → pip install "scrapling[ai]"
+> → HTTP + browser automation, CSS/XPath/text/regex selectors, async sessions, CLI
+>
+> 100% Opensource. BSD-3 license. Link in first comment 👇
+
+- **Tweet:** https://x.com/hasantoxr/status/2025902150296236050
+- **What:** Promotes Scrapling, a BSD-3 Python scraping library with adaptive selectors that survive site changes, stealth/Cloudflare Turnstile bypass and an AI extra for agents like OpenClaw; speed claims (774x vs BeautifulSoup+lxml) are unverified promo. Repo link was in a comment, not captured.
+
+## @theo - Delete your CLAUDE.md/AGENTS.md file
+> You should delete your CLAUDE․md/AGENTS․md file. I have a study to prove it. https://t.co/jOUNE53y7m
+
+- **Tweet:** https://x.com/theo/status/2025900730847232409
+- **Link:** https://twitter.com/theo/status/2025900730847232409
+- **What:** THIN: Theo claims a study shows CLAUDE.md/AGENTS.md context files hurt coding agents and should be deleted; the link only resolves to the tweet itself (likely video), so the study's data and method are not captured.
+
+## @steipete - Reply: speech feature already ships in OpenClaw apps
+> *Replying to @RayFernando1337:* Let your Claw speak https://t.co/gRIynXoZ5N
+>
+> Funny how this ships in our iOS, Android and Mac apps yet people seem to not find it and keep reinventing the wheel.
+
+- **Tweet:** https://x.com/steipete/status/2025855592846577879
+- **What:** THIN: Peter Steinberger says giving a Claw (OpenClaw agent) a voice already ships in the iOS, Android and Mac apps, responding to Ray Fernando's linked demo; the linked content is not available, so the exact feature is inferred.
+
+---
+
+# Sunday, February 22, 2026
+
+## @jeremy_daly - Context Engineering for Commercial Agent Systems guide
+> Since I found myself with a bit more free time lately 😉, I decided to sit down and write out everything I've learned about building multi-tenant, commercial AI agent systems.
+>
+> I thought it would be a long blog post. A few days later, the Google Doc was well over 100 pages.
+>
+> Context isn't just what you pass into a model. It's infrastructure. It defines your isolation boundary, your cost surface, your audit trail, and your upgrade path.
+>
+> Here is the guide: https://t.co/vbnYmZgpXb
+
+- **Tweet:** https://x.com/jeremy_daly/status/2025677417398821351
+- **Link:** https://jeremydaly.com/context-engineering-for-commercial-agent-systems/
+- **Filed:** [context-engineering-commercial-agent-systems.md](./knowledge/articles/context-engineering-commercial-agent-systems.md)
+- **What:** 100+ page production guide to multi-tenant commercial agent systems, arguing context is infrastructure (isolation, cost, audit, upgrades) with scoped/typed memory and canonical vs derived stores; only intro/TOC was captured.
+
+## @johann_sath - Three alerts every OpenClaw server should have
+> most people running openclaw have zero alerts set up
+>
+> someone could brute force your server at 3am and you wouldn't know until everything's gone
+>
+> set up these 3 alerts today:
+>
+> 1. failed SSH login detection. your bot messages you instantly when someone tries to break in
+>
+> 2. disk space monitoring. if your server hits 90%, your bot warns you before it crashes
+>
+> 3. daily config audit. every morning your bot checks if anything changed that shouldn't have
+>
+> my openclaw caught 47 failed login attempts last week. blocked every single one. i didn't lift a finger.
+>
+> the best security isn't a firewall. it's an AI that watches your server 24/7 and tells you when something's wrong.
+>
+> copy paste this to your openclaw. tell it to set up alerts.
+
+- **Tweet:** https://x.com/johann_sath/status/2025671359511277569
+- **What:** Advice to have an OpenClaw agent monitor its host: alert on failed SSH logins, warn at 90% disk, and run a daily config-change audit. Claims 47 blocked attempts in a week; no config shown.
+
+## @thejayden - Prompt OpenClaw to build a prediction-market trading system, plus Polymarket whale autopsy
+> Ask your OpenClaw agent this:
+>
+> "Build me a full agentic system for trading prediction markets based on these two images."
+>
+> *Quoting @thejayden:* https://t.co/KxuvGAc4Fh
+
+- **Tweet:** https://x.com/thejayden/status/2025657149515542746
+- **Quoted:** https://x.com/thejayden/status/2020891572389224878
+- **Link:** https://x.com/i/article/2020886888391868416
+- **Filed:** [the-autopsy-how-to-read-the-mind-of-a-polymarket-whale.md](./knowledge/articles/the-autopsy-how-to-read-the-mind-of-a-polymarket-whale.md)
+- **What:** Prompt telling an OpenClaw agent to build a prediction-market trading system from two images; the quoted article teaches reading Polymarket wallet metrics (time profitable, YES+NO hedge, bot speed, accumulation) via his pastebin scripts. Includes a referral link.
+
+## @doodlestein - Prompt to extract the most ambitious addition to an agent plan
+> When you think you're finished with your development plan for your agent, try this prompt with a few different frontier models. You might be amazed what they come up with:
+>
+> "What's the single smartest and most radically innovative and accretive and useful and compelling addition you could make to the plan at this point?"
+>
+> If you've already started development and have a fleshed out project already, replace the word "plan" with "project."
+>
+> *Quoting @doodlestein:* @bradlishman Yes, if you're not cranking the ambition factor to the max, you're wasting the potential of these frontier models. They've eclipsed us already, you just need to know how to draw it out of them.
+
+- **Tweet:** https://x.com/doodlestein/status/2025645582782480827
+- **Quoted:** https://x.com/doodlestein/status/2025634170534285779
+- **What:** Reusable planning prompt: ask several frontier models for the single smartest, most innovative addition to a finished plan (or project), building on his argument that maxing out ambition unlocks capability models already have.
+
+## @almonk - bontree, terminal file explorer companion for agent UIs
+> here's my file explorer companion for agent uis in the terminal. gives you quick access to copy paths and see changes agents are making across a codebase.
+>
+> it has mouse support, live git status, flat and hierarchical search, theme support, resposive to small widths. works really nicely as a pane next to your claudes or codexes.
+>
+> ❯ bontree .
+
+- **Tweet:** https://x.com/almonk/status/2025644253691461653
+- **Link:** https://github.com/almonk/bontree
+- **Filed:** [bontree.md](./knowledge/tools/bontree.md)
+- **What:** Terminal file-explorer TUI designed to run in a pane beside Claude or Codex, with live git status to watch agent edits, path copying, search, mouse and theme support. Repo README was empty, so details come from the tweet.
+
+## @oneThomasli - What I know about software, data and AI (AI as a ladder over software moats)
+> https://t.co/selSQ9y0WV
+
+- **Tweet:** https://x.com/oneThomasli/status/2025638685878698002
+- **Link:** https://x.com/i/article/2025632417474895873
+- **Filed:** [what-i-know-about-software-data-and-ai.md](./knowledge/articles/what-i-know-about-software-data-and-ai.md)
+- **What:** Daloopa founder's essay arguing AI is a ladder over software moats: customers skip the tool layer and go straight to outcomes, so durable value shifts to proprietary data an LLM cannot get itself.
+
+## @intellectronica - A week of agentic Obsidian workflow notes
+> A few notes on agentic @obsdmd (about a week in):
+>
+> - This is amazing. So fast, so flexible.
+> - Bases for everything. All my notes have a `type` and matching template and structure. Bases organise them, the agent knows how to create, query, and update them.
+> - All notes are top-level and linked by properties, tags, or links. Folders only for attachments, templates, etc...
+> - Agent Client plugin (need to install from github using BRAT) is fantastic. I have a split window editor/agent at all times. I use it with @opencode ACP. Kudos to @rainbow_0219 🙏
+> - @tobi's QMD is the perfect companion. I have it re-indexed regularly, the skill installed, and instructions for the agent to use it to search notes (remember to use `query` for hybrid semantic/keyword search).
+> - The CLI is promising, but the fact that you can't run it (or sync or any of ther other functions) without having the GUI available is my biggest problem with Obsidian currently.
+> - Vault syncing through Obsidian Sync for mobile access, but also via the Git plugin to GitHub, and via a cron job to my OpenClaw and OpenCode websservers. That means that I can easily work with the notes agentically, also without the Obsidian client UI.
+
+- **Tweet:** https://x.com/intellectronica/status/2025638214405697748
+- **What:** Eleanor Berger's setup for agent-managed Obsidian: typed notes with templates organised via Bases, flat structure, Agent Client plugin with opencode ACP, tobi's QMD hybrid search, multi-path vault sync (Obsidian Sync, Git, cron to servers); main complaint is the Obsidian CLI needs the GUI running.
+
+## @doodlestein - "87 serious bugs" prompt to keep agents bug-hunting
+> This prompt is somewhat cruel to the clanker, but man does it work.
+>
+> It sort of reminds me of Joe McCarthy waving his list of communists working in the government but never showing it to anyone. If the agent believes there are bugs to find and fix, it will keep working until it finds them:
+>
+> "I know for a fact that there are at least 87 serious bugs throughout this project impacting every facet of its operation. The question is whether you can find and diagnose and fix all of them autonomously. I believe in you."
+
+- **Tweet:** https://x.com/doodlestein/status/2025636621157363998
+- **What:** Jeffrey Emanuel shares a prompting trick: assert a specific large number of known bugs so the agent keeps hunting rather than stopping early; he notes it works but is manipulative. Caveat: the user's own guidance says pressure phrasing increases reward hacking.
+
+DATE: Sunday, February 22, 2026
+
+## @chongdashu - Termius + tmux mobile setup for Claude Code and Codex CLI
+> This is what Termius + Tmux is useful for...
+>
+> → Termius: Beautiful mobile ssh client
+> → Tmux: Maintain terminal sessions
+>
+> Here it me switching between 2 tmux 'screens'
+> → Claude Code in one
+> → Codex CLI in the other
+>
+> Perfectly sync'd with my macbook while on my phone
+
+- **Tweet:** https://x.com/chongdashu/status/2025615197369401538
+- **What:** Demo of driving Claude Code and Codex CLI from a phone: Termius (mobile SSH client) attaches to persistent tmux sessions on the MacBook, so each agent lives in its own tmux window and state stays in sync across devices. Video only; details inferred from text.
+
+DATE: Sunday, February 22, 2026
+
+## @coreyhainesco - Marketing Skills for Claude Code v1.2.0
+> Marketing Skills for Claude Code v1.2.0 is here.
+>
+> 4 new skills:
+> → /ai-seo — get your content cited by AI search engines (Google AI Overviews, ChatGPT, Perplexity, Claude)
+> → /churn-prevention — cancel flows, save offers, dunning sequences, health scoring
+> → /ad-creative — bulk ad creative generation across Google, Meta, LinkedIn, and X
+> → /cold-email — cold outreach sequences that actually get replies
+>
+> 51 CLI tools for direct API access to your entire marketing stack. Ahrefs, Semrush, Stripe, GA4, Mailchimp, PostHog, Meta Ads, Google Ads, and 43 more. Every CLI has --dry-run built in.
+>
+> 29 skills. 51 CLI tools. 31 integration guides. All free and open source.
+>
+> npx skills add coreyhaines31/marketingskills
+
+- **Tweet:** https://x.com/coreyhainesco/status/2025592984927150367
+- **What:** Release of an open-source Claude Code marketing skill pack (install via `npx skills add coreyhaines31/marketingskills`) adding AI-SEO, churn prevention, ad creative and cold email skills, plus 51 dry-run-capable CLIs wrapping marketing APIs (Ahrefs, Semrush, Stripe, GA4, PostHog, Ads); useful reference for skill-pack design.
+
+DATE: Sunday, February 22, 2026
+
+## @ctatedev - portless patched with e2e tests across 11 frameworks
+> `portless` was built for the web
+>
+> So devs can stop fussing over ports and agents can work in parallel
+>
+> Today we patched portless to fix some framework compatibility issues and added e2e tests for: Next.js, Svelte, Nuxt, Vite, Remix, Astro, Angular, Hono, Express, FastAPI, Flask
+
+- **Tweet:** https://x.com/ctatedev/status/2025592161723678790
+- **What:** Chris Tate announces a portless update (tool that replaces fixed dev-server port numbers so parallel agents don't collide) with framework compatibility fixes and e2e tests covering Next.js, Svelte, Nuxt, Vite, Remix, Astro, Angular, Hono, Express, FastAPI and Flask.
+
+DATE: Sunday, February 22, 2026
+
+## @akshay_pachaar - PageIndex: Vectorless Reasoning-Based RAG
+> Researchers built a new RAG approach that: does not need a vector DB, does not embed data, involves no chunking, performs no similarity search. And it hit 98.7% accuracy on a financial benchmark (SOTA).
+>
+> (thread explaining PageIndex: hierarchical tree index of documents traversed by LLM reasoning; GitHub repo shared in replies)
+
+- **Tweet:** https://x.com/akshay_pachaar/status/2025548705605341336
+- **What:** PageIndex is an open-source RAG alternative that builds a table-of-contents tree per document and has an LLM reason over it instead of embedding and similarity search; claims 98.7% on FinanceBench, best for structured professional documents.
+
+## @jasonzhou1993 - Anthropic Advanced Tool Calling Features Overview
+> Anthropic's new advanced tool calling is gold and I'm surprised not many people talk about it
+>
+> - Programmatic tool calling
+> - Dynamic filtering
+> - Tool use examples
+> - Tool search
+> …
+>
+> Here is a quick 3 min break down 🧵👇
+
+- **Tweet:** https://x.com/jasonzhou1993/status/2025504364153246103
+- **What:** THIN: Thread opener praising Anthropic's advanced tool-calling features (programmatic tool calling, dynamic filtering, tool use examples, tool search); the breakdown itself is in the unfetched thread replies.
+
+## @ziwenxu_ - The 50 Skills to Upgrade Your OpenClaw
+> https://t.co/Tp9SdiCWuW
+
+- **Tweet:** https://x.com/ziwenxu_/status/2025452128957767761
+- **Link:** https://x.com/i/article/2024548241434406912
+- **Filed:** [50-skills-upgrade-openclaw.md](./knowledge/articles/50-skills-upgrade-openclaw.md)
+- **What:** X article listing ~50 OpenClaw skills in six categories (foundation, logic/creative, programming, design, marketing, office), arguing skills avoid prompt bloat; highlights find-skills, skill-creator, mcp-builder, subagent-driven-development.
+
+---
+
 # Saturday, February 21, 2026
+
+## @badenglishtea - Local Agent for Daily Portfolio Risk Analysis from Financial News
+> My most recent agent absorbs all headline financial news (200+ sources), then runs analysis on my portfolio (Kubera API). Identifies risk score in every category, opportunities, urgency. Runs locally (Qwen 397b). Testing Deepseek 70b. 7am every morning. Claude deployed in 10 min
+
+- **Tweet:** https://x.com/badenglishtea/status/2025390312722759730
+- **What:** Example of a personal finance agent: ingests 200+ news sources daily at 7am, scores portfolio risk, opportunities and urgency via the Kubera API, runs on local models (Qwen 397b, testing Deepseek 70b), and was set up by Claude in about 10 minutes.
+
+## @tom_doerr - claudekit-skills: Subagent Workflows for Claude
+> Workflows for Claude to automate tasks through subagents
+>
+> https://t.co/8F6dTtAsZi
+
+- **Tweet:** https://x.com/tom_doerr/status/2025368271461949778
+- **Link:** https://github.com/mrgoonie/claudekit-skills
+- **Filed:** [claudekit-skills.md](./knowledge/tools/claudekit-skills.md)
+- **What:** GitHub repo claudekit-skills (mrgoonie) packaging skills and workflows that let Claude Code automate tasks by delegating to subagents; README was not fetched, so details are inferred.
+
+## @bilbeny - OpenClaw 2026.2.19/21 npm update breaks agent tools
+> If you update @OpenClaw to 2026.2.19 or 21 via npm, all agent tools break after the update.
+>
+> After upgrading, existing paired devices lose operator.write and https://t.co/6RHQ9p8fKN scopes → infinite pairing loop → tools dead.
+>
+> Full issue: https://github.com/openclaw/openclaw/issues/23006
+> Quick fix: https://x.com/bilbeny/status/2025340142345748929
+
+- **Tweet:** https://x.com/bilbeny/status/2025340142345748929
+- **Link:** https://github.com/openclaw/openclaw/issues/23006
+- **What:** Bug warning: npm-updating OpenClaw to 2026.2.19 or .21 drops operator.write and another scope from paired devices, causing an endless re-pairing loop and dead agent tools; links GitHub issue 23006 and a quick fix (fix link only resolves to the tweet itself).
+
+## @Legendaryy - Structured expert personas beat "you are an expert" prompts
+> *Replying to @Legendaryy:* 1. EmotionPrompt (8-115% improvement) - Microsoft + Peking University tested adding emotional stakes to prompts, e.g. "this is very important to my career"; 8% gain on instruction tasks, 115% on complex reasoning; positive words account for 50-70% of improvement.
+
+> 2. Structured expert framing (not "you are an expert")
+>
+> "you are an expert in X" = useless. tested and confirmed across multiple papers.
+>
+> what works: auto-generating a full expert identity with credentials, specialization, domain context, and behavioral heuristics.
+>
+> not a job title. a whole character sheet.
+>
+> the ExpertPrompting paper got a 7B open source model to 96% of ChatGPT's capability just by conditioning on rich expert personas.
+>
+> think less "you are a doctor" and more "you are a board-certified cardiologist with 15 years in interventional procedures who prioritizes evidence-based medicine and always checks for contraindications before recommending treatment."
+
+- **Tweet:** https://x.com/Legendaryy/status/2025339075394236601
+- **What:** Part 2 of a prompting-research thread (after EmotionPrompt): generic "you are an expert" is useless, while detailed auto-generated expert personas (credentials, domain context, heuristics) per the ExpertPrompting paper lifted a 7B model to 96% of ChatGPT.
+
+## @tolimarchuk - Context handoff protocol to make 200k context feel infinite
+> One of the best things I did for my Claw is come up with a context handoff protocol.
+>
+> It makes a 200k context window feel infinite.
+>
+> Implement this Context Handoff Protocol, proliferate for all agents.
+>
+> - At >=80% context usage: warn user and save handoff to memory/YYYY-MM-DD-HHMM-context-handoff.md, do not continue in current session.
+> - Handoff must include: objective, done, pending, exact resume command, blockers/decisions.
+> - Send user message: "I need to stop here. This session exceeded 80% of context capacity, and continuing risks missed details. I saved a full handoff at <path>. Please start a fresh chat and send: resume <task> from <path>."
+> - Resume only in fresh session.
+
+- **Tweet:** https://x.com/tolimarchuk/status/2025324252396974308
+- **What:** Copy-paste agent prompt: at 80% context the agent stops, writes a dated handoff file (objective, done, pending, resume command, blockers) and tells the user to resume in a fresh session, avoiding degraded long-context work.
+
+## @corywilkerson - fastpass-cli for low-friction Cloudflare Access
+> I vibe code a bunch
+> I have a ton of small apps
+> I need to add Cloudflare Access in a low friction way
+> I built fastpass-cli (Claude did)
+>
+> https://github.com/corywilkerson/fastpass
+>
+> If your domain(s) is/are already on @cloudflare you can have email, GitHub, Google IdPs wired up in a matter of seconds.
+>
+> This is farily easy to do in the UI already but thought I'd save myself a few clicks. Apologies to my cloudflare colleagues if there's something easier.
+>
+> Use at your own risk, ymmv, etc.
+
+- **Tweet:** https://x.com/corywilkerson/status/2025309780274020471
+- **Link:** https://github.com/corywilkerson/fastpass
+- **Filed:** [fastpass.md](./knowledge/tools/fastpass.md)
+- **What:** Claude-built CLI that configures Cloudflare Access (email, GitHub, Google identity providers) for domains already on Cloudflare in seconds, so many small vibe-coded apps can be gated without clicking through the dashboard.
+
+## @ashen_one - Local dashboard to track all agent skills and APIs
+> highly recommend a local site like this if you're running multiple agents
+>
+> when you start SkillMaxxing and have like 15 random skills, you be forgetting what you even have access to
+>
+> + random APIs youve plugged in
+>
+> make something like this that shows ALL of your skills and ALL of the things youre doing and have done and make your agents update it as you go
+
+- **Tweet:** https://x.com/ashen_one/status/2025286935829180706
+- **What:** THIN: Advice to build a local site listing every agent skill, plugged-in API, and past activity, with agents updating it as they work; the referenced screenshot/example is not in the tweet text. Addresses skill sprawl in multi-agent setups.
+
+## @dani_avila7 - Ghostty: Dim Unfocused Splits with unfocused-split-opacity
+> Ghostty lets you control the opacity of unfocused splits.
+>
+> Just add this to ~/.config/ghostty/config:
+> unfocused-split-opacity = 0.85
+>
+> Super useful when working across multiple panes, you always know where your focus is.
+>
+> If the opacity doesn't load on startup, hit cmd+shift+, to reload your config.
+
+- **Tweet:** https://x.com/dani_avila7/status/2025280714606780749
+- **What:** Ghostty terminal config tip: set `unfocused-split-opacity = 0.85` in ~/.config/ghostty/config to dim inactive splits so the focused pane is obvious; reload with cmd+shift+, if it does not apply at startup.
+
+## @mattpocockuk - Matt Pocock: claude --worktree as New Default
+> claude --worktree is so good I'm making it my new default.
+>
+> Don't know why you should care?
+>
+> Couldn't follow the Anthropic announcement? (way too technical IMO)
+>
+> Here's a demo: https://t.co/OyvAvFdC9C
+
+- **Tweet:** https://x.com/mattpocockuk/status/2025242370816487487
+- **What:** THIN: Matt Pocock endorses Claude Code's new `--worktree` flag (runs sessions in isolated git worktrees) as his default and posts a demo video, aimed at explaining it more simply than Anthropic's announcement; demo content itself not captured.
+
+## @wildmindai - llmfit: Hardware Probe That Tells You Which LLMs Will Run
+> llmfit. Useful tool that probes hardware and tells you exactly which LLMs will actually run.
+> - handles MoE expert offloading, picks the best quantization for your RAM, estimates tokens/sec before you even pull the weights.
+> Essential for local dev.
+> https://t.co/qn8PmqQNbV https://t.co/7z7yvOdNNC
+
+- **Tweet:** https://x.com/wildmindai/status/2025237601532121341
+- **Link:** https://github.com/AlexsJones/llmfit
+- **Filed:** [llmfit.md](./knowledge/tools/llmfit.md)
+- **What:** Open-source CLI that inspects your machine and recommends which local LLMs fit, including MoE expert offloading, best quantization for available RAM, and tokens/sec estimates before downloading weights. Saves trial-and-error when picking local models.
+
+## @mfranz_on - mfranzon/tdd: Author's Most Useful SWE Workflow Repo
+> Honestly as a swe this is one of the most useful thing I did for software development.
+>
+> https://t.co/1snCdKZnbZ
+
+- **Tweet:** https://x.com/mfranz_on/status/2025229616068071900
+- **Link:** https://github.com/mfranzon/tdd
+- **Filed:** [tdd.md](./knowledge/tools/tdd.md)
+- **What:** THIN: @mfranz_on shares their own GitHub repo "tdd" as the most useful thing they have done for software development; repo README and description were empty at capture, so purpose is inferred as a test-driven-development tool or workflow.
+
+## @heynavtoor - AirLLM: 70B Models on a 4GB GPU via Layer-by-Layer Inference
+> 🚨 BREAKING: Someone just made 70B parameter models run on a single 4GB GPU.
+>
+> It's called AirLLM. No quantization. No distillation. No pruning. Just raw 70B inference on hardware that costs less than a dinner.
+>
+> You can even run Llama 3.1 405B on 8GB VRAM.
+>
+> Here's how it works:
+>
+> → Decomposes the model layer-by-layer
+> → Loads only one layer into GPU memory at a time
+> → Runs inference, moves to the next layer
+> → Prefetches the next layer while computing the current one
+> → Supports 4-bit and 8-bit compression for 3x speed boost
+>
+> No cloud API. No $10K GPU. Just pip install airllm and go.
+>
+> It supports almost every major model — Llama, Qwen, Mistral, ChatGLM, Baichuan, InternLM — and it auto-detects the model type. Works on Linux, macOS (Apple Silicon), and Google Colab free tier. 100% Open Source. Apache 2.0 License.
+
+- **Tweet:** https://x.com/heynavtoor/status/2025181204505592213
+- **What:** Promo thread for AirLLM, an open-source (Apache 2.0) library that runs 70B-405B models on 4-8GB GPUs by streaming one layer at a time into VRAM with prefetching, trading speed for memory; optional 4/8-bit compression gives ~3x speedup. Hype-heavy framing, so expect slow throughput.
+
+## @barckcode - Three key Claude Code flags: --worktree, --dangerously-skip-permissions, --teammate-mode tmux
+> Con este ya hay al menos 3 flags importantes a conocer en Claude Code:
+>
+> --worktree: para trabajar en paralelo en git sin pisarse.
+>
+> --dangerously-skip-permissions: que ejecute todo sin pararse.
+>
+> --teammate-mode tmux: que cuando genere un equipo de agentes te abra en la terminal un panel por cada agente.
+
+- **Tweet:** https://x.com/barckcode/status/2025136765862863319
+- **Link:** https://git-scm.com/docs/git-worktree
+- **What:** Spanish-language tip listing three Claude Code flags: --worktree for parallel git work without collisions, --dangerously-skip-permissions to run without prompts, and --teammate-mode tmux to open one terminal pane per agent in a team; links the git-worktree docs.
+
+## @viktoroddy - Gemini 3.1 Pro prompt for a 5-slide video-background pitch deck
+> *Replying to @viktoroddy:* Gemini Pro 3.1 is so cracked at presentations. and anyone can achieve the same results. Here's the prompt
+>
+> Prompt: Build a full-screen, presentation-style slide deck web app with 5 slides (React + Tailwind, hls.js for HLS video backgrounds, lucide-react icons). Global design: Plus Jakarta Sans, black theme, white text, clamp() font sizes, percentage spacing, no shadows, "liquid glass" cards (backdrop blur 24px, translucent gradients, thin borders, specular highlight). Presentation.tsx: keyboard nav (arrows/space, F fullscreen), 500ms fade+scale transitions, auto-hiding controls, bottom nav with counter, progress dots, chevrons. Slides: Cover, Intro (three-column stats with SVG line graph), Analytics (5 glass cards), Quote (Andrew Ng), Outro/Contact. App.tsx wires all five. (Full prompt truncated here; includes per-slide video URLs, sizes and copy.)
+
+- **Tweet:** https://x.com/viktoroddy/status/2025106644703805750
+- **Parent:** https://x.com/viktoroddy/status/2025106466852720948
+- **What:** Reusable, highly specified prompt for generating a slide-deck web app with HLS video backgrounds and liquid-glass UI, showing the level of design-system detail (clamp sizes, percent spacing, transitions) that makes Gemini 3.1 Pro output good presentations.
 
 ## @bcherny - Subagent Worktrees for One-Shot Batch Migrations
 > *Replying to @nummanali:* I have a few problems with worktrees:
@@ -11551,6 +12149,35 @@
 ---
 
 # Friday, February 20, 2026
+
+## @doodlestein - Multi-agent Gemini-cli bug-hunt prompt recipe
+> *Replying to @doodlestein:* Ok, Gemini3 was already weirdly good at finding subtle bugs. But I can now say that Gemini3.1 is even more ridiculously capable of this. I've done something like 100 passes of my standard prompt for this sort of thing and it has found so many issues across a bunch of projects.
+>
+> Here's my recipe. I spin up around 5 Gemini-cli instances in the same project and start them all out with this prompt: read ALL of AGENTS.md and README.md carefully, then use code investigation mode to understand the architecture and purpose. Then I queue: randomly explore code files, trace execution flows through imports, do a careful "fresh eyes" check for bugs and fix them while following AGENTS.md. Then: review code written by fellow agents for bugs, security, reliability issues, diagnose root causes with first-principles analysis and fix. Then I kill them and start new ones with the same recipe, round after round until they come up clean.
+
+- **Tweet:** https://x.com/doodlestein/status/2025057469945286763
+- **Parent:** https://x.com/doodlestein/status/2025056531054498263
+- **What:** Concrete swarm bug-hunting workflow: about 5 parallel Gemini-cli agents run a three-stage prompt (learn AGENTS.md/README, random-file deep review and fix, cross-review of peers' code), then get restarted fresh each round until clean; follows his claim that Gemini 3.1 finds subtle bugs well.
+
+## @velvet_shark - 50 days of OpenClaw: 20 real use cases and what breaks
+> I've used OpenClaw every single day for 50+ days.
+>
+> Through ClawdBot. Through MoltBot. Through the rebrand and OpenAI partnership.
+>
+> I made the setup video in the official docs. I built Clawdiverse. I contributed a skill to ClawHub.
+>
+> Nobody else can tell you what happens after the first month. Here's everything I learned: 20 real use cases, what actually breaks, and every prompt to set them up yourself. (Chapter list: morning briefing, e-ink AI art, auto-updates/backups, background checks, parallel sub-agent research, YouTube analytics, /summarize, server migration, coding from phone, draft-only email triage, WhatsApp calendar, voice transcription, Discord migration, bookmarks, Obsidian semantic search, WordPress honeypot, Excalidraw via MCP, home automation, starter pack, what breaks, 50-day scorecard.)
+
+- **Tweet:** https://x.com/velvet_shark/status/2024978839487545490
+- **What:** Long-form (~42 min) video from a heavy OpenClaw user cataloguing 20 practical agent workflows (briefings, email triage in draft-only mode, Obsidian semantic search, home automation) plus failure modes after 50 days; useful as a reference for personal-agent setups.
+
+## @alxfazio - Plankton: write-time lint enforcement agents can't game
+> https://t.co/2wq6jGudyO
+
+- **Tweet:** https://x.com/alxfazio/status/2024931367612743688
+- **Link:** https://x.com/i/article/2024919564979466240
+- **Filed:** [plankton-slop-guard-llms-cant-cheat.md](./knowledge/articles/plankton-slop-guard-llms-cant-cheat.md)
+- **What:** Article introducing Plankton, a Claude Code layer that blocks the agent at write-time until linters pass, using Rust linters plus delegated Claude repairs and config tamper-proofing so agents cannot loosen lint rules.
 
 ## @morganlinton - Codex 'All-Day Build Contract' markdown to sustain long runs
 > Experimenting with ways to get Codex to run for long periods. It may plan a multi-hour run, then code a much smaller chunk in 6 minutes.
