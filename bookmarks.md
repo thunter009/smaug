@@ -11531,7 +11531,638 @@
 
 ---
 
+# Saturday, March 7, 2026
+
+## @miolini - autoresearch-macos: Karpathy's autoresearch ported to Apple Metal
+> I forked AutoResearch and adapted it to run on macOS using Metal. Welcome!
+>
+> https://github.com/miolini/autoresearch-macos
+>
+> *Quoting @karpathy:* I packaged up the "autoresearch" project into a new self-contained minimal repo if people would like to play over the weekend. It's basically nanochat LLM training core stripped down to a single-GPU, one file version of ~630 lines of code, with the human iterating on program.md and the AI agent iterating on the training code.
+
+- **Tweet:** https://x.com/miolini/status/2030402705374728218
+- **Link:** https://github.com/miolini/autoresearch-macos
+- **Filed:** [miolini-autoresearch-macos.md](./knowledge/tools/miolini-autoresearch-macos.md)
+- **What:** Fork of Karpathy's autoresearch that runs on Apple Silicon via Metal/MPS and CPU, replacing FlashAttention-3 with PyTorch SDPA. Lets Mac users run the overnight autonomous experiment loop without an NVIDIA GPU.
+
+## @karpathy - autoresearch: agent-driven LLM training loop in a single file
+> I packaged up the "autoresearch" project into a new self-contained minimal repo if people would like to play over the weekend. It's basically nanochat LLM training core stripped down to a single-GPU, one file version of ~630 lines of code, then:
+>
+> - the human iterates on the prompt (.md)
+> - the AI agent iterates on the training code (.py)
+>
+> The goal is to engineer your agents to make the fastest research progress indefinitely and without any of your own involvement. In the image, every dot is a complete LLM training run that lasts exactly 5 minutes. The agent works in an autonomous loop on a git feature branch and accumulates git commits to the training script as it finds better settings (of lower validation loss by the end) of the neural network architecture, the optimizer, all the hyperparameters, etc. You can imagine comparing the research progress of different prompts, different agents, etc.
+>
+> https://github.com/karpathy/autoresearch
+> Part code, part sci-fi, and a pinch of psychosis :)
+
+- **Tweet:** https://x.com/karpathy/status/2030371219518931079
+- **Link:** https://github.com/karpathy/autoresearch
+- **Filed:** [karpathy-autoresearch.md](./knowledge/tools/karpathy-autoresearch.md)
+- **What:** Karpathy's minimal repo where an agent autonomously edits train.py in fixed 5-minute training runs, committing gains on a git branch, while the human only tunes program.md. Frames research-org design as prompt engineering, about 100 experiments per night on one GPU.
+
+## @RoundtableSpace - Siftly: self-hosted AI pipeline for searching Twitter bookmarks
+> Most people have thousands of saved tweets they never find again.
+>
+> Siftly runs a 4-stage AI pipeline on your bookmarks — entity extraction, vision analysis, semantic tagging, categorization — then turns everything into a searchable knowledge base with a mindmap view.
+>
+> 100% self-hosted. Open source. Data never leaves your machine.
+
+- **Tweet:** https://x.com/RoundtableSpace/status/2030308743078986013
+- **What:** Promotes Siftly, an open-source self-hosted tool that runs bookmarks through entity extraction, vision analysis, semantic tagging and categorization into a searchable knowledge base with a mindmap view. Directly comparable to this smaug bookmark pipeline; no repo link was given.
+
+## @zarazhangrui - Turn a codebase into an Excalidraw architecture diagram with MCP
+> Pro tip: Ask a coding agent to turn a codebase into an Excalidraw whiteboard diagram by using the Excalidraw MCP server
+>
+> Great way to visualize & understand the architecture
+
+- **Tweet:** https://x.com/zarazhangrui/status/2030185205596864744
+- **What:** THIN: Workflow tip. Have a coding agent use the Excalidraw MCP server to render a codebase as a whiteboard diagram, giving a quick visual of the architecture. Media only, no link.
+
+---
+
+# Friday, March 6, 2026
+
+## @ctatedev - Generative UI for MCP Apps via component catalogs
+> Introducing Generative UI for MCP Apps
+>
+> One server. Infinite interfaces.
+>
+> Instead of building views, define a component catalog. The AI assembles the right UI based on your API, CLI or MCP server tools.
+>
+> Works in Claude, ChatGPT, VS Code, Cursor and more
+
+- **Tweet:** https://x.com/ctatedev/status/2030100369506709691
+- **What:** THIN: Announces generative UI for MCP Apps. Developers publish a component catalog instead of hand-built views, and the AI composes interfaces from the API, CLI or MCP tools. Claims support across Claude, ChatGPT, VS Code and Cursor; no link or demo content captured.
+
+## @noahzweben - Claude Code /loop: recurring prompts and scheduled tasks
+> /loop 5m make sure this PR passes CI
+>
+> While loops for agents have dropped!
+>
+> https://t.co/vi2B1Bdemk
+
+- **Tweet:** https://x.com/noahzweben/status/2030091232698061202
+- **Link:** https://code.claude.com/docs/en/scheduled-tasks
+- **What:** Announces Claude Code's /loop command, which reruns a prompt on an interval (e.g. every 5m to babysit CI on a PR). Docs cover /loop and cron scheduling tools for polling status and one-time reminders within a session.
+
+## @chintanturakhia - "Run this prompt frequently" (prompt in image)
+> Run this prompt frequently.
+>
+> You're welcome. https://t.co/8WafOU4a5S
+
+- **Tweet:** https://x.com/chintanturakhia/status/2030089465679728763
+- **What:** THIN: Recommends running a specific prompt regularly, but the prompt is only in an attached image not captured. The t.co link is a self-reference, so the actual advice is unrecoverable.
+
+## @madebydia - tiny-terminal: a fake hacker terminal for toddlers
+> My 3yo wanted to use the computer like me so I made him his own terminal. He types whatever he wants, it responds with fun messages. No external deps, no ads, just keyboard practice and cause-and-effect thinking. He thinks he's hacking. https://t.co/7RoEHgC99y
+
+- **Tweet:** https://x.com/madebydia/status/2029993421587226885
+- **Link:** https://github.com/madebydia/tiny-terminal
+- **Filed:** [tiny-terminal.md](./knowledge/tools/tiny-terminal.md)
+- **What:** Single-file offline HTML fake terminal where toddlers type anything and get safe, fun responses (ASCII animals, vehicles, emoji numbers, smash effects). Part of a play-based computational thinking curriculum for kids ages 2-6.
+
+## @edgaralandough - Seven affirmation sentences to repeat to your child
+> Repeat these 7 sentences to your child - and let them become their inner voice.
+>
+> (No. 6 builds instant confidence.)
+
+- **Tweet:** https://x.com/edgaralandough/status/2029981216926024103
+- **What:** THIN: Parenting engagement-bait post promising seven affirmations to become a child's inner voice. The sentences are in an image not captured, so the actual content is unknown.
+
+## @staysaasy - Avoiding a culture of emergencies: how good managers prevent fire drills
+> https://t.co/Jhu9ywDbUZ
+
+- **Tweet:** https://x.com/staysaasy/status/2029965845548462281
+- **Link:** https://x.com/i/article/2029965511983841281
+- **Filed:** [avoiding-a-culture-of-emergencies.md](./knowledge/articles/avoiding-a-culture-of-emergencies.md)
+- **What:** Article arguing preventable emergencies come from bad management. Good managers know task difficulty, ask questions instead of demanding, hold roadmap conviction, keep a mental model of team and company, and care about the team.
+
+## @ashpreetbedi - Pal: personal context-agent that navigates SQL, files, email and learns from corrections
+> https://t.co/2H4uIO9YNZ
+
+- **Tweet:** https://x.com/ashpreetbedi/status/2029953139856531528
+- **Link:** https://x.com/i/article/2028550455278829568
+- **Filed:** [pal-personal-context-agent.md](./knowledge/articles/pal-personal-context-agent.md)
+- **What:** Article introduces Pal, an agent that navigates a context graph (self-managed SQL tables, markdown config files, a knowledge map, saved learnings) rather than vector-searching chunks. Runs a Classify, Recall, Retrieve, Act, Learn loop so it improves with use while the prompt stays constant.
+
+## @yasminekho - Matt Abrahams Stanford masterclass: 12 lessons on thinking fast and speaking on the spot
+> In 2023, Stanford professor Matt Abrahams gave a masterclass on how to think fast &amp; speak smartly on the spot.
+>
+> He explained:
+> • Why anxiety destroys clarity
+> • How structure beats intelligence
+> • Secret to spontaneous charisma
+>
+> 12 lessons to master communication in real time: https://t.co/53sOKeW50S
+
+- **Tweet:** https://x.com/yasminekho/status/2029909767364461031
+- **What:** Thread summarizing a 2023 Stanford talk by Matt Abrahams on impromptu speaking, arguing that anxiety undermines clarity and that a simple structure beats raw intelligence. The tweet only teases 12 lessons; the linked URL resolves back to the tweet itself, so no further content was captured.
+
+---
+
+# Thursday, March 5, 2026
+
+## @jamiequint - How to Build a Data Agent in 2026 (context sub-agent over dbt, no semantic layer)
+> https://t.co/mp1m88bguN
+
+- **Tweet:** https://x.com/jamiequint/status/2029705203457609785
+- **Link:** https://x.com/i/article/2029702407823970306
+- **Filed:** [how-to-build-a-data-agent-2026.md](./knowledge/articles/how-to-build-a-data-agent-2026.md)
+- **What:** Ex-Notion data lead explains a Claude Agent SDK text-to-SQL agent where a context sub-agent reads dbt models and app code at query time instead of a maintained semantic layer. Adds a learned "quirks" store from user corrections and SQL self-scoring with gap-driven retries.
+
+## @jimprosser - "My chief of staff, Claude Code": non-programmer's 6-subagent daily ops system
+> https://t.co/k4zNnlABHU
+
+- **Tweet:** https://x.com/jimprosser/status/2029699731539255640
+- **Link:** https://x.com/i/article/2029698920159531010
+- **Filed:** [chief-of-staff-claude-code.md](./knowledge/articles/chief-of-staff-claude-code.md)
+- **What:** Comms consultant with no coding background built, in 36 hours, a Claude Code system that triages email and calendar overnight, then fans out six parallel subagents (drafts, Obsidian notes, scheduling, research) and time-blocks Todoist tasks. Core lesson is a strict human boundary: it preps to 80% and never sends or makes strategic calls.
+
+## @PawelHuryn - Open-source PM Skills Marketplace for Claude with 100+ product management skills
+> 1,300+ stars on GitHub in 72 hours. 400+ in the last 4 hours. I didn't expect this.
+>
+> I built an open-source PM Skills Marketplace for Claude: 100+ skills and commands that turn AI into a product management partner.
+>
+> Not generic prompts. Structured skills that actually know PM frameworks.
+>
+> 8 plugins covering the full PM lifecycle: Product Discovery, Product Strategy, Execution (PRDs, OKRs, roadmaps, sprint planning, user stories), Market Research, Data & Analytics, Go-to-Market, Marketing & Growth, PM Toolkit.
+>
+> Built for Claude Code and Cowork. Compatible with Gemini CLI, Cursor, Codex CLI, and Kiro.
+
+- **Tweet:** https://x.com/PawelHuryn/status/2029697412701282511
+- **What:** Pawel Huryn announces a viral open-source Claude plugin marketplace (1,300+ stars in 72h) packaging 100+ PM framework skills into 8 lifecycle plugins, portable across Claude Code, Cursor, Codex CLI, Gemini CLI and Kiro. Useful template for domain-specific skill bundles; no repo link in the tweet.
+
+## @ErickSky - Open Wearables: self-hosted unified API for Garmin, Whoop, Apple Health and more
+> Alguien acaba de perder absolutamente la cabeza al LIBERAR EL SANTO GRIAL DE LOS GYM BROS
+>
+> Open Wearables es el backend open-source self-hosted que une Garmin + Polar + Suunto + Whoop + Apple Health en UNA SOLA API normalizada, lista para que tu agente IA (Claude, ClawdBot, el que uses) la consuma directo.
+>
+> - Instalación en minutos con Docker + Developer Portal Dashboard funcionando (usuarios, API keys, sincronizaciones y métricas de sueño/workouts en vivo).
+>
+> - Cómo conectar todo y alimentar IA en tiempo real.
+>
+> - Y lo mejor: ya lanzaron el Flutter SDK + Example App completo para Apple Health (con background sync, permisos HealthKit y demo lista para probar).
+>
+> Todo local, sin fees por usuario, sin nubes ajenas.
+>
+> Esto es exactamente lo que necesitas para armar tu propio coach de recuperación, alertas de HRV o dashboards personales con datos reales.
+>
+> REPOOOO 👇
+
+- **Tweet:** https://x.com/ErickSky/status/2029680832198181357
+- **What:** Open Wearables is an open-source, self-hosted backend that normalizes Garmin, Polar, Suunto, Whoop and Apple Health data into one API for AI agents. It runs via Docker with a developer dashboard and a Flutter SDK for Apple Health; repo link was not captured.
+
+## @johncoogan - Reviewing Daniel Gross's 2024 AGI Trades two years on
+> https://t.co/5sy7oGpGlN
+
+- **Tweet:** https://x.com/johncoogan/status/2029630380068978847
+- **Link:** https://x.com/i/article/2029629035412951041
+- **Filed:** [remarkable-agi-trades-of-daniel-gross.md](./knowledge/articles/remarkable-agi-trades-of-daniel-gross.md)
+- **What:** X article scoring Daniel Gross's 18 AGI-trade questions from Jan 2024 against outcomes to March 2026. Infrastructure, copper and energy won big, transformers were the data-center bottleneck, and inference costs fell 50x.
+
+## @aidenybai - React Grab: point at a UI element and instruct Claude Code or Codex
+> Introducing React Grab
+>
+> Select any element on your page → tell Claude Code or Codex what to change
+>
+> Fully open source
+>
+> npx react-grab@latest https://t.co/QnXMFcBV2F
+
+- **Tweet:** https://x.com/aidenybai/status/2029603067927351506
+- **What:** React Grab is an open-source tool, run via `npx react-grab@latest`, that lets you select an element on a live page and hand its context to Claude Code or Codex with a change request. It closes the gap between visual UI and code edits.
+
+## @bilbeny - Google Workspace CLI and Anthropic skill-creator for OpenClaw
+> If @Google CLI was not enough, last night @AnthropicAI launched an official skill-creator skill for Claude Code that allows you to draft, test and evaluate skills.
+>
+> Both can be installed/called into @openclaw.
+>
+> Google:
+> https://t.co/xvAE82J5rr
+>
+> Anthropic:
+> https://t.co/gNvGCeQKc3
+
+- **Tweet:** https://x.com/bilbeny/status/2029546082917912940
+- **Link:** https://github.com/googleworkspace/cli
+- **Filed:** [googleworkspace-cli.md](./knowledge/tools/googleworkspace-cli.md)
+- **Filed:** [anthropic-skill-creator.md](./knowledge/tools/anthropic-skill-creator.md)
+- **What:** Points to two agent-usable tools: Google's Rust-based Workspace CLI (Drive, Gmail, Calendar, Sheets etc. with agent skills) and Anthropic's official skill-creator skill for drafting, testing and evaluating Claude Code skills. Both can be called from OpenClaw.
+
+## @Hartdrawss - 30 security rules checklist for AI vibe coding
+> 30 security rules for AI VIBE CODING :
+>
+> 1. Set session expiration (JWT max 7 days + refresh rotation)
+> 2. Never use AI-built auth. Use Clerk, Supabase Auth, or Auth0
+> 3. Never paste API keys into AI chats. Use process.env
+> 4. .gitignore is your first file in every project, not the last
+> 5. Rotate secrets every 90 days minimum
+> 6. Verify every package the AI suggests actually exists before installing
+> 7. Always ask for newer, more secure package versions
+> 8. Run npm audit fix right after building
+> 9. Sanitize every input. Use parameterized queries always
+> 10. Enable Row-Level Security from day one
+> 11. Remove all console.log statements before shipping
+> 12. CORS should only allow your production domain. Never wildcard
+> 13. Validate all redirect URLs against an allow-list
+> 14. Apply auth + rate limits to every endpoint, including mobile APIs
+> 15. Rate limit everything from day one. 100 req/hour per IP is a start
+> 16. Password reset routes get their own strict limit (3 per email/hour)
+> 17. Cap AI API costs in your dashboard AND in your code
+> 18. Add DDoS protection via Cloudflare or Vercel edge config
+> 19. Lock down storage buckets. Users should only access their own files
+> 20. Limit upload sizes and validate file type by signature, not extension
+> 21. Verify webhook signatures before processing any payment data
+> 22. Use Resend or SendGrid with proper SPF/DKIM records
+> 23. Check permissions server-side. UI-level checks are not security
+> 24. Ask the AI to act as a security engineer and review your code
+> 25. Ask the AI to try and hack your app. It will find things you won't
+> 26. Log critical actions: deletions, role changes, payments, exports
+> 27. Build a real account deletion flow. GDPR fines are not fun
+> 28. Automate backups and test restoration. An untested backup is nothing
+> 29. Keep test and production environments completely separate
+> 30. Never let test webhooks touch real systems
+>
+> Ship fast. But ship secure.
+
+- **Tweet:** https://x.com/Hartdrawss/status/2029489729729642702
+- **What:** Checklist of 30 security practices for AI-assisted coding: use managed auth, keep secrets out of prompts, rate limit and validate everything, enable RLS, verify webhooks, separate test and prod, and have the AI red-team its own code.
+
+## @JackCulpan - Boris Cherny-derived CLAUDE.md workflow orchestration prompt
+> Here's the prompt:
+>
+> ## Workflow Orchestration
+> 1. Plan Mode Default: plan for any non-trivial task (3+ steps); if something goes sideways, stop and re-plan
+> 2. Subagent Strategy: use subagents liberally to keep main context clean; one task per subagent
+> 3. Self-Improvement Loop: after any correction, update `tasks/lessons.md` with a rule preventing the mistake
+> 4. Verification Before Done: never mark complete without proving it works; run tests, check logs
+> 5. Demand Elegance (Balanced): for non-trivial changes ask if there is a more elegant way; skip for simple fixes
+> 6. Autonomous Bug Fixing: just fix bugs and failing CI without hand-holding
+> 7. Task Management: plan in `tasks/todo.md`, track progress, document results, capture lessons
+>
+> Core Principles: Simplicity First, No Laziness (root causes), Minimal Impact.
+>
+> *Quoting @bcherny:* I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using Claude Code, sourced directly from the Claude Code team. The way the team uses Claude is different than how I use it. Remember: there is no one right way to use Claude Code -- everyones' setup is different. You should experiment to see what works for you!
+
+- **Tweet:** https://x.com/JackCulpan/status/2029478582352003150
+- **What:** A pasteable CLAUDE.md prompt that encodes agent discipline: default to plan mode, offload to subagents, keep a tasks/lessons.md self-improvement loop, verify before done, and fix bugs autonomously. Posted as a follow-up to Boris Cherny's Claude Code team tips thread.
+
+## @RayFernando1337 - Anthropic's updated skill-creator skill and one-prompt install
+> Anthropic just dropped a massive update to the skill-creator skill for Claude Code / OpenClaw. One prompt to install it:
+>
+> "Anthropic updated their skill creator skill and I'd like for you to update/put this in so when we ask about creating new skills we can use this skill creator skill https://github.com/anthropics/skills/tree/main/skills/skill-creator"
+
+- **Tweet:** https://x.com/RayFernando1337/status/2029447158823588114
+- **Link:** https://github.com/anthropics/skills/tree/main/skills/skill-creator
+- **Filed:** [anthropics-skills.md](./knowledge/tools/anthropics-skills.md)
+- **What:** Anthropic updated skill-creator in its public anthropics/skills repo. Ray's trick is to hand the GitHub URL to the agent and ask it to install or update the skill itself, so no manual setup is needed.
+
+---
+
+# Wednesday, March 4, 2026
+
+## @rauchg - Google ships official Workspace CLI in Rust with agent skills
+> Google has shipped a CLI for Google Workspace (Drive, Gmail, Calendar, Sheets, Docs, …) Huge!
+>
+> Written in Rust, distributed through npm & https://www.skills.sh/
+>
+> $ npm i -g @googleworkspace/cli
+> $ npx skills add github:googleworkspace/cli
+>
+> 2026 is the year of Skills & CLIs
+> https://github.com/googleworkspace/cli
+
+- **Tweet:** https://x.com/rauchg/status/2029356560494018956
+- **Link:** https://github.com/googleworkspace/cli
+- **Filed:** [googleworkspace-cli.md](./knowledge/tools/googleworkspace-cli.md)
+- **What:** Google released an official Rust CLI covering Drive, Gmail, Calendar, Sheets and Docs, installable via npm and as agent skills through skills.sh. Rauch frames it as evidence that skills plus CLIs are the dominant agent integration pattern of 2026.
+
+## @pbakaus - Impeccable v1.1: design skills for every AI harness
+> Impeccable v1.1 is out. Design fluency for every AI harness.
+>
+> New:
+> - all commands are now agent skills
+> - support for Antigravity, VS Code
+> - simplify -> distill (to not conflict w/ CC's new built-ins)
+> - universal install
+>
+> https://impeccable.style/ gives you the language to make AI-generated frontends suck less.
+
+- **Tweet:** https://x.com/pbakaus/status/2029334353894162720
+- **Link:** https://impeccable.style/
+- **What:** Release note for Impeccable, a design-vocabulary skill pack that improves AI-generated frontends. v1.1 converts commands to agent skills, adds Antigravity and VS Code support, and renames simplify to distill to avoid clashing with Claude Code's built-in. Already filed from a later bookmark in knowledge/tools/impeccable.md.
+
+## @melodyskim - Domain Maps: minimum viable ontology for prompting in new domains
+> This tweet had me thinking, what's the "minimum viable ontology" or list of terms to quickly get situated within a new domain, and improve your prompts?
+>
+> Vibecoded https://domainmaps.co/ to showcase this idea on a few example domains -- been wading into 3D recently and found this initial "domain map" helpful.
+>
+> SO much to improve here but wanted to get this initial idea out! Would love thoughts / feedback :)
+>
+> *Quoting @itsandrewgao:* you can instantly 10x your vibecoded frontends by just learning what different ui components are called. ofc opus is creating generic slop, the only words you know are menu and button.
+
+- **Tweet:** https://x.com/melodyskim/status/2029332670115614799
+- **Link:** https://domainmaps.co/
+- **What:** Domain Maps is a browsable, copy-to-clipboard glossary of key vocabulary per domain (e.g. 3D, UI), built on the idea from Andrew Gao's quoted tweet that knowing correct component names sharply improves AI-generated frontends. A minimal ontology gives better prompts.
+
+## @aniketapanjwani - Nine Ways to Scrape Data with Claude Code
+> https://t.co/2T0OxB3eUD
+
+- **Tweet:** https://x.com/aniketapanjwani/status/2029304239345017050
+- **Link:** https://x.com/i/article/2029292396811591680
+- **Filed:** [nine-ways-scrape-data-claude-code.md](./knowledge/articles/nine-ways-scrape-data-claude-code.md)
+- **What:** Article cataloguing nine Claude Code scraping approaches: plain prompting, endpoint discovery, ScrapeCreators, Apify actors, Firecrawl to markdown with structured extraction, and more. Advises wrapping paid services in a skill.
+
+## @meta_alchemist - ai-hedge-fund: multi-agent investor-persona trading system
+> this repo is to create your own AI Hedge Fund
+>
+> and it has 45K+ GitHub stars
+>
+> A ready-made orchestrator of purposeful agents that analyze markets, generate trade ideas and make trading decisions. Investor agents (Damodaran, Graham, Ackman, Cathie Wood, Munger, Burry, Pabrai, Lynch, Fisher, Jhunjhunwala, Druckenmiller, Buffett), analysis agents (valuation, sentiment, fundamentals, technicals), and a Risk Manager plus Portfolio Manager for decisions. Not financial advice. Next steps: backtest, keep agents that help, remove those that lower win rates.
+
+- **Tweet:** https://x.com/meta_alchemist/status/2029302673036722672
+- **Link:** https://github.com/virattt/ai-hedge-fund
+- **Filed:** [ai-hedge-fund.md](./knowledge/tools/ai-hedge-fund.md)
+- **What:** Open-source multi-agent trading framework where famous-investor personas and analysis agents feed a risk manager and portfolio manager. Tweet suggests backtesting and pruning agents by win rate.
+
+## @toddsaunders - Claude Code /cost-estimate command: 2.8 years and $650k vs 30 hours
+> Fun command built in Claude Code: /cost-estimate
+>
+> It scans your codebase and cross-references current market rates to calculate what your project would've cost a real team to build.
+>
+> It looks at all the APIs, integrations, everything.
+>
+> Without AI: ~2.8 years. ~$650k.
+>
+> With AI: 30 hours.
+>
+> It's absurd when you start to think about it like this.
+
+- **Tweet:** https://x.com/toddsaunders/status/2029301170670309740
+- **What:** A custom Claude Code slash command that scans a codebase and prices it against market rates; for Todd's project it estimated about 2.8 years and $650k of team effort versus 30 hours with AI. Useful as a framing tool for AI leverage.
+
+## @GergelyOrosz - Boris Cherny on engineering after code: lint rules, prototypes over PRDs, context switching
+> What does it mean for software engineering when we no longer write code? Here's a take from Boris Cherny (@bcherny), creator of Claude Code. Timestamps: 00:00 Intro 11:15 Lessons from Meta 19:46 Joining Anthropic ... 52:38 ... 55:05
+>
+> Three interesting things from the conversation: 1. Boris automated himself out of code review well before AI: he logged repeated review comments and, at 3-4 occurrences, wrote a lint rule. 2. PRDs are dead on the Claude Code team: prototypes replaced them. 3. This year is for generalists: his work shifted from deep-focus coding to managing parallel agents and fast context switching.
+
+- **Tweet:** https://x.com/GergelyOrosz/status/2029295486574747872
+- **What:** Pragmatic Engineer podcast with Boris Cherny. Takeaways: turn repeated review comments into lint rules, build many working prototypes instead of PRDs, and value fast context switching across parallel agents over deep single-threaded work.
+
+## @scaling01 - OpenAI Symphony: board-driven agent orchestration
+> New OpenAI repo: Symphony
+> https://t.co/4ZAZlAYnRJ
+>
+> TLDR: it's an orchestration layer that polls project boards for changes and spawns agents for each lifecycle stage of the ticket
+>
+> You will just move tickets on a board instead of prompting an agent to write the code and do a PR
+
+- **Tweet:** https://x.com/scaling01/status/2029261034993684952
+- **Link:** https://github.com/openai/symphony
+- **Filed:** [openai-symphony.md](./knowledge/tools/openai-symphony.md)
+- **What:** OpenAI's Symphony watches a project board and launches an agent per ticket lifecycle stage, so moving tickets replaces prompting agents and opening PRs by hand.
+
+## @bbssppllvv - Refero MCP gives AI real UI screens for design research before generating UI
+> Imagine your AI doing design research before generating UI. Studying real screens and user flows instead of guessing
+>
+> That's Refero MCP https://t.co/uuZ6XLwIXa https://t.co/pLGLCraVCU
+
+- **Tweet:** https://x.com/bbssppllvv/status/2029245807497515098
+- **Link:** https://refero.design/mcp
+- **What:** Refero MCP connects an AI agent to Refero's large library of web and iOS UI screenshots and flows, so it can research real patterns before generating UI instead of guessing. Pitched as design-reference grounding for AI UI generation.
+
+## @noahvnct - Obsidian + Claude Code AI second brain setup in 15 minutes
+> https://t.co/aU9Igb7fnL
+
+- **Tweet:** https://x.com/noahvnct/status/2029222820257935369
+- **Link:** https://x.com/i/article/2029221356223496193
+- **Filed:** [obsidian-claude-code-second-brain-15-min.md](./knowledge/articles/obsidian-claude-code-second-brain-15-min.md)
+- **What:** Walkthrough for a free-ish second brain: an Obsidian markdown vault with Claude Code inside it, guided by a CLAUDE.md, so AI retains personal context across sessions. Covers vault structure, connecting Claude, and five starter use cases.
+
+---
+
+# Tuesday, March 3, 2026
+
+## @ctatedev - agent-browser --native: experimental single Rust binary using direct CDP
+> New experimental flag: agent-browser --native
+>
+> Single Rust binary. Direct CDP.
+> → No abstraction ceiling
+> → Self-contained daemon
+> → No Node.js process runtime
+> → Less memory, smaller footprint
+> → Zero runtime dependencies, just binary + browser
+> https://t.co/fMJ5gsKgB5
+
+- **Tweet:** https://x.com/ctatedev/status/2028960626685386994
+- **What:** Vercel's agent-browser gets an experimental --native mode: a Rust daemon talking Chrome DevTools Protocol directly, dropping the Node.js runtime and Playwright-style abstraction for lower memory and zero dependencies beyond the binary and a browser.
+
+## @ryancarson - Five-layer setup to force coding agents to obey a design system
+> https://t.co/1IYNn7LtPt
+
+- **Tweet:** https://x.com/ryancarson/status/2028916090596643078
+- **Link:** https://x.com/i/article/2028912816674226179
+- **Filed:** [design-system-enforcement-5-layers.md](./knowledge/articles/design-system-enforcement-5-layers.md)
+- **What:** Article argues design systems fail because they are optional; fix by enforcing a contract via lintable docs, a routing SKILL.md, custom lint rules, pre-commit staged lint and CI gates. Start with narrow scope and an exception policy requiring reasons.
+
+## @RLanceMartin - Updated Claude skill-creator with built-in test generation for skill trigger rate
+> check out updated skill-creator. i esp like built-in support for test generation (e.g., measure + optimize tricky things like skill trigger rate). available in Claude Code as plugin, https://t.co/JCUO9UEPAR, + Cowork.
+
+- **Tweet:** https://x.com/RLanceMartin/status/2028901056818930171
+- **Link:** https://claude.ai/
+- **What:** Anthropic's skill-creator now generates tests so you can measure and optimize hard-to-tune behavior like how often a skill triggers. Ships as a Claude Code plugin and in Cowork. Linked page was a Cloudflare challenge, so no further detail.
+
+## @HamelHusain - Evals Skills for Coding Agents: eval-audit and skills for product evals
+> https://t.co/O1j0Qz61by
+>
+> *(X article: "Evals Skills for Coding Agents")*
+
+- **Tweet:** https://x.com/HamelHusain/status/2028894099483578872
+- **Link:** https://x.com/i/article/2028710814601908224
+- **Filed:** [evals-skills-for-coding-agents.md](./knowledge/articles/evals-skills-for-coding-agents.md) (already existed)
+- **What:** Hamel Husain publishes `evals-skills`, a plugin of skills that teach coding agents to avoid common product-eval mistakes, complementing vendor eval MCP servers. Start with `eval-audit`, which diagnoses six areas (error analysis, evaluator design, judge validation, human review, labeled data, pipeline hygiene) and prioritizes fixes.
+
+## @itsolelehmann - Critic agent protocol: sub-agent review loop against a Voice DNA file
+> i finally got claude to self-correct its own writing (until it's ready to send)
+>
+> Process: say "run the critic on this". Claude spins up a sub-agent Critic that reviews the draft against the voice file and context files, rates it Needs Work / Good / Excellent, gives specific feedback, then revises and re-reviews, up to 3 rounds. Checks voice match (banned phrases, rhythm), substance (specific, not padded) and a final "would you send this unedited" bar. Rules: be specific, reference actual context files, don't over-polish, 3 rounds max.
+>
+> *Quoting @itsolelehmann:* i got claude to actually sound like me... one "Voice DNA" file with writing rules, formatting rules (no em dashes, short paragraphs), a banned-phrase list (delve, leverage, "Furthermore", "This isn't X. This is Y." negation framing), and a slot for your pre-AI writing samples that Claude pattern-matches against.
+
+- **Tweet:** https://x.com/itsolelehmann/status/2028891424733970928
+- **What:** Ole Lehmann shares a reusable critic-agent prompt file that makes Claude review its own drafts via a sub-agent for up to 3 rounds, paired with a Voice DNA file (writing rules, banned AI phrases, personal samples). Together they replace manual editing of AI output with a self-correcting generate-critique-revise loop.
+
+## @DerekFeehrer - Turning a screen recording into a polished product demo video in 20 minutes
+> I just took this screen recording and turned it into a full product demo video in 20 minutes, using only one app.
+>
+> 3D animations, text, AI voiceover, music, and 3D gradient callouts to draw attention to the important parts.
+>
+> But sure, keep posting Loom videos. https://t.co/8e1VbEYlKM
+
+- **Tweet:** https://x.com/DerekFeehrer/status/2028887848901067042
+- **What:** THIN: Video-only post; the app is not named in the text. Derek Feehrer claims a single tool converted a raw screen recording into a produced demo with 3D animation, AI voiceover, music and gradient callouts in 20 minutes, positioned as a replacement for plain Loom recordings.
+
+## @rseroter - Boris Tane's "The SDLC Is Dead" and context engineering as the new skill
+> This post from @boristane left me shook. What a powerful call to action.
+>
+> "The SDLC is dead. The new skill is context engineering. The new safety net is observability."
+>
+> "When every feature took weeks, you had to decide upfront what to build. That constraint is gone."
+>
+> "Design is becoming something you discover by giving the agent the right context, not something you dictate ahead of time."
+>
+> "The pull request flow needs to go. I was never a fan, but now it's just a relic of the past."
+>
+> "Monitoring is the only stage of the SDLC that survives. And it doesn't just survive, it becomes the foundation everything else rests on."
+>
+> Brilliant stuff.
+
+- **Tweet:** https://x.com/rseroter/status/2028880583200317568
+- **Link:** https://boristane.com/blog/the-software-development-lifecycle-is-dead/
+- **What:** Richard Seroter endorses Boris Tane (Cloudflare observability lead) arguing AI agents killed the SDLC: cheap feature generation shifts design to discovery via context, PRs become obsolete, and observability is the surviving foundation. Skill shifts from planning to context engineering.
+
+## @ICooper - Brighter repo's agent testing instructions and TDD test-first command
+> *Replying to @AHaleIII:* @ICooper Yeah I was just experiencing this. I wrote a basic testing-governance document to try to guide it; we'll see how it works.
+>
+> @AHaleIII These may help:
+>
+> https://github.com/BrighterCommand/Brighter/blob/master/.agent_instructions/testing.md
+> https://github.com/BrighterCommand/Brighter/blob/master/.claude/commands/tdd/test-first.md
+
+- **Tweet:** https://x.com/ICooper/status/2028866709516603678
+- **Link:** https://github.com/BrighterCommand/Brighter/blob/master/.agent_instructions/testing.md
+- **Link:** https://github.com/BrighterCommand/Brighter/blob/master/.claude/commands/tdd/test-first.md
+- **What:** Ian Cooper answers a reply about agents writing poor tests by pointing to the Brighter repo's real-world examples: an `.agent_instructions/testing.md` governance doc and a `.claude/commands/tdd/test-first.md` slash command. Useful templates for constraining coding agents to test-first workflows.
+
+## @vponamariov - content-visibility: auto to skip offscreen rendering
+> You know what kills your site performance?
+>
+> Rendering 3000px of content when the user can only see 900px. And there is an easy fix for that.
+>
+> It's a magical CSS property
+>
+> content-visibility: auto. https://t.co/UzYiZfhVGG
+
+- **Tweet:** https://x.com/vponamariov/status/2028866384713949201
+- **What:** Tip that the CSS property `content-visibility: auto` lets the browser skip rendering offscreen content, cutting initial render cost on long pages. Likely paired with a demo image or video not captured here.
+
+## @tomcrawshaw01 - CLIs cut agent tool token overhead 94% versus MCP servers
+> https://t.co/DdDJel68S1
+>
+> *(X article: "There's a Different Way to Give Claude Tools in 2026")*
+
+- **Tweet:** https://x.com/tomcrawshaw01/status/2028845137325892060
+- **Link:** https://x.com/i/article/2027239266280255488
+- **Filed:** [clis-vs-mcp-token-savings.md](./knowledge/articles/clis-vs-mcp-token-savings.md)
+- **What:** Article argues MCP servers front-load all tool schemas (about 15.5k tokens for 84 tools) while CLIs load about 300 and fetch help on demand. Recommends CLIHub to convert MCP servers to CLIs; Anthropic Tool Search is better than raw MCP but still costlier per call.
+
+## @n2solutionsio - Production-grade homelab built in 7 days with AI pair programmer
+> I built a production-grade homelab in 7 days with an AI pair programmer.
+>
+>   5 VLANs. 10G backbone. k3s cluster. Full GitOps. Complete observability. Every tool open source. Every config in code.
+>
+>   Here's the full stack 🧵
+
+- **Tweet:** https://x.com/n2solutionsio/status/2028838009303433218
+- **What:** Thread opener claiming a homelab with 5 VLANs, 10G backbone, k3s, GitOps and observability, all open source and config-as-code, built in a week with AI assistance. Thread contents were not captured, so the actual stack is unknown.
+
+## @TodayiLearrned - Exercise video for children's concentration and thinking skills
+> Exercise that helps children improve concentration and thinking skills. https://t.co/zv3Tv22Pwl
+
+- **Tweet:** https://x.com/TodayiLearrned/status/2028782855950840229
+- **What:** THIN: Video/image-only post claiming a physical exercise improves children's focus and cognition; no details in the text and the link only points back to the tweet itself.
+
+---
+
 # Monday, March 2, 2026
+
+## @dabit3 - Lysium: mobile-first control plane for background coding agents
+> Lysium is an app I've been building specifically for background agent orchestration.
+>
+> Features:
+> → Mobile-first + cross-platform
+> → Run multiple agents in parallel across repositories
+> → Launch agent-based requests from issues and PRs
+> → Swipe actions for close, merge, create PR, and skip-to-tail workflows
+> → One click agent-powered PR reviews + assessments
+> → One-click agent-powered issue assessments
+>
+> Think of it as a cross-platform control plane for async, agent-driven software delivery (that you can control from anywhere).
+>
+> It's still an experiment, but it's open source and available to try: https://t.co/RK2iF3KujU
+
+- **Tweet:** https://x.com/dabit3/status/2028524988551106705
+- **Link:** https://www.lysium.ai/
+- **What:** Open-source experimental app for triaging GitHub issues and PRs from a phone with swipe actions, dispatching parallel background agents (powered by Devin per the site metadata) for reviews and assessments.
+
+## @BrianRoemmele - Open-source project training transformers on Apple Neural Engine
+> BOOM!
+>
+> Apple’s Neural Engine Was Just Cracked Open, The Future of AI Training Just Change And Zero-Human Company Is Already Testing It!
+>
+> In a jaw-dropping open-source breakthrough, a lone developer has done what Apple said was impossible: full neural network training– including backpropagation – directly on the Apple Neural Engine (ANE). No CoreML, no Metal, no GPU. Pure, blazing ANE silicon.
+>
+> The project (https://github.com/maderix/ANE) delivers a single transformer layer (dim=768, seq=512) in just 9.3 ms per step at 1.78 TFLOPS sustained with only 11.2% ANE utilization on an M4 chip.
+>
+> M4 ANE hits roughly 6.6 TFLOPS per watt – 80 times more efficient than an NVIDIA A100. We’re only at the beginning (single-layer today, full models tomorrow), but the door is wide open. Ultra-cheap, on-device training is here.
+
+- **Tweet:** https://x.com/BrianRoemmele/status/2028524908779802736
+- **Link:** https://github.com/maderix/ANE
+- **Filed:** [maderix-ane.md](./knowledge/tools/maderix-ane.md)
+- **What:** Hyped announcement of maderix/ANE, a repo running transformer-layer forward and backward passes directly on Apple's Neural Engine, bypassing CoreML, Metal and GPU. Numbers (9.3 ms/step, 1.78 TFLOPS on M4) are single-layer only; efficiency claims versus A100 are promotional and unverified.
+
+## @miles_matthias - Stripe billing for LLM tokens with markup and proxy routing
+> Today, we're expanding access to billing for LLM tokens.
+>
+> Pick your models, set your markup, and route calls through @stripe’s LLM proxy (or supported partners). We sync popular model prices, configure advanced usage-based billing for your margin, and record usage automatically.
+
+- **Tweet:** https://x.com/miles_matthias/status/2028515021022548181
+- **What:** Stripe is widening access to token billing: you choose models, set a markup, and route LLM calls via Stripe's proxy or partners. Stripe syncs model prices, applies usage-based billing for your margin, and records usage automatically, which removes custom metering work for AI SaaS.
+
+## @codyschneider - Claude Code SEO workflow with DataForSEO, Keywords Everywhere and GSC warehouse
+> i can't express to you how stupidly powerful claude code is for SEO when you make .env file containing your:
+>
+> - keywords everywhere API key
+> - your dataforseo API key
+> - data warehouse for google search console data
+> - access to your CMS to publish content
+>
+> Uses: keyword universe mapping (Keywords Everywhere related/PAA to DataForSEO SERP API for gaps and content calendar), programmatic landing pages per vertical with schema, link building via DataForSEO domain intersection plus outreach drafts, internal linking maps from topical clusters, content refreshes using GSC data (via graphed.com MCP to avoid rate limits and pagination errors; claims ~20% lift), and GA4/GSC reporting through a warehouse to avoid duplication.
+
+- **Tweet:** https://x.com/codyschneider/status/2028500579501183024
+- **What:** Playbook for driving SEO end to end from Claude Code by giving it API keys for keyword, SERP and backlink data plus a GSC warehouse and CMS access. Covers keyword clustering, programmatic pages, link-gap outreach, internal linking and content refresh; promotes graphed.com as the data layer to dodge API rate limits.
+
+## @itsolelehmann - Voice DNA file to make Claude write in your own voice
+> i got claude to actually sound like me, and it's kinda ruining my ability to tell which drafts i wrote myself lol
+>
+> it's just 1 file (i'm giving the full thing to you below).
+>
+> you paste it into your cowork context folder and claude stops writing like a generic AI and starts matching your actual voice
+>
+> 95% of the file is already done for you (writing rules, banned phrases, formatting stuff, etc) all pre-loaded. The only part you fill in is a section at the bottom where you paste examples of your own writing; those samples are what claude pattern-matches against.
+>
+> Where to find samples: google docs, reports/proposals/emails, sent emails explaining complex things, long thoughtful slack messages, old pre-AI blog posts and memos.
+>
+> The file ("# Voice DNA"): Writing Rules (contractions, short paragraphs, specifics over claims, vary sentence length, physical verbs, hedging is human), Formatting Rules (no em dashes, bold sparingly), Banned Phrases (dead AI language like delve/leverage/robust, dead transitions like Furthermore, engagement bait, AI cringe, generic insider claims, and the FATAL "This isn't X. This is Y." negation-then-assertion pattern), then a Writing Samples section to paste into.
+
+- **Tweet:** https://x.com/itsolelehmann/status/2028497454635888982
+- **Link:** https://t.co/mGRBY49AWc
+- **What:** Template voice-profile file for Claude Cowork context: preloaded style rules and a banned-phrase list (especially the "not X, Y" construct) plus a slot for your own pre-AI writing samples. Useful pattern for voice-matching context files; the link failed to fetch but the full file was in the tweet.
+
+## @xmayeth - Claimed leaked Polymarket quant paper as bot-building recipe
+> A top-20 Polymarket leaderboard quant team posted a research paper and deleted it 20 seconds later. I managed to screenshot it.
+>
+> $500–$2,000 a day.
+>
+> I showed it to a guy in the top-50 leaderboard. He replied: “Where did you get this? Delete it. Don’t you dare share this document.”
+>
+> Send both pages to your OpenClaw and ask it to build the bot. Everything you need is inside
+>
+> *Quoting @xmayeth:* I gave Claude one prompt - and by morning it made $3000 on Polymarket. The whole build took 2 hours. Simple mechanic: you place YES and NO orders and collect rewards. Three scenarios: neither fills (collect daily rewards), one fills (bot hedges opposite side so YES + NO <= $1.02), both fill (fully hedged, contract pays $1). Works best on niche, low-competition markets (primaries, minor sports, regional referendums) where your pool share is larger.
+
+- **Tweet:** https://x.com/xmayeth/status/2028494108294021245
+- **What:** Hype-style claim of a leaked quant paper (screenshots only, unverifiable) paired with a prior tweet describing a two-sided liquidity-reward strategy on Polymarket: post YES and NO orders, earn rewards, hedge on fills. Treat income claims skeptically; the mechanic is market-making on niche markets.
 
 ## @lennysan - Jenny Wen (Anthropic design lead): the classic design process is dead, hire cracked new grads
 > My biggest takeaways from @jennywen (design lead at @AnthropicAI):
@@ -16745,6 +17376,8 @@ Now you can ssh anytime and start vibe from your phone.
 - **Tweet:** https://x.com/alexhillman/status/1992252350812270856
 - **What:** Personal reflection on core imperatives with emphasis on keeping humans central to all technology decisions.
 
+---
+
 # Saturday, August 9, 2025
 
 ## @buccocapital - Why enterprises won't vibe-code their own systems of record
@@ -16814,5 +17447,3 @@ Now you can ssh anytime and start vibe from your phone.
 
 - **Tweet:** https://x.com/TheJasSingh/status/1669336359428030464
 - **What:** Opening tweet of a thread pitching a step-by-step method for using ChatGPT as a language tutor. Only the hook was captured, so the actual steps are not in the bookmark.
-
----
