@@ -4173,7 +4173,681 @@
 
 ---
 
+# Saturday, August 1, 2026
+
+## @iamsahaj_xyz - /zero-tech-debt skill for planning features and reviewing code, installed via npx skills
+> /zero-tech-debt has become one of my favorite and most used skills
+>
+> I use it for planning features & reviewing code. it's fantastic with 5.6 sol ultra
+>
+> npx skills add jnsahaj/skills
+
+- **Tweet:** https://x.com/iamsahaj_xyz/status/2083558922452152740
+- **What:** Sahaj recommends his /zero-tech-debt agent skill, used for feature planning and code review and paired with a top-tier model. Install with `npx skills add jnsahaj/skills`; the skill's contents are not described in the tweet.
+
+---
+
+# Friday, July 31, 2026
+
+## @0xSero - Pi agent harness praised after Composio benchmark shows fastest median task time
+> Pi is the best agent harness and more importantly framework we have right now. 
+>
+> The stats are stunning: 
+>
+> - highest cache hit rate 
+> - lowest latency 
+> - highest performance 
+> - smallest bundle 
+> - cleanest code 
+> - cheapest cache + tiny system prompt over months adds up
+>
+> Try it
+>
+> *Quoting @composio:* Median time per task (clock time, run start to finish):
+>
+> - Pi Agent: 161.7s
+> - Hermes Agent: 179.5s
+> - Codex: 236.2s
+> - OpenCode: 271.1s
+> - Kimi Code: 297.1s
+> - Claude Code: 347.6s
+>
+> Codex placed third, so it fared better on speed. Pi's lead fits its minimal design.
+
+- **Tweet:** https://x.com/0xSero/status/2083292412211028440
+- **Quoted:** https://x.com/composio/status/2083161881850593660
+- **What:** Composio's benchmark puts Pi fastest on median task time (161.7s vs Claude Code 347.6s), attributed to its minimal design. 0xSero extends this to claim Pi has the best cache hit rate, latency, bundle size, and system-prompt cost; these extra claims come from the tweet, not shown data.
+
+## @fin465 - Outbound GTM rules: deliverability hygiene, signal-based triggers, and mining closed-won/churned/competitor data
+> "GTM iS EaSY"
+>
+> GTM:
+> > turn off open tracking
+> > no link in the first email, ever
+> > never send from your root domain
+> > verify emails at send, not at import
+> > 30 sends a day per mailbox, no more
+> > plain text, no images, no tracking pixels
+> > score positive replies, not total replies
+> > waterfall three data providers, never trust one
+> > enrich your tier one accounts, not the whole list
+> > use local data providers for emea and apac lists
+> > don't discard catch-alls, score them and send anyway
+> > track headcount deltas by department, not by company
+> > filter the list by mx record before you write any copy
+> > funding rounds are the most spammed signal in outbound
+> > 300 contacts per variant or you are just reading noise
+> > a first sales ops hire beats a series b as a trigger
+> > rebuild the list monthly, a third of titles rot every year
+> > a job post naming your competitor is a displacement signal
+> > read their job posts for the tech stack, it beats builtwith
+> > two customers asking for the same integration is a channel
+> > ai personalization on a bad list only amplifies the bad list
+> > write the first email to be forwarded down, not read at the top
+> > champion job changes are your warmest list and they cost nothing
+> > target whoever owns the pain, then ask them who owns the budget
+> > measure at meetings held, everything upstream of that is a proxy
+> > a new vp has 90 days to swap vendors, that window is your campaign
+> > soc2 on their trust center means they just started selling upmarket
+> > export closed-won, enrich it, and find the three attributes every account shares that your icp doc never mentions
+> > find where the champions from your last 20 lost deals work now, and open with the workflow you already know they run
+> > pull your competitor's sitemap, grab /customers and /case-studies, enrich every logo you find, that's the best list you'll ever build
+> > scrape every job post that names your competitor, filter to the last 30 days, and send the displacement email to the hiring manager, not the recruiter
+> > take your churned power users, find their new employers, and open with the exact workflow they used to run, nobody else hitting their inbox knows that
+
+- **Tweet:** https://x.com/fin465/status/2083259166337196169
+- **What:** A dense checklist of cold-outbound practices: strict deliverability (no tracking, low volume per mailbox, secondary domains), verify and waterfall data, measure meetings held. Best plays are signal-driven: competitor job posts, new VPs, champion moves, churned users, and competitor customer pages.
+
+## @ycombinator - YC open-sources QM, its internal multi-agent harness for accounting, legal, events, and engineering
+> We’ve decided to open-source a multi-agent harness we use internally at YC.
+>
+> We call it “QM” and it’s meant to be easy to customize, like Hermes or OpenClaw, but useful for a whole company. We use it across accounting, legal, events, and engineering (including building QM itself!).
+>
+> The whole project is under an MIT license. It is cloud-first and has Slack and web UI natively.
+
+- **Tweet:** https://x.com/ycombinator/status/2083243960684908768
+- **What:** YC releases QM under MIT: a customizable, cloud-first multi-agent harness with native Slack and web UI, aimed at company-wide use rather than single developers. YC runs it across accounting, legal, events, and engineering, including developing QM itself.
+
+## @flornkm - Shadow plugin: CSS-only smooth layered shadows with bundled agent skills
+> Introducing the shadow plugin
+>
+> Carefully crafted smooth shadows. CSS-only, works everywhere. Comes with free agent skills.
+
+- **Tweet:** https://x.com/flornkm/status/2083217875167322505
+- **What:** THIN: Announcement (likely with a demo video/image) of a CSS-only plugin for smooth, carefully crafted shadows that works in any stack and ships with free agent skills; no further details in the tweet.
+
+## @ritwikpavan - Skylight Buddy: $139 bedside routine screen for kids with no browser, apps, camera, or mic
+> NEW: Skylight just launched a tiny bedside routine coach for kids.
+>
+> Buddy is a bedside screen that walks kids through mornings, chores, and bedtime step by step, without turning into another tablet.
+>
+> -Shows tasks one at a time with emoji labels for younger kids
+> -Handles morning routines, bedtime routines, chores, and alarms
+> -Built-in nightlight, sound machine, and weather updates
+> -No browser, YouTube, social media, app downloads, camera, or microphone
+> -Parents manage everything from the Skylight app
+> -Buddy Plus adds rewards, read-aloud reminders, and visual timers
+> -7-inch display with stereo speakers and an adjustable nightlight base
+>
+> Priced at $139.
+
+- **Tweet:** https://x.com/ritwikpavan/status/2083044005320053031
+- **What:** Skylight's Buddy is a locked-down 7-inch bedside device that shows kids routines one task at a time, with nightlight and sound machine, managed from a parent app. Buddy Plus adds rewards, read-aloud reminders, and visual timers; it costs $139.
+
+---
+
+# Thursday, July 30, 2026
+
+## @miramurati - Inkling-Small: 276B-total/12B-active open-weights model matching Inkling at a quarter the size
+> Inkling-Small is comparable to Inkling at a quarter the size. Weights are open, fine-tunable on Tinker today. Look forward to seeing what people make with it.
+>
+> *Quoting @thinkymachines:* Today, we are releasing Inkling-Small.
+>
+> Inkling-Small achieves comparable performance to Inkling at a quarter of its size. It features 276B total parameters, 12B active. We are making the full weights available.
+>
+> Fine-tune it on Tinker today, or chat with it in text, image, and audio on Tinker Playground.
+
+- **Tweet:** https://x.com/miramurati/status/2082886925988598138
+- **Quoted:** https://x.com/thinkymachines/status/2082885869426631032
+- **Link:** https://thinkingmachines.ai/news/inkling-small/
+- **What:** Thinking Machines releases Inkling-Small, a mixture-of-experts model (276B total, 12B active parameters) with full open weights and performance comparable to the larger Inkling. It can be fine-tuned on Tinker and tried in text, image, and audio in Tinker Playground.
+
+---
+
+# Wednesday, July 29, 2026
+
+## @GeoffreyHuntley - Skip n8n-style agent workflows: use Temporal and enterprise service-bus prior art, keep the bus deterministic
+> second hot take, as it seems the first hot take landed.
+>
+> n8n was a silly idea, which i’ve always suspected was developed by young folks in silicon valley who are all in on the LLM craze who have never worked in corporate in their life thus didn’t have the knowledge that service busses are a solved problem and there’s deep prior art in the spooky land of enterprise.
+>
+> look up anything in the @dotnet space such as mass transit, nservicebus, [1] wcf if you wanna steal ideas for prompting.
+>
+> if you want a modern plug and play choice, @temporalio exists. use it and have a job invoke an agent as a process. don’t make the entire service bus non-deterministic. 
+>
+> [1] lots of bad memories here, not great tech impl but the theory / education is generally on point.
+
+- **Tweet:** https://x.com/GeoffreyHuntley/status/2082576563439312982
+- **What:** Argues agent orchestration should reuse mature service-bus patterns (MassTransit, NServiceBus, WCF) rather than n8n-style tools. Recommended design: a deterministic workflow engine such as Temporal that invokes an agent as one job step, so only the agent is non-deterministic.
+
+## @ankrgyl - Behavior specs: open standard for grading agents on how they should behave, not just their output
+> I have long felt the diminishing effectiveness of LLM-as-a-judge for agents, and one day over coffee @mitch_troy gave me a rant that helped clarify why. The ground truth for an agent isn't its output, it is how the agent should behave.
+>
+> This is important for two reasons: 
+>
+> (1) it is very difficult to generate good ground truth values
+>
+> (2) to effectively debug why an agent produced invalid outputs, you need to introspect its behavior. 
+>
+> Mitch then walked through why this is so hard for their team's tax agents. The behaviors themselves are subtle, hard-earned lessons from analyzing lots of failures in their traces in Braintrust, and to effectively flag them, you must effectively document them.
+>
+> That discussion led us to build behavior specs: a new open standard we're releasing with @trybasis that documents how agents should behave. The repo includes a definition of the spec along with open examples for how to write good specs, evaluate agents using it, and more.
+>
+> Clear, human-articulated prose is the highest leverage way to drive agentic systems to produce great outcomes. Behavior specs provide a framework to do that with evals. I'm super excited to work on this in the open, and would love to get feedback from others on how we can make this spec maximally useful.
+>
+> Please try it out, and share your thoughts!
+>
+> *Quoting @mitch_troy:* Out of the box, long-horizon agents struggle to accurately perform end to end work in the real economy (outside of coding) because those tasks are not easily verifiable, the data is hard to scale, and going from inputs to real outcomes can actually take many days.
+>
+> Even if you had a reliable way to verify outcomes at scale (and weren’t bothered by the multi-hour iteration loops), the sheer volume of decisions by the agent that occur in a multi-hour job makes it hard to know whether performing well will generalize to production.
+>
+> Over the last two years at @trybasis, we've been solving this problem by supervising the process our agents take to get to outcomes, rather than just looking at whether the outcome itself is correct.
+>
+> We think this is the key to building production agents at scale. 
+>
+> It's what has allowed us to run agents in production that operate for hours, sometimes days, and reliably perform tasks like entire complex tax returns end to end.
+>
+> Today, alongside @braintrust, we're open sourcing a standard for defining, evaluating, and eventually rewarding agent behaviors.
+>
+> Thread below with all the details on how we’re scaling behaviors to close the loop for long-horizon agents.
+
+- **Tweet:** https://x.com/ankrgyl/status/2082565187064811637
+- **Quoted:** https://x.com/mitch_troy/status/2082513195357307158
+- **Link:** https://www.agentbehavior.dev/
+- **What:** Braintrust and Basis release an open spec (BEHAVIOR.md files under .agents/behaviors/) that documents expected agent behavior across repeated interactions. Premise: for long-horizon agents, ground truth is process, not output, so evals and trace review should check behaviors instead of relying on LLM-as-judge on outputs.
+
+## @petergyang - Start AI design work with a design.md of color/type guidelines, sourced via Mobbin MCP or designmd.sh
+> We’ve gone from AI defaulting to designs that look like purple slop to those that have that recognizable Claude look.
+>
+> To avoid this, I always create a design md file with guidelines for color, typography, and more.
+> Here are a few places to find inspiration for your design md:
+>
+> 1. Go to @mobbin and install its MCP to find design patterns and app screens you like. Paste the screens and ask AI to make a design md.
+>
+> 2. Check out designmd sh, which has a library of design md files for popular websites and apps.
+>
+> 📌 I walk through an example of creating a design md in my new tutorial:
+>
+> *Quoting @petergyang:* Here’s my new tutorial that covers the six steps I follow to design and build products with AI, including how to:
+>
+> → Define the problem and create a design md
+> → Prototype in Claude Design
+> → Draft an interactive HTML spec
+> → Design the core flows and build
+>
+> I share a real example of how I built Tastemaker - an app for sharing your favorite movies, TV shows, and games - end to end with Claude Design and Claude Code.
+>
+> One thing I’ve learned is that good upfront planning with AI is the difference between getting the product you want vs. getting slop. Flesh out the requirements and designs first, and resist AI’s urge to start coding too soon.
+>
+> 📌 Watch my 25-minute tutorial now:
+
+- **Tweet:** https://x.com/petergyang/status/2082519030859264086
+- **Quoted:** https://x.com/petergyang/status/2082473770741272747
+- **What:** Avoid generic AI-generated visuals by writing a design.md (color, typography, etc.) first, seeded from Mobbin MCP screens or designmd.sh's library of site design files. Companion tutorial: a six-step AI product workflow (problem, design md, Claude Design prototype, HTML spec, build) that stresses planning before coding.
+
+## @jiang_kev - Polar Browser AI browser pitched as a Clay replacement for browser-based prospecting work
+> @PolarBrowser pitch: an AI browser used by 4,500,000+ people. One company cancelled Clay and saves 25+ hrs/wk per person. Team from MIT, YC, Citadel, Jane Street, Perplexity, Modal and Apple. 100 hours of work from 30 seconds of typing. Download the world's most powerful AI browser.
+
+- **Tweet:** https://x.com/jiang_kev/status/2082496145994248488
+- **Link:** https://polarbrowser.com/
+- **What:** Promotional post for Polar Browser, an AI browser agent positioned as replacing Clay-style GTM enrichment workflows by automating browser tasks from a short prompt. Claims (4.5M+ users, 25+ hrs/week saved) are unverified marketing.
+
+## @0xPia - Anti-AI-tell prompt banning antithesis, em dashes, rule of three and corporate verbs
+> quarterly reminder to use this prompt to get your AI writing to sound better:
+>
+> No antithesis. No corrective negation. No paragraph pinning. No parataxis. No summary beats. No rhetorical crutches. No negative parallelisms. No negative anaphoras. No contrasting pairs. No rule of three. No em dashes. No throat-clearing openers. No landing sentences. No setup/payoff constructions. No parallel sentence structures within a paragraph. Vary sentence length unpredictably. No stacked noun phrases. No filler intensifiers (genuinely, really, truly, actually). No corporate-register verbs (leverage, underscore, reflect). No nominalization. No hedging qualifiers. Write for the spoken voice. No performed enthusiasm.
+
+- **Tweet:** https://x.com/0xPia/status/2082473727602671690
+- **What:** Reusable system prompt that lists specific AI writing tells to ban (antithesis, negative parallelisms, rule of three, em dashes, throat-clearing, filler intensifiers, corporate verbs, hedging). Also asks for varied sentence length and a spoken voice.
+
+## @andrew_n_carr - Simplified Technical English skills to stop agents inventing project-specific jargon
+> Claude and codex have gotten to the point where they invent their own project specific vocab. I use a Simplified Technical English prompt often when it gets out of hand. That seems to reasonate, the community put together skills and guides based on the idea
+>
+> Claude skill, STE skill kit, Writing styles, Runbook skill, STE checker. Enjoy! Happy slop combat
+
+- **Tweet:** https://x.com/andrew_n_carr/status/2082453463712018658
+- **Link:** https://github.com/danyuchn/asd-ste100-skill
+- **Filed:** [asd-ste100-skill.md](./knowledge/tools/asd-ste100-skill.md)
+- **What:** Coding agents drift into private project vocabulary; prompting for ASD-STE100 Simplified Technical English counters it. Collects community tooling: the ASD-STE100 Claude skill, an STE skill kit, writing-styles, a runbook skill and an STE checker.
+
+---
+
+# Tuesday, July 28, 2026
+
+## @GeoffreyHuntley - 3D printing and token maxing both work like Factorio bootstrapping
+> 3d printing is like factorio
+> token maxing is like factorio
+>
+> it's kinda strange how you bootstrap up primitives one at a time using a simple tool. just clicks with my head.
+>
+> tldr: cancel the claude sub, purchase a h2c
+
+- **Tweet:** https://x.com/GeoffreyHuntley/status/2082308796685439002
+- **What:** Compares 3D printing and heavy LLM token use to Factorio: you bootstrap more capable primitives one at a time from a simple tool. Jokes that the answer is to cancel the Claude subscription and buy a Bambu H2C printer.
+
+## @OpenAI - Codex Security CLI quietly shipped: scan repos, track findings, verify fixes, CI/CD checks
+> We quietly released the open-source Codex Security CLI, but Hacker News found it before we had a chance to share it here...
+>
+> You can now use it to scan repositories, track findings across runs, verify fixes, and add security checks to CI/CD.
+>
+> This is an early release, and we're listening to your feedback as we continue improving it.
+
+- **Tweet:** https://x.com/OpenAI/status/2082263717916586117
+- **What:** Official OpenAI confirmation of the open-source Codex Security CLI after Hacker News surfaced it. Scans repos, tracks findings across runs, verifies fixes and adds CI/CD security checks; labelled an early release seeking feedback.
+
+## @thsottiaux - OpenAI releases open-source Codex Security CLI and TypeScript SDK
+> More opensource goodness. We have just released a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code. Scan in CI.
+
+- **Tweet:** https://x.com/thsottiaux/status/2082241164850364555
+- **Link:** https://github.com/openai/codex-security
+- **Filed:** [codex-security.md](./knowledge/tools/codex-security.md)
+- **What:** OpenAI open-sourced a CLI and TypeScript SDK that finds, validates and fixes code vulnerabilities and runs as a CI scan. Part of Codex's push into security tooling.
+
+## @chrispisarski - Claude playbook for in-house GTM: ICP mining, mail infra, signals, lookalikes, champion tracking
+> sales/GTM in-house playbook: connect CRM/Crustdata/Fathom/Instantly via MCP and CLI, then use Claude with subagent verification and /loop for ICP/TAM mapping, mail infra and warmup, signal-based outbound, lookalike lists off closed-won, and champion job-change tracking.
+>
+> *Quoting @chrispisarski:* 4 months later the majority of YC founders i'm speaking with are still trying to hire the person who can do all this with AI: map ICP/TAM, build signal and lookalike lists, track champions who change jobs, set up mail infra, run outbound, score inbound, re-engage closed-lost, build pre-call briefs, own CRM architecture.
+
+- **Tweet:** https://x.com/chrispisarski/status/2082236016161677644
+- **Quoted:** https://x.com/chrispisarski/status/2081846875217399998
+- **What:** Long how-to for running GTM with Claude Code: derive icp.md from closed-won deals and verify with a blind-scoring subagent, set up alt domains with SPF/DKIM/DMARC, warmup and no open tracking, keep only signals with 1.5x+ lift, build lookalikes via Crustdata, and watch champions who change jobs. Framing: the hardest hire is one person who owns it all, and these workflows cost a fraction of equivalent sales tools.
+
+## @paularambles - Source of the viral recipe layout is cookingforengineers.com
+> unsurprisingly the website this is from is literally cookingforengineers dot com
+>
+> *Quoting @juanbuis:* i can't believe someone solved recipe design decades ago and everyone just decided to ignore it
+
+- **Tweet:** https://x.com/paularambles/status/2082213774514348364
+- **Quoted:** https://x.com/juanbuis/status/2082162851553398821
+- **What:** Identifies the recipe layout in juanbuis's post as coming from cookingforengineers.com, whose engineer-style format fits the "recipe design was solved decades ago" claim. Context for the earlier bookmark.
+
+## @codyschneider - DIY waterfall email enrichment with a cheap script instead of VC-backed API markups
+> why you paying VC backed company api calls do waterfall enrichment just CPU compute literally charging you 10000% markup on compute how GTM engineer yourself you need server then implement this waterfall enrichment Getleads .io > Icypeas > Prospeo > LeadMagic > FullEnrich > Findymail > BetterContact > Datagma > Apollo make api calls CPU only go to next if previous didn't find email this literally python script coding agent write once then waterfall build total addressable market, serviceable addressable market, serviceable obtainable market as postgres database take back your sovereignty
+
+- **Tweet:** https://x.com/codyschneider/status/2082164194112114739
+- **What:** Claims enrichment SaaS tools mark up simple compute massively. Proposes a coding-agent-written Python waterfall that tries email-finder APIs in order (Getleads, Icypeas, Prospeo, LeadMagic, FullEnrich, Findymail, BetterContact, Datagma, Apollo), stops at the first hit, and stores TAM/SAM/SOM in Postgres.
+
+## @juanbuis - Cooking for Engineers recipe format as the long-ignored fix for recipe design
+> i can't believe someone solved recipe design decades ago and everyone just decided to ignore it
+
+- **Tweet:** https://x.com/juanbuis/status/2082162851553398821
+- **What:** Argues that a structured, ingredient-aligned recipe layout solved recipe design decades ago and was ignored by mainstream recipe sites. Image-only example; a reply identifies the source as the Cooking for Engineers site.
+
+## @ttunguz - Aftermarket Harnesses: the harness moves AI performance more than the model
+> AI harnesses have more impact on performance than models.
+
+- **Tweet:** https://x.com/ttunguz/status/2082158740107866459
+- **Link:** https://x.com/i/article/2082158492337811457
+- **Filed:** [aftermarket-harnesses-tunguz.md](./knowledge/articles/aftermarket-harnesses-tunguz.md)
+- **What:** Tunguz cites Endor Labs: GPT-5.5 scored 61.5% in Codex but 87.2% in Cursor, while Opus 4.7 scored 87.2% in Claude Code and 91.1% in Cursor. Input tokens are 86-98% of traffic, and harness-level prefix caching cuts cost 40-80%, so harness design is the lever.
+
+## @businessbarista - Anti-slop content machine: 10-step pipeline that mines your own words and interviews you
+> anti-slop content machine (10,000,000+ views). Full writeup: a daisy-chained system that turns what you already say into publish-ready content. Key way to avoid turning into a slop cannon: raw material must come from you. It mines places you already talk (Slack, Notion, Gmail, Linear, GitHub) plus what the internet is saying, finds ideas worth writing, interviews you to extract the story, drafts it, and edits it to a 9/10 bar before you post. Pipeline: Creator Select/onboarding, Oracle (idea scoring 0-10) plus Internet Reader, Research brief, Interview Panel of six personas, Production (raw markdown of your words), Refinement, Writer's Council of six reviewers, Revision Loop to 9/10, Repurposing Engine (10+ native derivatives), optional Distribution, and a Learning Loop that turns your edits into lessons. Process layer lives in git; personal layer stays gitignored. P.S. thinking about open sourcing this. should I?
+
+- **Tweet:** https://x.com/businessbarista/status/2082146039801217333
+- **What:** Long post by Business Barista describing an AI content system built on the principle that the machine never invents voice or insight. It mines your own communications, interviews you, drafts, runs a six-reviewer council to 9/10, repurposes into 10+ native pieces, and learns from your edits. Split into shared process and private personal layers.
+
+## @JosephJacks_ - Self-hosting Kimi K3 on 8x B300s pays back in under 100 days
+> At 75%~ utilization, running K3 self-hosted on 8x B300s can securely serve > 30 billion tokens a month.. that's $500K~ compute + monthly opex $10K !! At current API prices of $3/in $15/out per 1M tokens, self-hosting payback takes < 100 days.
+>
+> Self Host Your Open Weights
+
+- **Tweet:** https://x.com/JosephJacks_/status/2081987278340289000
+- **What:** Joseph Jacks claims an 8x B300 node at about 75% utilization serves over 30B tokens a month for roughly $500K hardware plus $10K monthly opex. At $3/$15 per 1M token API prices he estimates payback under 100 days. These figures are his unverified estimates.
+
+## @kalashvasaniya - Automated SEO via Search Console and Ahrefs APIs and a daily cron job
+> so true. i just connected gsc api and ahrefs api to my codebase and a cron job runs every day, finds keyword gaps, tracks ranking changes, spots pages losing traffic, and gives me a list of what to fix or write next. at this point, i barely open dashboards anymore, everything important just shows up automatically
+>
+> *Quoting @hridoyreh:* Google Search Console is a gold mine. 99% of people only use 5% of it...
+
+- **Tweet:** https://x.com/kalashvasaniya/status/2081985531802697994
+- **Quoted:** https://x.com/hridoyreh/status/2081937185507336213
+- **What:** Replying to a post that Search Console is underused, Kalash describes wiring GSC and Ahrefs APIs into a daily cron job. It finds keyword gaps, tracks ranking changes, flags traffic-losing pages and outputs a to-do list, replacing dashboard checks.
+
+## @doodlestein - Prompt to fold deployment lessons into AGENTS.md
+> Useful prompt:
+>
+> take the most important lessons learned from the deployment process and use them to expand/elaborate on the towards the end of AGENTS.md so future deployments are smoother
+
+- **Tweet:** https://x.com/doodlestein/status/2081981890861715796
+- **What:** A reusable prompt that makes an agent distill lessons from a deployment into AGENTS.md. It stops hard-won deployment knowledge from being re-learned expensively in later runs. The agent's reply suggests it reserves the file first and finds where it fits.
+
+---
+
+# Monday, July 27, 2026
+
+## @dremnik - Quill: free, private, open-source local meeting recorder as a Granola alternative
+> https://github.com/humanitas-labs/quill
+>
+> *Replying to @dremnik:* continuing should be free, today's victim is: granola. quill gives you the same thing free and completely private, just start recording and after you stop it, the entire audio gets transcribed into a default folder. completely open source as always
+
+- **Tweet:** https://x.com/dremnik/status/2081879252283392166
+- **Link:** https://github.com/humanitas-labs/quill
+- **What:** Andrew releases Quill (humanitas-labs), an open-source Granola replacement. It records meetings locally, then transcribes the whole audio into a default folder after you stop, keeping everything private and free. GitHub metadata was empty so not filed.
+
+## @earthtojake - text-to-cad passes 10,000 GitHub stars with broad CAD export formats
+> text-to-cad just crossed 10,000 stars
+>
+> you can use it to generate:
+> - STEP, URDF, SDF, STL, 3MF, GLB
+> - DFM
+
+- **Tweet:** https://x.com/earthtojake/status/2081826428295729284
+- **What:** Jake Fitzgerald says his text-to-cad project passed 10,000 stars. It generates CAD and robotics artifacts (STEP, URDF, SDF, STL, 3MF, GLB) plus design-for-manufacturing checks from text prompts.
+
+## @natolambert - Kimi K3 license: MIT-inspired but non-commercial above $20M/yr revenue
+> Kimi K3 license. It's inspired by MIT but distinctly non-commercial, where any company making over $20M/yr must get specific commercial deal (and display Kimi K3 if over 100M users or $20M/mo revenue)
+
+- **Tweet:** https://x.com/natolambert/status/2081760901020201086
+- **What:** Nathan Lambert summarizes the Kimi K3 license as MIT-style but effectively non-commercial at scale. Companies over $20M/yr revenue need a separate commercial deal, and those over 100M users or $20M/mo revenue must display Kimi K3 branding.
+
+## @arseniycodes - Superlog open-sourced, with skills and SDKs already public
+> Today we're open sourcing superlog. A big part of what we're doing (skills, SDKs) is already open-source. We build for developers. We want to share our work with the developer community and make it a common journey. Join us!
+
+- **Tweet:** https://x.com/arseniycodes/status/2081701168003076367
+- **Link:** https://github.com/superloglabs/superlog
+- **What:** Arseniy announces the Superlog repo (superloglabs) is now open source, following earlier open-sourcing of its skills and SDKs. The GitHub metadata was empty, so the product's function is not confirmed here.
+
+## @SeanZCai - 20-minute primer on RL data companies (Mercor, Handshake, Surge) as more than "labeling"
+> Youtube link for my state of data is out. Feel free to send the 20 minute primer to anyone who doesn't understand Mercor, Handshake, Surge, all the RL data companies. I honestly expose a lot more alpha than I should. Data is a lot more than "labeling"
+
+- **Tweet:** https://x.com/SeanZCai/status/2081608376715493592
+- **Link:** https://www.youtube.com/watch?v=ZyIoTOAbRfs
+- **What:** Sean Cai shares a 20-minute YouTube primer on the state of data for AI, explaining how RL data vendors like Mercor, Handshake and Surge work. He argues the business is much more than simple labeling. Transcript was not available, so details are unverified.
+
+---
+
+# Sunday, July 26, 2026
+
+## @abue_ammar - Tinycast, a native Swift Raycast alternative under 100MB RAM
+> Introducing Tinycast! A tiny, blazing-fast, fully native written in swift Raycast alternative.
+>
+> • < 100MB RAM & 3MB on disk
+> • Unlimited clipboard history
+> • Import everything from Raycast
+> • Free & open source
+> • No account, No telemetry. No bullshit
+
+- **Tweet:** https://x.com/abue_ammar/status/2081485415916380623
+- **Link:** http://tinycast.dev/
+- **What:** Tinycast is a free, open-source macOS launcher written natively in Swift, using under 100MB RAM and 3MB on disk. It offers unlimited clipboard history, imports Raycast data, and has no account or telemetry.
+
+## @chddaniel - Satirical "Idle" app pays users to watch ads on the AI thinking spinner
+> Make an extra $2k/mo by just using AI, like you would anyway.
+>
+> Works for every AI: Cursor, ChatGPT, Claude Code, Gemini, Lovable, Bolt, Base44, Codex, V0, Replit...
+>
+> *Replying to @chddaniel:* Introducing Idle: send prompts in any chatting AI, advertisers bid on the spinner, you get paid 50% from every ad you see. We're spending hours behind the "Thinking..." spinner, so we might as well make some $$$ out of it.
+
+- **Tweet:** https://x.com/chddaniel/status/2081291367071039536
+- **Link:** https://idleattentioncompany.shipper.now/
+- **What:** Pitch for Idle, an app that sells ad slots on the "Thinking..." spinner of AI tools and shares 50% of revenue with users, claiming about $2k/mo. Landing page is a Shipper-built site called Idle Attention Company; reads as a half-joking attention-monetization concept.
+
+---
+
+# Saturday, July 25, 2026
+
+## @rdominguezibar - Kimi CEO's playbook (no content captured)
+> Kimi's CEO laid out the KIMI PLAYBOOK
+
+- **Tweet:** https://x.com/rdominguezibar/status/2081021192614392096
+- **What:** THIN: Teaser that Kimi's CEO published a "KIMI PLAYBOOK", with the content presumably in attached media. No text of the playbook was captured, so its actual points are unknown.
+
+---
+
+# Thursday, July 23, 2026
+
+## @bryan_johnson - 27-point sauna protocol for longevity
+> sauna is great
+>
+> everything you need to know...
+>
+> 0. sauna is a top longevity therapy
+> 1. dry sauna is best
+> 2. wet & Infrared saunas lack longevity evidence
+> 3. aim to do 4-7 sessions per week
+> 4. the body takes time to acclimate to sauna
+> 5. expect sleep & HRV to be wrecked in first 2 weeks
+> 6. after workouts is ideal
+> 7. avoid polyester clothing & towels
+> 8. wear as little as possible & 100% cotton
+> 9. heat wrecks male fertility
+> 10. men should ice their balls
+> 11. women don't need ice
+> 12. wear a sauna hat to avoid hair/scalp irritation
+> 13. 11 min @ 176°F (80ºC) is when benefits start
+> 14. 20 min @ 195°F (90.5ºC) is ideal
+> 15. pro move: core body temp to 102.2°F (39ºC)
+> 16. this takes me 34 minutes @ 200°F (93ºC)
+> 17. be careful, that's hot as hell & not necessary
+> 18. don't cold plunge after
+> 19. never sauna dehydrated
+> 20. drink electrolytes before and after
+> 21. sauna's good for muscle recovery
+> 22. it may remove microplastics from body
+> 23. don't water rocks, avoid aerosolizing contaminants
+> 24. measure the air quality in your sauna (if you can)
+> 25. remove potentially toxic materials from your sauna
+> 26. sauna with a friend creates joy
+
+- **Tweet:** https://x.com/bryan_johnson/status/2080377484793511959
+- **What:** Johnson's checklist: dry sauna 4-7 times a week, benefits start near 11 min at 80C, ideal 20 min at 90C, post-workout, cotton only, hydrate with electrolytes, no cold plunge after. Also notes heat hurts male fertility and the first two weeks hurt sleep and HRV.
+
+---
+
+# Wednesday, July 22, 2026
+
+## @reunorx - Overrated beach destinations vs underrated alternatives
+> ❌ OVERRATED beach destinations not worth your money:
+>
+> • Phuket 🇹🇭 (mass tourism, dirty water & pushy vendors)
+> • Tulum 🇲🇽 (fake boho aesthetic, $30 tacos & bad roads)
+> • Mykonos 🇬🇷 ($100 sunbeds & overcrowded narrow streets)
+> • Cancún 🇲🇽 (glorified concrete hotels & fake experiences)
+> • Waikiki / Hawaii 🇺🇸 (stuck in traffic on a beach)
+>
+> ✅ Underrated beach paradises actually worth visiting ↓
+
+- **Tweet:** https://x.com/reunorx/status/2080105314674786744
+- **What:** Travel list calling Phuket, Tulum, Mykonos, Cancun and Waikiki overpriced or overcrowded. The recommended underrated alternatives are in the thread, not captured here.
+
+## @evansantoslaw - DingDuff, a free Claude MCP connector for legal research that rivals Westlaw AI
+> Love to see it. Two Austin lawyers built DingDuff, a free MCP connector that gives Claude access to millions of opinions, statutes, rules, and PACER filings. In their own testing, it matched or beat Westlaw AI.
+>
+> Interested to see where this goes. This feels like where legal research is headed.
+>
+> *Quoting @bobambrogi:* Two lawyers have built an MCP connector for Claude that they say outperforms the legal research giants. And it is completely free for any lawyer to use.
+
+- **Tweet:** https://x.com/evansantoslaw/status/2080072057254006919
+- **Quoted:** https://x.com/bobambrogi/status/2079937736820072842
+- **Link:** https://www.lawnext.com/2026/07/built-by-lawyers-for-lawyers-dingduff-is-a-free-claude-connector-that-its-founders-say-rivals-the-legal-research-giants.html
+- **Filed:** [dingduff.md](./knowledge/tools/dingduff.md)
+- **What:** Two practicing Austin lawyers built DingDuff, a free MCP connector giving Claude access to court opinions, statutes, rules and PACER filings. Founders claim it matches or beats Westlaw AI in their own testing; commentators see it as a sign of where legal research is heading.
+
+## @Elitedelicacy - Korean popcorn chicken (video/image only)
+> Korean Popcorn Chicken
+
+- **Tweet:** https://x.com/Elitedelicacy/status/2080060587321504125
+- **What:** THIN: Food post with only the caption "Korean Popcorn Chicken" and media, no recipe text or other context captured. Bookmarked as a recipe or food idea.
+
+## @ValsAI - Vals-Smith turns your merged PRs into a custom coding benchmark
+> Introducing Vals-Smith: turn your code base into a customized benchmark.
+>
+> Public benchmarks tell you which model is strongest overall, not which model is the best on your code. Vals-Smith turns your merged pull requests into real coding tasks and measures the percentage a model can actually resolve.
+>
+> New models ship every week. Vals-Smith tells you which one to trust with your code.
+
+- **Tweet:** https://x.com/ValsAI/status/2079976484736037316
+- **What:** Vals-Smith builds a private benchmark from a repo's merged pull requests and reports the share of tasks each model resolves. It answers which model to trust on your own code rather than on public leaderboards.
+
+## @petergyang - Open-source /no-ai-slop skill strips 20+ AI writing patterns
+> I'm sick of reading AI slop, so today I'm open-sourcing my /no-ai-slop skill that removes 20+ slop patterns from any piece of writing.
+>
+> Why I built the skill: I use AI to edit my writing for spelling, grammar and clarity, but even the best models keep producing the same slop:
+>
+> → Binary contrasts: "It's not X. It's Y."
+> → Throat-clearing openers: "Here's what nobody tells you."
+> → Fake-profound endings: "The future isn't coming. It's already here."
+>
+> Use this skill responsibly. I always write a first draft manually before iterating with AI on edits and do another manual pass at the end.
+
+- **Tweet:** https://x.com/petergyang/status/2079943830024188105
+- **Link:** https://github.com/petergyang/no-ai-slop
+- **Filed:** [no-ai-slop.md](./knowledge/tools/no-ai-slop.md)
+- **What:** A Claude skill that edits prose to remove 20+ recurring AI tells such as binary contrasts, throat-clearing openers and fake-profound closers. Positioned for editing a human first draft, not for generating text end-to-end.
+
+---
+
+# Tuesday, July 21, 2026
+
+## @haydenbleasel - Files SDK 2.2 adds NestJS, Cloudflare R2 and React Native/Expo support
+> Files SDK 2.2 is out.
+>
+> This release brings Files to more frameworks, runtimes, and edge deployments:
+>
+> → First-class NestJS support
+> → Lightweight Cloudflare R2 client
+> → React Native and Expo support
+>
+> Let's take a look ↓
+
+- **Tweet:** https://x.com/haydenbleasel/status/2079611634377699495
+- **What:** Release announcement for Files SDK 2.2, widening reach to NestJS, a lightweight Cloudflare R2 client for edge runtimes, and React Native/Expo. No further detail beyond the tweet.
+
+## @james406 - PostHog replaced $140k Zendesk contract with in-house Conversations product, free to customers
+> we just ditched our $140k zendesk contract for posthog conversations - a product one developer built in house.
+>
+> it's available for our customers to use. free. you only pay if you want auto resolution of tickets using our data.
+>
+> it all feeds into self driving product.
+
+- **Tweet:** https://x.com/james406/status/2079573748680724744
+- **What:** PostHog dropped a $140k Zendesk contract for Conversations, built by one developer and offered free to customers, charging only for AI auto-resolution using their data. It feeds PostHog's "self driving product" vision.
+
+---
+
+# Monday, July 20, 2026
+
+## @kaushikgopal - Put writing/communication standards in AGENTS.md, not just skills, so they always apply
+> this is really good, but some additional suggestions:
+>
+> it's best to put this in your agents.md as general instructions for the harness (so it *always* applies; recall that models do not always load matching skills)
+>
+> i highly recommend some of the popular standards mentioned in this screenshot btw; they're great reads for improving communication in general.
+
+- **Tweet:** https://x.com/kaushikgopal/status/2079391464631742475
+- **What:** THIN: Reply endorsing a writing-style guide for agents (shown in a screenshot) with one key tip: put it in AGENTS.md since models do not reliably auto-load matching skills. Also recommends the referenced writing standards.
+
+## @hubermanlab - Huberman Lab episode with Dr. Tommy Wood on learning, neuroplasticity and cognitive health
+> The new Huberman Lab episode is out: Accelerate Learning & Increase Cognitive Capacity | Dr. Tommy Wood (@DrRagnar). Chapters cover neuroplasticity and aging, flow states, practice, focused-work tools, nutrition and omega-3s, GLP-1s and peptides, stimulants, exercise and brain health, dementia risk factors (including shingles vaccine), concussion/TBI and creatine.
+
+- **Tweet:** https://x.com/hubermanlab/status/2079204680924578234
+- **What:** Roughly 2h40m episode on enhancing learning and long-term brain health, spanning neuroplasticity, motor and cognitive challenge, nutrition and supplements, exercise, dementia prevention and TBI treatment. No transcript was captured, so only the chapter list is known.
+
+## @doodlestein - Building blocks over apps: asupersync and FrankenSuite as long-running example of Mitchell Hashimoto's thesis
+> I’ve been doing this since last year. Hence my asupersync library and my FrankenSuite set of projects.
+>
+> The mass adoption part has eluded me thus far, but I’m the single biggest user of all my libraries and I see the extreme value and utility of them every day as I build more.
+>
+> *Quoting @mitchellh:* The Building Block Economy (article)
+
+- **Tweet:** https://x.com/doodlestein/status/2079201345072980351
+- **Quoted:** https://x.com/mitchellh/status/2041566958681014418
+- **Link:** https://x.com/i/article/2041548775328829440
+- **Filed:** [building-block-economy-mitchellh.md](./knowledge/articles/building-block-economy-mitchellh.md)
+- **What:** Mitchell argues reusable building blocks (libghostty, Next.js, Tailwind) now drive adoption more than polished apps because agents excel at assembling proven components. Doodlestein says he has built that way since last year (asupersync, FrankenSuite) and is his own heaviest user, without mass adoption yet.
+
+---
+
+# Sunday, July 19, 2026
+
+## @enginoid - Using Linear as the control plane for parallel coding-agent batches (software factory)
+> https://t.co/RtoVbYmzET
+
+- **Tweet:** https://x.com/enginoid/status/2078850177926938666
+- **Link:** https://x.com/i/article/2078299179231715328
+- **Filed:** [linear-software-factory-agents.md](./knowledge/articles/linear-software-factory-agents.md)
+- **What:** Article on running ~400 agent-handled issues a month on a $12 Linear plan: outcome-hierarchy tickets, a triage inbox, ticket contracts with verification checklists, 3-5 parallel workstream batches, and hooks that force agents to fully close tickets.
+
+## @thdxr - Record HAR network traces so agents derive site clients instead of driving browsers
+> used a trick @jlongster came up with
+>
+> agents can control browsers but you can also ask it to record network requests into a HAR file
+>
+> then it can derive a client for any website which is more efficient than browser controlling it every time
+>
+> made it build a quick uber eats cli
+
+- **Tweet:** https://x.com/thdxr/status/2078727284865827140
+- **What:** Instead of repeatedly browser-automating a site, have the agent capture network requests to a HAR file and generate a direct API client from it. Faster and cheaper per run; dax demoed by building an Uber Eats CLI.
+
+---
+
+# Saturday, July 18, 2026
+
+## @doodlestein - GPT-5.6 Sol Ultra left alone for 3 days builds a huge self-managed TODO list
+> When you give GPT-5.6 Sol Ultra a project to work on, tell it to use its built-in TODO list functionality to manage things, and then leave it to its own devices for 3 days, you’re liable to come back and find a totally insane list like this, lmao:
+
+- **Tweet:** https://x.com/doodlestein/status/2078497833032749436
+- **What:** THIN: Jeffrey Emanuel reports that long-running GPT-5.6 Sol Ultra sessions, told to manage work via its built-in TODO feature, produce enormous task lists over 3 days. The list itself is only in an image, so detail is unavailable.
+
+---
+
+# Friday, July 17, 2026
+
+## @theo - Running GPT-5.6 and Kimi K3 inside Claude Code via CLIProxyAPI, "claudex" alias
+> "Why do you use gpt-5.6 and kimi k3 inside of Claude Code?"
+>
+> This vid goes in depth on what Claude Code gets right, what Codex gets wrong, and how to copy my setup :)
+>
+> Blessed by Tibo btw
+>
+> *Quoting @thsottiaux:* If you aren't yet bold enough to install the Codex app, you can stay in the presence of your orange crab and point it at GPT 5.6 Sol. Takes 5 minutes. Step 1: Install CLIProxyAPI. Step 2: Connect. Step 3: Define alias claudex (CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol, CLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1, CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3, ENABLE_TOOL_SEARCH=false, claude --model gpt-5.6-sol). If this gets blocked, I owe you a reset.
+
+- **Tweet:** https://x.com/theo/status/2078217355780624864
+- **Quoted:** https://x.com/thsottiaux/status/2076119366647894371
+- **What:** Theo's video argues for using the Claude Code harness with non-Anthropic models (GPT-5.6, Kimi K3). Codex's Tibo endorses it with a recipe: CLIProxyAPI plus a `claudex` alias setting subagent model, effort, concurrency and tool-search env vars.
+
+## @levelsio - Recipe for coding with Kimi K3 in OpenCode via $19/mo Kimi Code plan, avoiding Claude Code refusals
+> How to code with Kimi K3 (better than Fable and no restrictions) today:
+>
+> - Ask Codex or Claude Code to install OpenCode (yes it will 😂!)
+>
+> - Go to kimi.com, make an account, pay for membership $19/mo, get an API key
+>
+> - Run OpenCode, do /connect and connect to Kimi Code, paste API key
+>
+> - I recommend set to BUILD mode with Shift+Tab, u can set bypass permissions (like I do in Claude Code always) in /settings
+>
+> *Quoting @levelsio:* Thanks everyone got OpenCode working with Kimi K3. First I tried OpenRouter but immediately it said "rate limited upstream", so I signed up to Kimi, paid $19, got an API key. Unlike Claude Code it doesn't block me every 5 minutes for just making Windows XP work in the browser, and Claude lectured him about asking health questions.
+
+- **Tweet:** https://x.com/levelsio/status/2078097783140053340
+- **Quoted:** https://x.com/levelsio/status/2078093365455790526
+- **Link:** https://www.kimi.com/
+- **What:** Step-by-step setup: install OpenCode, buy the $19/mo Kimi Code plan, connect via /connect with the API key, use BUILD mode with bypass permissions. Motivation was OpenRouter upstream rate limits and Claude Code's overzealous safety refusals on benign tasks.
+
+---
+
 # Thursday, July 16, 2026
+
+## @theo - CLIProxyAPI proxies models into harnesses, beats alternatives for trying Kimi K3
+> nvm. CLIProxyAPI stays undefeated.
+>
+> *Quoting @theo:* What are the best harnesses to use with Kimi K3 right now? It heard it's pretty good at orchestration, where's the best place to see that?
+
+- **Tweet:** https://x.com/theo/status/2077883902635725018
+- **Quoted:** https://x.com/theo/status/2077871618437919122
+- **What:** Theo asked which harness best runs Kimi K3 (reportedly strong at orchestration), then concluded that CLIProxyAPI, a proxy that routes arbitrary models into existing harnesses, beat every alternative.
 
 ## @mitchellh - Generic agent harness plus CLI/MCP beats built-in product chat boxes
 > Using a generic agent harness (e.g. Codex, Claude, OpenCode) + CLI/MCP is better than "Ask me anything" built-in product chat boxes in every product I've ever tried. A big reason is I can use the latest frontier models, another is mixing more context. Why your box over mine?
