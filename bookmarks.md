@@ -1,3 +1,68 @@
+# Saturday, February 21, 2026
+
+## @bcherny - Subagent Worktrees for One-Shot Batch Migrations
+> *Replying to @nummanali:* I have a few problems with worktrees:
+> - you need to reinstall everything
+> - you need to clean up after
+> - conflicts arise again on merge
+> - different agents handle it their way
+>
+> Personally, I've been finding subagent worktrees useful for 1-shotting large batch changes like codebase-wide code migrations. Previously, these would have been a single plan (less well executed), a Ralph loop (doesn't always work), a custom harness with agent SDK in a python loop (more code), or a team.
+>
+> I don't use —worktree as much but the team is split roughly 50/50 with half using worktrees and half preferring multiple git checkouts or multiple tabs in the Desktop app.
+
+- **Tweet:** https://x.com/bcherny/status/2025117826412106216
+- **Parent:** https://x.com/nummanali/status/2025010101334016288
+- **What:** Boris Cherny answers a worktree skeptic: subagent worktrees shine for one-shot codebase-wide migrations, replacing plans, Ralph loops, or custom SDK harnesses. The Claude Code team splits 50/50 between worktrees and multiple checkouts or Desktop tabs; thread adds that he uses default Task subagents plus code-simplifier, and Agent Teams for cross-worktree full-stack collaboration.
+
+---
+
+# Friday, February 20, 2026
+
+## @bcherny - Built-in Git Worktree Support in Claude Code CLI
+> Introducing: built-in git worktree support for Claude Code
+>
+> Now, agents can run in parallel without interfering with one other. Each agent gets its own worktree and can work independently.
+>
+> The Claude Code Desktop app has had built-in support for worktrees for a while, and now we're bringing it to CLI too.
+>
+> Learn more about worktrees: https://t.co/JFkD2DrAmT
+
+- **Tweet:** https://x.com/bcherny/status/2025007393290272904
+- **Link:** https://git-scm.com/docs/git-worktree
+- **What:** Claude Code 2.1.50 adds `claude --worktree` (optional name, `--tmux`) for isolated parallel sessions, plus worktree isolation for subagents and `isolation: worktree` in custom agent frontmatter. Worktrees branch off the default branch, support setup hooks (e.g. copying .env) and non-git VCS via hooks, and are auto-cleaned when no changes were made.
+
+## @garybasin - Stress-Test Skill: Verify Plans With POCs Before Building
+> made a little skill for this to share: https://t.co/W2WrIe4dcW
+>
+> i think there's a broader point that...
+>
+> **the models are still lazy and not aware of their capabilities**
+>
+> ...hopefully this is solved in the next gen, but for now you can save a lot of time and pain by having the model verify assumptions by running small POCs upfront -- this dramatically increases the odds of the agent's v1 being useful
+>
+> *Quoting @garybasin:* pro-tip: ask your clanker to stress test every plan and perform comprehensive POCs and internet research on anything they're not 100% confident will work
+
+- **Tweet:** https://x.com/garybasin/status/2024921484401983511
+- **Quoted:** https://x.com/garybasin/status/2024894178325381163
+- **Link:** https://github.com/gbasin/stress-test-skill
+- **Filed:** [stress-test-skill.md](./knowledge/tools/stress-test-skill.md)
+- **What:** Agent skill that stress-tests technical plans by checking claims against real docs, running small proof-of-concept experiments, and updating the plan before building. Gary's thesis: models are lazy and unaware of their capabilities, so upfront POCs raise the odds the agent's v1 is useful.
+
+## @jumperz - 31-Piece Agent Memory Stack in 3 Phases
+> this is the entire memory stack if you actually want to take your agent memory to somewhere real. from actually remembering to having an intelligence layer.
+>
+> 31 pieces total, split into 3 phases: core first, reliability second, then advanced last. you build from core to advanced slowly, and you test each phase before touching the next.
+>
+> phase 1 is 10 pieces. write pipeline, read pipeline, decay, session flush and behavior loop...
+> phase 2 is 7 pieces. crash recovery, audit trail, dedup, conflict resolution, automated maintenance jobs...
+> phase 3 is 14 pieces. trust scoring, cross-agent sharing, knowledge graphs, episode tracking, intelligent retrieval, budget awareness...
+
+- **Tweet:** https://x.com/jumperz/status/2024841165774717031
+- **What:** Staged roadmap for agent memory: phase 1 core read/write/decay (10 pieces), phase 2 durability like crash recovery, audit, dedup (7), phase 3 intelligence like trust scoring and knowledge graphs (14). Advice is to test each phase before building the next; the full breakdown and prompts were in an unexpanded image/thread.
+
+---
+
 # Thursday, February 12, 2026
 
 ## @PaulRBerg - Agent Skills Collection (Git, Code Review, Workflows)
