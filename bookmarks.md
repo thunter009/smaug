@@ -334,7 +334,738 @@
 
 ---
 
+# Thursday, October 15, 2026
+
+## @rayhanadev - mds-bye tool for the macOS fseventsd/Spotlight load from parallel agents
+> *Replying to @fforres:* Life is good now. 🎉 Tell your agent to: create a new volume in you mac, disable fseventsd (and spotlight) on it, and move your projects folder to it, remount it.
+>
+> @fforres i built something for this!
+
+- **Tweet:** https://x.com/rayhanadev/status/2110932102170517759
+- **Link:** https://github.com/rayhanadev/mds-bye
+- **Filed:** [mds-bye.md](./knowledge/tools/mds-bye.md)
+- **What:** Rayhan built mds-bye as a tool for the same problem fforres solved by hand: macOS metadata services and fseventsd thrashing under parallel agent workloads. README was not fetched, so specifics are uncertain.
+
+## @theozero - Varlock suggested to avoid plaintext secrets after a leaked key caused a $90k Google bill
+> *Replying to @JustLingonberry:* FINALLY found how my key got leaked and got the $90,000 bill from google. Opus 5.5 said codex had PUBLISHED MY ****ING .ENV TO CLOUDFALRE PAGES ‼️ Meanwhile codex couldn't find anything, refused to explain itself and flagged my chat for cybersecurity risk lol
+>
+> @JustLingonberry Use varlock! no secrets in plaintext!
+
+- **Tweet:** https://x.com/theozero/status/2110907220431163600
+- **What:** A coding agent reportedly deployed a .env file to Cloudflare Pages, leaking a key and producing a $90,000 Google bill. Theo (varlock author) recommends varlock so secrets never sit in plaintext files agents can publish.
+
+## @fforres - Fix macOS fseventsd runaway for parallel agents with a dedicated volume that has indexing disabled
+> Life is good now. 🎉 Tell your agent to:
+> - create a new volume in you mac
+> - disable fseventsd (and spotlight) on it
+> - and move your projects folder to it
+> - remount it
+>
+> For extra points move you pnpm cache folder to it.
+>
+> (Start the conversation outside of your projects folder, Also you might need to kill a ton of processes)
+>
+> *Quoting @fforres:* MacBooks are crappy for multi/parallel agent work. fseventsd keeps going wild after a few days. "kill fseventsd on a cadence" feels dumb. So... aside from moving to linux, anyone had experience with a volume specifically for your agent workspaces, and disable fseventsd there?
+
+- **Tweet:** https://x.com/fforres/status/2110883187920617472
+- **What:** Parallel agent work makes fseventsd go wild on MacBooks. The fix is a separate APFS volume with fseventsd and Spotlight disabled, holding the projects folder and optionally the pnpm cache, then remounted.
+
+## @arjunkmrm - Author agents as state machines with pure-function transitions, like frontend apps
+> Welcome to the club. Not just for frontend, your agents should also be authored as state machines. Every state transition and side effect should be a pure function of state. Models are extremely capable at exploring state spaces (imo lot of the new mathematical advances are linked to this).
+>
+> In fact, authoring an agent is not much different from authoring frontend applications. I shared more about this here:
+>
+> *Quoting @mattpocockuk:* I think I'm addicted to getting agents to build state machines. Every time I see an agent has built a state machine (or even just a reducer) I can feel a huge bump in the robustness. And I know that future updates will be trivial and testable. Would recommend for frontend
+
+- **Tweet:** https://x.com/arjunkmrm/status/2110879721961787526
+- **Link:** https://tardigrade.sh/docs/why
+- **Filed:** [tardigrade-why-state-machine-agents.md](./knowledge/articles/tardigrade-why-state-machine-agents.md)
+- **What:** Matt Pocock finds agent-built state machines or reducers make code robust and testable. Arjun extends this to agents themselves: model them as state machines with transitions and side effects as pure functions of state, as in Tardigrade.
+
+## @duckdb - DuckDB blog walks an Iceberg table's JSON/Avro/Parquet file tree with plain SQL
+> What's Inside an Iceberg Table? 🧊 📦
+>
+> An Apache Iceberg table looks like a regular table when you query it, but beneath the surface…well, it's like an iceberg. 😅
+>
+> Underneath, you'll find a small tree of files: one JSON file at the top, a few layers of Avro files in the middle, and Parquet files at the bottom. When something is slow or looks wrong, it helps to know what's in that tree.
+>
+> DuckDB can read all three formats, so you can inspect every layer with plain SQL. In this post, we create a small Iceberg table, change it a few times, and then walk through the files from the top down.
+>
+> #ApacheIceberg #DuckDB
+
+- **Tweet:** https://x.com/duckdb/status/2110837648298541271
+- **Link:** https://duckdb.org/2026/10/13/inside-iceberg-table?utm_source=x&utm_medium=social
+- **Filed:** [duckdb-inside-iceberg-table.md](./knowledge/articles/duckdb-inside-iceberg-table.md)
+- **What:** An Iceberg table is a tree of a JSON metadata file, Avro manifest lists and manifests, and Parquet data and delete files. Since DuckDB reads all three formats, each layer can be inspected with SQL to debug slow or wrong tables.
+
+## @daniel_mac8 - /be-ambitious skill from Felix Rieseberg's four-step prompt to make agents more ambitious
+> I present to you: /be-ambitious
+>
+> Anthropic Lead Engineer @felixrieseberg shared an amazing prompt to make agents more *ambitious*.
+>
+> 1) Say what a top professional in this field would do
+> 2) Name the rawest material they would start from
+> 3) Name the specific methods and tools they'd use
+> 4) Say what would prove the result is right
+>
+> Turned it into a skill: '/be-ambitious'.
+>
+> Install it for free at the link in first reply.
+
+- **Tweet:** https://x.com/daniel_mac8/status/2110820874890719723
+- **What:** Felix Rieseberg's prompt pushes agents past mediocre output by having them state what a top professional would do, the rawest source material, the specific methods and tools, and what would prove the result correct. Packaged as a /be-ambitious skill.
+
+## @kloss_xyz - Monthly audit prompt for stale agent memory and rules files
+> Your agent's memory is lying to you.
+>
+> Memory and rule files go stale. Your agents will read them as fact and act on them with full confidence.
+>
+> Audit them monthly with this prompt:
+>
+> "Read every memory and rules file you load. Flag anything that contradicts another file, anything that's likely outdated, and anything stated as fact that I never confirmed. For each one, quote the line, explain why it's suspect, and suggest a fix. Don't change anything until I manually approve."
+>
+> Stale memory is worse than no memory.
+>
+> At least no memory makes the agent ask.
+>
+> Save this to improve your setup.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2110809174024060936
+- **What:** Stale memory and rules files get treated as fact by agents. A monthly prompt makes the agent flag contradictions, outdated lines and unconfirmed claims, quoting each with a suggested fix and changing nothing until approved.
+
+## @siddontang - DuckDB + SlateDB + S3 gives a writable database with no always-on server
+> Love this: DuckDB + SlateDB + S3.
+>
+> A real, writable database. One writer, many readers. No always-on server.
+>
+> Beautifully simple architecture. 😂
+
+- **Tweet:** https://x.com/siddontang/status/2110800479651496215
+- **Link:** https://dentiny.github.io/posts/duckdb-on-object-storage/
+- **Filed:** [duckdb-on-object-storage-slatedb.md](./knowledge/articles/duckdb-on-object-storage-slatedb.md)
+- **What:** The duckdb_object_storage extension stores native DuckDB databases (indexes, WAL, constraints) in S3 via SlateDB and OpenDAL. It needs no catalog, coordinator or table format, with one writer fenced through object storage and many readers.
+
+---
+
+# Wednesday, October 14, 2026
+
+## @poteto - pstack's engineering principles: tiny 10-20 line skills that agents must name when they shape a decision
+> perhaps one of the most durable parts of pstack are its engineering principles: very concise skills (~10-20 loc) that distill down good practices into its core.
+>
+> as models get smarter, i expect most of pstack skills to compress into short principles or workflows and that i will be able to delete a few of them.
+>
+> how it works is that /poteto-mode contains a short index of available principles and tells agents "In your reply, name each principle that shaped a decision and the specific choice it changed."
+>
+> many of these principles were extracted from my sessions correcting agents since the start of this year. some are inspired by problems i see people talk about, like Attack the Premise, inspired by @VictorTaelin's post
+>
+> you can also use the principles as skills if you want greater control, by invoking /principle-<name>
+>
+> *Quoting @unclebobmartin:* I'm a newcomer to @poteto's plist; But it seems to me that there is some very significant wisdom encoded in there. I suspect you could teach a master class on the principles.
+
+- **Tweet:** https://x.com/poteto/status/2110496830429839869
+- **Link:** https://github.com/cursor/plugins/blob/main/pstack/docs/guide/08-principles.md
+- **Filed:** [pstack-engineering-principles.md](./knowledge/tools/pstack-engineering-principles.md)
+- **What:** pstack distills good engineering practice into very short principle skills indexed by /poteto-mode, with agents required to name which principle changed which decision. Principles come from a year of correcting agents; Uncle Bob called them significant wisdom.
+
+## @shadcn - shadcn/ui ships Trace component for unified agent activity, plus Code Block and AI Elements
+> I just published Trace, a new component for agent activity. It's one abstraction for reasoning, tool calls, queues, chain of thought, subagents...etc
+>
+> Also in this release: Code Block and AI Elements.
+
+- **Tweet:** https://x.com/shadcn/status/2110410655165779985
+- **Link:** https://ui.shadcn.com/docs/changelog/2026-10-ai-elements
+- **Filed:** [shadcn-trace-ai-elements-changelog.md](./knowledge/articles/shadcn-trace-ai-elements-changelog.md)
+- **What:** shadcn/ui October 2026 release adds Trace, a single UI abstraction covering reasoning, tool calls, queues, chain of thought and subagents. Also adds Code Block and AI Elements components.
+
+---
+
+# Tuesday, October 13, 2026
+
+## @illyism - Open-sourced SEO + AEO skills repo for Claude Code and Cursor
+> 530 people asked for the system prompt I use to run SEO + AEO inside Claude Code and Cursor.
+>
+> Instead of gatekeeping it in DMs, I just open-sourced the entire repo:
+>
+> - Audits your codebase for technical SEO & broken metadata
+> - Reverse-engineers top 10 SERP titles & structure
+> - Writes comparison pages with real information gain
+> - Checks what ChatGPT and Perplexity cite for your niche
+
+- **Tweet:** https://x.com/illyism/status/2110180038637408357
+- **Link:** https://github.com/Illyism/seo-skills
+- **Filed:** [seo-skills.md](./knowledge/tools/seo-skills.md)
+- **What:** Public repo of SEO and answer-engine-optimization prompts/skills for coding agents, covering technical audits, SERP analysis, comparison-page writing and AI-citation checks.
+
+## @johngfriedman - SEC acceptancedatetime metadata is unreliable; extract timestamps from filings
+> Reminder to not use the SEC's reported acceptancedatetime that is not extracted from filings. About half the timestamps reported by the SEC are contradicted by the filings and their last modified tags.
+>
+> Timestamps reported through metadata endpoints differ by +4, -4 or +5, -5 hours, likely due to workers processing filings with bad timezone code.
+
+- **Tweet:** https://x.com/johngfriedman/status/2110150249641877617
+- **What:** Data-quality warning: SEC metadata acceptance timestamps are wrong for about half of filings, with inconsistent +/-4 or 5 hour offsets, probably from timezone bugs. Extract times from the filings themselves.
+
+## @poteto - Ban code comments so agents stop copying stale workaround hacks; pstack /no-comments
+> ban and delete most if not all code comments!
+>
+> agents love copying what already exists. a seemingly harmless comment explaining some temporary workaround is one of the worst viruses you can have in your codebase.
+>
+> you can use pstack's /no-comments skill as a weedkiller. it'll seek out useless comments while keeping the ones that actually should exist (like explaining a browser quirk).
+
+- **Tweet:** https://x.com/poteto/status/2110149626133438732
+- **Link:** https://x.ai/bot/plugin/9717366
+- **What:** Argues workaround comments propagate through agent-written code as agents imitate existing patterns, so most comments should be pruned. Suggests pstack's /no-comments skill and a swarm prompt to find comments better solved by refactoring.
+
+## @chrispisarski - Crustdata's 0 to $1M ARR YC playbook, productized as Watcher
+> every single thing we did during YC to scale from 0 to $1M ARR (now >$12M ARR)
+>
+> - in-person events and connections; sell the vision, say yes to everything
+> - "warm up" relationships by reaching out without asking for anything
+> - be everywhere: whole team engages with every ICP post
+> - find your "one" customer, then reverse-engineer lookalikes
+> - post constantly and build content around what target accounts engage with
+> - low-hanging fruit: enrich all LinkedIn connections, find warm paths, track job moves in Watcher
+>
+> *Quoting @crustdata:* You can now watch every single lead on the internet, 24/7. Introducing Crustdata Watcher: tracks job changes, raises, hiring and posts; describe your ICP in one sentence; alerts to Slack, email or CRM; pay per successful result.
+
+- **Tweet:** https://x.com/chrispisarski/status/2110128547184492633
+- **Link:** https://crustdata.com/apis/watcher
+- **What:** Founder lists early-stage GTM tactics (hustle, warm outreach, ICP engagement, one-customer lookalikes, constant posting) that took Crustdata to >$12M ARR, plus the Watcher API that automates tracking job changes and company signals via webhooks.
+
+## @edgaralandough - Three estate steps: revocable trust, pour-over clause, trust-owned life insurance
+> These are the 3 things you must do before your time is up:
+>
+> 1. Remove your house from your personal name and put it into a revocable living trust.
+> 2. Add a pour-over clause to all your financial accounts, bank accounts, investment accounts, even vehicle.
+> 3. Set up a life insurance policy that names the trust as beneficiary, not your kids or spouse directly.
+
+- **Tweet:** https://x.com/edgaralandough/status/2110122583358046451
+- **What:** Popular-account estate planning advice: revocable living trust for the house, pour-over provisions on accounts, and trust-named life insurance beneficiary. Generic and unverified; not legal advice, check with an estate attorney.
+
+## @rvaniaaaa - Nine tools to cut Claude Code/Opus 5.5 token spend (router, rtk, claude-mem, context-mode, caveman)
+> install these before your next long Claude Code session
+>
+> if your Opus 5.5 bill hurts and you don't know where to start, copy this:
+>
+> claude-code-router: routes each request to the cheapest capable model.
+> rtk: shrinks test, build and git output before the model sees it.
+> claude-mem: remembers past sessions and feeds back only relevant parts.
+> context-mode: big tool output goes to a local DB instead of context.
+> caveman: short telegraphic answers; output is the expensive side.
+> token-optimizer: local dashboard of where tokens went.
+> token-savior: symbol lookups instead of whole-file reads.
+> code-review-graph: repo graph gives only code connected to the change.
+> jev-ultrafast: browser agent with text model only when typing needed.
+>
+> none of them makes Opus smarter. every one stops it from paying for work it never needed to do
+
+- **Tweet:** https://x.com/rvaniaaaa/status/2110099026758508698
+- **Link:** https://github.com/musistudio/claude-code-router
+- **Filed:** [claude-code-router.md](./knowledge/tools/claude-code-router.md)
+- **Filed:** [rtk.md](./knowledge/tools/rtk.md)
+- **What:** Curated list of nine token-saving Claude Code add-ons (routing, output compression, memory, context offload, terse output, symbol-level reads, graph-scoped review). Principle: reduce wasted work rather than improve the model; measure first.
+
+## @michael_chomsky - sgrep: local Rust ripgrep extension that cuts coding-agent token cost
+> sgrep is insanely good
+>
+> -reduces token usage for coding agents
+> -faster than the most popular index based methods (w/o building an index initially)
+> -precision much much higher than ripgrep (not hard, rg has terrible precision)
+> -written in rust
+>
+> it's honestly nuts to me that there are wins like this on the table, that just universally improve the performance of every coding agent
+>
+> we're wasting so many tokens man
+>
+> *Quoting @getcontextdev:* Meet sgrep, a fast, fully local ripgrep extension built to make agents cheaper and more accurate. On our SWE-bench Verified eval, sgrep reduced LLM API cost by 21.3% versus ripgrep, solving 70 of 100 attempts versus 68.
+
+- **Tweet:** https://x.com/michael_chomsky/status/2110076780359131551
+- **Link:** https://twitter.com/getcontextdev/status/2110070862972158174
+- **What:** Endorses sgrep, a local Rust grep with higher precision than ripgrep and no upfront index. Context.dev's SWE-bench Verified eval shows 21.3% lower API cost and 70/100 vs 68/100 solves.
+
+## @kloss_xyz - Seven AGENTS.md rules to keep vibe-coding agents honest
+> If you're vibe coding, you need to add these 7 rules to your AGENTS.md:
+>
+> 1. Never edit, skip, or delete a test to make it pass. Confirm each test would fail if the code did nothing.
+> 2. Before adding any dependency, confirm it exists on the official registry, who maintains it, and when it last shipped. Never guess a package name.
+> 3. Before using any library's API, check the installed version and read its actual docs or source.
+> 4. Never say a task is done until proven against the real thing; show actual output.
+> 5. If two fixes fail the same way, stop and question the shared assumption.
+> 6. Only change what a task requires; list other issues instead of fixing them.
+> 7. Never delete untracked files or data, rewrite git history, or force-push without showing the exact command and waiting for approval.
+>
+> Note: if a repo has both CLAUDE.md and AGENTS.md, Claude Code can silently ignore AGENTS.md.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2110063698370789803
+- **What:** Seven guardrail rules for AGENTS.md targeting known agent failure modes: faked tests, hallucinated packages, stale API knowledge, unverified "done", retry loops, scope creep, and destructive commands. Also warns Claude Code may ignore AGENTS.md when CLAUDE.md exists.
+
+## @mxstbr - MCP events let agents react proactively to system changes (Cloudflare MCP example)
+> mcp events are incredible.
+>
+> your users can set up their agents to listen to events in your system, enabling them to do proactive work whenever things happen without any user input.
+>
+> implement it in your mcp servers!
+>
+> *Quoting @mattzcarey:* Cloudflare MCP Server can now ping your agents for new issues on your Workers. Powered by @thomas_ankcorn new real-time issues and the draft MCP Event spec
+
+- **Tweet:** https://x.com/mxstbr/status/2110056624689967610
+- **Link:** https://twitter.com/mattzcarey/status/2109736726440604042
+- **What:** Argues MCP servers should implement the draft MCP Event spec so user agents subscribe to events and act proactively without prompts; Cloudflare's MCP server now pings agents on new Workers issues as a real example.
+
+## @oliverjumpertz - Claude Code stack: Herdr, Ponytail, Caveman, Headroom, Context Mode with Opus planner/Sonnet workers
+> My current setup:
+>
+> - Herdr
+> - Claude Claude (CLI)
+> - Ponytail (Skill)
+> - Caveman. (Skill only)
+> - Headroom (Proxy)
+> - Context Mode (MCP)
+>
+> My crew:
+>
+> - Opus 5.5 Medium (Planner)
+> - Sonnet 5.5 Medium (Workers)
+> - Opus 5.5 Medium (Reviewer)
+>
+> I usually forget that a 5h window even exists. 🤷🏻‍♂️
+
+- **Tweet:** https://x.com/oliverjumpertz/status/2110056077010014260
+- **What:** Shares a token-frugal Claude Code setup (Herdr, Ponytail and Caveman skills, Headroom proxy, Context Mode MCP) with Opus planning/review and Sonnet workers; claims it never hits the 5h usage window.
+
+## @yonasbe - Linear's 15-step GitHub Actions CI speedup playbook (StarSling)
+> Linear's CI playbook (for GitHub Actions):
+>
+> 1. Faster runners: jobs 34% faster, typecheck 52% faster.
+> 2. Native type-checking: tsc to tsgo cut typecheck weekly median 73%.
+> 3. Lint without types: syntax-only rules, API lint 68% faster, repo 55% faster.
+> 4. Oxlint cut runner minutes on linting.
+> 5. Lighter checkouts: shallow fetch 94s to 20s; no checkout 27s to 7s.
+> 6. Resilient checkout: retry and abort stalled fetch after ~30s.
+> 7. Off the critical path: cache write move saved 42s per API PR.
+> 8. Preinstall in CI image: Postgres client saved 7-8s per shard.
+> 9. Filtered installs: pnpm install 44-73s to 16-18s.
+> 10. Drop a costly cache: node_modules cache slower than fresh install.
+> 11. Schema snapshots: DB setup ~12s to 1-2s per container.
+> 12. Batch short checks: 7 jobs into 2 saved ~87,000 runner-minutes/month.
+> 13. Balance shards: 4 to 8 shards, ~19% faster and cheaper.
+> 14. Share module state: slowest shard 300-379s to ~195s.
+> 15. Setup bounds sharding: 8 shards now use less setup than 4 did.
+>
+> If you want your CI to look like theirs with all of these optimizations (and 50+ more), give your agent this post:
+
+- **Tweet:** https://x.com/yonasbe/status/2110045850852634825
+- **Link:** https://starsling.dev/blog/linear-ci
+- **Filed:** [starsling-linear-ci-playbook.md](./knowledge/articles/starsling-linear-ci-playbook.md)
+- **What:** StarSling packages Linear's 15 CI optimizations (faster runners, tsgo, Oxlint, shallow checkouts, schema snapshots, shared module state, shard rebalancing) as copy-paste agent prompts mapped to ci-speedup patterns.
+
+## @firecrawl - Marketing Data Pack in Firecrawl Alexandria for ChatGPT and Claude
+> Introducing the Marketing Data Pack in Alexandria 🔥
+>
+> Give ChatGPT or Claude the ability to:
+>
+> - Uncover what gets traffic & attention
+> - Shape your SEO/GEO strategy
+> - Create content & visuals from what works
+>
+> Bring 100x more inspiration to your marketing.
+
+- **Tweet:** https://x.com/firecrawl/status/2110037671611412523
+- **Link:** https://www.firecrawl.dev/alexandria/marketing
+- **What:** Firecrawl launches a Marketing Data Pack in its Alexandria data marketplace, giving ChatGPT or Claude traffic, attention and SEO/GEO data sources to inform content and visual creation.
+
+## @thorstenball - Pushing to main with no PRs or code review, relying on agents that watch prod
+> No pull requests, no code review. We push to main.
+>
+> Our agents read production logs, watch deploys, grant feature flags, and check their own work end to end.
+>
+> Here's how we do that: https://t.co/G4r37Lgoxc
+
+- **Tweet:** https://x.com/thorstenball/status/2110035978685747457
+- **What:** LINK_FAILED: Could not expand link from @thorstenball. Claim: team skips PRs and review, pushing straight to main while agents read production logs, watch deploys, grant feature flags and verify their own work end to end.
+
+## @rileybrown - Tweet-research skill plus ScrapeCreators for auto-overlaying X videos in edits
+> I can tell you... for anything content related... this is the most useful skill i've ever had inside codex and claude code. The ability to gather all relevant tweets in any niche, and return links to relevant tweets.
+>
+> But here's the icing on the cake. Pair this with a ScrapeCreators skill, which allows you to actually download any image or video from any tweet, now we're talking about full video editing workflows where instead of adding slop remotion graphics to videos, AI can overlaying relevant videos that are posted on x, automatically.
+>
+> *Quoting @rileybrown:* You can now control GrokBot from Claude Code. GrokBot has full access to X posts, so Claude can hand off Twitter research to it with the grokbot-webhook skill. Claude waits for GrokBot's answer, then keeps going with whatever you asked it to do.
+
+- **Tweet:** https://x.com/rileybrown/status/2110035957521006649
+- **What:** Claude Code/Codex can delegate X research to GrokBot through a webhook skill to collect niche tweets; paired with a ScrapeCreators skill to download tweet media, it enables video edits that overlay real X videos instead of generated graphics.
+
+## @EXM7777 - 8-step checklist for a strong Grok Bot multi-agent setup
+> how to build a top 1% Grok Bot setup in 30 minutes:
+>
+> - run it on your own machine, that's where it shines: it can run ANY other agent you have, so every model works inside its best harness, and any agent can pick up the files it writes
+> - connect your email and calendar so it knows your priorities and every deadline coming up
+> - install /last30days and connect Parallel for way sharper research, no X API needed
+> - turn on the Cloudflare connector so it can host anything it builds and manage your databases
+> - create one bot whose only job is deep research, saving everything into a knowledge base that every other bot checks before building anything
+> - put your bots in groups so they talk to each other and come up with real plans before they build
+> - give them an OpenRouter key so they can call any model, even the ones you don't pay a sub for
+> - set up simple routines so Grok Bot uses your computer and whatever else it has access to, and keeps every project moving without you pushing it
+
+- **Tweet:** https://x.com/EXM7777/status/2110016214940729743
+- **What:** Setup checklist for a personal Grok Bot agent hub: run locally to orchestrate other agents, connect email/calendar, add research tooling and Cloudflare hosting, a shared research knowledge base bot, grouped bots that plan together, OpenRouter for model access, and routines.
+
+## @0xWaunty - Lauren Tan (SpaceX AI): "Design for the dumbest agent" with CI bans and cloud agents
+> SpaceX AI engineer Lauren Tan:
+>
+> "Design for the dumbest agent"
+>
+> She bans code comments and useEffect so her agents can't write bad code
+>
+> In one live session, she shows exactly how to set it up
+>
+> Verification → Evals → One directory → CI bans → Cloud agents
+>
+> Step 1 → give your agent eyes and hands - it runs the real app, takes CPU traces, opens the simulator
+>
+> Step 2 → unit test your skills - sub-agents run them, a judge on another model scores, loop until 10/10
+>
+> Step 3 → one directory per feature - agents love shortcuts, so the shortest path has to be the right one
+>
+> Step 4 → ban the bad patterns in CI - no useEffect, no code comments, no cross-thread imports
+>
+> Step 5 → send bug reports to a cloud agent - it reproduces each one and flags the ones already fixed
+>
+> The result: PMs and designers ship features straight into Grok Bot and she just stamps them
+>
+> Worth more than most $800 AI coding courses
+>
+> Bookmark and watch it today
+>
+> *Quoting @distortgeekin:* Grok Bot could be the first team you build instead of hire. Six bots can run 200+ agents, hold their own 5 a.m. standup and hand you one board in the morning. In this article, I show you how
+
+- **Tweet:** https://x.com/0xWaunty/status/2110007607494672584
+- **What:** Lauren Tan's agent-proofing recipe: give agents real-app verification, eval-test skills with a cross-model judge, one directory per feature, CI bans on bad patterns, and cloud agents that reproduce bug reports. Quoted guide argues six scoped bots plus a board, routines and approval gates beat many generalist bots.
+
+## @mattpocockuk - Checklist of 18 common agentic coding mistakes
+> Some mistakes you might be making:
+>
+> Your effort level is too high
+> Your skills are too long
+> You're not aligning before you start work
+> You're aligning too often, and too hard
+> Your automated checks are too lax
+> Your custom tooling is too token-inefficient
+> You aren't doing enough automated review
+> You aren't reviewing previous coding sessions (with an agent)
+> You're doing too much human review
+> You aren't vibe coding enough prototypes
+> Your agent can't verify its own work
+> You're babysitting the agent too much
+> You've overloaded your global steering files
+> Your codebase is hard to navigate
+> You aren't building a shared language
+> Your codebase architecture allows bad tests to be written
+> You aren't thinking strategically enough
+> You aren't thinking enough
+
+- **Tweet:** https://x.com/mattpocockuk/status/2109973273924579720
+- **What:** Terse self-audit list for AI coding workflows: balance alignment effort, shorten skills and global steering files, strengthen automated checks and agent self-verification, review past sessions with agents, build shared language and navigable architecture that blocks bad tests.
+
+## @maxwellcopy - Setting up BIMI to show your logo in the inbox (VMC/CMC plus DNS TXT record)
+> Stand out in the inbox with a flashy logo…
+>
+> Set this up ASAP if you can. 
+>
+> But it's not as simple as changing your Google profile picture…
+>
+> You have to set up BIMI (brand indicators for message identification)  
+>
+> 1. You must get a VMC or CMC (essentially these are authorities that will accept that your logo is yours and real) 
+>
+> 2. You then update your DNS settings with the BIMI TXT record
+>
+> Sounds complicated, but super simple, and super worth it. 
+>
+> In-depth step by step breakdown below.
+
+- **Tweet:** https://x.com/maxwellcopy/status/2109942203292201085
+- **What:** Email marketing tip: displaying a brand logo next to emails in Gmail and other inboxes requires BIMI, which needs a verified mark certificate (VMC or CMC) and a BIMI DNS TXT record. Step-by-step breakdown was in an image/thread not captured.
+
+---
+
+# Monday, October 12, 2026
+
+## @suraj_sharma14 - Prompt to have Claude audit your public online footprint, then cleanup steps
+> I asked Claude to find everything about me that's public online.
+>
+> It took 10 minutes.
+>
+> Here's what it found:
+> • My phone number on an old resume PDF from college
+> • The city I live in, from a tweet I posted years ago
+> • My email listed on 3 data broker sites I'd never heard of
+> • An old username that linked my gaming, Reddit and GitHub accounts
+> • Event photos that showed where I work and who I hang out with
+>
+> Try it yourself with this prompt: "Search the web for everything publicly available about [your name + city/username]. List every piece of personal info you find, where it's from and how risky it is."
+>
+> Then clean it up: delete old resumes/PDFs with your number, lock down old social accounts, request data broker removal, use different usernames per platform, turn on 2FA everywhere.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2109826456599793920
+- **What:** Self-OSINT workflow: prompt an LLM with web search to enumerate your own exposed personal data (resumes, data brokers, linked usernames, event photos) with risk ratings, then remediate via deletions, broker opt-outs, username separation and 2FA.
+
+## @GenZMultifamily - Grok Bot that does LLC accounting writes its own 18-page setup guide and demo video
+> I built a Grok Bot that does the full accounting for all my LLCs and wanted to be able to share it. 
+>
+> So I had it write an 18 page pdf guide with every step and exact prompts so anyone can set it up from zero.
+>
+> Then I asked it to make a video of itself showing how it thinks it works when someone is using it.
+>
+> This is what it made by itself, of itself. 
+>
+> Not a perfect copy of the real process, but it's wild watching a bot recreate its job from the users perspective.
+
+- **Tweet:** https://x.com/GenZMultifamily/status/2109826154169282721
+- **What:** Author runs a Grok Bot for multi-LLC accounting and had it self-document into an 18-page setup PDF with exact prompts, plus a self-generated explainer video. Example of agents producing their own onboarding material.
+
+## @ankurnagpal - Dependent care FSA limit rises to $7,500 in 2027
+> If you pay for daycare, you can pay $7,500 of it with pre-tax dollars next year
+>
+> That's up from $5,000 in 2025, the first permanent increase since 1986
+>
+> But you have to elect it during open enrollment, which most employers are running right now
+>
+> Here's how it works:
+
+- **Tweet:** https://x.com/ankurnagpal/status/2109721301732544678
+- **What:** Dependent care FSA cap rises from $5,000 to $7,500 next year, the first permanent increase since 1986. It requires election during open enrollment, which most employers are running now.
+
+## @SamSokolin - Give your AI agent its own email domain and Google account identity
+> You can use your https://t.co/XDagbFNkaq email to sign up for a Google account! Then it can sign into other apps with Google and access Google workspace plugins using its own identity
+
+- **Tweet:** https://x.com/SamSokolin/status/2109704693878251931
+- **What:** LINK_FAILED: Could not expand link from @SamSokolin. Tip: an agent-specific email address can register a Google account, giving the agent its own identity for Google sign-in and Workspace plugins.
+
+## @ohdearlordylord - Model systems as reducers and step through interactive diagrams instead of .md specs
+> Instead of .md specs, try this: make the system a state machine (or rather, a reducer). Ask your slopus to make an interactive diagram with real events from your flow and the real reducer. Step through them, asking the agent "whys" this and that.
+
+- **Tweet:** https://x.com/ohdearlordylord/status/2109688959890530676
+- **What:** Replace prose specs with an executable state machine/reducer, then have the agent generate an interactive diagram driven by real events and the real reducer. Step through transitions and ask "why" at each, giving verifiable understanding instead of stale docs.
+
+## @giswqs - RustGIS v0.1.0: open-source pure-Rust GIS with AI assistant
+> Introducing RustGIS v0.1.0, the first release!
+>
+> RustGIS is a fast, free and open-source GIS in pure Rust for mapping, analyzing and sharing geospatial data. It runs natively on Windows, macOS and Linux, and in your web browser. Data stays on your machine unless you send it to an AI model you choose, and every action is a scriptable command.
+>
+> Over 1,000 geoprocessing tools, formats from GeoJSON to GeoParquet and COG, cartography and layouts, editing, and an AI Assistant that works the map for you.
+
+- **Tweet:** https://x.com/giswqs/status/2109625821040140479
+- **Link:** https://github.com/opengeos/RustGIS
+- **Filed:** [rustgis.md](./knowledge/tools/rustgis.md)
+- **What:** First release of RustGIS, a pure-Rust desktop and WASM GIS with 1,000+ Whitebox/GeoLibre tools and an LLM assistant (Anthropic, OpenAI, etc.) that drives the map. Local-first, scriptable, and covers modern cloud-native geo formats.
+
+---
+
+# Sunday, October 11, 2026
+
+## @ankurnagpal - 2027 charity tax rule: give $1,700, get it back from IRS
+> Starting in 2027, you can give $1,700 to charity &amp; get every dollar back from the IRS
+>
+> $3,400 if you're married filing jointly
+>
+> The IRS just released the rules. Here's how it works:
+
+- **Tweet:** https://x.com/ankurnagpal/status/2109355922275401983
+- **What:** Claims a new 2027 federal rule lets individuals donate $1,700 ($3,400 joint) to charity and recoup it fully from the IRS, per newly released guidance. The mechanics are in the thread, not captured here.
+
+## @stretchcloud - Uber's MCP gateway: 800+ servers, 5,000+ tools, and why you probably should not build one
+> Most teams building an MCP gateway this quarter are about to relearn what Uber already spent real engineering time on, and most of them don't have what Uber built it on top of. The gateway now fronts over 800 MCP servers and 5,000+ tools, mostly auto-generated.
+>
+> Control plane (registry) plus data plane (proxy translating MCP to HTTP, gRPC, TChannel). A crawler uses an LLM to write tool descriptions. Every server starts disabled, description changes need owner-approved diffs, ABAC per tool, PII redacted by default.
+>
+> Buying a gateway is the easy part. Getting a thousand services onto one scheme for who's allowed to call what is the actual project.
+>
+> *Quoting @bibryam:* Uber's MCP Gateway journey is a good illustration of what it takes to adopt MCP at scale: reuse existing APIs, reduce context/token costs with Code Mode, enforce security centrally, automate discovery. But unless you're Uber, don't build your own gateway.
+
+- **Tweet:** https://x.com/stretchcloud/status/2109352834802258326
+- **Link:** https://www.uber.com/gb/en/blog/designing-mcp-gateway/
+- **Filed:** [uber-mcp-gateway.md](./knowledge/articles/uber-mcp-gateway.md)
+- **What:** Uber's MCP gateway auto-generates 5,000+ tools from existing services with default-off exposure, owner-approved description diffs and per-tool ABAC. The hard part is the upstream mesh, IDL registry and unified access scheme, so most teams should buy a gateway.
+
+## @rileybrown - grokbot-webhook skill lets Claude Code delegate X research to GrokBot
+> You can now control GrokBot from Claude Code.
+>
+> GrokBot has full access to X posts, so Claude can hand off Twitter research to it with the grokbot-webhook skill. Claude waits for GrokBot's answer, then keeps going with whatever you asked it to do.
+>
+> Full skill below
+
+- **Tweet:** https://x.com/rileybrown/status/2109352621081309215
+- **What:** A grokbot-webhook skill lets Claude Code delegate X/Twitter research to GrokBot, which has full X post access, then blocks on the reply and resumes its task. Pattern for chaining agents via webhooks.
+
+## @andrestaltz - Claude Design plus Mobbin MCP prompt for AAA-quality UI redesign
+> This works SOOO well.
+>
+> Prompt: "Here a screenshot of my app's current UI. I need you to redesign it for the highest possible quality design. /design:design-critique Compare your designs adversarially against top examples on Mobbin (use MCP) Aim for AAA minimalist, elegant, sharp, simple, beautiful, perfect"
+>
+> *Quoting @andrestaltz:* I think UI design is 80% solved with: Claude Design plus Mobbin MCP ("compare your design against top examples found on Mobbin") plus a bit of good taste and aggressive deletes.
+
+- **Tweet:** https://x.com/andrestaltz/status/2109341510848143560
+- **What:** Reusable prompt recipe: give Claude a UI screenshot, run the design-critique command, and have it adversarially compare redesigns to Mobbin references via MCP. Staltz claims UI design is ~80% solved this way, with taste and aggressive deletion supplying the rest.
+
+## @poteto - Promoting a thread of ~1000 ideas for what to do with the Grok bot
+> not sure what to use grok bot for? send it a link to this post below (almost a thousand ideas in here!), or tag:
+>
+> @bot read this full thread and suggest ideas for my work and personal life you can help me with
+>
+> *Quoting @poteto:* what did you get done this week with @bot?
+
+- **Tweet:** https://x.com/poteto/status/2109326308950032501
+- **What:** Lauren crowdsources use cases for the X-integrated Grok bot via a quoted thread of ~1000 replies, and suggests pointing the bot at the thread so it recommends personal and work tasks it can handle.
+
+## @TheMaran - Free forever Oracle Cloud VPS: 2 OCPU, 12GB, 200GB storage
+> how to get a free 2 core 12gb vps for $0
+>
+> gmail is fine. they just want a real card and accurate details. no domain needed, just identity check.
+>
+> Signup at https://t.co/elySxHIesg with real name/address/phone/email, a real (non-prepaid) card, choose home region carefully, complete sms + card verification.
+>
+> Always free: 2 ocpu + 12gb, 2x AMD micro VMs (1gb), 200gb block storage, 10tb outbound/month, + $300 credits for 30 days. Free if account stays active; popular regions hit "out of capacity"; idle instances can be reclaimed.
+>
+> Don't use prepaid/virtual cards, don't create multiple accounts, don't leave the VM idle for days.
+
+- **Tweet:** https://x.com/TheMaran/status/2109184735616680283
+- **Link:** https://signup.cloud.oracle.com/
+- **What:** Guide to Oracle Cloud's Always Free tier: 2 OCPU/12GB Arm plus two micro VMs, 200GB storage and 10TB egress. Gotchas: real card required, region is permanent, capacity shortages, idle reclamation.
+
+---
+
+# Saturday, October 10, 2026
+
+## @CFchangelog - Cloudflare API MCP server now serves Cloudflare skills via skills/list
+> Cloudflare API MCP server now serves Cloudflare skills. Connect it to your client to discover them with `skills/list`.
+>
+> https://t.co/xlRlLL9mB4
+
+- **Tweet:** https://x.com/CFchangelog/status/2109086812505297227
+- **Link:** https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/
+- **Filed:** [cloudflare-mcp-skills.md](./knowledge/articles/cloudflare-mcp-skills.md)
+- **What:** Cloudflare's API MCP server now delivers Cloudflare skills over MCP, discoverable by clients through the `skills/list` method. Skills ship via the server rather than separate installs.
+
+---
+
+# Friday, October 9, 2026
+
+## @duckdb - DuckDB v2.0 CLI agent mode optimizes output for coding agents
+> Agent Mode in the DuckDB CLI  🤖 🦆
+>
+> The #DuckDB v2.0 CLI has an agent mode that gets AI coding agents to a correct result faster and with fewer tokens.
+>
+> When the CLI detects an agent, it prints compact Markdown tables instead of padded boxes, says clearly when a result was cut, stops runaway queries early, and reports errors as JSON. Long queries announce their expected cost before they start, so the agent can decide whether to wait.
+>
+> Learn more in today’s blog post: https://t.co/anjdCr3gAZ
+
+- **Tweet:** https://x.com/duckdb/status/2108718894395621644
+- **Link:** https://duckdb.org/2026/10/09/agent-mode
+- **Filed:** [duckdb-cli-agent-mode.md](./knowledge/articles/duckdb-cli-agent-mode.md)
+- **What:** DuckDB v2.0 CLI auto-detects AI agents and switches to token-efficient output: compact Markdown tables, explicit truncation notices, early kill of runaway queries, JSON errors, and up-front cost estimates for long queries. A model for agent-friendly CLI design.
+
+## @leerob - Stanford CS146S lecture on how always-on proactive agents work
+> How do always-on, proactive agents like @Bot work?
+>
+> Watch my lecture at Stanford CS146S:
+>
+> 2:35 How we got here
+> 6:13 What changed in the models
+> 10:06 Inside an always-on agent
+> 18:07 The harness
+> 27:26 Context engineering
+> 34:26 Where this is going
+
+- **Tweet:** https://x.com/leerob/status/2108650243365736855
+- **What:** THIN: Video lecture by Lee Robinson at Stanford CS146S on always-on proactive agents, covering model changes, the agent harness, and context engineering. Only a timestamped outline is available; no transcript.
+
+## @alexgroberman - Google Discovery Engine leak reveals AI search ranking signals and chunk-level optimization
+> Google accidentally revealed how its AI search systems choose sites to recommend. Now none of it is much secret anymore, let's talk about it. (Long post pitching SEO Stuff's done-for-you packages; free AI visibility check at rightcited.com.)
+>
+> *Quoting @alexgroberman:* Anthropic just released a new Claude model; how do businesses show up in broader AI search? (post text truncated)
+
+- **Tweet:** https://x.com/alexgroberman/status/2108579064722436257
+- **Link:** https://rightcited.com/
+- **What:** Summarizes Metehan Yesilyurt's analysis of Google Discovery Engine/Vertex AI Search: seven ranking signals (base ranking, Gecko embeddings, Jetstream, BM25, predicted CTR, freshness boost/bury), ~500-token chunks, and a Prepare-Retrieve-Signal-Serve pipeline. Advice is question-based headings, concise sections, tables, and current public pages, with promotion of the author's SEO Stuff services.
+
+## @wesbos - $50 Amazon photo frames rooted into home dashboard screens
+> I have discovered $50 amazon photo frames to be the PERFECT home display screen
+>
+> They can be rooted, updated to run a modern browser, have WiFi and can be powered from USB
+>
+> 1280×800 resolution with a nice touch screen
+>
+> I detailed how to hack these yourself in my latest video
+>
+> https://t.co/QhIiKjlf9N
+
+- **Tweet:** https://x.com/wesbos/status/2108550413599265045
+- **Link:** https://wesbos.com/hacking-smart-photo-frames
+- **Filed:** [hacking-smart-photo-frames.md](./knowledge/articles/hacking-smart-photo-frames.md)
+- **What:** Cheap Amazon smart photo frames (1280x800 touch, WiFi, USB power) can be rooted and given a modern browser to serve as home dashboards. Wes Bos documents the hack in a guide and video.
+
+## @maks6361 - Passive B2C micro SaaS portfolio with SEO-written blogs hits $1k MRR
+> It's always good to diversify your portfolio and have multiple streams of income.
+>
+> I built a handful of B2C micro SaaS projects a few months ago, enabled my SEO pipeline to write blog posts, and let them go.
+>
+> Slowly but surely, they've been growing and have now reached the $1k MRR milestone.
+>
+> Not life-changing money for sure, but it's good to have a few extra bucks in your bank account.
+>
+> I don't actively maintain them and just fix some bugs once in a while.
+>
+> I think they have the potential to grow further, but I just don't have the time as I'm focused on my best mobile apps atm.
+>
+> As usual, guys, slow and humble growth, no bangers to brag about.
+>
+> And remember that SEO works and it's the king!
+
+- **Tweet:** https://x.com/maks6361/status/2108470939855818787
+- **What:** A handful of low-maintenance B2C micro SaaS products with an automated SEO blog pipeline reached $1k MRR in a few months. Argues for diversified income streams and that SEO remains the key growth channel.
+
+## @kunchenguid - Free Astra usage with no quota: 72 hours running on 8 CPU and 10G RAM
+> my dot has been running astra non-stop for almost 72 hrs now
+>
+> it seems there’s no quota limit right now so it’s free astra + 8 cpu + 10G RAM
+>
+> i don’t think this will last long so if you haven’t made use of it yet i highly recommend taking advantage before it ends
+
+- **Tweet:** https://x.com/kunchenguid/status/2108431557824500204
+- **What:** Reports that a "dot" instance has run Astra continuously for about 72 hours with no quota enforced, giving free Astra plus 8 CPU and 10G RAM. Author expects the free window to close soon and urges using it now.
+
+## @285Slim - Stay-at-home dad's cooking content irritates stay-at-home moms by showing it is easy
+> I follow this dude on IG who’s a stay at home dad and cooks a bunch of shit and a bunch of stay at home moms get so mad at him because he talks about how easy it is for him lol
+
+- **Tweet:** https://x.com/285Slim/status/2108413179529146514
+- **What:** Anecdote about an Instagram stay-at-home dad whose cooking content and claims that the work is easy draw anger from stay-at-home moms. Social commentary only, with no link or technical content.
+
+---
+
 # Thursday, October 8, 2026
+
+## @georgecurtiss - HelixDB Foundry: open-source Palantir alternative with ontology on S3 and DuckDB
+> I just KILLED Palantir!
+>
+> Foundry lets you build your own company ontology. It uses @helixdb for s3-backed ontology and @duckdb for transforming analysing data.
+>
+> It's open source so check it out: https://t.co/MzbyQS017U https://t.co/FvneX9nWpZ
+
+- **Tweet:** https://x.com/georgecurtiss/status/2108374327980933516
+- **Link:** https://github.com/HelixDB/helix-foundry
+- **Filed:** [helix-foundry.md](./knowledge/tools/helix-foundry.md)
+- **What:** helix-foundry is an open-source take on Palantir Foundry for building a company ontology, using HelixDB for the S3-backed ontology store and DuckDB for transforms and analytics. Tweet framing is hyperbolic; README was not fetched.
+
+## @iannuttall - Agent-run cold outreach to competitor backlink sources lands DR84 .edu links
+> Follow up: I just got another reply with new links from a .edu domain with DR84.
+>
+> Grok Bot sent a total of 14 emails and already got multiple links from it.
+>
+> Link building is easy when you have something genuinely worth linking to.
+>
+> *Quoting @iannuttall:* SEO pro tip: 1. Get an export of your competitors best backlinks 2. Ask your agent to find a topical reason for them to link to you too 3. Manually approve suggestions 4. Let the agent send the cold outreach. Grok Bot just got me two DR 84 links on a site with 3M visits/month.
+
+- **Tweet:** https://x.com/iannuttall/status/2108181088476561543
+- **What:** Agentic link-building workflow: export competitor backlinks, have an agent craft topical pitches, human-approve, then agent sends outreach. 14 emails yielded multiple links including a DR84 .edu site, reinforcing that link building works when the content is worth linking to.
 
 ## @remilouf - Reading list for AI-agent automation: Toyota Production System and Bainbridge's Ironies of Automation
 > *Replying to @cournape:* What's a good book to start w/ ?
