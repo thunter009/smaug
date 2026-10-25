@@ -4173,7 +4173,625 @@
 
 ---
 
+# Thursday, August 13, 2026
+
+## @1adrianpierce - Recipe for front-loaded PRD-to-beads planning sessions in an agent software factory
+> recipe for successful PLANNING sessions in your software factory:
+>
+> - use fable
+> - describe the rough shape of what you want to build in as much detail as possible (dictation works great)
+> - have fable pressure test/grill you in batches of questions
+> - dispatch research subagents (opus is fine) to ground or disprove ideas with evidence
+> - draft or update a PRD (context, goals, non-goals, success criteria, journeys, requirements, architecture decisions, data model, contracts, security/failure modes, open questions)
+> - read and review the PRD (don't skip this)
+> - set project-level testing and documentation cadence and policies
+> - decompose the PRD into detailed technical tasks (beads) optimized for maximum parallelism, each with clear acceptance criteria
+> - dispatch subagents for adversarial review of tasks and PRD mapping
+>
+> planning like this is hard and takes a long time - and that's the point, you are heavily front-loading the work. if you do this, your factory should be able to reliably execute very large batches of work either completely or mostly unattended (escalations/blockers only)
+
+- **Tweet:** https://x.com/1adrianpierce/status/2087919654618497304
+- **What:** Step-by-step planning workflow: dictate the idea, get grilled by the model, research with subagents, write and review a PRD, set policies, split into parallel beads, then adversarial review. Heavy upfront planning lets implementation run mostly unattended.
+
+## @Ananth7e - Ten Codex prompts to audit and clean up a messy laptop safely
+> codex tip: your laptop is a mess. here's 10 prompts to fix it using codex.
+>
+> 1. find what's actually wrong. (audit health, ranked report, change nothing)
+> 2. find what's eating your storage. (rank folders, label safe/review/do not touch)
+> 3. declutter downloads only. (plan first, wait for approval)
+> 4. stop slow boot. (classify startup apps)
+> 5. find duplicate files. (no auto-removal)
+> 6. organize files. (propose folder system, preview moves)
+> 7. clean browser chaos.
+> 9. fix the "why is this slow" problem.
+> 10. build a low maintenance monthly 15-minute routine.
+
+- **Tweet:** https://x.com/Ananth7e/status/2087875202801918357
+- **What:** Prompt pack for using Codex as a PC maintenance assistant (written for Windows): audit first, rank findings, and require approval before deleting or moving anything. The report-then-approve pattern generalizes to other cleanup skills.
+
+## @mikestrives - SEO hack: publish a simple Chrome extension for a DR 99 Google backlink
+> OK, WHY IS NOT EVERYONE BUILDING PRODUCTS DOING THIS?
+>
+> Because this SEO hack is too easy to skip
+>
+> 1. You go to the Chrome Web Store
+> 2. You sign up for a developer account
+> 3. You pay a 1-time small registration fee
+> 4. You build a simple Chrome extension
+> 5. You can just ask Claude to create something
+> 6. You upload it
+> 7. You hit publish
+>
+> And now, you have a backlink with a 99 domain rating from Google.
+
+- **Tweet:** https://x.com/mikestrives/status/2087872379783450751
+- **What:** Suggests publishing a small Claude-built Chrome extension to the Chrome Web Store (one-time developer fee) to earn a DR 99 backlink from Google to your product. Cheap link-building tactic; value of such listing links for ranking is unverified.
+
+## @DavidOndrej1 - deepsec: Vercel Labs agent-powered vulnerability scanner for large codebases
+> every Agentic Engineer should use this repo
+>
+> it's not even a debate
+>
+> https://t.co/yL6WI1bcww
+
+- **Tweet:** https://x.com/DavidOndrej1/status/2087862257279459422
+- **Link:** https://github.com/vercel-labs/deepsec/
+- **Filed:** [deepsec](./knowledge/tools/deepsec.md)
+- **What:** deepsec from Vercel Labs is a self-hosted, agent-driven security scanner that fans work out across machines, resumes interrupted runs, and uses top models at max thinking, so large scans can cost thousands of dollars. Ondrej recommends it strongly.
+
+---
+
+# Wednesday, August 12, 2026
+
+## @doodlestein - Three Rust-ported models in three days: FrankenTTS, franken_whisper, franken_ocr running locally in browser
+> Three days, three world-class models in their respective domains delivered both as ultra-optimized, memory-safe Rust libraries and cli tools, AND as 100% local, browser-based websites for your convenience:
+> 🤯
+> https://t.co/oG9XWPFw7p
+> https://t.co/5pJjoRLcGJ
+> https://t.co/9YzuFa71Cu
+
+- **Tweet:** https://x.com/doodlestein/status/2087747873521684613
+- **Link:** https://frankentts.com/
+- **Link:** https://franken-whisper.com/
+- **Link:** https://franken-ocr.com/
+- **Filed:** [franken-whisper-browser-whisper-diarization](./knowledge/articles/franken-whisper-browser-whisper-diarization.md)
+- **Filed:** [frankentts-qwen3-tts-engine](./knowledge/articles/frankentts-qwen3-tts-engine.md)
+- **What:** Emanuel shipped pure-Rust, CPU-only ports of Qwen3-TTS (voice cloning), Whisper plus Sortformer diarization, and a 3B-class OCR model, each as a CLI and as a WASM browser demo where data never leaves the tab. Shows the agent-driven model-porting pipeline end to end.
+
+## @alaymanguy - pdfcn: shadcn-style open-source PDF component library built on Takumi and Forme
+> Introducing pdfcn 📄 by @shadcnlabs
+>
+> &gt; Built on Takumi by @kanewang_ and Forme
+> &gt; Zero config, one command setup.
+> &gt; @shadcn /ui compatible (simply copy-paste)
+> &gt; 10+ themes, components, blocks
+> &gt; Fully customizable
+>
+> 100% free and open-source.
+
+- **Tweet:** https://x.com/alaymanguy/status/2087656088124719304
+- **What:** pdfcn is a free open-source library of copy-paste PDF components, themes and blocks in the shadcn/ui style, built on Takumi and Forme with one-command setup. Useful for generating PDFs (invoices, reports) from React code. No repo link was in the tweet, so not filed.
+
+## @doodlestein - Welcoming Grok 4.6 as a healthier three-player frontier model market
+> I love competition. Capitalism really excels at incentivizing people to marshal vast amounts of capital and expertise to produce miracles like this. A 3-player market is much healthier than a duopoly. Now we need Google to stop sucking, and maybe SSI, to make a 4-5 player market.
+>
+> *Quoting @SpaceXSI:* Introducing Grok 4.6. It delivers frontier intelligence and is a significant improvement over Grok 4.5 at the same price.
+
+- **Tweet:** https://x.com/doodlestein/status/2087584979366629558
+- **Quoted:** https://x.com/SpaceXSI/status/2087562800982077492
+- **What:** SpaceX Super Intelligence announced Grok 4.6, a notable upgrade over 4.5 at unchanged price. Emanuel sees it making a three-player frontier market, healthier than a duopoly, and hopes Google and SSI make it four or five.
+
+## @GavinSBaker - Grok 4.6 claimed Pareto-dominant versus Fable 5 Max at 85% lower cost
+> Grok 4.6 is roughly the same performance as Fable 5 Max at an 85% discount. 80% cheaper for input tokens and 88% cheaper for output tokens.
+>
+> Pareto dominant.
+>
+> Grok 4.7 will be significantly better as is a much larger model with the Cursor and SpaceX data included in pretraining.
+
+- **Tweet:** https://x.com/GavinSBaker/status/2087567239423676519
+- **What:** Baker argues Grok 4.6 roughly matches Fable 5 Max on performance while costing about 85% less (80% on input, 88% on output tokens), and predicts a larger Grok 4.7 pretrained with Cursor and SpaceX data. Relevant for model cost/performance choices; claims are unverified.
+
+---
+
+# Tuesday, August 11, 2026
+
+## @doodlestein - Recruiting full agent instances via ntm beats subagents for big complex processes
+> Being able to supercharge a big, complex process by empowering the agent to recruit a bunch of its smart agent friends with ntm is truly transformative.
+>
+> And I'm not talking about subagents, which are strictly worse and less capable: these are full-fledged agent instances here.🫂
+
+- **Tweet:** https://x.com/doodlestein/status/2087299132616589517
+- **What:** Emanuel claims letting an agent spawn peer agents through ntm (full agent sessions in panes) is far more capable than in-process subagents for large workflows. Supports the multi-agent swarm approach over subagent delegation.
+
+## @zackkanter - Fixing confusing AI-written commit messages with tpope/cbeams git rules plus ASD-STE100 style
+> Mostly solvable. Have agents incorporate the following:
+>
+> - https://t.co/DTtzJMKc9V
+> - https://t.co/AbtH3PYRX3
+> - ASD-STE100 / Simplified Technical English + Google developer documentation style guide
+>
+> *Quoting @martin_casado:* I've been reading the commit messages of PRs lately. And invariably, when it sounds good but is really confusing it's written by AI. Human written PRs are so much clearer.
+
+- **Tweet:** https://x.com/zackkanter/status/2087294922378637680
+- **Link:** https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+- **Link:** https://cbea.ms/git-commit/
+- **Quoted:** https://x.com/martin_casado/status/2087226393067487618
+- **Filed:** [a-note-about-git-commit-messages-tpope](./knowledge/articles/a-note-about-git-commit-messages-tpope.md)
+- **Filed:** [how-to-write-a-git-commit-message-cbeams](./knowledge/articles/how-to-write-a-git-commit-message-cbeams.md)
+- **What:** Casado observes AI-written commit messages sound polished but confuse; Kanter says it is mostly solvable by feeding agents the classic Pope and Beams commit-message guides plus Simplified Technical English (ASD-STE100) and the Google docs style guide. Practical recipe for better agent prose.
+
+## @dhh - Claude agent tunes Ubiquiti UniFi network for a whole apartment
+> Ubiquity is so ridiculously good. Just did a full apartment upgrade. Cloud router, three U7 Pros. Added a local admin account for the agent. Had Claude optimize all radio channels, tune mesh settings, and ensure all devices roamed ideally. SCI-FI!
+
+- **Tweet:** https://x.com/dhh/status/2087272392557007042
+- **What:** DHH upgraded his apartment to UniFi (cloud router, three U7 Pro APs) and gave Claude a local admin account to optimize radio channels, mesh settings and client roaming. Shows agents doing real network administration via local admin access.
+
+## @ipwanciu - HTTP QUERY method (RFC 10008): safe, idempotent, cacheable GET with a body
+> That's a small reminder! 👇 As of June 2026, there's a new HTTP method - a GET with `body` 😎 Meet QUERY (RFC 10008). It lets you send complex queries in the body (like POST) while staying safe, idempotent, and cacheable (like GET). Already works on servers (Node.js, Go, Laravel…). Browsers are still adding full support, usable now with care, widespread adoption coming later in 2026+.
+
+- **Tweet:** https://x.com/ipwanciu/status/2087226776523092390
+- **What:** HTTP QUERY (RFC 10008) allows request bodies for complex reads while remaining safe, idempotent and cacheable, fixing the GET-URL-length versus POST-semantics tradeoff. Server frameworks support it; browser support is still arriving.
+
+## @jakubkrehel - /interface-review skill reviews UI, typography, layout, color, writing, accessibility
+> I made a new skill: /interface-review. It reviews your work across multiple categories like UI, typography, layout, color, writing and accessibility and gives you detailed analysis and findings.
+
+- **Tweet:** https://x.com/jakubkrehel/status/2087200943729164298
+- **Link:** https://github.com/jakubkrehel/skills
+- **Filed:** [jakubkrehel-skills](./knowledge/tools/jakubkrehel-skills.md)
+- **What:** New interface-review skill in Jakub Krehel's agent-skills repo (better-interface, better-ui, better-typography, better-colors and more); it reviews a branch, PR or uncommitted change for interface regressions across accessibility, layout, writing, typography, color and UI. Same suite installed locally.
+
+---
+
+# Monday, August 10, 2026
+
+## @yakkomajuri - How a non-designer vibe coded the Railcode site to look designer-made
+> how a non-designer used AI to build a website people thought a designer made
+
+- **Tweet:** https://x.com/yakkomajuri/status/2086868581619581262
+- **Link:** https://x.com/i/article/2086298380465258496
+- **What:** Article "How my vibe coded website looks like a designer made it": walks through the creative process behind railcode.dev, arguing coding agents enable tasteful, personally-curated design rather than generic LLM slop, and that non-designers should feel empowered to try.
+
+## @Shpigford - nurb: describe a part to AI, get a 3D-printable file for Wall Control mounts
+> you can just use https://nurb.dev/ and create an entire interchangeable mounting system of custom @WallControl parts. (also every wall in your home, office, garage and workshop should just be Wall Control panels, floor to ceiling)
+
+- **Tweet:** https://x.com/Shpigford/status/2086866185962844355
+- **Link:** https://nurb.dev/
+- **What:** nurb lets you describe a part in plain words; an AI models it live in the browser, checks it against 3D-print physics, and exports a printable file with adjustable sliders, no CAD needed. Shpigford uses it to make custom parts for Wall Control panel organization.
+
+## @matthew_labosco - Cortisol claims: stop eating 3 hours before bed
+> If your face is puffy, it's cortisol. If your belly won't shift, it's cortisol. If you're wired but tired, it's cortisol. Here's how to fix all three at once: 1. No food 3 hours before bed.
+
+- **Tweet:** https://x.com/matthew_labosco/status/2086826176673411332
+- **What:** Health-influencer thread attributing puffiness, belly fat and wired-but-tired feelings to cortisol, first fix being no food 3 hours before bed. Only the first step is visible in the bookmark; the causal claims are unverified.
+
+## @shannholmberg - Anti-slop Claude setup: STE, Zinsser, forbidden-patterns file, small context
+> another trick to avoid claude writing slop: add this to your claude .md (alongside simplified tech english): "follow Zinsser's four principles of quality writing: 1. Simplicity 2. Brevity 3. Clarity 4. Humanity". next, create a forbidden .md file where you add patterns to avoid as soon as you spot them. examples to ban: staccato pairs, antithesis reframe / negative parallelism, isocolon metaphor-pairs, backward-references. last thing, if you're a writer agent, keep under 50% context window at all times, call subagents or quality drops fast.
+>
+> *Quoting @shannholmberg:* best trick I've found for killing AI slop in opus fable: add this to Claude .md: "Always use ASD-STE100 Simplified Technical English" - it forces short sentences, limited vocabulary, kills all hedging and overexplaining
+
+- **Tweet:** https://x.com/shannholmberg/status/2086809139729367521
+- **Quoted:** https://x.com/shannholmberg/status/2086071967187341690
+- **What:** Layered recipe against AI writing slop: ASD-STE100 in CLAUDE.md, Zinsser's four principles, a growing forbidden-patterns file (staccato pairs, negative parallelism, metaphor pairs, backward references), and keeping writer agents under 50% context via subagents.
+
+---
+
+# Sunday, August 9, 2026
+
+## @daniel_mac8 - Prompt Claude in ASD-STE100 plus Zinsser's four writing principles
+> Oh my god. It's hard to express how big a positive impact this tip can have on your life if you talk to Claude a lot. Tell Claude to write in ASD-STE100, or Simplified Technical English. As a bonus, tell Claude to follow Zinsser's four principles of quality writing: 1. Simplicity 2. Brevity 3. Clarity 4. Humanity. h/t @DanielLockyer
+
+- **Tweet:** https://x.com/daniel_mac8/status/2086499981989482719
+- **What:** Prompting tip: instruct Claude to write in ASD-STE100 Simplified Technical English and follow Zinsser's Simplicity, Brevity, Clarity, Humanity. Yields shorter, clearer, less sloppy output in daily Claude use; matches existing CLAUDE.md style rules.
+
+---
+
+# Saturday, August 8, 2026
+
+## @bakigulai - Semantica: open-source context graph and decision provenance for AI agents
+> AI agent'lar için açık kaynak Palantir yapmışlar: Semantica. Veriyi knowledge graph'e çeviriyor, agent kararlarını kaydediyor ve sonradan "bu kararı neden verdi?" sorusunun izini sürebiliyorsun. Context Graph + Decision Intelligence + provenance + deterministic reasoning. Self-hosted, MIT lisanslı.
+
+- **Tweet:** https://x.com/bakigulai/status/2085977214365896731
+- **Link:** https://github.com/semantica-agi/semantica
+- **Filed:** [semantica](./knowledge/tools/semantica.md)
+- **What:** Turkish tweet pitching Semantica as an open-source "Palantir for AI agents": it builds knowledge graphs from data, logs agent decisions, and traces why each was made. Self-hosted, MIT, Python, 14k+ stars; relevant for agent memory and auditability.
+
+## @wileycwj - OpenOntology: agent-built "onts" let cheap models match Opus on corpus search
+> wow this is a lot more popular than I anticipated:
+>
+> the team at @doss_hq will be releasing OpenOntology soon. i built the first version to help our agents reason about arbitrarily large corpuses of context. it works by navigating the corpus and creating maps (an "ont") for itself to organize concepts into hierarchies. Deepseek-flash+Oont is outperforming Opus; 5x-10x fewer turns, 30x compression with prompt caching, 100x+ cheaper. Maps stay fresh via resolvers that invalidate concepts.
+>
+> *Quoting @wileycwj:* lol we may have cooked too hard on this one. Haiku+OpenOntology outperform Opus on agentic search in every measured dimension. without oont, haiku could not finish the eval. cannot wait to get this into shape for OSS release
+
+- **Tweet:** https://x.com/wileycwj/status/2085950475376238964
+- **Quoted:** https://x.com/wileycwj/status/2085621840610050215
+- **What:** DOSS is preparing to open-source OpenOntology, where a frontier model bootstraps a navigable concept map ("ont") plus deterministic resolvers over a corpus, then cheap models query it at near-SOTA quality. Claims Haiku and Deepseek-flash with an ont beat Opus on agentic search at far lower cost and context use.
+
+---
+
+# Friday, August 7, 2026
+
+## @zainhas - Harness bloat: Pi sends ~3x less context per turn
+> harness bloat is real
+>
+> Pi sent about 3x less context per turn. It managed context better, keeping a tighter working set and finishing the tasks in fewer runs. https://t.co/GE15OAhKoB
+
+- **Tweet:** https://x.com/zainhas/status/2085620430443028571
+- **What:** Zain reports a comparison where the Pi agent harness sent roughly 3x less context per turn than alternatives, kept a tighter working set, and finished tasks in fewer runs. Evidence that harness design and context management drive cost and efficiency, independent of the underlying model.
+
+---
+
+# Thursday, August 6, 2026
+
+## @OpenAIDevs - Agent Plugins open standard and launch-day compatible clients
+> *Replying to @OpenAIDevs:* Build a plugin once and use it across compatible agent clients. Introducing Agent Plugins, an open standard developed with @awsdevelopers, @cursor_ai, @github, @code, and @vercel that packages Agent Skills and supports MCP server configurations in a shared format.
+>
+> Compatible agentic clients at launch:
+> • Codex
+> • @ChatGPT
+> • @cursor_ai
+> • @github Copilot
+> • @kirodotdev
+> • @code
+>
+> https://t.co/gRzzxkhVe8
+
+- **Tweet:** https://x.com/OpenAIDevs/status/2085398374841532758
+- **Link:** https://agent-plugins.org/
+- **Parent:** https://x.com/OpenAIDevs/status/2085398373511918022
+- **What:** OpenAI Devs launched Agent Plugins, an open standard (with AWS, Cursor, GitHub, VS Code, Vercel) that bundles Agent Skills and MCP server configs into one portable plugin format. Launch-compatible clients are Codex, ChatGPT, Cursor, GitHub Copilot, Kiro and VS Code, so a plugin built once works across them.
+
+## @sfakkawi - Seed-round data room checklist that closed a raise in 5 days
+> We raised our seed round in 5 days with an 80th percentile valuation (as first-time founders).
+>
+> When raising, a good data room will make you look 100X more legit than every other seed stage startup. Most companies don't even have this figured out at Series A, here's what to include:
+>
+> 1/ Customer_Cube_0226: Customers tab with each customer's industry, region, size, sales owner, etc. Contracts tab with each contract's start date, term, realized rev, projected rev, status, and any special notes. Revenue schedule / Gantt chart tabs with revenue recognition and contracted revenue over time. Summary / settings tabs. We made ours in Google Sheets with Claude!
+>
+> 2/ PL_Memo_0226: Your memo serves a different purpose than your deck. Its job is to tell a story and sell a vision. Sections: Who we are, our niche and bet, market / competition, execution, and team. Ours was 1 page.
+>
+> 3/ PL_Deck_0226: Team, product differentiation, comp landscape, traction, win rate / pipeline, case studies. Invest in design!!!
+>
+> 4/ Operating_Model: Usually the hardest for early stage companies. But great if you can show operating margins. It communicates seriousness if you understand your costs and investments, and are thoughtful about how you project them to grow. This helps answer the question "Why do you need $5M instead of $2M"
+>
+> 5/ Pipeline_ALL: Include closed won, closed lost, and all other pipeline stages. How the customer found you, projected deal value, etc. (historic included)
+
+- **Tweet:** https://x.com/sfakkawi/status/2085369956812693839
+- **What:** Founder playbook for a seed data room: customer/contract cube spreadsheet, a one-page narrative memo, a designed deck, an operating model that justifies the raise size, and a full historical pipeline. Claims this got a seed raised in 5 days at an 80th percentile valuation.
+
+---
+
+# Wednesday, August 5, 2026
+
+## @doodlestein - Prompt for handing off to a new session when context runs out
+> Useful prompt when the agent tells you that you're basically out of context and it's time to start a new session:
+>
+> ❯ ok, give me the perfect prompt to start the next session with to ensure that we don't lose any threads and that none of the great ideas fall through the cracks.
+
+- **Tweet:** https://x.com/doodlestein/status/2085127870028853667
+- **What:** Jeffrey Emanuel shares a handoff prompt for when an agent session nears its context limit: ask the agent to write the ideal starting prompt for the next session so no threads or ideas are lost. A simple, reusable context-continuity technique.
+
+## @mstockton - Good skills are terse: lesson from Matt Pocock's /wait-what
+> I like reading (and sometimes using) common SKILLs libraries. Some are fantastic, like the collection from @mattpocockuk
+>
+> It's worth noting that the *entire* skill text for this new 'wait-what' is:
+>
+> 'Wait — I don't understand where you've got to here. Re-pitch that: give me a little bit of context, talk in ASD-STE100 Simplified Technical English, and use the ubiquitous language from `CONTEXT.md`.'
+>
+> It's not complex. It's very few words. It's terse and to the point, as it should be.
+>
+> So what is the take-away? It's actually not that difficult to create valuable skills that give you incredible leverage. You just need to:
+> 1. Know what you want
+> 2. Describe it simply and directly
+>
+> Many folks are getting sucked into the dopamine hit of LLMs and are:
+> - Not using their brains to think about what they want and how to describe that
+> - Not reading the instructions that get fed into the model
+>
+> I fall into this trap as well, no one is perfect. But there are a lot of reasons to slow down and be intentional when using LLMs (e.g. 'before you press go') - The initial vector you send it off on is critical, so spend some time with it.
+>
+> *Quoting @mattpocockuk:* mattpocock/skills v1.2 is here! Brings /wait-what (for smacking down verbose models), /writing-for-agents, and a huge change to /grill-me. Here's the breakdown: https://t.co/A9MuDyalRE
+
+- **Tweet:** https://x.com/mstockton/status/2085100465448980913
+- **Quoted:** https://x.com/mattpocockuk/status/2085023484913012992
+- **What:** Stockton argues effective agent skills are short and precise, citing Matt Pocock's v1.2 /wait-what skill, a single sentence asking the model to re-pitch in ASD-STE100 Simplified Technical English using CONTEXT.md vocabulary. Takeaway: know what you want, state it simply, and read the instructions you feed the model.
+
+## @posthog - Replay Vision: AI that watches session replays for you
+> Watching session replays manually is so 2025.
+>
+> We built Replay Vision to watch them for you, and it's now available to everyone.
+>
+> Here's how it works, and how we use it internally:
+
+- **Tweet:** https://x.com/posthog/status/2085059892004729104
+- **What:** THIN: PostHog announces Replay Vision, now generally available, which uses AI to watch session recordings automatically instead of humans reviewing them. The tweet appears to introduce a longer explainer or thread (not captured) on how it works and PostHog's internal use.
+
+## @rough__sea - Ryan Dahl on celld: S3 as the only database an app platform needs
+> celld is kinda the holy grail of application platforms - the only database you need is S3 https://t.co/h3p4uDvgHG
+
+- **Tweet:** https://x.com/rough__sea/status/2085059791538532857
+- **What:** Ryan Dahl (Node/Deno creator) calls celld the "holy grail" of application platforms because object storage (S3) becomes the only database required. The tweet gives no detail on how celld works, so treat it as a pointer to a platform worth investigating. Self-quote only; no further content captured.
+
+## @flornkm - "Prefer Container Queries" agent skill for responsive components
+> Excited to publish my first skill: Prefer Container Queries
+>
+> It makes components respond to their container's width, not the viewport - so the same component adapts anywhere you drop it.
+>
+> npx skills add flornkm/skills https://t.co/CoZvtgFZoe
+
+- **Tweet:** https://x.com/flornkm/status/2085028807048921161
+- **What:** Florian published an installable agent skill (npx skills add flornkm/skills) that steers coding agents toward CSS container queries instead of viewport media queries. Components then adapt to their container width and stay reusable wherever placed.
+
+---
+
+# Tuesday, August 4, 2026
+
+## @0xSero - Liquid AI LFM2.5-2.6B: agentic on-device model for 8GB hardware
+> Best model for your local hardware 8GB
+>
+> - trained in Hermes
+> - trained on a ridiculous amount of tokens
+> - can navigate phones, computers and bots
+>
+> Enjoy ❤️
+>
+> *Quoting @liquidai:* Today we release LFM2.5-2.6B, an agentic model that runs entirely on-device. It plans, calls tools, and works through multi-step tasks on phones, laptops, PCs, and robots. Pre-trained on ~34T tokens, 128K context, open-weight license. Scores comparable or better than models up to ~4x its size (ToolSandbox 77.83 vs Qwen3.5-9B 76.44; Multi-IF 80.07; IFStruct 85.49).
+
+- **Tweet:** https://x.com/0xSero/status/2084754963406975179
+- **Quoted:** https://x.com/liquidai/status/2084640701669613906
+- **What:** 0xSero recommends Liquid AI's new LFM2.5-2.6B as the best model for 8GB local hardware. It is a 2.6B open-weight agentic model (34T tokens, 128K context) that does tool calling and multi-step tasks on-device and beats some 9B-class models on tool and instruction benchmarks.
+
+## @neelsomani - Power 2026: primer on electricity pricing and AI data centers
+> I'm a former Citadel quant who covered power & gas.
+>
+> There's constant talk about chips & memory, but power is the central bottleneck for AI.
+>
+> Very few people understand it, so I'm posting a canonical primer on power pricing & data centers: https://t.co/LO5ovj2imA
+
+- **Tweet:** https://x.com/neelsomani/status/2084719248048529848
+- **Link:** https://power2026.ai/
+- **What:** Neel Somani, a former quant at a large hedge fund, published "Power 2026", a short primer on how AI data-center demand affects US power markets and electricity pricing. Argues power, not chips or memory, is the binding AI constraint; useful background for energy-side AI infrastructure thinking.
+
+## @dee_hw - Personal-AI-Computer: open-source guide to building a local AI workstation or 8-GPU server
+> Time to build your own Personal AI Data Center. Open source: https://github.com/autonomous-ai/Personal-AI-Computer
+>
+> Own your compute. Own your intelligence.
+
+- **Tweet:** https://x.com/dee_hw/status/2084678019868967158
+- **Link:** https://github.com/autonomous-ai/Personal-AI-Computer
+- **Filed:** [personal-ai-computer](./knowledge/tools/personal-ai-computer.md)
+- **What:** Autonomous's open-source repo with DIY designs and an open software stack for local AI machines, from desktop workstations to 8-GPU servers. It argues for owning compute so no vendor can switch you off, your prompts stay private and inference has no per-token bill.
+
+## @firecrawl - anydoc: open-source Rust document-to-Markdown engine for agents
+> Today we're launching anydoc, a new Rust-based doc parsing engine
+>
+> sub ~5ms markdown parsing for PDFs, Word docs, slide decks, and 10 other formats with best in class quality.
+>
+> 100% open source and powering our /parse endpoint!
+>
+> *Quoting @nickscamara_:* introducing anydoc. now agents get 100x faster local parsing of pdf, docx, pptx & 10 more formats. sub-5ms md conversion, 500 docx files in 1.7s, top quality across all 13 formats, rust-based, open source, already powering @firecrawl /parse
+
+- **Tweet:** https://x.com/firecrawl/status/2084670366803218774
+- **Link:** https://github.com/firecrawl/anydoc
+- **Quoted:** https://x.com/nickscamara_/status/2084669934194266370
+- **Filed:** [anydoc](./knowledge/tools/anydoc.md)
+- **What:** Firecrawl open-sourced anydoc, a Rust library converting 13 document formats (docx, pptx, xlsx, PDF, EPUB and more) to Markdown in milliseconds, with Node, Python and WASM bindings and an agent skill. Gives agents fast local parsing without a hosted API; OCR for scanned pages stays in the hosted service.
+
+## @petergyang - Kevin Rose's Reflection Engine prompt surfaces insights about yourself from AI memory
+> This really cool prompt from @kevinrose asks AI to reflect on all your past threads together and give you a list of insights you may not know about yourself.
+>
+> To try it just tell ChatGPT or Claude to: "Make an html report based on [link]"
+>
+> But is it telling me to stop using my judgment and give in to slop? :)
+>
+> Thanks @bentossell for surfacing this.
+>
+> *Quoting @kevinrose:* [link only, to the Reflection Engine repo]
+
+- **Tweet:** https://x.com/petergyang/status/2084665842512588907
+- **Link:** https://github.com/kropdx/reflection-engine
+- **Quoted:** https://x.com/kevinrose/status/2084354331466461435
+- **Filed:** [reflection-engine](./knowledge/tools/reflection-engine.md)
+- **What:** Reflection Engine is a single prompt that has an AI assistant read your whole chat history and memory and return a candid portrait with 22 evidence-cited answers, confidence scores and one action each. Peter Gyang recommends it but jokes about outsourcing self-judgment; it needs a strong model with memory on.
+
+## @doodlestein - New skill for porting open-weight AI models into hyper-optimized Rust (ai-model-into-rust-mega-fused-hyper-kernel)
+> I've now worked on 3 different projects that involved taking an open-weights AI model (FrankenOCR, FrankenWhisper, FrankenSearch), taking the weights from HuggingFace and transforming them into a hand-rolled, hyper-optimized, memory-safe Rust implementation. [...] For FrankenOCR I was able to run the model ~3.3x faster end-to-end than the baseline PyTorch reference, on Apple Silicon and x86, with int8 kernels (NEON SDOT, AVX-512 VNNI) chosen at runtime. [...] I distilled it into /ai-model-into-rust-mega-fused-hyper-kernel, on my skills site ($20/month): 46 files, 300kb, 8 subagent roles, bootstrap scripts, a "truth pack" phase, and a graveyard of measured-dead optimizations with do-not-retry predicates.
+
+- **Tweet:** https://x.com/doodlestein/status/2084661384726352164
+- **Link:** https://jeffreys-skills.md/skills/ai-model-into-rust-mega-fused-hyper-kernel
+- **What:** Jeffrey Emanuel packages methodology from three model ports to Rust into a paid skill. Core idea: bit-exact discrete outputs and measured tolerance on continuous ones make aggressive optimization safe. Lessons include SMMLA slower than SDOT on M-series, int4 5.8x slower than int8, and LLVM autovectorization beating hand SIMD 4.4x.
+
+## @suraj_sharma14 - 18-item checklist for production LLM eval infrastructure
+> CANCEL weekend plans. You NEED to: build an eval harness that runs before every deploy; create golden datasets (100+ test cases minimum); implement LLM-as-a-judge with calibrated scoring; add regression detection that blocks bad deploys; track hallucination rate, grounding quality and latency percentiles (p50, p95, p99); add safety evals; build cost-quality tradeoff curves; implement A/B testing for prompt variants; add a human eval workflow for edge cases; build quality dashboards with alerting; use shadow deployments and canary releases with automatic rollback; publish eval methodology publicly.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2084617852032606662
+- **What:** Engagement-bait but usable checklist of LLM eval practices: pre-deploy harness, golden sets, calibrated LLM judges, regression gates, hallucination and grounding metrics, cost-quality curves, canary and shadow rollout. Useful as a coverage list for evaluating an eval stack, with no depth on any item.
+
+## @aliceisplaying - "papercuts" CLI lets agents report dead ends and frustrations
+> been using this since and it is paying dividents so well
+>
+> *Quoting @steveruizok:* I added a tiny "papercuts" cli tool agents can use to complain about bullshit they encountered during work, like dead-end tool calls, broken links, and other frustrations. models would usually just push through without mentioning any problems
+
+- **Tweet:** https://x.com/aliceisplaying/status/2084614900303741057
+- **Quoted:** https://x.com/steveruizok/status/2075303919664734295
+- **What:** Steve Ruiz built a tiny CLI where agents log friction (dead-end tool calls, broken links) that they would otherwise silently work around. Alice reports it pays off well. It turns hidden agent frustration into a backlog for fixing tooling and docs.
+
+---
+
+# Monday, August 3, 2026
+
+## @doodlestein - Daily multi-repo commit-and-sync prompt built on repo_updater
+> I use this prompt dozens of times a day across all my dev machines. I've historically done it using Claude Code, but recently I've experimented with using Grok Build, and it's actually quite good at it. Note that the prompt below leverages my repo_updater project and the /ru-multi-repo-workflow skill from my site (/dp is just a shortcut to /data/projects). This keeps all my repos synced together across machines and with GitHub. [Full prompt:] Read AGENTS.md. Then use your /ru-multi-repo-workflow skill to commit all changed files in each project within /dp in logical groupings with super-detailed commit messages and push. Don't edit the code. Don't commit ephemeral files. Pull from all repos without losing useful work. Never commit destructive changes without confirming. Always want the "best of all worlds" version; never throw out useful, incremental work.
+
+- **Tweet:** https://x.com/doodlestein/status/2084487487951339606
+- **Link:** https://github.com/Dicklesworthstone/repo_updater
+- **Filed:** [repo-updater](./knowledge/tools/repo-updater.md)
+- **What:** Jeffrey Emanuel's standing prompt for syncing many interdependent repos across machines: agent commits in logical groups, pushes, pulls, and merges toward a best-of-both version while never discarding useful work. It relies on his pure-bash repo_updater CLI and a paid /ru-multi-repo-workflow skill; works with Claude Code or Grok Build.
+
+## @tbpn - Apple lease program as a Section 179 write-off, and Gruber on annual iPhone upgrades
+> .@gruber says Apple's new lease program is "better for everybody," especially iPhone power users who upgrade annually.
+>
+> "If you do get a new iPhone every year, it is just an easy way to do it. You don't really lose anything. You're not paying any interest penalty, and they mail you the box to send the old one back in every year."
+>
+> *Quoting @VadimYuryev:* Update: Apple's lease deal is MUCH better than I expected. Since there's an automatic option to buy-out if you take no action after the lease ends, it qualifies for the Section 179 asset deduction rule for businesses. This means you lease a $2,999 MacBook Pro for $0 down, yet write off the full $2,999 on your taxes as a business expense...
+
+- **Tweet:** https://x.com/tbpn/status/2084407355417178444
+- **Quoted:** https://x.com/VadimYuryev/status/2084320556921565394
+- **What:** John Gruber argues Apple's new device lease has no interest penalty and suits annual iPhone upgraders. Vadim Yuryev adds that the automatic buyout may qualify the lease for Section 179, letting a business deduct the full price (about $660 saved for a 22% bracket on a $2,999 MacBook). Tax claim unverified.
+
+## @Ananth7e - Codex weekly automation to purge stale cache, logs and temp files
+> codex tip: let codex clean up after itself. codex itself generates a lot of stale cache, old thread logs, temp files over time. here's how to automate the cleanup.
+>
+> prompt: "set up a weekly automation that clears out old codex cache, thread logs, temp files that are safe to remove. don't touch anything active or recent. only stale data that's just sitting there taking up space. run this automatically every week without asking me each time."
+>
+> *Quoting @Ananth7e:* codex tip: use codex to free up storage. Prompt: "scan my system to find what's eating up storage. look for large files, old installers, unused apps, cache folders, stale project folders... list everything by category with size, and flag what's safe to auto delete vs what needs my review... don't delete anything yet, just give me the list first."
+
+- **Tweet:** https://x.com/Ananth7e/status/2084354538715382188
+- **Quoted:** https://x.com/Ananth7e/status/2084333430280786115
+- **What:** Two Codex housekeeping prompts: a read-only disk-usage audit sorted by category and safety, then a scheduled weekly job that removes only stale Codex cache, thread logs and temp files. The same pattern works for any agent that accumulates local state.
+
+## @topmass - Putting Simplified Technical English rules in global agent MD files
+> Doing this for over a week and all of my agents are more concise and easy to understand since adding this to global .claude and .codex MD files. Feel free to steal this it works great.
+>
+> will put the prompt to copy below
+>
+> *Quoting @DanielLockyer:* I've updated my rules to tell AI to use Simplified Technical English. Will report back
+
+- **Tweet:** https://x.com/topmass/status/2084353571852832997
+- **Quoted:** https://x.com/DanielLockyer/status/2084208311906218179
+- **What:** Telling agents to write in Simplified Technical English (ASD-STE100) via global CLAUDE.md/AGENTS.md rules. topmass reports a week of more concise, easier-to-read agent output after copying Daniel Lockyer's idea.
+
+## @mervenoyann - TRL OpenEnv guide for training coding models in sandboxes
+> today's sota coding models train on hundreds of thousands of coding simulation sandboxes
+>
+> all you need to do so is a sandbox where the agent solves problems (vLLM + openenv + opencode), a trainer (TRL) and a verifier to check solutions
+>
+> we just teach you how to do it for free (no need to thank it's ok) https://t.co/RbGg2jjFOe
+
+- **Tweet:** https://x.com/mervenoyann/status/2084335423560495547
+- **Link:** https://huggingface.co/docs/trl/main/en/openenv
+- **What:** Hugging Face's TRL docs page on OpenEnv integration: train LLMs on coding tasks using a sandbox (vLLM, OpenEnv, opencode), the TRL trainer and a verifier, mirroring how frontier coding models are trained.
+
+## @tqbf - meat: model-abridged "reading diffs" for reviewing agent-written code
+> Motherfucker. Why didn't I think of this?
+>
+> https://t.co/fad8Ifvc4C
+
+- **Tweet:** https://x.com/tqbf/status/2084329402079363270
+- **Link:** https://github.com/boldsoftware/meat
+- **Filed:** [meat](./knowledge/tools/meat.md)
+- **What:** Ptacek admires meat, a Go CLI that uses a model to shrink a git diff to the conceptual, algorithmic and architectural parts, so humans reviewing agent code skip style and nil-check noise.
+
+## @Saccc_c - Vercel engineer's AGENTS.md rules said to cut token use 80%
+> Vercel工程师总结出的AGENTS.md，能帮你在项目开发中省下80%的token
+>
+> 核心是通过工程化的决策和方案设计，降低AI的无效迭代和token消耗
+>
+> 完整版如下，建议配置在你的项目文件夹下：
+>
+> # AGENTS.md
+> - 不以维护向后兼容性为目标。对于已经废弃的代码路径，应直接移除。
+> - 在充分满足当前需求的前提下，采用尽可能简单的实现方案。避免缺乏依据的抽象、配置项和间接层。
+> - 采用渐进式、分层的方式构建系统。先完成端到端运行的最小版本，再逐步增加功能。
+> - 保持组件的模块化，明确划分职责。
+> - 成熟且维护良好的库能降低复杂度时应优先采用，不重复实现通用功能。
+> - 新增依赖或自行实现前，先评估现有依赖的能力，查阅文档和类型定义。
+> - 架构决策着眼长期演进，不采用预期会被替换的权宜方案。
+> - 设计方案前先研究成熟产品如何解决同类问题，优先采用经过验证的模式。
+>
+> *Quoting @MarcosHernanz:* After doing ~60B tokens, this is my full AGENTS.md https://t.co/VVXIwtSAcO
+
+- **Tweet:** https://x.com/Saccc_c/status/2084316937941832046
+- **Link:** https://twitter.com/MarcosHernanz/status/2083954734487212511
+- **Quoted:** https://x.com/MarcosHernanz/status/2083954734487212511
+- **What:** Chinese-language post sharing an AGENTS.md from Marcos Hernanz (~60B tokens of use), mislabeled as a Vercel engineer's. Rules: no backward compat, simplest design, incremental builds, reuse mature libraries, research proven patterns.
+
+## @anaisbetts - stonex-mcp: MCP server built by recording a site's network traffic
+> Here's an example of using this trick: https://t.co/RHfL1IvMLJ - an MCP server and TypeScript API for my terrible brokerage that doesn't even have Kubera / Plaid integrations
+>
+> *Quoting @anaisbetts:* I can't remember who said this trick, but it is now trivially easy to make APIs and MCP servers for websites: 1. Go to the site 2. Turn on DevTools => Network tab => "Keep Log" 3. Log out and log back in 4. Visit all the pages you want data from (cont.)
+
+- **Tweet:** https://x.com/anaisbetts/status/2084309430854664644
+- **Link:** https://github.com/anaisbetts/stonex-mcp
+- **Quoted:** https://x.com/anaisbetts/status/2084258524448665704
+- **Filed:** [stonex-mcp](./knowledge/tools/stonex-mcp.md)
+- **What:** Betts shows the trick of capturing DevTools network logs to have an agent build APIs and MCP servers for any site, with stonex-mcp (TypeScript client plus MCP, cookie auth) for a brokerage lacking integrations.
+
+---
+
+# Sunday, August 2, 2026
+
+## @sarahwooders - Claude Code now deletes sessions older than 30 days by default
+> PSA: newer versions of Claude Code will delete past sessions older than 30 days.
+>
+> Make sure to update "cleanupPeriodDays" in ~/.claude/settings.json if you want to keep your data.
+
+- **Tweet:** https://x.com/sarahwooders/status/2084084097799069778
+- **What:** Newer Claude Code versions auto-delete session history older than 30 days. Set cleanupPeriodDays in ~/.claude/settings.json to retain transcripts, relevant to anyone mining past sessions.
+
+## @davis7 - Codex config tweak to enable multiple-choice tool outside plan mode
+> Add this to ur Codex config, makes it so that Codex will use the multiple choice tool outside plan mode.
+>
+> Makes it feel 100x better https://t.co/5ZWCQEEoI2
+
+- **Tweet:** https://x.com/davis7/status/2083955357953446205
+- **Link:** https://twitter.com/davis7/status/2083955357953446205
+- **What:** THIN: config snippet is in an image not captured. Davis says a Codex config addition makes Codex use its multiple-choice question tool outside plan mode, which he finds much better.
+
+## @NicolasZu - "Eclipse" Codex skill: Sol orchestrates, Luna implements to cut cost
+> Important PSA for Codex users!
+>
+> Meet the "Eclipse" skill (yes: Sol + Luna)
+>
+> -> Do you want to get the most out of Codex but at a fraction of the cost?
+>
+> Follow this guide. You need 2 clicks and one prompt for a new skill. It's all thanks to the recent price cuts on Luna and its capabilities when in Max mode (not enabled by default)
+>
+> 1) Activate Max in Settings > Configuration
+> 2) Ask Codex to create a new skill "Eclipse" with the prompt below
+>
+> Results? As good as Sol xHigh, but at least 5x more credits. Please test Eclipse and report back!
+>
+> The prompt: Use GPT-5.6 Sol as the orchestrator (goal, repo inspection, acceptance criteria, final review); assign implementation, debugging and testing to GPT-5.6 Luna in Max effort, escalating to Sol only after one failed retry; use fewest Codex threads, avoid duplicate work; minimize cost subject to quality.
+>
+> *Quoting @OpenAI:* We are committed to pushing the model frontier across cost efficiency, capability, and speed. Starting today, we are reducing prices for GPT-5.6 Luna by 80% and GPT-5.6 Terra by 20%, and offering a faster option for GPT-5.6 Sol in the API. Luna and Terra's lower prices are reflected in how usage is counted in Codex and ChatGPT Work, so your usage goes further.
+
+- **Tweet:** https://x.com/NicolasZu/status/2083936174024847595
+- **Quoted:** https://x.com/OpenAI/status/2082878156483219672
+- **What:** After OpenAI cut GPT-5.6 Luna prices 80%, Zullo shares a Codex skill prompt using Sol as orchestrator and Luna (Max effort) as worker, claiming Sol xHigh quality at far lower cost.
+
+## @doodlestein - Encoding anti-ceremony lessons into ntm orchestration skills
+> I'm using these concepts to dramatically improve my orchestration skills that drive my ntm tool (/ntm and /vibing-with-ntm on my site) to encode these "anti-ceremony and process-porn avoidance" lessons.
+>
+> Just Say No to endless agent meta-work (or at least curtail it sharply!):
+>
+> *Quoting @doodlestein:* Push back against agent-induced "process porn" and ceremony, lest your swarms devolve into endlessly churning acceptance certificates and gates instead of actually implementing the useful features and functionality you want. And keep 'em honest: https://t.co/ycV3g3hjeo
+
+- **Tweet:** https://x.com/doodlestein/status/2083869019430355333
+- **Link:** https://twitter.com/doodlestein/status/2083763029993292168
+- **Quoted:** https://x.com/doodlestein/status/2083763029993292168
+- **What:** Follow-up to his process-porn warning: Emanuel folds anti-ceremony lessons into the /ntm and /vibing-with-ntm orchestration skills so swarms curtail endless meta-work and ship real features.
+
+## @coreyhainesco - makerskills: 22 agent skills for founders and indie operators
+> *Replying to @joshgonsalves_:* @coreyhainesco Claude can watch videos? 😅
+>
+> https://t.co/yALW9o6WZg
+
+- **Tweet:** https://x.com/coreyhainesco/status/2083790702920753193
+- **Link:** https://github.com/coreyhaines31/makerskills
+- **Parent:** https://x.com/joshgonsalves_/status/2083734943394394126
+- **Filed:** [makerskills](./knowledge/tools/makerskills.md)
+- **What:** Answering a question about Claude watching videos, Haines points to makerskills, his plugin of 22 skills (including watch-video, deep-research, second-brain, decide) for operators on Claude Code, Codex, Cursor.
+
+---
+
 # Saturday, August 1, 2026
+
+## @doodlestein - Warning against agent "process porn" and ceremony in swarms
+> Push back against agent-induced "process porn" and ceremony, lest your swarms devolve into endlessly churning acceptance certificates and gates instead of actually implementing the useful features and functionality you want. And keep 'em honest: https://t.co/ycV3g3hjeo
+
+- **Tweet:** https://x.com/doodlestein/status/2083763029993292168
+- **Link:** https://twitter.com/doodlestein/status/2083763029993292168
+- **What:** Emanuel warns that agent swarms drift into producing acceptance certificates and gates rather than features. Introduces an anti-ceremony, keep-agents-honest skill (self-linked tweet, likely a skill promo).
 
 ## @iamsahaj_xyz - /zero-tech-debt skill for planning features and reviewing code, installed via npx skills
 > /zero-tech-debt has become one of my favorite and most used skills
