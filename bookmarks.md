@@ -178,6 +178,45 @@
 
 # Monday, October 19, 2026
 
+## @michellechen - Cloudflare Clairic: System One extraction models
+> brand new model paradigm! introducing clairic: system one model extracting, computing, estimating, predicting values from unstructured inputs.
+
+- **Tweet:** https://x.com/michellechen/status/2112241006104244584
+- **Link:** https://blog.cloudflare.com/clairic-extraction-model/
+- **What:** THIN: Announcement of Cloudflare's Clairic, a "System One" class of fast extraction models that pull, compute, estimate and predict values from unstructured inputs; blog page body did not load, so details beyond the title and tweet are unknown.
+
+## @RobHoffman_ - 11 optimizations to get recommended by Meta Muse (AEO)
+> Meta Muse is now recommending our client's product as the best option on the market, then pushing people to sign up. This is the future of AEO. 11 optimizations: 1. fix the accessibility tree (aria-labels, form labels, alt text) 2. key product info in raw HTML, not JS 3. reader's main question as first H2 4. "it depends" answer under 100 words 5. replace slogans with clear definitions 6. testimonials as plain text 7. "as of" dates on key facts 8. robots.txt allow meta-webindexer 9. fix broken links 10. semantic HTML 11. refresh content every 30-90 days.
+
+- **Tweet:** https://x.com/RobHoffman_/status/2112212215583658420
+- **What:** Practical answer-engine-optimization checklist for getting Meta's Muse assistant to recommend a product: make pages machine-readable (accessibility tree, raw HTML, semantic tags), answer questions up front, allow the meta-webindexer crawler, and keep dated facts fresh.
+
+## @RoundtableSpace - Cloudflare open-sources security-audit skill for coding agents
+> Cloudflare open-sourced the security audit skill that seeded its own vulnerability hunting harness. Your coding agent can now run it on your code. Six phases: maps codebase, hunts bugs area by area, sends each finding to a fresh agent to confirm, writes structured results, re-verifies each record, writes final report. Findings split into confirmed, needs validation, rejected. Install: npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit. MIT licensed, 31.3K stars.
+
+- **Tweet:** https://x.com/RoundtableSpace/status/2112125353594401162
+- **Link:** https://github.com/cloudflare/security-audit-skill
+- **Filed:** [cloudflare-security-audit-skill.md](./knowledge/tools/cloudflare-security-audit-skill.md)
+- **What:** Cloudflare's MIT-licensed security-audit agent skill runs a six-phase pipeline (map, hunt, independent confirmation, structured output, re-verification, report) and sorts findings into confirmed, needs-validation and rejected so real issues get fixed first.
+
+## @jjpcodes - The "/better" prompt: pushing models to professional-grade, raw-source work
+> This is the most useful prompt I've found in months. I've been using it with Opus 5.5 as a skill called /better to great effect. Grab it here: https://gist.github.com/joshp123/a1443d30fa1b7c577e74882895cea61b
+>
+> Why it works: (1) "what a top professional would do" reminds the model of practices it would otherwise skip; (2) "rawest material" stops proxy shortcuts like sampling logs; (4) designing independent success criteria, with the risk of "proof porn" that frontier models love.
+>
+> *Quoting @sarthakgh:* This is great. A prompt to come up with a better prompt
+
+- **Tweet:** https://x.com/jjpcodes/status/2112100971727769622
+- **Quoted:** https://x.com/sarthakgh/status/2110162988657180990
+- **Link:** https://gist.github.com/joshp123/a1443d30fa1b7c577e74882895cea61b
+- **What:** Endorses a meta-prompt gist (joshp123) used as a /better skill; it works by invoking top-professional standards, forcing primary-source inspection, and requiring independent success criteria, while warning models drift into "proof porn". Gist content was not fetched.
+
+## @chalaska - Brand-tinted color scale instead of pure greys (Google trick)
+> One of the tricks I picked up from working at Google is a very simple way to make sure your interface feels on-brand: start with the core brand colour, create a palette of shades from near-white to near-black all tinted with that hue. Text isn't pure white, it's a very light blue; background isn't pure black, it's a very dark blue. Works well for trading interfaces where positive/negative colours dominate. Prompt: "Take my brand's base colour and generate a tinted scale from near-white to near-black. Use those tints for every background, surface, border and text colour in the interface instead of pure greys."
+
+- **Tweet:** https://x.com/chalaska/status/2112068740506636353
+- **What:** UI color technique: derive neutrals from a brand-hue tinted scale (near-white to near-black) for text, backgrounds, surfaces and borders so brand feel is subtle but pervasive, especially useful where red/green data colors dominate; includes a ready AI prompt.
+
 ## @zoltanszogyenyi - TypeUI: curated accessibility-based UI/UX rules as AI context
 > ladies and gentlemen...
 >
@@ -331,6 +370,254 @@
 
 - **Tweet:** https://x.com/mattzcarey/status/2112202956837638329
 - **What:** Cloudflare's MCP server now uses step-up authorization: agents start with minimal scopes and request more only when a task needs them. This gives least-privilege agent access across all supported MCP clients.
+
+---
+
+# Sunday, October 18, 2026
+
+## @aidenybai - Skeleton UI tip: have the agent measure the loaded UI with Playwright
+> design eng tip for skeleton UIs:
+>
+> ask your agent to measure the loaded UI with Playwright
+>
+> then match the skeleton's sizes and positions to prevent layout jank
+
+- **Tweet:** https://x.com/aidenybai/status/2111991261540528454
+- **What:** Practical design-engineering tip: let a coding agent measure real rendered element sizes and positions via Playwright, then size skeleton loaders to match so loading states do not cause layout shift.
+
+## @SusieM414141 - Parents' week-long meal prep for their kids
+> I'm just going to throw this out there. I am up for adoption for families like this. Back in the day when I was young there was no real meal prepping, at least not at my house. These lovely parents did this because they were traveling for a week. Those kids have it good.
+
+- **Tweet:** https://x.com/SusieM414141/status/2111939236601516255
+- **What:** THIN: Personal reaction to an image/video (not visible) of parents who prepped a week of meals for their kids before traveling; no link or technical substance, likely a lifestyle or humor bookmark.
+
+## @coreyganim - Newsjack: open-source agent skills that act as a PR specialist
+> A strong personal brand is THE most valuable business asset you can build.
+>
+> One of the most interesting ways I've seen for building your brand/getting media placements is a free GitHub repo called Newsjack (https://newsjack.sh/). Built by @elvissun, it's basically a set of agent skills designed to turn your agent into a PR specialist. Workflow: /pr-strategist, /voice-extractor, /newsjack-monitor-setup and /newsjack-detector, /angle-generator, /find-journalists and /same-outlet-ranker, /meanest-editor, /reactive-comment for HARO and Qwoted requests. You still review and send every pitch yourself.
+
+- **Tweet:** https://x.com/coreyganim/status/2111888819079291157
+- **Link:** https://newsjack.sh/
+- **What:** Walkthrough of Elvis Sun's free Newsjack skill set that automates earned-media PR: positioning, voice matching, news monitoring, journalist angles and lists, pitch roasting and reactive HARO replies, aimed at getting press placements and backlinks.
+
+## @BHolmesDev - dexhorthy's /show-me skill: pseudo-code change overviews for PRs
+> Late to the party here, but @dexhorthy's /show-me skill is awesome.
+>
+> It gives a short, token-efficient overview of the changes in a pseudo-code format. Quick to generate and easily embedded in a PR description.
+>
+> It's composable too. Want more on InboxView? /show-me the InboxView. Want more on the preview batching mechanism? /show-me the preview cache
+>
+> *Quoting @dexhorthy:* /show-me: compact visual representations for coding agents (article: make your agent converse visually instead of in walls of prose; `npx skills add humanlayer/skills --skill show-me`)
+
+- **Tweet:** https://x.com/BHolmesDev/status/2111883582373257218
+- **Quoted:** https://x.com/dexhorthy/status/2087569590268391897
+- **Link:** https://x.com/i/article/2087315210667429888
+- **Filed:** [show-me-compact-visual-representations.md](./knowledge/articles/show-me-compact-visual-representations.md)
+- **What:** Endorsement of HumanLayer's show-me agent skill, which replaces prose walls with compact visuals (pseudocode, call stacks, component and file trees, types, diagrams); Holmes uses it for token-cheap PR descriptions and drill-downs on specific components.
+
+## @mariyav4leva - Six B2B accelerators worth considering in October 2026
+> Accelerators for B2B founders in October 2026 (bookmark this): 1. TinySeed (bootstrapped B2B SaaS) 2. YC (network) 3. Alchemist (enterprise intros at Salesforce, SAP, Cisco) 4. South Park Commons ($400K for 7%, guaranteed follow-on) 5. Forum Ventures (pre-seed B2B SaaS) 6. HF0 (newer, high founder quality). Not every founder needs a traditional VC path.
+
+- **Tweet:** https://x.com/mariyav4leva/status/2111879986801983790
+- **What:** Opinionated ranked list of six accelerators for B2B founders (TinySeed, YC, Alchemist, South Park Commons, Forum Ventures, HF0), each with a one-line positioning such as TinySeed for bootstrapped SaaS and Alchemist for enterprise corporate intros.
+
+## @rustaceans_rs - LayerFS: Rust filesystem for AI agents with zero-copy workspace branching
+> LayerFS is a Rust-powered filesystem for AI agents, enabling zero-copy workspace branching, deduplicated snapshots, parallel rollouts, and efficient state recovery.
+
+- **Tweet:** https://x.com/rustaceans_rs/status/2111873467180015848
+- **What:** THIN: Announces LayerFS, a Rust filesystem for AI agents offering zero-copy workspace branching, deduplicated snapshots, parallel rollouts and state recovery; the link only resolves back to the tweet, so no repo URL or details were available to file.
+
+## @JPoehnelt - Tips for self-hosted GitHub Actions runners (k8s, pnpm store, job pools)
+> Some tips for your custom GitHub action runners:
+>
+> - Preinstall your tooling. I run this via k8s and build off a container image in the repo so each job starts with a matching base.
+> - Keep pnpm's persistent store and workspaces on the same filesystem on fast local storage so installs can hardlink packages. Skip GitHub action cache.
+> - Separate lightweight checks, heavy builds, and Docker workloads into dedicated pools.
+> - Figure out peak loads [...] I oversubscribe the k8s nodes.
+> - Consolidate tiny jobs [...] Look at your checkouts.
+> - Create a routine/schedule prompt for your agent to monitor/improve.
+>
+> *Quoting @JPoehnelt:* I moved my some GitHub action runners to a new M5 Ultra Mac Studio and off of @useblacksmith. The price of compute for Blacksmith was $400+/month. You can lease a M5 Ultra 96GB for ~$110/month and have compute to spare.
+
+- **Tweet:** https://x.com/JPoehnelt/status/2111873389774475570
+- **Quoted:** https://x.com/JPoehnelt/status/2111869602137542811
+- **What:** Follow-up to moving CI off Blacksmith ($400+/mo) to a leased M5 Ultra Mac Studio (~$110/mo): concrete runner tuning advice including baked container images, same-filesystem pnpm store for hardlinks, separate pools by job weight, node oversubscription, and an agent routine to monitor and improve.
+
+## @kseniam0s - Founder Fundraising Toolkit: 40+ links for running a raise (Pageform data room)
+> Every founder I know asks me for the same links. So I put them all in one place, free.
+>
+> My full Founder Fundraising Toolkit, 40+ links and resources that help you:
+>
+> - run your raise as a process - build a fit list of ~50 investors - find creative sourcing strategies - tap a custom map of FL investors - stack non-dilutive + $0 credits - get the diligence stack most founders skip until it's too late
+
+- **Tweet:** https://x.com/kseniam0s/status/2111840389736837220
+- **Link:** https://pageform.io/view/ogxwe9j93emdiw99duceh0
+- **What:** Ksenia Moskalenko's free curated toolkit of 40+ fundraising resources (investor fit list, sourcing, non-dilutive funding, credits, diligence), hosted as a Pageform data room; fetched link was only the JS app shell so the actual resource list is not captured.
+
+## @shamol_coder - Parenting thread: 12 habits of parents whose kids listen the first time
+> My daughter is still little.
+> But the way I talk to her now is already shaping whether she'll listen to me later.
+>
+> I STOLE THESE 12 HABITS FROM PARENTS WHOSE KIDS ACTUALLY LISTEN THE FIRST TIME:
+>
+> 1. They stopped using "sweetie" and "honey" during correction.
+
+- **Tweet:** https://x.com/shamol_coder/status/2111789432684892269
+- **What:** THIN: Parenting-advice thread opener listing 12 communication habits for getting kids to listen; only the first habit (avoid pet names like "sweetie" during correction) is captured, remaining items not in the bookmark.
+
+## @mattpocockuk - Pre-commit hook capping agent-authored files at 5,000 tokens
+> Prompt of the day:
+>
+> Create a pre-commit hook that prevents files over 5,000 tokens. Tokens = bytes/4.
+>
+> Run only on staged files. Ignore files which are not authored by agents, like lockfiles or codegen.
+>
+> Provide explicit instructions on how to split files in the error message.
+>
+> The simplest investment I ever made in my codebase. So good.
+
+- **Tweet:** https://x.com/mattpocockuk/status/2111708560715292675
+- **What:** Matt Pocock shares a prompt to have an agent build a pre-commit hook that blocks staged files over ~5,000 tokens (bytes/4), skips lockfiles and codegen, and prints split instructions in the error, keeping files agent-friendly in size.
+
+---
+
+# Saturday, October 17, 2026
+
+## @T3chFalcon - Prompt injection via hidden email content targeting AI inbox assistants (Barracuda report)
+> Attackers have figured out how to write phishing emails that bypass you entirely and go straight for the AI reading your inbox.
+>
+> Barracuda documented this in October. [...] hidden inside that email in white text invisible to you, in HTML comments, in zero-width characters that exist only in the raw code are instructions addressed to the AI. [...] The AI follows them, because it has no way to distinguish "content I should summarize" from "instructions I should follow".
+>
+> The four ways attackers hide the instructions: HTML comments, CSS-invisible text, Base64-encoded data, zero-width characters.
+>
+> *Quoting @Polymarket:* JUST IN: Cybersecurity experts warn that AI agents are highly vulnerable to phishing emails containing hidden malicious instructions.
+
+- **Tweet:** https://x.com/T3chFalcon/status/2111666077096636435
+- **Quoted:** https://x.com/Polymarket/status/2111542648292921413
+- **What:** Explains indirect prompt injection against AI email summarizers: phishing mails embed hidden instructions (HTML comments, white-on-white text, Base64, zero-width characters) that the model obeys, e.g. faking urgency or altering vendor payment details; builds on Polymarket's report of the Barracuda finding.
+
+## @sh_reya - AI coding agents enabling the "unbundling" of big data systems (SlateDB + Lance + DataFusion)
+> i'm really intrigued by the "unbundling" of big data systems. AI coding agents are going to make it possible for every company to build their own data system & significantly reduce compute bills
+>
+> *Quoting @jezell:* Using SlateDB + Lance + Datafusion to save a customer millions of dollars a year in vendor costs. This is gonna be my goto stack for a lot of things.
+
+- **Tweet:** https://x.com/sh_reya/status/2111644358776918113
+- **Quoted:** https://x.com/jezell/status/2111147883957498089
+- **What:** Shreya Shankar predicts coding agents will let companies assemble bespoke data systems instead of buying bundled vendors, citing Jesse Ezell's SlateDB + Lance + DataFusion stack that saves one customer millions per year in vendor costs.
+
+## @suraj_sharma14 - CLAUDE.md audit: delete what Claude can learn from the repo, keep rules whose breakage costs money or trust
+> Your CLAUDE.md is probably making Claude dumber.
+>
+> The guy who built Claude Code says delete it every 6 months.
+>
+> Delete: "Use TypeScript", "Our folders are /src /lib /api", "Write clean code", "Think step by step", 40 lines of style rules.
+> Keep: "Never touch /migrations without asking", "Payments use the legacy client not the new one", "Never log user emails".
+>
+> The rule: If Claude can learn it from your repo, delete it. If breaking it would cost money or trust, keep it.
+>
+> Delete yours. Ship for a week. Add back only what breaks.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2111638397907321036
+- **What:** Practical CLAUDE.md pruning heuristic attributed to Boris (Claude Code creator): remove anything inferable from the repo, linter or tsconfig, and keep only high-stakes tribal rules like migrations, legacy payment client and PII logging, then re-add only what breaks.
+
+## @RomainHedouin - Disabling smart TV bloatware over adb with a Claude prompt (reply to Ryan Doyle's TV hack)
+> This is indeed super easy, I highly recommend trying it
+> There's no "hack" it's really just adb commands through your local network which Claude knows by heart
+>
+> I tried it and disabled Xiaomi's analytics and statistics packages to save a nice 131 MB of RAM (out of less than 2 GB)
+>
+> Here is the full prompt: "Tell me what information you need to access my smart TV through adb. Save a backup using `adb shell pm list packages` then sort the packages into likely bloat. I will then tell you which packages we can then disable using `pm disable-user --user 0 <package>`. If anything goes wrong, we can revert this with `pm enable <package>`."
+>
+> *Quoting @doooyle:* Hacked my TV with Claude Code today. No more ads, bloatware, spyware or laggy UI. I also got a beautiful screensaver with my revenue, calendar, weather, and notifications for new Stripe payments. It was super easy! I sent it the listing for my tv, asked "can you hack this?" And it talked me through how [truncated]
+
+- **Tweet:** https://x.com/RomainHedouin/status/2111605692222013831
+- **Quoted:** https://x.com/doooyle/status/2111196679680540724
+- **What:** Confirms Ryan Doyle's Claude Code TV cleanup is just adb over the local network: back up the package list, have Claude sort likely bloat, then reversibly disable packages with pm disable-user. Romain freed 131 MB RAM on a Xiaomi TV for under $0.50 of Sonnet, and shares the reusable prompt.
+
+## @AdvisorJohn - Mortgage amortization: 50/50 principal point at 5 years, 20-year breakeven on a 7% refi
+> I've had my current mortgage for a touch over 5 years and just reached the 50/50 principal-to-payment ratio.  More than half of my payment now goes to principal.
+>
+> What's crazy...is I just did my current loan at 7%.  Guess what the breakeven point is?
+>
+> 20-years.  That's...insane...
+
+- **Tweet:** https://x.com/AdvisorJohn/status/2111577088008356169
+- **What:** Financial advisor notes his mortgage just crossed the point where over half of each payment goes to principal, and that a new 7% loan would take about 20 years to reach that same split, illustrating how front-loaded interest is on high-rate loans.
+
+## @alexpagepilot - Sell boring consumables to women 45-65 for $60K/month
+> if nobody knows you online, I'm begging you: sell boring consumables to boring demographics - dog supplements, cleaning refills, coffee pods - things that run out and need replacing - sell them to women 45-65 who don't know what temu is. run 20 products. each does $3K. that's $60K/month
+
+- **Tweet:** https://x.com/alexpagepilot/status/2111490421927133447
+- **What:** E-commerce strategy thread: sell replenishable low-glamour consumables (pet supplements, cleaning refills, coffee pods) to women 45-65, run about 20 products at ~$3K each for $60K/month; the author cites an electrician reaching $22K/month with no social media.
+
+## @david_attisaas - Prompt to find your app's viral "aha moment" visual feature
+> claude prompt to find your "aha moment magic feature". without that aha moment you'll struggle a lot marketing your app [...] find the one visual feature to add to my app so that a 10-second vertical video, with no voiceover and no text, makes people react.
+
+- **Tweet:** https://x.com/david_attisaas/status/2111479347425296476
+- **What:** Prompt template casting Claude as a consumer-app product designer, filling in app details to find one visual feature (FaceApp, Lensa, Cal AI style) that passes seven sound-off filters such as a visible transformation, instant projection and minimal effort.
+
+## @Voxyz_ai - Claude Code prompt to map 124 GB of developer disk leftovers
+> My Mac was down to 27 GB, so I had Opus 5.5 scan it read-only: 124 GB of developer leftovers, and ~/.codex alone was 59 GB, 31 GB of it old chats. [...] Send this to Claude Code and see how much is on yours.
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2111472304643612774
+- **What:** Shares a read-only Claude Code prompt that scans sizes only, builds an HTML treemap split into safe-to-remove vs review-first, generates a cleanup script from ticked items and logs sizes to ~/disk-report/sizes.csv; author found 124 GB of dev leftovers, 59 GB in ~/.codex.
+
+## @elithrar - APFS volume with fseventsd and Spotlight off for ~/repos
+> OK, so: an elastic vol w/ fseventsd turned off. had to be elastic as I didn't want to pre-reserve space. TL;DR: created an APFS volume with nolog + disable Spotlight indexing at ~/repos - persists and looks like a normal folder to every app.
+>
+> *Quoting @fforres:* Life is good now. Tell your agent to: create a new volume in your mac, disable fseventsd (and spotlight) on it, move your projects folder to it, remount it. For extra points move your pnpm cache folder to it.
+
+- **Tweet:** https://x.com/elithrar/status/2111461035152662911
+- **Quoted:** https://x.com/fforres/status/2110883187920617472
+- **Link:** https://github.com/elithrar/dotfiles/blob/main/repos-volume.sh
+- **What:** Script (repos-volume.sh) creating an elastic APFS volume mounted at ~/repos with fseventsd logging and Spotlight indexing disabled, to cut filesystem-event overhead from agent-heavy dev folders, building on fforres' tip to move projects and pnpm cache onto such a volume.
+
+---
+
+# Friday, October 16, 2026
+
+## @HoytEmerson - DuckDB 2.0 may make S3 reads database-fast
+> DuckDB's upcoming 2.0 release looks to make reading files from S3 comparable to just reading a database. Even with Lakehouses, reading directly from object storage is a performance bottleneck. [...] I'm seeing DuckDB 2.0 changing all that.
+
+- **Tweet:** https://x.com/HoytEmerson/status/2111259260013199572
+- **What:** Hoyt Emerson says DuckDB 2.0 should bring object-storage reads (S3) near database speed, removing the usual caching layer that lakehouse setups need; details are in an attached image not captured.
+
+## @lionel_mora - Interactive experiments on open-source primary-school concept graph
+> In July we open-sourced a dynamic graph of everything a child learns in primary school. 1,590 concepts, 3,221 dependencies. Now we're turning every concept into interactive experiments kids can play and learn from. First one, age 7: heat and water.
+
+- **Tweet:** https://x.com/lionel_mora/status/2111156593693794386
+- **What:** Lionel Mora's team, after open-sourcing a graph of 1,590 primary-school concepts and 3,221 dependencies, is turning each concept into interactive experiments, starting with an age-7 heat and water demo, aiming at tailored learning.
+
+## @daradoescode - Single agents.md addition claimed to 2x shipping output
+> adding this alone to my agents.md has 2x'd the amt I ship
+
+- **Tweet:** https://x.com/daradoescode/status/2111150488980799536
+- **What:** THIN: @daradoescode claims one unspecified addition to their agents.md doubled their shipping rate; the actual instruction is in an image/self-link not captured, so the content is unknown.
+
+## @kseniam0s - Basis Fellowship offers $50K no-equity grants
+> FELLOWSHIP‼️ $50K for your startup. No equity, no strings. Takes 10 minutes to apply. The Basis Fellowship is funded personally by the co-founders of Orbit. It's not a fund and it's not an accelerator taking 7%. [...] $1,000 if you nominate someone who's chosen. Open and rolling admissions. First cohort is 2026.
+
+- **Tweet:** https://x.com/kseniam0s/status/2111141570925723884
+- **Link:** https://basisfellowship.org/apply
+- **Link:** https://basisfellowship.org/nominate
+- **What:** Basis Fellowship, funded personally by Orbit co-founders, gives $50,000 with no equity and a fellow network via a 10-minute rolling application, open to anyone, with a $1,000 nominator bounty.
+
+## @thorstenball - Why are you still using pull requests?
+> Why are you still using pull requests? Is it for code review? If so, do you really think your colleagues catch bugs that an Opus 5.5 or Fable or Astra won't find? [...] Is it for knowledge sharing? [...] Is CI the reason? [...] I honestly don't get why people still stick to PRs.
+
+- **Tweet:** https://x.com/thorstenball/status/2111130129355481240
+- **What:** Thorsten Ball argues PRs are obsolete with agents: models review better than colleagues, can generate explainers instead of PR-based knowledge sharing, and CI run on branch then merge then again is redundant, and original CI meant no long-lived branches.
+
+## @ethanwalkerman - Perplexity open-sources SPACE, Firecracker agent sandbox with E2B-compatible API
+> The sandbox market is crowded. Perplexity just open-sourced SPACE, the sandbox powering millions of daily sessions on Computer. [...] Architecturally, SPACE is built around one premise: treat the sandbox as already compromised.
+>
+> *Quoting @perplexity_ai:* We're open sourcing SPACE, the sandbox platform that runs every task in Perplexity Computer. SPACE gives each agent task its own Firecracker microVM and controls credentials and outbound traffic from outside the VM. Available now under Apache 2.0.
+
+- **Tweet:** https://x.com/ethanwalkerman/status/2110959187257942077
+- **Quoted:** https://x.com/perplexity_ai/status/2110778478312481167
+- **Link:** https://github.com/perplexityai/SPACE?tab=Apache-2.0-1-ov-file
+- **Filed:** [space-sandbox.md](./knowledge/tools/space-sandbox.md)
+- **What:** Perplexity open-sourced SPACE (Apache 2.0), a Rust + Firecracker microVM sandbox with out-of-VM credential handling, differential snapshots and an E2B-compatible API; the author compares costs (~$0.03-0.05/hr self-hosted vs ~$0.13/hr E2B) and claims 0 escapes in 108 breach attempts.
 
 ---
 
