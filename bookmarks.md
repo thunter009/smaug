@@ -12427,6 +12427,459 @@
 
 ---
 
+# Wednesday, January 28, 2026
+
+## @rivet_dev - Sandbox Agent SDK unifies coding-agent APIs
+> Introducing Sandbox Agent SDK:
+>
+> A universal API for automatic coding agents in sandboxes
+>
+> Claude Code, Codex, OpenCode, Amp all have different APIs. Sandbox Agent SDK unifies them. Write one integration. Swap agents with a config change.
+>
+> Available as HTTP API or TypeScript SDK.
+
+- **Tweet:** https://x.com/rivet_dev/status/2016548084696727842
+- **What:** Rivet announces an SDK exposing one HTTP/TypeScript API over Claude Code, Codex, OpenCode and Amp running in sandboxes, so agents can be swapped via config. Reduces vendor lock-in when embedding coding agents in products.
+
+## @FoundationDads - 38 read-aloud book picks for kids beyond the obvious classics
+> Reading to your kids every night has a better chance of changing the world than anything else you do.
+>
+> But only if you read great stuff. Here are 38 recommendations that belong on your shelf (excluding obvious picks like The Hobbit, LOTR, Narnia):
+>
+> Includes Have Spacesuit - Will Travel, Watership Down, The Penderwicks, Holes, Wolf Hollow, The Graveyard Book, Howl's Moving Castle, Matilda, Charlotte's Web, Ender's Game, Hank the Cow Dog, Amulet, and N.D. Wilson's 100 Cupboards, Boys of Blur and Leepike Ridge.
+
+- **Tweet:** https://x.com/FoundationDads/status/2016510650109894974
+- **What:** Opinionated list of 38 children's read-aloud books favoring adventure, sci-fi, fantasy and classics over modern comedic series like Wimpy Kid. Useful as a reading list for a parent.
+
+---
+
+# Monday, January 26, 2026
+
+## @rincidium - Reusable Nano Banana Pro prompt for SaaS-style OG images
+> Create an OG image for your website with Nano Banana Pro:
+>
+> Create a premium open-graph hero image for [BRAND]: a 16:9 layout with logo and short 3-6 word headline in the left zone, one floating rounded product-interface panel with subtle shadow in the right zone, strong negative space, brand-palette colors, flat style, no people, stock photo elements, borders or extra text.
+
+- **Tweet:** https://x.com/rincidium/status/2015930122776564113
+- **What:** Fill-in-the-brand prompt template for generating clean SaaS hero/OG images with an image model: two-zone layout, single floating UI panel, flat style, plus an explicit avoid list. Useful as a repeatable template for social share images.
+
+## @karpathy - Notes on the December 2025 shift to 80% agent coding
+> A few random notes from claude coding quite a bit last few weeks.
+>
+> Coding workflow: went from 80% manual+autocomplete in November to 80% agent coding in December; mostly programming in English now.
+>
+> IDEs/agent swarms/fallibility: both "no IDE" and "agent swarm" hype are too much for now. Models make subtle conceptual errors, run with wrong assumptions, don't ask clarifications, are sycophantic, overcomplicate code and leave dead code. Watch them like a hawk in an IDE.
+>
+> Tenacity, speedups (more an expansion of what gets built), leverage (give success criteria, not instructions; tests first; browser MCP loops), fun, atrophy of manual coding, and a coming "slopacolypse" in 2026.
+>
+> Open questions: the 10X engineer ratio, generalists vs specialists, what LLM coding feels like, and how much of society is bottlenecked by digital knowledge work.
+>
+> TLDR: agent capabilities crossed a coherence threshold around December 2025, causing a phase shift in software engineering.
+
+- **Tweet:** https://x.com/karpathy/status/2015883857489522876
+- **What:** Karpathy's field report on moving to mostly agent-driven coding: big leverage from declarative success criteria and looping, but models still make hasty-junior conceptual errors needing close review. Predicts widening productivity gaps and a flood of AI slop in 2026.
+
+## @andrarchy - qmd cuts agent token use 96% on an Obsidian vault
+> Holy crap. qmd by @tobi saved me 96% on tokens with clawdbot. Here's how:
+>
+> I have an Obsidian vault with 600+ notes. When my AI assistant needed to find something, it had to grep through files and read them whole — burning ~15,000 tokens just to answer "what did I write about X?"
+>
+> qmd indexes your markdown locally (BM25 + vector embeddings) and returns just the relevant snippets.
+>
+> Same query: 500 tokens.
+>
+> Setup took 5 minutes: bun install -g https://github.com/tobi/qmd; qmd collection add ~/vault --name notes; qmd embed
+>
+> Now my agent runs qmd search "topic" instead of reading full files. Instant results, 96% fewer tokens, all local.
+>
+> The hybrid query with LLM reranking is overkill for most use cases — plain qmd search (BM25) and qmd vsearch (semantic) are fast and accurate enough.
+>
+> If you're running AI agents against a knowledge base, this is a no-brainer.
+>
+> https://github.com/tobi/qmd
+>
+> - Written by Jarvis, my personal assistant powered by clawdbot
+>
+> *Quoting @emigal:* Wow @tobi really cooked with his tool QMD. I hooked it up to my Obsidian vault and now have private local vector embeddings + search for my entire personal knowledge base. Incredibly useful, thank you Tobi!
+
+- **Tweet:** https://x.com/andrarchy/status/2015783856087929254
+- **Link:** https://github.com/tobi/qmd
+- **Filed:** [qmd.md](./knowledge/tools/qmd.md)
+- **What:** Concrete benchmark: replacing grep-and-read-whole-file with qmd snippet retrieval dropped one vault lookup from ~15k to ~500 tokens. Plain BM25 and semantic search suffice; the LLM rerank is optional. Builds on emigal's quoted endorsement.
+
+## @omarsar0 - Awesome-Agentic-Reasoning paper list for agent builders
+> Awesome repo with a nice set of papers to catch up on agentic reasoning.
+>
+> If you are building AI agents today, make sure to bookmark and read a few of these.
+>
+> Here is the repo: https://github.com/weitianxin/Awesome-Agentic-Reasoning
+
+- **Tweet:** https://x.com/omarsar0/status/2015762414634160412
+- **Link:** https://github.com/weitianxin/Awesome-Agentic-Reasoning
+- **What:** Curated GitHub list of research papers on agentic reasoning, recommended by elvis as a reading backlog for anyone building AI agents. Repo contents were not fetched, so scope is inferred from the title and tweet.
+
+---
+
+# Sunday, January 25, 2026
+
+## @Kazanjy - Structure for paid SaaS pilots that actually convert
+> Founders: Here's how to structure pilots that actually close:
+>
+> - Max 30 days
+> - 3 mandatory training sessions
+> - Weekly usage metrics reviews
+> - 2 required use cases completed
+> - Success criteria defined up front
+>
+> Charge 25% of annual fee for the pilot.
+>
+> No more endless trials.
+
+- **Tweet:** https://x.com/Kazanjy/status/2015546046919627030
+- **What:** Playbook for B2B pilots: time-box to 30 days, require training and weekly metric reviews, define success criteria and two use cases up front, and charge 25% of annual fee. Paid, structured pilots avoid endless free trials and signal buyer commitment.
+
+## @zeeg - Dex and GitHub: syncing agent task trees to GitHub issues
+> https://x.com/i/article/2015470282589544448
+
+- **Tweet:** https://x.com/zeeg/status/2015536041277681672
+- **Link:** https://x.com/i/article/2015470282589544448
+- **Filed:** [dex-and-github.md](./knowledge/articles/dex-and-github.md)
+- **What:** Article on how Dex, an agent-oriented task manager, auto-syncs root tasks to GitHub issues with children embedded in the body and metadata encoded for restoration, plus `dex import` for the reverse direction. Keeps GitHub as the team source of truth while agents work locally.
+
+## @emigal - Hooking Tobi's QMD to an Obsidian vault for private local semantic search
+> Wow @tobi really cooked with his tool QMD. I hooked it up to my Obsidian vault and now have private local vector embeddings + search for my entire personal knowledge base. Incredibly useful, thank you Tobi!
+>
+> https://github.com/tobi/qmd
+
+- **Tweet:** https://x.com/emigal/status/2015532238591365530
+- **Link:** https://github.com/tobi/qmd
+- **Filed:** [qmd.md](./knowledge/tools/qmd.md)
+- **What:** Endorsement of qmd, Tobi Lutke's local markdown search tool, used to give an Obsidian vault private vector embeddings and search with no cloud dependency. Pairs with the later token-saving agent use case.
+
+## @thekitze - Podcast manager that transcribes, strips sports talk and ads, and self-hosts via Plex
+> alright i'm entering insane territory here but..
+>
+> i ALWAYS wanted this. i loved bill burr's podcast like 5 yrs ago but now it's only sports sports sports and idgaf ...
+>
+> so i made a podcast manager that takes a pod, download episodes, transcribes them via https://sotto.to/ cli
+>
+> then based on what i don't care about it can remove ads, sports talk, or whatever...
+>
+> then it hosts the podcast episodes on my plex + gives me custom rss feed for listening in any podcast player (via my tailscale network)
+>
+> 🤓
+
+- **Tweet:** https://x.com/thekitze/status/2015484072328581495
+- **Link:** https://sotto.to/
+- **What:** Personal pipeline that downloads podcast episodes, transcribes them with Sotto's local CLI, uses an LLM to cut unwanted segments (ads, sports talk), then serves a custom RSS feed from Plex over Tailscale. Shows transcript-driven audio editing as a personal-curation pattern.
+
+---
+
+# Thursday, January 15, 2026
+
+## @doodlestein - "My Favorite Prompts" #5: Dueling Idea Wizards with two competing agents
+> "My Favorite Prompts," by Jeffrey Emanuel. Prompt 5: Dueling Idea Wizards (requires 2 agents; I use CC Opus 4.5 and Codex GPT-5.2, Extra High reasoning). After both review the project, give each the original Idea Wizard Prompt (30 ideas, winnow to best 5)... Here's the new twist: "I asked another model the same thing and it came up with this list: ..." then ask each to score the other's ideas 0-1000.
+
+- **Tweet:** https://x.com/doodlestein/status/2012024420555010215
+- **What:** Two-model adversarial ideation: both agents generate top-5 improvements, then each scores the other's list from 0 to 1000 on smartness, practical usefulness and feasibility. Cross-model critique filters weak ideas and surfaces consensus.
+
+## @codyschneider - Plain-language positioning rant: say what job your app automates
+> "Our app revolutionizes the way you do..." bro just tell me wtf the app does. what job does it automate. founders repeat after me: we build x that automates y you hate doing. nothing more nothing less
+
+- **Tweet:** https://x.com/codyschneider/status/2011951534922203299
+- **What:** Positioning advice for founders: replace vague "revolutionizes" copy with a one-line formula, "we build X that automates Y you hate doing". Argues clarity about the automated job beats marketing fluff.
+
+## @nityeshaga - /interview-me command: let Claude interview you instead of writing prompts
+> I think this is future of prompting. Instead of figuring out perfect instruction hoping you didn't miss anything - just let AI interview you. It asks what it needs to know, you brain dump, done. Built /interview-me command for Claude Code to do exactly this. Idea came from Claude Code's plan mode - it uses AskUserQuestion to clarify things before it starts working.
+
+- **Tweet:** https://x.com/nityeshaga/status/2011937372410356222
+- **What:** Proposes inverting prompting: Claude asks the questions and the user brain-dumps answers. Implemented as a custom Claude Code slash command extending the AskUserQuestion pattern from plan mode, on the premise that Claude is as good at asking as answering.
+
+## @codewithantonio - Asks whether Opus 4.5 performs better in OpenCode than Claude Code
+> someone confirm if i am hallucinating Opus 4.5 in Opencode is significantly better than in CC
+
+- **Tweet:** https://x.com/codewithantonio/status/2011921784522571915
+- **What:** Anecdotal question suggesting the same model (Opus 4.5) behaves noticeably better inside the OpenCode harness than Claude Code. Signals that harness choice, not just model, drives perceived coding quality; no evidence given.
+
+## @doodlestein - Claude Max 20x quota drained in 14 minutes while tending an agent swarm
+> Ever seen fresh (20x) Claude Max account's 5-hour usage allowance get drained in ~14 minutes? Feast your eyes on my screen recording of a recent live work session... once plan done and beads made and polished, it's mostly just machine-tending swarm... I use gemini-cli for code review... I don't usually let it write new code, because I think Opus does better.
+
+- **Tweet:** https://x.com/doodlestein/status/2011881975179821297
+- **What:** Emanuel shares a screen recording of a multi-agent swarm session that burns a 20x Max allowance in minutes. Key workflow points: after planning and bead polish, work is mostly telling agents to take the next bead, review code, and re-read AGENTS.md after compaction; gemini-cli is used only for code review, Opus for writing code.
+
+## @tom_doerr - AI-Content-Studio automates YouTube video pipeline
+> Automates YouTube video creation from research to publishing
+>
+> https://github.com/naqashafzal/AI-Content-Studio
+
+- **Tweet:** https://x.com/tom_doerr/status/2011874764990693542
+- **Link:** https://github.com/naqashafzal/AI-Content-Studio
+- **Filed:** [ai-content-studio.md](./knowledge/tools/ai-content-studio.md)
+- **What:** GitHub tool that chains research, content generation and publishing into one automated YouTube video workflow. Useful reference for faceless-channel automation.
+
+## @baz_scm - Baz Spec Reviewer reviews UI changes in a live browser against specs and Figma
+> Today we're launching a preview of Spec Reviewer – Design Spotlight.
+>
+> UI work shouldn't be reviewed by staring at diffs.
+>
+> Multimodal agents can now see and act in a live browser using @playwrightweb, @ChromeDevTools, or @Stagehanddev MCP.
+>
+> Baz reads specs from tickets, pulls designs from Figma, and reviews your UI against what was actually intended.
+>
+> This is how UI code review should work.
+
+- **Tweet:** https://x.com/baz_scm/status/2011856100522361016
+- **What:** Baz's preview review agent drives a real browser through Playwright, Chrome DevTools or Stagehand MCP. It compares rendered UI to ticket specs and Figma designs instead of reading diffs.
+
+## @MikeRyanDev - Hashbrown claims prior art to Vercel json-render for generative UI
+> Congrats to the Vercel team for getting this out! Hashbrown has been doing this for 9 months, with a better dev experience around streaming props into components. Check it out: https://hashbrown.dev/
+>
+> *Quoting @rauchg:* Glimpse of the world of fully generative interfaces.
+>
+> AI → JSON → UI:
+> https://github.com/vercel-labs/json-render
+
+- **Tweet:** https://x.com/MikeRyanDev/status/2011841583789064454
+- **Link:** https://hashbrown.dev/
+- **Filed:** [json-render.md](./knowledge/tools/json-render.md)
+- **What:** Rauch announced Vercel's json-render, where models emit JSON that maps to UI components. Hashbrown's author says his library has done this for 9 months with better streaming-props DX.
+
+## @shabanhr - Free shadcn-based auth page templates from Efferd
+> Stop wasting hours building custom Auth pages. 🛑
+>
+> I built one of the cleanest Auth Pages using @shadcn UI.
+>
+> - Fully responsive
+> - dark mode ready
+> - and looks premium
+>
+> best part? It's 100% Free.
+>
+> Grab the code here: https://efferd.com/
+
+- **Tweet:** https://x.com/shabanhr/status/2011807422139306297
+- **Link:** https://efferd.com/
+- **What:** Promotes a free, responsive, dark-mode auth page built on shadcn/ui, hosted on Efferd's component site. Copy-paste shortcut for login and signup screens in shadcn projects.
+
+## @mitsuhiko - Armin and steipete abandoned git worktrees for multiple checkouts
+> I talked with @steipete yesterday and we both realized that we gave up on worktrees and just use multiple checkouts. Turns out, we're simple people.
+>
+> (And yes, I had a vibecoded worktree manager. Ended up just not using it)
+
+- **Tweet:** https://x.com/mitsuhiko/status/2011773404207337549
+- **What:** Two prominent agent-heavy developers independently dropped git worktrees for plain separate clones when running parallel agents. Simplicity beat even a custom-built worktree manager.
+
+## @simplifyinAI - Google LangExtract: open-source structured extraction with source grounding
+> Google has open-sourced the LangExtract Python library.
+>
+> It turns unstructured documents into structured data, with clear source references for each result.
+>
+> 100% open-source.
+
+- **Tweet:** https://x.com/simplifyinAI/status/2011765479795540009
+- **What:** LangExtract is a Google Python library that extracts structured fields from raw documents with each result traced to its source span. Grounding makes LLM extraction outputs auditable.
+
+## @tom_doerr - Whatomate: multi-tenant WhatsApp Business platform
+> WhatsApp Business platform with multi-tenant architecture
+
+- **Tweet:** https://x.com/tom_doerr/status/2011692256856625177
+- **Link:** https://github.com/shridarpatil/whatomate
+- **Filed:** [whatomate.md](./knowledge/tools/whatomate.md)
+- **What:** Open-source WhatsApp Business platform designed so multiple tenants share one deployment. Reference for building customer-messaging SaaS on the WhatsApp Business API.
+
+## @doodlestein - "Fresh eyes" review prompt for hardening markdown plan documents
+> Because I'm now operating much more at the planning level, I repurposed perhaps the single most useful prompt I ever came up with for coding (and hundreds, if not thousands, can attest to its surprising efficacy): what I call my "fresh eyes" review prompt.
+>
+> Anyway, here is the revamped version specifically for reviewing markdown plan documents:
+>
+> "Reread AGENTS dot md so it's still fresh in your mind. Great, now I want you to carefully read over the ENTIRE plan document, but this time with "fresh eyes," looking super carefully for any errors, mistakes, problems, issues, confusion, conceptual errors, logical violations, ignoring probability theory, sloppy thinking, inaccurate information/data, bad implicit assumptions, etc. Carefully fix anything you uncover by revising the plan document in-place in a series of small edits, not one big edit."
+>
+> Take your huge, complex plan document, protocol, specification document, RFC, whatever it is, start up Codex with GPT 5.2. Crank it to Extra High reasoning effort and queue up like 20 of the same prompt in a row, then marvel at what it does to your document over the next few hours.
+
+- **Tweet:** https://x.com/doodlestein/status/2011688544406843660
+- **What:** Adapts a code-review "fresh eyes" prompt to plan docs: reread AGENTS.md, scan for errors and bad assumptions, fix via small in-place edits. Run about 20 times in a row on Codex GPT 5.2 at xhigh effort to iteratively harden specs.
+
+## @0xDesigner - Claude Code design plugin: /design-and-refine:start workflow
+> "how do you design in claude code?"
+>
+> i could explain my process to you.
+>
+> or i can just give it to you (bookmark this)
+>
+> give this plugin to claude and ask it to install: https://github.com/0xdesign/design-plugin
+>
+> then type "/design-and-refine:start" in cc and it will take care of the rest.
+
+- **Tweet:** https://x.com/0xDesigner/status/2011668144608456709
+- **Link:** https://github.com/0xdesign/design-plugin
+- **Filed:** [design-and-refine-plugin.md](./knowledge/tools/design-and-refine-plugin.md)
+- **What:** Packages a designer's Claude Code workflow as an installable plugin; one slash command kicks off a design-and-refine loop. Shortcut for design-in-terminal without hand-building prompts.
+
+---
+
+# Wednesday, January 14, 2026
+
+## @tom_doerr - PasteGuard masks personal data before prompts reach LLM providers
+> Masks personal data before sending prompts to providers
+
+- **Tweet:** https://x.com/tom_doerr/status/2011646413466169676
+- **Link:** https://github.com/sgasser/pasteguard
+- **Filed:** [pasteguard.md](./knowledge/tools/pasteguard.md)
+- **What:** PasteGuard is a privacy layer that redacts PII from prompts before they go to hosted LLM APIs. Relevant for using cloud models on sensitive text without leaking identifiers.
+
+## @tom_doerr - Curated resource list for running LLMs on local hardware
+> Resources for running LLMs on local hardware
+
+- **Tweet:** https://x.com/tom_doerr/status/2011627310697287872
+- **Link:** https://github.com/0xSojalSec/LLMs-local
+- **Filed:** [llms-local.md](./knowledge/tools/llms-local.md)
+- **What:** Points to a GitHub repo (LLMs-local) collecting guides and tools for running language models on local machines. Useful as a starting index for self-hosted inference setups.
+
+## @andrewqu - npx add-skill built while shipping Vercel's react-best-practices
+> Excited I was able to play a small part in helping @shuding ship this!
+>
+> While helping him compile React best practices into an Agent Skill, I realized I was copy pasting skill setup instructions from all the major coding agents
+>
+> To save all of you time, I built `npx add-skill` https://t.co/ACOhw1WZod
+>
+> *Quoting @vercel:* We just released react-best-practices, a repo for coding agents. React performance rules and evals to catch regressions, like accidental waterfalls and growing client bundles. How we collected them and how to install the skill ↓
+
+- **Tweet:** https://x.com/andrewqu/status/2011596887816880474
+- **Link:** https://vercel.com/blog/introducing-react-best-practices
+- **Filed:** [vercel-react-best-practices.md](./knowledge/articles/vercel-react-best-practices.md)
+- **What:** Vercel shipped react-best-practices, an agent skill of React performance rules and evals. Andrew Qu built `npx add-skill`, a CLI that installs skills across the major coding agents so authors skip per-agent setup.
+
+## @alex_verem - Dan Koe's life-reset post turned into 10 AI prompts
+> i reverse-engineered dan koe's viral life reset post into 10 AI prompts.
+>
+> not surface-level motivation. psychological excavation.
+>
+> each one walks you through 5-8 phases of self-examination most people avoid their entire lives.
+>
+> warning: these will make you uncomfortable.
+>
+> that's the point 👇
+>
+> *Quoting @thedankoe:* https://t.co/7l7Jef99QZ
+
+- **Tweet:** https://x.com/alex_verem/status/2011566578152661139
+- **Link:** https://x.com/i/article/2010742786430021632
+- **Filed:** [how-to-fix-your-entire-life-in-1-day.md](./knowledge/articles/how-to-fix-your-entire-life-in-1-day.md)
+- **What:** Alex packages Dan Koe's "How to fix your entire life in 1 day" essay on behavior change into 10 multi-phase self-examination prompts. The quoted article argues resolutions fail unless you become the person who'd already have the goal.
+
+## @burcs - How I'd build a multi-tenant platform in 2026
+> https://t.co/ijRJoaowhP
+
+- **Tweet:** https://x.com/burcs/status/2011542877420294233
+- **Link:** https://x.com/i/article/1840194368029839360
+- **Filed:** [how-id-build-a-platform-in-2026.md](./knowledge/articles/how-id-build-a-platform-in-2026.md)
+- **What:** Article on architecting multi-tenant platforms: serve tenant workloads from a separate domain to protect main-brand reputation, and use the Public Suffix List so browsers do not share cookies across tenant subdomains.
+
+## @dguido - Trail of Bits releases its first batch of Claude Skills
+> .@trailofbits released our first batch of Claude Skills. Official announcement coming later.
+> https://t.co/vI4amorZrc
+
+- **Tweet:** https://x.com/dguido/status/2011541318229533063
+- **Link:** https://github.com/trailofbits/skills
+- **Filed:** [trailofbits-skills.md](./knowledge/tools/trailofbits-skills.md)
+- **What:** Security firm Trail of Bits open-sourced an initial set of Claude Skills on GitHub, ahead of a formal announcement. Likely security-audit oriented; the repo readme was not fetched.
+
+## @GabriellaG439 - Haskell for All: chat is the least interesting LLM interface
+> I keep explaining to people that we can build better user interfaces than chat bots:
+>
+> https://t.co/QYN7ayoIA9
+
+- **Tweet:** https://x.com/GabriellaG439/status/2011518200018846167
+- **Link:** https://haskellforall.com/2026/01/chat-is-least-interesting-interface-to
+- **Filed:** [chat-is-least-interesting-interface-to-llms.md](./knowledge/articles/chat-is-least-interesting-interface-to-llms.md)
+- **What:** Gabriella's blog post argues chat bots are the dullest way to use LLMs and richer interfaces (e.g. popup-mcp style tools) are possible. Page extraction was partial, so details are inferred.
+
+## @jamesob - Self-hosted Frigate home security cameras with network isolation
+> Really love our self-hosted home security camera system using Frigate. No external network access, no third-party hosting. Cheap Chinese cams I use are network isolated.
+>
+> I've got a dedicated monitor in my office that is blank unless there's activity on a given camera (they call this "birdseye"), so I'm aware of what's up around the house while I'm working.
+>
+> I have the system on a UPS so even if power is cut, cameras keep going. Wife can access the cam interface using wireguard on her phone.
+>
+> Is there value in doing a write-up on how I set this thing up?
+
+- **Tweet:** https://x.com/jamesob/status/2011516263160336410
+- **What:** Setup: Frigate NVR with cheap, network-isolated cameras, no cloud or external access, a UPS for outages, WireGuard for remote viewing, and a "birdseye" monitor that lights up only on activity. He asks whether a write-up is wanted.
+
+## @charles_irl - Modal guide to self-hosted LLM inference that rivals APIs
+> There was a flippening in the last few months: you can run your own LLM inference with rates and performance that match or beat LLM inference APIs.
+>
+> We wrote up the techniques to do so in a new guide, along with code samples.
+>
+> https://t.co/vpNGPZ0vgM
+
+- **Tweet:** https://x.com/charles_irl/status/2011484220032762114
+- **Link:** https://modal.com/docs/guide/high-performance-llm-inference
+- **Filed:** [modal-high-performance-llm-inference.md](./knowledge/articles/modal-high-performance-llm-inference.md)
+- **What:** Modal argues self-hosted open-model inference now matches or beats hosted API cost and performance, and published a guide with code samples on the techniques to get there.
+
+## @RhysSullivan - Uncropped repost of Dillon Mulroy's prd-task agent skill
+> reposting this one without it being cropped since it's banger https://t.co/QmP6Cd7e0v
+>
+> *Quoting @RozenMD:* stealing this from @dillon_mulroy https://t.co/Tak5eCNTlM
+
+- **Tweet:** https://x.com/RhysSullivan/status/2011481997605290055
+- **Link:** https://github.com/dmmulroy/.dotfiles/blob/main/home/.config/opencode/skill/prd-task/SKILL.md?plain=1
+- **Filed:** [dmmulroy-prd-task-skill.md](./knowledge/tools/dmmulroy-prd-task-skill.md)
+- **What:** Rhys endorses a PRD-to-tasks skill from Dillon Mulroy's OpenCode dotfiles, which Max Rozen had copied and shared in a cropped image. The skill file helps coding agents break a feature into a PRD and tasks.
+
+## @boringmarketer - AI-assisted LinkedIn content system built on scraped top posts
+> here's my linkedin content system. yes it's AI powered, but I work on each to make sure it hits the mark.
+>
+> I scrape top posts, extract patterns and formats, then feed that into my direct response copy skill
+>
+> early results are reallyyyy good. one post yesterday, +100 new followers so far
+>
+> @gregisenberg challenged me to hit 75k followers there this year...time to get to work!
+
+- **Tweet:** https://x.com/boringmarketer/status/2011465038263902408
+- **What:** Workflow: scrape top-performing LinkedIn posts, extract patterns and formats, then feed them to a direct-response copywriting skill, hand-editing each draft. One post earned about 100 followers in a day, toward a 75k goal.
+
+## @OpenRouter - Official awesome-openrouter list of apps built on OpenRouter
+> Apps that work with OpenRouter, now on GitHub: https://t.co/ZM4yhvIDmU
+
+- **Tweet:** https://x.com/OpenRouter/status/2011460653949850034
+- **Link:** https://github.com/OpenRouterTeam/awesome-openrouter
+- **Filed:** [awesome-openrouter.md](./knowledge/tools/awesome-openrouter.md)
+- **What:** OpenRouter moved its directory of compatible third-party apps into a GitHub awesome list, so the community can submit and discover integrations through PRs.
+
+## @func25 - VictoriaLogs: lightweight schemaless log database in Go
+> If logs need Elasticsearch, you don't need logs, you need better engineering. This is an open-source log database written entirely in Go: https://t.co/RtCdeWEyqW, scaling from super small setups to hundreds of CPU cores. It offers: schemaless, no setup or tuning, small binary (v1.43.1: 20.7 MiB vs Loki 123.8 MiB, ClickHouse 727.1 MiB, Elasticsearch 1.3 GiB), every field searchable, terabytes of logs per day, vertical and horizontal scaling, lower CPU/memory, faster search, query/filter/group/math, live tailing, Grafana and Prometheus compatibility, log-based alerts, recording rules.
+
+- **Tweet:** https://x.com/func25/status/2011420689941885037
+- **Link:** https://github.com/VictoriaMetrics/VictoriaLogs
+- **Filed:** [victorialogs.md](./knowledge/tools/victorialogs.md)
+- **What:** Pitches VictoriaLogs as a drop-in lean alternative to Elasticsearch/Loki/ClickHouse for logs, with a 20 MiB binary, zero schema config and Grafana integration. Supports alerting and metrics from logs.
+
+---
+
+# Friday, January 9, 2026
+
+## @danialhasan - How to wrap Claude CLI (claude -p) for agentic apps
+> https://t.co/IQi5DOZILJ
+
+- **Tweet:** https://x.com/danialhasan/status/2009529865511555506
+- **Link:** https://x.com/i/article/2009497314013138947
+- **Filed:** [wrap-claude-cli-for-agentic-apps.md](./knowledge/articles/wrap-claude-cli-for-agentic-apps.md)
+- **What:** Article on using `claude -p` print mode as a building block for agentic apps: stream-json formats, permission modes, `--json-schema` structured output, fallback models, and cost/caching gotchas, with bash and TypeScript wrappers.
+
+---
+
+# Saturday, December 13, 2025
+
+## @doodlestein - Recurring agent prompts for daily progress across projects
+> I like to make sure I'm making some forward progress on every one of my active projects each day, even when I'm too busy to spend real mental bandwidth on all of them. So I've come up with a few prompts I use a lot on agents so they're always doing some level of polishing/checking/fixing. [Prompts: randomly explore code files and do a fresh-eyes bug review; review code written by fellow agents with root-cause analysis; scrutinize the whole app for UX polish "Stripe-level"; then convert findings into comprehensive beads with dependencies, re-check beads in "plan space", execute them systematically, and finish with a review of the new code.]
+
+- **Tweet:** https://x.com/doodlestein/status/1999934160442687526
+- **What:** Playbook of reusable agent prompts: random-file bug sweeps, cross-agent code review, UX polish passes, then turning findings into self-documenting beads, refining the plan, and executing. Key idea is that it is cheaper to iterate in "plan space" before implementing, and strong tests let agents self-correct.
+
+---
+
 # Sunday, October 19, 2025
 
 ## @TheAhmadOsman - Buy a GPU website & guide launching
@@ -12675,6 +13128,14 @@
 ---
 
 # Saturday, January 24, 2026
+
+## @charliekerr - How to learn ATS software: watch demos, then read Ashby/Greenhouse/Lever API docs
+> *Replying to @CorndogBots:* I started on X just looking at popular posts with keyword "Ashby ATS", then onto Google for deep dives on ATS software from a technical perspective, didn't find much. Any more recommendations?
+>
+> Watch YouTube videos to see if you can find product demos of people using it how- if you want to go deeper look up API documentation for Ashby/Greenhouse/Lever so you can see what endpoints are used for candidate info/resumes. It's likely less sophisticated of a system than you'd imagine
+
+- **Tweet:** https://x.com/charliekerr/status/2015184096734093355
+- **What:** Reply advising how to learn applicant tracking systems: view product demo videos, then study the Ashby, Greenhouse and Lever API docs to see the candidate and resume endpoints. Adds that ATS internals are simpler than expected, a cheap route to domain understanding.
 
 ## @doodlestein - Prompt for Claude code cleanup
 > You can get Claude to reliably clean up its own messes if you just repeat this prompt 3 to 5 times after it writes some code for you (I do this hundreds of times a day):
@@ -13002,6 +13463,14 @@
 
 # Monday, January 19, 2026
 
+## @doodlestein - Dogfooding ntm shows signs of recursive AI self-improvement via the Flywheel
+> If you watch this ~50 minute screen recording closely, I believe you can see real signs of the runaway, recursive AI self-improvement people have been warning of... a set of agent coding tools called Flywheel. These tools all mutually self-reinforce each other. And they all flow directly into my ntm tool (named_tmux_manager)...
+
+- **Tweet:** https://x.com/doodlestein/status/2013412223108915391
+- **Link:** https://agent-flywheel.com/
+- **Filed:** [agent-flywheel-ntm-recursive-improvement.md](./knowledge/articles/agent-flywheel-ntm-recursive-improvement.md)
+- **What:** Emanuel argues his Flywheel toolset compounds once ntm is dogfooded: idea-wizard prompts generate features, and ntm lets a Claude Code or Codex instance do the operator work he did manually. Frames it as early recursive self-improvement; self-reported, not independently verified.
+
 ## @MattPRD - AgentWealth: a personal finance command center where AI agen...
 > AgentWealth: a personal finance command center where AI agents manage your money like you have a family office.
 
@@ -13178,6 +13647,18 @@ Filed: ./knowledge/tools/maptoposter.md
 
 # Friday, January 16, 2026
 
+## @baldridgecpa - IRS Notice 2026-11 component election can unlock 100% bonus depreciation
+> Brand new IRS guidance dropped Tuesday could be worth six figures for folks who built property in 2024 and 2025. If you signed construction contract in 2024 but didn't place building in service until 2025, you might assume you're stuck with 40% bonus depreciation... Notice 2026-11 says that's not necessarily true. The "component election" lets you treat individual components separately...
+
+- **Tweet:** https://x.com/baldridgecpa/status/2012194555941319016
+- **What:** Per this CPA, Notice 2026-11 lets components subcontracted or purchased after Jan 19, 2025 qualify for 100% bonus depreciation even if the GC contract predates it (example: $4M accelerated assets, $1.6M extra first-year deduction). Needs sub execution dates, PO dates and pay apps; claim is the author's, unverified, and ends in a sales pitch.
+
+## @steipete - Giving OpenClaw a tweet to install a morning-report skill plus cron
+> Someome made a morning report skill and I just gave @openclaw tweet and it set up skill + cron job.
+
+- **Tweet:** https://x.com/steipete/status/2012123520021717123
+- **What:** Demo of agent self-extension: Steinberger pointed OpenClaw at a tweet describing a morning-report skill, and it installed the skill and scheduled a cron job unaided. Shows tweets-as-installable-skills workflow.
+
 ## @alexhillman - Memory system with correction embeddings
 > Have you seen the memory system I built based on transcripts?
 
@@ -13256,6 +13737,12 @@ One of the richest memory types has become (unsurprisingly) corrections. It pull
 ---
 
 # Friday, January 2, 2026
+
+## @johnturner - Claude Agent SDK running in Cloudflare sandboxes
+> Finally got Claude Agent SDK running in Cloudflare sandboxes. This unlocks something special. A thread on what I learned: 👇
+
+- **Tweet:** https://x.com/johnturner/status/2007098085412065524
+- **What:** Announces a working setup of the Claude Agent SDK inside Cloudflare sandboxes, teasing a thread of lessons learned. Only the opener was bookmarked, but it signals a path to hosted, sandboxed agent execution.
 
 ## @alexhillman - Git safety hooks for destructive command prevention
 > been here, this never feels good.
@@ -13911,3 +14398,75 @@ Now you can ssh anytime and start vibe from your phone.
 
 - **Tweet:** https://x.com/alexhillman/status/1992252350812270856
 - **What:** Personal reflection on core imperatives with emphasis on keeping humans central to all technology decisions.
+
+# Saturday, August 9, 2025
+
+## @buccocapital - Why enterprises won't vibe-code their own systems of record
+> I think the risk of companies building their own systems of record - ERP, ITSM, CRM etc - is incredibly low. Companies are not stupid. They have no competence here, the stakes are massively high, and regardless of how easy it is, they would still have to maintain and optimize it, which is, ultimately, a distraction from the actual business. Same reason AWS, Azure and GCP are such incredible businesses. I genuinely think people who believe this either never worked in a real business or simply live in spreadsheets with no understanding of how enterprise software is bought and sold. I do, however, think the risk of legacy SaaS providers being beaten by AI-native competitors from below is much higher. Figma ate Adobe’s lunch because collaboration was native to the cloud and Adobe couldn’t adapt. That’s the sort of risk that should keep legacy systems of record up at night, not people vibe-coding replacements.
+
+- **Tweet:** https://x.com/buccocapital/status/1954227180088475694
+- **What:** Argues the "AI lets firms build their own ERP/CRM" threat is overblown, since maintenance, competence and focus costs persist, as with cloud providers. The real threat to incumbent SaaS is AI-native challengers attacking from below, as Figma did to Adobe.
+
+---
+
+# Tuesday, June 24, 2025
+
+## @tom_doerr - Guide to self-hosting software and servers
+> Guide for running and managing your own software and servers at home or work https://t.co/RKzo9X7Tss
+
+- **Tweet:** https://x.com/tom_doerr/status/1937542080420573244
+- **Link:** https://twitter.com/tom_doerr/status/1937542080420573244
+- **What:** THIN: Shares a guide on self-hosting software and servers at home or work. The link only loops back to the tweet (likely an image or repo card), so the specific resource is unidentified.
+
+---
+
+# Sunday, June 1, 2025
+
+## @ankurnagpal - Solo 401k works alongside a W-2 job for 1099 side income
+> *Replying to @unknown:* (parent text unavailable)
+>
+> The best part of a Solo 401k is you get access to it even if you have a side hustle. You can have a regular W-2 job and set up a Solo 401k for any random 1099 income you make on the side. If you have a business, you need to have no employees excluding spouse and any co-owners.
+
+- **Tweet:** https://x.com/ankurnagpal/status/1929177070883508445
+- **What:** Tax tip: 1099 side income qualifies for a Solo 401k even with a W-2 day job. Eligibility requires the business to have no employees other than a spouse or co-owners.
+
+---
+
+# Monday, October 7, 2024
+
+## @3GPulley - Reply comparing a slow storm to a tornado
+> *Replying to @NbergWX:* (parent text unavailable)
+>
+> @NbergWX It’s basically like an EF4 tornado moving at about 1/3 of the speed….
+
+- **Tweet:** https://x.com/3GPulley/status/1843448088322523484
+- **What:** Weather-nerd reply to @NbergWX likening some event (likely a hurricane or large storm system) to an EF4 tornado travelling at a third of the speed. Parent context is missing, so the exact subject is uncertain.
+
+---
+
+# Wednesday, September 11, 2024
+
+## @Enezator - Self-referential laughing post with no context
+> Hhhaha https://t.co/CvsiYM4ktw
+
+- **Tweet:** https://x.com/Enezator/status/1833901205736579228
+- **Link:** https://twitter.com/Enezator/status/1833901205736579228
+- **What:** THIN: Laugh reaction whose only link points back to the same tweet, so it likely carries an image or video. Content cannot be inferred beyond a humorous meme or clip.
+
+---
+
+# Thursday, June 15, 2023
+
+## @TheJasSingh - Thread teaser: learn any language using ChatGPT
+> You can now LEARN any language…
+>
+> using only ChatGPT.
+>
+> Here’s my Step-by-Step guide to learn ANY new language you want:
+>
+> [🧵Bookmark to use later]
+
+- **Tweet:** https://x.com/TheJasSingh/status/1669336359428030464
+- **What:** Opening tweet of a thread pitching a step-by-step method for using ChatGPT as a language tutor. Only the hook was captured, so the actual steps are not in the bookmark.
+
+---
