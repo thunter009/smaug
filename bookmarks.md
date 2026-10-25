@@ -4173,7 +4173,432 @@
 
 ---
 
+# Saturday, July 4, 2026
+
+## @monetsberet - Workabout NYC: map ranking NYC cafes by how good they are to work from
+> i was feeling a certain kind of anxiety over the last few days so i channeled it into something fun. i built workabout nyc: a map of cafés across nyc ranked by how good they actually are to work from. scores consider wifi, outlets, seating, noise, crowds, and long-session friendliness.
+
+- **Tweet:** https://x.com/monetsberet/status/2073420802884546900
+- **What:** Rucha built a side project, a NYC cafe map scored on wifi, outlets, seating, noise, crowds and suitability for long work sessions, with user-submitted IRL feedback to refine ratings. Link was posted in a comment and is not captured; open to feature requests.
+
+## @PawelHuryn - CLAUDE.md delegation and escalation block cuts token cost 5x
+> I reduced token cost 5x with a single CLAUDE.md block. Opus is the default parent. It can escalate to Fable: ## Delegation - the higher the tier, the more you delegate. Push work down, keep your own context for judgment. Brief the child: context, why, what done looks like. A child starts blank and inherits nothing. | Haiku | bulk mechanical | never | low | ...
+>
+> *Quoting @PawelHuryn:* Fable 5 is back, where work runs matters again. Delegation pushes work down to cheaper models. The move almost nobody uses: escalation, one step up. Top tiers hand work down to save themselves for judgment calls. Cheaper models just do the work. The main cost lever is which model runs where. The parent doesn't have to be the top model. An Opus parent can spawn a Fable child for a single hard call and keep the rest on Opus. The child answers and returns. It never escalates on its own. Over-tier work goes back to the parent, one step up.
+
+- **Tweet:** https://x.com/PawelHuryn/status/2073324262660694271
+- **What:** Pawel shares a CLAUDE.md block with a model-tier table (Haiku bulk work at low effort, Sonnet scoped research, Opus 4.8 multi-step reasoning, Fable 5 judgment at medium, xhigh only for hardest calls). Combines downward delegation with upward escalation: a cheaper Opus parent spawns a Fable child for one hard call, claimed to cut token cost 5x.
+
+---
+
+# Friday, July 3, 2026
+
+## @alexhillman - Fable finally solves multi-calendar sync after two decades of failed tools
+> Fable just designed multi-calendar sync I've never been able get to work. I've tried nearly 2 decades. Every tool promised, lied. Every custom build I tried, always turned into whack mole. In last 24 hrs Fable helped me fix it. For real. Finally. 🤯
+
+- **Tweet:** https://x.com/alexhillman/status/2073219226383352277
+- **What:** Alex Hillman reports the Fable model designed a working multi-calendar sync after nearly 20 years of failed off-the-shelf tools and custom builds that devolved into whack-a-mole. Anecdotal evidence of Fable handling a long-standing, messy systems-design problem.
+
+## @neilzegh - Tip: make CLAUDE.md prompt a knowledge-base update after every task
+> Tip: add to your CLAUDE.md an instruction to systematically evaluate after each task whether some reusable knowledge (tool, trick, repo, bug, etc.) was obtained in the process and should enrich the knowledge base. Compounds quite fast.
+
+- **Tweet:** https://x.com/neilzegh/status/2072977540193378428
+- **What:** Suggests a standing CLAUDE.md rule: at the end of each task, the agent asks whether it learned anything reusable (tool, trick, repo, bug) and writes it to a knowledge base. Learnings compound over sessions. (Quoted tweet content was not captured.)
+
+## @MichLieben - Quote of Nicolas Finet's X article on building a signal-based outbound engine on Codex
+> me opening what i thought was a normal x article
+>
+> *Quoting @nifinet:* How to Build a Signal-Based Outbound Engine on Codex (X article)
+
+- **Tweet:** https://x.com/MichLieben/status/2072900698711413071
+- **Link:** https://x.com/i/article/2072649745882075136
+- **Filed:** [signal-based-outbound-engine-codex.md](./knowledge/articles/signal-based-outbound-engine-codex.md)
+- **What:** Michel jokes that the "normal" X article turned out to be a long hands-on build guide. The article by Nicolas Finet shows a Codex outbound pipeline: sense, score, write, check, log, learn, run via `codex exec` and cron on a ChatGPT plan, with JSON schemas, AGENTS.md rules and a shared account record.
+
+---
+
+# Thursday, July 2, 2026
+
+## @RhysSullivan - integrations.sh open source catalog of MCP/API/CLI endpoints and auth
+> launching integrations.sh today! it's an open source catalog of every products MCP / API / CLI / GraphQL server and how to authenticate to them. deep links to generate api keys, 1 click copy spec urls, it's still early but i've been loving having it
+
+- **Tweet:** https://x.com/RhysSullivan/status/2072819391834751312
+- **Link:** https://integrations.sh/
+- **What:** Rhys launches integrations.sh, an open-source directory listing each product's MCP, REST API, CLI, and GraphQL endpoints plus auth instructions. It offers deep links to API key pages and one-click spec URL copying, which helps agents and developers wire up integrations quickly.
+
+## @Steve8708 - Changing code review workflow with the /visual-recap skill
+> How I've changed the way I do code reviews by using the /visual-recap skill: https://t.co/AElz0U764T
+
+- **Tweet:** https://x.com/Steve8708/status/2072726780742713432
+- **What:** Steve (Builder.io) shares a video/demo of using a /visual-recap agent skill to change how he reviews code, apparently by producing visual summaries of changes. The linked content is only the tweet itself (likely media), so details are inferred from the title.
+
+## @vinvan - Software factory with Fable orchestrator, Linear, and Devin cloud agents
+> fable produced 60+ (!) ready to merge prs for @mainframe overnight. here's how you can set up a software factory using fable as an orchestrator. prompt included! 1. narrate your entire todo list by voice dictation (~10K words)...
+
+- **Tweet:** https://x.com/vinvan/status/2072718922843816126
+- **What:** Recipe for an overnight agent pipeline: dictate a huge todo list, have Fable plan it into Linear issues with a DAG optimized for parallelism, then run a Fable "middle manager" in Devin cloud that dispatches subagents. Key ideas: attach the orchestrator prompt so it never compacts, enforce burden of proof (self-review, green bug bot, recording), use Linear/Slack MCPs; result was 12+ hours unblocked and 60+ PRs, leaving review as the bottleneck.
+
+## @Viora_Tech_Ai - Costco Executive Membership hidden perks thread teaser
+> Costco is quietly hoping you never read page 47 of your membership terms. I did. There's $1,370/year sitting inside the Executive Membership most people already pay for — untouched. Here's everything they don't put on the checkout screen 🧵
+
+- **Tweet:** https://x.com/Viora_Tech_Ai/status/2072705268601995495
+- **What:** Engagement-bait thread opener claiming ~$1,370/year of unused value in Costco Executive Membership benefits. Only the hook was captured, not the thread contents, so the actual perks are unknown.
+
+## @samhogan - Demand signal for tooling to switch from OpenAI/Anthropic to open models
+> ~200 DMs from this post, all people building on OpenAI & Anthropic and interested in switching to open models. Lots of Series A + B founders, Directors of Eng, leads and principles. They have zero loyalty to the labs, want to switch asap. just need tooling to make it easy
+>
+> *Quoting @samhogan:* Want to try GLM 5.2 in production but worried how it might change your product? Install Inference Gateway, keep sending traffic to your current provider, it generates evals from live data (~24h), mirrors traffic to GLM 5.2, Slack-notifies when safe, then you switch the model identifier. Saves 90% on token bill.
+
+- **Tweet:** https://x.com/samhogan/status/2072697506434269689
+- **Link:** https://docs.inference.net/introduction
+- **What:** Sam Hogan reports strong inbound demand (~200 DMs) from startup eng leaders wanting to leave closed labs for open models. The quoted pitch is Inference.net's Gateway: mirror live traffic to a candidate model (GLM 5.2), auto-generate evals, and switch only once evals pass.
+
+## @zachcaceres - "laconic" prompt injection to make Claude terse and direct
+> The way Claude "talks" drives me crazy. So many words! So much fluff! Especially for engineering work, it's awful. I finally have a solution. I call it `laconic`. It injects a prompt at certain moments in a convo to make Claude speak to me in a concise, direct voice...
+
+- **Tweet:** https://x.com/zachcaceres/status/2072692246265422079
+- **What:** Zach built `laconic`, which injects a concise-voice prompt at chosen points in a conversation, modeled on a terse veteran father rather than gimmicks like caveman speak. Example: a fluffy status report collapses to "Added token refresh to auth.ts, and updated the tests to cover it. All tests pass." Open-source release and video promised next day.
+
+## @doodlestein - Profiling skill plus repeated extreme-software-optimization passes for best perf results
+> *Replying to @JJ90_James:* Just ran your extreme-software-optimization skill (with Fable) and got "F3 pain fixture dropped from 36.1s to 14.9s (-59%), with every fixture improving 32-53% - and the output is proven byte-identical"
+>
+> @JJ90_James Nice! For best results, try this one and then run /extreme-software-optimization 5x times using /repeatedly-apply-skill
+
+- **Tweet:** https://x.com/doodlestein/status/2072635175750508581
+- **Link:** https://www.jeffreys-skills.md/skills/profiling-software-performance
+- **What:** Jeffrey Emanuel recommends running the profiling-software-performance skill first, then /extreme-software-optimization five times via /repeatedly-apply-skill. The prompting example reported a 59% speedup on one fixture with byte-identical output. The link content was only a skills-site shell, so no article was filed.
+
+## @sinanonur - Codex-plugin-cc variant of Theo's Fable-to-Codex delegation setup
+> *Replying to @theo:* This is the relevant section of my CLAUDE.md. I'll be real - I haven't read it much. Just vibed out what I was looking for with Fable, and had it confirm it can use Codex for the things I care about...
+>
+> @theo Here is the version for this that uses codex-plugin-cc. Note: I made sonnet costlier and tweaked the openai part its not free for me since i use a 20 dollar plan :)
+
+- **Tweet:** https://x.com/sinanonur/status/2072617768327774295
+- **What:** Reply to Theo's CLAUDE.md model-routing section, sharing an adapted version built on codex-plugin-cc. It reweights Sonnet as costlier and trims OpenAI use for a $20 plan; the attached image (the config itself) is not readable here. Theo's context: Codex is better at computer use, UI verification and well-specified execution, and he stopped discarding about 50% of agent PRs.
+
+## @VaibhavSisinty - Use Fable 5 now to write skills for Opus 4.8 before pay-per-use
+> Someone on Reddit just shared the smartest Fable 5 tip I have seen since it came back. Before Fable 5 moves to pay-per-use, use it to write skills for Opus 4.8. Let Fable 5 teach Opus how to think. Before it gets expensive...
+
+- **Tweet:** https://x.com/VaibhavSisinty/status/2072613763979915620
+- **What:** Core tip is to use Fable 5 while it is cheap to author skills that Opus 4.8 reuses later. Also lists usage habits: give the hardest problem and one big upfront brief, default to High effort, keep a markdown memory file, require self-verification, and drop old over-prescriptive Opus prompts.
+
+---
+
+# Wednesday, July 1, 2026
+
+## @theo - Four tips for stretching Fable usage without hitting rate limits
+> I've been getting a TON done with Fable today and I'm not hitting rate limits. Wanted to share some tips on how I'm doing that. 1. I only use Fable on "high" effort for now. xhigh is token hungry. max/extra is a furnace with worse outputs than lower options imo. 2. I taught Claude Code how to use Codex as a fallback for lots of implementation tasks...
+
+- **Tweet:** https://x.com/theo/status/2072481845363822914
+- **What:** Theo's rate-limit playbook for Fable: run at high effort (xhigh and max burn tokens for no gain), delegate implementation to Codex/GPT-5.5 from Claude Code, and encode model-routing rules in CLAUDE.md. Token-hungry work like computer use and codebase analysis goes to other models, with results reported back to Fable.
+
+## @btraut - Prompt to have Codex build a personal writing-voice skill from Slack history
+> Since I've been using Codex a lot more to write on my behalf (Slack messages, PR descriptions, docs, etc), I wanted it to get better at using my voice. To best do that, I had it analyze my writing style via existing Slack history, blog posts, and a few hand-written docs, then create a skill...
+
+- **Tweet:** https://x.com/btraut/status/2072366438288171351
+- **What:** Brent Traut shares a full prompt that mines all of a user's Slack messages (paginated, date-partitioned, excluding bots and pasted code) into a detailed voice guide, then installs a skill that must be read before any ghostwriting. Guardrails: never invent opinions or commitments, and drafting is not permission to send.
+
+## @doooyle - Codex generates a personal morning newspaper
+> surprised more people aren't doing something like this. Codex now creates a "newspaper" for me every morning. Unread messages, calendar, surf report, news. Anything I can do to stay off my phone until later in the day is a priority
+
+- **Tweet:** https://x.com/doooyle/status/2072351019913171442
+- **What:** Ryan Doyle has Codex compile a daily digest of unread messages, calendar, surf report and news, so he can delay phone use until later. A pattern for scheduled agent briefings that replace feed-checking.
+
+---
+
+# Tuesday, June 30, 2026
+
+## @alex_barashkov - Toolcraft starter kit for building AI-made creative design tools
+> Forget trying to design everything in Figma. You can build your own design tools with AI. Introducing Toolcraft - a starter kit and UI library for building beautiful creative apps. It's free. `npx @pixel-point/toolcraft create`
+
+- **Tweet:** https://x.com/alex_barashkov/status/2071951743622013186
+- **What:** Toolcraft (Pixel Point) is a free starter kit and UI library for building canvas-based creative apps (image stylizing, WebGL shaders, Three.js scenes, photo editing). It bundles sliders, pickers, timelines, curves, canvas/export/toolbar setup and AI instructions so an agent can build a tool from a short description plus references.
+
+## @patrickc - Open Standard launches OUSD stablecoin with Visa, Mastercard, Coinbase
+> Delighted to partner with Visa, Mastercard, Coinbase, Cloudflare, Google, and many others, to introduce Open Standard, a new stablecoin designed for scale.
+
+- **Tweet:** https://x.com/patrickc/status/2071946833186943372
+- **Link:** https://joinopenstandard.com/
+- **Filed:** [open-standard-ousd-stablecoin.md](./knowledge/articles/open-standard-ousd-stablecoin.md)
+- **What:** Patrick Collison announces Open Standard, issuer of Open USD (OUSD), a stablecoin framed as open infrastructure with business-grade economics, governance and reliability. Backed by a broad partner list across card networks, crypto and big tech.
+
+## @PrajwalTomar_ - Hosted X MCP lets agents pull real-time X data
+> You don't understand how BIG this is. Until now, agents could search the web but X was basically a wall. Real-time posts, trending topics, what people are actually saying right now... X just shipped a hosted MCP that changes that. Connect Grok, Cursor, or any MCP-compatible tool to the X API with no setup at all.
+>
+> *Quoting @XDevelopers:* Announcing the hosted X MCP. Agents now have access to the best real-time information source in the world. Connect Grok, Cursor, or any MCP-compatible AI tool to the X API without any setup!
+
+- **Tweet:** https://x.com/PrajwalTomar_/status/2071934532178337884
+- **Link:** https://docs.x.com/tools/mcp
+- **What:** X launched an official hosted MCP server exposing the X API to Grok, Cursor and other MCP clients with zero setup. Prajwal argues it unlocks real-time context for content, research and morning-brief agents, which previously needed a complicated API setup.
+
+---
+
+# Monday, June 29, 2026
+
+## @HamelHusain - "It's Hard to Eval" Is a Product Smell
+> New blog post: "It's Hard to Eval" Is a Product Smell. If you find it hard to verify AI output, chances are that your users will too! I often find that product design is the bottleneck. The post embeds three interactive before/after examples: an AI data agent, a K-12 PE lesson-plan generator, a workers' comp medical report drafter.
+
+- **Tweet:** https://x.com/HamelHusain/status/2071710766663979322
+- **Link:** https://hamel.dev/blog/posts/eval-smell/
+- **Filed:** [hard-to-eval-is-a-product-smell.md](./knowledge/articles/hard-to-eval-is-a-product-smell.md)
+- **What:** Hamel argues difficulty evaluating AI output is a product design flaw: if builders cannot verify outputs easily, users cannot either. Redesigning the product for verifiability comes upstream of evals, shown via three interactive before/after examples.
+
+## @SawyerMerritt - X Money feature list: 6% APY, 3% cashback, FDIC coverage
+> With X Money you currently get: 6% APY on all cash deposited (no limit), up to $10 million aggregate FDIC insurance, unlimited 3% cashback on card purchases, physical metal Visa card, Creator payouts through X Money, free wires/ATM withdrawals, early direct deposit, instant P2P payments...
+>
+> *Quoting @SawyerMerritt:* Finally got access to X Money!
+
+- **Tweet:** https://x.com/SawyerMerritt/status/2071700521505734934
+- **What:** Sawyer Merritt, after getting early access to X Money, lists its current terms: 6% APY, 3% cashback metal Visa, $10M FDIC pass-through coverage, free wires/ATMs and instant P2P. Useful snapshot of X's fintech launch offer, with cashback exclusions noted.
+
+## @girdley - Bullseye Framework for getting customers to any new business
+> How I get customers for ANY new business: The Bullseye Framework. (Bookmark this!)
+
+- **Tweet:** https://x.com/girdley/status/2071655689509040133
+- **What:** THIN: Text-only teaser with no body content or link; likely an image/thread on the Bullseye Framework (Traction book: test the 19 traction channels, focus on the one that works) for finding a first customer-acquisition channel. Inferred, not confirmed.
+
+## @LandseerEnga - CLI that pre-checks iOS apps against App Store review guidelines
+> every App Store rejection costs you 2-5 days. so we built a cli that scans your iOS app against apple's guidelines before you submit. Covers payment & IAP compliance, privacy manifests, sign-in & account deletion flows, metadata, binary validation...
+
+- **Tweet:** https://x.com/LandseerEnga/status/2071625238261973012
+- **What:** CLI plus Claude Code/Codex skill that scans an iOS app for App Store guideline violations (IAP, privacy manifests, account deletion, metadata, binary) and auto-fixes in a scan-fix-repeat loop. Cloud device feature validates full user flows, not just the binary. No link given, so no repo to file.
+
+## @icanvardar - CrowdReply MCP for AI search visibility audits
+> do you understand what just happened?? a fully bootstrapped team just launched the MCP that does what $100k/mo agencies do. It can audit a brand's entire AI search presence, find every gap across ChatGPT, Gemini and Claude, identify why competitors show up and you don't, write every fix automatically...
+>
+> *Quoting @CrowdReply_io:* Today we're introducing the CrowdReply MCP. The first ever MCP that analyzes and ranks your website in AI search. Simply talk to it and it'll find where you're missing, then goes in and handles the implementation.
+
+- **Tweet:** https://x.com/icanvardar/status/2071613504688173355
+- **What:** Hype-heavy promo for CrowdReply's MCP, which audits a site's visibility in AI search (GEO) and implements fixes automatically. Claims agency-level work (gap analysis across ChatGPT/Gemini/Claude, continuous background runs); claims are unverified marketing.
+
+---
+
+# Sunday, June 28, 2026
+
+## @sebcrossa - tokwise: CLI to sync, transcribe and classify TikTok bookmarks for agents
+> i'm a big fan and avid user of @andrewfarah's cli to sync X bookmarks locally to surface them to agents.
+>
+> since i have a ton of great content bookmarked on tiktok too, i hacked on something during the weekend.
+>
+> introducing tokwise, a cli that downloads, transcribes and classifies your tt bookmarks so you can chat with them with any agent.
+>
+> → npm install -g tokwise
+
+- **Tweet:** https://x.com/sebcrossa/status/2071337984704553200
+- **What:** tokwise is an npm CLI modeled on Andrew Farah's X-bookmarks sync tool. It pulls TikTok bookmarks via browser auth (`tokwise auth from-browser && tw sync`), transcribes and classifies them so agents can query the saved videos.
+
+## @DavidOndrej1 - Endorsement to run deepsec across all repos
+> start running deepsec on all your repos
+>
+> trust me.
+
+- **Tweet:** https://x.com/DavidOndrej1/status/2071216155058982984
+- **What:** THIN: terse endorsement, likely with an attached screenshot or video. Urges running "deepsec" (apparently an AI-driven security scanning tool) on every repo. No details given on what it is; worth looking up.
+
+---
+
+# Saturday, June 27, 2026
+
+## @ABTapper - Ports app v1.6 adds kill-all button for agent terminal sprawl
+> just shipped v1.6 of my little ports app, with:
+>
+> - keyboard shortcuts
+> - a "kill all" button to save agent terminal sprawl
+> - support for macOS beta, b/c devs love betas
+> - lots of little fixes
+
+- **Tweet:** https://x.com/ABTapper/status/2071037733649383863
+- **What:** THIN: release announcement with media only, no link. A small macOS app that lists local ports/processes; v1.6 adds shortcuts, macOS beta support and a kill-all to clear orphaned dev servers left by coding agents.
+
+## @tom_doerr - exercises-dataset: 1,324 fitness exercises with GIFs and multilingual instructions
+> Fitness dataset with animation GIFs and bilingual instructions
+
+- **Tweet:** https://x.com/tom_doerr/status/2071025590145003686
+- **Link:** https://github.com/hasaneyldrm/exercises-dataset
+- **Filed:** [exercises-dataset.md](./knowledge/tools/exercises-dataset.md)
+- **What:** Open dataset of 1,324 exercises with animation GIFs, thumbnails, muscle/equipment metadata and instructions in many languages (README claims 10). Backs the LogPress workout app; useful as a ready data layer for fitness apps (media has separate terms).
+
+## @frantzfries - Push-to-talk mic mapped to F13 for system-wide dictation
+> bought a tiny mic I could yap into that's a bit more chill
+>
+> mapped the btn input to cmd+f13 in Codex (via karabiner)
+>
+> now I have system wide audio transcription with a button click
+>
+> plus I can get up and pace
+
+- **Tweet:** https://x.com/frantzfries/status/2070887997378064623
+- **What:** THIN: video-only demo. Small hardware mic with a button, remapped through Karabiner to cmd+F13, which triggers Codex's dictation. Gives system-wide push-to-talk transcription while away from the desk.
+
+---
+
+# Friday, June 26, 2026
+
+## @AmeliaBarty - FluidVoice as open-source local dictation alternative
+> VC-funded open-source that they can to promote cheaper OSS alternatives with zero lock-in
+>
+> *Quoting @sdhilip:* I've dictated almost everything for 6 months with Wispr Flow. 44,414 words, 161 wpm, top 0.1% of users. Last week I tried FluidVoice. Open source, runs local on my Mac, corrects as I speak with no API key, handles slang better than I expected. Cancelled my paid plan.
+
+- **Tweet:** https://x.com/AmeliaBarty/status/2070601198592561474
+- **Link:** https://fluidvoice.com/
+- **What:** Amelia notes the pattern of VC-funded open-source projects promoting cheaper OSS alternatives with zero lock-in. The quoted user swapped paid Wispr Flow for FluidVoice, a local, no-API-key Mac dictation app that handles slang well.
+
+---
+
+# Tuesday, June 23, 2026
+
+## @codyschneider - Build niche directories with Claude for SEO arbitrage
+> such a huge opportunity to build directories directly related to your company right now. Say you're selling to med spas: scrape google maps for all of them, enrich the data via their website and socials, then have claude one shot a directory based on this raw data. Build ~10 good links, it will start ranking for "best x location"...
+
+- **Tweet:** https://x.com/codyschneider/status/2069510812876648738
+- **What:** GTM tactic: scrape Google Maps for your target customers, enrich with site/social data, and have Claude one-shot a directory site. Backlinks make it rank for "best X in location" queries your buyers search, then you sell ads on it to the same audience.
+
+## @hyojun_at - Aside launches AI browser with local encrypted data
+> Today, we're launching Aside, the AI browser you've waited for. Crafted in every detail: vertical tabs, Liquid Glass. SOTA on agentic browsing benchmarks: outperforms Claude Fable. Full privacy: everything runs in local encrypted storage. You can use your Claude or ChatGPT subscription. The first AI browser built to do real work for you.
+
+- **Tweet:** https://x.com/hyojun_at/status/2069497198879048131
+- **Link:** https://aside.com/
+- **What:** Aside is a new AI browser with vertical tabs and Liquid Glass design, claiming SOTA on agentic browsing benchmarks. It stores data locally encrypted and lets users bring existing Claude or ChatGPT subscriptions instead of paying separately.
+
+## @BHolmesDev - Hubble: free open-source Markdown notepad for agents
+> Introducing Hubble: the best notepad for you and your agents. Feels like Notion or Apple Notes, but for Markdown. Live-reloading editor to collaborate with agents. Supports HTML-based apps to build interactive visualizations. Free and open-source.
+
+- **Tweet:** https://x.com/BHolmesDev/status/2069426951366807965
+- **Link:** https://www.hubble.md/
+- **What:** Hubble is a Markdown-first notes app with a Notion/Apple Notes feel, whose live-reloading editor lets a human and coding agents edit the same files. It can also host HTML apps for interactive visualizations; free and open source.
+
+## @RealGeneKim - Gene Kim praises Addy Osmani's AI SDLC time-axis figure
+> What an awesome representation of the AI SDLC -- best I've ever seen, because it shows the most important axis: time. It wonderfully depicts the collapse of lead times / process times, which most of us have experienced. Literally, weeks goes down to hours or minutes. In my mind, that is easily 100x -- 2 orders of magnitudes...
+>
+> *Quoting @rseroter:* In which @addyosmani does a standup job explaining the "new SDLC", how phases changed, and the rapid progression from autocomplete to autonomous agents.
+
+- **Tweet:** https://x.com/RealGeneKim/status/2069424549356245308
+- **Link:** https://addyosmani.com/blog/new-sdlc-vibe-coding/
+- **Filed:** [new-software-lifecycle-addy-osmani.md](./knowledge/articles/new-software-lifecycle-addy-osmani.md)
+- **What:** Gene Kim endorses a figure from Addy Osmani's Google whitepaper post showing AI SDLC phases against time, claiming ~3 orders of magnitude lead-time collapse (weeks to minutes). The post frames agent = model + harness (about 10/90) and argues debugging the harness and context engineering matter more than the model.
+
+---
+
+# Monday, June 22, 2026
+
+## @SleepMoneyMaker - Codex /goal + /loop prompt for code-derived behavioral spec and test-fix cycle
+> Been iterating on @tomosman's loop. This one's winning: /goal produce a verified, code-derived behavioral spec for this web platform, captured in one canonical spreadsheet that carries every feature from spec -> tested -> fixed -> verified...
+>
+> *Quoting @tomosman:* This "loop" automation is nuts inside of Codex. "/goal go over every single feature in this app create a user story with expected behaviour based on the code keep a single canonical spreadsheet tracking the features status..." Hundreds of user stories being worked through like it's nothing.
+
+- **Tweet:** https://x.com/SleepMoneyMaker/status/2069155919360102520
+- **What:** Refines Tom Osman's Codex /goal loop into a phased prompt. Phase 0 plans, Phase 1 catalogs every feature into one xlsx (user story, expected behavior cited to code, status, defects). A /loop then runs test, fix, re-test until all stories are Verified, with subagent fan-out, fresh-context self-checks, and a 3-iteration safety cap. Tom's original shows the idea driving hundreds of stories autonomously.
+
+## @uzairansar - Claim that a Codex bug could wear out an SSD within a year
+> So Codex has a bug that could kill your SSD in under a year... https://t.co/rreZDacG2S
+
+- **Tweet:** https://x.com/uzairansar/status/2069117176863220061
+- **What:** THIN: Tweet text only; the link is a self-reference and any attached media was not captured. Uzi alleges an OpenAI Codex bug causes excessive disk writes that could exhaust an SSD in under a year, so check disk write volume (SMART data, per-process I/O) if you run Codex heavily.
+
+## @jeff_weinstein - Stripe profile handles, Directory listing and free B2B payments
+> it's a good time to grab a cute @stripe profile handle for your business. why? get listed in the Directory so other businesses, and agents, can find your products and services; payments are free between business over Stripe; more things soon...
+
+- **Tweet:** https://x.com/jeff_weinstein/status/2069079180390867024
+- **Link:** https://dashboard.stripe.com/login?redirect=%2Fprofiles
+- **What:** Stripe PM Jeff Weinstein urges businesses to claim a Stripe profile handle now. Profiles get listed in a Directory discoverable by other businesses and AI agents, and business-to-business payments over Stripe are free. The link is a login-gated dashboard page, so no further detail is available.
+
+## @Steve8708 - Builder.io launches Clips, open-source agent-native Loom alternative
+> Introducing Clips - 100% free, open source, agent-native alternative to Loom. Unlike Loom, agent's can fully understand Clips just from a URL. Every Clip comes with APIs and metadata for agents to explore their contents. Agents can "see and hear" anything in a Clip - not just transcripts, but everything visually in the video at any timestamp...
+
+- **Tweet:** https://x.com/Steve8708/status/2069064659613958348
+- **What:** Clips is a free, forkable screen-recording tool whose recordings expose APIs and metadata so agents can read transcript and visual content at any timestamp, making video bug reports and feedback usable as agent input. It can import Looms by URL, ships a self-customizing built-in agent, and has a hosted or self-hosted option; Steve frames open-source, agent-customizable software as the future.
+
+## @steipete - birdclaw: local-first Twitter reader backed by SQLite
+> This is becoming my favorite way to read Twitter. https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA
+
+- **Tweet:** https://x.com/steipete/status/2068965200343224367
+- **Link:** https://birdclaw.sh/
+- **What:** Peter Steinberger endorses birdclaw, a local-first Twitter workspace (web app + CLI) that imports your archive, caches live reads into SQLite, and supports focused triage and reply flows. Pitched as an alternative to the native timeline for reading Twitter.
+
+## @jalcowastaken - shieldcn studio, WYSIWYG README editor with badges, tables and charts
+> just shipped my favorite thing i've ever built. most comprehensive complete WYSIWYG readme editor in world (imo). badges, headers, tables, images, charts, all in one place, all adaptive (if you want) this is shieldcn studio :)
+
+- **Tweet:** https://x.com/jalcowastaken/status/2068922735749927392
+- **Link:** https://shieldcn.dev/studio
+- **What:** Justin (jalco) launched shieldcn studio, a visual README editor combining badges, headers, tables, images and charts in one place, with optional adaptive (light/dark) output. Extends his shieldcn badge project into a full README authoring tool.
+
+---
+
+# Sunday, June 21, 2026
+
+## @DeePhunk - Knick-Knacks, curated guide to bootleg Knicks merch for the 2026 NBA Finals
+> Shouts to whoever built this site. You are a f*cking mad genius and doing a great service for mankind.
+
+- **Tweet:** https://x.com/DeePhunk/status/2068883239725379671
+- **Link:** https://knickknacks.nyc/
+- **What:** Praise for knickknacks.nyc, a fan-made curated collection of unofficial/bootleg New York Knicks shirts and merch, built to celebrate the 2026 NBA Finals. Niche single-purpose site, shared as a joyful find rather than a tool.
+
+## @ctatedev - Toolkit for agent loops: agent-browser, portless, emulate, ai-cli
+> best agent loops need right tools → agent-browser.dev Verify changes in real browser → portless.sh No port conflicts. Worktree-friendly. → emulate.dev Emulate third-party APIs → ai-cli.dev Image + video gen via CLI
+
+- **Tweet:** https://x.com/ctatedev/status/2068841029524979777
+- **Link:** https://agent-browser.dev/ (also https://portless.sh/, https://emulate.dev/, https://ai-cli.dev/)
+- **What:** Four tools for autonomous coding loops: agent-browser (verify changes in a real browser), portless (no port conflicts, worktree-friendly dev servers), emulate (local stand-ins for third-party APIs) and ai-cli (image/video generation from the CLI). Fetched pages were raw Next.js HTML with little detail; descriptions come from the tweet.
+
+## @jakubkrehel - make-interfaces-feel-better skill passes 30,000 installs
+> It's incredible that /make-interfaces-feel-better has already been installed more than 30,000 times. It contains a lot of tips that make interfaces feel better, across UI, animations, performance and more. npx skills add jakubkrehel/make-interfaces-feel-better
+
+- **Tweet:** https://x.com/jakubkrehel/status/2068715109065613564
+- **What:** Agent skill by Jakub Krehel bundling UI polish tips (UI, animation, performance) for coding agents; installable via `npx skills add jakubkrehel/make-interfaces-feel-better`. 30k+ installs signals strong adoption of design-quality skills. Link is a self-reference to the tweet, so no separate page content.
+
+## @tomosman - Codex /goal loop automates user-story generation, testing and fixing across a whole app
+> This "loop" automation is nuts inside of Codex. "/goal go over every single feature in this app create a user story with expected behaviour based on the code keep a single canonical spreadsheet tracking the features status - when done switch loop to testing every user story and documenting all errors - when done fix every logistical error or ux error - test every user behaviour again post fix" Shoutout to @MatthewBerman for the heads up.
+
+- **Tweet:** https://x.com/tomosman/status/2068692611334893582
+- **What:** Codex /goal prompt chains phases in one loop: derive user stories from code into one canonical status spreadsheet, test each and log errors, fix logic/UX bugs, then retest. Reported to work through hundreds of stories unattended, a reusable pattern for autonomous QA.
+
+---
+
+# Saturday, June 20, 2026
+
+## @HOUSEPORN___ - Laundry room space optimisation (media only)
+> Optimising space in a laundry https://t.co/hkcLXAO9bj
+
+- **Tweet:** https://x.com/HOUSEPORN___/status/2068256137913241880
+- **What:** THIN: Image/video-only post showing a space-optimised laundry room layout; no further text. Likely home-design inspiration for compact laundry storage and appliance arrangement.
+
+---
+
+# Thursday, June 18, 2026
+
+## @FardeemM - Frontend architecture notes for web-app startups
+> If you're on your way to building a billion dollar company that involves a web app, here are some of my notes on architecting the frontend. if you don't do this, it's probably fine but...
+
+- **Tweet:** https://x.com/FardeemM/status/2067802731960520909
+- **What:** Opinionated list: generate client code from an OpenAPI spec, use TanStack Query and router loaders, nuqs for typed query params, xstate for complex UI state, React Compiler over useMemo, Suspense/ErrorBoundary over isPending, no Next.js for SPAs, deploy on Cloudflare or Vercel, decide sync/offline and websockets/SSE on day 1.
+
+## @MatthewBerman - Steinberger's architecture refactoring loop and Loop Library launch
+> One of my new favorite loops from Peter Steinberger (@steipete): "Refactor until you happy architecture. After each significant step, live-test system, run autoreview, commit. Track progress in /tmp/refactor-{projectname}.md."
+>
+> *Quoting @MatthewBerman:* Just launched Loop Library - a curated list agent loops you use right now. Find loops, submit your own, tokenmaxx!!
+
+- **Tweet:** https://x.com/MatthewBerman/status/2067742219235471419
+- **Link:** https://signals.forwardfuture.com/loop-library/loops/architecture-satisfaction-loop/
+- **Filed:** [architecture-satisfaction-loop.md](./knowledge/articles/architecture-satisfaction-loop.md)
+- **What:** Berman highlights Steinberger's bounded refactor loop (refactor, live-test, autoreview, commit, log progress to a /tmp file) from his newly launched Loop Library, a curated, submittable catalog of reusable agent loops from Forward Future.
+
+## @nifinet - Running a full GTM team alone with Claude Code agents
+> https://t.co/vIIOeQAONZ
+
+- **Tweet:** https://x.com/nifinet/status/2067638000037790178
+- **Link:** https://x.com/i/article/2067621155209674753
+- **Filed:** [gtm-team-claude-code-run-alone.md](./knowledge/articles/gtm-team-claude-code-run-alone.md)
+- **What:** Article on replacing GTM headcount with seat-by-seat Claude Code agents sharing one memory. A prospector scores trigger signals (hiring, competitor engagement, launches, funding) and drafts messages quoting the trigger; a researcher briefs every booked call.
+
+---
+
 # Wednesday, June 17, 2026
+
+## @hjluks - Orthopedic surgeon's seven lessons for his 40-year-old self
+> Seven Things This 63 Year Old Surgeon Would Tell My 40-Year-Old Self. I am 63 now, and I spend my days as an orthopedic surgeon watching how people's earlier choices show up in their bodies decades later...
+
+- **Tweet:** https://x.com/hjluks/status/2067329669460795684
+- **What:** Orthopedic surgeon Howard Luks shares seven long-horizon health lessons from decades of watching patients and peers, arguing small choices compound for or against you. Only the intro is bookmarked; the seven items are not in the text.
 
 ## @TheStalwart - Joe Weisenthal reverses on Li-Ning running shoes
 > FYI I'm not happy with the new Li-Nings that I bought and have switched back to my Nike Pegasus for daily use. They are extremely comfortable. Yet they make a squeaking noise on certain surfaces. Will probably only wear them in the future for when I'm actually running (rare).
