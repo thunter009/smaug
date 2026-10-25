@@ -334,7 +334,537 @@
 
 ---
 
+# Thursday, October 8, 2026
+
+## @remilouf - Reading list for AI-agent automation: Toyota Production System and Bainbridge's Ironies of Automation
+> *Replying to @cournape:* What's a good book to start w/ ?
+>
+> @cournape I'd start with "Toyota Production System" and read this paper at the same time https://t.co/4gddbpoPM8. Also read psychology papers about implicit knowledge.
+
+- **Tweet:** https://x.com/remilouf/status/2108112822282621312
+- **Link:** https://gwern.net/doc/sociology/technology/1983-bainbridge.pdf
+- **What:** Answers David Cournapeau's request for a starter book by recommending Toyota Production System (lean process thinking) paired with Bainbridge's 1983 "Ironies of Automation" paper, plus psychology research on implicit knowledge. The pairing suggests human-in-the-loop lessons from industrial automation apply to supervising AI agents.
+
+---
+
+# Wednesday, October 7, 2026
+
+## @thruflo - Streamgres: open-source Rust Postgres sync engine for multiplayer AI
+> Cool new sync engine, just open sourced today https://t.co/l6eGW9qITc
+>
+> *Quoting @XyneAI:* Introducing Streamgres: a sync engine for Multiplayer AI. Being built as an extension to postgres, all in Rust. Learn more in our session at SF Tech Week on Oct 7.
+
+- **Tweet:** https://x.com/thruflo/status/2107985741431357575
+- **Link:** https://github.com/juspay/streamgres
+- **What:** Highlights Juspay's newly open-sourced Streamgres, a Rust-based Postgres extension that acts as a sync engine for multi-user, multi-agent ("multiplayer") AI apps, announced at an SF Tech Week session on Oct 7 ("Extending Partiful"). Relevant to local-first/sync-layer designs for collaborative agents.
+
+## @bloggersarvesh - Grok-driven local SEO competitor reverse-engineering playbook
+> i'm begging you: get the highest grok plan, pull top 10 competitors in your city, give each one its own grok chat. Each chat reverse engineers one competitor's SEO and finds the reason they're ranking above you. 1) Chat breakdown: primary Google Business Profile category, how reviews come in monthly, what customers say in reviews, which services have their own page, what customers complain about. Each chat writes one report. 2) Paste all 10 reports into one master chat, find what the top competitors have in common (the minimum to compete) and what none of them are doing (how you beat them). Grok rewrites your Google Business Profile, writes a page for every service they're missing, turns their bad reviews into reasons to call you. Run 30 days: 30 extra jobs a month, $1000 average job, $30k/month in new revenue. easy.
+>
+> *Quoting @bloggersarvesh:* (article) I made a local business $3.2M from SEO last year. STEAL my exact Local SEO playbook
+
+- **Tweet:** https://x.com/bloggersarvesh/status/2107889057808425300
+- **Link:** https://x.com/i/article/2087877623838089216
+- **What:** Engagement-bait workflow for local-business SEO: one LLM chat per top-10 local competitor to extract GBP categories, review patterns and service-page gaps, then a master chat to find shared basics and unexploited gaps. The linked article claims an HVAC firm earned $3.2M from the 3-pack; revenue projections are unverified marketing claims.
+
+## @unicodef1wn - Promoting SpaceXAI Grok Bot marketplace of 49 free pre-built agents
+> SpaceXAI's xAI's marketplace has 49 bots: research agents, support bots, content bots, all one click away. People charge $50-200 for bots like these on other platforms. This section is free, no prompt engineering, no config files, no 72-hour build. Pick one, hit install, it's already doing the job while most people are still writing their first agent from zero. 49 are already shipped, running, cost nothing. Check marketplace below.
+>
+> *Quoting @unicodef1wn:* (article) AI Company-in-a-Box: Full 12-Step Roadmap to Build a Self-Managing Company with Grok Bot + Jev...
+
+- **Tweet:** https://x.com/unicodef1wn/status/2107837061327638757
+- **Link:** https://x.com/i/article/2102350203118395392
+- **What:** Promotional thread for the Grok Bot Marketplace claiming 49 free, installable agents (PM, engineer, designer, recruiter, outbound rep, ops). The linked article's 12-step roadmap says the hard part is orchestration: who gets the next task, quality gates, when agents stop, and when a human is needed. It cites SpaceXAI saying staff run multiple Bots in parallel with one managing the others.
+
+## @doodlestein - FrankenManim: Rust rewrite of manim as a 12.4MB binary, renders 4K60 explainer in 141s
+> You may recall a few months ago, I posted about yet another project of mine where I decided to make a ground-up, memory-safe Rust implementation of the manim math animation system used by 3Blue1Brown to make all the awesome math explainer videos on YouTube. (...) FrankenManim is one single memory-safe Rust binary that's just 12.4mb and does it ALL (other than video encoding, which calls ffmpeg), is cross-platform, and can even be compiled into wasm. Legacy manim plus MacTeX is 7.0 GB download / 10.9 GB installed. I asked Claude Opus 5.5 to build the latest FrankenManim on my Mac then create a 3b1b-style explainer video about Hoeffding's D, narrated with FrankenTTS. The whole 30,431-frame 4K60 video renders in 141 seconds on my Threadripper with two 4090s. Built on asupersync, FrankenMarkdown, FrankenNumpy, FrankenPandas, FrankenSciPy, FrankenNetworkX, FrankenTorch. I'll make a skill that automates making explainer videos end to end. Perhaps it's time people stopped dismissing this approach as "slop" and "AI psychosis."
+>
+> *Quoting @doodlestein:* Nice, I just realized that I could do a pure Rust version of the manim project (used to make the animations in @3blue1brown's awesome math videos) pretty readily because I've already done the heavy lifting in my various other FrankenSuite projects. Cumulative progress is cool.
+
+- **Tweet:** https://x.com/doodlestein/status/2107806362621149433
+- **Link:** https://twitter.com/doodlestein/status/2078706834202939432
+- **What:** Jeffrey Emanuel reports his agent-built pure-Rust manim clone works: a 12.4MB cross-platform, wasm-capable binary replacing a ~10GB legacy toolchain, with FrankenTTS narration and a 4K60 30k-frame render in 141s. He credits cumulative reuse of his Franken* libraries and plans an end-to-end explainer-video skill, while rebutting "AI slop" critics.
+
+## @Aprilzz423 - ISO-GLOW Claude skill for interactive isometric glowing HTML diagrams
+> A few people asked how I made isometric objects and cities, so I packaged it into a Claude skill. Describe an object, device or building, and ISO-GLOW creates a single interactive HTML file. Try it out yourself! https://t.co/ncC0vK8B3h https://t.co/XpKmENFllG
+
+- **Tweet:** https://x.com/Aprilzz423/status/2107794465457139988
+- **Link:** https://isoglow.dev/
+- **What:** April packaged her isometric line-drawing workflow as "iso-glow", a Claude skill that turns a text description of an object, device or building into one self-contained interactive HTML file with glow lighting, in 2D and now 3D. Each figure is a single file where each part does something.
+
+## @SnazzyLabs - Costco discount on Nintendo gift cards and Switch 2 deal
+> Costco has $100 Nintendo gift cards for $80 (normally $90). Can also be used on Nintendo's site for physical goods, so Switch 2 would be just $400. You will likely never get a good deal on hardware for years to come, so if you want one, get it now.
+
+- **Tweet:** https://x.com/SnazzyLabs/status/2107692154042925423
+- **What:** Deal tip: Costco sells $100 Nintendo gift cards at $80, which works on Nintendo's online store for hardware and brings a Switch 2 to about $400. The author argues hardware discounts will be rare for years, so buy now if wanted.
+
+---
+
+# Tuesday, October 6, 2026
+
+## @doodlestein - "Use Your Judgment" Stream Deck button prompt for autonomous agents
+> With frontier models so smart now, and I am so exhaustive in planning and laying out what I want in plans that I then turn into granular beads (tasks), I basically always want agents to simply do what they think best within those constraints. I found myself stringing together the same four prompts on my Stream Deck so often recently that I just made a dedicated button with a crown icon that's labeled "Use Your Judgment." I use it after running my /reality-check-for-project skill or whenever a model finishes a long task with lots of information for me about what happened and decisions it wants me to make next. It pastes this message: "OK, so please do everything you think is advisable based on all that, start trying to close the biggest gaps yourself, especially ones that are most bang for buck... I want you to show real agency and follow your gut instincts... Keep lessons of /just-say-no-to-process-porn-and-ceremony top of mind at all times! Also, start systematically executing any remaining Beads tasks in optimal logical order..."
+
+- **Tweet:** https://x.com/doodlestein/status/2107588146666111389
+- **What:** Jeffrey Emanuel shares a reusable mega-prompt, bound to a Stream Deck button, that tells an agent to stop asking for decisions, close the highest-leverage gaps itself, avoid process ceremony, and keep working through Beads tasks. It shows his pattern of heavy up-front planning followed by delegating judgment to the model.
+
+## @RhysSullivan - Tactics for cutting CI cost in agent-heavy PR workflows
+> some quick CI thoughts since i'm also hitting this problem:
+> - let your agent pick what's most relevant parts of CI to run, most PRs only need a small section of the test suite
+> - if you use stacked PRs, give your agent ability to skip CI for base of stack and only run it on top of stack
+> - only run full test suite on commit to main, deploy after it succeeds
+> - i'm in process of doing this last part, but it's super easy to add in local machines to run CI on
+> now here's what it looks like for agent to mark a test as 'skip', just give this tweet to your agent and they'll figure out how to do it for your setup
+>
+> *Quoting @BenceRedmond:* are CI prices coming down anytime soon? we're creating so many PRs I'm starting to feel it
+
+- **Tweet:** https://x.com/RhysSullivan/status/2107577951206486098
+- **What:** Answers a complaint that agent-generated PR volume is making CI expensive. Proposes selective test runs chosen by the agent, skipping CI on lower stacked-PR layers, running the full suite only on main, and offloading CI to local machines, with agent-controlled test skip marking.
+
+## @JinjingLiang - Tiny agent skill to parallelize GitHub Actions CI
+> *Replying to @JinjingLiang:* So I found you can instantly ~2x your GitHub CI speed for free. GH added parallel actions. But AI usually misses it since it's too new. Just ask AI to benchmark.
+>
+> Or if you're lazy I made a super tiny skill https://t.co/zpZAjUD4xD
+
+- **Tweet:** https://x.com/JinjingLiang/status/2107574303059481053
+- **Link:** https://www.skills.sh/stablyai/skills/github-actions-parallelize
+- **What:** Self-reply to a thread claiming GitHub Actions' newly added parallel-step feature can roughly 2x CI speed, which LLMs miss because it is too new. The follow-up packages that knowledge as a small "github-actions-parallelize" agent skill (stablyai/skills on skills.sh) so agents apply it automatically.
+
+## @JinjingLiang - GitHub Actions parallel steps can roughly halve CI time
+> So I found you can instantly ~2x* your GitHub CI speed for free
+>
+> GH added parallel actions.
+> But AI usually misses it since it's too new 😱
+>
+> * Depends on what you're doing, just ask AI to benchmark
+
+- **Tweet:** https://x.com/JinjingLiang/status/2107573324150984949
+- **Link:** https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel/
+- **What:** GitHub Actions can now run steps in parallel within a job (changelog 2026-06-25). The author says this can about double CI speed for free. AI assistants often miss the feature because it is new, so ask them to benchmark and apply it.
+
+## @suraj_sharma14 - Six legal traps in vibe-coded apps and a Claude audit prompt
+> Your vibe-coded app can get sued for $100K before it makes a single sale.
+>
+> 6 traps hiding in most AI-built apps:
+>
+> Signup never asks for age + COPPA: up to $53K per child under 13
+>
+> Google Fonts loaded from Google's servers → a Munich court made a site pay €100 to ONE visitor for leaking their IP (GDPR)
+>
+> Session replay on by default → recording keystrokes can count as wiretapping in California (CIPA): $5K per session
+>
+> "We launched" email with no unsubscribe link or postal address → CAN-SPAM: up to $53K per email
+>
+> Subscription checkout without renewal terms next to the button → in California, renewals can count as a gift you have to refund
+>
+> No registered DMCA agent (it costs $6) → you lose safe harbor for user uploads: up to $150K per stolen image
+>
+> The word is PER. Per visitor. Per session. Per email.
+> That's how zero sales turns into a hundred grand.
+> The fix: paste this into Claude 👇
+>
+> "Audit my app for these 6 legal risks and fix them: add an age gate to signup, self-host my fonts, turn off session replay (or add consent + input masking), add an unsubscribe link and postal address to every marketing email, show renewal terms right next to the subscribe button and walk me through registering a DMCA agent."
+>
+> Save this before you launch.
+> Following me is the cheapest co-founder you'll ever hire.
+>
+> Not legal advice. Talk to a lawyer about your specific situation.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2107478486227071360
+- **What:** Checklist of six per-unit legal exposures in AI-built apps: COPPA age gating, Google Fonts GDPR, session-replay wiretapping (CIPA), CAN-SPAM, California auto-renewal terms and DMCA agent registration. It includes a ready-made Claude audit prompt. Penalty figures are the author's and not legal advice.
+
+## @TheoTabah - Nine new ChatGPT plugin extension surfaces for app designers
+> Plugin Extensions open up new surfaces for you to define the experience inside of ChatGPT
+>
+> Here are the 9 new 'extensions' you should be paying attending to:
+>
+> 1. Sidebar apps: Your app gets a home base in ChatGPT. People can come back to it any time without starting a new chat.
+>
+> 2. Conversation panels: Your app and the chat sit side by side. Design for both being on screen at once.
+>
+> 3. Plugin settings: Users tweak your product without ever leaving ChatGPT. Your settings page now lives inside someone else's app.
+>
+> 4. File viewers and editors: Your interface opens their files right in ChatGPT. Read, edit and save in one place.
+>
+> 5. Display modes: You choose how much space you take up. Match the size to the job.
+>
+> 6. Deep links: Send people straight to the exact page or item they need. No digging through menus.
+>
+> 7. Model-App Context: The model sees what's happening in your app, and your app knows what was said in chat. Both stay in sync.
+>
+> 8. Composer mentions: Users can @ your content right into a prompt on desktop. Your data becomes something people type.
+>
+> 9. Rich forms: Ask for structured input or let people pick from images. Less guessing, fewer back-and-forths.
+>
+> Apps in ChatGPT are starting to look like real software. Time to design them that way.
+>
+> *Quoting @skirano:* We haven't stopped growing since we launched our new ChatGPT plugin last Tuesday. I've never seen anything like this, we added 500K in ARR this week only!
+
+- **Tweet:** https://x.com/TheoTabah/status/2107475564445438016
+- **What:** Lists nine ChatGPT plugin extension surfaces: sidebar apps, conversation panels, settings, file editors, display modes, deep links, model-app context sync, composer mentions and rich forms. It argues that apps inside ChatGPT now need real software design. It quotes Pietro Schirano's claim of +$500K ARR in one week from his ChatGPT plugin.
+
+## @jakezward - Reverse-engineering Google AI Overview citations over 7 days
+> I'm begging you:
+>
+> - Pick ONE Google AI Overview
+> - Track how it changes over 7 days
+> - Find the patterns with AI
+> - Reverse engineer the citations
+> - Build your page around the findings
+>
+> I've used this process to rank in 1,000s of AI Overviews.
+>
+> Here's how it works:
+
+- **Tweet:** https://x.com/jakezward/status/2107453596107219294
+- **What:** Describes an AEO process: pick one Google AI Overview, snapshot it daily for a week, use AI to find patterns in which sources get cited, then build a page around those findings. The author claims it ranked pages in thousands of AI Overviews. A video walkthrough is attached but not captured.
+
+## @gabriell_lab - Vocabulary for describing scroll animations to AI coding agents
+> If you struggle to describe scroll animations in Claude or Codex, these commonly used terms can help. Save this for later.
+
+- **Tweet:** https://x.com/gabriell_lab/status/2107443057805476100
+- **What:** THIN: Image-only post, likely a cheat sheet of common scroll-animation terms (parallax, sticky, reveal and similar). It aims to give people precise words for prompting Claude or Codex to build scroll effects. Exact terms are not visible in the captured text.
+
+## @jasonzhou1993 - Open-source Clay alternative for GTM in Claude Code
+> Introducing OpenSource Clay killer
+>
+> - 85% cheaper than clay
+> - Most accurate on people-search bench
+> - 25x faster
+> - Run GTM directly in claude code or codex
+>
+> Try it at https://treg.to/people-search
+>
+> Repo link below 👇
+
+- **Tweet:** https://x.com/jasonzhou1993/status/2107423956395589784
+- **Link:** https://treg.to/people-search
+- **What:** Launch of an open-source alternative to Clay for people search and GTM enrichment. It claims 85% lower cost, 25x speed and top accuracy on a people-search benchmark, and runs inside Claude Code or Codex. Claims are unverified.
+
+## @reui_io - ReUI Data Grid stress test with 1,000+ virtualized rows
+> Stress testing ReUI Data Grid with 1,000+ virtualized rows and 36 columns ⚡️
+>
+> • Local sorting.
+> • Column resizing.
+> • Pinned columns.
+> • Horizontal + vertical scrolling.
+> • Smooth interactions under load.
+>
+> Live preview:
+
+- **Tweet:** https://x.com/reui_io/status/2107419586060538233
+- **Link:** https://reui.io/components/data-grid/c-data-grid-32
+- **What:** Demo of the ReUI Data Grid component handling 1,000+ virtualized rows and 36 columns. It supports local sorting, column resizing, pinned columns and two-axis scrolling without lag. A useful reference for React table/grid UI.
+
+## @chddaniel - Conqueror: agent-driven open alternative to Semrush/Ahrefs
+> Semrush charges $139.95/month.
+> Ahrefs charges $129/month.
+>
+> A guy named David built the self-running alternative that agents can run on autopilot for you.
+>
+> It is called Conqueror.
+>
+> Enter a competitor's website and it reveals the keywords bringing them traffic, the pages winning those searches, and the backlinks helping them rank.
+>
+> Connect your own website and it tracks rankings, crawls technical problems, finds pages losing traffic, and shows whether ChatGPT or Google AI Overviews mention your brand.
+>
+> Then connect Claude, ChatGPT, Codex, Cursor, OpenClaw, or your own agent.
+>
+> Your agent can pull the real numbers, compare opportunities, cluster keywords, write or refresh content, and publish the changes back to your website instead of guessing from a prompt.
+>
+> It can research keywords, study the live SERP, find content gaps, rewrite titles and metadata, fix existing pages, publish new ones, and keep refreshing them as rankings change.
+>
+> No, it does not magically reproduce every database and advanced feature Ahrefs or Semrush built over a decade.
+>
+> But it breaks the most important rule of the old SEO market:
+>
+> You no longer need to sit inside their dashboard and do the work yourself.
+
+- **Tweet:** https://x.com/chddaniel/status/2107414044772880783
+- **What:** Promotes Conqueror, an SEO tool that does competitor keyword/backlink research, rank tracking, site audits and AI-mention tracking. It exposes this data to coding agents (Claude, Codex, Cursor) so they can research, write and publish content. It is an agent-operated alternative to Semrush/Ahrefs, with admitted data limits.
+
+---
+
+# Monday, October 5, 2026
+
+## @BenjDicken - Excalidraw MCP live-draws AI explanations for learning
+> The @excalidraw mcp is sick.
+>
+> Have it live draw explanations (with pencil sounds and all) then pop open to the app and make your own changes.
+>
+> Learning with ai is so fun. (Also, don't stop learning, your brain is too valuable)
+
+- **Tweet:** https://x.com/BenjDicken/status/2107319845905944997
+- **What:** THIN: Video-only post praising the Excalidraw MCP server. The AI draws explanations live on a canvas with pencil sound effects, then the user opens the Excalidraw app to edit the diagram. Pitched as an interactive way to learn with AI.
+
+## @__steele - AWS VPC Flow Logs now include EC2 resource tags
+> This is a really nice improvement: you can now include EC2 resource tags in VPC flow logs. I wrote a poor version of this about 8 years and 3 jobs ago. It's infinitely more useful than raw IP addresses for making sense of east-west traffic.
+
+- **Tweet:** https://x.com/__steele/status/2107267627664220671
+- **Link:** https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-vpc-flow-logs-with-ec2-resource-tags-and-next-hop-metadata/
+- **What:** AWS VPC Flow Logs can now carry EC2 resource tags and next-hop metadata. Flow records become readable by workload name instead of raw IPs, which helps analyse east-west traffic; the author built a crude version of this years ago.
+
+## @thdxr - LLMs improve faster than users' custom workflows, so vanilla wins
+> a weird inversion with LLMs is the models improve faster than the tinkerers
+>
+> when i see people with custom workflows and setups they're all addressing problems that don't exist anymore
+>
+> the person naively using vanilla codex is more likely to be experiencing state of the art
+
+- **Tweet:** https://x.com/thdxr/status/2107260844400931156
+- **What:** Argues model progress outpaces tinkering: elaborate custom prompts and harness setups often fix problems newer models no longer have, so a plain vanilla Codex user likely gets closer to state of the art. Caution against over-engineering agent scaffolding.
+
+## @cathrynlavery - Diagram Design skill adds 3D views, up to 44 diagram types
+> Diagram Design skill now in 3D.
+>
+> exploded views, floor plans and site plans.
+>
+> → up to 44 diagram types and it's open-source 😘 https://t.co/HKv3ERNDS1
+
+- **Tweet:** https://x.com/cathrynlavery/status/2107222360155701709
+- **Link:** LINK_FAILED: Could not expand link from @cathrynlavery
+- **What:** Open-source Diagram Design agent skill gained 3D output (exploded views, floor plans, site plans), now covering up to 44 diagram types. Useful for generating architecture or spatial diagrams from agents.
+
+## @tom_doerr - Cloudflare open-sources six-phase security audit skill for coding agents
+> Cloudflare open sourced a security audit skill that orchestrates coding agents through six phases of reconnaissance and validation to produce independently verified, machine-readable findings.
+>
+> https://t.co/NWU9jO5dFV https://t.co/9qNqFWEmXa
+
+- **Tweet:** https://x.com/tom_doerr/status/2107170336227655985
+- **Link:** LINK_FAILED: Could not expand link from @tom_doerr
+- **What:** Cloudflare released an open-source agent skill that drives coding agents through six phases of recon and validation, outputting independently verified, machine-readable security findings. Relevant as a reference design for multi-phase agent security audits.
+
+## @codyschneider - Playbook for ranking a new niche directory site fast
+> how to get a new directory site ranking fast
+>
+> have an agent scrape everything for the niche
+>
+> have claude code plan the directory off the data, then build the whole thing
+>
+> submit it to other directory sites like provenexpert
+>
+> ping those listings with an indexer so google sees them
+>
+> the directory starts ranking
+>
+> your brand sponsors every page, so the directory sends you referral traffic
+>
+> then chatgpt starts citing it too
+
+- **Tweet:** https://x.com/codyschneider/status/2107168997762273345
+- **What:** Stepwise growth tactic: scrape a niche with an agent, have Claude Code plan and build a directory, seed backlinks via listings on other directories and force indexing, then sponsor every page with your own brand. Yields referral traffic and LLM citations (ChatGPT).
+
+## @Jeanroudy - Muse Connectors directory sets high bar for MCP servers
+> Muse Connectors Plateform is out!
+> It's now possible to submit your MCP to the Muse Connectors directory. They are taking a very different approach from ChatGPT and Claude:
+> 1. your MCP needs to be at least as capable as your website! If users can do returns on your website, you need to also provide that capability in your MCP server.
+> 2. your MCP needs to bring more value than your website! Seems hard, but actually trivial if 1. is done because it's just a lot faster than browser-use.
+>
+> I think that less 5% of current Claude and ChatGPT Connectors/Plugins qualify for these core requirements!
+>
+> Brands will need A LOT of work to get into Muse.
+
+- **Tweet:** https://x.com/Jeanroudy/status/2107158208200491054
+- **What:** Muse Connectors opened MCP submissions with strict admission rules: feature parity with the brand's website and added value over it (speed versus browser-use). Author estimates under 5% of existing Claude and ChatGPT connectors qualify, implying brands must invest heavily in full-capability MCP servers.
+
+## @rauchg - gdp-ts: Ghosts of Departed Proofs for TypeScript
+> Introducing gdp-ts: Ghosts of Departed Proofs for TypeScript.
+>
+> gdp-ts is a library, linter and AI skill for safer API design. Under this contract, sensitive functions require 'proofs' that the caller performed an authorization check.
+>
+> The typechecker verifies these proofs at compile time, preventing your team and agents from shipping catastrophic security (and other kinds of) bugs.
+>
+> While these patterns have existed for quite some time, especially in ecosystems like Haskell, human code review and cognitive and syntactic overhead made these solutions niche.
+>
+> The situation is now inverted. Agents are writing more code than we can review, and they *thrive* in tight loops with hard constraints that would frustrate us. We see this with the rise of Rust, borrow checker, code aesthetics debate and all.
+>
+> The README and examples model a real-world Vercel API product constraint: changing the password on a Project requires a proof of a certain role + a certain entitlement. Thanks to Matt Noonan and Ollie Charles for their research in this space.
+
+- **Tweet:** https://x.com/rauchg/status/2107119811444748555
+- **Link:** https://github.com/rauchg/gdp-ts
+- **What:** Vercel's Guillermo Rauch released a TypeScript library, linter and AI skill using the Ghosts of Departed Proofs pattern so sensitive functions need compile-time proof of an authorization check. Thesis: agents write more code than humans can review, so hard type-level constraints are now worth the overhead.
+
+## @iannuttall - SEO tools launch link, page shows tools closed
+> Just launched the highest ROI tools for SEO ever made.
+>
+> https://t.co/1OXT9z8gGw
+>
+> try not to bankrupt me....
+
+- **Tweet:** https://x.com/iannuttall/status/2107116186131448285
+- **Link:** https://ian.is/tools
+- **What:** Ian Nuttall announced paid AI-driven SEO tools on ian.is, joking about usage costs. The linked page now says the beta tools have closed as running them was not viable, with credits refunded and past reports still downloadable. Cautionary note on usage-cost economics of AI tools.
+
+## @NicerInPerson - Event-driven harnesses and a companion MCP for Figma collaboration
+> *Replying to parent (not captured):* Yeah event oriented harnesses have always been the right option. This is how claude code's async subagent delegation has worked - other harnesses have gradually caught up.
+>
+> This will be clutch when added to Figma MCP. Agent can direct you to a file or section for review and then subscribe to comments and edits. Now you collab with it in figma until you're done and it unsubs.
+>
+> While we wait for official plugin to implement I built a companion MCP to the official that does exactly this for harnesses that support the local stdio transport mode of MCP Events. https://t.co/PPXTu1xfvf
+
+- **Tweet:** https://x.com/NicerInPerson/status/2107108358360592719
+- **Link:** LINK_FAILED: Could not expand link from @NicerInPerson
+- **What:** Argues event-oriented agent harnesses (as in Claude Code async subagents) are right, and that MCP Events would let an agent subscribe to Figma comments and edits during a review session, then unsubscribe. Author built a companion Figma MCP offering this over stdio MCP Events until the official plugin supports it.
+
+## @polymathinvest1 - Teaser for a manual on increasing exposure to opportunity
+> A short manual on how to systematically increase your exposure to opportunity.
+> (1/2)
+
+- **Tweet:** https://x.com/polymathinvest1/status/2107085142204490025
+- **What:** THIN: Opening tweet of a two-part thread promising a systematic method for increasing luck/opportunity surface area. The actual tactics are in the unseen second part, so the substance is not captured.
+
+## @Nyx_Tech_AI - Steps to disable Gmail's default-on AI inbox scanning
+> If you have a Gmail account, you need to read this.
+>
+> Google's AI is now rifling through your inbox emails and attachments, bank statements, tax docs, medical letters, the whole stack. It was enabled by default, and that quiet rollout is now facing a class-action lawsuit.
+>
+> Here are 5 steps to turn it off because the kill switch is buried in two different spots:
+
+- **Tweet:** https://x.com/Nyx_Tech_AI/status/2107066136546378165
+- **What:** Claims Google enabled AI access to Gmail content and attachments by default, now subject to a class-action suit, and promises a 5-step guide to opt out via two buried settings. Privacy how-to; steps are in the thread, not captured here.
+
+---
+
+# Sunday, October 4, 2026
+
+## @mal_shaik - Why Supabase dominates AI recommendations yet misses job-to-be-done queries
+> supabase became the number one recommended database provider by agents by far. They ran 15+ launch weeks (75+ indexed pages), have comparison pages for every competitor, 99k GitHub stars, and "how do i" pages. But gets 0 ChatGPT citations on queries describing their core features: row-level security, realtime, auth with magic links, vector DB for RAG.
+
+- **Tweet:** https://x.com/mal_shaik/status/2106821061585359127
+- **What:** GEO analysis showing Supabase wins category-named queries via launch content, comparison pages and GitHub signals, yet is uncited when users describe the problem, such as per-user row access. Lesson: build task-oriented pages for the jobs your product solves, not just category pages.
+
+---
+
+# Saturday, October 3, 2026
+
+## @imcaiden - Context checklist for using Claude to reverse-engineer web scrapers
+> if you're using claude to build web scrapers, feed it this context before letting it write another 800 lines of Playwright: HAR diffing, AST analysis of bundles, source maps, hydration payloads (__NEXT_DATA__), schema inference over 20-30 responses, response transformations, incremental acquisition (ETags), data reconciliation, extraction observability.
+
+- **Tweet:** https://x.com/imcaiden/status/2106610698906476878
+- **What:** Playbook for using Claude to infer a site's underlying API rather than scripting browser clicks. It diffs HAR captures, parses JS via Babel/Acorn, reads source maps and hydration data, unions JSON schemas, and adds drift/null-rate validation after each run. Also warns against deduplicating companies by name alone.
+
+## @alexhillman - claude-auto-handoff: Claude mod for automatic session handoff
+> Since my Claude auto-hand workflow is getting a lot of questions, I turned it into a Claude mod. Meet auto-handoff. This def needs more battle testing, and is built to be personalized. PRs welcome!
+
+- **Tweet:** https://x.com/alexhillman/status/2106464115447463942
+- **Link:** https://github.com/alexknowshtml/claude-auto-handoff/tree/main
+- **What:** Alex Hillman packaged his automatic context-handoff workflow for Claude Code as an open-source mod (claude-auto-handoff), aimed at carrying work across sessions. Early-stage and meant to be customized; repo content was not fetched, so details are inferred from the name.
+
+## @ConnorShowler - Free prompt to build a GEO scorer for AI citation likelihood
+> I built a tool that tells you whether ChatGPT will cite your website or not.. Paste your page, get a 0–100 score on how likely ChatGPT, Perplexity & Google AI Overviews are to cite you, plus a fix list. It grades 9 weighted checks: answer-first openings, question headings, FAQ schema, structured data, lists/tables, heading hierarchy, concise sentences, concrete data, title/meta.
+
+- **Tweet:** https://x.com/ConnorShowler/status/2106433740188602736
+- **What:** Shares a full build prompt for a single-file, in-browser HTML tool that scores pages for generative-engine-optimization readiness using rule-based checks with weights (15/12/12/12/12/10/10/9/8) and outputs a prioritized fix list and Markdown report. A reusable GEO checklist plus a ready prompt.
+
+## @tobiadonadon_ - Claude Code skill to avoid AI-slop app UIs via concept-first design
+> i built a skill to un-slop AI-looking apps. most AI-generated UIs have the same cards, gradients and generic layout. the skill starts from a real visual concept, explores 3 directions, picks one design language, renders screens at iPhone size, scans for AI-slop patterns, then critiques and refines.
+>
+> *Quoting @tobiadonadon_:* How to Stop Making your Apps Look Like AI Slop (article)
+
+- **Tweet:** https://x.com/tobiadonadon_/status/2106432288686850124
+- **Link:** https://x.com/i/article/2106428717639626752
+- **What:** Claude Code skill workflow (concept, three directions, design, render at real iPhone resolution with Apple fonts, critique, refine) that grounds each app in a distinctive metaphor, like a track for a running app, to avoid template-looking UI. The skill is gated behind RT and comment, so it is not freely available.
+
+## @Teslaconomics - Grok Bot prints daily personalized math worksheets for his kids
+> Every morning, before my kids even leave for school, Grok Bot has already made and printed a math worksheet specifically for each of them based on what they’ve been working on at school and what they missed the day before. [...] When they finish, I take a picture of each worksheet and send it back to Grok Bot, which uses it to build the next one.
+
+- **Tweet:** https://x.com/Teslaconomics/status/2106412651395830250
+- **What:** Parent describes an automated adaptive-learning loop: an AI agent generates and auto-prints per-child worksheets overnight (30-40 problems for a 5-year-old, 25 for an 8-year-old), then ingests photos of completed work to resurface missed problem types. A concrete example of an agent plus spaced repetition for homework.
+
+## @twtayaan - AWS Well-Architected Agent audits up to 100 accounts and generates IaC fixes
+> AWS is coming for the cloud architect’s job. They built an AI agent that can audit up to 100 AWS accounts, find architecture problems, and generate the Terraform fixes. The new Well-Architected Agent checks cost, security, performance and resilience across 65+ AWS services. Feed it Terraform, CloudFormation or CDK and it returns IaC changes and CLI commands. It can re-check environments weekly.
+
+- **Tweet:** https://x.com/twtayaan/status/2106381005154029918
+- **Link:** https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/
+- **What:** AWS previewed an AI agent that applies Well-Architected review pillars across many accounts and outputs remediation as Terraform, CloudFormation or CDK changes, with weekly automatic re-checks. Relevant to cloud architecture and infra-automation work.
+
+## @reui_io - ReUI v2.7.0 release: signature pad, time picker and Pro blocks for shadcn
+> ReUI v2.7.0 is live 🚀 Our biggest drop yet bringing the collection to: 1,175 free & open-source components + 629 Pro blocks! Free Signature Pad & Time Picker for @shadcn (12 and 13 components), plus Pro charts, Tiptap rich text editor blocks, Excalidraw whiteboards, DevOps console, slide-over sheets, pricing blocks, AI chat assistant and CRM blocks.
+
+- **Tweet:** https://x.com/reui_io/status/2106317985933582389
+- **Link:** https://reui.io/roadmap
+- **What:** Release announcement for ReUI, a shadcn-compatible component library, now at 1,175 free components and 629 paid Pro blocks. Useful as a source of ready-made UI pieces like signature pads, time pickers and monitoring charts.
+
+## @hieuSSR - Mailflare adds Resend/AWS SES for free self-hosted custom-domain email
+> You can now setup unlimited custom email domains, for FREE 🔥 Mailflare now support: - Resend / AWS SES - Send and receive with any supported providers. It literary cost $0/m to host your own Gsuite
+
+- **Tweet:** https://x.com/hieuSSR/status/2106254960015167629
+- **Link:** https://github.com/hieunc229/mailflare
+- **What:** Mailflare is an open-source GitHub project for self-hosting email on unlimited custom domains at near-zero cost, positioned as a Google Workspace replacement. New release supports Resend and AWS SES as send/receive providers.
+
+---
+
 # Friday, October 2, 2026
+
+## @JulieChangRE - Rising homeowner DIY trend as contractor costs climb
+> Contractors need to charge too much money to make a living and cover labor and insurance and costs that homeowners don’t have
+>
+> Increasing number of people - I will DIY
+
+- **Tweet:** https://x.com/JulieChangRE/status/2106179405303468438
+- **What:** Real-estate agent argues contractor pricing, which must cover labor, insurance and overhead, is pushing a growing share of homeowners to do home projects themselves. Opinion on a DIY trend, no data given.
+
+## @zachlloydtweets - Cutting agent cost per PR from $71 to $20 via benchmarked model routing
+> This is the right way to approach reducing agent costs while maintaining quality. Measure, benchmark, verify you aren't reducing quality, apply the learnings via specific model routing to your factory setup. In the past 30 days we've gone from $71 --> $20 per PR internally and expect at least another 50% reduction.
+
+- **Tweet:** https://x.com/zachlloydtweets/status/2106162147390894352
+- **What:** Warp's CEO endorses a measure-benchmark-verify approach to agent cost reduction, applying specific model routing in an agent "factory". Reports internal cost per PR dropping from $71 to $20 in 30 days with more savings expected.
+
+## @codyschneider - Build a niche directory to rank for customer searches and sell your product
+> build a directory for the exact people you sell to. Say you sell to med spas: scrape Google Maps for every med spa, enrich from websites and socials, have Claude one-shot a directory off that data. Build ~10 good links and it ranks for "best med spa in {city}". Then "advertise" your product on your own directory.
+
+- **Tweet:** https://x.com/codyschneider/status/2106112034416791943
+- **What:** Growth tactic: scrape and enrich a vertical's businesses from Google Maps, generate a directory site with Claude, earn a handful of links to rank for "best X in city" queries, then promote your own product on it to the exact target buyers.
+
+## @Maketplans - Maket 2.0 AI home and floor plan design platform
+> Introducing Maket 2.0: The all-in-one platform for designing your next home, or reimagining the one you have. An extra bedroom. A bigger kitchen. A completely new layout. Start with an idea or your existing floor plan, and explore what's possible.
+
+- **Tweet:** https://x.com/Maketplans/status/2106082320080064954
+- **What:** Product launch of Maket 2.0, a platform to design new homes or remodel existing ones starting from an idea or an existing floor plan. Relevant as an example of generative design tooling for architecture and renovation.
+
+## @jaypmo - General Legal open sources its core legal document templates
+> A lot of folks have asked me: "why open source your core legal docs - isn't that your IP?" no. our exceptional lawyers are our IP. our massive deal flow is our IP. our precedent docs are like a programming language: underlying scaffolding to enable the work.
+
+- **Tweet:** https://x.com/jaypmo/status/2106080442004697367
+- **Link:** https://github.com/General-Legal/legal-templates
+- **What:** The General Legal founder explains why open sourcing precedent legal templates is not giving away IP: the moat is the lawyers and deal flow, with documents acting as scaffolding. Links to a GitHub repo of reusable legal templates.
+
+## @supabase - Supabase local dev improvements for agents
+> Supabase local dev just got much better for agents: run locally without Docker; multiple Supabase instances per repo/worktree; Declarative Schemas 2.0 with pg-delta generating migrations; auth, API & storage config now lives in code.
+
+- **Tweet:** https://x.com/supabase/status/2106071822307319915
+- **What:** Supabase's local development now runs without Docker, supports several instances per repo or git worktree, and generates migrations from declarative schemas via pg-delta. Config moves into code, which suits parallel coding agents working in separate worktrees.
+
+## @macrodotcom - Macro launches open source collaborative spreadsheet with AI peer editing
+> Today we're launching Macro Sheets, an open source spreadsheet with live CRDT collaboration (tested to 10 peers), live linked @-mentions to workspace entities, concurrent AI editing as a peer (built-in agent or your own via MCP, even when sheet is closed), and integration with Macro chat and permissions. Voiceover video made with AI interface walkthroughs using real repo components via GitHub integration.
+
+- **Tweet:** https://x.com/macrodotcom/status/2106042851368825301
+- **What:** Macro released an open source spreadsheet where AI agents edit as CRDT collaboration peers and can be driven externally over MCP. Notable patterns: entity @-mentions in cells and AI-generated explainer videos built from real repo components.
+
+## @attenisalluneed - 35 directories to list an MCP server and micro SaaS (DR 4 to 26)
+> Launched an MCP server + micro SaaS and submitted to ~35 directories. DR from 4 to 26 in ~40 days. Lists MCP directories (Official MCP Registry, Glama, MCP Market, etc.), GitHub awesome lists to PR, SaaS launch sites (Product Hunt, AlternativeTo, etc.), and agent/AI-search sites (Claude Code plugin directory, ClawHub, llms.txt hubs). Referring domains 8 to 33 in ~3 weeks.
+
+- **Tweet:** https://x.com/attenisalluneed/status/2106029974105043227
+- **What:** Practical distribution playbook for launching an MCP server or micro SaaS: submit to the official MCP Registry first, awesome-list PRs, launch directories and llms.txt hubs. Claims a domain-rating jump from 4 to 26 and a few directories give real traffic and followed backlinks.
+
+## @neropursue - Eight animated React UI component libraries
+> The best UI components ready to use. Save this. Lists eight sites: Kobra (input-otp), beautifului.dev, kinetics.colorion.co (153 spring-powered animations), beui.dev, transitions.dev, astryx.atmeta.com, evilcharts.com (animated charts), reverseui.com. What Did I Miss?
+
+- **Tweet:** https://x.com/neropursue/status/2106023808255623288
+- **Link:** https://kobra.systems/components/input-otp
+- **What:** Curated list of eight React component and animation libraries covering polished interactions, AI-native UI, spring animations, transitions, animated charts and premium components. A quick reference for frontend inspiration and drop-in components.
+
+## @suraj_sharma14 - 18-item checklist of production agent engineering projects
+> CANCEL your weekend plans. You NEED to: Replace fragile chat loops with Temporal state machines; build dynamic context assembler budgeting tokens; System-One router for 95% triage; raw MCP server; trajectory grading in CI; inter-agent sanitization proxy; cost kill-switch at $0.50/query; 3-tier memory engine; KV-cache prefix sharing; shadow-route 5% traffic to new model; API-to-browser fallback; DPO pipeline from thumbs-down; PII unmasking proxy; speculative decoding; 4-tier degradation chain; Slack HITL approval gates; OpenTelemetry-style LLM spans; fuzz multi-agent swarms. Bookmark & Repost.
+
+- **Tweet:** https://x.com/suraj_sharma14/status/2105991192349679919
+- **What:** Engagement-bait reading list of 18 production-grade agent infrastructure practices: durable workflows, token budgeting, routing, security proxies, memory tiers, eval in CI, cost controls, observability and chaos testing. Useful as a checklist of topics for hardening LLM agent systems.
+
+## @nizamdesign - SaaS product redesign for Bolton (image only)
+> Saas Product redesign for Bolton! https://t.co/3GHd61DcMg
+
+- **Tweet:** https://x.com/nizamdesign/status/2105988163814518811
+- **What:** THIN: Image/video-only post from a designer showing a SaaS product redesign concept for "Bolton". No detail beyond the title; likely a UI design showcase usable as visual inspiration.
 
 ## @KanikaBK - Ten Obsidian Web Clipper templates, from a clean-save default to a local-model setup
 > Anthropic is using an Obsidian knowledge graph to manage company-wide knowledge.
@@ -4296,7 +4826,6 @@ One of the richest memory types has become (unsurprisingly) corrections. It pull
 - **What:** Plans to run an experimental outreach campaign using low-cost distributed accounts with a messaging tool, pushing boundaries on scale and cost.
 
 ---
-
 
 # Sunday, January 4, 2026
 
