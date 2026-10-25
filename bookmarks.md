@@ -4173,7 +4173,604 @@
 
 ---
 
+# Saturday, May 23, 2026
+
+## @garrytan - ZeroEntropy: small task-specific models, 4-8x faster than frontier labs
+> A 6-person team is building task-specific AI models that are 4-8x faster than anything from OpenAI or Anthropic. 500K downloads on HuggingFace. No hype. Just better engineering winning on the merits.
+>
+> This is what "make something people want" looks like in the model layer.
+
+- **Tweet:** https://x.com/garrytan/status/2058187750705418448
+- **Link:** https://zeroentropy.dev/
+- **What:** Garry Tan highlights ZeroEntropy, a six-person team training small specialized models (rerankers, embeddings, custom models) claimed faster and cheaper than generalist labs, with 500K HuggingFace downloads. Relevant for retrieval/RAG stack choices.
+
+---
+
+# Friday, May 22, 2026
+
+## @swyx - Kakuna: hardening-checklist skills for turning vibecoded apps production-ready
+> Kakuna: skills with checklists that only know how to harden your codebase
+>
+> /plan with it then let it /goal for a day, it comes back with same functionality but all the boring stuff done for you + an audit of its own work.
+>
+> focus on subagent parallelism and encodes strong opinions on how AI engineers should design apps for human and agent access/devops/product mgmt.
+>
+> instead of dark factory, go "mullet factory" - party in front (ship unique lovable features), dark in the back (timeless production principles). basically its the antientropy/antislop part of symphony broken out as its own thing
+>
+> *Quoting @swyx:* working on a "take this vibecoded slop app and make it a production-ready, e2e tested,  maintainable, parallelizable agent repo" skill.  this thing ran for ~16 hours yesterday and made 103 commits all told and i ended up with exactly the same app but instead of fragile mvp it now looks like a codebase i can actually build on for th elong run
+
+- **Tweet:** https://x.com/swyx/status/2057876022553690327
+- **What:** swyx releases Kakuna, a skill set of hardening checklists that /plan then /goal can run for a day, keeping features identical while adding tests, maintainability, and an audit. Follows his earlier 16-hour, 103-commit run; the "mullet factory" idea splits creative front from rigorous back.
+
+---
+
+# Monday, May 18, 2026
+
+## @trq212 - Prompt: keep running implementation-notes file while implementing a spec
+> a prompt I've been using a lot recently:
+>
+> implement &lt;SPEC&gt; and while you do, keep a running implementation-notes.html file (or markdown) with decisions you had to make weren't in the spec, things you had to change, tradeoffs you had to make or anything else I should know
+
+- **Tweet:** https://x.com/trq212/status/2056415973125796184
+- **What:** Thariq's reusable prompt pattern: ask the agent to implement a spec while maintaining a running implementation-notes file recording unspecified decisions, deviations, and tradeoffs. This surfaces hidden choices for review and makes agent work easier to audit afterward.
+
+---
+
+# Thursday, May 14, 2026
+
+## @HermesAgentTips - Hermes Agent routes OpenAI turns through Codex CLI runtime
+> JUST IN 🔥
+>
+> Hermes Agent can now route OpenAI turns through the Codex CLI app-server!
+>
+> Your ChatGPT subscription becomes the engine
+>
+> No API key
+> No metered tokens
+>
+> Codex’s sandbox, plugins, and shell tools all run inside a Hermes session.
+>
+> They wrapped OpenAI’s agent runtime as a backend and made it optional.
+>
+> *Quoting @NousResearch:* You can now power your Hermes Agent, if using OpenAI models, with codex as the runtime for the core tools that it offers, with the flip of a switch with the new Codex runtime integration!
+
+- **Tweet:** https://x.com/HermesAgentTips/status/2054963533800992962
+- **What:** Nous Research's Hermes Agent gains an optional Codex runtime backend: OpenAI turns go through the Codex CLI app-server, so a ChatGPT subscription powers the agent without API keys or metered tokens, while Codex's sandbox, plugins, and shell tools run inside Hermes sessions.
+
+---
+
+# Tuesday, May 12, 2026
+
+## @Logo_Daedalus - Classic 90s children's shows free on archive.org
+> People have no idea that all of this is available on archive dot org for free, like every other old children’s show which isn’t a funnel for developing a gambling addiction. You can just watch all of these 90s Beatrix Potter adaptations right here: https://t.co/OklEKfHHNo
+>
+> *Quoting @LadyNimby:* To whoever told me there were full episodes of little bear on YouTube, thank you. My 3yo loves it and it’s great for a wholesome wind-down
+
+- **Tweet:** https://x.com/Logo_Daedalus/status/2054381822864458019
+- **Link:** https://archive.org/details/world-of-peter-rabbit-and-friends-1992-98
+- **What:** Replying to a parent happy to find Little Bear on YouTube, this points to the Internet Archive's complete World of Peter Rabbit and Friends (1992-98) series as free, ad-free alternatives to attention-optimized kids' content. Handy for wholesome screen time.
+
+## @kunchenguid - Lavish: HTML as the new markdown for agent artifacts
+> time to reveal my HTML workflow with agents
+>
+> HTML is the new markdown. Lavish is the new editor for your HTML artifacts
+>
+> just tell your agent - discuss the technical plan with me using `npx lavish-axi`
+>
+> 100% open source and runs locally. details in thread below 👇
+
+- **Tweet:** https://x.com/kunchenguid/status/2054269845966041426
+- **What:** Kun Chen proposes agents produce HTML artifacts instead of markdown and introduces Lavish, a local open-source editor launched with `npx lavish-axi`, for discussing technical plans with an agent. Details are in a thread not captured here.
+
+## @scaling01 - Anthropic's claude-for-legal repo of prebuilt legal workflows
+> New Anthropic repo: Claude for Legal
+>
+> It gives legal teams prebuilt AI workflows for contracts, privacy, employment, litigation, corporate work, IP, AI governance, regulatory monitoring, legal clinics, and law students
+
+- **Tweet:** https://x.com/scaling01/status/2054222504273613169
+- **Link:** https://github.com/anthropics/claude-for-legal
+- **Filed:** [claude-for-legal.md](./knowledge/tools/claude-for-legal.md)
+- **What:** Anthropic published `claude-for-legal`, a GitHub repo of ready-made Claude workflows spanning contracts, privacy, employment, litigation, IP, AI governance, regulatory monitoring, and legal education. Useful as a model for packaging domain-specific agent skills.
+
+## @RLeviNelson - Justin Sua family bedtime routine for optimistic, self-directed kids
+> @Justinsua &amp; his wife developed a simple bedtime routine/system designed to help their children become: More optimistic, Lifelong learners and to focus on what they can control. I would love that for my kids!
+
+- **Tweet:** https://x.com/RLeviNelson/status/2054164055158382693
+- **What:** THIN: Only text visible; the linked content is the tweet itself (likely a video or image of Justin Sua's routine). Describes a bedtime system aimed at raising optimistic, lifelong-learning kids who focus on what they control; parenting reference worth revisiting.
+
+---
+
+# Monday, May 11, 2026
+
+## @sarahfim - TrustClaw open-sourced: deployable 24/7 personal agent with 1000+ integrations
+> Despite being told no, I'm open-sourcing TrustClaw.
+>
+> You can now deploy a production-ready personal agent service with over 1000+ app integrations in a single command, straight to @vercel with npx @composio/trustclaw deploy
+>
+> I was inspired by @openclaw to build a simple web app where anyone could create their own 24/7 personal assistant and connect it to Gmail, Google Calendar, Notion, Slack, GitHub, HubSpot, Linear… well everything, and securely through OAuth/sandbox execution.
+>
+> It went viral on X, reached over a thousand users in less than 48h, and revenue began pouring in.
+>
+> So today, I'm open-sourcing TrustClaw anyway.
+>
+> > 24/7 agents that act across Gmail, Notion, GitHub, Slack, Linear, Jira, and 1000+ apps
+> > OAuth and sandboxed execution, so users don't have to hand agents passwords or raw API keys
+> > Supports multiple users and authentication right outside of the box with @better_auth
+>
+> Repo is open, MIT licensed.
+
+- **Tweet:** https://x.com/sarahfim/status/2053989393036145121
+- **What:** Composio's TrustClaw, an OpenClaw-inspired hosted personal-agent app, is now MIT open source and deploys to Vercel via `npx @composio/trustclaw deploy`. Offers OAuth plus sandboxed execution across 1000+ apps and multi-user auth via better-auth; pitched as a startup template.
+
+## @dani_avila7 - Claude Code 2.1.139 adds /goal completion-condition command
+> Claude Code 2.1.139 added /goal
+>
+> You set a completion condition and Claude keeps working across turns until it's met
+>
+> Works in interactive, -p, and Remote Control 👏
+
+- **Tweet:** https://x.com/dani_avila7/status/2053945243582488728
+- **What:** Claude Code 2.1.139 introduces `/goal`: define a completion condition and the agent continues across multiple turns until satisfied. Works in interactive mode, headless `-p`, and Remote Control, enabling longer autonomous runs without re-prompting.
+
+---
+
+# Sunday, May 10, 2026
+
+## @kai_cabero - Scraping conference attendee directories for outbound lead gen
+> There is nothing funnier to me than watching a company drop $20,000 to set up a booth at a conference in vegas... Meanwhile I stay on my couch and steal all 3,000 attendees for absolutely free. Register for a free virtual pass, open the event app on desktop, run the directory through AI-Ark to scrape names and verified emails, load into Hey Reach and message them while the keynote is still on.
+
+- **Tweet:** https://x.com/kai_cabero/status/2053475207403454477
+- **What:** Growth-hacking pitch: use a free virtual pass to access a conference's public attendee directory, enrich emails with AI-Ark, and cold-message attendees via Hey Reach in real time. Scraping and cold outreach carry privacy, ToS and spam-law risk.
+
+## @zeroxkyle - Ranking X resources used to upgrade a Hermes agent
+> Over the weekend I set up the Hermes agent, and basically force fed it every resource I could find on X to upgrade it.
+>
+> I then asked it to rank each resource and provide a simple explanation: So yea, here you go. Link to each is below
+
+- **Tweet:** https://x.com/zeroxkyle/status/2053427208346358189
+- **What:** THIN: the ranked list lives in an image and thread replies not captured. The author fed a fresh Hermes agent every X resource he could find on improving it, had the agent rank them with short explanations, and shares the resulting curated list.
+
+## @nateherk - One-hour Hermes Agent course: from one agent to an army
+> Hermes actually is the real deal. I just dropped a one hour course on it. All the way from setting one up to understanding how to build an army of them. Give this a read.
+>
+> *Quoting @nateherk:* From Zero to Ultimate Hermes Agent Army
+
+- **Tweet:** https://x.com/nateherk/status/2053308985575362681
+- **Link:** https://x.com/i/article/2053303508602896394
+- **Filed:** [hermes-agent-army-guide.md](./knowledge/articles/hermes-agent-army-guide.md)
+- **What:** Guide to Nous Research's open-source Hermes Agent as a pocket, voice-first, cron-driven companion to Claude Code. Covers five pillars (memory, skills, soul, crons, self-improving loop) and scaling to multiple agents sharing one GitHub repo of context.
+
+---
+
+# Saturday, May 9, 2026
+
+## @ziwenxu_ - Obsidian plus browser-use for 24/7 automatic knowledge ingest into Codex
+> INSTEAD OF SCROLLING ALL NIGHT. Spend 60 minutes with this instead. Obsidian + Browser-use = 24/7 Knowledge Ingest. Your assistant builds its own brain while you sleep.
+>
+> *Quoting @ziwenxu_:* How to Build Codex Knowledge Vault That Gets Smarter Every Day Without You Doing Anything
+
+- **Tweet:** https://x.com/ziwenxu_/status/2053260015901765693
+- **Link:** https://x.com/i/article/2052866079391612933
+- **Filed:** [codex-obsidian-knowledge-vault.md](./knowledge/articles/codex-obsidian-knowledge-vault.md)
+- **What:** Promotes the author's own article on an Obsidian vault Codex reads as persistent memory. A daily scheduled pass pulls X bookmarks and YouTube Watch Later into an inbox, and a flat inbox/notes/ideas/projects structure plus AGENTS.md keeps context from going cold.
+
+## @steipete - Peekaboo 3.0 release: action-first macOS computer use
+> Peekaboo 3.0 is live. Biggest release since 2.0.
+>
+> ⚡ Action-first macOS computer use
+> 👁️ Unified screenshot + UI detection
+> 🧩 Cleaner JSON across CLI + MCP
+> 🛠️ Better snapshots
+>
+> I started this last year, but the models just weren't good enough. Now they are.
+
+- **Tweet:** https://x.com/steipete/status/2053114837698249190
+- **Link:** https://peekaboo.sh/
+- **What:** Peter Steinberger releases Peekaboo 3.0, a native macOS automation CLI, MCP server and agent runtime (OpenAI, Claude, Grok, Gemini, Ollama) that sees the screen and performs clicks. It has unified screenshot and UI detection and cleaner JSON output, enabled by models finally being good enough.
+
+---
+
+# Thursday, May 7, 2026
+
+## @setupspawn - Cheap flight finding with an AI agent ("Rip spirit")
+> Find cheap flights. Rip spirit https://t.co/28wrmKlCBA
+
+- **Tweet:** https://x.com/setupspawn/status/2052463197710336414
+- **What:** THIN: the t.co link resolves to the author's own tweet, so the media (likely a demo video of an agent searching flights) is not captured. It implies an AI-assisted flight search workflow that finds cheap fares, with a joke about avoiding Spirit Airlines.
+
+## @browomo - "JARVIS on Claude Code" hype post plus Cowork plugin course
+> This guy built JARVIS on Claude Code and with 1 clap of his hands launches his entire work day, saving $5,000 a month on a personal assistant.
+>
+> Inside he runs a pipeline of 5 plugins on Claude Code that on a double clap of the hands wakes up 3 monitors, sets the Philips Hue light to focus mode, turns on a Spotify playlist, and greets him by voice with a British accent... burns about 4 million tokens a day, and close the monthly API bill at about $640.
+>
+> *Quoting @eng_khairallah1:* How to Build a Claude Cowork Plugin & Create Your Own AI Employee (Full Course)
+
+- **Tweet:** https://x.com/browomo/status/2052435967294746826
+- **Link:** https://x.com/i/article/2052164017955713028
+- **Filed:** [cowork-plugin-ai-employee-course.md](./knowledge/articles/cowork-plugin-ai-employee-course.md)
+- **What:** Engagement-bait showcase of a JARVIS-style multi-plugin Claude Code setup (double-clap wakeup, Hue lights, voice greeting, claimed ~$640/month API cost) promoting the quoted course. The course explains a Cowork plugin as a folder of plugin.json, SKILL.md workflow, commands and references that forms a role-specific AI employee.
+
+## @utotranslucence - Asking for personal-agent use cases for household admin and parenting
+> ok i am personal agent obsessed. i need to know what you are doing with it--particularly automatic household admin and things related to parenting. things I've done thus far:
+
+- **Tweet:** https://x.com/utotranslucence/status/2052432694840283537
+- **What:** THIN: the list of things she has tried is in an image not captured. She solicits ideas for personal agents doing automated household admin and parenting tasks, useful as a prompt for family-ops agent use cases.
+
+## @mronge - Headless Mac mini setup as an always-on AI agent host
+> I've been running my Mac mini headless as an always-on AI agent host for months.
+>
+> Here's my full setup video (3min) covering:
+>
+> • FileVault + auto-login
+> • Sleep settings
+> • Remote access
+> • Reaching it from anywhere (yes, even from your phone)
+
+- **Tweet:** https://x.com/mronge/status/2052423637500571963
+- **What:** THIN: video-only post (3 min walkthrough, not captured). From the text, it covers configuring a headless Mac mini as a 24/7 agent host: FileVault with auto-login, sleep settings, and remote access including from a phone.
+
+## @mitchellh - AI slop as a tool for fast parallel experimentation
+> AI slop is good, actually. Slop is what enables fast parallel experimentation. The etiquette and skill is understanding the boundaries of where slop exists and the extent to which it should be cleaned up and how. Examples: slop GUI/API while the core internals get quality focus; overnight Ralph-loop generated plugins to test a full ecosystem, regenerated whenever the SDK changes. Terraform 0.1 shipped with 3 weak providers; today he would slop-generate 100. Anti-example: never PR unreviewed slop to another project or ship it to customers without review or transparency.
+
+- **Tweet:** https://x.com/mitchellh/status/2052397933522506079
+- **What:** Argues AI-generated slop is a legitimate prototyping tool when labeled and bounded: it lets you test whole systems (GUI, plugin ecosystems) cheaply while the core gets real quality, since API changes only cost tokens to regenerate. Unreviewed slop must not reach other projects or customers.
+
+## @supabase - Supabase releases @supabase/server beta for Edge Functions auth boilerplate
+> https://t.co/H1Rz4myVIz
+
+- **Tweet:** https://x.com/supabase/status/2052392264627007585
+- **Link:** https://x.com/i/article/2052340393547894785
+- **Filed:** [supabase-server-package.md](./knowledge/tools/supabase-server-package.md)
+- **What:** Supabase announces @supabase/server (public beta), removing repeated Edge Function boilerplate (clients, JWT checks, CORS) via a withSupabase wrapper that yields a ready SupabaseContext. Based on analysis of 25,000 deployed functions.
+
+## @browomo - Obsidian vault that auto-ingests and surfaces trading ideas via Claude and n8n
+> This Chinese guy built a Second Brain in Obsidian and every morning gets 3 trading ideas that brought him $180,000 in 6 months. Inside he runs a pipeline of 6 workflows on N8N that automatically pulls every read article, listened podcast, and voice note into a shared Obsidian vault, and a neural network analyst every morning at 6:00 finds connections between the fresh and the old and puts the 3 strongest trading ideas for the day into the inbox. No analytics desk, no Bloomberg terminal, no Telegram chats with traders. Just a Mac Mini by the wall, an iPhone in the pocket, and 1 local Obsidian vault. And traditional quant funds keep entire teams of 8 people on salary for the same flow of insights, while his expenses are only subscriptions to Readwise, Whisper API, and N8N hosting. 6 pipelines process about 200 sources a day and close the monthly API bill at about $120. The Mac Mini itself stores the entire vault and keeps the neural network analyst running 24/7, and from the iPhone the owner drops any idea he hears on the go into a Telegram bot, and it lands in the vault inbox in just 30 seconds. The starting instruction that sits in the VAULT.md file at the root of his vault looks like this: "you are the AI analyst of a solo trader. you read his vault every morning at 6:00, find connections between fresh and old notes, and deliver 3 trading ideas he can verify in the hour before the market opens. pipelines: // Reader (pulls every article and highlight from Readwise, Twitter bookmarks, and Kindle into /notes) // Listener (transcribes podcasts through Airr and voice notes through Whisper, puts them in /notes) // Catcher (accepts any message from the Telegram bot and writes it to /inbox with a timestamp) // Connector (every night reads across the entire vault and updates the connection graph between 4,000 notes) // Briefer (at 6:00 AM writes a brief: 3 trading ideas for today plus the emerging thesis of the week, puts it in /inbox) // Mobile (lives in the iPhone, answers any question about the vault by voice, and confirms alerts while the owner is on the go). you wake the owner with a push notification only when a fresh note contradicts his active thesis or when 1 of the 3 morning ideas has a confidence score above 90%." This instruction immediately sets the role for the system and the limits of its autonomy. It knows it is supposed to connect new with old on its own. It knows it is supposed to prepare 3 trading ideas every morning on its own. It knows it connects the live trader only when a thesis is contradicted or an ultra-confident idea appears. → Reader pulls about 80 articles and highlights a day from Readwise, Twitter, and Kindle → Listener transcribes 4 to 6 podcasts a week through Airr and Whisper → Catcher intercepts all voice and text ideas through the Telegram bot, averaging 15 to 20 a day → Connector updates the connection graph between 4,000 notes every night, adding 25 to 30 new edges → Briefer puts a fresh brief with 3 trading ideas and the emerging thesis into the inbox at exactly 6:00 → Mobile answers any question about the vault by voice and confirms alerts right from the iPhone And only when a new note contradicts his active thesis or 1 of the ideas breaks 90% confidence does the orchestrator raise the owner with a push notification. And when the trader at that moment is driving to the gym or eating breakfast, the Mobile agent in his iPhone answers any quick question about the vault by voice: what he wrote about this ticker last week, which 3 sources support the idea of long NVDA, and what counter-thesis already sits in his notes. The trader makes the decision and sends the order before New York opens. The fresh brief from last Monday looks like this: "reader: 78 materials added over the weekend, 11 of them about semiconductors, 4 about energy, 3 about biotech. passing to connector." "connector: 27 new connections found between fresh materials and the vault, the strongest one is that the Goldman report from Wednesday matches the NVDA thesis you wrote 3 weeks ago." "briefer: 3 trading ideas for today: long NVDA (confidence 0.84), short Tesla at the close of the quarterly report (0.71), watch URI (0.62). emerging thesis of the week: the market is underpricing capex on data centers." "alert: your fresh note about long-term risk in semis contradicts the NVDA thesis. sending for review." In his work setup there is no cloud server, no team of analysts, and not even a Bloomberg subscription. At home sits a Mac Mini with a local Obsidian vault, on top run 6 N8N pipelines and a neural network analyst, and the same vault mirrors to a secure terminal on the iPhone. Out of everything I have seen this year, this is the cleanest solo trading setup on a second brain: $120 a month on the API, about $30,000 a month into the account, and between them 6 pipelines, 4,000 connected notes, and 1 iPhone in the pocket.
+>
+> *Quoting @cyrilXBT:* (X article: How to Build an Obsidian Knowledge Vault That Gets Smarter Every Day Without You Doing Anything)
+
+- **Tweet:** https://x.com/browomo/status/2052333456416186585
+- **Link:** https://x.com/i/article/2052202263263744010
+- **Filed:** [obsidian-self-improving-vault-claude.md](./knowledge/articles/obsidian-self-improving-vault-claude.md)
+- **What:** Quote-tweet hype (an Obsidian second brain yielding trading ideas, $180k claim) of CyrilXBT's guide: automated capture, Claude connecting notes, daily insights pushed back. The claim is unverified; the guide's three failure modes are the useful part.
+
+## @ZoharEiny - Port: reply on managing company-wide Claude skills via GitHub and required groups
+> *Replying to @cynthiamcgillis:* How are y'all handling company-wide skills? Putting them in a repo? Does that work for Cowork and less technical teams? I feel like there has to be a better way to organize these.
+>
+> This is how we do it at Port (and how our customers do it) In short: - Keep them in GitHub - Organize them into groups somewhere. Also make some required vs optional (we do this in Port) - Required skills would need to get pushed into a Cowork project on creation, and a scheduled task could keep them fresh (we use the Port CLI for this, but that's to IDEs) Are your teams also contributing back with their own skills, or suggestions on how to improve them? Or just receiving? https://t.co/ZUgRBmykAR
+>
+> *Quoting @ZoharEiny:* (X article: How to build a skills library for your engineering team)
+
+- **Tweet:** https://x.com/ZoharEiny/status/2052318980862312537
+- **Link:** https://x.com/i/article/2048838239499218944
+- **Filed:** [skills-library-engineering-team-port.md](./knowledge/articles/skills-library-engineering-team-port.md)
+- **What:** Reply to Cynthia McGillis's question on company-wide skills: keep skills in GitHub, group them, split required vs optional, push required ones into Cowork projects on a schedule. Links Port's article on building an engineering skills library.
+
+## @heynavtoor - Cap: open-source Rust/Tauri Loom alternative after Atlassian price hike
+> In February 2026, Atlassian raised Loom prices by up to 100x. One team's bill went from $240 a year to $24,000 a year. Overnight. No opt-in. No warning. Loom Business now costs $12.50 per user per month. Loom Business + AI is $20. A 50-person team pays up to $12,000 a year to send screen recordings. A 100-person team pays up to $24,000 a year. A 500-person team pays up to $120,000 a year. For screen recordings. Then a developer in Liverpool shipped Cap. His name is Richie McIlroy. Solo founder. Built and sold four micro-SaaS products before this one. Started Cap in November 2023, six weeks after Atlassian announced the Loom acquisition. Cap is the open source alternative to Loom. Built in Rust and Tauri. Native macOS and Windows app. AGPL-3.0 licensed. Free forever for local recording. No usage limits. No watermark. No login wall. Here is what it does: → Instant Mode: record and upload at once, shareable link the moment you stop → Studio Mode: 4K, separate screen and camera tracks, no compression, no upload → AI-generated titles, summaries, chapters, transcripts — automatic → Custom S3 storage: AWS, Cloudflare R2, Backblaze, MinIO, Wasabi → Custom domains: share from https://t.co/NbzBe1E4AP, not https://t.co/1YSDeiHgdv → Import your existing Loom videos in one click → Self-host everything with one Docker command Here is the wildest part: Loom hosts your videos on their servers. If Loom goes down, your links go down. If Atlassian raises prices again, you pay or your library disappears. Atlassian has killed products before. Stride. HipChat. Both were buried. Loom could be next. Cap puts your videos on YOUR storage. If Cap disappears tomorrow, your recordings still sit in your S3 bucket. Every link still works. Every video still plays. The numbers, today: 18,506 stars. 1,454 forks. 56 contributors. 1,762 commits in 2026 alone. Latest release v0.4.84, three weeks ago. Used by 30,000 teams. A $63 billion public company raised the price of screen recording 100x in February. A solo founder in Liverpool made it free the same year. Your recordings. Your storage. Your links. No surprise invoice. Free forever. AGPL-3.0 open source. (Link in the comments)
+
+- **Tweet:** https://x.com/heynavtoor/status/2052307308253003921
+- **What:** LINK_FAILED: Could not expand link from @heynavtoor — original t.co URL did not resolve. Thread claims Atlassian raised Loom prices up to 100x in Feb 2026 and promotes Cap, a free AGPL-3.0 screen recorder by Richie McIlroy (Rust + Tauri; Instant and Studio modes, self-hostable storage). The Cap link failed to expand and loom.com returned only raw HTML.
+
+## @HowToPrompt__ - Open-source MIT Google Flights tool for Claude via direct API
+> Someone open-source a tool that gives you direct access to Google Flights. It hits Google Flights' API directly (no scraping) so Claude can find the cheapest dates, filter by airlines, cabin class, stops, and time windows in plain English. 100% Open Source. MIT License. https://t.co/ChyBIcKTx7
+
+- **Tweet:** https://x.com/HowToPrompt__/status/2052251498843881702
+- **What:** Announces an MIT-licensed tool that calls Google Flights API directly (no scraping) so Claude can search cheapest dates and filter by airline, cabin, stops, and time windows in plain English. Link resolves only to the tweet itself; repo not identified.
+
+---
+
+# Wednesday, May 6, 2026
+
+## @pnwprincess23 - Consolidated NYC museum checklist from crowd recommendations
+> ok you guys had insanely good nyc museum recs so i consolidated them into a giant notes apps checklist for myself (will provide updates as they come!) The Core - Whitney Museum - Guggenheim - Frick Collection - Neue Galerie Aesthetic - The Cloisters - Noguchi Museum - Dia Beacon (day trip) - Storm King Art Center (day trip) Niche - Hispanic Society Museum & Library - Asia Society Museum - International Center of Photography - Japan Society Gallery - New Museum Film - Museum of the Moving Image - MoMA PS1 City Vibes - Museum of the City of New York - New-York Historical Society - Queens Museum - Fraunces Tavern Museum - Tenement Museum Random Topics - Transit Museum - Museum of Food and Drink (MOFAD) - Cooper Hewitt Smithsonian Design Museum - Intrepid Museum - New York Academy of Medicine - Museum of Mathematics (MoMath) Books! - Morgan Library & Museum - NY Public Library (Bryant Park reading room) Bonus Misc. - Amant gallery - Snug Harbor Cultural Center - Governors Island (art installations) - Poster House
+
+- **Tweet:** https://x.com/pnwprincess23/status/2052110286652625355
+- **What:** Personal categorized checklist of NYC museums (Core, Aesthetic, Niche, Film, City Vibes, Random Topics) compiled from replies; useful as a trip-planning list of Whitney, Cloisters, Dia Beacon, Tenement Museum and others.
+
+## @levelsio - levelsio secures VPS with Cloudflare Tunnel plus Tailscale, no inbound ports
+> New fun thing I did to secure my VPS even further I installed @Cloudflare Tunnel, many of you recommended me this I already had 443 inbound firewall limited to Cloudflare's IP range, but this is even better Cloudflare Tunnel is outbound, which means it connects from your server to Cloudflare, and keeps the connection active, then if someone opens your site, Cloudflare sends you the package via the tunnel and your server responds Then you can block ALL inbound traffic on your firewall (in my case the Hetzner firewall in the dashboard), so now NOBODY can ever access my server, only Cloudflare and Tailscale (which is my own subnet which just my server and my laptop on it) You can just ask AI to set it up on the server etc., very easy
+>
+> *Quoting @levelsio:* When I set up a new Hetzner VPS first thing I do install Tailscale and once I'm in via Tailscale lock down the firewall to only accept web traffic on HTTPS 443 for Cloudflare IPs and SSH 22 for Tailscale IP That way nobody can get in I know I keep repeating this but it should be basics of setting up a new VPS So basic IMHO it should be part of any VPS service to default install Tailscale and enable it so it's the only way to get in Why? A VPS server is just like your laptop or destop computer but now imagine if it's connected to the entire internet with 8 billion people that can access it and try hack it You want to only have it accessible to you And if you want to host a website on your VPS (like I do), you should only let Cloudflare access your VPS so it can stand in front and block any hack attempts Never expose a VPS to the world wide web which realistically is the world WILD web
+
+- **Tweet:** https://x.com/levelsio/status/2052033385778823436
+- **What:** Follow-up to his earlier Tailscale + Cloudflare-IP firewall setup: Cloudflare Tunnel makes the connection outbound, so all inbound traffic can be blocked at the Hetzner firewall, leaving only Cloudflare and Tailscale access. Quoted post is the original baseline hardening recipe.
+
+## @gippp69 - Automating a faceless $8,000/month YouTube channel with Claude
+> https://t.co/76HrbkTGyb
+
+- **Tweet:** https://x.com/gippp69/status/2052024282260128034
+- **Link:** https://x.com/i/article/2051740966399201285
+- **Filed:** [youtube-faceless-channel-claude-automation.md](./knowledge/articles/youtube-faceless-channel-claude-automation.md)
+- **What:** X article with Claude prompts for each stage of a faceless YouTube channel: niche research, scripts, voiceover, editing. Self-reported income claim; useful mainly as a prompt template set.
+
+## @thisischristina - Husband and Claude build receipt-printer daily briefings for kids
+> Husband and Claude set up a receipt printer to make daily briefings for the kids https://t.co/7VxoqHN8j5
+
+- **Tweet:** https://x.com/thisischristina/status/2051997062170890431
+- **What:** THIN: Self-quote of a Claude project: a receipt printer prints daily briefings for the kids, set up by her husband with Claude. Likely media shows the printed receipt; shows a fun home-automation use of Claude.
+
+---
+
+# Tuesday, May 5, 2026
+
+## @k1rallik - Chrome silently downloads 4GB Gemini Nano weights.bin model
+> do you understand what just happened to your computer.. Google Chrome secretly downloaded a 4GB AI model onto your device. Without asking.. Without telling you.. It's called weights.bin. It lives deep in your system folders. It powers Gemini Nano - Google's on-device AI. And if you delete it? Chrome re-downloads it automatically. Like nothing happened. Just Google deciding your hard drive is their storage unit. At 1 billion Chrome users - that's 4 BILLION gigabytes of data pushed silently across the internet. The carbon footprint alone equals tens of thousands of cars running for a year. Check your disk right now: 📁 %LOCALAPPDATA%\Google\Chrome\User Data\OptGuideOnDeviceModel To stop it: chrome://flags → disable Optimization Guide On Device Model → restart Chrome → delete the folder. Reshare so people know what's sitting on their computers.
+>
+> *Quoting @Pirat_Nation:* Google Chrome is quietly downloading a roughly 4 GB AI model to many users’ computers without clear upfront consent. The file, called weights.bin, is part of Google’s Gemini Nano on-device language model and lands in the browser’s user data folder under OptGuideOnDeviceModel. It powers built-in AI tools such as “Help me write,” smarter tab suggestions, on-device scam detection, and page summarization. The download triggers automatically for devices meeting minimum hardware requirements, and Chrome often replaces the files if deleted. While the model processes data locally, installation happens in the background with minimal notification. The scale is noteworthy. Hundreds of millions or billions of installations add up to thousands of tonnes of carbon emissions globally from data transfer, even though each is a one-time event. To prevent or remove it, go to chrome://flags, disable the entries for the optimization guide on-device model and Prompt API, restart the browser, and manually delete the folder.
+
+- **Tweet:** https://x.com/k1rallik/status/2051745051894522198
+- **What:** Claims Chrome auto-installs a ~4GB Gemini Nano on-device model (weights.bin in OptGuideOnDeviceModel) and re-downloads it if deleted. Quoted Pirat_Nation post gives the neutral account (powers Help me write, scam detection); k1rallik adds alarmist scale/carbon framing and a chrome://flags opt-out.
+
+## @ankurnagpal - Startup investment loss tax write-off against ordinary income
+> A weird tax loophole with early stage startup investing that almost no one knows about:
+>
+> If you invest in a small startup that has raised less than 1M in funding
+>
+> And the business fails
+>
+> You can write off up to 50K (single) or 100K (married) from your ORDINARY income aka salary
+
+- **Tweet:** https://x.com/ankurnagpal/status/2051667045658337584
+- **What:** Describes the Section 1244 small business stock loss rule: failed investments in startups that raised under $1M can offset up to $50K (single) or $100K (married) of ordinary income instead of capital gains. Verify with a tax professional.
+
+## @LouiseDSadeleer - Using Claude to make 9:16 clips instead of OpusClip
+> It's time to cancel your @OpusClip subscription. Use @claudeai to create 9:16 clips instead.
+>
+> Here's the super fast demo, while I get ready 💋
+>
+> *Quoting @LouiseDSadeleer:* So who's gonna tell Opus Clips users they can create clips in Claude Code?
+
+- **Tweet:** https://x.com/LouiseDSadeleer/status/2051652715617378655
+- **What:** Louise argues Claude (Claude Code) can cut vertical 9:16 short clips from long video, making a paid OpusClip subscription unnecessary. She posts a quick demo video; the quoted earlier post teased the same idea.
+
+---
+
+# Monday, May 4, 2026
+
+## @ClaudeDevs - Keyless auth for Claude Platform via CLI and cloud identity
+> Managing API keys is one of the top security concerns we hear from customers.
+>
+> Today we're introducing keyless auth for Claude Platform: authenticate via browser with the CLI, or let workloads use their existing cloud identity (AWS, GCP, Azure, or any OIDC token provider).
+
+- **Tweet:** https://x.com/ClaudeDevs/status/2051393709619732758
+- **What:** Anthropic launches keyless authentication for Claude Platform. Developers log in through the browser with the CLI, and workloads authenticate with existing cloud identity (AWS, GCP, Azure, any OIDC provider), removing long-lived API keys.
+
+---
+
+# Sunday, May 3, 2026
+
+## @grok - Red incandescent bulb picks for sleep-friendly bedroom lighting
+> *Replying to @Bfaviero:* @onescottwilson @grok what are the best red incandescent bulbs on Amazon to buy for my bedroom?
+>
+> For your bedroom, search Amazon for these top red incandescent options:
+>
+> - Mandala Crafts 25W Clear Red A19 (E26 base): 4.5 stars, affordable pack, good pure red filter for sleep ambiance.
+> - Xtricity or Westinghouse 25-60W transparent red A19 incandescents: higher output, solid ratings for low-blue night lighting.
+>
+> They create that warm red glow without blue/green wavelengths. Start with 25W for dimmer sleep-friendly use. Check recent reviews for stock.
+
+- **Tweet:** https://x.com/grok/status/2051076592948936910
+- **What:** Bruno Faviero asked Grok for red incandescent bulbs for bedroom use. Grok suggests Mandala Crafts 25W clear red A19 and Xtricity/Westinghouse 25-60W red A19 bulbs, advising 25W for low-blue sleep lighting; product claims are unverified.
+
+## @NousResearch - Hermes Agent v0.12.0 adds Kanban multi-agent board
+> Hermes Agent now has multi-agent via the Kanban, new in v0.12.0.
+>
+> Agents claim tasks from a board, work in parallel, and hand off when blocked. You watch progress and unblock from one easy view instead of juggling terminals.
+>
+> We asked it to plan and make this video about itself: https://t.co/SsRIaa1lvs
+
+- **Tweet:** https://x.com/NousResearch/status/2050997692977844324
+- **What:** Hermes Agent v0.12.0 adds a Kanban board for multi-agent work: agents claim tasks, run in parallel, and hand off when blocked, with one view for the human to unblock. The promo video was itself planned and made by the agent.
+
+## @coinbureau - Possible IRS COVID-era penalty refunds via Form 843
+> 🇺🇸NEW: The IRS may owe REFUNDS to tens of millions of American taxpayers from the COVID-19 era.
+>
+> A court ruled that the entire 3.5-year COVID-19 disaster period (Jan 2020 – May 2023) automatically postponed all federal tax filing and payment deadlines.
+>
+> Every penalty and interest charge assessed during that window may have been improper.
+>
+> Americans will need to manually request relief using Form 843 before the July 10, 2026 deadline.
+
+- **Tweet:** https://x.com/coinbureau/status/2050849088778691065
+- **What:** Claims a court ruling postponed all federal tax deadlines for Jan 2020 to May 2023, so penalties and interest in that window may be refundable. Relief requires filing Form 843 by July 10, 2026 (unverified social claim; deadline already passed relative to now).
+
+---
+
+# Friday, May 1, 2026
+
+## @levelsio - Replacing Mapbox with free OpenFreeMap to cut map costs to $0
+> ✨ I just replaced Mapbox on all my sites with OpenFreeMap by @hyperknot and my map bill is now $0
+>
+> Mapbox's pricing is getting increasingly extortionary (which is fine, it's capitalism) but at some point you have to think, $857/month for what? A map? Really? A map is that expensive? How can loading a map be that expensive? It's just some PNG tiles you host somewhere? Why?
+>
+> @OpenFreeMapOrg is 100% free and all you do is point your AI to openfreemap(dot)org and tell it to replace Mapbox with that
+>
+> 5 minutes and you save thousands $$ per year!
+>
+> Apparently @Cloudflare sponsors its bandwidth which is very cool and keeps it online!
+
+- **Tweet:** https://x.com/levelsio/status/2050343676635922592
+- **What:** Levelsio cut a $857/month Mapbox bill to $0 by migrating to OpenFreeMap, a free map tile service with Cloudflare-sponsored bandwidth. He had an AI agent do the swap in about 5 minutes.
+
+## @steipete - Crabbox 0.1.0 remote Linux test boxes for coding agents
+> Too many agents, too many test suites, one very tired Mac. Run them remote:
+>
+> Crabbox 0.1.0 🦀
+>
+> ⚡ Remote Linux test boxes (AWS, Hetzner)
+> 🔁 Dirty checkout sync
+> 🦀 Warm boxes with friendly slugs
+> ⏱️ Idle auto-free
+>
+> brew install openclaw/tap/crabbox
+
+- **Tweet:** https://x.com/steipete/status/2050140050168451286
+- **Link:** https://crabbox.sh/
+- **What:** Crabbox is a CLI that gives coding agents on-demand remote machines (AWS, Hetzner) for tests and builds. It syncs a dirty local checkout, keeps warm boxes with slugs, and frees idle ones, offloading load from the local Mac. Link content was raw HTML only, so not filed.
+
+## @euboid - Moving all .env files to Infisical secrets manager
+> I deleted all our .env files from our disc and moved everything to @infisical
+>
+> Wish I did it sooner. Now...
+>
+> - Secrets never touch disk
+> - Secrets auto-shared between developers
+> - Edit in one place, propagate to prod, GitHub actions, staging env etc
+
+- **Tweet:** https://x.com/euboid/status/2050139437804449940
+- **What:** Endorses Infisical as a central secrets manager that replaces local .env files. Claimed benefits: no secrets on disk, automatic sharing across developers, and one edit that propagates to prod, CI and staging.
+
+---
+
+# Thursday, April 30, 2026
+
+## @kuizinas - pnpm hardening steps against npm supply chain worm attacks
+> There is a surge of supply chain attacks (and it is only going to get worse)
+>
+> If you are using pnpm, take these steps to protect yourself:
+>
+> * set minimumReleaseAge to 7 days
+> * set blockExoticSubdeps to true
+> * configure onlyBuiltDependencies
+>
+> npm / yarn have similar settings
+>
+> *Quoting @SocketSecurity:* 🚨 We've confirmed the intercom-client@7.0.4 was compromised in the ongoing Mini Shai-Hulud worm attack. The npm package includes a malicious preinstall hook that downloads and executes an unverified Bun binary, then runs an 11.7 MB obfuscated payload designed to steal Kubernetes, Vault, cloud, GitHub, and CI/CD secrets.
+
+- **Tweet:** https://x.com/kuizinas/status/2049947114008912146
+- **What:** Socket reports intercom-client@7.0.4 was hit by the Mini Shai-Hulud npm worm (preinstall hook, credential theft). Gajus's response is three pnpm settings: delay new releases 7 days, block exotic subdeps, and allowlist build scripts.
+
+## @MichaelElsenRoo - NYC PTA fundraising data: 15 schools over $1M, ~400 report $0
+> If you're interested in this issue, there's lots of data to parse: https://t.co/1Bh0Nevjj5
+>
+> https://t.co/AIQRYk2NTu
+>
+> Last year, for ex, 15 NYC schools reported over $1 million in PTA fundraising. Almost 400 schools reported $0 (many others just didn't respond)
+>
+> *Quoting @TheStalwart:* One thing I did not realize until having kids in NYC public schools is how much variable auxiliary fundraising occurs at each specific location. So even if you divide the tax pie in a perfectly egalitarian manner, schools with wealthier parents will still end up with more.
+
+- **Tweet:** https://x.com/MichaelElsenRoo/status/2049922080741683409
+- **Link:** https://www.chalkbeat.org/newyork/2018/11/2/21106121/as-new-york-city-starts-collecting-data-on-inequities-in-pta-fundraising-the-search-is-on-for-potent/
+- **What:** Chalkbeat reporter backs Weisenthal's point with data: NYC DOE publishes PA/PTA fundraising reports under Local Law 171 of 2018, showing extreme disparity (15 schools above $1M, ~400 at $0). Links the 2018 Chalkbeat explainer and the DOE report page.
+
+## @TheStalwart - Uneven PTA fundraising undermines equal school funding in NYC
+> One thing I did not realize until having kids in NYC public schools is how much variable auxiliary fundraising occurs at each specific location. So even if you divide the tax pie in a perfectly egalitarian manner, schools with wealthier parents will still end up with more.
+>
+> *Quoting @MattZeitlin:* guy who beats the "you're a leftist but you send your kid to a private school" rap by moving to an affluent suburb and sending their kids to their local public school
+
+- **Tweet:** https://x.com/TheStalwart/status/2049887408926171374
+- **What:** Weisenthal replies to Zeitlin's joke about leftists using affluent public schools with a point: even equal tax funding leaves gaps because PTA fundraising varies by school. Wealthier parent bodies still end up with more resources.
+
+## @heynavtoor - 60 Claude Cowork commands, skills, and workflows
+> > open Claude Cowork
+> > write an email
+> > close it
+> > do the same thing next week
+> > wonder why people say it's life-changing
+>
+> meanwhile:
+>
+> > /schedule — inbox triaged before I wake up. every morning.
+> > /agents — sub-agent reviews every PR in my team's code style
+> > custom skills folder — every output sounds like me, not Claude
+> > .claude/ folder — hiring managers check this before your LinkedIn now
+>
+> 60 commands. most people use 6. I documented all of them.
+>
+> save this.
+>
+> *Quoting @heynavtoor:* https://t.co/wAEARI3iDe
+
+- **Tweet:** https://x.com/heynavtoor/status/2049883680592797948
+- **Link:** https://x.com/i/article/2049570107568062464
+- **Filed:** [60-claude-cowork-commands-skills-workflows.md](./knowledge/articles/60-claude-cowork-commands-skills-workflows.md)
+- **What:** Quote of his own article, a graded list of 60 Cowork features (slash commands, custom skills, scheduled tasks, sub-agents, .claude/ folder). Highlights /plan, a Skills folder, and a daily 7am inbox automation as top-leverage moves.
+
+## @mynameisyahia - Founder says a YC startup plans to clone his bootstrapped product
+> Was in SF two weeks ago, spent a lot of time at Hogpatch
+>
+> Met a YC founder building a browser-API startup. Unfortunately a fairly broken product, zero traction
+>
+> He got way too interested when he heard I was bootstrapped with hundreds of customers
+>
+> Today, two separate people told me he's planning to pivot into my product and is already lying to people about the quality of our data
+>
+> I won't name him, but if you're reading this
+>
+> I'm disappointed in you.
+
+- **Tweet:** https://x.com/mynameisyahia/status/2049845138332004630
+- **What:** Anecdote about competitive copying: a bootstrapped founder with hundreds of customers claims an unnamed YC browser-API founder is pivoting into his space and disparaging his data quality. Cautionary signal about sharing traction details with competitors.
+
+## @zodchiii - Blocking Claude Code from leaking .env secrets via settings.json deny rules
+> https://t.co/JlZbH7mCPt
+
+- **Tweet:** https://x.com/zodchiii/status/2049779422291460576
+- **Link:** https://x.com/i/article/2049760065427574784
+- **Filed:** [claude-code-env-secrets-deny-config.md](./knowledge/articles/claude-code-env-secrets-deny-config.md)
+- **What:** Article argues CLAUDE.md rules are only advisory and that `permissions.deny` in settings.json is the real guard for .env and credential files. Also covers runtime-output and grep leaks, dummy .env.test files, a secrets-scanning pre-commit hook, and container isolation.
+
+---
+
+# Wednesday, April 29, 2026
+
+## @KurtBullock - Meta launches Ads CLI for agent-driven ad management
+> Meta just rolled out a CLI 👀
+>
+> Launch ads, pull stats...   agent compatible
+
+- **Tweet:** https://x.com/KurtBullock/status/2049615884612944248
+- **Link:** https://developers.facebook.com/blog/post/2026/04/29/introducing-ads-cli/
+- **What:** Meta announced an Ads CLI on its developer blog that lets users launch ads and pull stats from the terminal, designed to be usable by AI agents. Page content was raw HTML only, so details are from the tweet.
+
+## @zeke - swiss-design skill updated with Vercel web-interface-guidelines
+> My swiss-design skill says how it should look, but not how it should behave.
+>
+> So I updated it to reference Vercel's web-interface-guidelines skill for a11y, focus, forms, perf, hydration, and I inlined the indispensable typographic rules.
+>
+> *Quoting @zeke:* I made a Swiss International Style design system as an agent skill.
+>
+> npx skills add zeke/swiss-design-skill
+
+- **Tweet:** https://x.com/zeke/status/2049542219124937203
+- **Link:** https://github.com/zeke/swiss-design-skill/pull/1
+- **Filed:** [swiss-design-skill-vercel-guidelines.md](./knowledge/tools/swiss-design-skill-vercel-guidelines.md)
+- **What:** Follow-up to Zeke's Swiss International Style agent skill (install via `npx skills add zeke/swiss-design-skill`). The PR adds behavior guidance by pulling in Vercel's web-interface-guidelines plus inlined typography rules, pairing visual style with accessibility and performance.
+
+## @burakkarakann - dac: open-source dashboard-as-code (YAML/JSX) built for agents
+> Open-sourcing our dashboard-as-code product: dac 🚀
+>
+> Dac is an open-source product that allows you to build dashboards using YAML or JSX. You can throw your agents at it and get a beautiful, standardized dashboard as a result of it.
+>
+> (Thread continues: BI tools lock you into UIs agents can't use; dac is an open standard plus a single Go binary with a semantic layer, its own skill, and load-time dynamism via JSX. Supports Postgres, MySQL, SQL Server, Snowflake, BigQuery, Databricks. Start with `dac init`.)
+
+- **Tweet:** https://x.com/burakkarakann/status/2049500452874600833
+- **What:** File-based dashboard spec plus Go binary so agents can generate standardized, reviewable, deployable dashboards instead of one-off code. Targets teams wanting governance over agent-built BI, with JSX for dynamic tabs and charts.
+
+---
+
 # Tuesday, April 28, 2026
+
+## @derekmeegan - /browser-trace skill: full browser observability for agents
+> Introducing the /browser-trace skill,
+>
+> Give your agent 100% observability into its browser: dump network requests, DOM content, screenshots, and CDP logs into a searchable filesystem.
+>
+> Great for reverse engineering, autoresearch loops, and monitoring the situation ™️.
+
+- **Tweet:** https://x.com/derekmeegan/status/2049218109807198331
+- **What:** Agent skill that records everything a browser agent sees (network calls, DOM, screenshots, CDP logs) to files the agent can grep. Useful for reverse-engineering sites and debugging or looping browser automation; no repo link was captured.
+
+## @katiewav - Borrowed in Brooklyn: Brooklyn Public Library book popularity explorer
+> i built a site that explores which books are most popular across the brooklyn public library system!
+>
+> + see what's most popular borough-wide or by select neighborhoods
+> + compare book tastes across neighborhoods
+> + see ratings on goodreads + NYT best sellers
+
+- **Tweet:** https://x.com/katiewav/status/2049148843183243631
+- **Link:** https://borrowed-brooklyn.vercel.app/
+- **What:** Next.js/Vercel data site showing adult books borrowed and requested across eleven tracked Brooklyn Public Library branches. Lets users compare neighborhood reading tastes alongside Goodreads ratings and NYT bestseller status.
 
 ## @olvrgln - Mesa: versioned POSIX filesystem for enterprise AI agents
 > Introducing Mesa: the most powerful filesystem ever built, designed specifically for enterprise AI agents.
