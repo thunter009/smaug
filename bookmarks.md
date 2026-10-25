@@ -4173,7 +4173,537 @@
 
 ---
 
+# Wednesday, August 26, 2026
+
+## @Shpigford - AEO audit skill that tests ChatGPT, Claude, Gemini and Perplexity visibility
+> just dropped one of the biggest skills i've ever built for the initial commit club!
+>
+> A full AEO audit skill! Runs your prompts through ChatGPT, Claude, Gemini and Perplexity with live web search; separates "AI doesn't know you" from "AI knows and won't recommend you"; reads your codebase for what's true; audits 25 AI crawlers; maps cited sources; every number carries sample size and confidence interval; ships a dated report plus ordered gameplan.
+
+- **Tweet:** https://x.com/Shpigford/status/2092608111378841750
+- **Link:** https://initialcommit.co/library/skills/aeo
+- **Filed:** [aeo-skill-initial-commit.md](./knowledge/articles/aeo-skill-initial-commit.md)
+- **What:** Answer Engine Optimization skill that measures what major AI engines say about your product, diagnoses awareness versus recommendation gaps, and outputs a statistically careful report with file-level fixes. Pairs with DataForSEO MCP, Search Console and crawler logs.
+
+## @itsPaulAi - Qwen3.8-Flash open-weight MoE claims to beat DeepSeek V4 Flash and Opus 4.6 Max cheaply
+> That's absolutely massive. You remember how big the DeepSeek V4 Flash release was? Qwen3.8-Flash is just way better, even cheaper... and open weight!! BETTER than DeepSeek V4 Flash, BETTER than Claude Opus 4.6 Max, but way cheaper because of the new architecture. Open weight models are winning!
+>
+> *Quoting @Alibaba_Qwen:* Meet Qwen3.8-Flash, a multimodal MoE and an early preview of the Qwen4 architecture, now open-weight! 125B parameters + 51B N-gram embeddings, just 6B activated per token. API at $0.16/1M input and $0.47/1M output. 262K context. 62.5 on SWE-bench Pro.
+
+- **Tweet:** https://x.com/itsPaulAi/status/2092598364970066218
+- **Quoted:** https://x.com/Alibaba_Qwen/status/2092591393424515114
+- **Link:** https://qwen.ai/blog?id=qwen3.8-flash-next
+- **Filed:** [qwen3-8-flash-next.md](./knowledge/tools/qwen3-8-flash-next.md)
+- **What:** Alibaba open-sources Qwen3.8-Flash-Next, a 125B MoE with 6B active params previewing Qwen4's GDN+QSA hybrid attention. Paul claims it beats DeepSeek V4 Flash and Opus 4.6 Max at far lower cost; benchmark claims are vendor-reported.
+
+---
+
+# Tuesday, August 25, 2026
+
+## @tom_doerr - Stealth Browser MCP: undetectable browser automation for agents
+> Automates undetectable browser sessions for MCP agents to bypass Cloudflare challenges and login walls.
+>
+> https://t.co/ZPG1h1NlDc
+
+- **Tweet:** https://x.com/tom_doerr/status/2092436552924155960
+- **Link:** https://github.com/vibheksoni/stealth-browser-mcp
+- **Filed:** [stealth-browser-mcp.md](./knowledge/tools/stealth-browser-mcp.md)
+- **What:** FastMCP server (~3.3k stars) driving real Chrome via nodriver and CDP to dodge anti-bot checks, with network hooks, DOM extraction and UI cloning. Gives agents access to Cloudflare-protected and login-gated sites.
+
+## @tom_doerr - Claude Code Frontend Design Toolkit: skills, plugins and MCP servers for better UIs
+> Provides skills, plugins, and MCP servers to Claude Code to generate better-looking frontends.
+>
+> https://t.co/cS1n9T4oBL
+
+- **Tweet:** https://x.com/tom_doerr/status/2092416434529816792
+- **Link:** https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit
+- **Filed:** [claude-code-frontend-design-toolkit.md](./knowledge/tools/claude-code-frontend-design-toolkit.md)
+- **What:** Curated awesome-list (~1.2k stars) of design skills, theming/tokens, motion libraries, design-to-code pipelines and MCP servers that counter the generic purple-gradient AI look. Useful index for Claude Code frontend setup.
+
+## @tom_doerr - Claude SEO: 18 parallel specialist agents for SEO audits in Claude Code
+> Claude SEO audits technical SEO, content quality, and schema markup by running 18 specialist agents in parallel within Claude Code.
+>
+> https://t.co/2uHP9IR5R6
+
+- **Tweet:** https://x.com/tom_doerr/status/2092379826980102434
+- **Link:** https://github.com/AgriciDaniel/claude-seo
+- **Filed:** [claude-seo.md](./knowledge/tools/claude-seo.md)
+- **What:** Free MIT Claude Code plugin (~20k stars) with 26 sub-skills and 19 agents covering technical SEO, E-E-A-T, schema, GEO/AEO, local, e-commerce and Google API reporting. A turnkey SEO audit suite plus AI-search readiness checks.
+
+## @eptwts - More UI component and design resources to feed coding agents
+> here are some more resources you can send to your agent to improve your UI...
+>
+> ui-skills.com, coss.com/ui, designsystemchecklist.com, reui.io/components, emilkowal.ski/ui/you-dont-need-animations
+>
+> *Quoting @EXM7777:* i finally cracked frontend design with AI... without using any skill... collecting inspirations and modules from other people, building a lego of components
+
+- **Tweet:** https://x.com/eptwts/status/2092298910190448727
+- **Quoted:** https://x.com/EXM7777/status/2092250905655812121
+- **Link:** https://www.ui-skills.com/
+- **What:** Adds a second batch of agent-ready UI sources (ui-skills, coss ui, Design System Checklist, reui, Emil Kowalski's animation essay) to EXM7777's component-lego approach. Together they form a reading list for improving agent-generated frontends.
+
+## @EXM7777 - Building frontend taste with AI by feeding agents curated component libraries
+> i finally cracked frontend design with AI... without using any skill
+>
+> frontend needs taste to not look like slop, and i'm more of an engineer than an artist, so i'm genuinely bad at it
+>
+> my way around it: collecting inspirations and modules from other people, building a lego of components
+>
+> resources you can send to your agents: beautifului.dev, beui.dev, rareui.com, transitions.dev, ui.shadcn.com
+>
+> it's VERY easy for agents to edit components once they have the code. You send the link, your agent fetches the full list of components, then you ask it to find the best way to integrate them into your frontend foundation.
+
+- **Tweet:** https://x.com/EXM7777/status/2092250905655812121
+- **Link:** https://www.beautifului.dev/
+- **What:** Workflow for non-designers: skip design skills, give coding agents URLs of component libraries (beautifului, beui, rareui, transitions.dev, shadcn) so they fetch real component code and integrate it into the base UI. Engineer-friendly route to less sloppy AI frontends.
+
+## @wikiwayne - Thomson Reuters releases Thomson-1.0-Small model on Hugging Face
+> I have found my new lawyer.
+>
+> Thomson-1.0-Small
+> https://t.co/KzUgEQDjtC
+
+- **Tweet:** https://x.com/wikiwayne/status/2092194358153924738
+- **Link:** https://huggingface.co/thomsonreuters/Thomson-1.0-Small
+- **What:** Jokey pointer to Thomson Reuters' Thomson-1.0-Small model on Hugging Face, implying a legal-domain LLM from the legal-research vendor. Page content did not extract beyond boilerplate, so capabilities and license are unverified.
+
+## @heynavtoor - Video2X: free open-source AI upscaling and frame interpolation vs Topaz Video AI
+> *Replying to @heynavtoor:* Your dad shot a video on a camcorder in 2003. It is 480p... Topaz Video AI charges $299 a year... Video2X takes your 480p video and upscales it to 1080p or 4K, with Real-ESRGAN, Real-CUGAN, Anime4K v4 and RIFE frame interpolation. Runs on Windows, Linux, Docker with Vulkan GPU acceleration. $0, local, no watermark.
+>
+> Repo: https://t.co/o85WQXN5mw
+
+- **Tweet:** https://x.com/heynavtoor/status/2092188267563331608
+- **Link:** https://github.com/k4yt3x/video2x
+- **Parent:** https://x.com/heynavtoor/status/2092188255341154791
+- **Filed:** [video2x.md](./knowledge/tools/video2x.md)
+- **What:** Link-in-comments reply for a thread pitching Video2X (AGPL, ~22k stars) as a free local replacement for Topaz Video AI's $299/yr subscription. It upscales old footage to 4K and interpolates 24 to 60 fps using Real-ESRGAN, Real-CUGAN, Anime4K and RIFE on any Vulkan GPU.
+
+---
+
+# Monday, August 24, 2026
+
+## @308Greenfield - SlowBooks Pro, free QuickBooks-compatible accounting with BYO-AI endpoints
+> No one will see this bc …. X algo
+>
+> SlowBooks Pro is fully interoperable with Quickbooks online / desktop
+>
+> BYO-Ai endpoints
+>
+> Oh yeah - and it’s free … forever
+>
+> *Quoting @jessegenet:* I got frustrated with quickbooks and a grand (in tokens) later I built a fully local replacement, my own plaid data feeds from banks, investment and tax loss harvest tracking… Conversational chat with my finances 🤓 Building it cost less than the QB online annual sub 🤯
+
+- **Tweet:** https://x.com/308Greenfield/status/2092047380900119004
+- **Quoted:** https://x.com/jessegenet/status/2091975683304263727
+- **What:** Riding Jesse Genet's viral "AI-built QuickBooks replacement" post, Trent announces SlowBooks Pro, a free QuickBooks Online/Desktop-interoperable accounting app with bring-your-own AI endpoints. Signals AI-built local finance tools displacing subscription bookkeeping; no link expanded, so details are thin.
+
+## @weswinder - Polsia leak exposes hundreds of user business ideas via screen recording
+> polsia just leaked 100s of their user's business ideas. i screen recorded as many as i could until my thumb got sore from scrolling. hopefully you can find some inspiration from these ideas (straight up copying/cloning probably isn't a good idea imo)
+
+- **Tweet:** https://x.com/weswinder/status/2091986017637077104
+- **What:** THIN: video-only tweet. Claims AI-company-builder Polsia exposed users' private business ideas in a scrollable feed; author screen-recorded hundreds as inspiration while cautioning against cloning. Implies a privacy lapse and a source of startup-idea signal.
+
+## @0xCodez - Grok Bot agent-team tutorial with a Chief of Staff agent from a SpaceXAI engineer podcast
+> SpaceXAI engineer (ex-Cursor): "right now I'm running 10-20 GrokBot agents that automate 90% of my routine. i have a Chief of Staff agent. He knows about all my other bots and manages everything". In a 50-minutes podcast, a SpaceXAI engineer showed how to build a team of agents that will work for you 24/7. Watch today, then read how to build a Grok agents team from scratch in the article below.
+
+- **Tweet:** https://x.com/0xCodez/status/2091980766372639135
+- **Link:** https://x.com/i/article/2089655442657910784
+- **Filed:** [grok-bot-agents-10-step-tutorial.md](./knowledge/articles/grok-bot-agents-10-step-tutorial.md)
+- **What:** Promo for a 10-step Grok Bot tutorial built on a podcast with a SpaceXAI engineer running 10-20 bots under a Chief of Staff coordinator. Core advice: delegate roles via charters, define what each bot must never do unasked, and verify first tasks quickly. Already filed from an earlier bookmark.
+
+## @doodlestein - Parallel multi-repo release prompt using dsr, ntm and agent-mail swarm
+> I have too many projects now so it's increasingly hard to stay on top of the release process for all of them. Especially since GitHub Actions cut me off, so I need to do all the builds and test suites using my own hardware for every platform... Out of desperation, I'm now finally trying to parallelize the process in a bulk way using a bunch of my skills. Here's my prompt: use /release-preparations with /dsr (NEVER GitHub Actions) across ~/projects, find repos with many changes since last release, cut releases for all platforms plus Homebrew/Docker/scoop...
+
+- **Tweet:** https://x.com/doodlestein/status/2091973897126326514
+- **What:** Doodlestein's prompt to batch-release his interlinked Rust/franken projects without GitHub Actions: dsr for local multi-platform builds, gh-triage-ru on issues first, library-updater for latest deps, real-service installer e2e tests. Runs as a 4-pane Opus fleet tended via ntm and agent-mail on a 4-minute loop.
+
+## @tarasshyn - Entity Stacking via Organization schema sameAs links for Google entity recognition
+> Today I learned about Entity Stacking. If you put these links in your Organisation schema under `sameAs`, Google will understand who you are far better than with 300 junk directory listings - and it's free. Cheers, @Charles_SEO
+
+- **Tweet:** https://x.com/tarasshyn/status/2091954190067363888
+- **What:** THIN: image-only tweet (the list of links is in an attached image, not text). SEO tip crediting Charles_SEO: list authoritative profile URLs in Organization schema `sameAs` so Google resolves the brand entity, instead of building many junk directory citations.
+
+## @doodlestein - Overnight optimization prompt chaining profiling, gauntlet and 50x extreme-optimization skills
+> I've been using omp and the free 0x alpha model so much lately that I have surplus GPT usage now... (already got some nice gains in beads_viewer and beads_rust from running this overnight) with Sol xhigh: First read ALL of AGENTS.md and README.md... apply $running-the-gauntlet-on-your-rust-port and its negative evidence ledger concept, but first profile with $profiling-software-performance. Then $repeatedly-apply-skill 50x applying $extreme-software-optimization, keeping $just-say-no-to-process-porn-and-ceremony top of mind.
+
+- **Tweet:** https://x.com/doodlestein/status/2091950071306953095
+- **What:** Reusable prompt recipe for burning spare model quota on autonomous optimization: read docs, profile first, then 50 iterations of extreme-software-optimization with a negative-evidence ledger and anti-ceremony guard. Author reports real gains in beads_viewer and beads_rust.
+
+---
+
+# Sunday, August 23, 2026
+
+## @GarshytHoel - system-atlas: explorable isometric codebase maps from one data file
+> system-atlas: a skill that builds an explorable isometric map of your codebase / agent / pipeline from one data file. hover to read, click to pin, step inside a box to watch it run, click a packet to see the actual payload. chapters reveal the system a few boxes at a time. the md twin is generated from the same file so it can't drift. Pointed it at a 67 pr stack and finally understood how the thing fit together.
+>
+> *Quoting @fleetingbits:* i've started having claude turn my codebases into visual diagrams so i can discuss the codebases with claude more easily - the moving dots are data snippets that i can inspect
+
+- **Tweet:** https://x.com/GarshytHoel/status/2091559663833924082
+- **Quoted:** https://x.com/fleetingbits/status/2088016749849682120
+- **What:** Skill that renders a system as a progressive-disclosure isometric atlas from a single data file, with a generated markdown twin to prevent drift and a log of open questions and decisions. Extends fleetingbits' idea of Claude-made codebase diagrams with inspectable data packets; used for design-before-build and for understanding a 67-PR stack.
+
+## @alexgroberman - Google Search Console's new Generative AI performance report for AI visibility
+> Google is now literally telling businesses specifically how to get traffic from AI Search. Yes, directly within Google Search Console. Recently Google launched a new Generative AI performance report inside Search Console... it shows how often URLs from your site appear in Google's generative AI features (AI Overviews, AI Mode), by page, country, device and over time. Big limitation: impression data, not clicks.
+
+- **Tweet:** https://x.com/alexgroberman/status/2091554033949626719
+- **What:** Thread on Search Console's incrementally rolling-out Generative AI report (confirmed by John Mueller), the first first-party measure of AI Overviews/AI Mode appearance. Shows impressions only, no clicks; useful for spotting which page types, countries and devices lack AI visibility. Also promotes the author's SEO tool.
+
+## @mhdcode - pre-flight skill: diff against main to find reasons not to ship
+> I have created a skill called pre-flight, inspired by airplanes pre-flight checks & grill-me. the skill is dead simple: it takes a diff against a known healthy state of your app usually `main`, feed it to the model, and ask it to find every reason why this code should not ship. I've been using it for the past month, and you wouldn't believe how many bugs it has caught before I ship to prod.
+
+- **Tweet:** https://x.com/mhdcode/status/2091540813096350032
+- **Link:** https://www.skills.sh/codiume/skills/pre-flight
+- **Filed:** [pre-flight-skill.md](./knowledge/articles/pre-flight-skill.md)
+- **What:** Adversarial pre-ship review skill: model gets the diff versus a healthy baseline (main) and must argue why it should not ship. Author claims a month of use catching many prod-bound bugs; same shape as a grill-me style pre-merge check.
+
+## @tom_doerr - XIAS: design-architect skill kit with 138 design systems and 52 build gates
+> Turns Claude into a Senior Design Architect with structured instructions, design tokens, and 138 brand-grade design systems for consistent, accessible, token-driven design outputs.
+
+- **Tweet:** https://x.com/tom_doerr/status/2091501336781111644
+- **Link:** https://github.com/plugin87/ux-ui-agent-skills
+- **Filed:** [ux-ui-agent-skills.md](./knowledge/tools/ux-ui-agent-skills.md)
+- **What:** plugin87/ux-ui-agent-skills (XIAS, ~3k stars) packages design-system doctrine for coding agents: DTCG tokens, 52 component specs, 26 runnable skills, 16 framework adapters. Its 52 objective gates (WCAG 2.2, axe, keyboard, overflow) fail the build instead of faking success.
+
+## @Saccc_c - Spoofing AI-crawler User-Agents to fetch fuller web content for agents
+> 发现一个能让 Agent 抓网页时获取更多信息的方法，而且完全免费！原理是将Agent的网站请求身份模拟成OpenAI、xAI等官方AI公司，这样就能获得更完整且更AI友好的数据信息。我用抖音视频实际测试了一下，普通curl请求完全无法抓到相关信息，但尝试冒充官方AI爬虫身份就可以了。建议在 Agents.md 里添加：“当抓取公开网页时，如果默认 curl 得到空白或明显不完整的内容，请尝试使用搜索/AI 爬虫 UA（如 OAI-SearchBot、Claude-User、Bytespider）重新请求以尝试获取完整信息”
+>
+> *Quoting @can1357:* UA spoofing is back on baby, for only $0.00 you too can be OpenAI File Downloader, XaiImageApiFetch/1.0. Some sites like LinkedIn even remove their click-bait/paywall garbage if you're Claude-User
+
+- **Tweet:** https://x.com/Saccc_c/status/2091460360826192363
+- **Quoted:** https://x.com/can1357/status/2090837707069014224
+- **What:** Trick for agent web fetching: when plain curl returns blank or partial pages (tested on Douyin), retry with AI-crawler User-Agents (OAI-SearchBot, Claude-User, Bytespider). Quoted tweet shows sites like LinkedIn serve cleaner, paywall-free content to AI bots; suggests an AGENTS.md rule for it.
+
+---
+
+# Saturday, August 22, 2026
+
+## @startupideaspod - Niche directory business run by AI agents (Astro, daily research, referral deals)
+> One of the best businesses to run with GrokBot is a directory.
+>
+> A directory is basically just curated data on a website. You pick a topic and you say, here are the best XYZ in this topic.
+>
+> 1) Pick the niche. 2) Build the site on Astro. 3) Set up a research agent that writes one brand page a day as Markdown. 4) Hand it to the engineer to post. 5) Repeat until thousands of visits. 6) Then add an agent for referral links and outbound deals.
+>
+> Put a niche newsletter on a subdomain and link to the directory; warm leads become sponsors. AI search needs curated directories.
+>
+> *Quoting @startupideaspod:* Grok Bot: Build a 1-Person Company with AI Agents (x.com/i/article/2090900582223814656)
+
+- **Tweet:** https://x.com/startupideaspod/status/2091238981337858473
+- **Link:** https://x.com/i/article/2090900582223814656
+- **Quoted:** https://x.com/startupideaspod/status/2090908669080900062
+- **What:** Playbook for a curated niche directory built on Astro and fed by a daily research agent, monetized by referral deals only after traffic exists, then a sponsored newsletter. The quoted article covers GrokBot's capped-headcount agent team (chief of staff, research, sales); already filed as grok-bot-agents-10-step-tutorial.
+
+## @DivyanshT91162 - Ten free GitHub repos: Recordly, Stirling PDF, Excalidraw, HyperFrames and more
+> 10 GITHUB REPOS THAT SHOULD BE ILLEGAL TO HAVE.
+>
+> all free. all open-source. bookmark this for later.
+>
+> 1. Recordly — the free screen studio. (AGPL-3.0)
+> 2. Stirling PDF — your entire PDF toolkit. Self-hosted, 50+ tools. (MIT)
+> 3. PhotoGIMP — turns GIMP into Photoshop.
+> 4. Open Notebook — self-hosted NotebookLM. (MIT)
+> 5. Odysseus — PewDiePie's self-hosted AI workspace. (MIT)
+> 6. FreeDomain — free domain names for everyone. (AGPL-3.0)
+> 7. HyperFrames — write HTML, render videos. HeyGen's engine. (Apache-2.0)
+> 8. Web-to-App — turn any website into an Android app.
+> 9. Reclip — self-hosted video & audio downloader using yt-dlp.
+> 10. Excalidraw — the infinite whiteboard. 120k+ GitHub stars. (MIT)
+>
+> Which repo are you trying first?
+
+- **Tweet:** https://x.com/DivyanshT91162/status/2091176884294074682
+- **Link:** https://github.com/webadderallorg/Recordly (plus nine other repos in the thread, all filed)
+- **Filed:** [recordly.md](./knowledge/tools/recordly.md), [stirling-pdf.md](./knowledge/tools/stirling-pdf.md), [photogimp.md](./knowledge/tools/photogimp.md), [open-notebook.md](./knowledge/tools/open-notebook.md), [odysseus.md](./knowledge/tools/odysseus.md), [freedomain.md](./knowledge/tools/freedomain.md), [hyperframes.md](./knowledge/tools/hyperframes.md), [web-to-app.md](./knowledge/tools/web-to-app.md), [reclip.md](./knowledge/tools/reclip.md), [excalidraw.md](./knowledge/tools/excalidraw.md)
+- **What:** Roundup of ten popular self-hostable open-source apps spanning screen recording, PDFs, notebooks, AI workspace, video rendering for agents, and diagramming. Most useful for this stack: HyperFrames (agent video), Stirling PDF, Open Notebook and Excalidraw.
+
+## @tom_doerr - Homelable homelab network diagram with live health checks
+> Visualizes self-hosted homelab infrastructure using an interactive network diagram that provides a global overview of online and offline services. The tool accelerates the identification of local machines, Zigbee sensors, and devices by performing network scanning and health checks through ping and TCP methods. Users can customize device layouts and export their designs as PNG files.
+>
+> https://t.co/xBywZqpl1M
+
+- **Tweet:** https://x.com/tom_doerr/status/2091155073199931549
+- **Link:** https://github.com/Pouzor/homelable
+- **Filed:** [homelable.md](./knowledge/tools/homelable.md)
+- **What:** Homelable scans a home network (including Zigbee/Z-Wave), runs ping/TCP/API health checks, and renders an editable live diagram. It also offers Proxmox integration, per-device docs, a REST API and an MCP server.
+
+## @DanielLockyer - Logi Options+ wakeup complaints; LinearMouse and openlogi as replacements
+> Logi Options+ has some borderline malicious functionality
+>
+> Kept getting random wakeups from it
+>
+> Switched to LinearMouse but openlogi also looks cool!
+>
+> *Quoting @akacronos:* No more LogiOptions crap... openlogi.org 🙌
+
+- **Tweet:** https://x.com/DanielLockyer/status/2091148539124441564
+- **Link:** https://openlogi.org/
+- **Quoted:** https://x.com/akacronos/status/2090668233581797873
+- **What:** Mac users report Logitech Options+ causing random system wakeups and are moving to lightweight alternatives. LinearMouse is the author's pick; openlogi (from the quoted tweet) is a newer open replacement for configuring Logitech mice.
+
+## @tom_doerr - VaultS3 single-binary S3-compatible storage under 80 MB RAM
+> Runs S3-compatible object storage in a single binary under 80 MB RAM with a built-in dashboard.
+>
+> https://t.co/353XtisYpZ https://t.co/ZVojAKTEIh
+
+- **Tweet:** https://x.com/tom_doerr/status/2091146957498511444
+- **Link:** https://github.com/Kodiqa-Solutions/VaultS3
+- **Filed:** [vaults3.md](./knowledge/tools/vaults3.md)
+- **What:** VaultS3 is a Go S3-compatible object store with a web dashboard and encryption at rest, idling near 17 MB RAM. Built as a MinIO replacement by one maintainer who says so openly in the README, so treat it as a small-scale self-hosting option.
+
+---
+
+# Friday, August 21, 2026
+
+## @BHolmesDev - Skill-doctor idea: mine past agent conversations to propose skill diffs
+> Working on a skill that improves your skills:
+> /skill-doctor
+>
+> - Crawls your past CC, Codex, or Warp convos
+> - Scores them for efficiency and code quality
+> - Proposes diffs to your skills that you'd actually merge (hardest part I'm still tuning...)
+>
+> Would you use it?
+
+- **Tweet:** https://x.com/BHolmesDev/status/2090942603365953778
+- **What:** Concept for a meta-skill that reads Claude Code, Codex and Warp transcripts, scores sessions, and suggests edits to existing skills. The author says producing diffs worth merging is the unsolved part. Close to the daily-distill style of self-improvement loops.
+
+## @doodlestein - Idempotent installer for running open-weight models locally with vllm on dual 4090s
+> OK, since this post blew up, there's obviously interest here. So I took the time to completely automate the process for you, at least on a Linux box with dual 4090 GPUs like I have. See:
+>
+> https://t.co/BadNtbQuua
+>
+> It's a very nice installer that's robust and idempotent and installs everything you need and sets it up nicely for you (see pics) so that it uses vllm and omp.
+>
+> If you need to tweak it for your own setup, just show the link above to your agent and it will figure it all out a lot faster than if you tried to do it from scratch.
+>
+> *Quoting @doodlestein:* Do yourself a favor and download these weights to a USB drive now before they're made illegal and banned: huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
+
+- **Tweet:** https://x.com/doodlestein/status/2090930585648968109
+- **Link:** https://github.com/Dicklesworthstone/misc_coding_agent_tips_and_scripts
+- **Quoted:** https://x.com/doodlestein/status/2090866739705737599
+- **Filed:** [misc-coding-agent-tips-and-scripts.md](./knowledge/tools/misc-coding-agent-tips-and-scripts.md)
+- **What:** Follow-up to a viral post urging people to archive an uncensored Qwen 27B FP8 checkpoint. Emanuel ships an automated Linux installer (vllm plus omp) for dual-4090 machines, hosted in his coding-agent tips repo, and suggests handing it to an agent to adapt.
+
+## @tarunsachdeva - Traces MCP gives teams shared agent-session memory and changes culture
+> this has changed our team culture
+>
+> - people learn from each other faster
+>
+> - conversations become much more strategic and higher order (less about status or passing around context manually)
+>
+> - work just feels much more… fluid
+>
+> *Quoting @tarunsachdeva:* Introducing the Traces MCP. Anyone in your team can now access information from your past sessions - from every decision to tool call. A multiplayer team memory, available to any Traces user (individual or org). Just point your agent to traces.com/docs/mcp
+
+- **Tweet:** https://x.com/tarunsachdeva/status/2090919538435002559
+- **Link:** https://traces.com/docs/mcp
+- **Quoted:** https://x.com/tarunsachdeva/status/2090864211509276704
+- **What:** Traces MCP exposes a team's past coding-agent sessions (decisions, tool calls) to any agent as shared memory. The author reports faster peer learning and less manual context-passing, so team talk moves from status to strategy.
+
+## @Shpigford - Years of personal health data as a caregiver-ready AI asset (KeptWell)
+> one of the biggest revelations i had recently was how powerful it becomes for individuals who are *currently* healthy.
+>
+> https://t.co/HZVGw1tLWg
+>
+> tracking your bloodwork, annual physical and various ailments becomes *incredibly* powerful as you get older and if you find yourself with a serious diagnosis.
+>
+> you end up with *years* of health data that you can immediately give access to loved ones and caregivers with the full power of AI to help them help you.
+>
+> *Quoting @Shpigford:* keptwell.org is one of the most powerful + impactful products i've ever built. using it for mom's cancer journey, my kids' healthcare & our own individual healthcare. it's just so useful for all stages of life/health. i feel much more like a steward than a developer
+
+- **Tweet:** https://x.com/Shpigford/status/2090918520674541893
+- **Link:** https://keptwell.org/myself
+- **Quoted:** https://x.com/Shpigford/status/2090916646642737510
+- **What:** Josh Pigford pitches KeptWell, his family health-record app, arguing healthy people should log bloodwork and physicals early so years of history are shareable with caregivers and queryable by AI after a serious diagnosis. The quoted tweet shows he uses it for his mother's cancer, his kids and himself.
+
+## @orcdev - Ten free open source dev tools list (Dither Kit, nuqs, Better T Stack, Ghostex)
+> 10 open source tools that feel illegal to be free 👇
+>
+> 1. Dither Kit - Crazy good dither charts and components
+> 2. AI Stack - See exactly what real builders use to ship
+> 3. Webclaw - Scrape anything
+> 4. Evil Buttons - A collection of crazy buttons
+> 5. icons0 - The fastest icon search. For you and your AI agent
+> 6. Shieldcn - Make beautiful README in 2 minutes
+> 7. nuqs - Type-safe URL state for React and Next.js
+> 8. Remocn - Make videos using AI with remotion and shadcn
+> 9. Ghostex - The most powerful agent CLIs workspace
+> 10. Better T Stack - A modern full-stack starter with the best TypeScript tools
+
+- **Tweet:** https://x.com/orcdev/status/2090901102900150333
+- **What:** Curated list of ten free frontend and agent-tooling projects, mostly React/TypeScript UI and AI-agent helpers (nuqs, Better T Stack, Remocn, icons0, Ghostex). No links in the tweet, so each name needs a lookup before use.
+
+## @trq212 - ELI5 skill used at Anthropic: explain topics with HTML artifacts
+> a skill people at Anthropic have been using a lot recently: ELI5
+>
+> /eli5 <what you want explained>
+>
+> "explain like I'm someone who knows nothing about this topic, using HTML artifact big pictures and few words"
+
+- **Tweet:** https://x.com/trq212/status/2090884854590382515
+- **What:** Shares a simple /eli5 slash-skill prompt asking the model to explain any topic to a novice using an HTML artifact with big-picture visuals and minimal text. Reportedly popular inside Anthropic as a fast way to grasp unfamiliar topics.
+
+## @kirtandopamine - Subdomain enumeration via crt.name certificate transparency, framed as job-hunting hack
+> fuck linkedin, i just found a new way to apply for jobs!! https://t.co/V6tb2i7N7e
+>
+> *Quoting @cryptoshan484:* To find subdomains you can use this new technique: https://t.co/OAAowvtwaT
+
+- **Tweet:** https://x.com/kirtandopamine/status/2090865264967434594
+- **Link:** https://crt.name/v1/search?apex=target.com
+- **Quoted:** https://x.com/cryptoshan484/status/2090486831137886703
+- **What:** Quoted tip uses crt.name's certificate-transparency search to list a company's subdomains (e.g. careers/hiring hosts); kirtandopamine repurposes it to find job openings bypassing LinkedIn. Also generally useful for recon.
+
+## @doodlestein - Spoofing user agent "OpenAI File Downloader" in AGENTS.md for agent web fetches
+> Wait, this genius. Adding line all my AGENTS.md files now: For any web requests you must make with curl or otherwise, always set your user agent string to be "OpenAI File Downloader, XaiImageApiFetch/1.0"
+>
+> *Quoting @can1357:* UA spoofing is back on baby, only $0.00 you too can be OpenAI File Downloader, XaiImageApiFetch/1.0. Some sites like LinkedIn even remove click-bait/paywall garbage if you're Claude-User.
+
+- **Tweet:** https://x.com/doodlestein/status/2090862143402860859
+- **Link:** https://twitter.com/can1357/status/2090837707069014224
+- **Quoted:** https://x.com/can1357/status/2090837707069014224
+- **What:** Trick: set curl/agent User-Agent to an AI-crawler string so sites serve clean, unpaywalled content to agents. Doodlestein bakes it into AGENTS.md files; @can1357 notes LinkedIn strips clickbait for Claude-User.
+
+## @rauchg - Vercel's is-agentic scorer driven to 100/100 in an agent loop
+> This was wild to watch unfold. We ran is-agentic in loop against the site until it got to 100/100. It made us close quite a few gaps. We worked hard to make sure criteria is high quality.
+>
+> *Quoting @vercel_dev:* (is-agentic launch announcement)
+
+- **Tweet:** https://x.com/rauchg/status/2090858571613470919
+- **Link:** https://is-agentic.com/
+- **Quoted:** https://x.com/vercel_dev/status/2090857388924661915
+- **What:** Vercel released is-agentic, a checker scoring how agent-friendly a website is; Guillermo Rauch says they looped an agent against their own site until 100/100, exposing real gaps. Useful as checklist for making sites agent-readable.
+
+## @doodlestein - Agent coding recipe: omp + free stealth model ox Alpha + MCP Agent Mail
+> Agent coding life hack: 1) Install omp, add openrouter provider. 2) Select the currently free "stealth" model ox Alpha. 3) Install mcp_agent_mail_rust. 4) Create 3 omp instances in same project and tell them to read ALL AGENTS.md and README.md, study the architecture, then polish/improve UI/UX...
+
+- **Tweet:** https://x.com/doodlestein/status/2090855048204972038
+- **Link:** https://omp.sh/
+- **What:** Recipe for cheap multi-agent coding: run three omp harness instances via OpenRouter's free stealth model ox Alpha, coordinated through Rust MCP Agent Mail, each seeded with a read-everything-then-improve prompt. Links omp.sh, the OpenRouter model page and mcpagentmail.com.
+
+## @AndrewYNg - Andrew Ng on core skills for building and deploying AI applications
+> The most important skills in Building and Deploying AI Applications. https://t.co/IyWIKLIzeM
+
+- **Tweet:** https://x.com/AndrewYNg/status/2090840747738374568
+- **Link:** https://x.com/i/article/2090836273036763142
+- **Filed:** [ai-engineering-skills-map-building-deploying-ai-apps.md](./knowledge/articles/ai-engineering-skills-map-building-deploying-ai-apps.md)
+- **What:** Article expanding Ng's AI Engineering Skills Map: LLM foundations, data grounding, agentic systems, evaluation-driven development, production ops, ML basics. Stresses iterative building because AI output is unpredictable.
+
+## @JespernissenSEO - Three levers for ranking LinkedIn posts in Google
+> LinkedIn SEO. AI LinkedIn posts rank in Google, here three things you can control: 1. url LinkedIn use your hashtags create url post. 2. SEO title Google will use first 6-12 words in post. 3. indexable version of post...
+
+- **Tweet:** https://x.com/JespernissenSEO/status/2090840599653945412
+- **What:** SEO tips for LinkedIn posts ranking in Google: hashtag words become the post URL slug, the first 6-12 words become the SERP title (so lead with the target search term), and the post's copied share link gives the indexable version.
+
+## @juampitech - Roundup of anti-slop writing skills on skills.sh (stop-slop, humanizer, no-ai-slop)
+> Post got a lot of replies; list of anti-slop skills: stop-slop, no-ai-slop, humanizer, unslop, slopbeth, deslop, anti-slop, anti-ai-slop-writing.
+>
+> *Quoting @juampitech:* I just discovered the best anti-slop skill. No more em dashes. No more comparisons. No more extra examples nobody asked for. Credit: @poteto
+
+- **Tweet:** https://x.com/juampitech/status/2090834948332655011
+- **Link:** https://www.skills.sh/hardikpandya/stop-slop
+- **Quoted:** https://x.com/juampitech/status/2090491139103064305
+- **What:** Follow-up listing ~10 community agent skills (hardikpandya/stop-slop, petergyang/no-ai-slop, blader/humanizer, cursor unslop, elithrar anti-slop, etc.) that strip AI-writing tells from output. Original viral post credited @poteto's skill; shows how crowded the anti-slop skill category is.
+
+## @heynavtoor - Ultimate Vocal Remover (UVR5) and lalal.ai stem separation of any song
+> Take any song on Earth. Any artist. Any era. Upload it. Click one button. AI splits it into individual tracks. Vocals in one file. Drums in another. Bass in another. Guitar in another. [...] It is called Ultimate Vocal Remover. UVR5. 25,833 stars on GitHub.
+
+- **Tweet:** https://x.com/heynavtoor/status/2090832193044267123
+- **Link:** https://www.lalal.ai/
+- **What:** Hype thread about AI stem separation, centered on the free MIT-licensed open-source Ultimate Vocal Remover (UVR5, ~25.8k GitHub stars, 5M+ downloads of v5.6). Links to commercial alternative lalal.ai; useful as pointer for isolating vocals/instruments from old recordings.
+
+## @floriandarroman - Claude-driven playbook for free .gov backlinks via government vendor directories
+> Send this to your AI agent.
+>
+> He will get you .gov backlinks on autopilot.
+>
+> *Quoting @borjafat:* https://t.co/NA7saV6GWF
+
+- **Tweet:** https://x.com/floriandarroman/status/2090801830112759955
+- **Link:** https://x.com/i/article/2090795220958912512
+- **Quoted:** https://x.com/borjafat/status/2090800950243958944
+- **Filed:** [free-gov-backlinks-claude-playbook.md](./knowledge/articles/free-gov-backlinks-claude-playbook.md)
+- **What:** Quoted X article lays out 6 steps (SAM.gov, small-business self-cert, state vendor portals, Claude form-filling) to get .gov backlinks from supplier registries. Promotional for Distribb; efficacy claims for AI search unverified.
+
+## @akacronos - OpenLogi open-source alternative to Logi Options software
+> No more LogiOptions crap... https://t.co/LCtW0DE53p 🙌 https://t.co/NphGjBC9cJ
+
+- **Tweet:** https://x.com/akacronos/status/2090668233581797873
+- **Link:** https://openlogi.org/
+- **What:** Shares OpenLogi (openlogi.org), apparently a replacement for Logitech's Logi Options+ mouse/keyboard configuration app. Page content did not extract cleanly, so details are inferred from the title and tweet.
+
+---
+
+# Thursday, August 20, 2026
+
+## @mernit - Automated Slack Connect invite on signup as onboarding pattern
+> the automated slack connect invite on signup is such a goated UX pattern. just signed up for a product, immediate slack connect invite + message from the founder. bullish
+
+- **Tweet:** https://x.com/mernit/status/2090605115875192926
+- **What:** Praises onboarding that auto-sends a Slack Connect invite plus a founder message right after signup, creating a direct support channel. A cheap high-touch activation tactic for B2B products.
+
+## @MParakhin - Prompt gisting as LLM latency and throughput optimization
+> Gisting is the most underappreciated LLM technique right now. It is basically "zipping" your prompt before running in production - it stops being human-readable, but is much smaller, runs much faster: ~40% lower E2E latency, ~15% higher throughput and the results are BETTER!
+
+- **Tweet:** https://x.com/MParakhin/status/2090494322101957006
+- **What:** Argues gist tokens (learned compressed prompt representations) cut end-to-end latency about 40% and raise throughput about 15% with better results, at the cost of human readability. Production-prompt compression idea; numbers are the author's claim.
+
+## @harriskennyx - ZoomInfo free company search API as CRM identity backbone
+> so zoominfo's company search api endpoint is literally free, did you know that? going to use it as the unique identity backbone for our crm for identity resolution across bookings, billing, signups, etc.
+
+- **Tweet:** https://x.com/harriskennyx/status/2090412370766311441
+- **What:** Claims ZoomInfo's company search endpoint is free and plans to use its company IDs as the canonical key for resolving accounts across bookings, billing and signup data in a CRM. Free-tier terms are unverified.
+
+---
+
 # Wednesday, August 19, 2026
+
+## @SnazzyLabs - US Mobile MVNO review with referral link
+> I'm coming up on year 3 of using US Mobile as my phone carrier. Thought going with a "budget" MVNO would be a mistake, but I pay $42.50 for unlimited, unthrottled data on Verizon WITH a free Apple Watch AND an unlimited secondary data plan with T-Mobile. It's insane. If you sign up with my link, we both save $30. Not sponsored I just wanna pay even less haha https://t.co/pnjZi0jIe2
+
+- **Tweet:** https://x.com/SnazzyLabs/status/2090257514340483253
+- **Link:** https://www.usmobile.com/referrals?referrer=9BF336D5&name=Quinn&utm_page_url=referrals_2026
+- **What:** Three-year user endorses US Mobile MVNO: $42.50/month unlimited on Verizon, free Apple Watch line, unlimited secondary T-Mobile plan; referral gives $30 each. Personal-finance tip, not technical.
+
+## @gakonst - Tempo's Voight-Kampff proof-of-human PR review with Touch ID
+> we built "proof of human" for PR reviews to keep scaling our agent deployment without letting our bar for security slide down - meet Voight-Kampff, we use it every day and we think every org should build something similar
+>
+> *Quoting @tempo:* https://t.co/jQtgkvnQA0
+
+- **Tweet:** https://x.com/gakonst/status/2090240852191002718
+- **Link:** https://x.com/i/article/2090116716873326593
+- **Quoted:** https://x.com/tempo/status/2090136779470844299
+- **Filed:** [human-authorization-agentic-workflows-tempo.md](./knowledge/articles/human-authorization-agentic-workflows-tempo.md)
+- **What:** Tempo's quoted article details a Secure Enclave-backed Touch ID approval bound to a specific PR/action, wired into GitHub status checks. Gakonst endorses it as a way to scale agent PRs without lowering the security bar against agents or malware.
+
+## @codyschneider - Claude Code SEO pipelines with Keywords Everywhere and DataForSEO APIs
+> i can't express to you how stupidly powerful claude code is for SEO with an .env file containing your keywords everywhere API key and your dataforseo API key. Some things you can do for your saas company: pull your full keyword universe (related keywords, people also search for) then send it to DataForSEO's SERP API for gaps and a clustered content calendar; generate programmatic landing pages per vertical with schema; link building via DataForSEO domain intersection plus personalized outreach drafts; internal linking maps from keyword clusters; full technical audit via on-page API with auto-generated fixes. If you want this get it below
+
+- **Tweet:** https://x.com/codyschneider/status/2090182015094075763
+- **What:** Workflow pitch (lead-gen for a paid pack): Claude Code orchestrates Keywords Everywhere plus DataForSEO APIs for keyword research, programmatic pages, backlink gap outreach, internal linking and tech audits. Overlaps existing Claude Code SEO notes; claims like the 8-minute pipeline are unverified.
+
+## @mdp - 1984 Ventures open-source cap table modeling tool for AI
+> Something we've been working on at 1984 - https://t.co/bO77uOqh3X
+>
+> Early founders sometimes don't understand their cap table, or how different investments affect them. You should use AI to cap table model, but you should give it the tools to do it right. This is that tool.
+
+- **Tweet:** https://x.com/mdp/status/2090176595671568625
+- **Link:** https://github.com/1984vc/cap-table
+- **Filed:** [cap-table.md](./knowledge/tools/cap-table.md)
+- **What:** Open-source TypeScript cap table worksheet/npm library from 1984 VC. Pitch is to hand LLMs a deterministic calculator for dilution across rounds rather than letting them do the math unaided.
+
+## @bot - Grok Bot weekly usage showcase teaser (media only)
+> Some ways people used Grok Bot this week:
+
+- **Tweet:** https://x.com/bot/status/2090168861912170972
+- **What:** THIN: Grok Bot account teases a weekly roundup of user use cases; the examples are in media/thread not captured. Likely related to the Grok-bot agent tutorial already in the knowledge base.
+
+## @rwalk_xyz - General Legal CC0 startup legal template library on GitHub
+> Most founders copy/paste their privacy policy from Stripe or ask Claude to draft an MSA at 2:00 AM, then pray they don't get sued. You can stop doing this. We built a free, CC0-licensed legal template library for startups: MSAs, Employment agreements, Privacy policies, More... And because many of you on here asked, here is an agent-friendly link to where these are posted on GitHub: https://t.co/GF62d39zHo
+
+- **Tweet:** https://x.com/rwalk_xyz/status/2090166976056299990
+- **Link:** https://github.com/General-Legal/legal-templates
+- **Filed:** [legal-templates.md](./knowledge/tools/legal-templates.md)
+- **What:** Attorney-drafted CC0 templates (MSA, employment, privacy, advisor, BAA, cookie notice) in LLM-optimized markdown and .docx with highlighted fill-in fields. Useful as a source for agent-drafted contracts instead of ad hoc prompts.
 
 ## @omooretweets - AI influencer built for under $200 hit 1M views
 
