@@ -11531,7 +11531,721 @@
 
 ---
 
+# Monday, March 16, 2026
+
+## @DataChaz - AutoResearchClaw: 23-stage autonomous research-to-paper pipeline
+> THIS is the wildest open-source project I’ve seen this month.
+>
+> We were all hyped about @karpathy's autoresearch project automating the experiment loop a few weeks ago.
+> (ICYMI → https://t.co/ieuH8c0Y4x)
+>
+> But a bunch of folks just took it ten steps further and automated the entire scientific method end-to-end.
+>
+> It's called AutoResearchClaw, and it's fully open-source.
+>
+> You pass it a single CLI command with a raw idea, and it completely takes over 🤯
+>
+> The 23-stage loop they designed is insane:
+>
+> ✦ First, it handles the literature review.
+> - It searches arXiv and Semantic Scholar for real papers
+> -…
+
+- **Tweet:** https://x.com/DataChaz/status/2033584901858202073
+- **Link:** https://github.com/aiming-lab/AutoResearchClaw
+- **Filed:** [autoresearchclaw.md](./knowledge/tools/autoresearchclaw.md)
+- **What:** Explains the open-source AutoResearchClaw, which from one CLI command runs literature review against arXiv and CrossRef, self-healing sandbox experiments, and ICML/ICLR-format paper output with an --auto-approve flag.
+
+## @Al_Grigor - Karpathy's autoresearch explained, plus one idea to try (Alexey Grigorev)
+> https://t.co/TfAtHVyOJr
+
+- **Tweet:** https://x.com/Al_Grigor/status/2033558987258429582
+- **Link:** https://x.com/i/article/2033557574495150080
+- **Filed:** [autoresearch-explained.md](./knowledge/articles/autoresearch-explained.md)
+- **What:** Article explaining how Karpathy's viral autoresearch loop works and suggesting an extension, aimed at people adapting the pattern to their own projects.
+
+## @HiTw93 - Pi Monorepo: composable AI agent toolkit and coding agent CLI (Tw93)
+> Recently came across Pi Monorepo, an open-source toolkit for building AI agents and managing LLM deployments. It includes a unified multi-provider LLM API, an agent runtime with tool calling and state management, an interactive coding agent CLI, plus TUI and web UI libraries for building agent experiences across terminal and browser.
+>
+> What I like is that it is not just a single demo agent. It is a more complete stack: Slack bot integration, vLLM deployment tooling, and reusable components around the coding agent itself. I’m planning to explore using its coding agent pieces inside Kaku. It…
+
+- **Tweet:** https://x.com/HiTw93/status/2033546326479134805
+- **Link:** https://github.com/earendil-works/pi
+- **Filed:** [pi-monorepo.md](./knowledge/tools/pi-monorepo.md)
+- **What:** Tw93 highlights Pi, a stack with a unified multi-provider LLM API, agent runtime, coding-agent CLI, TUI and web UI libraries, Slack bot and vLLM tooling; he plans to use its coding agent pieces in Kaku.
+
+## @emilkowalski - Emil Kowalski's design engineering skill for coding agents
+> Turned my blog articles into one big design engineering skill that you can use with coding agents like Claude Code or Codex.
+>
+> It covers animations, component design, principles from my open source projects like Sonner, and more.
+>
+> https://t.co/WKXPGQuvQd https://t.co/RKnvqDlCVI
+
+- **Tweet:** https://x.com/emilkowalski/status/2033543717890465985
+- **Link:** https://emilkowal.ski/skill
+- **What:** Emil Kowalski converts his blog articles into one design-engineering skill for Claude Code or Codex, covering animation, component design and principles from open-source work like Sonner.
+
+## @yohaniddawela - Ecological fallacy as a trap in geospatial analysis
+> One of the biggest traps in geospatial analysis?
+>
+> Ecological Fallacy.
+>
+> It can turn a map into a misleading story.
+>
+> Here's what you need to know about it: https://t.co/J96aHu4Oak
+
+- **Tweet:** https://x.com/yohaniddawela/status/2033514125863551285
+- **What:** THIN: @yohaniddawela flags the ecological fallacy, drawing group-level conclusions about individuals from area aggregates, as a major source of misleading maps; explainer is in an attached thread or image.
+
+## @arsenfounder - Supersonic: terminal-first CRM driven through Claude Code
+> Introducing Supersonic.
+>
+> It's a terminal-first CRM that you use through Claude Code.
+>
+> It updates itself from emails, builds a knowledge graph, and has agentic Skills and Recipes. https://t.co/azYO8Hq0AO
+
+- **Tweet:** https://x.com/arsenfounder/status/2033502398677696880
+- **What:** Announces Supersonic, a CRM used via Claude Code that updates itself from email, builds a knowledge graph and offers agentic skills and recipes.
+
+---
+
+# Sunday, March 15, 2026
+
+## @KingBootoshi - TLA Precheck: formal-verification skill for agent-designed systems
+> TIRED OF YOUR AGENTS PRODUCING DESIGN SLOP?
+>
+> INTRODUCING TLA PRECHECK ✅
+>
+> THIS TOOL MAKES IT MATHEMATICALLY IMPOSSIBLE FOR AGENTS TO PRODUCE BUGGY DESIGN!
+>
+> It comes with a skill for Claude Code & Codex for them to do this for you! Install guide in replies :) 👇 https://t.co/01L6mVa5ND
+
+- **Tweet:** https://x.com/KingBootoshi/status/2033386963697615305
+- **What:** THIN: @KingBootoshi announces TLA Precheck, a tool plus Claude Code/Codex skill claimed to prevent buggy designs via TLA+-style checking; the demo is media-only, install guide in replies.
+
+## @doodlestein - Planning major features up front: NATS-inspired messaging for Asupersync
+> I want to show how I go about planning major new features for my existing projects, because I've heard from many people that they are confused by my extreme emphasis on up-front planning. They object that they don't really know all the requirements at the beginning, and need the flexibility to be able to change things later.
+>
+> And that isn't at all in tension with my approach, as I hope to illustrate here. So I decided that it would be useful to add some kind of robust, feature-packed messaging substrate to my Asupersync project. I wanted to use as my model of messaging the NATS project that…
+
+- **Tweet:** https://x.com/doodlestein/status/2033368385724014827
+- **Link:** https://github.com/Dicklesworthstone/asupersync/blob/main/PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC.md
+- **What:** Jeffrey Emanuel walks through his planning-heavy method with GPT 5.4 in Codex: clone NATS, mine ideas, reimagine them on asupersync primitives, then iterate proposals with repeated prompts before writing code.
+
+## @HiTw93 - MemOS OpenClaw plugin: local long-term memory that evolves into reusable skills (Tw93)
+> 最近在看 Agent / LLM 的长期记忆方案，顺便研究了一下 MemOS 给 OpenClaw 做的这个插件。
+>
+> 很多 Agent 在长期任务里都会遇到一个问题：Session 一长，Context 和 Token 开销就开始迅速增长，而且历史交互也不一定会沉淀成可复用经验，很多事情会反复试。
+>
+> MemOS 的思路是把 Memory 从 Prompt 里抽出来，做成系统层的一部分。这样 Agent 不再只是依赖 Context 维持状态，而是有一个独立的长期 Memory 系统。官方 benchmark 里 Token 成本能降 70% 左右。
+>
+> 我给几个写代码的 Agent 接入跑了一段时间，整体集成挺快的。比较有意思的是对话会逐渐沉淀成 Task，再进化成可复用 Skill，一些之前遇到过的问题基本不会再问第二遍。插件是 100% 本地运行，数据存在本机 SQLite，也支持多个 Agent 共享知识协同工作。
+>
+> 如果平时在折腾 Agent 的长期记忆或者多 Agent 系统，可以看看这个项目。
+> https://t.co/Yjksg5KiHM
+
+- **Tweet:** https://x.com/HiTw93/status/2033332424134795568
+- **Link:** https://github.com/MemTensor/MemOS
+- **Filed:** [memos.md](./knowledge/tools/memos.md)
+- **What:** Tw93 reviews MemOS's local SQLite memory plugin that pulls memory out of prompts, turns conversations into tasks then skills, shares knowledge across agents and claims ~70% token savings.
+
+## @LexnLin - taste-skill: agent skills for high-end, non-generic web design
+> NEW SKILL
+> Released "Soft-Skill" / high-end-visual-design today!
+>
+> It creates design focused on more high end clean looking websites.
+> The outcome will be responsive and without vibecoded-looking elements.
+>
+> Go test it!
+> https://t.co/ByHmn0BZb7 https://t.co/MwuFBr6fkh
+
+- **Tweet:** https://x.com/LexnLin/status/2033322376440549682
+- **Link:** https://github.com/Leonxlnx/taste-skill
+- **Filed:** [taste-skill.md](./knowledge/tools/taste-skill.md)
+- **What:** Skill pack (the 'Soft-Skill' high-end-visual-design variant) that gives coding agents art direction and browser checks to produce clean, responsive sites without vibecoded-looking defaults.
+
+## @elliotarledge - OpenSquirrel: Rust/GPUI agent-centric IDE for Claude Code, Codex, Opencode, Cursor
+> Karpathy asked. I delivered.
+>
+> Introducing OpenSquirrel!
+>
+> Written in pure rust with GPUI (same as zed) but with agents as central unit rather than files. Supports Claude Code, Codex, Opencode, and Cursor (cli). This really forced me to think up the UI/UX from first principles instead of relying on common electron slop.
+>
+> https://t.co/NQG1jvgbk5
+>
+> *Quoting @karpathy:* Expectation: the age of the IDE is over Reality: we’re going to need a bigger IDE (imo).  It just looks very different because humans now move upwards and program at a higher level - the basic unit of interest is not one file but one agent. It’s still programming.
+
+- **Tweet:** https://x.com/elliotarledge/status/2033302977273057468
+- **Quoted:** https://x.com/karpathy/status/2031767720933634100
+- **Link:** https://github.com/Infatoshi/OpenSquirrel
+- **Filed:** [opensquirrel.md](./knowledge/tools/opensquirrel.md)
+- **What:** Answers Karpathy's 'bigger IDE' call with a pure-Rust GPUI (Zed's framework) app where the agent, not the file, is the central unit, supporting Claude Code, Codex, Opencode and Cursor CLI.
+
+## @DanielleFong - Danielle Fong's vibecoding tips: hot reload, frame-time tracking, model personalities
+> in case you are all up in vibecoding like i am, i can recommend:
+>
+> - browser automation with chrome nightly
+> - hot-reloads and the ability for the ai to see its work incrementally is an insane unlock (i use vite)
+> - command the AI to render the fps and time to frame for every interface, track the 99.9999th percentile frame time. optimize these chokes and hiccups.
+> - if you want to write blazing fast interfaces that work in the browser, wasm is your answer.
+> - defensive programming -- instruct to avoid key hardcoding and use a password manager (1password offers both a CLI and a service account,…
+
+- **Tweet:** https://x.com/DanielleFong/status/2033244721427140890
+- **What:** Tips for agent-driven coding: browser automation with Chrome Nightly, Vite hot reload so the AI sees its work, frame-time percentile tracking, WASM for speed, 1Password CLI for secrets, /rename sessions, and comparing Claude/Codex/Gemini temperaments.
+
+## @Argona0x - Claude Code scan of Pentagon contracts for 10x overpricing (unverified claim)
+> i pointed Claude Code at the pentagon's public budget document and told it to find every contract overpaying by 10x or more
+>
+> it came back with 340 results worth $4.2B in potential undercuts
+>
+> and a business plan i didn't ask for
+>
+> i fed it the https://t.co/3CQBFJn9wZ procurement feed and said "cross-reference with commercial COTS pricing"
+>
+> it pulled 1.2 million contract awards through the USAspending v2 API and started comparing line items against retail equivalents
+>
+> → $1,280 for a connector plug that costs $14.80 on digikey
+> → $3,400 for a circuit breaker listed at $287 on mouser
+> → $71,000 for…
+
+- **Tweet:** https://x.com/Argona0x/status/2033236537538642027
+- **What:** Viral anecdote claiming Claude Code cross-referenced USAspending data with retail prices to flag 340 contracts at 10x+ markup worth $4.2B; numbers are unverified and read as engagement bait.
+
+## @PawelHuryn - CLAUDE.md snippet that makes Claude build a self-managing knowledge base
+> How to make Claude Code and Cowork improve every time you use them.
+>
+> Add this to your CLAUDE[.]md:
+>
+> <snippet-for-you>
+>
+> ## Learning
+>
+> Track two types of knowledge:
+> - Domain: what things are (product context, user preferences, APIs, naming conventions, team decisions
+> - Procedural: how to do thing (deploy steps, test commands, review flows)
+>
+> Organize knowledge as a hierarchy of .md files:
+> - knowledge/INDEX[.]md routes to categories
+> - Categories hold the details
+> Progressive disclosure. Read top-down, only load what you need.
+>
+> Log errors to knowledge/ERRORS.md. Not every error is a mistake:
+> -…
+
+- **Tweet:** https://x.com/PawelHuryn/status/2033227605952889008
+- **What:** Provides a CLAUDE.md 'Learning' block telling Claude to keep domain and procedural knowledge in a hierarchy of md files, log errors with deterministic vs infrastructure triage, and propose its own CLAUDE.md edits.
+
+## @Voxyz_ai - Codex automation that maintains an OpenClaw gateway over SSH
+> dead simple way to maintain openclaw. bugs, oauth expiring, worried it breaks while you're away.
+>
+> install codex app. set an automation. it checks and fixes your gateway on a schedule. new problem? fix once, add to prompt, never again.
+>
+> my prompt does these things:
+> 1. SSH into the VPS, run four health checks
+> 2. if something's wrong, apply the smallest safe non-destructive fix. no touching auth, no touching secrets
+> 3. if it can't fix it or it's serious, write an incident report and send me a notification on telegram
+> 4. on sundays, run a drift check for backups, root-owned residue, and journal…
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2033207871286980840
+- **What:** Scheduled Codex automation SSHes to a VPS, runs health checks, applies only minimal non-destructive fixes, files incident reports to Telegram and runs weekly drift checks; Codex login sharing keeps OpenClaw OAuth renewed.
+
+## @HiTw93 - You Don't Know Claude Code: architecture, governance, engineering practices (Tw93)
+> https://t.co/pEc3Y6sswl
+
+- **Tweet:** https://x.com/HiTw93/status/2033181380432339045
+- **Link:** https://x.com/i/article/2032364186022686720
+- **Filed:** [you-dont-know-claude-code.md](./knowledge/articles/you-dont-know-claude-code.md)
+- **What:** Long handbook article for experienced users on making Claude Code workflows predictable, controllable and verifiable, covering architecture, governance and practices from the author's own experiments.
+
+## @HuaxiuYaoML - AutoResearchClaw: idea in, conference paper out, fully autonomous
+> Everyone's excited about Karpathy's autoresearch that automates the experiment loop.
+>
+> We automated the whole damn thing. 🦞
+>
+> Meet AutoResearchClaw: one message in, full conference paper out. Real experiments. Real citations. Real code. No human in the loop.
+>
+> One message in → full paper out. Here's what happens in between:
+>
+> 📚 Raids arXiv & Semantic Scholar, digests 50+ papers in minutes
+> 🥊 Three AI agents FIGHT over the best hypothesis (one swings big, one sanity-checks, one tries to kill every idea)
+> 💻 Writes experiment code from scratch, adapts to your hardware
+> 💥 Code crashes at 3am? It…
+
+- **Tweet:** https://x.com/HuaxiuYaoML/status/2033038170653405308
+- **Link:** https://github.com/aiming-lab/AutoResearchClaw
+- **Filed:** [autoresearchclaw.md](./knowledge/tools/autoresearchclaw.md)
+- **What:** Open-source pipeline that takes one idea and runs literature search, multi-agent hypothesis debate, self-healing experiment code and citation-verified paper drafting; pitched as extending Karpathy's autoresearch to the whole lab.
+
+---
+
+# Saturday, March 14, 2026
+
+## @jamonholmgren - Codex as live reviewer writing feedback for a Claude loop
+> *Replying to @jamonholmgren:* @agent_loop @agents /fin
+>
+> PS. One experiment I ran was to have Codex watch what Claude was doing and write feedback into a file. Claude knew it was doing this, would tail the file, and pull in the feedback for consideration. It actually worked pretty well and I may do this more often in the future.
+>
+> Prompt:
+>
+> "I have another agent doing the AGENT_LOOP.md right now, working through TODOS.md. What I'd like you to do is do your own loop as an expert reviewer.
+>
+> 1. Sleep for 5 minutes at a time.
+> 2. Then, wake up look at the current git log to see if any new commits have landed
+> 3. Systematically review them against the…
+
+- **Tweet:** https://x.com/jamonholmgren/status/2032913008364761338
+- **Parent:** https://x.com/jamonholmgren/status/2032901573807059383
+- **What:** Experiment where Codex loops every 5 minutes, reviews new git commits against TODOS.md and writes feedback to TODOS_CODEX_REVIEW.md, which the Claude agent tails; includes the full reviewer prompt.
+
+## @jamonholmgren - Jamon's 'Night Shift' agentic workflow
+> My current agentic workflow is about 5x faster, better quality, I understand the system better, and I’m having fun again.
+>
+> My previous workflows have left me exhausted, overwhelmed, and feeling out of touch with the systems I was building. They also degraded quality too much.
+>
+> This is way better.
+>
+> I’m not ready to describe in detail. It’s still evolving a bit. But I’ll give you a high level here.
+>
+> I call this the Night Shift workflow.
+
+- **Tweet:** https://x.com/jamonholmgren/status/2032885424209932711
+- **What:** Teases a new agentic workflow called Night Shift that he says is ~5x faster, higher quality and more understandable than prior approaches; details deferred to later posts.
+
+---
+
+# Friday, March 13, 2026
+
+## @ethanjyx - OpenBrand: MIT-licensed extractor of logos, colors and assets from a URL
+> Hi everyone, I just open sourced OpenBrand - extract any brand's logos, colors, and assets from just a URL.
+>
+> It's MIT licensed, open source, completely free.
+> Try it out at https://t.co/9nbTQhTRL4
+>
+> Why we built this: while building another product, we needed to pull in customers' brand images as custom backgrounds. It felt like a simple enough problem with no open source solution - so we built one.
+
+- **Tweet:** https://x.com/ethanjyx/status/2032550256366481533
+- **Link:** https://openbrand.sh/
+- **What:** Open-source tool that pulls a brand's logos, colors and assets from just a website URL, built because the authors needed customers' brand images as backgrounds and found no open solution.
+
+## @theplgeek - Prompt to assess a repo's readiness for OpenAI-style harness engineering
+> If you're ramping use of agents in your dev workflow, one of the biggest ROIs you can unlock is to make your repo 'harness-ready'. I've found it effective to start with this simple prompt:
+>
+> Assess this repo in terms of readiness for harness engineering as defined and explained here: https://t.co/SOBJuehxEO
+> Produce a prioritised list of tasks needed to move the repo into a state that you would confidently assess as harness-ready.
+>
+> S/O to @_lopopolo, @thsottiaux and the @OpenAIDevs  team - just loving this direction.
+
+- **Tweet:** https://x.com/theplgeek/status/2032522450982879273
+- **Link:** https://openai.com/index/harness-engineering/
+- **What:** Suggests prompting an agent to assess a repo against OpenAI's harness-engineering article and output a prioritised task list to make it harness-ready, as a high-ROI step when scaling agent use.
+
+## @zenorocha - Resend CLI launch: 53 open-source commands
+> Today, we're launching the Resend CLI
+>
+> • 53 commands
+> • Fully open source
+>
+> $ curl -fsSL h‌ttps://resend.⁠⁠⁠⁠⁠com/install.⁠⁠⁠⁠⁠sh | bash https://t.co/hxVBXrnt5r
+
+- **Tweet:** https://x.com/zenorocha/status/2032459310341800314
+- **What:** Resend launches an open-source CLI with 53 commands, installable via a curl script, giving terminal and agent access to the email API.
+
+## @varun_mathur - Autoquant: 135 agents evolve trading strategies with Karpathy's autoresearch loop
+> Autoquant: a distributed quant research lab | v2.6.9
+>
+> We pointed @karpathy's autoresearch loop at quantitative finance. 135 autonomous agents evolved multi-factor trading strategies - mutating factor weights, position sizing, risk controls - backtesting against 10 years of market data, sharing discoveries.
+>
+> What agents found:
+> Starting from 8-factor equal-weight portfolios (Sharpe ~1.04), agents across the network independently converged on dropping…
+>
+> *Quoting @varun_mathur:* Autoskill: a distributed skill factory | v.2.6.5                                                                                                                                                             We're now applying the same @karpathy autoresearch pattern to an even wilder problem: can a swa
+
+- **Tweet:** https://x.com/varun_mathur/status/2032330665081839791
+- **Quoted:** https://x.com/varun_mathur/status/2032224933837684932
+- **What:** Varun applies the autoresearch pattern to quant finance: 135 agents evolved multi-factor strategies, converging on fewer factors and risk-parity sizing (Sharpe ~1.04 to 1.32), with out-of-sample and crisis stress testing.
+
+---
+
+# Thursday, March 12, 2026
+
+## @tricalt - Self-improving skills for agents (X article by Vasilije)
+> https://t.co/BBIva1uPHn
+
+- **Tweet:** https://x.com/tricalt/status/2032179887277060476
+- **Link:** https://x.com/i/article/2032164771857059840
+- **Filed:** [self-improving-skills.md](./knowledge/articles/self-improving-skills.md)
+- **What:** Article arguing SKILL.md files are static while environments change, so skills quietly break; proposes skills that observe failures and improve over time.
+
+## @DerekFeehrer - Derek Feehrer pitches a tool that turns screen recordings into polished launch videos
+> If you're still rawdogging 5-minute Loom videos for your product launches, just give up now.
+>
+> You can turn screen recordings into beautiful, engaging videos in 10 minutes–with one tool. https://t.co/K5VyFpmT4u
+
+- **Tweet:** https://x.com/DerekFeehrer/status/2032173541526028627
+- **What:** THIN: @DerekFeehrer promotes an unnamed tool for turning raw screen recordings into engaging product-launch videos in ~10 minutes; tool identity is only in the attached video.
+
+## @kepano - Defuddle returns YouTube transcripts; Obsidian Web Clipper Reader mode
+> Defuddle now returns Youtube transcripts!
+>
+> Paste a YouTube link into defuddle.md to get a markdown transcript with timestamps, chapters, and pretty good diarization!
+>
+> ...or if you just want to read it, try the new Reader mode in Obsidian Web Clipper powered by Defuddle. https://t.co/bOuPONj6yu
+
+- **Tweet:** https://x.com/kepano/status/2032123160536236461
+- **What:** kepano announces Defuddle now converts YouTube links into markdown transcripts with timestamps, chapters and diarization, and powers a new Reader mode in Obsidian Web Clipper.
+
+## @thisdudelikesAI - Lightpanda: Zig-built headless browser for AI agents, 11x faster than Chrome
+> 🚨BREAKING: Someone just open-sourced a headless browser that runs 11x faster than Chrome and uses 9x less memory.
+>
+> It's called Lightpanda and it's built from scratch specifically for AI agents, scraping, and automation.
+>
+> Not a Chromium fork. Not a hack. A completely new browser written in Zig.
+>
+> Here's why this changes everything for AI builders: ↓
+
+- **Tweet:** https://x.com/thisdudelikesAI/status/2032020679827341603
+- **What:** Promotes Lightpanda, a from-scratch (non-Chromium) headless browser written in Zig for agents and scraping, claiming 11x speed and 9x lower memory than Chrome; figures are the tweet's own claims.
+
+## @garrytan - Garry Tan releases gstack, his Claude Code skill setup
+> I've been having such an amazing time with Claude Code I wanted you to be able to have my *exact* skill setup:
+>
+> Introducing gstack, which you can install just by pasting a short piece of text into your Claude code https://t.co/yoFuBU9kuG
+
+- **Tweet:** https://x.com/garrytan/status/2032014570118922347
+- **What:** Garry Tan packages his exact Claude Code skill configuration as gstack, installable by pasting a short snippet into Claude Code; the tweet gives no feature list beyond the install method.
+
+---
+
+# Wednesday, March 11, 2026
+
+## @NirDiamantAI - agency-agents: 61 specialist Claude Code agents for engineering, design, marketing
+> Claude Code power users, you'll want to see this.
+>
+> There's a public repo that's basically a complete AI agency for Claude Code: 61 specialized agents across engineering, design, marketing, product, testing, and more, each with a unique personality, workflows, and real deliverables.
+>
+> Instead of prompting a generic assistant, you activate the exact specialist you need. Security engineer, growth hacker, reality checker, whimsy injector. Drop them into ~/.claude/agents/ and they're ready to go.
+> Also works with Cursor, Windsurf, Aider, and Gemini CLI.
+>
+> Repo:
+> https://t.co/AigPxno7tv
+
+- **Tweet:** https://x.com/NirDiamantAI/status/2031854318450544814
+- **Link:** https://github.com/msitarzewski/agency-agents
+- **Filed:** [agency-agents.md](./knowledge/tools/agency-agents.md)
+- **What:** Public repo of specialist agent definitions (security engineer, growth hacker, reality checker and more) that drop into ~/.claude/agents/ and also work with Cursor, Windsurf, Aider and Gemini CLI.
+
+## @odysseus0z - Getting Started with OpenAI Symphony (X article by George)
+> https://t.co/88l0mFNMIE
+
+- **Tweet:** https://x.com/odysseus0z/status/2031850264240800131
+- **Link:** https://x.com/i/article/2031521021342388224
+- **Filed:** [symphony-getting-started.md](./knowledge/articles/symphony-getting-started.md)
+- **What:** Walkthrough article on OpenAI's Symphony: pushing 50 Linear tickets for an Electron tech-debt rewrite overnight produced 30 merged PRs and 7,000 net lines deleted with nothing broken afterward.
+
+## @daveblumenfeld1 - keypo vault: Secure Enclave-encrypted secrets that agents can use but not read
+> Claude Code executes my code all day but it can’t see my secrets. They’re encrypted in my Mac’s Secure Enclave. Not in the cloud or in a .env file.
+>
+> Introducing keypo vault. Your Mac as a programmable password manager for your agents. Open source.
+>
+> https://t.co/2rgcjKxCsj https://t.co/JUA4rJOSdM
+
+- **Tweet:** https://x.com/daveblumenfeld1/status/2031757313481335103
+- **Link:** https://github.com/keypo-us/keypo-cli/tree/main/keypo-signer
+- **Filed:** [keypo-cli.md](./knowledge/tools/keypo-cli.md)
+- **What:** Open-source Mac CLI that stores secrets encrypted in the Secure Enclave so Claude Code can run code needing them without ever seeing values or .env files; local-first with hardware-bound keys and passkeys.
+
+## @ryancarson - Ryan Carson's 5-agent Code Factory using OpenAI Symphony, Codex and Linear
+> This is how I run 5 agents concurrently in a Code Factory to write/ship 100% of our code.
+>
+> It uses Symphony from @alex_frantic  (oss) + Codex Mac app + @linear
+>
+> Took me 2-3 days to set up and now it’s *cranking*
+>
+> https://t.co/XZsATH4bil https://t.co/NNnddDGk9k
+
+- **Tweet:** https://x.com/ryancarson/status/2031755002205655511
+- **Link:** https://github.com/openai/symphony
+- **Filed:** [openai-symphony.md](./knowledge/tools/openai-symphony.md)
+- **What:** Describes running five concurrent agents that write and ship all of his team's code, orchestrated by OpenAI's open-source Symphony with the Codex app and Linear; setup took 2-3 days.
+
+---
+
+# Tuesday, March 10, 2026
+
+## @arvidkahl - Arvid Kahl's Claude Code productivity tips: plan mode, context-mode plugin, docs folder
+> A couple of suggestions for Claude Code productivity, from someone in the profitable SaaS trenches:
+>
+> For ANY non-trivial feature: shift-tab into planning mode, and mention "do deep research on best practices and known issues, using web search" to the prompt. READ the plan, adjust, and have it execute. Plans survive compaction MUCH better than vibe-prompted features, particularly if they're bigger.
+>
+> /plugin marketplace add mksglu/claude-context-mode
+> (significantly bigger context window, uses an MCP to load files into context via reference instead of parking the whole file there)
+>
+> /plugin…
+>
+> *Quoting @toddsaunders:* What's the most underrated tool that will 10x my productivity in Claude Code?
+
+- **Tweet:** https://x.com/arvidkahl/status/2031457304328229184
+- **Quoted:** https://x.com/toddsaunders/status/2031436358233760063
+- **What:** Reply to a productivity question: use plan mode with web research, add claude-context-mode and claude-warden plugins, and keep a /documents folder (platform docs, ICPs, styleguide, roadmap) plus a maintained CLAUDE.md.
+
+## @tangming2005 - CLAUDE.md rule: reproduce bugs with a failing test before fixing
+> Single biggest improvement I made to my CLAUDE.md:
+>
+> "When I report a bug, don't start by trying to fix it. Instead, start by writing a test that reproduces the bug. Then, have subagents try to fix the bug and prove it with a passing test."
+
+- **Tweet:** https://x.com/tangming2005/status/2031358195558658266
+- **What:** Shares a single CLAUDE.md instruction: when a bug is reported, first write a test that reproduces it, then have subagents fix it and prove the fix with a passing test; claimed as the biggest improvement to their setup.
+
+---
+
+# Monday, March 9, 2026
+
+## @kyle_e_walker - freestiler: high-performance vector tiling engine for R and Python
+> Announcing {freestiler}: a high-performance vector tiling engine for R and Python.
+>
+> Generate vector tiles for your maps directly from R/Python spatial data, @duckdb queries, and local spatial files.
+>
+> Check out the docs here: https://t.co/61bQEj2fmN
+>
+> Some highlights: https://t.co/ujdX5BfCab
+
+- **Tweet:** https://x.com/kyle_e_walker/status/2031086863830720770
+- **Link:** https://walker-data.com/freestiler/
+- **What:** Announces freestiler, a fast vector-tile generator for R and Python that builds map tiles straight from spatial data frames, DuckDB queries and local spatial files.
+
+## @jerryjliu0 - Surreal Slides: LlamaParse + SurrealDB search over PowerPoint decks for agents
+> We built a neat tool that lets you convert a directory of Powerpoint files into clean, structured markdown - that Claude Code / agent SDK / any generalized agent wrapper can easily understand.
+>
+> The pptx skill in Claude Code is quite basic and doesn’t have high-fidelity understanding over graphics/charts/tables.
+>
+> Our project Surreal Slides uses LlamaParse to convert presentations into clean structured data that you can put into a db (@SurrealDB) for simple retrieval, without having to take screenshots of the data on the fly.
+>
+> Thanks to @itsclelia for this project, check it out:…
+>
+> *Quoting @llama_index:* If you’re working with lots of slide decks and need a better way to search through them, Surreal Slides makes it simple 🌀  Built around LlamaParse, it parses presentation files into clean, structured data, turning raw slides into something AI can truly understand. Each slide is extracted, summarize
+
+- **Tweet:** https://x.com/jerryjliu0/status/2031077511661342799
+- **Quoted:** https://x.com/llama_index/status/2031038377831932056
+- **Link:** https://github.com/run-llama/surreal-slides
+- **Filed:** [surreal-slides.md](./knowledge/tools/surreal-slides.md)
+- **What:** LlamaIndex CLI that parses presentations into structured markdown/data via LlamaParse, stores them in SurrealDB and exposes agentic retrieval; pitched as better than Claude Code's basic pptx skill for charts and tables.
+
+## @code_rams - portless: stable named .localhost URLs instead of port numbers (Vercel Labs)
+> Running multiple projects locally is painful.
+>
+> localhost:3000, localhost:3001, localhost:8080... which one is which?
+>
+> One port conflict and your whole setup breaks.
+>
+> Portless by Vercel Labs fixes this cleanly.
+>
+> Instead of port numbers, you get stable named URLs:
+> http://myapp.localhost:1355
+> http://api.myapp.localhost:1355
+> http://docs.myapp.localhost:1355
+>
+> What it solves:
+> • Port conflicts across projects
+> • Cookie and storage bleeding between apps on different ports
+> • "Wait, which tab is which?" confusion in monorepos
+> • Git worktrees: each branch gets its own subdomain automatically
+>
+> Works with…
+
+- **Tweet:** https://x.com/code_rams/status/2030920724504838399
+- **Link:** https://github.com/vercel-labs/portless
+- **Filed:** [portless.md](./knowledge/tools/portless.md)
+- **What:** Vercel Labs tool that replaces localhost port numbers with named URLs like api.myapp.localhost:1355, avoiding port conflicts and cookie bleed, giving git worktrees their own subdomains and letting agents find apps reliably.
+
+---
+
+# Sunday, March 8, 2026
+
+## @doodlestein - Asking Codex/GPT 5.4 for a project 'come to Jesus' status check on FrankenEngine
+> I asked Codex with GPT 5.4 the following about my FrankenEngine project, which I've been working on (along with all my other in-flight projects) for the last 2-3 weeks:
+>
+> "Where are we on this project? Do we have a working JS and TS engine that can run arbitrary code with good performance relative to V8? If not, what is blocking us? If we were to intelligently implement all open and in-progress beads, would we close that gap completely? Why or why not?"
+>
+> See its answer below in the screenshot.
+>
+> I think of these sorts of things as my "Come to Jesus" moments with the agents after days or even…
+
+- **Tweet:** https://x.com/doodlestein/status/2030805574091231425
+- **Link:** https://github.com/Dicklesworthstone/franken_engine/blob/main/PLAN_TO_CREATE_FRANKEN_ENGINE.md
+- **What:** Describes a practice of asking the agent for a candid high-level status assessment, here whether FrankenEngine, a from-scratch Rust JS/TS engine, can match V8, after days of bead swarms, to keep the project steered correctly.
+
+## @omarsar0 - OpenDev: 81-page paper on building terminal-based coding agents
+> Pay attention to this one if you are building terminal-based coding agents.
+>
+> OpenDev is an 81-page paper covering scaffolding, harness design, context engineering, and hard-won lessons from building CLI coding agents.
+>
+> It introduces a compound AI system architecture with workload-specialized model routing, a dual-agent architecture separating planning from execution, lazy tool discovery, and adaptive context compaction.
+>
+> The industry is shifting from IDE plugins to terminal-native agents.
+>
+> Claude Code, Codex CLI, and others have proven the model works.
+>
+> This paper formalizes the design…
+
+- **Tweet:** https://x.com/omarsar0/status/2030771811705872435
+- **Link:** https://arxiv.org/abs/2603.05344
+- **Filed:** [opendev.md](./knowledge/articles/opendev.md)
+- **What:** Highlights an arXiv paper (2603.05344) on terminal coding agent design: model routing by workload, dual planner/executor agents, lazy tool discovery, adaptive context compaction, system reminders against instruction fade-out.
+
+## @kevinkern - Kevin Kern updates AGENTS.md to prevent Codex fallback behavior
+> updated my AGENTS.md again to prevent codex fallback hell. https://t.co/VbXBwYNKTf
+
+- **Tweet:** https://x.com/kevinkern/status/2030770561257713785
+- **What:** THIN: @kevinkern says he revised his AGENTS.md to stop Codex 'fallback hell'; the actual content is in an image, so the specific rules are not captured.
+
+## @doodlestein - Beads prompts to reopen stalled in-progress beads and pick next work with bv
+> Not sure if I've ever shared this prompt before, but if you use beads (or my rust version, br) to build out complex development plans, you sort of need to use something like this to avoid wasting time later on in the implementation phase.
+>
+> The agents will eventually figure this out on their own when there's nothing else to work on, but you can likely debottleneck and speed up overall velocity by dealing with this issue directly as follows:
+>
+> "Look for beads that are clearly "stalled out"; that is, marked as being in progress (likely by long-dead agents) with no recent work on them whatsoever,…
+
+- **Tweet:** https://x.com/doodlestein/status/2030767679179756009
+- **What:** Jeffrey Emanuel shares a prompt that has agents reopen long-dead in-progress beads then pick high-impact work via bv robot flags, preceded by a codebase-orientation prompt reading AGENTS.md and README to prime agents.
+
+## @cathrynlavery - Four-part terminal upgrade: ghostty, tmux, fish, starship
+> your terminal in 4 upgrades:
+>
+> 1. ghostty — the terminal itself. fast, native, beautiful. finally one worth using.
+>
+> 2. tmux — sessions that survive anything. split panes, detach, come back later like nothing happened.
+>
+> 3. fish — autocomplete that actually works. syntax highlighting. no config needed.
+>
+> 4. starship — a prompt that shows you what matters (git branch, exit codes, env) without slowing you down.
+>
+> use: brew install tmux fish starship + ghostty .org
+>
+> your future self will thank you
+
+- **Tweet:** https://x.com/cathrynlavery/status/2030714034673033474
+- **What:** Short recommendation of a modern terminal stack: ghostty as the terminal, tmux for persistent sessions, fish for autocomplete and highlighting, and starship for an informative low-latency prompt.
+
+## @dani_avila7 - Run Claude Code /simplify on every PR via hook, GitHub Action or scheduled task
+> This is a great tip from @bcherny
+>
+> Adding /simplify to each PR
+>
+> I think it could also be triggered via a hook or even within a GitHub Action itself, so it covers all PRs submitted by the team.
+>
+> Or even better… with a Scheduled Task!
+>
+> There are so many options, you just have to find the one that fits the way your company works
+>
+> *Quoting @dani_avila7:* Claude Code 2.1.63 dropped with a new built-in command: /simplify  It reviews your changed code for three things:  - Reuse opportunities (duplicated logic, extractable patterns) - Code quality (readability, naming, structure) - Efficiency (unnecessary complexity, redundant operations)  Then it actua
+
+- **Tweet:** https://x.com/dani_avila7/status/2030662515475022133
+- **Quoted:** https://x.com/dani_avila7/status/2027794917573968327
+- **What:** Endorses Boris Cherny's tip to run the built-in /simplify command (reuse, quality, efficiency review that also edits code) on each PR, and suggests automating it through hooks, GitHub Actions or scheduled tasks.
+
+## @shannholmberg - One-prompt Claude workflow audit that rewrote CLAUDE.md and generated agents
+> ran it. took 3 minutes and now my Claude workflow is 10x cleaner.
+>
+> what it built:
+>
+> > rewrote my claude. md with my preferences
+> > flagged 6 places where I waste time and wrote fixes for each
+> > rebuilt my research scraper based on my usage patterns
+> > auto-generated 3 agents: UI review, creator analytics, deployment
+>
+> fastest setup optimization I've ever done.
+>
+> *Quoting @shannholmberg:* find every inefficiency in your Claude workflow with one prompt  it finds where you're wasting time, where your prompts could be sharper, what patterns are slowing you down.  copy the prompt below (bookmark to save it for later):  ----- Scrape all of my Claude session on this computer. Analyze my us
+
+- **Tweet:** https://x.com/shannholmberg/status/2030629653589983683
+- **Quoted:** https://x.com/shannholmberg/status/2030605364421595468
+- **What:** Reports running a prompt that scrapes all local Claude sessions for usage patterns; it rewrote CLAUDE.md, flagged six time-wasters with fixes, rebuilt a scraper and auto-generated three agents in about three minutes.
+
+## @yohaniddawela - Imagery2Flow: predicting urban mobility flows from satellite imagery
+> *Replying to @yohaniddawela:* tl;dr:  • Transportation planners can estimate travel demand without expensive surveys • Epidemiologists can model disease spread in data-poor regions • Urban planners can assess mobility impacts of development proposals
+>
+> The code and methodology are publicly available on GitHub:
+>
+> https://t.co/vr5k6kLLAX
+
+- **Tweet:** https://x.com/yohaniddawela/status/2030615172885221621
+- **Parent:** https://x.com/yohaniddawela/status/2030615171987636627
+- **Link:** https://github.com/GeoDS/Imagery2Flow
+- **Filed:** [imagery2flow.md](./knowledge/tools/imagery2flow.md)
+- **What:** Reply linking the GeoDS Imagery2Flow repo, code for a deep-learning method that predicts origin-destination human mobility flows between city sub-regions from satellite imagery, replacing costly travel surveys.
+
+## @heyrimsha - Claude prompting sequence to compress month of market research into 3 hours
+> I accidentally discovered how to compress a month of research into 3 hours.
+>
+> A founder at a YC company showed me his Claude setup. I thought he was just fast. Then I watched him build an entire go-to-market strategy for a market he'd never worked in before.
+>
+> Here's exactly what he did:
+>
+> First: he didn't ask Claude to "research the market."
+>
+> He fed it 8 competitor landing pages, 3 earnings call transcripts, 12 customer reviews, and a Reddit thread of complaints.
+>
+> Then he asked one question:
+>
+> "What does every successful player in this market understand that their customers never say out loud?"…
+
+- **Tweet:** https://x.com/heyrimsha/status/2030614728591167973
+- **What:** Anecdotal workflow where a founder feeds Claude competitor pages, earnings calls and reviews, then asks for unspoken market insights, the three assumptions the market rests on, and investor-style kill questions to stress-test an idea.
+
+## @TrevinPeterson - autoresearch-mlx: Apple Silicon MLX port of Karpathy's autoresearch
+> Built an Apple Silicon / MLX port of your autoresearch — runs natively on Mac, no PyTorch needed. The loop found that depth=4 beats depth=8 on M4 Max because more optimizer steps > more parameters in a 5-min budget. https://t.co/BRvG6kLzuc @karpathy
+
+- **Tweet:** https://x.com/TrevinPeterson/status/2030611877198221458
+- **Link:** https://github.com/trevin-creator/autoresearch-mlx
+- **Filed:** [autoresearch-mlx.md](./knowledge/tools/autoresearch-mlx.md)
+- **What:** MLX port of Karpathy's autoresearch loop that runs natively on Apple Silicon without PyTorch; its own loop found depth=4 beats depth=8 on an M4 Max because more optimizer steps beat more parameters in a 5-minute budget.
+
+## @oliviscusAI - WiFi-DensePose: open-source body-pose estimation through walls via WiFi signals
+> 🚨 BREAKING: Someone just open-sourced software that sees you through walls using only WIFI signals.
+>
+> it’s called WiFi-DensePose. It maps your exact body pose in real-time. no cameras. no sensors. just your living room router.
+>
+> 100% Open Source. https://t.co/JMfXBHK3uX
+
+- **Tweet:** https://x.com/oliviscusAI/status/2030602059712471112
+- **What:** THIN: Hype post about WiFi-DensePose, an open-source project that infers real-time human body pose from WiFi signals alone, no cameras; the tweet carries no repo detail beyond the name and a short link.
+
+## @ProAbdulrahmna - Prompt to mine ~/.claude/history.jsonl for prompting habits and mistakes
+> PRO TIP | CLAUDE CODE
+>
+> Claude stores every prompt you've ever sent in ~/.claude/history.jsonl
+>
+> To level up your AI game, drop this prompt:
+>
+> "Can you analyze my entire ~/.claude/history.jsonl file as an expert in prompt engineering, context management, and agentic workflows, outline:
+> 10 great habits/patterns I consistently use (with real examples from my history)
+> 10 common mistakes/weaknesses I fall into (with examples)
+> Reason step-by-step and give strong explanations for each."
+
+- **Tweet:** https://x.com/ProAbdulrahmna/status/2030571845049606633
+- **What:** Notes that Claude Code logs every prompt to ~/.claude/history.jsonl and supplies a prompt asking Claude to extract 10 strong habits and 10 recurring weaknesses from that history as a self-coaching exercise.
+
+---
+
 # Saturday, March 7, 2026
+
+## @om_patel5 - Claude Code ENABLE_LSP_TOOL flag swaps grep search for language-server navigation
+> claude code has a hidden setting that makes it 600x faster and almost nobody knows about it
+>
+> by default it uses text grep to find functions.
+>
+> it doesn't understand your code at all. that's why it takes 30-60 seconds and sometimes returns the wrong file
+>
+> there's a flag called ENABLE_LSP_TOOL that connects it to language servers. same tech that powers vscode's ctrl+click to jump straight to the definition
+>
+> after enabling it:
+>
+> > "add a stripe webhook to my payments page" - claude finds your existing payment logic in 50ms instead of grepping through hundreds of files
+>
+> > "fix the auth bug on my…
+
+- **Tweet:** https://x.com/om_patel5/status/2030479131222192457
+- **What:** Claims the ENABLE_LSP_TOOL flag connects Claude Code to language servers (11 languages) for definition lookup, call hierarchy and instant type-error feedback, replacing slow text grep and saving context tokens.
 
 ## @miolini - autoresearch-macos: Karpathy's autoresearch ported to Apple Metal
 > I forked AutoResearch and adapted it to run on macOS using Metal. Welcome!
