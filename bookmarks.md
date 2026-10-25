@@ -4173,6 +4173,518 @@
 
 ---
 
+# Wednesday, April 15, 2026
+
+## @patio11 - Annual advice: buy term life and own-occupation disability insurance
+> My annual exhortation:
+>
+> You, reader in the tech industry, should have plural million dollars of term life insurance coverage outside of that offered through employer.
+>
+> You should also strongly consider own-occupation long term disability insurance.
+
+- **Tweet:** https://x.com/patio11/status/2044464318008508496
+- **What:** Patrick McKenzie's yearly personal-finance reminder that tech workers should carry multi-million term life coverage independent of their employer and consider own-occupation long-term disability, since employer plans are lost with the job.
+
+## @rywiggs - Building a local Second Brain with Claude Code, QMD and hooks
+> https://t.co/Cyk7zmzOKW
+>
+> (X article: "Creating a Second Brain with Claude Code" — VP Product at Mercury, 15k docs / 3.5M words, 2x productivity.)
+
+- **Tweet:** https://x.com/rywiggs/status/2044448092477661638
+- **Link:** https://x.com/i/article/2044203095429918721
+- **Filed:** [second-brain-with-claude-code.md](./knowledge/articles/second-brain-with-claude-code.md)
+- **What:** Walkthrough of a local knowledge system: index 15k work docs with QMD (vector plus BM25), inject matches via a UserPromptSubmit hook, add me.md/context.md, and self-update memory with a /learn skill and cron briefs.
+
+## @aidenybai - Claude Doctor: mine ~/.claude to write CLAUDE.md rules
+> introducing Claude Doctor
+>
+> 1. reads your ~/.claude to find where claude keeps messing up
+> 2. writes rules for your CLAUDE.md so it stops.
+>
+> npx claude-doctor
+
+- **Tweet:** https://x.com/aidenybai/status/2044445649136189627
+- **What:** THIN: Releases claude-doctor, an npx CLI that analyzes past Claude Code session history to find recurring mistakes and auto-generate CLAUDE.md rules; a self-improvement loop similar to session-mining distillation.
+
+## @heynavtoor - Smart TVs screenshot your screen every 15 seconds (ACR study)
+> Your smart TV is taking screenshots of your screen every 15 seconds.
+> A peer-reviewed study by researchers at UC Davis, UCL, and UC3M tested it. Samsung TVs: every minute. LG TVs: every 15 seconds. Even when you're just using it as a monitor. Here's how to turn it off for every brand:
+
+- **Tweet:** https://x.com/heynavtoor/status/2044433988312560051
+- **What:** Privacy warning citing an academic study that smart-TV automatic content recognition captures screen frames every 15 seconds (LG) or minute (Samsung), even in monitor/HDMI use; the thread lists per-brand opt-out steps.
+
+## @pontusab - Midday Computer: scheduled business-automation agents
+> Introducing Midday Computer
+>
+> Put your business on autopilot. Agents that run on your schedule, learn over time, and take care of the work you keep putting off. Here's how it works ↓
+
+- **Tweet:** https://x.com/pontusab/status/2044413731355140568
+- **What:** THIN: Midday (founder tooling) launches Midday Computer, agents that run on a schedule and learn over time to handle recurring business admin; demo is in an attached video not captured here.
+
+## @mkurman88 - Screen recording of an autonomous agent harness running untouched since Monday
+> I've recorded it for you guys. Trust me, there is no better harness than this. I haven't touched it since Monday. 5x speed
+
+- **Tweet:** https://x.com/mkurman88/status/2044403192549478459
+- **What:** THIN: Video-only post claiming an unnamed agent harness has run autonomously for days without intervention, shown at 5x speed; harness is not identified in the text so value is limited to the endorsement.
+
+## @PawelHuryn - Your .claude/ folder deploys as a production agent
+> https://t.co/Atwpj8IxpI
+>
+> (X article: "Your .claude/ Folder Is a Production Agent" — same CLAUDE.md, skills, MCPs, hooks used daily in Claude Code shipped a working knowledge chatbot in an afternoon.)
+
+- **Tweet:** https://x.com/PawelHuryn/status/2044393804023660939
+- **Link:** https://x.com/i/article/2044386628676866048
+- **Filed:** [claude-folder-is-a-production-agent.md](./knowledge/articles/claude-folder-is-a-production-agent.md)
+- **What:** Article arguing the Claude Code config folder (CLAUDE.md, skills, MCPs, hooks, sub-agents) is itself a deployable production agent callable from an app via the Agent SDK, with no dev-to-prod translation layer.
+
+---
+
+# Tuesday, April 14, 2026
+
+## @doodlestein - Use ntm to run multi-model agent swarms instead of Claude Code desktop's walled garden
+> Public Service Announcement:
+>
+> You can do the same thing using my open-source ntm tool, but it works with ALL agent harnesses and models (e.g., codex, gemini-cli, etc.), so you're not locking yourself in a walled garden: ...
+> Use together with my agent mail project and beads, as detailed in my complete guide ... /ntm and /vibing-with-ntm skills ... I have a Claude Code session going right now managing swarms; use your looper tool every 4 minutes to pass fresh instructions to idle agents, guided by bv for open beads.
+>
+> *Quoting @claudeai:* We've redesigned Claude Code on desktop. You can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.
+
+- **Tweet:** https://x.com/doodlestein/status/2044254593073262596
+- **Link:** https://github.com/Dicklesworthstone/ntm
+- **Filed:** [ntm.md](./knowledge/tools/ntm.md)
+- **What:** Replies to Anthropic's multi-session Claude Code desktop redesign by pitching ntm, a harness-agnostic swarm manager that mixes Claude, Codex and Gemini, combined with Agent Mail, beads and his flywheel guide and skills site for orchestrating agent swarms.
+
+## @ctatedev - wterm: DOM-rendered web terminal emulator with a 12 KB Zig WASM core
+> Introducing wterm (“dub-term”)
+>
+> A terminal emulator for the web
+>
+> → DOM rendering — not canvas
+> → Select text, copy/paste, ⌘+F, a11y
+> → Dirty-row tracking, 24-bit color, themes
+> → WebSocket transport with reconnection
+> → Zig core compiled to ~12 KB WASM
+> → just-bash, local, SSH https://t.co/btV6ph5fyB
+
+- **Tweet:** https://x.com/ctatedev/status/2044224002109907392
+- **What:** THIN: Launch of wterm, a web terminal emulator that renders to the DOM rather than canvas so native selection, find and accessibility work, backed by a tiny Zig/WASM core; relevant for embedding terminals in browser-based agent UIs.
+
+## @dayjournal_nori - Geospatial Skills pack for coding agents (GDAL, GeoParquet, Tessera)
+> コーディングエージェント向けGeospatial Skillsが公開 🗺️
+> GDAL・GeoParquet Validation・Tessera・Geospatial Viewers・Geospatial Frontendなど5スキルを収録。Claude Codeプラグインとしてもインストール可能。元Wherobotsのかたが公開。 #foss4g #foss4gj
+
+- **Tweet:** https://x.com/dayjournal_nori/status/2044202794119553030
+- **Link:** https://isaac.earth/geospatial-skills/
+- **Filed:** [geospatial-skills.md](./knowledge/articles/geospatial-skills.md)
+- **What:** Announces an open skill pack by a former Wherobots engineer that gives coding agents geospatial know-how (GDAL, GeoParquet validation, Tessera, viewers, frontend), installable as a Claude Code plugin; useful for GIS and remote-sensing work with agents.
+
+## @simonlast - Playbook for running a coding agent 13 days straight: self-verification, specs, to-do lists, adversarial review
+> Some notes on how I got a coding agent to work for 13 days straight:
+>
+> Self-verification: the agent needs to be able to end-to-end verify everything itself...
+>
+> Write spec documents: fully specify goals, implementation details and verification...
+>
+> Use a running to-do list...
+>
+> Adversarial review: the agent should ask another agent to review the spec and implementation. Force it to loop until aligned; use a fresh agent context.
+>
+> *Quoting @NotionHQ:* Our co-founder, Simon's record is letting a coding agent run for 13 days straight. His bedtime routine now includes giving his agents enough work to keep running until breakfast.
+
+- **Tweet:** https://x.com/simonlast/status/2044129575962325337
+- **What:** Notion co-founder Simon Last explains how he got a coding agent to run for 13 days while prototyping a new product. Four practices: end-to-end self-verification loops, iterated spec documents, a visible editable to-do list, and adversarial review by a fresh-context agent. The principles are easiest on a small codebase but apply anywhere.
+
+## @noahzweben - Claude Code Routines add GitHub-event and API triggers to scheduled agents
+> Claude Code Routines are here! In addition to a schedule, you can now trigger templated agents via GitHub event or API – with our infra & your MCP+repos
+>
+> They've changed how we do docs, backlog maintenance and more internally at Anthropic
+
+- **Tweet:** https://x.com/noahzweben/status/2044093913376706655
+- **Link:** https://claude.ai/code/routines
+- **What:** Anthropic's Noah Zweben launches Claude Code Routines: templated agents that run on Anthropic infrastructure with your MCP servers and repos. They trigger on a schedule, a GitHub event or an API call. Anthropic uses them internally for documentation and backlog maintenance. They enable event-driven agent automation without self-hosting. The linked page was behind a Cloudflare challenge, so its content was not extracted.
+
+## @firecrawl - Fire-PDF, a Rust PDF-to-markdown engine, 5x faster with tables and formulas
+> Introducing Fire-PDF, our new Rust-based parsing engine
+>
+> - Convert PDFs into markdown 5x faster
+> - Extract full tables and preserve formulas
+> - Zero config required
+
+- **Tweet:** https://x.com/firecrawl/status/2044085849990553606
+- **What:** Firecrawl announces Fire-PDF, a Rust parsing engine that converts PDFs to markdown about 5x faster than before, with full table extraction and formula preservation and no configuration. Relevant for RAG and ingestion pipelines that need clean structured text from PDFs. Only the announcement text was captured, with no benchmarks or docs link.
+
+## @TopherNOW - Claude Cowork skill that makes retailer site maps, then upgrades itself with an edit mode
+> I built a retailer map maker skill with Claude Cowork.
+>
+> Subject property. Branded logos of every nearby tenant. Clean satellite view.
+>
+> First map looked great. Except some of the logos were stacked on top of each other. So instead of asking Claude to fix that one map, I asked it to fix the skill: "Bake in an edit mode. I want to drag logos around. Resize them individually. Highlight the ones that matter."
+>
+> Now every map the skill generates comes with click-to-edit mode, draggable individually sized logos, bulk resize.
+
+- **Tweet:** https://x.com/TopherNOW/status/2044066903698600360
+- **Link:** https://creaistudio.com/
+- **What:** A commercial real estate example of fixing the skill instead of the output. After a map had overlapping tenant logos, the author asked Claude Cowork to add drag, resize and highlight editing to the map skill itself, so every future map ships with it. The lesson is to iterate on the generator in the same conversation. The tutorial and downloadable skill are on CRE AI Studio.
+
+---
+
+# Monday, April 13, 2026
+
+## @doodlestein - 158-file tax preparation skill for AI agents, battle-tested on his own return
+> Well, it's probably coming too late for most people unless you're planning on filing an extension, but I created a truly ambitious skill for tax preparation on my skills site.
+>
+> This skill spans 158 markdown files totaling 2.7 megabytes of text. It covers every state, tons of different professions, life events, and all sorts of sophisticated tax strategies... Much of the underpinnings, including the use of the Aiwyn MCP tax connector and FreeTaxUSA with Playwright MCP, is based on my actual multi-day session history preparing and filing my own fairly complex return.
+
+- **Tweet:** https://x.com/doodlestein/status/2043875653951307854
+- **Link:** https://jeffreys-skills.md/
+- **What:** Jeffrey Emanuel published a very large tax-preparation skill (158 markdown files, 2.7 MB) on his skills site. It is verification-first and multi-year, with 50-state routing, profession and life-event overlays, and optional Aiwyn MCP and FreeTaxUSA/Playwright automation. It is distilled from his own multi-day filing session. It shows how far a skill can scale as a domain knowledge base. Already installed locally as tax-return-preparation-and-advice-generic.
+
+## @rauchg - Vercel open-sources Open Agents, a reference platform for cloud coding agents
+> Today we're open sourcing https://t.co/p76KVdY7dG, a reference platform for cloud coding agents.
+>
+> You've heard that companies like Stripe (Minions), Ramp (Inspect), Spotify (Honk), Block (Goose), and others are building their own "AI software factories". Why?
+>
+> 1️⃣ On a technical level, off-the-shelf coding agents don't perform well with huge monorepos, don't have your institutional knowledge, integrations, and custom workflows.
+>
+> 2️⃣ On a business level, the moat of software companies will shift from 'the code they wrote', to the 'means of production' of that code. The alpha is in your factory.…
+
+- **Tweet:** https://x.com/rauchg/status/2043869656931529034
+- **Link:** https://open-agents.dev/
+- **What:** Guillermo Rauch announces Open Agents, a deployable reference implementation for company-owned cloud coding agents. It builds on Vercel's Fluid compute, Workflow durability, Sandbox execution and AI Gateway. His thesis is that the moat shifts from the code to the "factory" that produces it, as Stripe, Ramp, Spotify and Block already build. The codebase is useful as an example of open SDK patterns even off Vercel.
+
+## @chernobelskiy - Free AI model that reviews commercial real estate LP decks in under 60 seconds
+> We've trained an LP deck review model on hundreds of CRE investments and just released it to the public for free:
+>
+> 1) Upload a real estate deck
+> 2) Confirm facts that we gathered from the deck
+> 3) <60 seconds later your results are ready
+
+- **Tweet:** https://x.com/chernobelskiy/status/2043796851347075422
+- **What:** Aleksey Chernobelskiy's team released a free model trained on hundreds of commercial real estate investments. It ingests an LP deck, extracts facts for the user to confirm, then returns an assessment in under a minute. A concrete example of a vertical, domain-trained AI product used as a lead magnet. The link itself resolved only to the tweet, so the tool's URL is not captured.
+
+## @swyx - Anh Tho open-sources her Claude Skill template for writing in your own voice
+> If you're looking to improve your writing game, Anh is one of the most consistent heavy hitters I know in devtools HN and she literally just open sourced her writing Skills template for you to use below!
+>
+> *Quoting @byAnhtho:* Writing should have a soul. And its own Claude Skill. (article)
+
+- **Tweet:** https://x.com/swyx/status/2043786360012845509
+- **Link:** https://x.com/i/article/2043500390885494784
+- **Filed:** [writing-should-have-a-soul-claude-skill.md](./knowledge/articles/writing-should-have-a-soul-claude-skill.md)
+- **What:** swyx endorses Anh Tho of Lago, whose devtools posts hit the top of Hacker News repeatedly. Her article explains how she encoded her own edits and anti-patterns into a Claude Skill and open-sourced an empty template (getlago/inside-lago-voice-skill) so others can build a voice skill from their own writing.
+
+---
+
+# Sunday, April 12, 2026
+
+## @FundamentEdge - Blueprint for a pre-configured "Investor's Dashboard" AI workspace, inspired by Ramp's Glass
+> This is exactly what needs to be built for Investing AI.
+>
+> A fully pre-configured AI workspace with integrations, skills, persistent memory, and scheduled automations built in (i.e. all you have to do is upload your tickers and you have a scheduled earnings preview automation done with an institutional-grade workflow).
+>
+> This felt very sci-fi until about six weeks ago. But I feel like the pieces are there today to build this (no one has yet pulled them all together)...
+>
+> *Quoting @eglyman:* 99% of Ramp uses ai daily. but we noticed most people were stuck... so we built Glass. every employee gets a fully configured ai workspace on day one — integrations connected via sso, a marketplace of 350+ reusable skills built by colleagues, persistent memory, scheduled automations.
+
+- **Tweet:** https://x.com/FundamentEdge/status/2043517179279405493
+- **What:** Brett Caughran argues investing needs its own Glass-style turnkey AI workspace and says LLM capability is no longer the bottleneck. The missing pieces are a multi-model agentic platform, research context (filings, transcripts, sell-side, alt data) and investment-process workflow orchestration. He expects adoption to be cultural rather than technical, and he has paused enterprise AI trainings because of it. Ramp's Glass (CEO Eric Glyman) is the reference: SSO integrations, 350+ shared skills, memory, scheduled automations.
+
+## @RoundtableSpace - Google's open-source TimesFM zero-shot time-series forecasting model
+> Google quietly open sourced a time-series AI that predicts anything.
+>
+> Sales trends. Market prices. User traffic. Energy demand. Crypto volatility.
+>
+> It's called TimesFM. Pre-trained on 100B real-world data points. Zero-shot forecasting with no fine-tuning. Outperforms supervised models trained on your specific data.
+>
+> Runs locally. Free. Apache license.
+
+- **Tweet:** https://x.com/RoundtableSpace/status/2043377670860480853
+- **What:** Highlights Google's Apache-licensed TimesFM, a foundation model pre-trained on about 100B data points that forecasts arbitrary time series (sales, traffic, energy, prices) zero-shot and locally. Worth tracking as a no-training baseline for forecasting work.
+
+## @jamonholmgren - Isolate AI agents in a separate macOS user account
+> It's not smart to run AI agents in your regular macOS account with everything else accessible to them.
+>
+> You could buy a Mac Mini and use that to isolate your environment. But ... macOS already has multi-user capability built-in.
+>
+> Here's how I set mine up:
+
+- **Tweet:** https://x.com/jamonholmgren/status/2043375948582838281
+- **What:** Security tip that a dedicated macOS user account can sandbox AI agents away from personal files and credentials without buying a separate Mac Mini; the setup steps are in a thread not captured in this bookmark.
+
+## @justansub - Wiki OS: open-source local-first UI for an agent-maintained wiki
+> Ok this kinda went viral...
+>
+> Yesterday I posted the UI layer I built on top of my local wiki, inspired by @karpathy's tweet and a lot of you asked for an open-source version, so I made one!
+>
+> Introducing Wiki OS: a local-first wiki for your knowledge base: search, graph, article pages, simple setup, self-hosted.
+>
+> *Quoting @justansub:* late to the party but built a UI layer on top of the wiki my @openclaw agent writes and maintains, based on exactly what @karpathy describes here. obsidian vault underneath, react frontend on top: search, an interactive knowledge graph, topic browsing, article pages with tables of contents + neighborhood mini-graph and many more.
+
+- **Tweet:** https://x.com/justansub/status/2043334810505195944
+- **What:** Wiki OS open-sources a self-hosted, local-first frontend (React over an Obsidian vault) for LLM-maintained wikis in the Karpathy style, offering search, an interactive knowledge graph, topic browsing, and article pages with tables of contents and neighbor mini-graphs.
+
+## @AdolfoUsier - Free NVIDIA-hosted MiniMax M2.7 API as a zero-cost agent fallback
+> Again no one is talking about this but @nvidia is offering a bunch of completely free API endpoints. They just dropped MiniMax M2.7 free. And you can easily setup it as custom provider on @opencrabs. Grab your key at build.nvidia.com ... config.toml: [providers.custom.nvidia-minimax27] base_url = "https://integrate.api.nvidia.com/v1", context_window = 200000, default_model = "minimaxai/minimax-m2.7" ... keys.toml: api_key = "your_nvidia_api_key" ... Kimi is there since weight release ... also GLM 5
+
+- **Tweet:** https://x.com/AdolfoUsier/status/2043195754425028961
+- **Link:** https://build.nvidia.com/minimaxai/minimax-m2.7/deploy?integrate_nim=true&hosted_api=true&modal=integrate-nim
+- **What:** Explains how to use NVIDIA's free hosted endpoints (MiniMax M2.7, Kimi, GLM 5) as an OpenAI-compatible custom provider in OpenCrabs or similar harnesses via an NVIDIA API key, giving a no-cost fallback model; the linked page extracted only unusable HTML so details come from the tweet.
+
+---
+
+# Saturday, April 11, 2026
+
+## @trq212 - TurboTax connector arrives in Claude Code and Claude
+> there's a turbotax connector in Claude Code now, so glad I procrastinated on taxes 😭
+>
+> *Quoting @henrythe9ths:* Tax season is here and a connector is all it takes to make @claudeai way more useful. Connect TurboTax or Aiwyn Tax (formerly Column Tax) to Claude to estimate your refund, see what you may owe, and get a better understanding on the forms before you file.
+
+- **Tweet:** https://x.com/trq212/status/2043138221836746762
+- **What:** Anthropic shipped connectors linking TurboTax and Aiwyn Tax (formerly Column Tax) to Claude, letting users estimate refunds, see amounts owed, and understand forms before filing; Thariq notes it also works in Claude Code.
+
+## @arpitrage - App idea: provenance checker for charts and data points
+> One app which would be good to vibecode and open source is: "is this data point real?"
+>
+> Put in a chart or data, it does deep dive into the provenance, searches for related controversies etc.
+
+- **Tweet:** https://x.com/arpitrage/status/2043106738405097860
+- **What:** Project idea for an open-source tool where you submit a chart or data point and an agent investigates its source, provenance, and related controversies, giving a quick credibility check on viral statistics.
+
+## @theo - Dynamic context injection should be part of the skills standard
+> The "inject dynamic context" pattern in Claude Code skills is so useful.
+>
+> IMO, this should be part of the "skills standard" and included in tools like Codex CLI, Pi, Cursor etc
+
+- **Tweet:** https://x.com/theo/status/2043103001121034581
+- **What:** Theo argues that Claude Code's skill feature of injecting dynamic context (command output pulled in at load time) is valuable enough that other agent tools such as Codex CLI, Pi, and Cursor should adopt it in the shared skills standard.
+
+## @BenjaminBadejo - QMD plus Active-Memory plugin sharpens OpenClaw answers
+> If you are using OpenClaw, you really need to do this. Wow. I am really enjoying it again. The responses are no longer instant, but the quality is truly phenomenal. It's like firing an intern and re-hiring the former CEO's secretary who knew where all the bodies were buried.
+>
+> *Quoting @BenjaminBadejo:* I highly recommend turning on both QMD and the new "Active-Memory" plugin in OpenClaw. Just ask your agent to set it up. Once set up, responses will be a little slower... but much sharper and much more accurate. Also, include session transcripts in QMD's paths, not just memory.
+
+- **Tweet:** https://x.com/BenjaminBadejo/status/2043085843808518599
+- **What:** Practical OpenClaw tuning tip: enable QMD search and the new Active-Memory plugin, and index session transcripts as well as memory files, trading slower replies for noticeably more accurate, context-aware answers.
+
+## @garrytan - Fully customizable voice interface for an OpenClaw agent
+> I'm having a Her moment over here with my OpenClaw.
+>
+> It's literally the craziest thing in the world to be able to just talk to your claw and have fully customizable voice. Did you ever want to improve your ChatGPT Voice experience? Now you can have it totally under your control
+
+- **Tweet:** https://x.com/garrytan/status/2043022208512172263
+- **What:** THIN: Garry Tan describes talking by voice to his OpenClaw agent with a fully user-controlled voice stack, positioned as a better alternative to ChatGPT Voice; the tweet gives no setup details beyond an attached demo.
+
+## @TheChowdhary - Figma's first-users playbook as a template for data-driven outbound
+> dylan field shared on lenny's podcast how he got figma's first users:
+>
+> he wrote a script to scrape twitter, built a network graph of the design community in Gephi, ran an analysis to find the most influential nodes, then reached out to every one of them
+>
+> "can I buy you a coffee?"
+>
+> this is basically what smart outbound looks like in 2026, just with better tools: 1) use data to find who's actively talking about your problem space 2) rank them by engagement and network reach 3) reach out referencing something specific they said ...
+
+- **Tweet:** https://x.com/TheChowdhary/status/2043014666692235654
+- **What:** Retells how Dylan Field seeded Figma's early users by scraping Twitter, mapping the design community's influence graph in Gephi, and personally contacting top nodes, then frames it as a repeatable outbound recipe (find, rank, personalize) while pitching the Crustdata API as the modern scraper replacement.
+
+## @RohOnChain - Stanford 2-hour lecture on how engineers build AI systems
+> This 2 hour Stanford lecture shows exactly how Stanford trains it's engineers to build AI systems. It's more practical than every Claude tutorial & prompting threads you've seen.
+>
+> Bookmark & give it 2 hours, no matter what. It'll be the most productive thing you do this weekend.
+
+- **Tweet:** https://x.com/RohOnChain/status/2043014662883786812
+- **What:** THIN: Recommends a two-hour Stanford lecture (attached video, title not given) on building AI systems, pitched as more practical than Claude tutorials and prompting threads; worth revisiting to identify the lecture and course.
+
+## @hjluks - Orthopedic surgeon's warning about life "narrowing" thread
+> Don't Let Your Lives "Narrow"!! I've been an orthopedic surgeon for 30 years. The thing I watch happen to people, more than any injury or surgery, is what I refer to as the narrowing. Most of my patients have no idea it's happening to them. They think it's just aging. It's not. 🧵
+
+- **Tweet:** https://x.com/hjluks/status/2042919627101962374
+- **What:** THIN: Opening tweet of a thread by a 30-year orthopedic surgeon on "narrowing", the gradual shrinking of activity and life range he sees in patients and attributes to habit rather than aging; the thread body was not captured.
+
+## @garrytan - GBrain adds guided integration recipes for OpenClaw and Hermes Agent
+> New OpenClaw and Hermes Agent users struggle to get all your integrations set up. And you can't get to 1,000 markdown files let alone 10,000 without proper integrations with mail, calendar etc. GBrain now makes it very easy with guided integration recipes on first install.
+
+- **Tweet:** https://x.com/garrytan/status/2042919242283258072
+- **What:** Garry Tan announces GBrain, a markdown knowledge-base layer for agents like OpenClaw and Hermes, now guiding first-time users through mail and calendar integrations so the corpus can grow past thousands of files.
+
+## @zarazhangrui - Three prompts to get more than a summary from long-form content
+> Don't just ask AI to "summarize" a piece of long-form/difficult content. Try these prompts:
+> 1. Remix it into a polished magazine article, preserving the best original quotes
+> 2. Remix it into a Socratic dialogue between a teacher & a student (representing me)
+> 3. Based on what you know about me, pick out the insights that I would find the most interesting
+
+- **Tweet:** https://x.com/zarazhangrui/status/2042846640130920574
+- **What:** Prompting tips for digesting dense material: rewrite as a magazine piece, as a Socratic dialogue with you as the student, or as personalized insights, which engages better than a flat summary.
+
+---
+
+# Friday, April 10, 2026
+
+## @ctatedev - json-render adds Gaussian splat rendering via Three.js
+> Bonsai trees, gardens, kitchens. All described in JSON. json-render now renders Gaussian splats: .splat/.ply via GaussianSplat component, composable with lights, environments, post-fx, Float + Spin animation wrappers, powered by Three.js / R3F.
+
+- **Tweet:** https://x.com/ctatedev/status/2042813858369151295
+- **What:** Announces Gaussian splat support in json-render, letting 3D scenes (.splat/.ply captures plus lights, environments, post-processing and animation) be declared as JSON and rendered with Three.js / React Three Fiber.
+
+## @Asgooch - Brutal kettlebell complex challenge from Adam Gooch
+> Out of all the kettlebell complexes you've ever done I can guarantee this one is the most brutal. Give it a try and let me know if you survive. #kettlebell #workout
+
+- **Tweet:** https://x.com/Asgooch/status/2042755841154257111
+- **Link:** https://www.kettlebellworkout.com/
+- **What:** THIN: Promo post for a hard kettlebell complex, likely shown in an attached video, pointing to Adam Gooch's kettlebellworkout.com site for more workouts; no routine details in the text.
+
+## @SteveStuWill - All cognitive biases reduce to a few core beliefs plus confirmation bias
+> Psychologists have posited hundreds of cognitive biases over the years. A fascinating new paper argues that they all boil down to one of a handful of fundamental beliefs coupled with confirmation bias.
+
+- **Tweet:** https://x.com/SteveStuWill/status/2042728760764699124
+- **Link:** https://www.stevestewartwilliams.com/p/one-bias-to-rule-them-all
+- **What:** Substack post "One Bias to Rule Them All" summarizing a paper that collapses the long list of cognitive biases into a few fundamental beliefs combined with confirmation bias; only the page header was extracted, so detail is from the tagline.
+
+## @aakashgupta - Sleep restriction study: 6 hours a night impairs like 48 hours awake, unnoticed
+> The scariest finding in this paper: the subjects couldn't tell it was happening. UPenn ran this study on 48 healthy adults sleeping 8, 6 or 4 hours for 14 days. By day 14 the 6-hour group performed like someone awake 48 hours; the 4-hour group hit that by day 6. Self-reported sleepiness flatlined while performance kept falling.
+>
+> *Quoting @NTFabiano:* Sleeping <6h a night for 2 weeks reduces cognitive performance equal to 2 nights of total sleep deprivation.
+
+- **Tweet:** https://x.com/aakashgupta/status/2042720283447247121
+- **What:** Expands on a UPenn sleep-restriction study showing chronic 6-hour sleep degrades reaction time, memory and attention to the level of two sleepless nights while subjective sleepiness plateaus, so people cannot sense their own impairment.
+
+## @code_rams - Local Vercel agent-browser vs cloud Cloudflare Browser Rendering for AI agents
+> There are now two ways to give your AI agent a browser. One runs on your laptop. The other runs in the cloud. Vercel's agent-browser (free, open source) uses your local Chrome; Cloudflare Browser Rendering + CDP ($5/mo) runs a fresh sandboxed browser on Cloudflare's edge, 24/7. Add Browser Rendering as an MCP server so Claude Code / OpenClaw can navigate, click, type and screenshot.
+>
+> *Quoting @CloudflareDev:* Browser Rendering now exposes the Chrome DevTools Protocol, which means you can give your MCP clients access to a remote browser. Update your MCP config and your agent can navigate pages, take screenshots, run performance audits, and debug JavaScript.
+
+- **Tweet:** https://x.com/code_rams/status/2042718819567706330
+- **What:** Compares running agent browsing locally (Vercel agent-browser, uses your logins, stops when the laptop closes) with Cloudflare's new CDP-enabled Browser Rendering MCP (sandboxed, no personal identity, always on), building on Cloudflare's announcement; suited to monitoring pricing pages and overnight tasks.
+
+## @nickbaumann_ - Why bespoke CLIs beat connectors for Codex: codex-threads, slack-cli, typefully-cli
+> https://t.co/7kFjxY5i79
+
+- **Tweet:** https://x.com/nickbaumann_/status/2042705384306336083
+- **Link:** https://x.com/i/article/2042694217663979520
+- **Filed:** [bespoke-clis-for-codex.md](./knowledge/articles/bespoke-clis-for-codex.md)
+- **What:** Article on giving Codex small purpose-built CLIs (JSON output, flags, help) alongside MCP connectors, with examples for searching past Codex threads, Slack research and Typefully drafting, each wrapped in a skill that sets safe defaults like never publishing.
+
+## @Axel_bitblaze69 - Three-level Claude Code lockdown: sandbox, deny rules, devcontainer
+> Some important Claude Code security settings you need to take care of right now before its too late.. by default, claude code can read your SSH keys, AWS credentials, every .env file, and push code wherever it wants. My 3 levels to lock it down: level 1 settings.json (/sandbox, allow/deny permissions, enableAllProjectMcpServers false, claude update), level 2 Trail of Bits config plugin, level 3 full container isolation via devcontainer.
+
+- **Tweet:** https://x.com/Axel_bitblaze69/status/2042704945200402649
+- **Link:** https://github.com/trailofbits/claude-code-devcontainer
+- **Filed:** [claude-code-devcontainer.md](./knowledge/tools/claude-code-devcontainer.md)
+- **What:** Practical hardening checklist for Claude Code: enable /sandbox, deny reads of SSH/AWS/.env and curl/ssh/git push in settings.json, add Trail of Bits' skills plugin, and run untrusted repos inside the Trail of Bits devcontainer for full isolation.
+
+## @kepano - Obsidian Reader adds interactive YouTube transcripts
+> I can't go back to the regular YouTube UI after this 😅
+>
+> Obsidian Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll. It feels so nice. https://t.co/zOc8y7z22R
+
+- **Tweet:** https://x.com/kepano/status/2042683393247449148
+- **What:** THIN: Obsidian CEO kepano shows Obsidian Reader turning YouTube transcripts into an interactive pane with scrubbing, highlighting and auto-scroll; only the short demo tweet is captured, no further detail.
+
+## @thatguybg - How a non-technical PM became a top 1% engineer with AI agents
+> https://t.co/85spxn8PXg
+
+- **Tweet:** https://x.com/thatguybg/status/2042660471988457688
+- **Link:** https://x.com/i/article/2038011090488242176
+- **Filed:** [how-i-became-technical-af.md](./knowledge/articles/how-i-became-technical-af.md)
+- **What:** Article-length playbook for non-engineers shipping production code with coding agents: map concepts to a familiar metaphor, copy existing open-source implementations via a knowledge base and research loop, and manage the agent Socratically.
+
+## @jasonlk - Which CRM in 2026/2027: follow your AI agents
+> There are now real, well-funded AI-native CRM platforms that didn't exist two years ago. Lightfield: no data entry, 2,500 companies in three months, $81M raised at $300M valuation, $36/user/month. Monaco (Sam Blond): AI-native CRM plus prospect database plus agents supervised by human salespeople.
+>
+> *Quoting @jasonlk:* (his own SaaStr article "Which CRM Should You Use in 2026/2027?")
+
+- **Tweet:** https://x.com/jasonlk/status/2042657198191579357
+- **Link:** https://x.com/i/article/2041181516747988992
+- **Filed:** [which-crm-2026-follow-agents.md](./knowledge/articles/which-crm-2026-follow-agents.md)
+- **What:** Jason Lemkin's SaaStr article concludes the CRM decision is now an AI infrastructure decision: big CRO-led teams stay on Salesforce, smaller teams on HubSpot, AI-native startups may start on Lightfield, Monaco or Aurasell, and each added agent deepens lock-in.
+
+## @0xSero - Local AGI stack: Hermes, Qwen, MoEs, vLLM self-hosting
+> We gotta talk about AGI 
+>
+> Sleepy dad day, but I wanted to talk about what I think makes up an "AGI"
+>
+> Local + Hermes + Qwen + MoEs + VLLM + Self hosting 
+>
+> I really went into the whole thing. https://t.co/K89eEaVIFM
+
+- **Tweet:** https://x.com/0xSero/status/2042637540235092424
+- **What:** Long-form post arguing a practical AGI-like setup is a self-hosted stack of Hermes agent, Qwen mixture-of-experts models and vLLM serving; the bookmark captures the thesis, not the full article text.
+
+## @patrickc - Stripe machine payments in private preview
+> Machine payments are starting to work: very small N, but we're seeing consistent, "real" daily use across a number of Stripe businesses.
+>
+> A number are also powered by @tempo, which is working well in production.
+>
+> Our machine payments support is currently in private preview because we want to go deep with partners to understand their use-cases as we refine our APIs: https://t.co/HcU1N0PhzK.
+>
+> Register on that page if interested. We'll get back very quickly.
+
+- **Tweet:** https://x.com/patrickc/status/2042632655020167204
+- **Link:** https://docs.stripe.com/payments/machine
+- **What:** Stripe CEO says machine payments (agent-to-service payments, also running on Tempo) show small but real daily usage, and the feature stays in private preview while Stripe works with partners on use cases and API design.
+
+## @tom_doerr - Hummingbot open-source high-frequency crypto trading bot framework
+> Open-source framework for high-frequency crypto trading bots
+
+- **Tweet:** https://x.com/tom_doerr/status/2042621684763459608
+- **Link:** https://github.com/hummingbot/hummingbot
+- **Filed:** [hummingbot.md](./knowledge/tools/hummingbot.md)
+- **What:** Surfaces Hummingbot, an open-source Python framework for building and running market-making and high-frequency crypto trading bots across exchanges.
+
+## @minara - Minara trading skill installs into Hermes agents
+> Minara's new home: Hermes Agents. Positions, trades, autopilot all work the same way. Install the Minara Skill with one command in a hermes agent: curl -fsSL <script> | bash
+
+- **Tweet:** https://x.com/minara/status/2042586398327476242
+- **Link:** https://raw.githubusercontent.com/Minara-AI/skills/main/scripts/hermes-minara-skill-setup.sh
+- **What:** Minara announces its crypto trading skill now runs in Hermes agents, installed by a shell script that sets up minara-cli and clones the skill into ~/.hermes/skills and updates Hermes memory.
+
+---
+
+# Thursday, April 9, 2026
+
+## @recogard - Prediction market datasets and backtesting repos for strategy research
+> 36 GB of real analytical data based on over 72 million Polymarket trades is available on GitHub and its absolutely free…
+>
+> This is the largest public prediction market dataset I have ever found.
+>
+> Here is how you can actually use it for trading on Polymarket, with a real example:
+>
+> This tool allows you to create your own strategies based on real historical market data. 
+>
+> For example, u can analyze how typically prices behave right before the market resolves or right after it opens. You can also explore which market categories are more volatile than others, or find patterns in price movement that…
+
+- **Tweet:** https://x.com/recogard/status/2042356576032358505
+- **Link:** https://github.com/jon-becker/prediction-market-analysis
+- **Filed:** [prediction-market-analysis.md](./knowledge/tools/prediction-market-analysis.md)
+- **What:** Points to two GitHub repos: a 36 GB prediction-market trade dataset with analysis code and a backtesting framework, useful for deriving and testing strategies from historical price behavior around market open and resolution.
+
+## @zarazhangrui - Frontend Slides skill now in AnyGen for HTML presentations
+> Don't make PowerPoints. Make HTMLs. Frontend Slides (13k+ stars on GitHub) is now a feature in AnyGen. HTML slides are editable, sharable, downloadable as PDF.
+
+- **Tweet:** https://x.com/zarazhangrui/status/2042339116894032157
+- **Link:** https://www.anygen.io/home?type=frontend_slides
+- **What:** Announces that the popular Frontend Slides agent skill is now a web feature in AnyGen, letting non-coders generate editable, shareable HTML slide decks that export to PDF without needing a coding agent.
+
+## @laogui - GitButler raises $17M Series A for AI-era Git client
+> GitHub 联合创始人 Scott Chacon 的新项目 GitButler 刚刚宣布完成 1700 万美元 A 轮融资！
+>
+> GitButler 是一款为现代 AI 编程工作流打造的创新型 Git 客户端（支持桌面端、CLI 以及全新的终端 TUI）,专为 AI Agent 时代设计 — 不只是给人用，也给 AI 用。
+>
+> 它不是"更好的 Git"，而是在重新思考下一代软件应该怎么被构建。
+>
+> 它的核心优势在于打破了传统的分支工作流，支持并行分支（Parallel Branches）和堆叠分支（Stacked Branches）。开发者可以在同一个工作区同时推进多个功能的开发（例如边修 Bug 边做新功能），彻底告别繁琐的 stash 和分支切换。此外，它深度集成了 Claude 等 AI 助手，能自动生成分支名、提交信息，并支持无限撤销与轻松的提交编辑。
+>
+> 在 UI 层面，GitButler 的设计极具现代感与实用性：采用独特的水平滚动视图，将未分配的更改、多个虚拟分支并排清晰展示，视觉层级分明。
+>
+> *Quoting @gitbutler:* We’ve raised > *Quoting @gitbutler:* We've raised $17M to build what Git should be next.
+7M to build what comes after Git
+>
+> https://t.co/pchDWOczRO
+
+- **Tweet:** https://x.com/laogui/status/2042277952877125708
+- **Link:** https://blog.gitbutler.com/series-a
+- **What:** Chinese-language summary of GitButler's $17M Series A: a Git client rebuilt for humans and AI agents, with parallel and stacked branches in one workspace, AI-generated commit messages, and undo; the quoted GitButler post links the funding announcement.
+
+---
+
 # Saturday, February 21, 2026
 
 ## @bcherny - Subagent Worktrees for One-Shot Batch Migrations
