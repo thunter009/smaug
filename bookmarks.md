@@ -4046,6 +4046,26 @@
 ---
 
 # Tuesday, September 1, 2026
+## @theplgeek - skill-cabinet v0.5.0 catalog and cleanup tool for installed agent skills
+> skill-cabinet@latest https://t.co/tG4US2xlIG
+
+- **Tweet:** https://x.com/theplgeek/status/2094887156992864279
+- **Link:** https://github.com/subsy/skill-cabinet/releases/tag/v0.5.0
+- **What:** skill-cabinet (npx skill-cabinet, Node 20+) runs a local server that scans agent skill folders (.agents, .claude, .codex, .cursor, plugins, Hermes) and lets you read frontmatter, spot duplicates, broken links and risky content, and quarantine or delete skills. v0.5.0 release announced.
+
+## @Voxyz_ai - Simon Willison's LLM cliche highlighter flags AI writing tells beyond em dashes
+> You deleted em dashes. still reads like AI. 38 https://t.co/lkAJNIsVhM
+
+- **Tweet:** https://x.com/Voxyz_ai/status/2094870408608784502
+- **Link:** https://tools.simonwillison.net/llm-cliche-highlighter
+- **What:** Browser tool by Simon Willison that highlights sentences matching known LLM cliche patterns, drawn from Wikipedia's Signs of AI writing guide, including chain patterns like "no X, no Y" with item-count badges. Has a pattern panel, load-from-URL, and in-page self-tests; useful for editing AI prose beyond just removing em dashes.
+
+## @tobi - Fine-tuned 0.8B Shopify model beats GPT 5.6-sol xhigh on a narrow task
+> Training tiny models special purpose use cases works so incredibly well if you great self improving recursive flywheel. Shopify ML team is on fire. finetuned 0.8b model beats GPT 5.6-sol xhigh in very specialized task.
+
+- **Tweet:** https://x.com/tobi/status/2094808564355191249
+- **What:** Tobi Lutke says Shopify's ML team fine-tuned a 0.8B-parameter model that outperforms GPT 5.6-sol at xhigh reasoning on a specialized task. His claim is that small purpose-built models work very well when paired with a self-improving recursive data flywheel.
+
 
 ## @codyschneider - Marketing Engineer Playbook: Agent-Run Paid Ads, SEO, Link Building, Cold Outbound
 > if your "marketing engineer" doesn't know what to build first please for the love of god fire them because they're fleecing you... everything below is just agents, agents are just code with a thinking loop, connected to a live data stream they are making decisions on. To do everything below you need to give your coding agent access to: data pipeline, data warehouse, cloud server, media storage, Postgres databases for agents, cron jobs, app authentication, sharable links, git origin, API gateway (Nano banana, Apollo IO, Seed dance, Apify etc). Paid ads (Google: bottom-funnel keyword families with LLM-judged negatives; Facebook: Advantage+ broad CBO on deepest ~50/week event; LinkedIn: remixed viral creator posts as thought-leadership ads), SEO (X vs Y, alternatives, monthly refresh), AI search is just SEO, link building via better versions of linked content, cold email (engager extraction, waterfall enrichment, Instantly, ~$100/mo for 10k emails).
@@ -4132,6 +4152,68 @@
 ---
 
 # Monday, August 31, 2026
+## @analogalok - TimesFM-3 as a forecasting tool for AI agent stacks (330M params, local)
+> We're building AI agents can browse web write code, but Google just gave them ability predict future. TimesFM-3. 330M parameter foundation model does zero shot multivariate forecasting. it casually smokes Amazon's Chronos 2 Toto 2.0 across all major benchmarks. (benchmarks in replies) Why huge AI agents: Instead forcing LLM guess business trends, you now route time series data TimesFM-3. Give agent past sales, upcoming promotions, weather forecasts, generates entire future timeline in single forward pass. At just 330M parameters, you run locally right alongside favorite LLM. AI agent stack just leveled up. Who's building workflow weekend?
+>
+> *Quoting @GoogleResearch:* Introducing TimesFM-3, state-of-the-art time series foundation model that enables accurate multivariate time series forecasting in single forward pass.
+
+- **Tweet:** https://x.com/analogalok/status/2094507488980955514
+- **Quoted:** https://x.com/GoogleResearch/status/2094483372718580066
+- **Link:** https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/
+- **What:** Frames TimesFM-3 (330M params, claimed to beat Amazon's Chronos 2 and Toto 2.0) as a tool agents should call for forecasting rather than having an LLM guess trends. Feed sales history, promotions and weather, get the whole future timeline in one pass, running locally beside the LLM.
+
+## @GoogleResearch - TimesFM-3 zero-shot multivariate time series forecasting model
+> Introducing TimesFM-3, state-of-the-art time series foundation model that enables accurate multivariate time series forecasting in single forward pass, significantly outperforming other forecasting models across major benchmarks.
+>
+> More on blog →https://t.co/uSlnIdUJ4Q
+
+- **Tweet:** https://x.com/GoogleResearch/status/2094483372718580066
+- **Link:** https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/
+- **What:** Google Research announces TimesFM-3, a zero-shot foundation model for multivariate time series forecasting that predicts a full horizon in one forward pass and claims to beat other forecasters on major benchmarks. Blog page content did not extract beyond navigation, so details come from the tweet.
+
+## @CaryPalmerr - Puppetmaster: durable agents that skip re-exploring a codebase, 1500+ concurrent
+> *Replying to @elshayib_:* @CaryPalmerr What does it do
+>
+> It gets rid subagents + transcripts makes all agents durable. So you agent explore codebase, re-explore same codebase 0 tokens forever after. also scales naturally... more workers in parralel, smaller slice codebase graph + context + task. Puppetmaster is allows me do 1500+ agents concurrently. @grok can give more deets. https://t.co/zpson0NxFX
+>
+> *Quoting @CaryPalmerr:* @noahinsf 1000 concurrent agent demo
+
+- **Tweet:** https://x.com/CaryPalmerr/status/2094482347181674603
+- **Parent:** https://x.com/elshayib_/status/2094481029918601366
+- **Quoted:** https://x.com/CaryPalmerr/status/2093538566789824755
+- **What:** Cary explains Puppetmaster, an agent orchestrator that replaces subagents and transcripts with durable agents that keep a codebase graph, so repeat exploration costs zero tokens. Work splits into smaller codebase slices per worker, scaling to 1500+ concurrent agents (up from a prior 1000-agent demo).
+
+## @mikestrives - Scraping ChatGPT's hidden background search queries for auto-published SEO content
+> ALRIGHT LOOK AT THIS then do this… 1. Go chatgpt 2. Submit search that's important niche 3. right click 4. Open Inspect Element 5. copy url id after /c/ 6. go network 7. paste it 8. click refresh 9. click orange brackets here 10. go response tab 11. search on "queries" 12. now you literally see searches chatgpt did in background 13. copy all 14. go site like rankdesk(.ai) 15. go blog posts 16. literally ask it write articles for all queries AI is going auto-write auto-publish them in upcoming days weeks Infinite SEO hack!
+
+- **Tweet:** https://x.com/mikestrives/status/2094480596617633973
+- **What:** Walkthrough for pulling the fan-out search queries ChatGPT issues behind a prompt, via browser devtools network tab and the conversation ID, then feeding them to an AI blog tool (rankdesk) to auto-generate and schedule articles targeting those queries. Treats ChatGPT's own query fan-out as a keyword source for GEO/SEO.
+
+## @theplgeek - Skill Cabinet: review and clean up locally installed agent skills
+> Folks, please enjoy Skill Cabinet. 🗄️
+>
+> npx skill-cabinet
+>
+> If you're anything like me, at some point you're local skills situation has gotten somewhat messy. 
+> Even if you're organised and managing them through Git you'll probably still be installing stuff locally just to test out and need a periodic cleanup.
+> This is a little app that looks across all the different places you've got skills installed to on your local fs and lets you review them and clean them up if you want.
+>
+> https://t.co/d3j7OYjfUJ
+
+- **Tweet:** https://x.com/theplgeek/status/2094426831524888709
+- **Link:** https://github.com/subsy/skill-cabinet
+- **What:** Local web app (npx skill-cabinet) that scans every agent skill drawer (.claude, .agents, .codex, .cursor) and shows frontmatter, duplicates, broken links and risk. Lets you quarantine reversibly or delete skills to clean up clutter.
+- **Filed:** [skill-cabinet](./knowledge/tools/skill-cabinet.md)
+
+## @doodlestein - Prompt to make agents design agent-ergonomic, agent-intuitive systems
+> This prompt is like some kind of magic spell. activates something really deep inside GPT Pro that makes everything click for it. This is how you get next-level systems for agents. See resulting change in plans for two new projects (you can guess what they're about): https://t.co/ow77UtZa1V
+>
+> *Quoting @doodlestein:* Agent Coding Pro Tip: After you've gotten an agent (hopefully a frontier one, like Fable Max or GPT Pro) to devise a plan for a new project, follow up with this prompt to see magic: "OK, now I want you to think deeply about how to make this entire system agent-intuitive, agent-ergonomic, agent-accretive as you possibly can imagine. Put yourself in the driver's seat and imagine YOU are the one using this system, driving it. What would most enable you to do an awesome job understanding the situation accurately and optimally controlling everything to drive the best, most accurate results possible, with the least expenditure of resources? Then make all requisite changes to the various design documents and plans accordingly. Don't just think of the project as an assemblage of various parts and components: really try to profoundly and deeply conceptualize the synthetic SYSTEM as maximally coherent, cohesive, modular, interconnected, forming a tower of linked abstractions maximally legible to you as an agent. Really ruminate and meditate on all of this incredibly deeply before responding or taking any actions."
+
+- **Tweet:** https://x.com/doodlestein/status/2094376160884871438
+- **Quoted:** https://x.com/doodlestein/status/2094288037458882668
+- **What:** Follow-up prompt for frontier-model planning: after an agent drafts a project plan, ask it to redesign the system from the agent-as-driver view (ergonomic, modular, a legible tower of abstractions) and update the plan docs. Emanuel says it markedly improved plans for two new projects.
+
 
 ## @philipkiely - Inference Engineering book published as LLM-readable text
 > Teach your agents inference.
@@ -4157,7 +4239,394 @@
 
 ---
 
+# Sunday, August 30, 2026
+## @HowToPrompt__ - FreeToken: Berkeley engine runs 753B MoE models on a single GPU
+> You can now run 753B parameter model on single GPU. UC Berkeley open-sourced FreeToken. local LLM inference engine runs 2-4x faster than Ollama.
+>
+> - runs Qwen3.6-35B on 8GB
+> - runs DeepSeek 284B on 32GB
+> - runs GLM-5.2 753B on 96GB
+>
+> it splits every token's expert misses between GPU and CPU in real-time, based on exact machine's bandwidth. no rented cluster. no API bill. no $30k/month cloud spend. 100% Open Source.
+
+- **Tweet:** https://x.com/HowToPrompt__/status/2094252087941157348
+- **What:** Claims UC Berkeley's open-source FreeToken engine runs huge mixture-of-experts models on consumer hardware at 2-4x Ollama speed. It dynamically splits expert-cache misses between GPU and CPU per machine bandwidth; the memory figures are the tweet's claims, unverified.
+
+## @tom_doerr - Open-source Google Maps scraper for lead generation
+> Extracts over 50 data points from Google Maps listings including business emails, phone numbers, and social profiles.
+>
+> https://t.co/MZm3d0Oonv https://t.co/xAnGHVaWYe
+
+- **Tweet:** https://x.com/tom_doerr/status/2094111226766807158
+- **Link:** https://github.com/omkarcloud/google-maps-scraper
+- **What:** omkarcloud/google-maps-scraper (3.8k stars) scrapes Google Maps listings for 50+ fields including emails, phones and social profiles, with enrichment, API access and no recurring fees. Aimed at lead generation workflows.
+
+## @sudoingX - Qwen 3.8 27B dense as the most useful local model
+> i run local models every day, from 8gb cards to 24gb, to 2x dgx spark 256gb unified, to a 1tb supercluster. out of everything i serve, most useful model to me right now is qwen 3.8 27b dense. it fits any 24gb vram card, runs easily on my rog 5090 laptop, and it just delivers, day in and day out. truly, qwen 3.8 27b dense is my pick on any day under the sun.
+
+- **Tweet:** https://x.com/sudoingX/status/2094079848180597211
+- **What:** Practitioner pick after serving local models across 8 GB cards up to a 1 TB cluster: Qwen 3.8 27B dense is the daily driver. It fits any 24 GB VRAM card and runs on a 5090 laptop, so it is the practical sweet spot for local use.
+
+## @pcshipp - App pricing strategy video for new iOS developers ($150/day)
+> I'm new to iOS development, and I had zero knowledge about how iOS marketing works. I spent 14 minutes and 46 seconds watching this video
+>
+> He literally saved me months of time with a 14 minute video He is sharing the reality guys.
+>
+> *Quoting @DanKulkov:* app pricing that makes $150 per day https://t.co/IX61myru3n
+
+- **Tweet:** https://x.com/pcshipp/status/2094071631945912534
+- **Quoted:** https://x.com/DanKulkov/status/2093257679447978298
+- **What:** Endorsement of a roughly 15-minute video by Dan Kulkov on iOS app pricing and marketing, said to save a newcomer months. The quoted tweet claims a pricing approach earning $150 per day; video content itself was not available, so details are unverified.
+
+## @WescheNex1q - Qwen3.8-Flash-Next at 68 tok/s on M4 Max via oMLX native MTP
+> Mac recipe: Qwen3.8-Flash-Next 
+> Average 69tok/s
+>
+> 1.86x faster on my 128GB M4 Max Mac Studio: 36.64 → 68.31 tok/s, +86.4%, with 97.55% MTP acceptance. A/B correctness checks held; non-MTP Spark Bench baseline: 91.8.
+>
+> Full oMLX config, rollback, scripts + caveats:
+> https://t.co/ETrZ0pfljZ
+
+- **Tweet:** https://x.com/WescheNex1q/status/2094049767428935857
+- **Link:** https://github.com/Weschera/qwen38-flash-next-omlx-mac
+- **What:** Deployment guide for running Qwen3.8 Flash Next (oQ4e, ~104 GB) on a 128 GB M4 Max in oMLX using embedded multi-token-prediction at depth 6 with aggressive Burst Decode. Full 152-transcript Spark Bench shows quality unchanged (TrueScore 91.8 to 91.9) while decode speed nearly doubles.
+
+## @SDDFounder - HeliosGen: open-source self-hosted alternative to Higgsfield's $120 Seedance 2.5 unlimited
+> You better use this open source one
+> 
+> https://t.co/6xxMCmXfxZ https://t.co/nVsEUzMKKR
+>
+> *Quoting @david_attisaas:* higgsfield released seedance 2.5 unlimited usage for $120 a day 🫥 https://t.co/IqgqRTT3e2
+
+- **Tweet:** https://x.com/SDDFounder/status/2093966937554403486
+- **Quoted:** https://x.com/david_attisaas/status/2093722845390012898
+- **Link:** https://github.com/segfault42/heliosgen
+- **What:** Recommends HeliosGen, a free open-source desktop AI image/video generation app (Tauri, TypeScript, 3k stars), over paying Higgsfield $120 for unlimited Seedance 2.5. Bring your own kie.ai API key; generations, uploads and workflows stay in a local database. macOS dmg available, unsigned.
+
+---
+
+# Saturday, August 29, 2026
+## @Oluwaphilemon1 - 16GB Mac can run 27B vision model via MLX DWQ quant
+> Qwen3.8-27B just got a lot more interesting for Mac users.
+> 
+> You can now run the vision version of Qwen3.8-27B locally on a 16GB Mac using MLX.
+> 
+> That is a pretty big deal for local AI.
+> 
+> The full model is far too large for a 16GB machine in its original form, but the new quantized versions range from 29.5GB down to just 11.8GB.
+> 
+> That puts the smaller builds within reach of Macs with limited unified memory.
+> 
+> The standout is:
+> 
+> AD 3.50bpw DWQ
+> → 12.7GB
+> → Vision support
+> → 27B parameters
+> → MLX local inference
+> → 79.6% next-token agreement with the original BF16 model
+> 
+> That last number is especially interesting.
+> 
+> Quantization isn’t just about making a model smaller. The real challenge is reducing memory usage without destroying the model’s behavior.
+> 
+> Getting a 27B vision model down to roughly 12.7GB while retaining the same next-token choice as the BF16 model nearly 80% of the time shows how far these techniques have come.
+> 
+> And because Apple Silicon uses unified memory, you don’t have the traditional VRAM vs system RAM split you deal with on discrete GPUs.
+> 
+> So the practical takeaway is simple:
+> 
+> A 16GB Mac can now run a 27B vision model locally.
+> 
+> No cloud inference.
+> 
+> No API calls.
+> 
+> No dedicated GPU required.
+> 
+> Just Apple Silicon, MLX, and a heavily optimized quant.
+>
+> *Quoting @Oluwaphilemon1:* I’m pushing the uncensored Qwen3.8-27B into Blender for 3D modeling, and the results are way more interesting than I expected.
+> 
+> The model is running locally on a Ryzen AI Max+ 395, and I was mainly curious about two things:
+> 
+> Can a local 27B model actually handle a real Blender workflow?
+> How painful would the token generation speed be on this hardware?
+> 
+> The second one surprised me.
+> 
+> Token generation is considerably faster than I expected.
+> 
+> That matters because Blender tasks aren’t just about generating a few lines of Python. A serious 3D workflow can involve creating geometry, setting materials, arranging objects, adding modifiers, building scenes, checking the result, and iterating when something looks wrong.
+> 
+> A model that can generate and refine those steps quickly starts becoming genuinely useful as a local 3D assistant.
+> 
+> And because Qwen3.8-27B is running locally, the entire workflow stays on the machine.
+> 
+> No cloud API.
+> 
+> No uploading project files.
+> 
+> No waiting on a remote model for every Blender operation.
+> 
+> The interesting experiment now is seeing how far this can go.
+> 
+> Can it build complete scenes?
+> 
+> Can it create detailed procedural geometry?
+> 
+> Can it work with Blender’s Python API reliably?
+> 
+> Can it inspect its own results and fix mistakes?
+> 
+> If the generation speed keeps holding up, Qwen3.8-27B + Blender on Ryzen AI Max+ is looking like a capable local 3D workflow. https://t.co/dkFV8BAcH1
+
+- **Tweet:** https://x.com/Oluwaphilemon1/status/2093871114233454905
+- **Quoted:** https://x.com/Oluwaphilemon1/status/2093849662037930304
+- **What:** Quantized Qwen3.8-27B shrinks to about 12.7GB with MLX DWQ while matching BF16's next-token choice roughly 80% of the time, so a 16GB Apple Silicon Mac can run it locally with no cloud or GPU. Quoted tweet shows uncensored Qwen3.8-27B driving Blender 3D modeling locally on a Ryzen AI Max+ 395 with faster-than-expected token speed.
+
+## @buaaxhm - reverse-skill: AI skill router pack for reverse engineering and pentesting
+> 我太爱这个了
+> 太牛逼了
+> 
+> https://t.co/TDXOLFCH4j
+
+- **Tweet:** https://x.com/buaaxhm/status/2093815248751075547
+- **Link:** https://github.com/zhaoxuya520/reverse-skill
+- **What:** GitHub skill pack (43k stars, PowerShell) that routes AI coding clients (Claude Code, Kiro, Cursor, Cline) to reverse-engineering and authorized pentest toolchains. Bootstraps tools on demand and keeps a self-evolving knowledge base. Author is enthusiastic in Chinese.
+
+## @analogalok - Qwen 3.8 27B dense runs on 8GB VRAM laptop, beats cloud models on agentic index
+> Look at this leaderboard very carefully.
+> 
+> Qwen 3.8 27B (dense) is outranking GPT 5.6 Terra and DeepSeek V4 Pro on the Artificial Analysis Agentic Index (51 score).
+> 
+> And you can run this exact model on a $300, 8GB VRAM gaming laptop (RTX 4060, 3070, 5050, 5060, 2060 super, 2070 super etc.) at 5+ tokens/sec, running on a battery!
+> 
+> Let that sink in. A model beating frontier cloud models is running on budget consumer silicon without OOMing. Small quantization tax with IQ4_XS compared to the FP16 test run, but the performance to VRAM ratio is still insane.
+> 
+> If this is where we are today, where are we in 6 months? Opus 5 level agentic intelligence running fully offline on an 8GB GPU? It’s not an if, it’s a when.
+> 
+> Copy/paste llama.cpp flags to run it on 8GB right now:
+> 
+> .\llama-server -m Qwen3.8-27B-IQ4_XS.gguf -c 64000 --port 8080 -ngl 25 -ctk q4_0 -ctv q4_0 --threads 6 --threads-batch 8 --spec-type draft-mtp --spec-draft-n-max 2 --spec-draft-p-min 0.7
+> 
+> Grab @UnslothAI's Hugging Face GGUF in the first reply
+>
+> *Quoting @analogalok:* Running Qwen 3.8 27B Q4 on a single RTX 4060 (8GB VRAM) gaming laptop shouldn’t be physically possible.
+> 
+> You can now run this 27B dense beast locally with a massive 64,000 token context window (minimum requirement by hermes agent) on budget consumer hardware, without crashing into OOM hell.
+> 
+> A model that bests claude opus 4.6 in several benchmarks, now runs on a $300 GPU!
+> 
+> after benchmarking it on rtx 4090 (24 GB VRAM) yesterday, today i tested on an Intel i7 12700H rig with an 8GB VRAM card and only 16GB dual channel DDR4 RAM, PCIe 4.  
+> 
+> The breakthrough is using the new IQ4_XS quant by Unsloth (occupies just 14.6 GB on disk vs 16.7 GB for standard Q4_K_XL). 
+> 
+> By tuning hybrid CPU/GPU offloading and quantized KV cache, we unlocked deep context with usable generation speeds.  
+> 
+> Here are the numbers from a 4.5k real world prompt test: 
+> 
+> - Context Window: 64,000 tokens (-c 64000) 
+> - Prefill Speed: 150 tokens/sec 
+> - Decode Speed: 5 tokens/sec (steady generation via native MTP) 
+> 
+> The exact llama.cpp flags to run it right now:  
+> 
+> .\llama-server -m Qwen3.8-27B-IQ4_XS.gguf -c 64000 --port 8080 -ngl 25 -ctk q4_0 -ctv q4_0 --threads 6 --threads-batch 8 --spec-type draft-mtp --spec-draft-n-max 2 --spec-draft-p-min 0.7 
+> 
+> this occupies the vram completely.
+> 
+> Why this works: 
+> 
+> 1. `-ngl 25` offloads just enough layers to fill your 8GB VRAM without memory spillover. 
+> 
+> 2. `-ctk q4_0 -ctv q4_0` crushes the KV cache memory footprint. 
+> 
+> 3. Native MTP (`draft-mtp`) drafts candidate tokens ahead to keep CPU bound decode at a readable pace.  
+> 
+> Complete stress test benchmark suite for this setup drops tomorrow.  
+> 
+> Unsloths's Hugging Face GGUF link in the replies.
+> 
+> fire it up on your 8GB rig tonight. What budget GPU are you testing this on?
+
+- **Tweet:** https://x.com/analogalok/status/2093738539318116558
+- **Quoted:** https://x.com/analogalok/status/2089053511451541903
+- **What:** Claims Qwen 3.8 27B outranks GPT 5.6 and DeepSeek V4 Pro on the Artificial Analysis Agentic Index and runs at 5+ tok/s on 8GB GPUs via IQ4_XS GGUF. Quoted tweet gives llama.cpp recipe: -ngl 25, q4_0 KV cache, 64k context, native MTP speculative decoding (150 tok/s prefill, 5 tok/s decode).
+
+## @doodlestein - FrankenTTS: free open-source faster-than-real-time voice cloning app
+> The FrankenTTS app is looking good and is so much fun to play with. Will hopefully be out soon if Apple plays ball. 100% free and open-source, faster than real-time speech synthesis, high-quality voice cloning. Anyone else would try to sell this app. I don’t wtf I’m thinking tbh. https://t.co/ysNpWKybL5
+
+- **Tweet:** https://x.com/doodlestein/status/2093710684039073897
+- **What:** Jeffrey Emanuel previews FrankenTTS, an app for faster-than-real-time speech synthesis with high-quality voice cloning, released 100% free and open source pending Apple approval. He notes others would charge for it.
+
+---
+
+# Friday, August 28, 2026
+## @doodlestein - Pro tip: chain profiling and optimization skills for 5,000x speedups
+> Agent Coding Pro Tip:
+> 
+> It's WILD how quickly you can get crazy gains using this prompt (and the skills mentioned, from https://t.co/2ousdTizJE, naturally) using just Gemini 3.7 Flash, which is basically free, so cheap that it's a rounding error relative to the value of your time:
+> 
+> First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Then use /profiling-software-performance and then use /repeatedly-apply-skill at least 30 times sequentially to apply /extreme-software-optimization
+> 
+> ---
+> 
+> Just look at what it spit out on FrankenMarkdown in the last 20 minutes! And this was code written by Fable 5 and Sol... just a couple cool 5,000x+ performance gains, plus a few 2x or more. Easy. 
+> 
+> Computers are really fast when you use absolutely every trick in the book to make your code work well on modern hardware.
+
+- **Tweet:** https://x.com/doodlestein/status/2093542094023413828
+- **Link:** https://jeffreys-skills.md/
+- **What:** Prompt recipe: have a cheap model (Gemini 3.7 Flash) read AGENTS.md/README, then run /profiling-software-performance and loop /extreme-software-optimization 30+ times via /repeatedly-apply-skill. Claims 5,000x+ gains on FrankenMarkdown in 20 minutes; links to his paid skills catalog.
+
+## @clairevo - Claire Vo's favorite published bot templates after 48 hours
+> i've been 🔥🚀📈 @bot for the last 48 hours, here are my favorites published as bot templates:
+
+- **Tweet:** https://x.com/clairevo/status/2093496602522714362
+- **What:** Claire Vo shares a set of her favorite published templates for the "@bot" agent product after two days of heavy use. Tweet has no link or media, so the actual templates are not captured.
+
+## @simonw - LLM cliché highlighter grows to 38 patterns
+> My LLM cliché highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD
+
+- **Tweet:** https://x.com/simonw/status/2093277255438860358
+- **Link:** https://tools.simonwillison.net/llm-cliche-highlighter
+- **What:** Willison's browser tool flags sentences matching known LLM writing tells, including Wikipedia's Signs of AI writing, now at 38 patterns. Counts chain patterns like "no X, no Y", takes pasted text or a URL. Useful as a lint for AI-sounding prose.
+
+---
+
 # Thursday, August 27, 2026
+## @cbmenefee - Firecrawl Keyless: search and scrape with no API key, free
+> fyi - all Firecrawl endpoints are free and keyless ;)
+>
+> https://t.co/eTPG3XKzoz
+>
+> *Quoting @shengkunye:* We just killed Exa, Tavily, SerpAPI, and Brave. Your agent can now search & fetch any webpage for 100% FREE. Them: $7 per 1,000 searches. Us: $0. No subscriptions, no quotas. Humans search Google for free. Agents shouldn't have to pay either. Made possible by @Tiny_Fish and @MonidHQ.
+
+- **Tweet:** https://x.com/cbmenefee/status/2093108334664524231
+- **Quoted:** https://x.com/shengkunye/status/2093050916953903451
+- **Link:** https://www.firecrawl.dev/blog/firecrawl-keyless-launch
+- **What:** Firecrawl launched Keyless, letting agents search, scrape and interact with pages with no API key. Menefee notes it undercuts a rival's claim of free agent search versus paid Exa, Tavily, SerpAPI and Brave at about $7 per 1,000 searches.
+
+## @5harath - AEO as first growth channel, Gamma at $100M ARR
+> Gamma hit $100M ARR with AEO as their primary acquisition channel.
+>
+> a16z frames the category as disrupting the $80B SEO industry.
+>
+> If I were starting on growth from zero in 2026, I'd pick this channel first. It's where we spend a good chunk of our time at @WillowVoiceAI
+>
+> You don't have to figure it out alone. 8 tools that will help you master AEO:
+
+- **Tweet:** https://x.com/5harath/status/2093083591508893951
+- **What:** Argues answer engine optimization (getting cited by AI assistants) is the best 2026 growth channel, citing Gamma's $100M ARR and a16z's $80B SEO-disruption framing. Teases a list of 8 AEO tools, which is not captured in the bookmark.
+
+## @emollick - AI video generation (H3 Max) now faster than realtime playback
+> A line in AI video was crossed, in my experiments with just the web interface, H3 Max can now create reasonably high quality AI video in less time than it takes you to watch it. This is realtime from the moment I pushed the "generate" button (and also includes prompt enhancement) https://t.co/QdhXGsB5dL
+
+- **Tweet:** https://x.com/emollick/status/2093082102312923351
+- **What:** Mollick reports H3 Max generating reasonably high quality video in less time than the clip runs, measured from clicking generate and including prompt enhancement. Marks a latency threshold for interactive AI video. Demo video is attached but not captured.
+
+## @codermatt - Qwen 3.8-27B free on Groq at 450 tok/s
+> Qwen 3.8-27B is free on Groq and it's 450 tok/s.
+>
+> Not Grok. Groq.
+>
+> https://t.co/CsIOsozd8b
+> Model: qwen/qwen3.8-27b
+
+- **Tweet:** https://x.com/codermatt/status/2093077234538143908
+- **Link:** https://console.groq.com/home
+- **What:** Groq now serves Qwen 3.8 27B (id qwen/qwen3.8-27b) free at roughly 450 tokens per second. A cheap, fast open-weight option for agent and dev workloads. Not Grok from xAI.
+
+## @doodlestein - "Choose the best skills for me" meta-skill to tame skill overload
+> I've heard from a lot of people that I have too many skills on my site and it's overwhelming; they don't know which skill to use when. Paying users often feel like they're not getting as much out of the subscription as they could. Hence my latest skill:
+>
+> https://t.co/tHLZcLLZVF
+
+- **Tweet:** https://x.com/doodlestein/status/2093072629150142873
+- **Link:** https://jeffreys-skills.md/skills/choose-the-best-skills-for-me-to-run-in-this-project
+- **What:** Jeffrey Emanuel ships a meta-skill that inspects a project and recommends which of his many agent skills to run, answering user complaints of overload. Same skill is installed locally as choose-the-best-skills-for-me-to-run-in-this-project.
+
+## @ChrisSimpson - Google probes for privacy policy and terms pages as trust signal
+> Something worth knowing about your footer.
+>
+> Google will check whether you have a privacy policy and a terms of service even if you never link to them.
+>
+> When I say check, I mean it sends a URL request, a GET request, to see whether those pages are there.
+>
+> It's looking for whether this is an actual company. Do they have a terms of service. Do they have a privacy policy.
+>
+> These are common trust factors.
+>
+> So two things to go do. One, make sure both pages actually exist and load on your site. Two, put them both in your footer, on every page, where a visitor can find them as easily as Google can.
+>
+> The first business I checked in this audit had both, and it's a quick thing to confirm on your own site.
+
+- **Tweet:** https://x.com/ChrisSimpson/status/2093034650931474728
+- **What:** Local SEO claim that Google fetches privacy-policy and terms-of-service URLs directly, even unlinked, as legitimacy signals for a business. Action: confirm both pages load and link them in every footer. Claim is unverified.
+
+## @kwindla - PhoneLLM: Nemotron Nano 30B fine-tune for low-latency voice agents
+> Introducing PhoneLLM, an open model for voice agents. GPT 5.6 Terra performance on typical voice agent tasks at 1/3 the latency and 1/18 the cost. Voice agents need low latency plus very good tool calling and instruction following. PhoneLLM is a full-weights fine-tune of NVIDIA Nemotron Nano 30B trained on real-world telephone customer support use cases, with thinking disabled. TTFAT under 100ms server-side on a lightly loaded B200; 80+ concurrent agents on one B200 at P95 end-to-end TTFAT under 600ms, about $0.0025 per minute LLM cost. Weights on Hugging Face, one-click Modal deploy, starter repo in thread.
+
+- **Tweet:** https://x.com/kwindla/status/2093014818647339026
+- **What:** Open-weights voice-agent model that removes the latency-vs-capability tradeoff by fine-tuning a non-thinking Nemotron Nano 30B on customer-support calls. Claims parity with a frontier model on voice tasks, with benchmarks from real Pipecat pipelines.
+
+## @nickgraynews - 8 ways to get backlinks to a personal website for SEO and LLMs
+> if you have a personal website and want links to your site for LLMs and Google to find and index, here are 8 ways to get links to your personal website for SEO, AEO etc purposes: (1) personalwebsites.org free directory (2) slashfriends.org *needs a /friends page (3) nownownow.com *needs a /now page (4) create a profile link back to personal website (5) add your site link in your X profile (6) add your site link in your LinkedIn profile (7) another directory *needs /now page (8) profile link back. What else? First two are my own directories so I'm biased.
+
+- **Tweet:** https://x.com/nickgraynews/status/2092999394207342787
+- **Link:** https://personalwebsites.org/
+- **What:** Checklist of directories and profile placements that earn inbound links for a personal site. Several (slashfriends, nownownow) require a /friends or /now page, and the author discloses owning the first two.
+
+## @mertcobanov - Claude debloats a smart TV over ADB without root
+> (Turkish) Enabled developer options, told Claude to connect via adb and debloat the TV (clean everything hogging RAM). It started controlling the TV, deactivated apps, installed FLauncher, shortened animation durations. All without root. It runs smoother than when I first bought it 4 years ago, incredible. Definitely check it out.
+
+- **Tweet:** https://x.com/mertcobanov/status/2092980660386378154
+- **What:** Author gave Claude ADB access to an Android TV and had it disable RAM-hungry bloatware apps, install the FLauncher launcher and cut animation times, all without root. The 4-year-old TV now feels faster than new.
+
+## @levithefirst - 15 resources to stop websites looking vibecoded
+> if you are tired of websites looking vibecoded, here are 15 UI resources you need.
+>
+> 1 - ui-skills.com - design playbooks for humans and coding agents; audit UI, fix generic AI design, improve motion, accessibility. 2 - coss.com/ui - cal.com's production-ready design system, accessible React components. 3 - design-system checklist that stops agents creating random UI styles. 4 - 1,000+ free shadcn components (data grids, kanban, gantt). 5 - ready-made spring animations. 6 - browser-based icon designer. 7 - 256 prompts for UI sections. 8 - 99 CSS-only button interactions. 9 - 2,600+ examples from 95 real design systems. 10 - 88 production design systems with downloadable design.md files. 11 - fluid typography/spacing generator. 12 - design tokens. 13-15 - more copy-paste CSS and UI references.
+
+- **Tweet:** https://x.com/levithefirst/status/2092975925306507619
+- **Link:** https://www.ui-skills.com/
+- **What:** Curated list of design-system, component, prompt and token resources to give coding agents concrete UI targets instead of generic output. Key items: ui-skills playbooks, coss UI (cal.com's system), shadcn component libraries, and design.md collections.
+
+## @morganlinton - Pi lead engineer runs client work on two $20 DeepSeek plans
+> Let this sink in. Lead Engineer (super smart dude), does most of coding, on 2 x $20 DeepSeek plans. Still uses Fable, but sparingly. We're going to see a LOT more people do this, esp. as more powerful inexpensive models get released.
+>
+> *Quoting @pidotdev:* Lead Engineer, Scott Fryxell, used Pi to move most client work to DeepSeek, dipping into Fable only when necessary. By primarily using 'commodity models' he only needs two $20 plans for total usage.
+
+- **Tweet:** https://x.com/morganlinton/status/2092966000203579824
+- **Quoted:** https://x.com/pidotdev/status/2092954167690023124
+- **What:** Case study of an engineer using the Pi coding agent to shift most client coding to cheap DeepSeek plans, reserving the frontier Fable model for hard cases (about $40/month total). Linton predicts a broad move to inexpensive commodity models as they improve.
+
+## @kyronis_talks - Stremio + Torrentio as torrent-backed free streaming stack
+> Two Bulgarian friends killed the entire streaming industry.
+>
+> It's called Stremio + Torrentio. You get 4K content from Netflix, Disney+, Hulu, and HBO Max combined for free.
+>
+> Stremio is the player (Windows, macOS, Linux, Android, iOS, TV). Torrentio is the addon that scrapes every major torrent provider and delivers the best stream at 720p, 1080p or 4K. No account, no subscription, subtitles built in. MIT License. 100% Opensource.
+
+- **Tweet:** https://x.com/kyronis_talks/status/2092947743010685383
+- **Link:** https://github.com/Stremio/stremio-web
+- **What:** Promotes Stremio (open-source cross-platform media player, ~14.8k stars on GitHub) paired with the Torrentio addon, which aggregates torrent streams. The tweet is hype-heavy; the legality of the torrent sourcing is a caveat the post ignores.
+
+## @doodlestein - Adversarial "do you disagree?" review prompt for GPT-5.6 Sol xhigh
+> Here's a really useful prompt that works incredibly well with GPT-5.6 Sol xhigh (and probably Fable, too):
+>
+> I want you to meticulously and comprehensively study <whatever you want: code, a document, a skill, a diagram, etc>; do you see anything you disagree with? Anything that is obviously contradictory? Foolishly inconsistent? Misguided and unlikely to work in practice? Ask yourself WHY you feel that way and meditate and ruminate on all of it deeply and profoundly. Finally, explain your thought process and conclusions and your justifications/rationale for them, as well as your confidence in those (and also how you know you're confident, and how confident you REALLY are!). Important: don't disagree just to be disagreeable, it's OK to just agree if you think it's right!
+
+- **Tweet:** https://x.com/doodlestein/status/2092855990903267694
+- **What:** Reusable critique prompt that makes a model hunt for contradictions and impractical ideas in any artifact, then justify and calibrate its confidence. The closing clause guards against manufactured disagreement.
+
+## @LearnLoopz - [Media] Mobility routine video
+> My top mobility moves https://t.co/2XUBEeH52W
+
+- **Tweet:** https://x.com/LearnLoopz/status/2092832125955588208
+- **What:** THIN: Media-only tweet sharing a personal list of favorite mobility exercises, likely a short video or image demo. No text detail or link content is available to say which moves are covered.
+
 
 ## @jacob_posel - video-use + Codex for AI video editing
 > video-use + codex for video editing is mindblowingly good
@@ -4174,6 +4643,67 @@
 ---
 
 # Wednesday, August 26, 2026
+## @josephfwyer - Orwell's six writing rules as a fix for LLM-sounding prose
+> If you want people to read your stuff please follow Orwell's rules. These LLMs are not your friends. They write with so much damn passive voice, incoherent figures of speech, and unnecessary -ly words.
+>
+> Orwell's rules:
+> 1. Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.
+> 2. Never use a long word where a short one will do.
+> 3. If it is possible to cut a word out, always cut it out.
+> 4. Never use the passive where you can use the active.
+> 5. Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.
+> 6. Break any of these rules sooner than say anything outright barbarous.
+
+- **Tweet:** https://x.com/josephfwyer/status/2092819538505273544
+- **What:** Argues LLM prose suffers from passive voice, stale figures of speech and filler adverbs, and prescribes Orwell's six rules from "Politics and the English Language" as the editing checklist for anything meant to be read.
+
+## @yume_arasaki - Buyer's guide to new Macs for local AI: RAM over chip, used GPU alternatives
+> Should you preorder the new Mac for local AI?
+>
+> Be careful about hype vs reality, because in one day the Mac Studio M3 Ultra 512GB dropped from being worth $20,000 to being $3,000 overnight. I researched every tier of the new Mac mini and Mac Studio: every RAM SKU, what actually loads, predicted speeds with MTP, and what the same money buys used. Rule of thumb: buy the memory that holds the model; the chip name only tells you how fast it streams once it fits. macOS eats 8-12GB of unified memory before your model loads. [long article, truncated]
+
+- **Tweet:** https://x.com/yume_arasaki/status/2092767101039898681
+- **What:** Long guide to the new M6 Mini and M5 Pro/Max/Ultra Macs for local LLMs. Neural Accelerators speed prefill, bandwidth speeds decode, RAM decides fit. Recommends the 48-64GB Mini for 27B models, flags a CUDA tax on Macs, and prefers used 3090/4090s or DGX Sparks at many tiers. Predicts M5 Ultra 256GB runs V4-Flash Q4 at 40-50 tok/s.
+
+## @clairevo - Gamifying a 7-year-old's learning with a Codex-built XP app
+> How I AI: social engineer my 7 year old to independently do writing, math, piano, and physical exercise in exchange for "XP", screen time minutes, and unlocked characters/powerups.
+>
+> Built with @OpenAI Codex, deployed on @vercel
+>
+> *Quoting @elawless:* Woke up later than normal this morning, my 2nd grader was the only one up, he was at the table with a small lamp on, a book, and his pencil. He was calmly doing his homework, a day ahead of time, by himself. Amazing job @clairevo #sfusd
+
+- **Tweet:** https://x.com/clairevo/status/2092748207067705490
+- **Quoted:** https://x.com/elawless/status/2092708629803876420
+- **What:** Claire Vo built a kid-facing XP app with Codex and Vercel that trades chores and practice for screen time and unlockable characters. A parent's quote shows a 2nd grader doing homework a day early on his own after using it.
+
+## @s13k_ - Refactoring UI book packaged as a Claude Code skill
+> Turned the Refactoring UI book into a skill
+>
+> Drop it in, tell Claude to fix your ugly UI, watch it actually happen
+
+- **Tweet:** https://x.com/s13k_/status/2092746602918080995
+- **Link:** https://github.com/s0xDk/refactoring-ui-skill
+- **What:** Claude Code skill encoding Wathan and Schoger's Refactoring UI rules: fixed scales for spacing, type, color and shadow, hierarchy via weight and color, and depth via emulated light. Lets Claude turn vague "looks off" complaints into concrete CSS fixes (664 stars).
+
+## @Tailscale - Aperture GA: AI agent gateway with tokens, MCP controls, Projects
+> Aperture is officially GA.
+>
+> Give AI agents the models, tools, and infrastructure they need without handing over API keys or unrestricted access. Now with built-in tokens, Tailscale MCPs, Projects, and more.
+>
+> Agentic AI, with Tailscale controls built in → https://t.co/DOI5dmozsv
+
+- **Tweet:** https://x.com/Tailscale/status/2092673771672900032
+- **Link:** https://tailscale.com/blog/aperture-ga
+- **What:** Tailscale's Aperture reaches general availability as a gateway that lets agents use models and tools without holding raw API keys. GA adds built-in model tokens, Tailscale MCP endpoints, chat Projects and fine-grained tool permissions.
+
+## @mstockton - Prompting top models to self-assess complexity and research before implementing
+> I'm sorry, but it turns out typing things like this into the best models with the highest effort actually does work most of the time. It is truly wild that this is where we are now with software development:
+>
+> "This sounds like a great idea, are you confident you could implement it with no unnecessary complexity and that it is highly likely to work? If not, what else would you do to research it first?"
+
+- **Tweet:** https://x.com/mstockton/status/2092664643558785231
+- **What:** Shares a simple prompt template that asks a frontier model to judge its own confidence and propose research before coding. Claims it reliably cuts needless complexity at highest reasoning effort.
+
 
 ## @Shpigford - AEO audit skill that tests ChatGPT, Claude, Gemini and Perplexity visibility
 > just dropped one of the biggest skills i've ever built for the initial commit club!
