@@ -1,3 +1,251 @@
+# Tuesday, October 20, 2026
+
+## @ataiiam - CopilotKit repo for full-stack agentic apps (Open Intelligent UI thread close)
+> *Replying to @ataiiam:* It can pick the format for you. Text when that’s enough. A timeline, chart or table when that helps more.
+>
+> If you want to build full-stack agentic apps, check out the @CopilotKit repo:
+> https://t.co/Mgq47VRzQZ
+
+- **Tweet:** https://x.com/ataiiam/status/2112542630970286178
+- **Link:** https://github.com/CopilotKit/CopilotKit
+- **Filed:** [copilotkit.md](./knowledge/tools/copilotkit.md)
+- **What:** Closing tweet of the Open Intelligent UI thread, pointing to CopilotKit (about 38k stars, TypeScript), a frontend stack for agents and generative UI with shared state, human-in-the-loop and the AG-UI protocol. Thread pitches generative UI as the default app interface by 2027.
+
+## @ataiiam - Intelligent UI picks the output format (text, timeline, chart, table)
+> *Replying to @ataiiam:* Intelligent UI renders with your components. Your design system, data, and actions.
+>
+> It can pick the format for you.
+>
+> Text when that’s enough.
+> A timeline, chart or table when that helps more. https://t.co/HjyJqWh1xx
+
+- **Tweet:** https://x.com/ataiiam/status/2112542619205358007
+- **What:** THIN: Fourth demo in the thread. The agent chooses the response modality itself, plain text when sufficient and a timeline, chart or table when that communicates better, so UI form follows content.
+
+## @ataiiam - Intelligent UI renders with your own design system and data
+> *Replying to @ataiiam:* Need a tool for the moment? Just ask. It builds it right in the chat, ready to use. Then "throw" it away when you're done.
+>
+> Intelligent UI renders with your components.
+>
+> Your design system, data, and actions. https://t.co/ygirWehlGx
+
+- **Tweet:** https://x.com/ataiiam/status/2112542589530628118
+- **What:** THIN: Third demo in the thread. Generated UI is composed from the host app's own components, design system, data and actions rather than a generic chat skin, which is CopilotKit's no-lock-in pitch.
+
+## @ataiiam - Intelligent UI demo: disposable tools generated in chat
+> *Replying to @ataiiam:* Some answers are easier to see than to read. Ask how something works and get something you can play with. (Example: Monty Hall problem)
+>
+> Need a tool for the moment? Just ask.
+>
+> It builds it right in the chat, ready to use.
+> Then "throw" it away when you're done. https://t.co/uz2rnDdvGd
+
+- **Tweet:** https://x.com/ataiiam/status/2112542555258966249
+- **What:** THIN: Second demo in the Open Intelligent UI thread. The agent builds a throwaway, single-purpose tool inline in the chat on request, usable immediately and discarded after, framing UI as ephemeral and on-demand.
+
+## @ataiiam - Intelligent UI demo: chat answers as interactive Monty Hall simulation
+> *Replying to @ataiiam:* In 2027, every app will ship Intelligent UI. We open sourced it: Open Intelligent UI, built with @CopilotKit (#5 Trending, 4k Github stars). Works with any LLM, agent framework, your own components and design system, every kind of generative UI.
+>
+> Some answers are easier to see than to read.
+>
+> Ask how something works and get something you can play with.
+>
+> (Example: Understanding the Monty Hall problem) https://t.co/Dt4rylGu10
+
+- **Tweet:** https://x.com/ataiiam/status/2112542525441687575
+- **What:** THIN: Part of a thread launching Open Intelligent UI (CopilotKit). The demo shows an agent answering "how does X work" with a playable interactive widget, here a Monty Hall simulator, instead of a text explanation.
+
+## @ataiiam - Open Intelligent UI: CopilotKit's open-source generative UI chat
+> In 2027, every app will ship Intelligent UI.
+>
+> We open sourced it👇 Open Intelligent UI, built with @CopilotKit (#5 Trending, 4k Github stars)
+>
+> CopilotKit makes Intelligent UI possible in ANY app, and works with: any LLM, any agent framework, your own components and design system, every kind of generative UI. We built it around flexibility and no lock-in.
+>
+> 👉 Try Open Intelligent UI: https://t.co/PBH47Fhvhq
+
+- **Tweet:** https://x.com/ataiiam/status/2112542494936478020
+- **Link:** https://github.com/CopilotKit/OpenIntelligentUI
+- **Filed:** [openintelligentui.md](./knowledge/tools/openintelligentui.md)
+- **What:** CopilotKit open-sourced a chat UI where the agent chooses text, a native component, or a generated interactive tool per answer (Monty Hall simulations, throwaway calculators, charts). Thread replies stress rendering from your own component registry to keep design review and UI continuity.
+
+## @zachdavis - Hacking a cheap Android smart photo frame into a dashboard with Codex
+> I also hacked a cheap smart frame and:
+> - Chose a different frame to get white and save myself $5. Low sample size but I'm half convinced you could choose any frame?
+> - Used codex instead of claude code
+> - I had a much easier time than @clairevo 😂
+> - Spent like 30 minutes and had something I was very happy with
+> - Hardest part was finding a usb-c to usb-a dongle in my house so I could connect my macbook to the frame
+> - Did not record a video
+> - Would highly recommend the instructions at https://t.co/KThcKtLYwU makes it so easy
+>
+> *Quoting @clairevo:* Joined the @wesbos School for Parents Who Hack Smart Frames Good and Wanna Learn to Hack Other Hardware Stuff Good Too. What I built and how I did it (incl taking down our home network for 30 seconds & getting cyber blocked by Claude)
+
+- **Tweet:** https://x.com/zachdavis/status/2112380499679400104
+- **Link:** https://github.com/wesbos/photo-frame-dashboard
+- **Filed:** [photo-frame-dashboard.md](./knowledge/tools/photo-frame-dashboard.md)
+- **What:** Zach replicated Wes Bos's photo-frame hack with Codex in ~30 minutes, noting a different frame model worked and the only snag was a USB-C to USB-A adapter. Quoted Claire Vo's build had more friction (home network outage, Claude safety refusals), showing the repo's agent-driven instructions work across tools.
+
+---
+
+# Monday, October 19, 2026
+
+## @zoltanszogyenyi - TypeUI: curated accessibility-based UI/UX rules as AI context
+> ladies and gentlemen...
+>
+> I present you the ULTIMATE resource to improve your website's UI/UX with context for AI based on hundreds of hours of human research: https://t.co/rYUnJ1mQdv
+>
+> it is based on battle tested accessibility rules and it fixes all of your UI's spacing, fonts, typography, colors, positioning elements
+>
+> why is this better than anything else? because @roberttanislav, a legendary designer with 10+ years experience has worked on this for over 2 months by selecting the RULES THAT MATTER
+>
+> you can either: 1. select the type of element/context you want to improve for your UI (eg. color contrasts, spacings, font weights, etc) 2. or just download the full context (over 119 markdown files) and feed it to your AI
+
+- **Tweet:** https://x.com/zoltanszogyenyi/status/2112298029990502527
+- **Link:** https://typeui.sh/ui-foundations/configurator
+- **What:** TypeUI is a designer-curated set of accessibility-grounded UI rules (spacing, type, color, positioning) packaged as 119+ markdown files to feed AI coding tools, either picked per element type via a configurator or downloaded whole. Link page was blocked by a Vercel checkpoint, so details come from the tweet only.
+
+## @XWorldCuisines - Lemon-leek orzo with herbed chicken meatballs recipe
+> Lemon-Leek Orzo with Herbed Chicken Meatballs
+>
+> Ingredients
+> For the Chicken Meatballs: 1lb (454 g) ground chicken, ⅓ cup panko, ½ grated yellow onion, 3 garlic cloves, 2 tbsp dill, 2 tbsp parsley, 1 egg, 1 tsp dried oregano, salt, pepper, olive oil.
+> For the Lemon-Leek Orzo: 1 cup dry orzo, 1 large leek, 2 garlic cloves, ⅓ cup dry white wine, 2½ to 3 cups warm low-sodium chicken broth, 2 cups baby spinach, zest of 1 lemon.
+> For Serving: lemon juice, dill, parsley, optional olive oil.
+> 🎥 yarindanieli | IG
+
+- **Tweet:** https://x.com/XWorldCuisines/status/2112288487625855416
+- **What:** Ingredient list for a one-pot weeknight dish: herb-packed chicken meatballs served over orzo cooked risotto-style with leek, white wine, broth, spinach and lemon zest. Capture only; no method steps in the tweet (video credited to yarindanieli on IG).
+
+## @charliermarsh - Telling models to mine published literature for ideas to productionize
+> A real thing I'm doing now is telling the models to find interesting ideas from published literature that we can productionize to improve our software, it's awesome lol
+>
+> *Quoting @charliermarsh:* We are living in such an incredible time. You can get Astra to discover and one-shot something called "Minato-Morreale ISOP recurrence" to make your code ~12,000x faster.
+
+- **Tweet:** https://x.com/charliermarsh/status/2112287209365839884
+- **What:** Charlie Marsh describes a workflow of having AI models mine academic literature for techniques to ship in production software. His quoted tweet gives the proof point: Astra found and one-shot the Minato-Morreale ISOP recurrence, making code ~12,000x faster.
+
+## @stevekaliski - Stripe MCP server and CLI as an agent "business factory"
+> The @stripe mcp server (and cli) is quickly becoming business factory.
+>
+> With https://t.co/cEBacHTVeH your agent can...
+>
+> - Help you form company via @atlas
+> - Build integration start accepting payments
+> - Manage funds Treasury
+> - Handle customer support inquiries
+> - Monitor your business performance
+>
+> Read more about how you go from idea company just prompt: https://t.co/Ygld0lf907
+
+- **Tweet:** https://x.com/stevekaliski/status/2112264001304342624
+- **Link:** https://stripe.dev/blog/go-from-idea-to-company-with-atlas
+- **Filed:** [stripe-atlas-cli-idea-to-company.md](./knowledge/articles/stripe-atlas-cli-idea-to-company.md)
+- **What:** Stripe's MCP server and CLI let an agent incorporate via Atlas, build payments integrations, manage Treasury, handle support and monitor performance. The linked blog shows going from idea to company entirely from the dev workflow.
+
+## @NewOrleansVC - CleanYourTV: Claude Code prompt that debloats Android/Google TVs
+> TV manufacturers make more on services/data than margin in TV set.
+
+- **Tweet:** https://x.com/NewOrleansVC/status/2112255663497703842
+- **Link:** https://x.com/i/article/2112174627925705109
+- **Filed:** [cleanyourtv.md](./knowledge/articles/cleanyourtv.md)
+- **What:** Commentary that TV makers earn more from ads/data than hardware, attached to an article on CleanYourTV: a paste-into-Claude-Code prompt that disables bloat and ads over adb with no root and one-line restore. Grew to 30 TVs, 16 brands and 36 merged PRs in two days.
+
+## @kunchenguid - Nightly 3am agent loop that audits your own dev velocity
+> sharing very high value loop i run everyday at 3am
+>
+> "audit my development work in last 24h, identify bottlenecks that slowed down my velocity, propose improvements"
+>
+> it feels great to see your work gets smoother every day
+
+- **Tweet:** https://x.com/kunchenguid/status/2112245086725841047
+- **What:** Self-improvement pattern: schedule an agent daily to review the last 24h of your own development sessions, find what slowed you down, and propose fixes. Compounds into a smoother workflow over time; easy to replicate with a cron-triggered prompt.
+
+## @marklaunches - Three open-source security tools for fast-shipping AI-assisted teams
+> So many vulnerabilities being introduced across projects due engineering velocity.
+>
+> 3 open-source repos to keep yourself in check:
+>
+> 1) Cloudflare security audit ~ https://t.co/gR3xkAezqT
+>
+> 2) NVIDIA skill inspector ~ https://t.co/v2Y6rGV3Db
+>
+> 3) Strix agent penetration testing ~ https://t.co/8ywqzJpMfF
+
+- **Tweet:** https://x.com/marklaunches/status/2112233641988493484
+- **Link:** https://github.com/cloudflare/security-audit-skill
+- **Link:** https://github.com/NVIDIA/SkillSpector
+- **Link:** https://github.com/usestrix/strix
+- **Filed:** [cloudflare-security-audit-skill.md](./knowledge/tools/cloudflare-security-audit-skill.md), [skillspector.md](./knowledge/tools/skillspector.md), [strix.md](./knowledge/tools/strix.md)
+- **What:** Security toolkit for the agent-coding era: Cloudflare's multi-phase audit skill, NVIDIA's scanner for malicious or vulnerable agent skills, and Strix autonomous AI pentesting. Covers auditing your code, vetting skills you install, and attacking your running app.
+
+## @yonasbe - Linear's 15-step GitHub Actions CI speedup playbook
+> ICYMI: Linear's CI playbook 👇🏾
+>
+> https://t.co/3Vq3sdxZ66
+>
+> *Quoting @yonasbe:* Linear's CI playbook (for GitHub Actions): faster runners (jobs 34% faster), tsc to tsgo (typecheck -73%), syntax-only lint rules + Oxlint, shallow/skipped checkouts (94s to 20s), cache writes off the critical path, filtered pnpm installs (44-73s to 16-18s), and more.
+
+- **Tweet:** https://x.com/yonasbe/status/2112221235946160638
+- **Link:** https://starsling.dev/blog/linear-ci
+- **Filed:** [linear-ci-github-actions.md](./knowledge/articles/linear-ci-github-actions.md)
+- **What:** Re-share of a StarSling write-up on 15 concrete CI optimizations Linear made, with measured gains (native tsgo typecheck, Oxlint, lighter checkouts, sharding setup trimmed to ~40s). Intended to be fed to an agent to replicate on your own pipeline.
+
+## @yonasbe - StarSling pitch: automated CI optimization and faster runners
+> *Replying to @yonasbe:* Anthropic's CI playbook (give this to your agent) ... five GitHub Actions optimizations from Anthropic's CI scaling.
+>
+> Anthropic could afford to build their own CI system. Most teams can't, and don't need to. @starslingdev optimizes CI for you, automatically: faster runners as the foundation, and agents that keep finding wins while you sleep.
+
+- **Tweet:** https://x.com/yonasbe/status/2112221235598037030
+- **Link:** https://starsling.dev/products/runners
+- **What:** Self-reply closing the CI playbook thread with a product pitch: StarSling offers faster GitHub runners plus agents that continuously find CI savings, for teams that cannot build Anthropic-style in-house test selection.
+
+## @yonasbe - Anthropic's CI playbook: five GitHub Actions optimizations
+> Anthropic's CI playbook (give this to your agent)
+>
+> @AnthropicAI's CI jobs grew 25x in six months, so they built their own test selection system. The same ideas work on GitHub Actions:
+>
+> 1. Run only affected tests: use the dependency graph from Turborepo, Nx, Bazel, Gradle, Vitest or Jest on PRs.
+> 2. Keep the full suite where it counts: run everything on main and in the merge queue.
+> 3. Skip workflows a change can't affect: path filters plus job-level ifs so required checks don't hang.
+> 4. Run CI once per change: drop the push + pull_request double trigger.
+> 5. Bound flaky jobs: set timeout-minutes from the job's run history (default hang is 6 hours).
+>
+> Anthropic's merges went from about 2,500 a day in May to over 30,000 in September; advice is to "assume your architecture will be at a 25x load within two quarters" 📈
+
+- **Tweet:** https://x.com/yonasbe/status/2112221235333722255
+- **Link:** https://starsling.dev/blog/anthropic-ci
+- **Filed:** [anthropic-ci-playbook.md](./knowledge/articles/anthropic-ci-playbook.md)
+- **What:** Thread distilling Anthropic's CI scaling lessons into five GitHub Actions tactics: affected-test selection, full suite on main/merge queue, path filters, single-trigger runs and job timeouts. Promotes StarSling's longer list of 70+ optimizations.
+
+## @guillaume_boni - Marble adds teaching research for 1000+ science and maths topics
+> Just added for 1000+ topics across science and maths in the Marble curriculum our teaching research. The curriculum tells you what to teach, the teaching research tells you how: misconceptions, common methods etc. Live in https://github.com/withmarbleapp/os-taxonomy
+
+- **Tweet:** https://x.com/guillaume_boni/status/2112219867390558696
+- **Link:** https://github.com/withmarbleapp/os-taxonomy
+- **Filed:** [os-taxonomy.md](./knowledge/tools/os-taxonomy.md)
+- **What:** Marble extended its open curriculum graph (1,845 micro-topics, 3,941 prerequisite edges) with per-topic teaching research covering misconceptions and common methods for 1000+ science and maths topics. Useful as an open dataset for ed-tech and knowledge-graph work.
+
+## @AmandaFlavours - Six easy homemade pizza dough recipes
+> Six different pizza doughs, all ridiculously easy to make at home.
+>
+> Classic, New York, Sicilian, whole wheat, garlic herb, and thin & crispy - every single one turns out better than takeout.
+
+- **Tweet:** https://x.com/AmandaFlavours/status/2112203467536453712
+- **What:** Recipe roundup of six home pizza dough styles (classic, New York, Sicilian, whole wheat, garlic herb, thin and crispy), pitched as simple and better than takeout. Link goes to the full recipes; the tweet itself carries no detail beyond the list.
+
+## @mattzcarey - Cloudflare MCP Server adds step-up auth for on-demand scopes
+> Cloudflare MCP Server now supports step up auth.
+>
+> Only give required scopes and then auth on demand as your agent performs a task
+>
+> Available now in all supported MCP clients
+
+- **Tweet:** https://x.com/mattzcarey/status/2112202956837638329
+- **What:** Cloudflare's MCP server now uses step-up authorization: agents start with minimal scopes and request more only when a task needs them. This gives least-privilege agent access across all supported MCP clients.
+
+---
+
 # Saturday, February 21, 2026
 
 ## @bcherny - Subagent Worktrees for One-Shot Batch Migrations
