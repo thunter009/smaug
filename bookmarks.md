@@ -4173,7 +4173,591 @@
 
 ---
 
+# Wednesday, August 19, 2026
+
+## @omooretweets - AI influencer built for under $200 hit 1M views
+
+> I made an AI influencer who got 1,200 followers and 1M views in a week - on less than $200. My stack: Image gen/editing: ChatGPT; Script/prompts: ChatGPT; Sound effects: ElevenLabs; Talking videos: MiniMax; Action videos: Imagine; Video gen: Krea + fal.
+
+- **Tweet:** https://x.com/omooretweets/status/2090132821579014534
+- **What:** Olivia Moore reports an AI-generated influencer reaching 1,200 followers and 1M views in one week for under $200. Stack: ChatGPT for images and scripts, ElevenLabs sound, MiniMax talking video, Imagine action video, Krea and fal for generation.
+
+## @alexgroberman - Brand earned $50k+ from AI search following Microsoft AEO/GEO guide
+
+> A brand followed the recommendations in this article and generated more than $50,000 from ChatGPT, Google and Perplexity-driven traffic.
+>
+> *Quoting @alexgroberman:* NEW: Microsoft just revealed how to get traffic from ChatGPT. (X article summarizing Microsoft's guide "From discovery to influence: A guide to AEO and GEO".)
+
+- **Tweet:** https://x.com/alexgroberman/status/2090106182640025935
+- **Quoted:** https://x.com/alexgroberman/status/2012895638955204897
+- **Link:** https://x.com/i/article/2012725610217627648
+- **Filed:** [microsoft-aeo-geo-guide-ai-search](./knowledge/articles/microsoft-aeo-geo-guide-ai-search.md)
+- **What:** Alex Groberman promotes his earlier article summarizing Microsoft's AEO/GEO retail guide, claiming a brand earned $50k+ from AI-driven traffic by following it. Article contrasts AEO (machine-readable, actionable) with GEO (authoritative, citable); the $50k claim is unverified.
+
+## @Ryrenz - WhisperLiveKit real-time local transcription with speaker diarization
+
+> WhisperLiveKit is a self-hosted real-time speech-to-text service: text streams as you speak, with speaker diarization (Sortformer/Diart) and optional translation. Backends include Whisper, Faster-Whisper, MLX Whisper, SenseVoice, Voxtral, Qwen3-ASR, Canary. OpenAI-compatible REST, Deepgram-compatible WebSocket, native streaming. Apache 2.0. (Chinese-language post; 10.6k stars at post time.)
+
+- **Tweet:** https://x.com/Ryrenz/status/2090063497874812996
+- **Link:** https://github.com/QuentinFuxa/WhisperLiveKit
+- **Filed:** [whisperlivekit](./knowledge/tools/whisperlivekit.md)
+- **What:** WhisperLiveKit is a local streaming ASR server with speaker diarization, translation and many swappable backends. Its OpenAI- and Deepgram-compatible APIs allow easy migration, and Apple silicon, CPU and NVIDIA are supported, keeping meeting audio on-device.
+
+## @jakezward - Tally's AI search playbook for ChatGPT recommendations
+
+> Pay attention to what Tally is doing in AI search: AI search is now their #1 acquisition channel; 10,000+ new users weekly; $258K to $422K MRR in 10 months, $5M ARR with 11 people; comparison hub, AI Info page, llms.txt, 21-tool MCP server, ChatGPT app, review collection, Reddit mention monitoring. ChatGPT recommends Tally because the internet does, now they engineer around that signal.
+
+- **Tweet:** https://x.com/jakezward/status/2090060494858014873
+- **What:** Case study of Tally making AI search its top acquisition channel: AI-answer-shaped comparison pages, an AI Info page with LLM guidelines, llms.txt, MCP server, review drives, Reddit monitoring and prompt tracking. Works because the product was already widely recommended.
+
+## @emilkowalski - /animate-expo skill for React Native and Expo
+
+> New skill: /animate-expo. All the animation knowledge, but for your native apps. React Native and Expo: gestures, sheets, haptics, screen transitions, and more. Made in collaboration with the @expo team.
+
+- **Tweet:** https://x.com/emilkowalski/status/2090031918523842766
+- **Link:** https://github.com/emilkowalski/skills
+- **Filed:** [emilkowalski-skills](./knowledge/tools/emilkowalski-skills.md)
+- **What:** Emil Kowalski added /animate-expo to his skills repo (~49.6k stars), bringing his animation judgment to native apps: gestures, sheets, haptics and screen transitions in React Native/Expo. Built with the Expo team.
+
+---
+
+# Tuesday, August 18, 2026
+
+## @fletchrichman - Teams want a shared agent workspace, not an army of bots
+
+> It's actually crazy watching everyone pivot in the complete wrong direction from what companies want. Having an army of agents/bots is counterproductive. It's a vanity metric. What teams want is a shared workspace where they can: work with any model; build a "company brain" of skills, integrations, and context/memory mapped to their permissions; build and host custom apps; interact from slack, email, or wherever they work.
+>
+> *Quoting @NousResearch:* Introducing Bot Mode for Hermes Desktop. Your agent profiles become a series of named Bots. Each Bot has its own role, model, memory, skills and profile picture; Bots can use any model and even communicate with each other. Build a specialist Bot once to use it forever.
+
+- **Tweet:** https://x.com/fletchrichman/status/2089822171388313849
+- **Quoted:** https://x.com/NousResearch/status/2089429432612147572
+- **What:** Fletch argues multi-bot agent armies, like Nous Research's Hermes Desktop Bot Mode with named role/model/memory bots, are a vanity metric. He says teams want a model-agnostic shared workspace with permissioned company brain, custom apps and Slack/email access.
+
+## @TheAhmadOsman - ODS one-install local AI server
+
+> Local AI just got 1000x EASIER. Install ODS, let it detect your hardware, it downloads the best model and starts local inference and Open WebUI. Add voice, agents like Hermes, workflows, RAG, search, image generation. Manage everything from one dashboard. No cloud, no subscription. We're gonna make Local AI The Default.
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/2089818108949139740
+- **Link:** https://github.com/Osmantic/ODS
+- **Filed:** [osmantic-ods](./knowledge/tools/osmantic-ods.md)
+- **What:** Osmantic's ODS V3 pre-release auto-detects hardware, picks a model and launches llama.cpp inference with Open WebUI, plus optional voice, agents, n8n, RAG and ComfyUI add-ons. Pitch is a private local AI server with minimal setup.
+
+## @tom_doerr - openGym self-hosted fitness tracker
+
+> OpenGym is a self-hosted fitness tracker built with React and Docker. It automates weekly training plans with animated demos and charts body weight progress, ensuring all sensitive workout data remains local rather than stored on third-party servers.
+
+- **Tweet:** https://x.com/tom_doerr/status/2089814140487397631
+- **Link:** https://github.com/DuarteSantos8/openGym
+- **Filed:** [opengym](./knowledge/tools/opengym.md)
+- **What:** openGym is a ~15.7k-star self-hosted gym and body-weight tracker with weekly plans, animated demos, muscle-trained view and imports from Strong/Hevy/FitNotes. Uses passkey login, PWA and Docker; data stays local.
+
+## @JustinGorya - Hetzner free Qwen 27B inference API
+
+> Hetzner now gives you FREE access to Qwen 3.8 27B. This model is currently on same level as GPT-5.6 Luna. In my testing it performs even better. Grab an API key, use the OpenAI-compatible REST API, change API key and base URL.
+
+- **Tweet:** https://x.com/JustinGorya/status/2089729450032124038
+- **Link:** https://experiments.hetzner.com/docs/inference
+- **Filed:** [hetzner-experiments-inference-docs](./knowledge/articles/hetzner-experiments-inference-docs.md)
+- **What:** Hetzner Experiments offers a free hosted Qwen 27B-class model behind an OpenAI-compatible API, so it works as a drop-in by swapping key and base URL. Quality claims versus GPT-5.6 are the author's own testing; limits unverified.
+
+## @rom1trs - Arcads Marketing OS: open-sourced marketing department as one Claude skill
+
+> We just open-sourced an entire marketing department. Introducing Marketing OS by Arcads. It does the work of your first six marketing hires: Head of Marketing, Copywriter, Creative Strategist, Launch Lead, SEO Lead, Analyst. They hand work to each other: Analyst finds the leak → Copywriter rewrites → Creative Strategist tests → Analyst grades. One Claude skill. Comment "OS" and I'll send you the setup.
+
+- **Tweet:** https://x.com/rom1trs/status/2089692842708938829
+- **What:** Arcads released Marketing OS, a single Claude skill with six role agents (positioning/pricing, copy, creative testing, launch, SEO/GEO, analytics) that pass work between each other in a loop. Setup is gated behind a comment-for-DM lead-gen hook.
+
+---
+
+# Monday, August 17, 2026
+
+## @TheAhmadOsman - Tip: Autoresearcher Mines Session Traces Into Skills
+
+> PRO TIP
+>
+> Setup an Autoresearcher to go through your sessions traces and build you skills from them for patterns and repeated behaviors
+>
+> You're welcome
+
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/2089532183455084569
+- **What:** Tip to run an autonomous research agent over your coding-session traces so it extracts recurring patterns and behaviors into reusable agent skills, automating skill authoring from real usage.
+
+## @realmadhuguru - How to Get Good at Evals: Start From a Workflow You Know
+
+> The best way to get good at evals is to take a workflow you know really well and figure out how to make its quality measurable.
+>
+> Study the actual traces - the sequence of prompts typical users have, what good responses would look like at each step and for the end to end outcome.
+>
+> Study where your product fails and create traces that capture them - messy tool call responses, missing context etc.
+>
+> Once you have a good eval, make it easy to run repeatedly and automatically, and ensure it keeps mirroring live traffic as user patterns evolve.
+
+
+- **Tweet:** https://x.com/realmadhuguru/status/2089480958571331623
+- **What:** Advice to learn evals by making one well-known workflow measurable: study real traces, craft failure-case traces, automate repeated runs, and keep the eval aligned with evolving live traffic.
+
+## @tom_doerr - startup-skill: Claude Code Toolkit to Validate Startup Ideas
+
+> Startup Skill replaces expensive strategy consultants with an open-source toolkit that validates your idea before you write code. Delivers full-market research, competitive battle cards, positioning, and financial projections instantly. Works with Claude Code.
+
+
+- **Tweet:** https://x.com/tom_doerr/status/2089462655618564205
+- **Link:** https://github.com/ferdinandobons/startup-skill
+- **Filed:** [startup-skill.md](./knowledge/tools/startup-skill.md)
+- **What:** Open-source Claude Code skill set (ferdinandobons/startup-skill, ~1.2k stars) that produces market research, competitor battle cards, positioning and financial projections to validate a startup idea pre-code.
+
+## @HamelHusain - evals-skills Plugin Update: error-discovery and start Skills
+
+> A few months ago, @sh_reya and I released eval skills plugin. We iterated on it a bunch and recently made it better
+>
+> The biggest change is a new error-discovery skill. Give your coding agent a file of AI outputs or traces, and it builds a custom review app w/intelligent sampling. As you annotate the sample, the agent groups your notes into failure modes and finds related examples.
+>
+> We also added a start skill, which looks at your situation and routes your agent to the right workflow.
+
+
+- **Tweet:** https://x.com/HamelHusain/status/2089438973714440196
+- **Link:** https://github.com/ai-evals-course/evals-skills
+- **Filed:** [evals-skills.md](./knowledge/tools/evals-skills.md), [evals-skills-for-coding-agents.md](./knowledge/articles/evals-skills-for-coding-agents.md)
+- **What:** Hamel Husain and Shreya Shankar's evals-skills plugin gains an error-discovery skill that builds an annotation app from traces and clusters failure modes, plus an evals-start router skill.
+
+## @mattshumer_ - Endorsement of Autopilot Flight Price-Refund App
+
+> I just saved $1,200 on my flight using @withautopilot.
+>
+> This app is literally free money. Put in your flights and get $ back.
+>
+> @SamHollander_ was my roommate. I watched him start from nothing and build this into a huge biz, saving ppl thousands a day.
+
+
+- **Tweet:** https://x.com/mattshumer_/status/2089389929952317590
+- **What:** Matt Shumer endorses Autopilot (founded by his ex-roommate Sam Hollander), an app where you enter booked flights and get money back, claiming it saved him $1,200 on one flight.
+
+## @gregpr07 - macOS Harness: Persistent Python Harness for Full Mac Control
+
+> Introducing: macOS Harness. A persistent Python harness for virtually any Mac task ⌘
+>
+> Control your Mac through the accessibility tree, AppleScript, screenshots, or raw coordinate input.
+>
+> Full macOS control, browser + files + shell, virtual cursor (your mouse stays yours), one persistent python process.
+>
+> It vibe-launched itself on GitHub + PyPI and drafted this tweet without me in the loop 👀
+
+
+- **Tweet:** https://x.com/gregpr07/status/2089389412522266906
+- **What:** Open-source macOS Harness from Browser Use's Gregor Zunic: one persistent Python process giving agents Mac control via accessibility tree, AppleScript, screenshots or raw input with a virtual cursor; it self-published to GitHub and PyPI.
+
+## @alxshp - pgbot: Free Open-Source Postgres Inspector Now Works With Any Postgres
+
+> 🔥 pgbot.dev now works with any Postgres 🐘
+>
+> Neon. Supabase. AWS RDS. Railway. Self-hosted. pgrun. Any cloud
+>
+> All you need is a connection string.
+>
+> curl -fsSL https://pgbot.dev/install.sh | sh
+> pgbot inspect
+>
+> 10 seconds later: database health, slow queries, unused indexes, table & index bloat, locks, vacuum problems, what changed, what to fix first.
+>
+> *Quoting @alxshp:* How pgbot.dev found 9 GB of unused Postgres indexes. Ran on one production DB: 25 unused indexes, 9.2 GiB wasted, all on write-heavy tables.
+
+
+- **Tweet:** https://x.com/alxshp/status/2089389365894234361
+- **Quoted:** https://x.com/alxshp/status/2088670989353996457
+- **Link:** https://pgbot.dev/
+- **What:** pgbot is a free open-source CLI that inspects any Postgres from a connection string for slow queries, unused indexes, bloat, locks and vacuum issues; the quoted tweet shows it finding 25 unused indexes (9.2 GiB) on a prod DB.
+
+## @blak3shao - Tutorial: Prompting Coding Agents for Motion Graphics With Character
+
+> tired of yall vibe-coding plain motion graphics, so i made a tutorial
+>
+> it's a rundown on my prompting principles to make animations that have character with coding agents, basic motion graphics concepts, and my workflow of @AREdotNA + @conductor_build + stewdio
+
+
+- **Tweet:** https://x.com/blak3shao/status/2089374410536788331
+- **What:** Video tutorial from Blake Shao on prompting coding agents to produce characterful animations, covering motion graphics basics and a workflow using ARE, Conductor and stewdio (video not transcribed).
+
+## @BHolmesDev - 5 Skills for Better Opus 5 / GPT 5.6 Output
+
+> These are the 5 skills I use to get better output from Opus 5 and GPT 5.6:
+>
+> /grill-me for research
+> /taste-review for design
+> /vercel-react-best-practices for ReactJS quality
+> /simplify to remove the fluff
+> /test-app for e2e verification
+>
+> Here's how they work 👇
+
+
+- **Tweet:** https://x.com/BHolmesDev/status/2089351545616056628
+- **What:** Thread listing five agent skills Ben Holmes uses to improve coding-model output: grill-me (research), taste-review (design), vercel-react-best-practices, simplify, and test-app (e2e verification).
+
+## @lukepierceops - The Full Guide to Building an AI-Native Operating System
+
+> https://t.co/BBxwyfEWGL
+
+
+- **Tweet:** https://x.com/lukepierceops/status/2089327211224400348
+- **Link:** https://x.com/i/article/2089326224313094144
+- **Filed:** [full-guide-ai-native-operating-system.md](./knowledge/articles/full-guide-ai-native-operating-system.md)
+- **What:** X article on replacing a fragmented $2M-$10M company's tool stack with one custom AI-native system (single DB, AI in workflows), via a six-step build starting with workflow mapping.
+
+## @neilpatel - Posting frequency vs followers and brand-search visits
+
+> This is the difference between posting 5, 10, 15, and 25 times per week on social media.
+>
+> 5/week: 5,194 followers, ~302 monthly brand-search visitors. 10/week: ~8,042 followers, 634 visitors. 15/week: ~11,587 followers, 591 visitors. 25/week: ~19,531 followers, 2,833 visitors. 26+/week: ~53,002 followers, 6,037 visitors.
+>
+> Generally, the more you post, the better off you are (assuming your content is good).
+
+
+- **Tweet:** https://x.com/neilpatel/status/2089321349789495420
+- **What:** Neil Patel's figures tying weekly social posting volume to follower count and brand-name search visits, claiming more posting is better if content is good; 15/week dips below 10/week on visits.
+
+## @euboid - Agent-driven customer support triage saving 4-6 hours/week
+
+> Soooo..... I built this. And it's already saving me ~4-6 hours/week.
+>
+> When we receive a support ticket an agent (codex) boots, reads docs on Ferndesk, the codebase, Axiom logs and the customer error. If a bug, it does root cause analysis and opens a PR + Linear ticket. If a feature request, it tracks it on the feedback board. It drafts a reply in my voice with customer success tips, then writes a handover note in the support tool (Fernand). Each morning I just approve/reject. Ferndesk analyzes replies weekly and updates docs so fewer tickets come in.
+>
+> *Quoting @euboid:* Has anybody set up an automation that debugs customer issues, creates a PR, drafts a response when support tickets come through? For a B2B SaaS with low volume?
+
+
+- **Tweet:** https://x.com/euboid/status/2089291320271482895
+- **What:** Founder's working support pipeline: Codex agent reads docs, code, logs and ticket, opens PR and Linear issue for bugs, logs feature requests, drafts replies in his voice, then he only approves each morning.
+
+## @maxedapps - anti-slop Oxlint rules by dillon_mulroy
+
+> Thank you @dillon_mulroy for https://t.co/hayiCCFeCr . This is just amazing!
+
+
+- **Tweet:** https://x.com/maxedapps/status/2089231033136796050
+- **Link:** https://github.com/dmmulroy/anti-slop
+- **Filed:** [dmmulroy-anti-slop](./knowledge/tools/dmmulroy-anti-slop.md)
+- **What:** Praises dmmulroy/anti-slop, an opinionated Oxlint ruleset rejecting low-evidence TypeScript/JavaScript patterns, meant to be vendored and adapted, with a bundled agent skill for setup.
+
+## @SPAC89 - SuperGrok Heavy annual deal claim
+
+> I just locked in SuperGrok Heavy ANNUAL for $900
+> Regular price: $3,600/year. That's 75% off
+> $75/month for 1) Cursor Ultra ($400/mo in API usage) 7B tokens of Grok 4.6 xHigh 2) Grok Bot with its own separate limits 3) X Premium verification included 4) 10B tokens on Grok Build 500K context (Cursor only gives you 256K on Grok 4.6)
+> Easily the best deal right now!
+
+
+- **Tweet:** https://x.com/SPAC89/status/2089223135933448382
+- **What:** User claims a SuperGrok Heavy annual plan at $900 (vs $3,600) bundling Cursor Ultra usage, Grok Build with 500K context, Grok Bot and X Premium; unverified promo claim.
+
+---
+
+# Sunday, August 16, 2026
+
+## @kunchenguid - /vision skill for writing VISION.md
+
+> i didn't tell anyone about this repo but it kept getting stars so i guess it's time to share it. introducing /vision, a simple skill that helps you write an explicit VISION.md file for your project. VISION.md states where the project should go, so agents can judge whether new ideas fit. The skill reads the project, proposes 8-12 borderline feature ideas to force clarity, then writes VISION.md. Use it to triage features, detect drift in code review, and settle ambiguous product decisions. Example VISION.md in the firstmate project.
+
+
+- **Tweet:** https://x.com/kunchenguid/status/2089189790881382676
+- **Link:** https://github.com/kunchenguid/vision
+- **Link:** https://github.com/kunchenguid/firstmate/blob/main/VISION.md
+- **Filed:** [kunchenguid-vision](./knowledge/tools/kunchenguid-vision.md), [kunchenguid-firstmate](./knowledge/tools/kunchenguid-firstmate.md)
+- **What:** Agent skill that interviews a project via borderline hypothetical features and writes VISION.md, a forward-looking doc agents use to triage ideas, catch drift in review, and decide ambiguous product questions as humans step back.
+
+## @scottymatt - AICSS: UI components for AI agents
+
+> wtf this is sick
+
+
+- **Tweet:** https://x.com/scottymatt/status/2089182103153897532
+- **Link:** https://www.aicss.dev/
+- **Filed:** [aicss-ui-components-for-ai-agents](./knowledge/articles/aicss-ui-components-for-ai-agents.md)
+- **What:** Enthusiastic share of AICSS (aicss.dev), a UI component library pitched for AI agents with licensed Pro components; tweet gives no detail beyond praise, page text is thin.
+
+## @dani_avila7 - Anthropic Cost Optimization cookbook: agent cost down 90%
+
+> Anthropic shared a Cost Optimization cookbook worth reviewing
+>
+> (Bookmark this one)
+>
+> A real agent goes from $0.29/task down 90% without dropping accuracy
+>
+> And model downgrade is the last lever, not the first
+
+
+- **Tweet:** https://x.com/dani_avila7/status/2089165107364278341
+- **Link:** https://github.com/anthropics/claude-cookbooks/blob/main/cost_optimization/cost_optimization.ipynb
+- **Filed:** [claude-cookbooks-cost-optimization](./knowledge/tools/claude-cookbooks-cost-optimization.md)
+- **What:** Points to Anthropic's cost optimization notebook in claude-cookbooks, where a real agent falls from $0.29 per task by about 90% at equal accuracy, with model downgrade as the final lever.
+
+## @coreyhainesco - Magister: native posting to 12 social platforms
+
+> Magister posts directly to 12 social platforms — natively, and for free.
+>
+> Give it one product update and it writes a thread for X, a carousel for LinkedIn, a 30-second cut for TikTok — each one native to the platform, not copy-paste — then schedules and publishes through your connected accounts.
+>
+> No Buffer. No Hootsuite. Posting is included in every plan.
+
+
+- **Tweet:** https://x.com/coreyhainesco/status/2089087821860782438
+- **What:** Promo for Magister, a tool turning one product update into platform-native posts (X thread, LinkedIn carousel, TikTok cut) across 12 networks, with scheduling and publishing included in every plan.
+
+## @poteto - Hierarchy for eliminating recurring agent corrections
+
+> every time you intervene and correct your agent, you should think about how to eliminate it entirely.
+>
+> in order of value:
+> 1. categorically eliminate the problem through better architecture or choice of data structures
+> 2. turn it into a lint rule or test so CI catches it
+> 3. turn it into a skill or rule
+> 4. have humans review the code to catch it (ngmi)
+
+
+- **Tweet:** https://x.com/poteto/status/2089067865098113024
+- **What:** Ranks fixes for repeated agent mistakes: remove via architecture or data structures first, then lint/test in CI, then skills or rules, with human review last as the weakest option.
+
+## @Shpigford - Home maintenance app built for personal use, users won't pay
+
+> I swear if you guys make me turn this into a proper, public-facing app…
+>
+> This would be a classic case of every user saying "I want this, it will save me obscene amounts of time and money, but I refuse to spend even $1 for it"
+>
+> *Quoting @Shpigford:* I'm not saying I've built a home maintenance app for my wife & I that tracks all appliances, plants and yard stuff (with computer vision!) and then generates weekly todos with step-by-step instructions and photo + AI live chat repair assistance, but I'm not not saying it either.
+
+
+- **Tweet:** https://x.com/Shpigford/status/2089061250743316494
+- **Quoted:** https://x.com/Shpigford/status/2088728511653498954
+- **What:** Shpigford jokes about productizing a personal home-maintenance app (appliance/plant tracking with computer vision, weekly AI todos, repair chat), predicting users would want it badly yet refuse to pay.
+
+## @ChrisSimpson - Local SEO tactic: buy press release syndicated to ~300 sites with embedded GBP map
+
+> The first thing I buy for a new local client is a press release.
+>
+> One release syndicates out to around 300 sites. That is roughly 300 backlinks and 300 referring domains from a single purchase.
+>
+> And I embed their Google Business Profile map inside the release, so every site that picks it up links to the profile too.
+>
+> Here's the part most people miss: the majority of local competitors are sitting under 300 referring domains total.
+>
+> That one release alone puts you past ninety percent of them.
+
+
+- **Tweet:** https://x.com/ChrisSimpson/status/2089059633734262801
+- **What:** Chris Simpson's local SEO playbook: a syndicated press release (~300 sites) with an embedded Google Business Profile map gives ~300 backlinks and referring domains, outpacing most local competitors who have under 300 total.
+
+## @doodlestein - [Media] Skill that snaps agents out of "hashed, signed certification" loops
+
+> This skill really saves me a lot of typing. It's like splashing water onto the face of someone who is having a temporary psychotic episode to snap them out of it so they can return to sanity (until the next time a hashed, signed certification opportunity presents itself to them). https://t.co/KlXvLKC8ti
+
+
+- **Tweet:** https://x.com/doodlestein/status/2089035658723471793
+- **What:** THIN: Jeffrey Emanuel praises an unnamed prompt/skill (shown in media) that resets agents stuck in ceremony such as hashed, signed certification and receipt artifacts back to productive work; skill name not visible.
+
+## @coreyhainesco - /social-fetch skill lets agents read X, LinkedIn, Reddit via Maker Skills
+
+> By default, AI agents can't read social media. Login walls and bot blocks stop them cold.
+>
+> So I made a skill that fixes it: /social-fetch — give your agent any URL (X, LinkedIn, Instagram, TikTok, Reddit, HN) and it returns structured data: author, text, engagement, replies. Free APIs first, browser automation when walls go up, Wayback for dead posts.
+>
+> Part of Maker Skills — 18 free, open-source skills for founders & operators. Install in Claude Code:
+>
+> /plugin marketplace add coreyhaines31/makerskills
+
+
+- **Tweet:** https://x.com/coreyhainesco/status/2089027423774048326
+- **What:** Corey Haines released /social-fetch, a Claude Code skill returning structured post data from social URLs via free APIs, then browser automation, then Wayback; part of the 18-skill open-source Maker Skills plugin (coreyhaines31/makerskills).
+
+## @yanique_a - [Media] Before/after results from /anti-slop skill by @dillon_mulroy
+
+> My own results for /anti-slop. Extremely satisfied with the changes and results. Much respect @dillon_mulroy https://t.co/KZqv65t8Vi
+
+
+- **Tweet:** https://x.com/yanique_a/status/2089022965790720384
+- **What:** THIN: @yanique_a shares image results from applying Dillon Mulroy's /anti-slop agent skill (cleans AI-sounding or sloppy output) and praises the improvement; the media content itself was not captured.
+
+## @jakubkrehel - Interface cheat sheet of small UI polish tips (/better skills)
+
+> I made an interface cheat sheet full of small things you can do right away to make your interfaces better.
+>
+> It's based on the /better collection of skills and it's a mix of best practices and some of my personal preferences.
+>
+> https://t.co/sivx8o29nD
+
+
+- **Tweet:** https://x.com/jakubkrehel/status/2089009286940639674
+- **Link:** https://interfaces.dev/cheat-sheet
+- **Filed:** [interfaces-cheat-sheet-jakubkrehel.md](./knowledge/articles/interfaces-cheat-sheet-jakubkrehel.md)
+- **What:** Cheat sheet at interfaces.dev of quick UI improvements (e.g. concentric border radius = inner radius + padding) distilled from the /better agent skills, blending best practices with Krehel's personal taste.
+
+## @rammcodes - Boneyard: auto-generate skeleton loading screens from real UI
+
+> Brooooooooooooo... this feels like a dream come true for every developer & designer. 🦴
+>
+> Now you don't have to manually design skeleton screens for your UI.
+>
+> Boneyard automatically extracts the layout from your real UI and generates pixel-perfect skeleton loading screens from it.
+>
+> Just wrap your UI components with Boneyard, run the build, and it creates the skeletons for you :)
+>
+> Follow me for more amazing AI, Coding & Web Dev insights 💎
+
+
+- **Tweet:** https://x.com/rammcodes/status/2089008576371237062
+- **What:** Boneyard is a frontend library that wraps components, extracts their real rendered layout at build time and emits pixel-accurate skeleton loaders, removing hand-designed skeleton screens; no repo link in the tweet.
+
+## @srcasm - Instinct AI agent rebooks Cancun flights using forgotten JetBlue credit, saves $1,074
+
+> I texted my agent "help me find flights to Cancun for the three of us for a wedding."
+>
+> Instinct searched every NYC airport, found $1,073 of JetBlue credit I forgot existed, checked my already-booked hotel and told me to keep it, booked three seats together, caught JetBlue quietly dropping the credit at checkout, cancelled inside the 24-hour window, and rebooked it properly. I paid $982 instead of $2,056. I never touched a browser.
+>
+> *Quoting @saranormous:* Having an AI product you trust to execute transactions on your behalf and navigate websites is amazing, even better than I thought. 💜 Instinct
+
+
+- **Tweet:** https://x.com/srcasm/status/2088967631256637509
+- **Quoted:** https://x.com/saranormous/status/2088728250218381792
+- **What:** Testimonial for Instinct, a text-message AI agent that books travel end to end (found unused airline credit, spotted a checkout bug, used the 24-hour cancellation window), cutting a Cancun trip from $2,056 to $982; Sarah Guo's quoted post echoes trust in agents executing transactions.
+
+---
+
+# Saturday, August 15, 2026
+
+## @doodlestein - GPT Pro web app + GitHub connector as free-of-limits coding loophole (FrankenOverlap)
+
+> It feels like a loophole, but for some reason OpenAI's very smartest model by far, GPT Pro in the web app, doesn't count against your usage limits. 😵‍💫⁉️
+>
+> You can use the GitHub connector in the web app to have it write directly to a public or even a private repo. Repeatedly, in the same session.
+>
+> So why aren't you doing this? You can make real projects this way! Try it! It probably won't last for long…
+>
+> For example, this new FrankenOverlap project of mine which I started yesterday is 100% made this way, and it's already at 125 commits and a LOT of smart code:
+>
+> https://t.co/mEXgb4IDU6
+>
+> If you want more fine-grained control, you can clone it locally at the end and make your final touches using a local harness on your machine (and pay for the usage for the privilege, with a weaker model to boot…):
+>
+> *Quoting @doodlestein:* GLM-5.2 reading GPT Pro's answer to the problem it has been working on for a while (this is why I don't bother with anything other than frontier models for the most part).
+
+
+- **Tweet:** https://x.com/doodlestein/status/2088636008803819646
+- **Quoted:** https://x.com/doodlestein/status/2088358226962133454
+- **Link:** https://github.com/Dicklesworthstone/franken_overlap
+- **Filed:** [franken-overlap.md](./knowledge/tools/franken-overlap.md)
+- **What:** Emanuel claims GPT Pro in the ChatGPT web app is not metered against usage limits and can commit repeatedly to GitHub repos via the connector, showing FrankenOverlap (Rust edit-tolerant text provenance/alignment, 125 commits in a day) as proof; quoted tweet shows GLM-5.2 deferring to GPT Pro's answer.
+
+---
+
+# Friday, August 14, 2026
+
+## @iannuttall - Grok-generated prompt to build your own AgentOS (from Danny Postma's system)
+
+> I found this system fascinating so I gave Grok Bot the transcript and had it create a prompt you can give your agent to build our your own AgentOS
+>
+> https://t.co/zbllbgyx0r
+>
+> *Quoting @dannypostma:* 6 months ago: laptop open all day, typing into Claude Code, waiting. Today: I write a spec, go to the gym, and my phone only pings when an agent needs a decision. 95% of my work runs itself.
+
+
+- **Tweet:** https://x.com/iannuttall/status/2088240212799349206
+- **Quoted:** https://x.com/dannypostma/status/2088181331465253045
+- **Link:** https://gist.github.com/iannuttall/8152098b5ce8e6c1a7499ee561ed93f4
+- **What:** Ian Nuttall turned the transcript of Danny Postma's spec-driven, mostly autonomous agent workflow into a copy-paste prompt (gist) that tells your own agent to build a similar AgentOS; gist content was not extracted.
+
+## @dannypostma - Autonomous agent workflow: write a spec, phone pings only for decisions
+
+> 6 months ago: laptop open all day, typing into Claude Code, waiting.
+>
+> Today: I write a spec, go to the gym, and my phone only pings when an agent needs a decision. 95% of my work runs itself.
+>
+> Full breakdown so you can build your own 👇 https://t.co/fvbwbZTp5o
+
+
+- **Tweet:** https://x.com/dannypostma/status/2088181331465253045
+- **What:** Danny Postma describes moving from babysitting Claude Code to an "AgentOS" style setup where he writes a spec and agents run about 95% of the work, pinging his phone only for decisions; the linked breakdown (video/transcript) was not captured.
+
+---
+
 # Thursday, August 13, 2026
+
+## @tanayj - Toast IQ Grow: AI-native services offering
+
+> Toast might be one of the few public SaaS companies that have launched a true "AI-native services" offering. Toast IQ Grow is a $499/month AI marketing service that pairs an AI agent with human support.
+
+- **Tweet:** https://x.com/tanayj/status/2088077143267832222
+- **What:** Toast launched IQ Grow, a $499/month AI marketing service combining an AI agent with human support, its fastest-growing new offering ever; cited as a rare public SaaS example of AI-native services (software plus labor) pricing.
+
+## @swyx - Batched /align-me questions, like speculative decoding
+
+> human i/o is costly, so I made an /align-me modification that batches questions instead of round-by-round. Same intuition as spec decoding, looking ahead 2-10 steps. Works incredibly for design explorations.
+> *Quoting @theo:* Matt's "grill-me" skill is exceptional and helps a ton with getting agents aligned with my brain.
+
+- **Tweet:** https://x.com/swyx/status/2088073777779515615
+- **Quoted:** https://x.com/theo/status/2088057260807532867
+- **What:** Swyx modifies the grill-me/align-me style skill (Matt Pocock's, praised by Theo) to ask batches of questions in one go instead of one per round, cutting human round-trips like speculative decoding; especially useful for design exploration.
+
+## @Nal_uh - Definition of AI-native mobile app development
+
+> My definition of "AI Native" for mobile apps: sub-2s incremental builds using Bazel, no xcodeproj. Agents drive the app through a self-made REST API rather than pixels. Every change tested end-to-end without scenarios. Works on real devices.
+
+- **Tweet:** https://x.com/Nal_uh/status/2088051249044504967
+- **What:** Describes an AI-native iOS workflow: Bazel builds under 2 seconds with no Xcode project, agents controlling the app via a REST API they generate instead of screenshots, and automatic end-to-end tests including multi-account flows, on real devices.
+
+## @nicbstme - Recipe stack for building any agent product
+
+> Recipe to build basically any agent product: Memory, Context engineering, Skills, Tools/MCPs, Agent runtime, Triggers, Trust/permissions, Evals. Then optimize memory quality, context selection, action quality, latency and token cost.
+> *Quoting @nicbstme:* All AI agent products are kinda similar: connect email, calendar, docs, Slack; extract context into markdown memory; orchestrator learns patterns. The frontier is proactive background agents; the hard part is 95% of the quality for $5 instead of $100+ per user.
+
+- **Tweet:** https://x.com/nicbstme/status/2088014852954669300
+- **Quoted:** https://x.com/nicbstme/status/2087763700031853001
+- **What:** Eight-layer agent stack (memory, context engineering, skills, tools/MCPs, runtime, triggers, trust/permissions, evals) building on his earlier claim that agent products converge on memory plus proactive background triggers; key challenge is near-top quality at a fraction of inference cost.
+
+## @Gedmark - Astranis announces Perceptor GEO space domain awareness spacecraft
+
+> Space is now a dangerous neighborhood. Today we're announcing Perceptor, our new Space Domain Awareness spacecraft, and our first product line outside of comms.
+
+- **Tweet:** https://x.com/Gedmark/status/2088008159265001645
+- **What:** Astranis CEO announces Perceptor, a GEO-capable inspection and monitoring spacecraft built on the flight-proven MicroGEO platform, responding to Space Force priorities and Chinese/Russian proximity-operations threats; first Astranis product outside communications.
+
+## @TheAhmadOsman - Recipe for reliable coding agents: modularity, DDD, specs, docs
+
+> For agents like Codex Cli, OMP, Pi, Claude Code, Droid, OpenCode: modularity, domain-driven design, painfully explicit specs, excessive documentation. This is systems engineering. If your docs don't answer where/what/how/why, the agent will guess and make a mess.
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/2088002724378120411
+- **What:** Argues that agent results depend on engineering discipline over model capability: modular code, domain-driven design, explicit specs and thorough docs that answer where, what, how and why, otherwise agents guess and produce messes.
+
+## @augmentcode - Faster review loop: PR to merge with Cosmos
+
+> The software factory needs a faster review loop: further optimizing the path from PR to merge
+
+- **Tweet:** https://x.com/augmentcode/status/2087981573551583307
+- **Link:** https://x.com/i/article/2087979731908263936
+- **Filed:** [software-factory-faster-review-loop-augment.md](./knowledge/articles/software-factory-faster-review-loop-augment.md)
+- **What:** Augment Code article on extending Cosmos from review into the whole PR-to-merge loop with specialized Experts (risk, deep review, pair review, Verifier, PR Fixer, cosmos approve), keeping humans on judgment and the final merge while optimizing cost per successful outcome.
+
+## @bil0090 - Rules file fixes for Opus 5 drift, laziness, slowness
+
+> I just fixed Opus 5, here's how. Add these to your rules file: "Done means done", "Act. Don't ask.", "A question is a question", a Speed section (parallelize, delegate Sonnet 5 for routine work, Opus 5 for hard reasoning), and "Short responses" (simple ASD-STE100 English).
+
+- **Tweet:** https://x.com/bil0090/status/2087947117411099073
+- **What:** Copy-paste CLAUDE.md-style rules block meant to correct Opus 5 drifting, slowness and laziness: finish all requested items, act on cheap reversible work, treat questions as questions, parallelize with subagents, and answer in short STE-style prose; claimed to work for 5.6 Sol too.
+
+## @zhengyaojiang - Autoresearch optimizing information gain (Model Discovery Agent)
+
+> Autoresearch, but optimizing for information gain. Very interesting that you can hard-code a harness to work on a fairly open-ended discovery problem. I guess that's the power of a mathematically grounded harness design.
+> *Quoting @sirbayes:* Predicting the answer to interventional "what if?" questions needs a *mechanistic* model, not a curve fit. You can only learn one by experimenting; experiments are costly, so the real game is data efficiency. Meet the Model Discovery Agent (MDA).
+
+- **Tweet:** https://x.com/zhengyaojiang/status/2087944595690660079
+- **Quoted:** https://x.com/sirbayes/status/2087392620129796488
+- **What:** Zhengyao Jiang highlights Kevin Murphy's Model Discovery Agent, an autoresearch-style system that picks experiments to maximize information gain to learn mechanistic models efficiently; the point is that a mathematically grounded hard-coded harness can handle open-ended discovery.
+
+## @ctatedev - Next.js next-dev-loop skill via npx skills
+
+> npx skills add vercel/next.js --skill next-dev-loop
+> *Quoting @bytegrad:* Next.js devs: don't sleep on agent-browser and the new next-dev-loop skill in 16.3. Here is a demo of using it to fix a super tricky bug in a spreadsheet component.
+
+- **Tweet:** https://x.com/ctatedev/status/2087940896872386927
+- **Quoted:** https://x.com/bytegrad/status/2087871342536200602
+- **What:** Install command for the next-dev-loop agent skill shipped in the Next.js repo (16.3), which pairs with agent-browser so coding agents can drive a dev loop; quoted @bytegrad video demos it fixing a tricky spreadsheet component bug.
 
 ## @1adrianpierce - Recipe for front-loaded PRD-to-beads planning sessions in an agent software factory
 > recipe for successful PLANNING sessions in your software factory:
