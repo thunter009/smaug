@@ -11552,6 +11552,66 @@
 
 # Friday, February 20, 2026
 
+## @morganlinton - Codex 'All-Day Build Contract' markdown to sustain long runs
+> Experimenting with ways to get Codex to run for long periods. It may plan a multi-hour run, then code a much smaller chunk in 6 minutes.
+>
+> What works best: a .md 'All-Day Build Contract' stating objective, non-negotiable build rules, feature deliverables, test requirements and more.
+
+- **Tweet:** https://x.com/morganlinton/status/2024895676493300132
+- **What:** Shares a technique for keeping Codex working for hours: a markdown contract that fixes objective, build rules, deliverables and test requirements up front, countering Codex's tendency to stop after a short burst.
+
+## @coreyganim - OpenClaw Mission Control dashboard built with Claude Code
+> Built my @openclaw Mission Control in one session with Claude Code.
+>
+> Stack: Next.js 15 + Convex, Tailwind + shadcn/ui, dnd-kit. Tasks Kanban, assignee system (me vs agent), project tags, content pipeline, calendar cron jobs, memory bank.
+>
+> My AI agent needs visibility into MY work: when it sees "Create LinkedIn post" assigned to me, it drafts proactively.
+
+- **Tweet:** https://x.com/coreyganim/status/2024895248615235708
+- **What:** Describes a one-session Claude Code build of a Next.js/Convex Kanban dashboard shared between human and OpenClaw agent. The key insight is giving the agent visibility into the human's backlog so it can proactively draft work such as LinkedIn posts.
+
+## @hooeem - Claude Code prompt-cache optimisation toolkit built from Thariq's article
+> I turned Thariq's article into a .md prompt cache optimisation toolkit:
+>
+> here's how to use it: save the first file as claude.md in a new empty folder, open Claude Code there, tell it to start building phase 1, review each phase and give context between sessions.
+
+- **Tweet:** https://x.com/hooeem/status/2024893159654756368
+- **Link:** https://claude.ai/public/artifacts/03a743c6-852f-4e7c-9944-2e087548eb93
+- **Filed:** [prompt-caching-is-everything-claude-code](./knowledge/articles/prompt-caching-is-everything-claude-code.md)
+- **What:** Packages Thariq's 'Prompt Caching Is Everything' lessons (static-first prompt layout, updates via messages, no mid-session model switches) into a phased CLAUDE.md that Claude Code follows to build a cache analyser. The article itself is the filed source.
+
+## @_dominatos - Building a Polymarket bot under the new no-500ms-delay fee rules
+> https://x.com/i/article/2024859635878871040 (article: How to build a Polymarket bot, after new rules edition)
+
+- **Tweet:** https://x.com/_dominatos/status/2024871493809680410
+- **Link:** https://x.com/i/article/2024859635878871040
+- **Filed:** [polymarket-bot-after-new-rules](./knowledge/articles/polymarket-bot-after-new-rules.md)
+- **What:** Explains that Polymarket removed its 500ms taker delay and added taker fees on crypto markets, making the maker-with-rebates strategy dominant. Covers WebSocket feeds, feeRateBps in signed orders, cancel/replace loops under 100ms, and common mistakes.
+
+## @SystematicPeter - Claude Code as overnight autonomous futures strategy researcher
+> 1/ Building an agentic research workflow for systematic trading.
+>
+> Experimenting with Claude Code as an autonomous research assistant for futures strategy development. Not a "let AI trade for you" pitch - a structured workflow that runs overnight.
+
+- **Tweet:** https://x.com/SystematicPeter/status/2024869914021175330
+- **What:** Start of a thread describing a structured Claude Code workflow that autonomously researches and develops futures trading strategies overnight, framed as research automation rather than AI-driven trading.
+
+## @sw_lilacwealth - Safe harbor withholding to avoid underpayment penalties in high-tax years
+> Safe Harbor Withholding: How High-Income Households Buy Time When Taxes Spike. Federal safe harbor: pay 100% of prior-year tax, 110% if AGI exceeded $150k, or 90% of current-year tax.
+
+- **Tweet:** https://x.com/sw_lilacwealth/status/2024869819724550556
+- **What:** Explains that meeting federal safe harbor thresholds avoids underpayment penalties even if the final bill is much higher. Late-year wage withholding counts as paid evenly, unlike estimated payments, and state rules like New York can differ.
+
+## @cloudxdev - Claude Code Tasks setup for shared task lists across subagents
+> Claude Code Tasks: how to set up shared task lists across subagents. Add a Tasks section to ~/.claude/CLAUDE.md (auto-create tasks for 3+ step work, always when spinning up subagents), share lists via CLAUDE_CODE_TASK_LIST_ID=my-project, and fan out parallel `claude -p` workers on the same list. Tasks live in ~/.claude/tasks/.
+>
+> *Quoting @trq212:* We're turning Todos into Tasks in Claude Code
+
+- **Tweet:** https://x.com/cloudxdev/status/2024787905852387329
+- **Link:** https://x.com/i/article/2014473994695823360
+- **Filed:** [claude-code-todos-to-tasks](./knowledge/articles/claude-code-todos-to-tasks.md)
+- **What:** Practical setup for Claude Code Tasks: a CLAUDE.md rule to auto-create tasks, a shared CLAUDE_CODE_TASK_LIST_ID so sessions and subagents see the same dependency-aware list, and parallel workers that pick up pending tasks. Builds on Thariq's announcement replacing TodoWrite.
+
 ## @bcherny - Built-in Git Worktree Support in Claude Code CLI
 > Introducing: built-in git worktree support for Claude Code
 >
@@ -11596,7 +11656,364 @@
 
 ---
 
+# Thursday, February 19, 2026
+
+## @alexhillman - api2cli: Claude Code system that builds a CLI for any API
+> alright, I polished some stuff up and released my api2cli system:
+>
+> Add this to your Claude Code system
+>
+> Then tell Claude "build me a CLI for [any API]"
+>
+> some are harder than others, but I haven't had one outsmart us yet
+>
+> *Quoting @bee_human_:* @alexhillman link to cli builder skill
+
+- **Tweet:** https://x.com/alexhillman/status/2024651709503483944
+- **Link:** https://github.com/alexknowshtml/api2cli
+- **Filed:** [api2cli](./knowledge/tools/api2cli.md)
+- **What:** Alex Hillman released api2cli, a Claude Code add-on that generates a CLI for any API from a one-line prompt. He says no API has defeated it yet, though some take more effort.
+
+## @AndrewWarner - Run OpenClaw on a ChatGPT subscription after Claude restrictions
+> Article: Breaking: OpenAI makes OpenClaw inexpensive
+
+- **Tweet:** https://x.com/AndrewWarner/status/2024518232271417434
+- **Link:** https://x.com/i/article/2024499005183455232
+- **Filed:** [openai-openclaw-chatgpt-subscription-guide](./knowledge/articles/openai-openclaw-chatgpt-subscription-guide.md)
+- **What:** Explains that Anthropic bars Claude subscription logins in third-party tools like OpenClaw while OpenAI allows ChatGPT OAuth. Gives the `openclaw onboard --auth-choice openai-codex` setup to avoid API fees.
+
+## @mikita0x - Kelly Criterion plus Monte Carlo for sizing prediction market bets
+> Article: Kelly + Monte Carlo: The Formula for a Perfect Strategy
+
+- **Tweet:** https://x.com/mikita0x/status/2024492068647600546
+- **Link:** https://x.com/i/article/2024457263981699072
+- **Filed:** [kelly-monte-carlo-prediction-markets](./knowledge/articles/kelly-monte-carlo-prediction-markets.md)
+- **What:** Walks through the Kelly Criterion and Thorp's generalized form for sizing bets in prediction markets, then tests six Kelly-based strategies with Monte Carlo simulation. Stresses that Kelly is long-run optimal but not a guarantee on any single run.
+
+---
+
+# Wednesday, February 18, 2026
+
+## @cathrynlavery - Use macOS launchd LaunchAgents instead of cron for OpenClaw tasks
+> Openclaw tip: your agent will always suggest a cron job when you need something run on schedule. On Mac, use launchd LaunchAgent instead: built in, more reliable, no third-party scheduler. Prompt it to list cron jobs and LaunchAgents and convert candidates using WatchPaths, StartInterval, StartCalendarInterval, RunAtLoad.
+
+- **Tweet:** https://x.com/cathrynlavery/status/2024247142571741656
+- **What:** Recommends replacing agent-suggested cron jobs with native macOS LaunchAgents (WatchPaths, StartInterval, StartCalendarInterval, RunAtLoad) and supplies a prompt to audit existing jobs and generate the plist replacements.
+
+## @DylanFeltus - visual-qa open source skill for UI screenshot review
+> new open source skill: visual-qa. teaches your AI agent to review UI screenshots like a designer would: spacing, alignment, color, typography, responsiveness, accessibility. 7 review categories. compare against mockups too.
+
+- **Tweet:** https://x.com/DylanFeltus/status/2024224298118889517
+- **Link:** https://github.com/dylanfeltus/skills
+- **Filed:** [visual-qa-skill](./knowledge/tools/visual-qa-skill.md)
+- **What:** An agent skill in the dylanfeltus/skills repo that has an AI review UI screenshots across seven design categories and optionally compare them against mockups.
+
+## @AlexFinn - OpenClaw Mission Control dashboard with build prompts
+> (x-article) "Your OpenClaw is useless without a Mission Control. Here's how to set it up"
+
+- **Tweet:** https://x.com/AlexFinn/status/2024169334344679783
+- **Link:** https://x.com/i/article/2024161276147224576
+- **Filed:** [openclaw-mission-control-setup](./knowledge/articles/openclaw-mission-control-setup.md)
+- **What:** Describes a NextJS/Convex Mission Control app that OpenClaw builds itself, with task board, content pipeline, calendar, memory search, team and office screens, each with a copyable prompt to make the agent more proactive.
+
+## @dabit3 - Building a custom agent framework with PI, the stack behind OpenClaw
+> (x-article) "How to Build Custom Agent Framework with PI: Agent Stack Powering OpenClaw"
+
+- **Tweet:** https://x.com/dabit3/status/2023986942300627132
+- **Link:** https://x.com/i/article/2023552580144820227
+- **Filed:** [build-custom-agent-framework-pi-openclaw](./knowledge/articles/build-custom-agent-framework-pi-openclaw.md)
+- **What:** Walks through the layered PI monorepo (pi-ai, pi-agent-core, pi-coding-agent, pi-tui) that also powers OpenClaw, showing how to compose them into an agent terminal UI with session persistence and custom tools.
+
+---
+
+# Tuesday, February 17, 2026
+
+## @arscontexta - Skill Graphs beat single SKILL.md files
+> (x-article) "Skill Graphs > SKILL.md"
+
+- **Tweet:** https://x.com/arscontexta/status/2023957499183829467
+- **Link:** https://x.com/i/article/2023918991673061376
+- **Filed:** [skill-graphs-over-skill-md](./knowledge/articles/skill-graphs-over-skill-md.md)
+- **What:** Proposes replacing monolithic SKILL.md files with networks of small wikilinked markdown skills, each with a YAML description and MOC indexes, so agents can traverse deep domain knowledge; the arscontexta plugin scaffolds such a graph.
+
+## @shadcn - A /done skill that dumps each Claude session into a markdown note
+> I've been on/off Obsidian too but one thing that's been working well for me lately is: I created a /done skill I run after every session. It takes everything that was discussed, key decisions, questions, follow-ups, and dumps it into a .md file with the claude session id and branch name. Helpful when I need context later.
+>
+> *Quoting @wesbos:* Giving Obsidian a shot for the 7th time in my career. I've been using straight up markdown + VS Code notes over 10 years. Send me your tips
+
+- **Tweet:** https://x.com/shadcn/status/2023812711151259772
+- **What:** shadcn replies to a note-taking question with a personal workflow: a custom /done skill that writes decisions, open questions and follow-ups to a markdown file keyed by Claude session id and branch, giving later context recovery without Obsidian.
+
+## @nullbytes00 - SuperCmd: open-source Raycast alternative that runs Raycast extensions
+> We just shipped SuperCmd - ultimate open-source alternative to @raycast. Every Raycast extension already works with it, zero migration. Voice dictation via ElevenLabs Whisper, SuperCmd Read text-to-speech, full AI support including Ollama, memory recall via Supermemory (works offline). Next: AI skills integration.
+
+- **Tweet:** https://x.com/nullbytes00/status/2023811950178955771
+- **Link:** https://supercmd.sh/en
+- **Filed:** [supercmd](./knowledge/tools/supercmd.md)
+- **What:** SuperCmd is an open-source launcher that claims compatibility with the whole Raycast extension ecosystem while adding voice dictation, read-aloud, local or cloud AI and offline memory recall. The author plans to bring OpenClaw-style skills into it with no setup.
+
+## @johann_sath - 10-step hardening checklist for an OpenClaw deployment
+> Your OpenClaw setup can be hacked in under 5 minutes. 10 things to lock it down: 1. Run on VPS or Mac mini, not main machine 2. Never run as root 3. Change default port (18789) 4. Install Tailscale 5. SSH keys + Fail2ban 6. UFW firewall 7. Allowlist users 8. Ask bot to audit its own security 9. Real-time alerts 10. DMs only. Bonus: sandbox subagents in Docker.
+
+- **Tweet:** https://x.com/johann_sath/status/2023764075906560247
+- **What:** Security checklist for self-hosting OpenClaw: isolate the host, drop root, move off the well-known default port, put it behind Tailscale with key-only SSH and Fail2ban, firewall and allowlist users, and sandbox subagents in Docker to contain prompt injection.
+
+---
+
+# Monday, February 16, 2026
+
+## @chrysb - Five ways an OpenClaw agent shoots you in the foot: drift, trust, autonomy, cost, observability
+> five ways openclaw agent will shoot you in foot. 1) drift: agent writes state everywhere (agents-md, memory-md, disk, databases); enforce where writes go, use git, review workspace nightly. 2) trust boundaries: untrusted input explodes attack surface; use separate sandboxed agents, code routes, AI reasons. 3) autonomy calibration: start read-only, graduate to filtered writes, earn full write. 4) cost discipline: cache stable ids, deterministic filtering, cheaper models for routine tasks. 5) observability: if you can't trace failure in five minutes it isn't production-ready; commit every change, rollback first-class. Treat agents like distributed systems, not chatbots.
+
+- **Tweet:** https://x.com/chrysb/status/2023545992239608301
+- **What:** Operational checklist for running OpenClaw agents in production: lock down where state is written, sandbox untrusted inputs, grant autonomy incrementally, cut LLM calls with deterministic code, and make failures traceable and rollbackable via git and logs.
+
+## @_StanGirard - Companion: web/mobile UI wrapping Claude Code and Codex on your subscription
+> I built a wrapper around Claude Code and Codex that uses my subscription! Works on mobile and web. Work on multiple projects in one UI, create worktrees, spawn Docker containers for isolation, schedule Claude/Codex sessions. It uses the CLI.
+
+- **Tweet:** https://x.com/_StanGirard/status/2023500967606690221
+- **Link:** https://github.com/The-Vibe-Company/companion
+- **Filed:** [companion](./knowledge/tools/companion.md)
+- **What:** Companion is a web and mobile front end that drives the Claude Code and Codex CLIs, so sessions run on an existing subscription rather than API billing. It adds multi-project management, worktree creation, Docker isolation and scheduled sessions.
+
+## @nicopreme - Visual Explainer: agent skill that renders explanations as rich HTML pages
+> Created an agent skill called "Visual Explainer" + set of complementary slash commands aimed to reduce my cognitive debt so the agent can explain complex things as rich HTML pages. The skill includes reference templates and a CSS pattern library so output stays consistently well-designed.
+
+- **Tweet:** https://x.com/nicopreme/status/2023495040258261460
+- **Link:** https://github.com/nicobailon/visual-explainer
+- **Filed:** [visual-explainer](./knowledge/tools/visual-explainer.md)
+- **What:** An agent skill and slash commands (/diff-review, /plan-review) that turn diagrams, diffs, plan audits and tables into styled self-contained HTML opened in the browser instead of ASCII art. Supports Claude Code, Pi, Codex, Cursor and others, with optional MCP, PPTX and video export.
+
+## @ryancarson - Code Factory: set up a repo so agents write and review all code
+> Code Factory: How to setup your repo so your agent can auto write and review 100% of your code
+
+- **Tweet:** https://x.com/ryancarson/status/2023452909883609111
+- **Link:** https://x.com/i/article/2023001790258573312
+- **Filed:** [code-factory-agent-written-reviewed-repo](./knowledge/articles/code-factory-agent-written-reviewed-repo.md)
+- **What:** Describes a control-plane pattern where a risk-tier contract drives required checks, a policy gate runs before CI, and a review agent must be clean on the current head SHA. Adds single-writer rerun comments, an optional remediation agent, browser-evidence proofs, and a harness-gap loop for incidents.
+
+## @hasantoxr - Voicebox: local open-source voice cloning studio on Qwen3-TTS
+> BREAKING: The "Ollama for voice cloning" just dropped. It's called Voicebox and it clones any voice from a few seconds of audio entirely on your machine, powered by Qwen3-TTS. Multi-track timeline editor, system audio capture + Whisper transcription, voice prompt caching, built with Tauri (Rust). MIT licensed; macOS + Windows now, Linux coming.
+
+- **Tweet:** https://x.com/hasantoxr/status/2023444228018499846
+- **What:** Voicebox is an MIT-licensed Tauri desktop app that clones voices locally from seconds of audio using Qwen3-TTS, with a DAW-style multi-voice timeline and built-in Whisper transcription. It positions itself as a no-cloud alternative to ElevenLabs; the repo link was only in a reply, so it is not filed.
+
+## @mrmagan_ - Agent framework that drives your app UI via registered components and APIs
+> your app's UI has entered the chat.
+>
+> just register your UI components and your APIs.
+>
+> build an agent that speaks your interface in minutes
+
+- **Tweet:** https://x.com/mrmagan_/status/2023443797812941271
+- **What:** THIN: Teases a toolkit where you register UI components and APIs so an in-app agent can operate your interface; the demo is in attached media and no link or product name is given in the text.
+
+## @muratcan - Replace OpenClaw static memory injection with a file-system context layer
+> The problem is how memory gets into the context window and what happens when compaction wipes it. OpenClaw loads MEMORY.md plus the last two days of daily logs at session start (static injection), and compaction then summarizes them away. Proposes mounting memory, tools, history and scratchpads under one /context namespace with list/read/write/search so the agent pulls context on demand, with a three-tier scratchpad/episodic/fact split and per-turn manifests.
+>
+> *Quoting @levelsio:* How did you guys fix persistent memory with OpenClaw? My bot keeps forgetting stuff, I already have qmd installed
+
+- **Tweet:** https://x.com/muratcan/status/2023405681080938932
+- **What:** Argues agent memory failures are a context-delivery problem and proposes a "everything is a file" /context namespace with scratchpad, episodic and fact tiers, on-demand reads, and per-turn manifests so compaction stops destroying memory. Includes a staged upgrade path from manifests to promotion and audit logs, citing Cursor's dynamic context discovery.
+
+## @woocassh - VidClaw, an agent-built open-source dashboard for managing OpenClaw
+> https://t.co/yUlHV90WME
+
+- **Tweet:** https://x.com/woocassh/status/2023385475306709425
+- **Link:** https://x.com/i/article/2023377829950271488
+- **Filed:** [vidclaw-openclaw-command-centre](./knowledge/articles/vidclaw-openclaw-command-centre.md)
+- **What:** Article co-written with an OpenClaw agent about VidClaw, a localhost-only dashboard with self-executing kanban cards, usage tracking, model switching, skills manager and a soul editor. The agent wrote the code while the human directed UX decisions.
+
+## @austin_hurwitz - OpenClaw daily AI self-improvement digest skill
+> https://t.co/lPmWYeVRFI
+
+- **Tweet:** https://x.com/austin_hurwitz/status/2023384954546049065
+- **Link:** https://x.com/i/article/2023382602975973377
+- **Filed:** [openclaw-self-improvement-digest](./knowledge/articles/openclaw-self-improvement-digest.md)
+- **What:** Article providing an OpenClaw skill and cron prompt that scans tiered sources daily for harness, memory and multi-agent techniques, dedupes against a posted-items file, and reports recommendations for improving the agent's own setup.
+
+## @hugorcd - evlog skill for structured logging instead of console.log
+> Your logs deserve better than console.log. `npx skills add hugorcd/evlog`, then "/review-logging-patterns". Turn noisy console.logs into structured events observability tools and AI agents understand, make errors self-documenting with clear "why" and "how to fix" fields, and capture full request context so incidents are debuggable.
+
+- **Tweet:** https://x.com/hugorcd/status/2023366553853637055
+- **What:** Promotes the evlog agent skill, installed via npx skills, which reviews a codebase's logging and rewrites scattered console.log calls into structured, context-rich events with self-explanatory errors for both humans and AI agents.
+
+## @KSimback - How to cut OpenClaw model costs by up to 90% with multi-model routing
+> https://t.co/oEoW58loyr
+
+- **Tweet:** https://x.com/KSimback/status/2023362295166873743
+- **Link:** https://x.com/i/article/2023128426840764416
+- **Filed:** [openclaw-model-cost-reduction-guide](./knowledge/articles/openclaw-model-cost-reduction-guide.md)
+- **What:** Article explaining OpenClaw defaults to one frontier model for everything, so heartbeats, crons and sub-agents with full-context re-injection run up large bills. Recommends routing tasks to cheaper models by complexity, with a sample router skill, and warns against using a Claude Max plan.
+
+---
+
+# Sunday, February 15, 2026
+
+## @cathrynlavery - Fixing OpenClaw agent memory with AGENTS.md, MEMORY.md and SOUL.md rules
+> *Replying to @bchecketts:* My openclaw instance doesn't seem as smart as it should. It created a GitHub account on its own, but then asked me for the password it had saved itself.
+>
+> A few things help with the memory issue. 1. AGENTS.md is the main instruction file in your workspace; add rules like "save credentials to ~/.env after creating accounts". 2. MEMORY.md is where the agent writes long-term memories. 4. SOUL.md shapes personality and behavior. Add a line like "Before asking me for credentials, check if you already saved them somewhere." It gets smarter the more you configure it, like onboarding a new employee.
+
+- **Tweet:** https://x.com/cathrynlavery/status/2023237223651393684
+- **Link:** https://agents.md/
+- **What:** Explains how to stop an OpenClaw agent forgetting where it saved things: put explicit rules in AGENTS.md, let it record durable facts in MEMORY.md, and tune proactivity in SOUL.md. Frames config as onboarding, with a concrete "check saved credentials first" rule.
+
+## @_jaydeepkarale - llm-checker: find which Ollama models your machine can run
+> I always wondered which Ollama model my machine could run properly. Now you can easily do that using llms-checker. It's a CLI tool that checks your system specs and recommends the best models to run on Ollama. npm install -g llm-checker
+
+- **Tweet:** https://x.com/_jaydeepkarale/status/2023223304996429907
+- **Link:** https://github.com/signerless/llm-checker
+- **Filed:** [llm-checker](./knowledge/tools/llm-checker.md)
+- **What:** llm-checker is an npm CLI that reads your system specs and recommends Ollama models that fit your hardware. It removes guesswork when choosing local LLMs.
+
+## @blader - schematic: reverse-engineer specs from AI-written implementations
+> when codex/claude is working on something a little too ambitious, it's very easy to lose sight of how the implementation actually works. it can be very helpful to reverse engineer a technical / product spec from the implementation. that's what this does.
+
+- **Tweet:** https://x.com/blader/status/2023170417062756624
+- **Link:** https://github.com/blader/schematic
+- **Filed:** [schematic](./knowledge/tools/schematic.md)
+- **What:** schematic generates a technical or product spec from an existing codebase, helping developers regain understanding when Codex or Claude builds something overly ambitious. The repo exposed no README, so details come from the tweet.
+
+## @dani_avila7 - Ghostty setup for Claude Code with SAND keybindings
+> https://x.com/i/article/2022829598157795328
+
+- **Tweet:** https://x.com/dani_avila7/status/2023151176758268349
+- **Link:** https://x.com/i/article/2022829598157795328
+- **Filed:** [ghostty-claude-code-sand-keybindings](./knowledge/articles/ghostty-claude-code-sand-keybindings.md)
+- **What:** Article on switching from VSCode's fragile terminal to Ghostty for long Claude Code sessions, with a SAND mnemonic (Split, Across, Navigate, Destroy) for panel shortcuts. Suggests a lazygit and yazi layout with parallel Claude instances on git worktrees.
+
+## @ctatedev - portless: stable named local dev URLs for humans and agents
+> Weekend project: portless. Stable, named URLs for local dev. Zero config, subdomains for monorepos, no more port roulette or cookie bleed, agents get a reliable URL instead of guessing ports. npm i -g portless
+
+- **Tweet:** https://x.com/ctatedev/status/2023142972578308546
+- **What:** portless is an npm-installed tool that assigns stable named URLs (with subdomains for monorepos) to local dev servers instead of random ports. This avoids cookie bleed between apps and gives coding agents a predictable address.
+
+## @aakashgupta - NVIDIA PersonaPlex-7B open voice model commoditizes voice AI APIs
+> NVIDIA just made every voice AI API a commodity. OpenAI Realtime charges $0.06/min input and $0.24/min output; PersonaPlex replaces the ASR -> LLM -> TTS pipeline with one 7B model on a single A100. Open weights, MIT license, 0.170s turn-taking latency, 0.240s interruptions. Scores 2.95 vs Gemini 2.80 MOS on dialog naturalness. Built on Kyutai's Moshi, 330,000 downloads in first month.
+>
+> *Quoting @HuggingModels:* NVIDIA just dropped PersonaPlex-7B. A full-duplex voice model that listens and talks at the same time. 100% open source.
+
+- **Tweet:** https://x.com/aakashgupta/status/2023101005941162085
+- **Link:** https://huggingface.co/nvidia/personaplex-7b-v1
+- **What:** NVIDIA's PersonaPlex-7B is an open-weight (MIT) full-duplex speech model, built on Kyutai's Moshi, that collapses the ASR/LLM/TTS stack into one model. The author argues self-hosting it shifts voice-AI margin from API vendors to GPU sales.
+
+## @nykdotdev - xint open-source X Intelligence CLI with Grok integration
+> just open-sourced xint — X Intelligence CLI. search X, analyze your bookmarks, track trends, pipe everything into Grok AI. all from your terminal. the spiritual successor to twint is here. bun + typescript. MIT licensed. link below
+
+- **Tweet:** https://x.com/nykdotdev/status/2022996371922649192
+- **What:** nyk open-sourced xint, a Bun and TypeScript MIT-licensed CLI that searches X, analyzes bookmarks, tracks trends and pipes results into Grok, positioned as a successor to twint.
+
+## @wilderko - 76 production-ready Claude Skills collection (ai-design-components)
+> A collection of 76 production-ready Claude Skills covering frontend, backend, DevOps, infrastructure, security, cloud, and AI/ML development. Skills provide Claude with domain expertise, decision frameworks, and production-ready code patterns.
+
+- **Tweet:** https://x.com/wilderko/status/2022959106588344340
+- **Link:** https://github.com/ancoleman/ai-design-components
+- **Filed:** [ai-design-components](./knowledge/tools/ai-design-components.md)
+- **What:** A GitHub repo bundling 76 Claude Skills across frontend, backend, DevOps, security, cloud and AI/ML, each supplying domain expertise, decision frameworks and production code patterns.
+
+---
+
+# Saturday, February 14, 2026
+
+## @nabeel - CoworkPowers Claude plugin for non-coding knowledge work
+> Using Claude Code for knowledge work / office work? Now that a couple founder friends are using this, feels worth sharing. It's heavily inspired by @every's Compound Engineering & Jesse's Superpowers, but those are mostly for coding. So I made a Claude plugin: /CoworkPowers, a set of 20+ skills called as needed in four phases: Research → Work → Review → Compound. Then it self-learns so it gets better over time.
+
+- **Tweet:** https://x.com/nabeel/status/2022820819072610659
+- **What:** Nabeel Hyatt shares CoworkPowers, a Claude Code plugin of 20+ skills adapting Compound Engineering and Superpowers workflows to emails, startup decisions and research via a Research, Work, Review, Compound loop that self-improves.
+
+## @cramforce - just-bash adds shell AST parse/transform for agent harnesses
+> Maybe you looked at just-bash and were like "I already have a shell". Well, if you make agent harnesses you should pay attention anyway: it now supports parsing and re-serializing shell scripts without running them, with your own AST transformers or extractors in between, like Babel or AcornJS. Built-in examples: tee every command's output to a file so agents can re-read it without rerunning, and a trustable report of which commands a script contains for permission prompts.
+
+- **Tweet:** https://x.com/cramforce/status/2022778424784490944
+- **Link:** https://github.com/vercel-labs/just-bash/blob/main/src/transform/README.md
+- **Filed:** [just-bash-transform](./knowledge/tools/just-bash-transform.md)
+- **What:** Vercel's just-bash can now parse shell scripts to an AST and re-serialize them unexecuted, enabling transformers such as auto-tee of command output and accurate command extraction for permission checks.
+
+## @danielfoch - OpenClaw agent runs real estate inbound CRM via GoHighLevel API
+> My @openclaw is now fully running the inbound side of my real estate business via @gohighlevel CRM via API. I don't think people understand how unrecognizable the real estate industry is going to be in just a few months. CRM management alone is a full time job that used to cost me $50k+ a year. Even if I was running this whole thing on Opus 4.6 it would cost me $10k/yr. On MiniMax M2.5 it's less than $1,000/yr. CC @steipete @ValeryCanada
+
+- **Tweet:** https://x.com/danielfoch/status/2022750576686096723
+- **What:** A realtor reports OpenClaw now handles inbound CRM work through the GoHighLevel API, replacing a roughly $50k/yr job; running on Opus 4.6 costs about $10k/yr and on MiniMax M2.5 under $1k/yr.
+
+## @dani_avila7 - Claude Code with cloud CLIs replaces a $3,000 infra audit report
+> A couple years ago I paid $3,000 for a cost and scalability report on AWS for my former startup. Today it's different. Connect Claude Code to your cloud CLIs and it audits real infrastructure: reviews configs, pulls logs, analyzes usage, and gives projections. Extend it with a focused skill from aitmpl.com. Certs, compliance, SOC 2, PCI still required but increasingly administrative. Has anyone stopped working with cloud partners for this?
+
+- **Tweet:** https://x.com/dani_avila7/status/2022693582365147434
+- **Link:** https://aitmpl.com/
+- **What:** Argues Claude Code driving az, aws, gcloud, vercel and wrangler CLIs can do the cost and scalability audits that once cost thousands from a cloud partner. Points to the Claude Code Templates marketplace (1000+ agents, commands, skills, MCPs) for focused add-on skills.
+
+## @dabit3 - ZeroClaw: Rust rewrite of OpenClaw benchmarked far faster and lighter
+> One of my only gripes with OpenClaw is that it's kind of slow. Today I'm trying ZeroClaw, OpenClaw rebuilt in Rust and optimized for speed. Quick benchmark vs OpenClaw: Binary 3.4MB vs 28MB; cold start 0.38s vs 3.31s; status cmd ~0s vs 5.98s; RAM (status) 7.8MB vs 1.52GB.
+
+- **Tweet:** https://x.com/dabit3/status/2022676502471409795
+- **Link:** https://github.com/theonlyhennygod/zeroclaw
+- **Filed:** [zeroclaw](./knowledge/tools/zeroclaw.md)
+- **What:** ZeroClaw is a Rust reimplementation of the OpenClaw agent that dabit3 benchmarks at roughly 10x faster cold start and about 200x lower memory on the status command. Created by a small team including a Harvard CS student.
+
+---
+
 # Friday, February 13, 2026
+
+## @kloss_xyz - OpenClaw prompt to build a JARVIS-style mission control dashboard
+> Use this prompt in OpenClaw to create your own AI agent command center that syncs up your life like Tony Stark's Jarvis. Prompt: Build me a mission control dashboard for my OpenClaw AI agent system. Stack: Next.js 15 (App Router) + Convex + Tailwind CSS v4 + Framer Motion + ShadCN UI. Dark mode only, glass effects, 8 nav items, reads Convex plus local API routes over ~/.openclaw/workspace/.
+>
+> *Quoting @kloss_xyz:* 8 prompts for @openclaw to help it understand you: Brain, Muscles, Bones, DNA, Soul, Eyes, Heartbeat, Nerves.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2022461932759060993
+- **What:** A ready-to-paste prompt that has OpenClaw generate a dark, glassmorphic Next.js + Convex dashboard for monitoring a 24/7 agent on a Mac Mini, combining real-time DB data with filesystem state from the agent workspace. Follows the author's earlier 8-prompt series for teaching OpenClaw about its user.
+
+## @code_rams - 13 takeaways on agentic engineering from Lex Fridman's Peter Steinberger interview
+> Just finished Lex Fridman's conversation with Peter Steinberger. Biggest takeaways as an indie founder: 1. Agentic engineering > vibe coding. 2. Start stupid simple (OpenClaw began as a 1-hour WhatsApp -> CLI relay). 3. More prompts does not mean more intelligence. 4. Self-modifying agents are already here. 5. Fix forward mindset. ... 9. Security is not optional. 12. Software UX shifts from app-centric to agent-centric.
+>
+> *Quoting @lexfridman:* Here's my conversation with Peter Steinberger (@steipete), creator of OpenClaw, an open-source AI agent with over 180,000 GitHub stars. Topics: OpenClaw origin, self-modifying agents, security, coding with AI agents, Codex 5.3 vs Opus 4.6.
+
+- **Tweet:** https://x.com/code_rams/status/2022459737648865415
+- **What:** Thread distilling the Steinberger/Lex Fridman podcast into practical agent-workflow rules: keep the core minimal, prune prompts, give agents fresh context each session, run agents in parallel, sandbox them, and pick models by workflow fit. It frames the builder role as defining architecture and outcomes rather than writing every line.
+
+## @xdotli - SkillsBench open-sourced: benchmark showing focused Skills beat model scale
+> *Replying to @xdotli:* Less is more: 2-3 focused Skills: +18.6pp; 4+ Skills: +5.9pp; comprehensive docs: -2.9pp. Haiku 4.5 with Skills (27.7%) beats Opus 4.5 without (22.0%).
+>
+> SkillsBench is fully open-source. Blog and paper, code and website linked. Thanks to all 41 co-authors and 105 contributors.
+
+- **Tweet:** https://x.com/xdotli/status/2022409560204677411
+- **Link:** https://www.skillsbench.ai/blogs/introducing-skillsbench
+- **Filed:** [skillsbench-agent-skills-benchmark](./knowledge/articles/skillsbench-agent-skills-benchmark.md)
+- **What:** SkillsBench is the first open-source benchmark for agent Skills, finding that 2-3 focused Skills lift pass rates by 18.6pp while comprehensive docs hurt by 2.9pp. Skills can substitute for model scale, as Haiku 4.5 with Skills outscores Opus 4.5 without.
+
+## @gregisenberg - Making AI-built apps not look AI-made with Weavy, Figma and Claude Code
+> how to make your ai app not look like it was made with ai (weavy ai, claude, figma etc). use weavy ai to generate custom assets, color systems, and logos across models like flux + ideogram, then compose it properly in figma then paste into claude code/google ai studio etc
+
+- **Tweet:** https://x.com/gregisenberg/status/2022403916298883381
+- **What:** Workflow: generate custom assets, color systems and logos in Weavy AI using Flux and Ideogram, compose them in Figma, then feed the result to Claude Code or Google AI Studio for a distinctive look.
+
+## @BorisVagner - OpenClaw setup advice: Opus as brain, Codex for coding, on a VPS
+> The best setup for OpenClaw is Opus for brain, Codex for all coding. Use subscriptions, not API. We run ours on a VPS (no Mac Mini needed) and everything through a private Discord server. Took my brother and me about 2 weeks to set up and iterate; multiple agents now handle different tasks and talk to each other.
+
+- **Tweet:** https://x.com/BorisVagner/status/2022374634512089148
+- **What:** Practitioner recommends OpenClaw with Opus as orchestrator and Codex for coding via subscriptions on a VPS, coordinated in a private Discord, and warns that a working multi-agent setup takes weeks of iteration.
+
+## @mimurchison - Ada CEO uses Claude Code as AI chief of staff
+> My relationship with computer changed more in last month than previous 10 years. Here's a walkthrough of how I as CEO am using Claude Code as AI Chief of Staff to roughly double my productivity. Unify 6+ inboxes (Slack, email, WhatsApp), manage a multiplayer todo list that works overnight, enrich contact records from Granola transcripts, push back on my decisions... First version is on Github.
+
+- **Tweet:** https://x.com/mimurchison/status/2022368529417224480
+- **What:** A CEO shares a walkthrough of a Claude Code setup with deep company context that unifies inboxes, runs overnight todo work, enriches contacts from meeting transcripts, and challenges his decisions against goals.
+
+## @jolandgraf - The last year of localhost: cloud dev environments for background agents
+> (x-article only) "The last year of localhost"
+
+- **Tweet:** https://x.com/jolandgraf/status/2022340825498218558
+- **Link:** https://x.com/i/article/2022162200798908416
+- **Filed:** [last-year-of-localhost-ona](./knowledge/articles/last-year-of-localhost-ona.md)
+- **What:** Ona's CEO argues fleets of background agents (Stripe Minions, Ramp, Ona itself) need isolated cloud dev environments, so localhost development is ending for teams adopting agents.
+
+## @tempoimmaterial - Curated list of best MCP servers for full-stack web development
+> (x-article only) "The best MCP servers try this weekend"
+
+- **Tweet:** https://x.com/tempoimmaterial/status/2022322993049878545
+- **Link:** https://x.com/i/article/2022297649441898497
+- **Filed:** [best-mcp-servers-full-stack-2026](./knowledge/articles/best-mcp-servers-full-stack-2026.md)
+- **What:** Article groups favorite MCP servers by dev workflow stage (docs, design, git, DBs, testing, deploy, observability, productivity) and explains MCP as a universal adapter replacing brittle per-provider glue code.
 
 ## @akshay_pachaar - Cutting OpenClaw cost 95% by switching to MiniMax M2.5
 > https://t.co/TdpoOI1mqJ
