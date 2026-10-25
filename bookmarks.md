@@ -11596,7 +11596,141 @@
 
 ---
 
+# Friday, February 13, 2026
+
+## @akshay_pachaar - Cutting OpenClaw cost 95% by switching to MiniMax M2.5
+> https://t.co/TdpoOI1mqJ
+
+- **Tweet:** https://x.com/akshay_pachaar/status/2022309334483677654
+- **Link:** https://x.com/i/article/2022272369113649152
+- **Filed:** [openclaw-minimax-m25-cost-cut](./knowledge/articles/openclaw-minimax-m25-cost-cut.md)
+- **What:** Article "I cut my OpenClaw cost by 95%" argues MiniMax M2.5 matches Opus 4.6 on coding (80.2% SWE-Bench Verified) at a fraction of the price, with a setup walkthrough including a $8.8/month coding plan and a Telegram bot.
+
+## @AISecHub - SecureClaw: automated security hardening for OpenClaw agents
+> secureclaw - Automated security hardening OpenClaw AI agents - https://t.co/FCKD3RhXVM
+>
+> 51 audit checks. 12 behavioral rules. 9 scripts. 4 pattern databases. Full OWASP ASI Top 10 coverage.
+
+- **Tweet:** https://x.com/AISecHub/status/2022292973430448462
+- **Link:** https://github.com/adversa-ai/secureclaw
+- **Filed:** [secureclaw](./knowledge/tools/secureclaw.md)
+- **What:** Adversa AI's open-source plugin and skill that audits OpenClaw installs, auto-hardens them and adds a lean behavioral-rules skill against prompt injection, credential theft and supply chain attacks. Maps to OWASP, MITRE ATLAS and NIST frameworks.
+
+## @hasantoxr - ClawdTalk gives OpenClaw agents real phone numbers
+> Holy shit... your AI agent can now make real phone calls.
+>
+> It's called ClawdTalk it gives any Clawdbot or OpenClaw agent an actual phone number. Not browser audio. Not a chatbot. Real calls over real telephony infrastructure. Sub-200ms latency.
+>
+> Here's why changes everything: 🧵
+
+- **Tweet:** https://x.com/hasantoxr/status/2022287018110443852
+- **What:** Announces ClawdTalk, a service giving OpenClaw agents a real phone number for voice calls over real telephony with claimed sub-200ms latency. Thread content was not captured, so details beyond the tweet are unknown.
+
+## @ayushtweetshere - OpenClaw setup on Hetzner with sub-agents, QMD memory and MiniMax models
+> My @openclaw setup
+>
+> - Hetzner VPS
+> - Telegram pairing chat
+> - 1 main agent + 3 sub agents
+> - QMD by @tobi long term memory
+> - Model: experimenting with MiniMax coding models; M2.1-lightning for light tasks (heartbeats), M2.1 for complex tasks (research, code, analysis)
+> - No mail or phone access, no browser use (yet)
+> - Github access to read/write code; separate Github project as its memory
+> - Daily backups of whole system
+>
+> *Quoting @ayushtweetshere:* Finally got my @openclaw working again using OpenAI Codex OAuth. Anthropic API keys were too expensive, Claude OAuth didn't work, Kimi K2 via NVidia was too slow and dumb. GPT 5.2 feels alright for now.
+
+- **Tweet:** https://x.com/ayushtweetshere/status/2022279642762375519
+- **Link:** https://twitter.com/ayushtweetshere/status/2021932264956080422
+- **What:** Reference OpenClaw architecture: Hetzner VPS, Telegram, one main plus three sub-agents, QMD memory, GitHub as memory store, daily backups, and tiered MiniMax models. The quoted tweet explains the model choice: Anthropic keys too costly, Kimi too slow, so OpenAI Codex OAuth with GPT 5.2.
+
+## @Legendaryy - Comparing five AI agent search APIs: Brave, Tavily, Exa, Perplexity, Firecrawl
+> https://t.co/OHOPI6xsEO
+
+- **Tweet:** https://x.com/Legendaryy/status/2022270816679772598
+- **Link:** https://x.com/i/article/2022264799845826560
+- **Filed:** [agent-search-apis-comparison](./knowledge/articles/agent-search-apis-comparison.md)
+- **What:** Article "Your Agent Is Only Good as Its Search" compares five search APIs after Bing's API shutdown. Cites Brave's eval where a weaker Qwen3 with good search context beat ChatGPT and Perplexity, arguing context quality beats model choice.
+
+## @camsoft2000 - Sentry's code-simplifier agent to counter AI slop
+> Sentry's code-simplifier agent brilliant. Does wonders countering AI slop. I just find way run this in loop across entire codebase now 🤣. https://t.co/YKsqCx96Rt
+
+- **Tweet:** https://x.com/camsoft2000/status/2022263090792820964
+- **Link:** https://github.com/getsentry/skills/blob/main/plugins/sentry-skills/agents/code-simplifier.md
+- **Filed:** [sentry-code-simplifier](./knowledge/tools/sentry-code-simplifier.md)
+- **What:** Sentry's open-source code-simplifier agent, part of the getsentry/skills Claude Code plugin, refines code for clarity and maintainability without changing behavior. The author uses it to clean up AI-generated code and wants to loop it across a whole codebase.
+
+## @drrobcincotta - Obsidian CLI with Claude Code: 54x faster, 70,000x fewer tokens
+> I been testing new Obsidian CLI with Claude Code on research vault (4,663 files, 16 GB)... I know too many notes!!
+>
+> Early results significant. Three ways Claude can connect to a vault: filesystem (MCP or bash) covers ~40% of what Obsidian knows, REST API MCP ~55%, Obsidian CLI ~85% (queries Obsidian's real indexes: search, backlinks, orphans, properties, tags).
+>
+> Orphan notes: bash grep 15.6s vs CLI 0.26s (54x). Search: 1.95s vs 0.32s (6x). Token cost for orphan detection: ~7M via MCP vs ~100 via CLI (70,000x cheaper).
+>
+> Catch: only works via Claude Code (can run CLI via bash); Claude Desktop can't access it directly. Early CLI MCP server obsidian-ts-mcp would bridge the gap.
+>
+> *Quoting @obsdmd:* Anything you can do in Obsidian you can do from command line. Obsidian CLI now available in 1.12 (early access).
+
+- **Tweet:** https://x.com/drrobcincotta/status/2022210753575760293
+- **Link:** https://claude.ai/
+- **What:** Benchmark of Obsidian's new 1.12 CLI against grep and MCP on a 4,663-file vault, showing the CLI reuses Obsidian's prebuilt index for large speed and token savings. Quoted Obsidian post announces the CLI; claude.ai link was a Cloudflare block page with no content.
+
+## @askOkara - Okara's favorite open-source models per use case
+> here are our favorite open-source models per use case:
+>
+> > writing - kimi k2
+> > coding - minimax m2.5, glm 5
+> > ocr - deepseek ocr 2, qwen 3 vl
+> > general queries - deepseek v3.2, kimi k2.5
+> > image editing - qwen image edit, flux 2 dev
+> > image gen - z-image-turbo, flux 2 dev
+>
+> open-source ai moving fast - list gets updated every week!
+
+- **Tweet:** https://x.com/askOkara/status/2022206926969528650
+- **What:** Quick Feb 2026 reference list mapping open-weight models to tasks: Kimi for writing, MiniMax M2.5 and GLM 5 for coding, DeepSeek OCR 2 and Qwen 3 VL for OCR, Flux 2 dev for images. Useful snapshot for model selection.
+
+---
+
 # Thursday, February 12, 2026
+
+## @rileybrown - Riley Brown's Clawdbot/OpenClaw agent setup with Notion, Linear, Typefully and Supadata
+> Spent 4 hours building out my Clawdbot (@openclaw)
+>
+> My agent can control Notion, draft tweets @typefully, use Linear, extract transcript any video (YouTube, Instagram, TikTok, Facebook and X videos) using Supadata API, search filter Google Images, and pull YouTube thumbnail images from any channel.
+>
+> And for sake of posts "Agent Snapshot" skill.
+>
+> This posted by @vibeclaw on Riley's Behalf.
+
+- **Tweet:** https://x.com/rileybrown/status/2022147278853800053
+- **What:** Example of a personal OpenClaw agent wired to Notion, Linear, Typefully and the Supadata transcript API, with an "Agent Snapshot" skill for posting. Shows the content-ops automation pattern, with the tweet itself posted by an agent.
+
+## @gvh41 - Claude Code plus DataForSEO and KeywordsEverywhere APIs for SEO
+> The people who said
+>
+> DataforSEO API + KeywordsEverywhere API + Claude code
+>
+> were absolutely right
+
+- **Tweet:** https://x.com/gvh41/status/2022141797103796451
+- **What:** THIN: Short endorsement of pairing Claude Code with the DataForSEO and KeywordsEverywhere APIs for SEO and keyword research work. No link or detail, so the specific workflow is inferred only.
+
+## @renatonitta - 32 hours running OpenClaw on its own computer and accounts
+> https://t.co/LIHwnPGzns
+
+- **Tweet:** https://x.com/renatonitta/status/2022053849670762858
+- **Link:** https://x.com/i/article/2022027215626772480
+- **Filed:** [openclaw-own-computer-32-hour-recap.md](./knowledge/articles/openclaw-own-computer-32-hour-recap.md)
+- **What:** X article arguing agents should get their own spare laptop plus fresh email, GitHub and X accounts, like a new hire, rather than access to personal data. Work is shared via a GitHub repo, the agent has a named identity with rules and memory files, and a recovery kit lets the setup be rebuilt.
+
+## @oliverhenry - OpenClaw agent Larry drives 500K+ TikTok views in 5 days
+> https://t.co/Mg6IwpDnGK
+
+- **Tweet:** https://x.com/oliverhenry/status/2022011925903667547
+- **Link:** https://x.com/i/article/2021875898064990208
+- **Filed:** [larry-openclaw-tiktok-guide-oliverhenry.md](./knowledge/articles/larry-openclaw-tiktok-guide-oliverhenry.md)
+- **What:** X article where Oliver Henry hands TikTok marketing for his iOS apps to "Larry", an OpenClaw agent on an old gaming PC. It generates slideshows, captions and posts on schedule; 5 days gave 500K+ views (best 234K) and MRR of $588. Step-by-step guide to the tools, prompts and failures.
 
 ## @PaulRBerg - Agent Skills Collection (Git, Code Review, Workflows)
 > Sharing my personal agent skills repo — git commits, code review, code simplification, github issue creation, and more.
@@ -11732,6 +11866,24 @@
 ---
 
 # Wednesday, February 11, 2026
+
+## @VicVijayakumar - Excalidraw as a markdown-only Claude skill instead of MCP
+> *Quoting @excalidraw:* Thanks to the good people at @AnthropicAI we now have an official MCP for Excalidraw! Take it for a spin on @claudeai (search for Excalidraw in Connectors, or use in Claude Code and elsewhere). More to come.
+>
+> Very cool. I don't really care for mcp so I told claude to turn it into a skill, written entirely in markdown. Here's a kitchen sink.
+>
+> What this allows me to do is I can be writing an RFC and tell claude to turn what I'm describing into an excalidraw and paste it into my doc. https://t.co/NAtjfaMRyA
+
+- **Tweet:** https://x.com/VicVijayakumar/status/2021801525165613427
+- **What:** Responding to Excalidraw's announcement of an official MCP (via Anthropic), Vic converted it into a pure-markdown Claude skill with a "kitchen sink" example. Workflow: while writing an RFC, ask Claude to turn the described design into an Excalidraw diagram and paste it into the doc, no MCP server needed.
+
+## @therealdanvega - Excalidraw MCP lets Claude generate diagrams from prompts
+> Excalidraw + MCP is the combo I didn't know I needed. You give Claude a prompt and it generates beautiful diagrams for you in seconds. No dragging boxes around, no fiddling with arrows. Just describe it and watch it appear.
+>
+> Here are 5 examples that show off this workflow 👇🏻
+
+- **Tweet:** https://x.com/therealdanvega/status/2021779252543463815
+- **What:** THIN: Demo (images/video not captured) of the official Excalidraw MCP connector, which lets Claude draw editable diagrams from a text prompt, replacing manual box and arrow dragging. Shows five example workflows.
 
 ## @barinov - Nightshift: Agentic Codebase Cleanup
 > Nightshift is a dopamine hidden gem for agentic junkies. You go to sleep, agents wake up and fix your codebase, you wake up to a bunch of PRs with clean-ups and refactors ready to review. It's optimized for leftover tokens by @zzzmarcus
@@ -12176,6 +12328,14 @@
 
 # Saturday, February 7, 2026
 
+## @rjs - Shaping 0-1 in Claude Code: full walkthrough using shaping skills
+> https://t.co/WLFVKseZtZ
+
+- **Tweet:** https://x.com/rjs/status/2020184079350563263
+- **Link:** https://x.com/i/article/2020102594819989504
+- **Filed:** [shaping-0-1-claude-code-rjs.md](./knowledge/articles/shaping-0-1-claude-code-rjs.md)
+- **What:** X article showing a project built from scratch in Claude Code with the author's shaping skills: a shaping.md doc captures requirements (R items) and candidate solutions (Shape A, parts A1..A6) before any code, so problem and solution iterate separately. Example app is a multi-timezone TUI with an LLM command bar.
+
 ## @xBenJamminx - OpenClaw gateway watchdog solution
 > There's a problem nobody warns you about with OpenClaw bots: your gateway crashes silently with no error or alert. You don't know your bot is down. Built a watchdog that monitors the gateway, auto-restarts if down, sends notifications. Runs in background. Share the prompt with your bot or paste into Claude Code to have it build the whole thing automatically.
 
@@ -12427,7 +12587,437 @@
 
 ---
 
+# Wednesday, February 4, 2026
+
+## @levelsio - Firewall your VPS to Cloudflare and Tailscale only
+> You should never ever expose a VPS to the entire internet
+>
+> Always firewall it to subnets
+>
+> If you host a website you should only allow port 443 (HTTPS) inbound from Cloudflare's IP range / subnets
+>
+> Port 22 (SSH) only from your Tailscale subnet range
+>
+> That means you create a "tunnel" from Cloudflare and Tailscale (your laptop) to your server's door
+>
+> You still need your SSH key to open the door btw
+>
+> If you don't, ANYONE in the entire world can connect to your VPS and if there's just one security vulnerability and you didn't upgrade your VPS you can get hacked
+>
+> If you do have it firewalled with Tailscale subnet only, it means only if they hack your laptop they could get in via your Tailscale there
+>
+> Another thing is ask OpenClaw or Claude Code to enable unattended upgrades with auto reboot
+
+- **Tweet:** https://x.com/levelsio/status/2019058602707681593
+- **What:** VPS hardening checklist: allow 443 only from Cloudflare ranges, SSH only from the Tailscale subnet, keep SSH keys, and enable unattended upgrades with auto reboot (can delegate to an AI agent). Shrinks attack surface to a compromised laptop rather than the whole internet.
+
+## @dhh - Run a team of OpenClaw agents on one Proxmox box instead of Mac Minis
+> Why would you get a Mac Mini for OpenClaw, and restrict yourself to a single agent? Get a @Beelinkofficial, setup Proxmox, and you'll be able to run a whole team of claws on a single cheap box!
+>
+> https://t.co/vPuuN6tQ1s
+
+- **Tweet:** https://x.com/dhh/status/2018937285576638954
+- **Link:** https://www.proxmox.com/en/
+- **What:** DHH argues for a cheap Beelink mini PC running Proxmox (a VM/container hypervisor) over a Mac Mini for hosting OpenClaw agents, since it isolates many agents as separate VMs on one box. Useful as a low-cost multi-agent hosting pattern.
+
+---
+
+# Tuesday, February 3, 2026
+
+## @samhogan - Schematron-3B, custom Llama 3 model for HTML-to-JSON scraping
+> I found out today that two of the largest web scraping companies in the world are using a custom Llama 3 model we released last year to process millions of webpages per day.
+>
+> Schematron-3b: HTML -&gt; JSON parsing
+>
+> Frontier quality at dirt-cheap prices.
+>
+> https://t.co/CFBlA2W6tB
+
+- **Tweet:** https://x.com/samhogan/status/2018838862123196455
+- **Link:** https://huggingface.co/inference-net/Schematron-3B
+- **What:** Schematron-3B is a small Llama 3-based model from inference.net that converts raw HTML into structured JSON. The author claims two of the biggest scraping companies run it on millions of pages daily at far lower cost than frontier models; the fetched page was only HTML boilerplate, so model card details are not captured.
+
+## @alvinsng - Factory AI open-sources 23+ droid-generated ESLint rules
+> Our internal lint rules are now open source, featuring 23+ custom rules we use to guide droids at @FactoryAI. These rules cover file organization, React patterns, testing, error handling, API conventions, and more.
+>
+> Every rule is 100% droid-generated and includes detailed Markdown docs.
+>
+> While it isn't meant to be imported as-is, we hope it inspires you to build custom linting rules tailored to your own codebase. Take what works, ignore what doesn't, tweak as needed. You can leverage the docs as building blocks to suit your specific framework or language.
+>
+> Check it out: https://t.co/ZaHZ5FmV58
+
+- **Tweet:** https://x.com/alvinsng/status/2018754085948924136
+- **Link:** https://github.com/Factory-AI/eslint-plugin
+- **What:** Factory AI published its internal eslint-plugin: 23+ custom lint rules (file organization, React, testing, error handling, API conventions), each generated by its droids with Markdown docs. Meant as a template for writing codebase-specific rules that steer coding agents; the GitHub API returned no README, so details come from the tweet.
+
+---
+
+# Monday, February 2, 2026
+
+## @leerob - Cursor tip: stack skills before opening a PR
+> Cursor tip: before pushing a PR, ask the agent to break your changes into a series of commits for easier review.
+>
+> You can even stack skills like:
+>
+> 1. /code-review
+> 2. /simplify (can we get the same result with less code?)
+> 3. /deslop (remove unnecessary comments)
+> 4. /commit-pr https://t.co/wIyZHDmNQP
+
+- **Tweet:** https://x.com/leerob/status/2018456023145820461
+- **What:** Workflow tip: before pushing, have the agent split changes into reviewable commits and chain skills: code-review, simplify, deslop, then commit-pr. Shows how composable agent skills automate pre-PR cleanup.
+
+## @arscontexta - steipete's summarize CLI for dumping URLs, PDFs and YouTube into a vault
+> if youre into agentic knowledge management, install this cli tool from @steipete
+>
+> https://github.com/steipete/summarize
+>
+> summarize any URL, PDF, or YouTube in one command and dump it straight into your vault
+
+- **Tweet:** https://x.com/arscontexta/status/2018450512505627019
+- **Link:** https://github.com/steipete/summarize
+- **What:** Recommends Peter Steinberger's summarize CLI, which condenses any URL, PDF or YouTube video in a single command so output can go straight into a notes vault. Fits agentic knowledge-management workflows; already tracked in the knowledge base.
+
+## @mernit - Free NVIDIA Kimi K2.5 API as an Opus 4.5 substitute for OpenClaw
+> PSA to everyone using @openclaw
+>
+> nvidia has a *free* kimi k2.5 API you can use instead of opus 4.5 https://t.co/pmOmpt1Sgb
+
+- **Tweet:** https://x.com/mernit/status/2018435162334269503
+- **What:** PSA that NVIDIA offers free API access to Moonshot's Kimi K2.5, usable in OpenClaw in place of the costly Opus 4.5. Cost-cutting tip for agent users; setup details were in an attached image not captured.
+
+## @rooohann_ - Asking Grok how an email verification tool works
+> *Replying to @tom_doerr:* @tom_doerr @grok can you explain it more technically what it does? i would love to use this at @OmnivooAI
+>
+> *Parent tweet by @tom_doerr:* Verifies email addresses without sending messages https://t.co/n4JB8cIaov
+
+- **Tweet:** https://x.com/rooohann_/status/2018425003738620224
+- **What:** Reply asking Grok for a technical explanation of Tom Dorr's shared tool that verifies email addresses without sending mail (typically SMTP handshake checks), which the author wants to use at OmnivooAI. Tool link was not resolved.
+
+## @thebeautyofsaas - Feeding personality tests into Claude for self-insight
+> claude + wealth dynamics test + your personality type (MBTI+enneagram) will confirm everything you already know about yourself deep down but at the same time don't give enough attention to
+>
+> >get all the answers results
+> >plug them into Claude
+> >enjoy your new insights (life POV)
+
+- **Tweet:** https://x.com/thebeautyofsaas/status/2018396858305892382
+- **What:** Prompt recipe: combine Wealth Dynamics, MBTI and enneagram results, paste them into Claude, and ask for synthesized self-insight. Light personal-development use of an LLM as a profile synthesizer.
+
+## @VittoStack - Security-first guide to running OpenClaw in 9 steps
+> We spent 48+ hours researching security-first OpenClaw setups.
+>
+> By the end of this guide you'll have:
+> - OpenClaw on a Pi via Tailscale
+> - Matrix E2E chat
+> - Prompt injection hardening
+> - No-log LLM provider
+> - Firewall + habits for damage control
+>
+> It's long but totally worth it.
+>
+> *Quoting @VittoStack:* https://x.com/i/article/2018312386449387520
+
+- **Tweet:** https://x.com/VittoStack/status/2018326274440073499
+- **Link:** https://x.com/i/article/2018312386449387520
+- **Filed:** [openclaw-security-first-guide.md](./knowledge/articles/openclaw-security-first-guide.md)
+- **What:** Long guide (also on the Ethereum Foundation dAI blog) for hardening a self-hosted OpenClaw agent: Pi behind Tailscale, Matrix E2E chat, prompt injection defenses, a no-log paid-in-crypto provider, firewall. Core point: agent memory, credentials and transcripts make careless setups dangerous.
+
+## @ramxcodes - Obsidian folder structure showcase
+> The best obsidian folder structure so far https://t.co/kUcXtbiVJx
+
+- **Tweet:** https://x.com/ramxcodes/status/2018240514575966398
+- **What:** THIN: Shares what Ram calls the best Obsidian folder structure so far; the actual structure is in an image/media not captured, so no details are known beyond the claim.
+
+## @jameesy - The "Top of Mind" note as the key note in an Obsidian vault
+> The most important note in my @obsdmd vault is the "Top of Mind".
+>
+> Here is why you should keep one too... https://t.co/ufcCvKw48D
+
+- **Tweet:** https://x.com/jameesy/status/2018236254492500045
+- **What:** THIN: Pitches keeping a single "Top of Mind" note in an Obsidian vault as the most important note, with the reasoning in an attached video/image not captured. Inferred as a running note of current priorities and thoughts.
+
+## @anthonyriera - "Planning with files" Claude Code skill for plan-drift control
+> I tested every Claude Code skills and one DESTROYED the rest: "Planning with files".
+>
+> This skill is literally a cheat code. It nails every feature, even complicated ones, 99% of the time.
+>
+> If you're not using it, you're leaving wins on the table.
+>
+> First to start using it simply do this:
+> $ npx skills add https://github.com/othmanadi/planning-with-files --skill planning-with-files
+>
+> Then, when writing any prompt, just mention "Plan with files".
+>
+> Claude will automatically pick up the skill and create 3 files for you: task_plan.md, findings.md, progress.md.
+>
+> Unlike the normal plan mode, Claude will come back to those files during the whole process of planning and executing and get a CONSTANT reminder of what should be done and how.
+>
+> The drift becomes almost nonexistent and the plan is being followed perfectly.
+>
+> It uses more tokens yes, but it nails it the first time, all the time.
+>
+> Try it and thank me later.
+
+- **Tweet:** https://x.com/anthonyriera/status/2018221220160827828
+- **Link:** https://github.com/othmanadi/planning-with-files
+- **What:** Claude Code skill (othmanadi/planning-with-files) that persists the plan in task_plan.md plus two companion files and re-reads them throughout execution to prevent drift. Author claims higher first-pass success at the cost of more tokens; repo README was not captured.
+
+---
+
+# Sunday, February 1, 2026
+
+## @simonw - TIL: Running OpenClaw in Docker on a Mac
+> New TIL: running OpenClaw in Docker on my Mac - this is an officially documented path but there were still a few things that caught me out, hence my TIL https://til.simonwillison.net/llms/openclaw-docker
+
+- **Tweet:** https://x.com/simonw/status/2018116907778654691
+- **Link:** https://til.simonwillison.net/llms/openclaw-docker
+- **What:** Simon Willison's TIL on sandboxing OpenClaw (aka Clawdbot/Moltbot) in a Docker container instead of running it directly on his Mac, noting gotchas beyond the official docs. Useful as a safer local setup path; page body was not captured, only metadata.
+
+## @HiTw93 - Tool UI: schema-first React framework for conversation-native tool outputs
+> Tool UI is a React framework for conversation-native UIs. Tools return JSON, and Tool UI renders it as inline, narrated, referenceable surfaces inside messages, optimized for chat width and scroll. It's schema-first: every surface is driven by a serializable schema with stable IDs, so results stay consistent and reusable.
+>
+> It's assistant-anchored and stack-agnostic, working with any LLM/provider and orchestration layer. If you're building agents, it's a clean bridge from tool outputs to real product UX.
+> https://www.assistant-ui.com/elements
+
+- **Tweet:** https://x.com/HiTw93/status/2018109861201093052
+- **Link:** https://www.assistant-ui.com/elements
+- **What:** Introduces Tool UI (assistant-ui elements), a React library rendering tool-call JSON as inline chat surfaces driven by serializable schemas with stable IDs. Works with any LLM or orchestration layer. Linked page was an HTML shell, so not filed.
+
+## @TheAhmadOsman - Reddit "/.json" trick for feeding full threads to LLMs
+> *Replying to @0xSero:* (parent text unavailable)
+>
+> @0xSero nice work, for context in case anyone is wondering
+>
+> *Quoting @TheAhmadOsman:* there is a lot of MONEY here. teach this to your Clawdbot/Moltbot/OpenClaw: add `/.json` at the end of any Reddit link, get the full thread, all replies to n-th depth, all metadata as JSON, feed to LLMs to extract/analyze. you can make so much $$$ from niche subreddits
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/2018072812104159330
+- **Link:** https://x.com/TheAhmadOsman/status/2017809819147661449
+- **What:** Replies to 0xSero's work, pointing to Ahmad's earlier tip: appending /.json to any Reddit URL returns the full threaded discussion with metadata as JSON, which agents can ingest for niche-subreddit analysis. Reply's parent text was unavailable.
+
+## @ashpreetbedi - Dash: open-source self-learning data agent inspired by OpenAI's
+> https://x.com/i/article/2017180444735705088
+
+- **Tweet:** https://x.com/ashpreetbedi/status/2018059495335764273
+- **Link:** https://x.com/i/article/2017180444735705088
+- **Filed:** [dash-open-source-data-agent.md](./knowledge/articles/dash-open-source-data-agent.md)
+- **What:** Open-sources Dash (agno-agi/dash), a text-to-SQL data agent that grounds answers in six context layers and learns from errors via a memory loop instead of fine-tuning. Modeled on OpenAI's in-house data agent.
+
+## @doodlestein - Keeping 100+ repos synced across 4 machines with repo_updater (ru)
+> *Replying to @atelicinvest:* Has anyone using Claude Code in yolo mode tried going the route of doing it in a way where you can easily reverse the damage they do instead of limiting the commands it can run? like - is there a way to do proper back up so that you can easily reload recent snapshot if it fucks up badly? @doodlestein ?
+>
+> I commit religiously across everything to get a remote copy in place. I also do my dev work across 4 machines and every one of the 4 machines has the full repo for every project (well over 100 of them) and I keep them in sync using my tool, repo_updater (ru):
+>
+> https://github.com/Dicklesworthstone/repo_updater
+>
+> And this prompt:
+>
+> "Read AGENTS .md. Then use your /ru-multi-repo-workflow skill to commit all changed files in each project within /dp/projects in logical groupings with super detailed commit messages for each and then push. Take your time to do it right. Don't edit the code at all. Don't commit obviously ephemeral files. Then also pull from all repos in ru, making sure again not to lose any useful work."
+
+- **Tweet:** https://x.com/doodlestein/status/2018036767505453163
+- **Link:** https://github.com/Dicklesworthstone/repo_updater
+- **What:** Answer to how to undo damage from yolo-mode agents: commit and push constantly, and mirror all 100+ repos on 4 machines using repo_updater (ru). A standard prompt has an agent commit in logical groups with detailed messages, push, then pull everywhere. Tool already filed as repo-updater.md.
+
+## @koltregaskes - Mission Control: dashboard coordinating 10 OpenClaw agents
+> Mission Control dashboard built with React and Convex coordinates 10 OpenClaw AI agents.
+>
+> - Agents led by Jarvis delegate tasks autonomously.
+> - Handles content creation, revenue analysis, and more 24/7.
+> - Features threaded discussions for agent collaboration.
+> - Mimics team dynamics with claims, reviews, and refutes.
+>
+> Dashboard enables startup automation without constant oversight.
+>
+> I got my agents to build this for me when I saw the screenshot only.  We had a multi agent UI already but this command centre was better. 😀
+
+- **Tweet:** https://x.com/koltregaskes/status/2018029594524496165
+- **Link:** https://x.com/i/article/2017588473751052288
+- **Filed:** [mission-control-openclaw-agent-squad.md](./knowledge/articles/mission-control-openclaw-agent-squad.md)
+- **What:** Shares a React and Convex Mission Control UI for a squad of 10 OpenClaw agents led by Jarvis, with shared tasks and threaded discussion. Linked guide explains the Clawdbot gateway and session architecture needed to replicate it.
+
+## @0xSero - GLM-4.7-Flash as a local "Claude Code at home" model
+> For those with 24-96gb of vram/unified memory. I highly recommend trying out GLM-4.7-Flash.
+>
+> It is the best model up to 100B params, I showed how I use it and what it can do.
+>
+> GLM-4.7-Flash - Claude Code at home??
+> https://www.youtube.com/watch?v=_SDyaPYmIxU
+
+- **Tweet:** https://x.com/0xSero/status/2018027097084588503
+- **Link:** https://www.youtube.com/watch?v=_SDyaPYmIxU
+- **What:** YouTube demo recommending GLM-4.7-Flash as the best local model under 100B params for machines with 24-96GB VRAM or unified memory, run as a self-hosted Claude Code alternative. No transcript available; summary inferred from tweet text.
+
+## @nbaschez - Claude Code tip: write a reproducing test before fixing bugs
+> Single biggest improvement to your https://code.claude.com/docs / CLAUDE.md-style setup:
+>
+> "When I report a bug, don't start by trying to fix it. Instead, start by writing a test that reproduces the bug. Then, have subagents try to fix the bug and prove it with a passing test."
+
+- **Tweet:** https://x.com/nbaschez/status/2018027072720130090
+- **Link:** https://code.claude.com/docs
+- **What:** Prompt-level instruction for Claude Code: on a bug report, first write a failing reproduction test, then have subagents fix it and prove the fix with a passing test. Gives agents a verifiable target, reducing speculative fixes. Linked docs page was only an HTML shell, so not filed.
+
+## @NickMilo - Your AI needs a home: the ACE (Atlas/Calendar/Efforts) vault structure
+> https://x.com/i/article/2018007226922029056
+
+- **Tweet:** https://x.com/NickMilo/status/2018008419047993518
+- **Link:** https://x.com/i/article/2018007226922029056
+- **Filed:** [ai-needs-a-home-ace-framework.md](./knowledge/articles/ai-needs-a-home-ace-framework.md)
+- **What:** Article arguing AI assistants forget between sessions and need a shared Obsidian-style vault. Proposes ACE folders (Atlas for timeless ideas, Calendar for daily logs, Efforts for projects) plus + and x spaces as a common mental model for human and AI.
+
+---
+
+# Saturday, January 31, 2026
+
+## @0xSero - Remote-control your computer from your phone via Tailscale and Termius
+> Hey, let me make your life easier.
+>
+> 1. Go to Tailscale site
+> 2. Install the desktop app & mobile app
+> 3. Hook them up together via vpn
+> 4. Go to Termius
+> 5. Install the mobile app
+> 6. Set up using your tailscale IP
+> 7. Now you can control your computer from phone w no exposed ports
+
+- **Tweet:** https://x.com/0xSero/status/2017674123565060375
+- **What:** Seven-step recipe: join desktop and phone to a Tailscale VPN, then SSH from the Termius mobile app to the Tailscale IP. Gives phone access to your computer (handy for running coding agents remotely) with no ports exposed to the internet.
+
+---
+
+# Friday, January 30, 2026
+
+## @tom_doerr - LLM Agents Ecosystem Handbook (build and deploy agents)
+> Handbook for building and deploying LLM agents
+>
+> https://github.com/oxbshw/LLM-Agents-Ecosystem-Handbook
+
+- **Tweet:** https://x.com/tom_doerr/status/2017406291757375912
+- **Link:** https://github.com/oxbshw/LLM-Agents-Ecosystem-Handbook
+- **What:** Points to the oxbshw LLM-Agents-Ecosystem-Handbook GitHub repo, a curated guide to building and deploying LLM agents. Repo content was not fetched (empty README), so detail is inferred from the tweet and repo name.
+
+## @nateliason - Sentry-to-PR autonomous bug fixing with Clawdbot and Codex
+> Here's the complete guide from Felix (my @openclaw) on our full Sentry -> Claw -> Codex -> PR workflow for resolving bugs before you ever hear about them, updating you in Slack along the way. Gist included you can send to your bot.
+> *Quoting @nateliason:* From Sentry Alert to Merged PR in Minutes: Automating Bug Fixes with Clawdbot + Codex
+
+- **Tweet:** https://x.com/nateliason/status/2017270908986016044
+- **Link:** https://x.com/i/article/2017269547313594368
+- **Filed:** [sentry-alert-to-merged-pr-clawdbot-codex.md](./knowledge/articles/sentry-alert-to-merged-pr-clawdbot-codex.md)
+- **What:** Guide to a pipeline where Sentry alerts hit Slack, the Clawdbot agent triages and runs Codex in a git worktree to open a staging PR, then notifies you. A gist lets your own agent set it up.
+
+## @affaan - /skill-create generates skills from git history
+> shipped
+>
+> /skill-create
+>
+> Scan your git history to generate skills + instincts from patterns you already use.
+>
+> Legacy codebases already have years of:
+>
+> - commit conventions
+> - architecture decisions
+> - testing patterns
+> - repeated patches
+>
+> Pre-Claude Codebase -> Post-Claude Codebase
+
+- **Tweet:** https://x.com/affaan/status/2017125089058423117
+- **What:** Ships a `/skill-create` command that mines a repo's git history for commit conventions, architecture and testing patterns, and turns them into agent skills. Aims to onboard legacy codebases to Claude workflows.
+
+---
+
+# Thursday, January 29, 2026
+
+## @jerryjliu0 - PaddleOCR-VL-1.5 0.9B open-source OCR model
+> PaddleOCR-VL-1.5 is the best open-source OCR model on the market, *and* it's only 0.9B!
+>
+> One day after Kimi 2.5
+> Two days after DeepSeekOCR-2
+>
+> What a week for AI doc intelligence 🔥
+> *Quoting @PaddlePaddle:* PaddleOCR-VL-1.5 reaches SOTA 94.5% on OmniDocBench v1.5, beating general-purpose LLMs and document-specific models on irregular-shaped real-world documents.
+
+- **Tweet:** https://x.com/jerryjliu0/status/2017065306817270170
+- **Link:** https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.5
+- **What:** PaddleOCR-VL-1.5 is a 0.9B open-source document OCR vision-language model scoring 94.5% on OmniDocBench v1.5. Jerry Liu flags it as part of a busy week of doc-AI releases alongside DeepSeekOCR-2 and Kimi 2.5.
+
+## @yoheinakajima - Prompt: weigh multiple implementation approaches with pros/cons
+> "Think through the best way to implement this elegantly given our architecture goals. If there are multiple approaches, provide them with pros/cons, and ask clarifying questions to help decide which one we should go with."
+
+- **Tweet:** https://x.com/yoheinakajima/status/2017042421901905960
+- **What:** A reusable coding-agent prompt that asks for an elegant design fit to architecture goals, with alternatives, pros/cons, and clarifying questions before committing. Useful for planning-before-coding.
+
+## @trq212 - Claude Code playground plugin for interactive HTML playgrounds
+> https://t.co/oqBZifW4GG
+
+- **Tweet:** https://x.com/trq212/status/2017024445244924382
+- **Link:** https://x.com/i/article/2016768930174685187
+- **Filed:** [making-playgrounds-using-claude-code.md](./knowledge/articles/making-playgrounds-using-claude-code.md)
+- **What:** Announces the official Claude Code `playground` plugin that generates standalone interactive HTML files for exploring architecture, designs, or game balance and copying a resulting prompt back into Claude Code. Install via claude-plugins-official.
+
+## @OpenAIDevs - OpenAI's in-house data agent over 600+ PB and 70k datasets
+> Inside our in-house AI data agent that reasons over 600+ PB and 70k datasets, enabling natural language data analysis across Engineering, Product, Research, and more.
+>
+> Our agent uses Codex-powered table-level knowledge plus product and organizational context
+
+- **Tweet:** https://x.com/OpenAIDevs/status/2016943147239329872
+- **Link:** https://openai.com/index/inside-our-in-house-data-agent/
+- **What:** OpenAI describes its internal natural-language data agent spanning 600+ PB and 70k datasets, using Codex-derived table knowledge plus organizational context. Page fetch returned only a bot-block stub, so this is inferred from tweet text.
+
+## @jumperz - HEARTBEAT.md self-review loop so agents learn from misses
+> been running moltbot a while and noticed it doesn't actually get better on its own
+>
+> here's a simple fix:
+>
+> add this to HEARTBEAT.md: Self-Check (runs every hour). Ask yourself: what sounded right but went nowhere? where did I default to consensus? what assumption didn't I pressure test? Log answers to memory/self-review.md, tagging each entry [confidence | uncertainty | speed | depth].
+>
+> then add to your startup prompt: on boot, read memory/self-review.md, prioritize recent MISS entries, and when task context overlaps a MISS tag, force a counter-check before responding.
+>
+> the loop: heartbeat → question itself → log MISS/FIX → restart → read log → adjust
+>
+> week one will be mid. by week four you will notice sharp improvement, because the agent now remembers where it lies to itself.
+> PS: interval can be 30 min, 1 hour, even 4 hours. more tasks = shorter interval
+
+- **Tweet:** https://x.com/jumperz/status/2016882057108996577
+- **What:** Recipe for self-improving agents (moltbot/OpenClaw): an hourly heartbeat prompts self-critique, logs tagged MISS/FIX entries to a memory file, and re-reads them at boot to force counter-checks on similar tasks.
+
+---
+
 # Wednesday, January 28, 2026
+
+## @brian_lovin - Ask AI for interactive HTML explainers of PRs and plans
+> An extremely underrated step to include in your AI coding workflow: "make an interactive html site with visual explanation of X" where X could be:
+>
+> - a PR you're reviewing
+> - the last plan it wrote
+> - current unstaged changes
+> - a general architectural concept
+> - how a library/tool works
+>
+> @geoffreylitt has taken this quite far internally at Notion, and I'm finding myself using this idea often, especially when working with new technologies (like building TUIs, adding SSO to an app, trying to visualize sequence steps in a complicated deploy pipeline etc).
+
+- **Tweet:** https://x.com/brian_lovin/status/2016686830897475613
+- **What:** Workflow tip: have the coding agent generate interactive HTML visual explanations of PRs, plans, diffs, or architecture to grasp unfamiliar tech faster. Credits Geoffrey Litt's Notion usage.
+
+## @kushalbyatnal - Lessons learned choosing a startup tech stack (Extend)
+> https://t.co/whkGylwTQP
+
+- **Tweet:** https://x.com/kushalbyatnal/status/2016602943869293047
+- **Link:** https://x.com/i/article/2015882265264291841
+- **Filed:** [lessons-choosing-startup-tech-stack-extend.md](./knowledge/articles/lessons-choosing-startup-tech-stack-extend.md)
+- **What:** Extend's founder reviews a boring React/Node/TS/Postgres/Redis stack after 1000x growth with a 3-person team: monorepo and on-prem-ready design paid off, while AWS, Redis queues, Go/Rust and WorkOS were later changes.
+
+## @sawyerhood - Do Browser: fast browser agent vs Claude for Chrome
+> Every major lab has a browser agent now.
+> Every one of them sucks.
+>
+> So I built a new version Do Browser.
+>
+> Retheming a Figma file:
+> Claude for Chrome: 55 min
+> Do Browser: 30 sec
+
+- **Tweet:** https://x.com/sawyerhood/status/2016563089123266955
+- **What:** THIN: Launch of Do Browser, a new browser agent claiming a Figma retheming task in 30 seconds versus 55 minutes for Claude for Chrome. Inferred from tweet text and an attached demo; no link content.
 
 ## @rivet_dev - Sandbox Agent SDK unifies coding-agent APIs
 > Introducing Sandbox Agent SDK:
@@ -12968,6 +13558,16 @@
 ---
 
 # Thursday, February 5, 2026
+
+## @chiefofautism - Shannon, autonomous AI pentester that breaks into web apps
+> CLAUDE CODE but for HACKING
+>
+> its called shannon, you point it at a website and it just... tries to break in... fully autonomous with no human needed
+>
+> i pointed it at a test app and it stole the entire user database, created admin accounts, and bypassed login, all by itself, in 90 minutes
+
+- **Tweet:** https://x.com/chiefofautism/status/2019608142884016638
+- **What:** Shannon is an autonomous AI pentesting agent, described as Claude Code for hacking, that attacks a target website with no human input. The author reports it exfiltrated a test app's user database, created admin accounts and bypassed login in 90 minutes; no link or repo was included, so details are from the tweet alone.
 
 ## @Ibelick - webclaw: Fast web client for OpenClaw
 > https://t.co/hRVDRhYw9y
