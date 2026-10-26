@@ -715,6 +715,10 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
     const isYouTube = /youtube\.com|youtu\.be/.test(url);
     const subFormat = isYouTube ? 'json3' : 'vtt/best';
     const outputTemplate = path.join(tmpDir, '%(id)s.%(ext)s');
+    // yt-dlp treats every video of a tweet as one playlist, whatever /video/N
+    // says, so pick the Nth explicitly.
+    const videoIndex = xVideoIndex(url);
+    const pick = videoIndex ? ['--playlist-items', String(videoIndex)] : [];
 
     // No shell anywhere below: the URL comes from a bookmarked tweet, so shell
     // syntax in it (e.g. `$(...)` in a query string) must stay inert.
@@ -722,7 +726,7 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
       execFileSync(
         ytdlp,
         ['--write-subs', '--write-auto-subs', '--sub-langs', 'en.*,-live_chat', '--sub-format', subFormat,
-          '--skip-download', '--no-warnings', '-o', outputTemplate, '--', url],
+          '--skip-download', '--no-warnings', ...pick, '-o', outputTemplate, '--', url],
         { timeout: subtitleTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch {
@@ -764,7 +768,7 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
     try {
       execFileSync(
         ytdlp,
-        ['-x', '--audio-format', 'mp3', '--audio-quality', '5', '-o', audioFile, '--', url],
+        ['-x', '--audio-format', 'mp3', '--audio-quality', '5', ...pick, '-o', audioFile, '--', url],
         { timeout: audioTimeout, stdio: 'pipe', encoding: 'utf8' }
       );
     } catch (err) {
@@ -807,6 +811,27 @@ export async function fetchTranscriptContent(url, config, toolPaths) {
       fs.rmSync(tmpDir, { recursive: true, force: true });
     } catch {}
   }
+}
+
+/**
+ * The N in an x.com/{user}/status/{id}/video/{N} URL, or null.
+ */
+export function xVideoIndex(url) {
+  const match = url.match(/^https:\/\/(?:x|twitter)\.com\/[^/]+\/status\/\d+\/video\/(\d+)$/);
+  return match ? Number(match[1]) : null;
+}
+
+/**
+ * One video link per video uploaded to the tweet itself, so native X videos
+ * get transcribed like YouTube links. The /video/ path also matches the
+ * `video` category. GIFs have no audio and are skipped.
+ */
+export function nativeVideoLinks(bookmark, author) {
+  const videos = (bookmark.media || []).filter(m => m.type === 'video');
+  return videos.map((_, i) => {
+    const url = `https://x.com/${author}/status/${bookmark.id}/video/${i + 1}`;
+    return { original: url, expanded: url, type: 'video', content: null };
+  });
 }
 
 /**
@@ -1153,6 +1178,10 @@ export async function fetchAndPrepareBookmarks(options = {}) {
 
       await processDirectArticle(bookmark.article, bookmark.id, 'on tweet');
       await processDirectArticle(bookmark.quotedTweet?.article, bookmark.quotedTweet?.id, 'on quoted tweet');
+
+      const videoLinks = nativeVideoLinks(bookmark, author);
+      if (videoLinks.length > 0) console.log(`  Native video: ${videoLinks.length} on tweet`);
+      links.push(...videoLinks);
 
       let replyContext = null;
       if (bookmark.inReplyToStatusId) {

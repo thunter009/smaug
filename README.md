@@ -186,6 +186,8 @@ Smaug automatically extracts transcripts from YouTube videos, podcasts, and othe
 2. **Whisper (fallback)**: If no captions exist, yt-dlp extracts audio and Whisper transcribes it locally
 3. **Placeholder**: If neither tool is installed, bookmarks are flagged with `status: needs_transcript`
 
+Videos uploaded to the tweet itself are transcribed too: each one becomes a `video` link to `x.com/{user}/status/{id}/video/{N}`. They rarely have captions, so they need Whisper. GIFs are skipped.
+
 Both tools are **optional** — install what you need:
 
 ```bash

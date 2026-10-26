@@ -16,7 +16,8 @@ import {
   fetchTranscriptContent,
   downloadMedia,
   fetchAndPrepareBookmarks,
-  transcribeBookmarks
+  transcribeBookmarks,
+  xVideoIndex
 } from '../src/processor.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -947,6 +948,76 @@ fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\ncaptions for
     assert.strictEqual(path.basename(files[0]), '5000000000000000001.txt');
     assert.match(fs.readFileSync(files[0], 'utf8'), /v=first/);
     assert.match(fs.readFileSync(files[1], 'utf8'), /v=second/);
+  });
+
+  test('videos uploaded to the tweet get one transcript each', async (t) => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'smaug-native-video-test-'));
+    const realFetch = globalThis.fetch;
+    t.after(() => {
+      globalThis.fetch = realFetch;
+      fs.rmSync(dir, { recursive: true, force: true });
+    });
+
+    // X gives all of a tweet's media one t.co link, to /video/1.
+    const mediaUrl = 'https://x.com/erin/status/5000000000000000002/video/1';
+    globalThis.fetch = async (url) => ({ url: url === 'https://t.co/mmm' ? mediaUrl : url, ok: true, status: 200, text: async () => '' });
+
+    const bird = path.join(dir, 'bird');
+    fs.writeFileSync(bird, `#!/usr/bin/env node
+process.stdout.write(JSON.stringify([{
+  id: '5000000000000000002',
+  text: 'watch this https://t.co/mmm',
+  author: { username: 'erin', name: 'Erin' },
+  createdAt: '2026-03-01T00:00:00Z',
+  media: [{ type: 'video' }, { type: 'photo' }, { type: 'video' }, { type: 'animated_gif' }]
+}]));
+`);
+    // Captions name the URL and the playlist item asked for.
+    const ytdlp = path.join(dir, 'yt-dlp');
+    fs.writeFileSync(ytdlp, `#!/usr/bin/env node
+const fs = require('fs');
+const args = process.argv.slice(2);
+const url = args[args.length - 1];
+const item = args.includes('--playlist-items') ? args[args.indexOf('--playlist-items') + 1] : 'all';
+const file = args[args.indexOf('-o') + 1].replace('%(id)s', 'v').replace('%(ext)s', 'en.vtt');
+fs.writeFileSync(file, 'WEBVTT\\n\\n00:00:00.000 --> 00:00:01.000\\ncaptions for ' + url + ' item ' + item + '\\n');
+`);
+    fs.chmodSync(bird, 0o755);
+    fs.chmodSync(ytdlp, 0o755);
+
+    const stateDir = path.join(dir, '.state');
+    const configPath = path.join(dir, 'smaug.config.json');
+    fs.writeFileSync(configPath, JSON.stringify({
+      archiveFile: path.join(dir, 'bookmarks.md'),
+      pendingFile: path.join(stateDir, 'pending-bookmarks.json'),
+      stateFile: path.join(stateDir, 'bookmarks-state.json'),
+      birdPath: bird,
+      ytdlpPath: ytdlp,
+      whisperPath: path.join(dir, 'no-whisper'),
+      twitter: { authToken: 'token', ct0: 'token' }
+    }));
+
+    const result = await fetchAndPrepareBookmarks({ configPath, count: 1 });
+
+    const videos = result.bookmarks[0].links.filter(l => l.type === 'video');
+    assert.deepStrictEqual(videos.map(l => l.expanded), [
+      'https://x.com/erin/status/5000000000000000002/video/1',
+      'https://x.com/erin/status/5000000000000000002/video/2'
+    ]);
+    const files = videos.map(l => l.content.transcriptFile);
+    assert.deepStrictEqual(files.map(f => path.basename(f)), ['5000000000000000002.txt', '5000000000000000002-2.txt']);
+    assert.match(fs.readFileSync(files[0], 'utf8'), /video\/1 item 1/);
+    assert.match(fs.readFileSync(files[1], 'utf8'), /video\/2 item 2/);
+  });
+});
+
+describe('xVideoIndex', () => {
+  test('reads N from a tweet video URL only', () => {
+    assert.strictEqual(xVideoIndex('https://x.com/erin/status/123/video/2'), 2);
+    assert.strictEqual(xVideoIndex('https://twitter.com/erin/status/123/video/1'), 1);
+    assert.strictEqual(xVideoIndex('https://x.com/erin/status/123'), null);
+    assert.strictEqual(xVideoIndex('https://x.com/erin/status/123/photo/1'), null);
+    assert.strictEqual(xVideoIndex('https://www.youtube.com/watch?v=abc'), null);
   });
 });
 
