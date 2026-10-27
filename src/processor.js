@@ -662,7 +662,7 @@ export function parseVttTranscript(content) {
     let cleaned = line
       .replace(/<\/?c[^>]*>/g, '')           // color/class tags
       .replace(/<\d{2}:\d{2}[\d:.]*>/g, '')  // inline timestamps
-      .replace(/<\/?[a-z][^>]*>/g, '')        // other HTML-like tags
+      .replace(/<\/?[a-z][^>]*>/gi, '')       // other tags, incl. X's <X-word-ms>
       .trim();
 
     // Decode common HTML entities
