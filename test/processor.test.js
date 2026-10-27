@@ -704,6 +704,20 @@ describe('parseVttTranscript', () => {
     assert.ok(!result.includes('<00:'), 'inline timestamps should be stripped');
   });
 
+  test('strips X word-timing tags', () => {
+    // Captions on videos uploaded to X wrap every cue in an uppercase tag.
+    const content = [
+      'WEBVTT',
+      '',
+      '00:00:00.000 --> 00:00:02.000',
+      '<X-word-ms ms=39,420,160 index=1 character_ranges=0-2,3-12,13-16>Hi, everyone. I\'m Lauren</X-word-ms>',
+      '',
+      '00:00:02.000 --> 00:00:03.000',
+      '<X-word-ms ms=1000 index=2 character_ranges=0-3>name</X-word-ms>'
+    ].join('\n');
+    assert.strictEqual(parseVttTranscript(content), "Hi, everyone. I'm Lauren\nname");
+  });
+
   test('decodes HTML entities', () => {
     const content = fs.readFileSync(path.join(__dirname, 'fixtures/sample-subtitles.vtt'), 'utf8');
     const result = parseVttTranscript(content);
